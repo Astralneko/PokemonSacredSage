@@ -306,7 +306,7 @@ Color = Green
 Shape = HeadBase
 Category = Light Leaf
 Pokedex = It is a rare Pokémon found near the sea. Tea created using its leaves was used as a natural antihistamine long ago.
-Generation = 10
+Generation = 101
 #-------------------------------
 [ANGEAL]
 Name = Angeal
@@ -330,7 +330,7 @@ Color = Green
 Shape = HeadBase
 Category = Light Leaf
 Pokedex = It is a rare Pokémon found near the sea. Tea created using its leaves was used as a natural antihistamine long ago.
-Generation = 10
+Generation = 101
 Flags = s
 Evolution = KINDRANA,Level,17
 #-------------------------------
@@ -356,7 +356,7 @@ Color = Green
 Shape = HeadBase
 Category = Light Leaf
 Pokedex = It is a rare Pokémon found near the sea. Tea created using its leaves was used as a natural antihistamine long ago.
-Generation = 10
+Generation = 101
 Flags = s
 Evolution = HYDRUDDLE,Level,37
 #-------------------------------
@@ -382,7 +382,7 @@ Color = Green
 Shape = HeadBase
 Category = Light Leaf
 Pokedex = It is a rare Pokémon found near the sea. Tea created using its leaves was used as a natural antihistamine long ago.
-Generation = 10
+Generation = 101
 Flags = s
 #-------------------------------
 [RADIOSO]
@@ -407,7 +407,7 @@ Color = Red
 Shape = BipedalTail
 Category = Bear Cub
 Pokedex = It is a rare Pokémon found near the sea. Tea created using its leaves was used as a natural antihistamine long ago.
-Generation = 10
+Generation = 101
 Flags = s
 Evolution = FLAMBEAR,Level,17
 #-------------------------------
@@ -433,7 +433,7 @@ Color = Red
 Shape = BipedalTail
 Category = Bear Cub
 Pokedex = It is a rare Pokémon found near the sea. Tea created using its leaves was used as a natural antihistamine long ago.
-Generation = 10
+Generation = 101
 Flags = s
 Evolution = FURNURSA,Level,37
 #-------------------------------
@@ -459,7 +459,7 @@ Color = Red
 Shape = BipedalTail
 Category = Bear Cub
 Pokedex = It is a rare Pokémon found near the sea. Tea created using its leaves was used as a natural antihistamine long ago.
-Generation = 10
+Generation = 101
 Flags = s
 #-------------------------------
 [TEMPIXIE]
@@ -484,7 +484,7 @@ Color = Gray
 Shape = Quadruped
 Category = Dive Cat
 Pokedex = Bubbles form at the ends of its whiskers. Underwater, this can be used to aid in floating up to the surface.
-Generation = 10
+Generation = 101
 Flags = s
 Evolution = NAYUNDINE,Level,17
 #-------------------------------
@@ -510,7 +510,7 @@ Color = Gray
 Shape = Quadruped
 Category = Dive Cat
 Pokedex = Bubbles form at the ends of its whiskers. Underwater, this can be used to aid in floating up to the surface.
-Generation = 10
+Generation = 101
 Flags = s
 Evolution = NERICTALURE,Level,37
 #-------------------------------
@@ -536,7 +536,7 @@ Color = Gray
 Shape = Quadruped
 Category = Dive Cat
 Pokedex = Bubbles form at the ends of its whiskers. Underwater, this can be used to aid in floating up to the surface.
-Generation = 10
+Generation = 101
 Flags = s
 Evolution = NERICTALURE,Level,37
 #-------------------------------
@@ -564,7 +564,7 @@ Shape = Winged
 Habitat = Forest
 Category = Speaker
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 WildItemUncommon = CHILANBERRY
 Evolution = DANSAW,Level,14
 #-------------------------------
@@ -592,7 +592,7 @@ Shape = Winged
 Habitat = Forest
 Category = Speaker
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 WildItemUncommon = CHILANBERRY
 Evolution = RAVARRAW,Level,30
 #-------------------------------
@@ -620,7 +620,7 @@ Shape = Winged
 Habitat = Forest
 Category = Speaker
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 WildItemUncommon = CHILANBERRY
 #-------------------------------
 [ONSAIL]
@@ -647,7 +647,7 @@ Shape = Quadruped
 Habitat = Forest
 Category = Speaker
 Pokedex = As it is only a kitten, Onsail does not have its signature powerful vocal capabilities yet. Still, it is capable of amplifying the sound around it to confuse and distract predators.
-Generation = 10
+Generation = 101
 WildItemUncommon = CHILANBERRY
 Evolution = ONSTEREO,Level,15
 #-------------------------------
@@ -675,7 +675,7 @@ Shape = Quadruped
 Habitat = Forest
 Category = Speaker
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 WildItemUncommon = CHILANBERRY
 Evolution = ONSURROUND,Level,32
 #-------------------------------
@@ -703,7 +703,7 @@ Shape = Quadruped
 Habitat = Forest
 Category = Speaker
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 WildItemUncommon = CHILANBERRY
 #-------------------------------
 [LUNAVY]
@@ -730,7 +730,7 @@ Shape = Quadruped
 Habitat = Forest
 Category = Speaker
 Pokedex = As it is only a kitten, Onsail does not have its signature powerful vocal capabilities yet. Still, it is capable of amplifying the forest around it.
-Generation = 10
+Generation = 101
 WildItemUncommon = CHILANBERRY
 Evolution = ECLICHILLA,Level,18
 #-------------------------------
@@ -758,7 +758,7 @@ Shape = Quadruped
 Habitat = Forest
 Category = Speaker
 Pokedex = As it is only a kitten, Onsail does not have its signature powerful vocal capabilities yet. Still, it is capable of amplifying the forest around it.
-Generation = 10
+Generation = 101
 WildItemUncommon = CHILANBERRY
 #-------------------------------
 [VENEON]
@@ -783,7 +783,7 @@ Shape = Quadruped
 Habitat = Urban
 Category = Venom Drip
 Pokedex = It appears to be dripping, because it is covered in venom. It is dangerous to touch Veneon, and it knows, as it is very quick to attack and won't try to trick others.
-Generation = 10
+Generation = 101
 #-------------------------------
 [MATAREON]
 Name = Matareon
@@ -807,7 +807,7 @@ Shape = Quadruped
 Habitat = Urban
 Category = Tortured
 Pokedex = It can take almost unlimited punishment before falling unconscious, and even if it is successfully killed, it will revive shortly afterward.
-Generation = 10
+Generation = 101
 #-------------------------------
 [CLOUDEON]
 Name = Cloudeon
@@ -831,7 +831,7 @@ Shape = Quadruped
 Habitat = Urban
 Category = Sky High
 Pokedex = Cloudeon can float through the sky, much like actual clouds. However, it isn't strong enough to do this with a human on top.
-Generation = 10
+Generation = 101
 #-------------------------------
 [QUAKEON]
 Name = Quakeon
@@ -855,7 +855,7 @@ Shape = Quadruped
 Habitat = Urban
 Category = Seismic Sight
 Pokedex = Most Quakeon are blind, but its other senses are far better to compensate, such as using weak seismic waves to "see" its surroundings.
-Generation = 10
+Generation = 101
 #-------------------------------
 [VESPEON]
 Name = Vespeon
@@ -879,7 +879,7 @@ Shape = Quadruped
 Habitat = Urban
 Category = Venom Drip
 Pokedex = Vespeon aren't able to fly, but they can still gather nectar from grounded flowers. It can turn this nectar into honey for long-term storage.
-Generation = 10
+Generation = 101
 #-------------------------------
 [WYVREON]
 Name = Wyvreon
@@ -903,7 +903,7 @@ Shape = Quadruped
 Habitat = Urban
 Category = Venom Drip
 Pokedex = This Pokémon may be rare, but that doesn't mean it's skittish - Wyvreon love getting attention from humans.
-Generation = 10
+Generation = 101
 #-------------------------------
 [CHROMEON]
 Name = Chromeon
@@ -927,7 +927,7 @@ Shape = Quadruped
 Habitat = Urban
 Category = Metallic
 Pokedex = Eevee absorbed a Metal Coat to become this creature. Its robot-like appearance is a shell.
-Generation = 10
+Generation = 101
 #-------------------------------
 [CUFFEON]
 Name = Cuffeon
@@ -951,7 +951,7 @@ Shape = Quadruped
 Habitat = Urban
 Category = Prizefighter
 Pokedex = Cuffeon hit fast and hard, however, their stamina is relatively low, so they are quick to tire themselves out.
-Generation = 10
+Generation = 101
 #-------------------------------
 [SLATEON]
 Name = Slateon
@@ -975,7 +975,7 @@ Shape = Quadruped
 Habitat = Urban
 Category = Prizefighter
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [MARIHUSH]
 Name = Marihush
@@ -1002,7 +1002,7 @@ Shape = Winged
 Habitat = Grassland
 Category = Marigold
 Pokedex = They use a plant stalk as a weapon, but not all of them use it in the same way. Several distinct styles of stalk fighting have been observed.
-Generation = 10
+Generation = 101
 #-------------------------------
 [CLAUSTROA]
 Name = Claustroa
@@ -1028,7 +1028,7 @@ Shape = Serpentine
 Habitat = Grassland
 Category = Anaconda
 Pokedex = They use a plant stalk as a weapon, but not all of them use it in the same way. Several distinct styles of stalk fighting have been observed.
-Generation = 10
+Generation = 101
 Evolution = ANACOILA,Level,28
 #-------------------------------
 [ANACOILA]
@@ -1055,7 +1055,7 @@ Shape = Serpentine
 Habitat = Grassland
 Category = Anaconda
 Pokedex = They use a plant stalk as a weapon, but not all of them use it in the same way. Several distinct styles of stalk fighting have been observed.
-Generation = 10
+Generation = 101
 #-------------------------------
 [ALUMINNOW]
 Name = Aluminnow
@@ -1081,7 +1081,7 @@ Shape = Finned
 Habitat = WatersEdge
 Category = Minnow
 Pokedex = Although unattractive and unpopular, this Pokémon's marvelous vitality has made it a subject of research.
-Generation = 10
+Generation = 101
 Evolution = ESCUEELA,Item,KNOWLEDGERUNE
 #-------------------------------
 [ESCUEELA]
@@ -1108,7 +1108,7 @@ Shape = Finned
 Habitat = WatersEdge
 Category = Book Wyrm
 Pokedex = Although unattractive and unpopular, this Pokémon's marvelous vitality has made it a subject of research.
-Generation = 10
+Generation = 101
 #-------------------------------
 [JOUSHRIMP]
 Name = Joushrimp
@@ -1135,7 +1135,7 @@ Shape = Finned
 Habitat = WatersEdge
 Category = Rammer Shrimp
 Pokedex = Although unattractive and unpopular, this Pokémon's marvelous vitality has made it a subject of research.
-Generation = 10
+Generation = 101
 Evolution = RAMANTILL,Level,20
 Evolution = KRILLANCE,None
 #-------------------------------
@@ -1163,7 +1163,7 @@ Shape = Finned
 Habitat = WatersEdge
 Category = Rammer Shrimp
 Pokedex = Although unattractive and unpopular, this Pokémon's marvelous vitality has made it a subject of research.
-Generation = 10
+Generation = 101
 #-------------------------------
 [KRILLANCE]
 Name = Krillance
@@ -1189,7 +1189,7 @@ Shape = Finned
 Habitat = WatersEdge
 Category = Rammer Shrimp
 Pokedex = Although unattractive and unpopular, this Pokémon's marvelous vitality has made it a subject of research.
-Generation = 10
+Generation = 101
 #-------------------------------
 [FROSTKIT]
 Name = Frostkit
@@ -1213,7 +1213,7 @@ Color = Blue
 Shape = Quadruped
 Category = Ice Kitten
 Pokedex = It is a clumsy Pokémon, which of course is cute to humans. It quickly learns from this, though, because of needing to keep up with its family of Nyawinter and Felacier.
-Generation = 10
+Generation = 101
 Evolution = NYAWINTER,Level,27
 #-------------------------------
 [NYAWINTER]
@@ -1238,7 +1238,7 @@ Color = Blue
 Shape = Quadruped
 Category = Ice Cat
 Pokedex = Found in the colder reaches of Verela, Nyawinter are quick to battle, and quick in battle - unfortunately, speed isn't everything, so this isn't always very effective.
-Generation = 10
+Generation = 101
 Evolution = FELACIER,Item,ICESTONE
 #-------------------------------
 [FELACIER]
@@ -1263,7 +1263,7 @@ Color = Blue
 Shape = Quadruped
 Category = Freeze Cat
 Pokedex = It may look elegant walking across lakes with its ice powers, but watch out, for it can sense everything around it with aura energy, and it is an expert hunter.
-Generation = 10
+Generation = 101
 #-------------------------------
 [MARASAGI]
 Name = Marasagi
@@ -1287,7 +1287,7 @@ Color = Yellow
 Shape = BipedalTail
 Category = Lavender Sage
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [SCALCOON]
 Name = Scalcoon
@@ -1311,7 +1311,7 @@ Color = Black
 Shape = Head
 Category = Dragon Egg
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = SCALCOON,Level,12
 #-------------------------------
 [ATLEPIDUS]
@@ -1336,7 +1336,7 @@ Color = Black
 Shape = MultiWinged
 Category = Giant Moth
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [PERSELFLY]
 Name = Perselfly
@@ -1360,7 +1360,7 @@ Color = Black
 Shape = MultiWinged
 Category = Huntress
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [AZULIN]
 Name = Azulin
@@ -1384,7 +1384,7 @@ Color = Blue
 Shape = Head
 Category = Snowball
 Pokedex = It lives in colder areas, such as the tops of mountains. It is non-confrontational, and usually runs if attacked.
-Generation = 10
+Generation = 101
 Evolution = AZULASHIN,TradeSpecies,ROSESH
 #-------------------------------
 [ROSESH]
@@ -1409,7 +1409,7 @@ Color = Red
 Shape = Head
 Category = Searing Sand
 Pokedex = Rosesh lives around mountainous areas. It is quite aggressive, and usually chases Azulin, to no avail.
-Generation = 10
+Generation = 101
 Evolution = ROSARAZUN,TradeSpecies,AZULIN
 #-------------------------------
 [AZULASHIN]
@@ -1434,7 +1434,7 @@ Color = Blue
 Shape = HeadArms
 Category = Frostbite
 Pokedex = This Pokémon is frequently used as a Verelan starter Pokémon. It is formed by a Rosesh and Azulin touching.
-Generation = 10
+Generation = 101
 #-------------------------------
 [ROSARAZUN]
 Name = Rosarazun
@@ -1458,7 +1458,7 @@ Color = Red
 Shape = HeadArms
 Category = Mirage
 Pokedex = This Pokémon is frequently used as a Verelan starter Pokémon. It is formed by a Rosesh and Azulin touching.
-Generation = 10
+Generation = 101
 #-------------------------------
 [LAZEN]
 Name = Lazen
@@ -1482,7 +1482,7 @@ Color = Yellow
 Shape = HeadArms
 Category = Neuron
 Pokedex = It isn't very strong on its own, but multiple working together increase in strength exponentially.
-Generation = 10
+Generation = 101
 Evolution = LAZINEUR,HasInParty,LAZEN
 #-------------------------------
 [LAZINEUR]
@@ -1507,7 +1507,7 @@ Color = Yellow
 Shape = HeadArms
 Category = Neuron
 Pokedex = An arbitrary code execution with three connected Lazen caused them to combine into Lazineur.
-Generation = 10
+Generation = 101
 Evolution = LAZITELEN,HasInParty,LAZINEUR
 #-------------------------------
 [LAZITELEN]
@@ -1532,7 +1532,7 @@ Color = Yellow
 Shape = BipedalTail
 Category = Neuron
 Pokedex = Lazitelen is three Lazineur put together, or nine Lazen overall. Its mind is more powerful than almost any other Pokémon's.
-Generation = 10
+Generation = 101
 #-------------------------------
 [PEBBLEAK]
 Name = Pebbleak
@@ -1556,7 +1556,7 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [PEBBLINEER]
 Name = Pebblineer
@@ -1580,7 +1580,7 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [DANGOTAIL]
 Name = Dangotail
@@ -1604,7 +1604,7 @@ Color = Black
 Shape = BipedalTail
 Category = ???
 Pokedex = ???
-Generation = 10
+Generation = 101
 #-------------------------------
 [DANGOMANG]
 Name = Dangomang
@@ -1628,7 +1628,7 @@ Color = Black
 Shape = BipedalTail
 Category = ???
 Pokedex = ???
-Generation = 10
+Generation = 101
 #-------------------------------
 [NECTAHOP]
 Name = Nectahop
@@ -1652,7 +1652,7 @@ Color = Black
 Shape = Multiped
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [OILORDE]
 Name = Oilorde
@@ -1676,7 +1676,7 @@ Color = Black
 Shape = Multiped
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [GINGARA]
 Name = Gingara
@@ -1700,7 +1700,7 @@ Color = Black
 Shape = Quadruped
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [RAYONSIERA]
 Name = Rayonsiera
@@ -1724,7 +1724,7 @@ Color = Black
 Shape = Bipedal
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [CRYSTODE]
 Name = Crystode
@@ -1749,7 +1749,7 @@ Color = White
 Shape = Head
 Category = Geode
 Pokedex = If the colorful filaments making up its body break, they grow back larger and stronger.
-Generation = 10
+Generation = 101
 Flags = InheritFormFromMother
 WildItemUncommon = NORMALGEM
 Evolution = QUARTZLEM,Level,27
@@ -1777,7 +1777,7 @@ Color = White
 Shape = Bipedal
 Category = Geode
 Pokedex = Its crystals, if broken off, are sharp enough to cut the marbled shields of Golurk.
-Generation = 10
+Generation = 101
 Flags = InheritFormFromMother
 WildItemCommon = NORMALGEM
 Evolution = DYODETZA,Trade
@@ -1805,7 +1805,7 @@ Color = White
 Shape = Bipedal
 Category = Geode
 Pokedex = Some compare it to the fictional mobile suits of a popular Johtonian media franchise. It is similarly durable, at least.
-Generation = 10
+Generation = 101
 Flags = InheritFormFromMother
 WildItemCommon = NORMALGEM
 #-------------------------------
@@ -1830,7 +1830,7 @@ Color = Pink
 Shape = Bipedal
 Category = Star
 Pokedex = It is thought to be from another world. It is strictly nocturnal, since it draws its power from the stars.
-Generation = 10
+Generation = 101
 Evolution = STELLAN,Level,27
 #-------------------------------
 [STELLAN]
@@ -1854,7 +1854,7 @@ Color = Pink
 Shape = Bipedal
 Category = Star
 Pokedex = It glows silver during starry nights. Unlike its pre-evolution, Stellan can be active at both day and night, though it still typically sleeps during the day.
-Generation = 10
+Generation = 101
 Evolution = CELESTELL,Level,48
 #-------------------------------
 [CELESTELL]
@@ -1878,7 +1878,7 @@ Color = Pink
 Shape = Bipedal
 Category = Star Reader
 Pokedex = It can predict the future by looking deep into the celestial sphere. Celestell were once said to be advisors to an ancient king.
-Generation = 10
+Generation = 101
 #-------------------------------
 [CROWNDRA]
 Name = Crowndra
@@ -1903,7 +1903,7 @@ Shape = Multiped
 Habitat = Sea
 Category = Brutal Star
 Pokedex = Within the poison sac in its body is a poison so toxic that Pokémon as large as Wailord will still be suffering three days after it first takes effect.
-Generation = 10
+Generation = 101
 WildItemUncommon = POISONBARB
 #-------------------------------
 [CORSALINE]
@@ -1929,7 +1929,7 @@ Shape = HeadArms
 Habitat = Sea
 Category = Coral
 Pokedex = It will regrow any branches that break off its head. People keep particularly beautiful Corsola branches as charms to promote safe childbirth.
-Generation = 10
+Generation = 101
 #-------------------------------
 [RESPLUMA]
 Name = Respluma
@@ -1953,7 +1953,7 @@ Color = Black
 Shape = Winged
 Category = Resplendent
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = KETSAVERA,Level,19
 #-------------------------------
 [KETSAVERA]
@@ -1978,7 +1978,7 @@ Color = Black
 Shape = Winged
 Category = Resplendent
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = LIBERETZAL,Level,39
 #-------------------------------
 [LIBERETZAL]
@@ -2003,7 +2003,7 @@ Color = Black
 Shape = Winged
 Category = Resplendent
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [PAVOFUEGO]
 Name = Pavofuego
@@ -2027,7 +2027,7 @@ Color = Black
 Shape = Winged
 Category = Resplendent
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = ORNIVEN,Level,19
 #-------------------------------
 [ORNIVEN]
@@ -2052,7 +2052,7 @@ Color = Black
 Shape = Winged
 Category = Resplendent
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = CORINAVO,Level,39
 #-------------------------------
 [CORINAVO]
@@ -2077,7 +2077,7 @@ Color = Black
 Shape = Winged
 Category = Resplendent
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [PANHALI]
 Name = Panhali
@@ -2101,7 +2101,7 @@ Color = Black
 Shape = Winged
 Category = Resplendent
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = OSTALEY,Level,19
 #-------------------------------
 [OSTALEY]
@@ -2126,7 +2126,7 @@ Color = Black
 Shape = Winged
 Category = Resplendent
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = OSLAZAR,Level,39
 #-------------------------------
 [OSLAZAR]
@@ -2151,7 +2151,7 @@ Color = Black
 Shape = Winged
 Category = Resplendent
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [SQUIROJO]
 Name = Squirojo
@@ -2175,7 +2175,7 @@ Color = Blue
 Shape = Bipedal
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = SHEAMUNK,Level,16
 #-------------------------------
 [SHEAMUNK]
@@ -2200,7 +2200,7 @@ Color = Blue
 Shape = Bipedal
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [NEKOLEG]
 Name = Nekoleg
@@ -2224,7 +2224,7 @@ Color = Brown
 Shape = BipedalTail
 Category = Undecided
 Pokedex = It often picks up sticks and rocks and the like. It is greatly influenced by its surroundings.
-Generation = 10
+Generation = 101
 Evolution = SERVOLLEY,HoldItem,IRONBALL
 Evolution = TENDERVAL,HoldItem,SWEETHEART
 #-------------------------------
@@ -2250,7 +2250,7 @@ Color = Brown
 Shape = BipedalTail
 Category = Jockey
 Pokedex = It often picks up sticks and rocks and the like. It is greatly influenced by its surroundings.
-Generation = 10
+Generation = 101
 #-------------------------------
 [TENDERVAL]
 Name = Tenderval
@@ -2274,7 +2274,7 @@ Color = Brown
 Shape = BipedalTail
 Category = Love & Care
 Pokedex = It often picks up sticks and rocks and the like. It is greatly influenced by its surroundings.
-Generation = 10
+Generation = 101
 #-------------------------------
 [SUERTESIDE]
 Name = Suerteside
@@ -2298,7 +2298,7 @@ Color = Green
 Shape = Winged
 Category = Lucky Bat
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [CUTERRY]
 Name = Cuterry
@@ -2322,7 +2322,7 @@ Color = Green
 Shape = Winged
 Category = Lucky Bat
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = GOURGERRY,Level,28
 #-------------------------------
 [GOURGERRY]
@@ -2347,7 +2347,7 @@ Color = Green
 Shape = Winged
 Category = Lucky Bat
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [CROCOBARLE]
 Name = Crocobarle
@@ -2371,7 +2371,7 @@ Color = Green
 Shape = Winged
 Category = Lucky Bat
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = CARGODILE,Level,25
 #-------------------------------
 [CARGODILE]
@@ -2396,7 +2396,7 @@ Color = Green
 Shape = Winged
 Category = Lucky Bat
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = CARRIGATER,Level,42
 #-------------------------------
 [CARRIGATER]
@@ -2421,7 +2421,7 @@ Color = Green
 Shape = Winged
 Category = Lucky Bat
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [VOLTYLPH]
 Name = Voltylph
@@ -2444,7 +2444,7 @@ Color = Yellow
 Shape = Bipedal
 Category = Lightning
 Pokedex = Voltylph uses intense thunderbolts that carry a charge of over 25,000 volts. It isn't very safe to have electronic devices around this.
-Generation = 10
+Generation = 101
 Evolution = THUNDIXIE,Happiness
 #-------------------------------
 [THUNDIXIE]
@@ -2468,7 +2468,7 @@ Color = Yellow
 Shape = Bipedal
 Category = Lightning
 Pokedex = Thundixie uses electromagnetism to levitate because its wings are virtually useless. Its thunderbolts are only unmatched by Raikou's.
-Generation = 10
+Generation = 101
 #-------------------------------
 [CATERCELL]
 Name = Catercell
@@ -2492,7 +2492,7 @@ Color = Blue
 Shape = Multiped
 Category = Capacitor
 Pokedex = This Pokémon is often found near power lines. When it has stored a lot of electricity, it will wrap itself in a cocoon.
-Generation = 10
+Generation = 101
 Evolution = DOCKOON,Level,13
 #-------------------------------
 [DOCKOON]
@@ -2517,7 +2517,7 @@ Color = Blue
 Shape = HeadBase
 Category = Capacitor
 Pokedex = This Pokémon is often found near power lines. When it has stored a lot of electricity, it will wrap itself in a cocoon.
-Generation = 10
+Generation = 101
 Evolution = SWALLECTRO,Level,33
 #-------------------------------
 [SWALLECTRO]
@@ -2542,7 +2542,7 @@ Color = Blue
 Shape = MultiWinged
 Category = Capacitor
 Pokedex = This Pokémon is often found near power lines. When it has stored a lot of electricity, it will wrap itself in a cocoon.
-Generation = 10
+Generation = 101
 #-------------------------------
 [ASHRUSH]
 Name = Ashrush
@@ -2590,7 +2590,7 @@ Color = Red
 Shape = BipedalTail
 Category = Passion
 Pokedex = Emberace and its Trainer are linked so that both can sense each other's emotions, which causes great mental stress for any Trainer that wants to use it.
-Generation = 10
+Generation = 101
 Evolution = INFERNOVA,Level,60
 #-------------------------------
 [INFERNOVA]
@@ -2615,7 +2615,7 @@ Color = Red
 Shape = BipedalTail
 Category = Passion
 Pokedex = It takes a long time to get an Infernova, but it is also one of the most powerful Fire-types and Pokémon in general, so many try to obtain one.
-Generation = 10
+Generation = 101
 #-------------------------------
 [BAARAWL]
 Name = Baarawl
@@ -2639,7 +2639,7 @@ Color = Brown
 Shape = BipedalTail
 Category = Sheep
 Pokedex = Its muscles are packed with energy. Males compete to see who has the bigger muscles.
-Generation = 10
+Generation = 101
 Evolution = FEWED,Level,30
 #-------------------------------
 [FEWED]
@@ -2664,7 +2664,7 @@ Color = Brown
 Shape = BipedalTail
 Category = Sheep
 Pokedex = Its muscles are packed with energy. Males compete to see who has the bigger muscles.
-Generation = 10
+Generation = 101
 Evolution = RAMVALRY,Trade
 #-------------------------------
 [RAMVALRY]
@@ -2689,7 +2689,7 @@ Color = Brown
 Shape = BipedalTail
 Category = Sheep
 Pokedex = Its muscles are packed with energy. Males compete to see who has the bigger muscles.
-Generation = 10
+Generation = 101
 #-------------------------------
 [PARAGLYPH]
 Name = Paraglyph
@@ -2715,7 +2715,7 @@ Shape = Winged
 Habitat = Cave
 Category = Avianoid
 Pokedex = Psychic power allows these Pokémon to fly. Some say they were the guardians of an ancient city. Others say they were the guardians' emissaries.
-Generation = 10
+Generation = 101
 Evolution = SIGILYPH,Item,SHINYSTONE
 #-------------------------------
 [DULECHE]
@@ -2740,7 +2740,7 @@ Color = Red
 Shape = Bipedal
 Category = Passion
 Pokedex = The source of its fire is the bell-like orb on its neck. It is very sensitive to its Trainer's emotions.
-Generation = 10
+Generation = 101
 Evolution = NACHIIKA,Item,FIRESTONE
 #-------------------------------
 [NACHIIKA]
@@ -2765,7 +2765,7 @@ Color = Red
 Shape = Bipedal
 Category = Passion
 Pokedex = Emberace and its Trainer are linked so that both can sense each other's emotions, which causes great mental stress for any Trainer that wants to use it.
-Generation = 10
+Generation = 101
 #-------------------------------
 [BRANITO]
 Name = Branito
@@ -2789,7 +2789,7 @@ Color = Red
 Shape = Bipedal
 Category = Passion
 Pokedex = The source of its fire is the bell-like orb on its neck. It is very sensitive to its Trainer's emotions.
-Generation = 10
+Generation = 101
 Evolution = DECIDOMEYA,Item,LEAFSTONE
 #-------------------------------
 [DECIDOMEYA]
@@ -2814,7 +2814,7 @@ Color = Red
 Shape = Bipedal
 Category = Passion
 Pokedex = The source of its fire is the bell-like orb on its neck. It is very sensitive to its Trainer's emotions.
-Generation = 10
+Generation = 101
 #-------------------------------
 [NEPETHENA]
 Name = Nepethena
@@ -2838,7 +2838,7 @@ Color = Red
 Shape = Bipedal
 Category = Passion
 Pokedex = The source of its fire is the bell-like orb on its neck. It is very sensitive to its Trainer's emotions.
-Generation = 10
+Generation = 101
 Evolution = NEKYRITAN,Level,30
 #-------------------------------
 [NEKYRITAN]
@@ -2863,7 +2863,7 @@ Color = Green
 Shape = Bipedal
 Category = Passion
 Pokedex = The source of its fire is the bell-like orb on its neck. It is very sensitive to its Trainer's emotions.
-Generation = 10
+Generation = 101
 #-------------------------------
 [TARULA]
 Name = Tarula
@@ -2887,7 +2887,7 @@ Color = Red
 Shape = Insectoid
 Category = Regal Spider
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = TAROYAL,Level,15
 #-------------------------------
 [TAROYAL]
@@ -2912,7 +2912,7 @@ Color = Red
 Shape = Insectoid
 Category = Regal Spider
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = TARONARCH,Level,30
 #-------------------------------
 [TARONARCH]
@@ -2937,7 +2937,7 @@ Color = Red
 Shape = Insectoid
 Category = Regal Spider
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [ZOKURRA]
 Name = Zokurra
@@ -2962,7 +2962,7 @@ Color = Yellow
 Shape = Quadruped
 Category = Cherry Fox
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = SAKUMARGA,Level,28
 #-------------------------------
 [SAKUMARGA]
@@ -2988,7 +2988,7 @@ Color = Yellow
 Shape = Quadruped
 Category = Blossom Fox
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [YUSAGIKI]
 Name = Yusagiki
@@ -3013,7 +3013,7 @@ Color = White
 Shape = Quadruped
 Category = Snow Bunny
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = YUCONNIT,Level,28
 #-------------------------------
 [YUCONNIT]
@@ -3039,7 +3039,7 @@ Color = White
 Shape = Quadruped
 Category = Snow Candle
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [NARUCHU]
 Name = Naruchu
@@ -3064,7 +3064,7 @@ Shape = BipedalTail
 Habitat = Forest
 Category = Mouse
 Pokedex = If its electric pouches run empty, it raises its tail to gather electricity from the atmosphere.
-Generation = 10
+Generation = 101
 #-------------------------------
 [IMPIKA]
 Name = Impika
@@ -3088,7 +3088,7 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [PIKANDINE]
 Name = Pikandine
@@ -3112,7 +3112,7 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [VULURSE]
 Name = Vulurse
@@ -3135,7 +3135,7 @@ Color = Gray
 Shape = BipedalTail
 Category = Medicine Fox
 Pokedex = Its healing abilities are not very powerful yet, but it is learning. It is resistant to many diseases.
-Generation = 10
+Generation = 101
 Evolution = VIXECARY,Level,40
 #-------------------------------
 [VIXECARY]
@@ -3146,7 +3146,7 @@ GenderRatio = Female50Percent
 GrowthRate = Medium
 BaseExp = 174
 EVs = HP,1,SPECIAL_DEFENSE,1
-CatchRate = 90
+CatchRate = 40
 Happiness = 70
 Abilities = ANTIBODY
 Moves = 1,TOXIC,1,MOONBLAST,1,VENOSHOCK,1,DAZZLINGGLEAM,40,OVERDOSE
@@ -3159,7 +3159,7 @@ Color = Gray
 Shape = BipedalTail
 Category = Medicine Fox
 Pokedex = It is commonly used throughout Syraik for its healing abilities, but these abilities are equally capable of causing harm.
-Generation = 10
+Generation = 101
 #-------------------------------
 [RAFFLEVER]
 Name = Rafflever
@@ -3183,7 +3183,7 @@ Color = Black
 Shape = HeadBase
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = ZOMBILUME,HoldItem,STICKYBARB
 #-------------------------------
 [ZOMBILUME]
@@ -3208,7 +3208,7 @@ Color = Black
 Shape = HeadBase
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [LAVALOTH]
 Name = Lavaloth
@@ -3232,7 +3232,7 @@ Color = Black
 Shape = Quadruped
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = DRIFTLOTH,Item,FIRESTONE
 #-------------------------------
 [DRIFTLOTH]
@@ -3257,7 +3257,7 @@ Color = Black
 Shape = Quadruped
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [COBRALF]
 Name = Cobralf
@@ -3282,7 +3282,7 @@ Color = Black
 Shape = MultiWinged
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [BOMBALAN]
 Name = Bombalan
@@ -3306,7 +3306,7 @@ Color = Black
 Shape = MultiWinged
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [SERTUPINE]
 Name = Sertupine
@@ -3329,7 +3329,7 @@ Color = Green
 Shape = Quadruped
 Category = Desert-Dweller
 Pokedex = It appears to be an oversize hedgehog, but since it is primarily green, and lives in the desert, nobody is fooled.
-Generation = 10
+Generation = 101
 Evolution = SPIKATUS,Level,28
 #-------------------------------
 [SPIKATUS]
@@ -3354,7 +3354,7 @@ Color = Green
 Shape = BipedalTail
 Category = Desert-Dweller
 Pokedex = This Pokémon resembles a cactus, though its social attitudes are more reminiscent of its catlike origins. Orrenian souvenirs often depict it.
-Generation = 10
+Generation = 101
 #-------------------------------
 [TUFFLOPOD]
 Name = Tufflopod
@@ -3378,7 +3378,7 @@ Color = Green
 Shape = Multiped
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = BEDROCTO,Level,25
 #-------------------------------
 [BEDROCTO]
@@ -3403,7 +3403,7 @@ Color = Green
 Shape = Multiped
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [CONDISIMOR]
 Name = Condísimor
@@ -3427,7 +3427,7 @@ Color = Red
 Shape = Winged
 Category = Superhero
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [VILLYIAO]
 Name = Villyião
@@ -3451,7 +3451,7 @@ Color = Black
 Shape = Winged
 Category = Supervillain
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [APHIGOON]
 Name = Aphigoon
@@ -3476,7 +3476,7 @@ Shape = Insectoid
 Habitat = Grassland
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = MAPHIDIA,Level,24
 #-------------------------------
 [MAPHIDIA]
@@ -3502,7 +3502,7 @@ Shape = Insectoid
 Habitat = Grassland
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [PELATENG]
 Name = Pelateng
@@ -3527,7 +3527,7 @@ Shape = Serpentine
 Habitat = Sea
 Category = Angel Slug
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = GLAUCUSHEN,Level,25
 #-------------------------------
 [GLAUCUSHEN]
@@ -3553,7 +3553,7 @@ Shape = Serpentine
 Habitat = Sea
 Category = Angel Slug
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = NEMATEILOON,Level,45
 #-------------------------------
 [NEMATEILOON]
@@ -3579,7 +3579,7 @@ Shape = Serpentine
 Habitat = Sea
 Category = Angel Slug
 Pokedex = Nemateiloon is a highly resistant Pokémon - its gooey skin makes landing blows quite difficult. This allows it to safely feed on Joushrimp in the ocean.
-Generation = 10
+Generation = 101
 #-------------------------------
 [GEMIT]
 Name = Gemit
@@ -3603,7 +3603,7 @@ Shape = Head
 Habitat = RoughTerrain
 Category = Comet
 Pokedex = It flies amongst the clouds. Its glowing mist tail makes it appear like a shooting star.
-Generation = 10
+Generation = 101
 Evolution = GEMILLITE,Level,20
 #-------------------------------
 [GEMILLITE]
@@ -3628,7 +3628,7 @@ Shape = MultiBody
 Habitat = RoughTerrain
 Category = Comet
 Pokedex = The mist it gives off glows, making it appear like a shooting star.
-Generation = 10
+Generation = 101
 Evolution = GEMALLEN,Trade
 #-------------------------------
 [GEMALLEN]
@@ -3653,7 +3653,7 @@ Shape = MultiBody
 Habitat = RoughTerrain
 Category = Comet
 Pokedex = The mist it gives off glows, making it appear like a shooting star.
-Generation = 10
+Generation = 101
 #-------------------------------
 [ASTORE]
 Name = Astore
@@ -3678,7 +3678,7 @@ Shape = HeadBase
 Habitat = WatersEdge
 Category = Poisondew
 Pokedex = The droplets on its cap are laced with a strong poison. This provides it some defense in its shallow-water environment.
-Generation = 10
+Generation = 101
 Flags = u
 Evolution = COSMINAGE,Level,48
 #-------------------------------
@@ -3705,7 +3705,7 @@ Shape = HeadBase
 Habitat = WatersEdge
 Category = Poisondew
 Pokedex = The mist it gives off glows, making it appear like a shooting star.
-Generation = 10
+Generation = 101
 Flags = u
 #-------------------------------
 [POORTYP]
@@ -3731,7 +3731,7 @@ Shape = HeadBase
 Habitat = Sea
 Category = Moon Jelly
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = COMETTLE,Ninjask,28
 Evolution = REMOTTLE,Shedinja,28
 #-------------------------------
@@ -3758,7 +3758,7 @@ Shape = HeadBase
 Habitat = Sea
 Category = Moon Jelly
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [REMOTTLE]
 Name = Remottle
@@ -3783,7 +3783,7 @@ Shape = HeadBase
 Habitat = Sea
 Category = Moon Jelly
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [GOTEEMA]
 Name = Goteema
@@ -3807,7 +3807,7 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = MUSTACHIRIN,Level,35
 #-------------------------------
 [MUSTACHIRIN]
@@ -3832,7 +3832,7 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [GLOWMEYE]
 Name = Glowmeye
@@ -3856,7 +3856,7 @@ Color = Black
 Shape = Insectoid
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = FATAFLY,Level,35
 #-------------------------------
 [FATAFLY]
@@ -3881,7 +3881,7 @@ Color = Black
 Shape = MultiWinged
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [SKETCHADET]
 Name = Sketchadet
@@ -3905,7 +3905,7 @@ Color = Black
 Shape = Bipedal
 Category = Strategist
 Pokedex = This Pokémon, thought to be an alien, is made almost entirely of ink. It seems very soldier-like.
-Generation = 10
+Generation = 101
 Evolution = GUERRAPEL,Level,35
 #-------------------------------
 [GUERRAPEL]
@@ -3930,7 +3930,7 @@ Color = Black
 Shape = Bipedal
 Category = Tactician
 Pokedex = This Pokémon, thought to be an alien, is made almost entirely of ink. It seems very soldier-like.
-Generation = 10
+Generation = 101
 #-------------------------------
 [SOLUNAI]
 Name = Solunai
@@ -3956,7 +3956,7 @@ Shape = Quadruped
 Habitat = Mountain
 Category = Disaster
 Pokedex = Swift as the wind, Absol races through fields and mountains. Its curved, bow-like horn is acutely sensitive to the warning signs of natural disasters.
-Generation = 10
+Generation = 101
 #-------------------------------
 [TERRANINE]
 Name = Terranine
@@ -3980,7 +3980,7 @@ Color = Black
 Shape = Bipedal
 Category = Strategist
 Pokedex = This Pokémon, thought to be an alien, is made almost entirely of ink. It seems very soldier-like.
-Generation = 10
+Generation = 101
 Evolution = PROTECOTTA,Level,35
 #-------------------------------
 [PROTECOTTA]
@@ -4005,7 +4005,7 @@ Color = Black
 Shape = Bipedal
 Category = Tactician
 Pokedex = This Pokémon, thought to be an alien, is made almost entirely of ink. It seems very soldier-like.
-Generation = 10
+Generation = 101
 #-------------------------------
 [SUPAYIMP]
 Name = Supayimp
@@ -4029,7 +4029,7 @@ Color = Black
 Shape = Bipedal
 Category = Spirit
 Pokedex = This Pokémon, thought to be an alien, is made almost entirely of ink. It seems very soldier-like.
-Generation = 10
+Generation = 101
 Evolution = SUPAYABUS,LevelFemale,40
 Evolution = SUPAIZARD,Item,KNOWLEDGERUNE
 #-------------------------------
@@ -4055,7 +4055,7 @@ Color = Black
 Shape = Bipedal
 Category = Spirit
 Pokedex = This Pokémon, thought to be an alien, is made almost entirely of ink. It seems very soldier-like.
-Generation = 10
+Generation = 101
 #-------------------------------
 [SUPAIZARD]
 Name = Supaizard
@@ -4079,7 +4079,7 @@ Color = Black
 Shape = Bipedal
 Category = Spirit
 Pokedex = This Pokémon, thought to be an alien, is made almost entirely of ink. It seems very soldier-like.
-Generation = 10
+Generation = 101
 #-------------------------------
 [BERMUREI]
 Name = Bermurei
@@ -4103,7 +4103,7 @@ Color = Blue
 Shape = Serpentine
 Category = Sea Lantern
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [MEMENTA]
 Name = Mementa
@@ -4126,7 +4126,7 @@ Color = Purple
 Shape = HeadBase
 Category = Memory
 Pokedex = Mementa can possess other creatures like a Ghost-type Pokémon, but the memories of the thing it's possessing are added to Mementa's own memories, unlike a normal Ghost-type.
-Generation = 10
+Generation = 101
 Evolution = MEMENADA,Level,40
 #-------------------------------
 [MEMENADA]
@@ -4150,7 +4150,7 @@ Color = Purple
 Shape = HeadBase
 Category = Memory
 Pokedex = Memenada's new powers include the ability to control the memories of what it's possessing. However, gaining these powers causes them to backfire, erasing all of Memenada's previous memories.
-Generation = 10
+Generation = 101
 #-------------------------------
 [SACRASOOT]
 Name = Sacrasoot
@@ -4174,7 +4174,7 @@ Color = Black
 Shape = Bipedal
 Category = Sacrament
 Pokedex = An ancient Pokémon thought to have been victims of an old war, Sacrasoot is made mostly of smoke and fire.
-Generation = 10
+Generation = 101
 #-------------------------------
 [KOMBLANCHE]
 Name = Komblanche
@@ -4198,7 +4198,7 @@ Color = Gray
 Shape = Quadruped
 Category = Wilted
 Pokedex = This spirit-like Pokémon is mentioned in several legends, but its existence was only confirmed 75 years ago.
-Generation = 10
+Generation = 101
 #-------------------------------
 [MUNSTAR]
 Name = Munstar
@@ -4222,7 +4222,7 @@ Color = Black
 Shape = HeadArms
 Category = Shooting Star
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [TEMPERMETAL]
 Name = Tempermetal
@@ -4247,7 +4247,7 @@ Color = Gray
 Shape = Quadruped
 Category = Tempered
 Pokedex = It can make itself virtually undetectable to hide from others, which it does frequently because it isn't very physically powerful.
-Generation = 10
+Generation = 101
 Evolution = CONVECCOON,Item,FIRESTONE
 Evolution = MARSUMPRESS,Item,ICESTONE
 #-------------------------------
@@ -4273,7 +4273,7 @@ Color = Gray
 Shape = Quadruped
 Category = Tropical
 Pokedex = It can make itself virtually undetectable to sneak up on unsuspecting Trainers, and uses this ability in battle in combination with its speed.
-Generation = 10
+Generation = 101
 #-------------------------------
 [MARSUMPRESS]
 Name = Marsumpress
@@ -4297,7 +4297,7 @@ Color = Gray
 Shape = Quadruped
 Category = Arctic
 Pokedex = It can make itself virtually undetectable to sneak up on unsuspecting Trainers, and uses this ability in battle in combination with its speed.
-Generation = 10
+Generation = 101
 #-------------------------------
 [BEBEGET]
 Name = Bebeget
@@ -4321,7 +4321,7 @@ Color = Black
 Shape = Quadruped
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = PYRINUGET,Happiness
 #-------------------------------
 [PYRINUGET]
@@ -4346,7 +4346,7 @@ Color = Black
 Shape = Quadruped
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [KNITRITON]
 Name = Knitriton
@@ -4370,7 +4370,7 @@ Color = Black
 Shape = Bipedal
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [PITAYKIT]
 Name = Pitaykit
@@ -4394,7 +4394,7 @@ Color = Black
 Shape = Bipedal
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = DRACOHAYA,Level,44
 #-------------------------------
 [DRACOHAYA]
@@ -4419,7 +4419,7 @@ Color = Black
 Shape = Bipedal
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [AURINTI]
 Name = Aurinti
@@ -4443,7 +4443,7 @@ Color = Black
 Shape = Bipedal
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [ARGEILLA]
 Name = Argeilla
@@ -4467,7 +4467,7 @@ Color = Black
 Shape = Bipedal
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [LUCIDEON]
 Name = Lucideon
@@ -4491,7 +4491,7 @@ Color = Brown
 Shape = Quadruped
 Category = Evolution
 Pokedex = Lucideon is so rare that most people consider it a myth. It typically leads a small group of Eevee and/or its evolutions.
-Generation = 10
+Generation = 101
 Flags = HasGenderedSprites
 #-------------------------------
 [SNAKUNSEN]
@@ -4516,7 +4516,7 @@ Color = Purple
 Shape = Serpentine
 Category = Viper
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = LITOXIN,Level,35
 #-------------------------------
 [LITOXIN]
@@ -4541,7 +4541,7 @@ Color = Purple
 Shape = Serpentine
 Category = Viper
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = SOLVENAGA,Level,60
 #-------------------------------
 [SOLVENAGA]
@@ -4566,7 +4566,7 @@ Color = Purple
 Shape = Serpentine
 Category = Reactor
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [DIABRAM]
 Name = Diabram
@@ -4590,7 +4590,7 @@ Color = Black
 Shape = Quadruped
 Category = Longhorn
 Pokedex = The tips of its horns glow when it is scared. An ancient myth tells of a woman who befriended one and got sent to the underworld as a consequence.
-Generation = 10
+Generation = 101
 Evolution = BRAYDES,Level,38
 #-------------------------------
 [BRAYDES]
@@ -4615,7 +4615,7 @@ Color = Black
 Shape = Quadruped
 Category = Longhorn
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Evolution = BAAZELUSK,Level,53
 #-------------------------------
 [BAAZELUSK]
@@ -4640,7 +4640,7 @@ Color = Black
 Shape = Quadruped
 Category = Cerberus
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 #-------------------------------
 [PARTAZURA]
 Name = Partazura
@@ -4664,7 +4664,7 @@ Color = Black
 Shape = BipedalTail
 Category = Heroic
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Flags = Legendary
 #-------------------------------
 [DAROSEIKU]
@@ -4689,7 +4689,7 @@ Color = Black
 Shape = HeadArms
 Category = Mentor
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Flags = Legendary
 #-------------------------------
 [BERANTEGON]
@@ -4714,7 +4714,7 @@ Color = Black
 Shape = Serpentine
 Category = Wicked
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Flags = Legendary
 #-------------------------------
 [DIURAGON]
@@ -4738,7 +4738,7 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Flags = Legendary
 #-------------------------------
 [VERNACHT]
@@ -4762,7 +4762,7 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Flags = Legendary
 #-------------------------------
 [CROWZOATCH]
@@ -4786,7 +4786,7 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Flags = Legendary
 #-------------------------------
 [AXOBALTL]
@@ -4810,7 +4810,7 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Flags = Legendary
 #-------------------------------
 [ITZAIMAN]
@@ -4834,7 +4834,7 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Flags = Legendary
 #-------------------------------
 [CHUPANIDA]
@@ -4858,7 +4858,7 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Flags = Legendary
 #-------------------------------
 [TENJIAU]
@@ -4883,7 +4883,7 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Flags = Legendary
 #-------------------------------
 [YATAHAGI]
@@ -4908,7 +4908,7 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Flags = Legendary
 #-------------------------------
 [DIWACUCHA]
@@ -4932,7 +4932,7 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Flags = Mythical
 #-------------------------------
 [KACHILIDA]
@@ -4957,7 +4957,7 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Flags = Mythical
 #-------------------------------
 [NEMESETA]
@@ -4981,5 +4981,888 @@ Color = Black
 Shape = BipedalTail
 Category = Placeholder
 Pokedex = Filler text
-Generation = 10
+Generation = 101
 Flags = Mythical
+#-------------------------------
+[SALSEED]
+Name = Salseed
+Types = GRASS
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = GRENEWT,Level,18
+#-------------------------------
+[GRENEWT]
+Name = Grenewt
+Types = GRASS,ELECTRIC
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = BOMBOAD,Level,36
+#-------------------------------
+[BOMBOAD]
+Name = Bomboad
+Types = GRASS,ELECTRIC
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+#-------------------------------
+[SKUFRA]
+Name = Skufra
+Types = FIRE
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = IGNIKUS,Level,17
+#-------------------------------
+[IGNIKUS]
+Name = Ignikus
+Types = FIRE,POISON
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = METHANUSK,Level,37
+#-------------------------------
+[METHANUSK]
+Name = Methanusk
+Types = FIRE,POISON
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+#-------------------------------
+[AQUINEK]
+Name = Aquinek
+Types = WATER
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = SPADESKIN,Level,19
+#-------------------------------
+[SPADESKIN]
+Name = Spadeskin
+Types = WATER,ROCK
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = MINERPENT,Level,35
+#-------------------------------
+[MINERPENT]
+Name = Minerpent
+Types = WATER,ROCK
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+#-------------------------------
+[FLIAWK]
+Name = Fliawk
+Types = NORMAL,FLYING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = FAWKIRON,Level,14
+#-------------------------------
+[FAWKIRON]
+Name = Fawkiron
+Types = STEEL,FLYING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = PERESTEEL,Level,38
+#-------------------------------
+[PERESTEEL]
+Name = Peresteel
+Types = STEEL,FLYING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+#-------------------------------
+[HORNHARE]
+Name = Hornhare
+Types = NORMAL
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = SPIKALOP,Level,20
+#-------------------------------
+[SPIKALOP]
+Name = Spikalop
+Types = NORMAL
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+#-------------------------------
+[MEOWDAME]
+Name = Meowdame
+Types = NORMAL
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+#-------------------------------
+[MISTLEPILL]
+Name = Mistlepill
+Types = BUG
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = CUCOREAF,Level,10
+#-------------------------------
+[CUCOREAF]
+Name = Cucoreaf
+Types = BUG,GRASS
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = BUTTEREATH,Level,16
+#-------------------------------
+[BUTTEREATH]
+Name = Buttereath
+Types = BUG,GRASS
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+#-------------------------------
+[VULCANTERN]
+Name = Vulcantern
+Types = BUG,FIRE
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+#-------------------------------
+[WEATANG]
+Name = Weatang
+Types = WATER
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = FUERORY,Level,20
+#-------------------------------
+[FUERORY]
+Name = Fuerory
+Types = WATER
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+#-------------------------------
+[GROUNCY]
+Name = Grouncy
+Types = GROUND
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = REBOUNTY,Level,31
+#-------------------------------
+[REBOUNTY]
+Name = Rebounty
+Types = GROUND,CELESTIAL
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = RECALITTY,Item,MOONSTONE
+#-------------------------------
+[RECALITTY]
+Name = Recalitty
+Types = GROUND,CELESTIAL
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+#-------------------------------
+[VARUNN]
+Name = Varunn
+Types = FIGHTING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = VARUBIT,Level,31
+#-------------------------------
+[VARUBIT]
+Name = Varubit
+Types = FIGHTING,FAIRY
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+#-------------------------------
+[PUNCHXER]
+Name = Punchxer
+Types = FIGHTING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+#-------------------------------
+[RAGIHUAHUA]
+Name = Ragihuahua
+Types = FIGHTING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+#-------------------------------
+[GLADIBLUB]
+Name = Gladiblub
+Types = WATER
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = XIPHENGAR,Level,20
+#-------------------------------
+[XIPHENGAR]
+Name = Xiphengar
+Types = FIGHTING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+#-------------------------------
+[KUIRUSHI]
+Name = Kuirushi
+Types = ELECTRIC,FIRE
+BaseStats = 72,72,90,65,99,54
+GenderRatio = Female50Percent
+GrowthRate = Fast
+BaseExp = 150
+EVs = DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = FLASHFIRE,STATIC
+HiddenAbilities = FLAMEBODY
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 3840
+Height = 0.5
+Weight = 8.9
+Color = Brown
+Shape = BipedalTail
+Category = Fire Dart
+Pokedex = Filler text
+Generation = 102
+#-------------------------------
+[AMORDOVE]
+Name = Amordove
+Types = FAIRY,FLYING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = SWEETWAN,Level,25
+#-------------------------------
+[SWEETWAN]
+Name = Sweetwan
+Types = FAIRY,FLYING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+#-------------------------------
+[BETELUP]
+Name = Betelup
+Types = FIRE,CELESTIAL
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = CORIOTE,Level,17
+#-------------------------------
+[CORIOTE]
+Name = Coriote
+Types = FIRE,CELESTIAL
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102
+Evolution = LUPELATIO,Level,37
+#-------------------------------
+[LUPELATIO]
+Name = Lupelatio
+Types = FIRE,CELESTIAL
+BaseStats = 60,60,60,60,60,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 150
+EVs = HP,1,DEFENSE,1,SPECIAL_DEFENSE,1
+CatchRate = 90
+Happiness = 70
+Abilities = CUTECHARM
+HiddenAbilities = KEENEYE
+Moves = 1,POUND,1,GROWL
+TutorMoves = TERABLAST
+EggGroups = Undiscovered
+HatchSteps = 25600
+Height = 0.5
+Weight = 5.0
+Color = Black
+Shape = Winged
+Category = Resplendent
+Pokedex = Filler text
+Generation = 102

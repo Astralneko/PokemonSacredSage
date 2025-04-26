@@ -159,7 +159,6 @@ class PokemonMart_Scene
       Console.echoln_li _INTL("Your Item list is too long, the following items won't be shown and used: #{mergeArrayToString(@stock[18..-1])}")
       @stock.slice!(18..-1)
     end
-    path = "Graphics/Items/"
     dcols = 6
     @scols = @stock.length >= dcols ? dcols : @stock.length
     @srows = @scols == dcols ? (@stock.length.to_f / @scols).ceil : 1
@@ -175,14 +174,14 @@ class PokemonMart_Scene
       for scol in 1..@scols
         break if item_index >= @stock.length # Stop if all items are drawn
         item = @stock[item_index]
-        itemImage = GameData::Item.try_get(item).id.to_s
+        itemImage = GameData::Item.icon_filename(item)
         # Draw the item according to its irows and icols
         for row in 0...irows
           for col in 0...icols
             if soldOut && soldOut.any? { |hash| hash[:name] == item }
-              pbDrawImagePositions(@sprites["shelfSoldOutItems"].bitmap, [["#{path}#{itemImage}", x + (49 * col), y + (12 * row)]])
+              pbDrawImagePositions(@sprites["shelfSoldOutItems"].bitmap, [[itemImage, x + (49 * col), y + (12 * row)]])
             else
-              pbDrawImagePositions(@sprites["shelfItems"].bitmap, [["#{path}#{itemImage}", x + (49 * col), y + (12 * row)]])
+              pbDrawImagePositions(@sprites["shelfItems"].bitmap, [[itemImage, x + (49 * col), y + (12 * row)]])
             end
           end
         end

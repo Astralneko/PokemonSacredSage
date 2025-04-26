@@ -1,0 +1,199 @@
+🎵 Rhythm Dance Minigame Documentation
+📥 Installation Guide
+Required Files
+
+Graphics/
+└── Minigame/
+    ├── arrow_0.png (Up)
+    ├── arrow_1.png (Down)
+    ├── arrow_2.png (Left)
+    ├── arrow_3.png (Right)
+    ├── target.png
+    └── bg_main.png
+
+Audio/
+└── BGM/ (for background music)
+Installation Steps
+Copy all script files to your project's Scripts folder
+
+Add the required graphics to Graphics/Minigame/
+
+Place your music files in Audio/BGM/
+
+⚠️ Warning: Verify filenames to avoid overwriting existing files!
+
+⚙️ Configuration
+System Variables
+Type	ID	Purpose
+Switch	90	Forced minigame exit flag
+Variable	35	Accuracy percentage (0-100)
+Variable	36	Infinite mode high score
+Variable	37	Survival time record (Mode 1)
+Variable	38	Survival time record (Mode 2)
+Initialization
+
+
+pbDanceGame(sequence_id, bpm)
+# Example: pbDanceGame(1, 120) # 120 BPM = normal speed
+🎮 Game Modes
+1️⃣ Normal Mode
+Fixed arrow patterns
+
+Accuracy-based rewards
+
+
+1 => {
+  name: "Basic Routine",
+  moves: [:up, :down, :left, :right],
+  bgm: "Audio/BGM/Battle",
+  reward: {
+    50 => { type: :item, id: :POTION, quantity: 1 },
+    75 => { type: :money, amount: 500 }
+  }
+}
+2️⃣ Infinite Mode
+Endless random arrows
+
+Tracks high score in Variable 36
+
+
+4 => {
+  name: "Infinite Challenge",
+  moves: [], # Auto-generated
+  bgm: "Audio/BGM/Gym",
+  mode: :infinite
+}
+3️⃣ Survival Mode
+Timed challenge with lives
+
+Tracks best time in Variables 37/38
+
+
+5 => {
+  name: "Survival",
+  moves: [], # Random patterns
+  bgm: "Audio/BGM/Gym",
+  reward: {
+    10 => { type: :item, id: :POTION, quantity: 1 }
+  },
+  mode: :survival,
+  survival_id: 1,
+  lives: 3
+}
+🛠️ Customization
+Graphic Replacement
+Replace these files in Graphics/Minigame/:
+
+arrow_0.png to arrow_3.png (directional arrows)
+
+target.png (hit zone)
+
+bg_main.png (background)
+
+Difficulty Adjustment
+BPM	Difficulty	Notes
+60-80	Very Easy	Good for beginners
+120	Normal	Default speed
+160+	Hard	Challenging for experts
+
+Advanced Configuration Example
+
+7 => {
+  name: "Expert Routine",
+  moves: complex_pattern,
+  bgm: "Audio/BGM/BossBattle",
+  reward: {
+    80 => { type: :item, id: :RARECANDY, quantity: 1 },
+    95 => { type: :item, id: :MASTERBALL, quantity: 1 }
+  },
+  lives: 1,
+  mode: :survival,
+  survival_id: 3
+}
+🚨 Troubleshooting
+Common Issues
+Problem	Solution
+Music not playing	Verify file path and format
+Missing graphics	Check Graphics/Minigame/ folder
+Speed doubling on reset	Close and reopen game (F12 bug)
+"Sequence not found"	Verify sequence ID exists
+Error Messages
+"Undefined method": Script not installed correctly
+
+"Invalid ID": Sequence doesn't exist in configuration
+
+Graphical glitches: Verify image dimensions and formats
+
+❓ FAQ
+Q: How do I check player records?
+
+pbShowInfiniteScore()  # Shows infinite mode high score
+pbSurvivalTimeRecord(1) # Shows survival time for mode 1
+Q: Can I use different arrow graphics?
+A: Yes! Maintain the same filenames but replace the PNG files
+
+Q: How to make the game easier?
+A: Use lower BPM values (60-100 range)
+
+Q: Can I add more survival modes?
+A: Yes! Add new entries with unique survival_id values
+
+🎮 Event Integration Example
+Page 1 (Trigger)
+
+@>Control Self Switch: A = ON  
+@>Conditional Branch: Script: pbDanceGame(3, 120)
+Page 2 (Rewards - Autorun)
+
+@>Conditional Branch: Variable [0035] >= 0
+  @>Text: Your accuracy: \v[35]%!
+  
+  @>Conditional Branch: Variable [0035] >= 90
+    @>Text: Perfect! Reward: Full Restore
+    @>Give Item: Full Restore
+    
+  : Else
+    @>Conditional Branch: Variable [0035] >= 70
+      @>Text: Great! Reward: Rare Candy
+      @>Give Item: Rare Candy
+      
+    : Else
+      @>Text: Good effort! Reward: Potion
+      @>Give Item: Potion
+    : Branch End
+  : Branch End
+  
+  @>Control Variables: [0035] = 0
+: Else
+  @>Text: You quit early!
+: Branch End
+
+@>Control Self Switch: A = OFF
+@>Control Switches: [0090] = OFF
+
+#===============================================================================
+❓ How do I find out the bpm?
+
+You can use:
+ https://vocalremover.org/pt/key-bpm-finder 
+
+to identify the bpm of the song, but ATTENTION: it needs to be an mp4 file for the site to identify the bpm, so I recommend copying the music file you want to find out the bpm for, converting it to .mp4 and then uploading it to the site for it to identify.
+
+
+#===============================================================================
+
+📜 Credits
+
+Script: 
+Rafahbit > https://eeveeexpo.com/members/7537/
+
+honorable mention:
+-FL- > https://eeveeexpo.com/members/14189/ 
+
+Please, if you use the graphics present in the file download, don't forget to address the credits to:
+
+graphics UI > httpsopengameart.orgusersbuch
+
+graphics Bg  >  <a href='https://pngtree.com/freebackground/retro-cyberpunk-style-80s-sci-fi-futuristic-with-laser-grid-background_1177895.html'>free background photos from pngtree.com/</a> 
+
+graphics Keys > https://egordorichev.itch.io/key-set

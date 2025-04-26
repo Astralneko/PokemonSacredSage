@@ -453,6 +453,49 @@ class Battle::Battler
 end
 
 #===============================================================================
+# Trainer battle call that has the player select a number of Pokemon for battle.
+#===============================================================================
+class TrainerBattle
+  def self.select_start(size, *args)
+	size = 1 if size < 1
+	size = Settings::MAX_PARTY_SIZE if size > Settings::MAX_PARTY_SIZE
+    gender = (args[0].is_a?(NPCTrainer)) ? args[0].gender : GameData::TrainerType.get(args[0]).gender
+	g = (gender == 0) ? "\\b" : (gender == 1) ? "\\r" : ""
+    if $player.able_pokemon_count < size
+      pbMessage(_INTL("#{g}You don't have enough Pokémon in your party that can participate..."))
+      pbMessage(_INTL("#{g}Come back when you have enough Pokémon to battle with."))
+      return nil
+    else
+      new_party = nil
+      ruleset = PokemonRuleSet.new
+      ruleset.setNumber(size)
+      ruleset.addPokemonRule(AblePokemonRestriction.new)
+      pbFadeOutIn {
+        scene = PokemonParty_Scene.new
+        screen = PokemonPartyScreen.new(scene, $player.party)
+        new_party = screen.pbPokemonMultipleEntryScreenEx(ruleset)
+      }
+      if new_party
+        reserve = []
+        $player.party.each do |pkmn|
+          pID = pkmn.personalID
+          next if new_party.any? { |p| p.personalID == pID }
+          reserve.push(pkmn)
+        end
+        $player.party = new_party
+        outcome = TrainerBattle.start_core(*args)
+        $player.party += reserve
+        return outcome == 1
+      else
+	    pbMessage(_INTL("#{g}Huh? Changed your mind?"))
+        pbMessage(_INTL("#{g}Come back when you have the right Pokéméon you want to battle with."))
+        return nil
+      end
+    end
+  end
+end
+
+#===============================================================================
 # Battle::AI utilities.
 #===============================================================================
 class Battle::AI

@@ -22,7 +22,7 @@ class PokemonRegionMap_Scene
       return if flyicon.nil? || flyicon[:name] == "mapFlyDis"
       pbDrawImagePositions(
         @spritesMap["highlight"].bitmap,
-        [["#{Folder}Icons/Fly/MapFlySel", (flyicon[:x] * ARMSettings::SquareWidth) - 8 , (flyicon[:y] * ARMSettings::SquareHeight) - 8]]
+        [["#{Folder}Icons/Fly/mapFlySel", (flyicon[:x] * ARMSettings::SquareWidth) - 8 , (flyicon[:y] * ARMSettings::SquareHeight) - 8]]
       )
     end
   end

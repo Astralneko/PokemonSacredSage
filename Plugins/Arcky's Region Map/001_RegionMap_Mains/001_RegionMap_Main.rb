@@ -19,7 +19,7 @@ class PokemonRegionMap_Scene
     @spritesMap       = {}
     @flyMap           = flyMap
     @mode             = flyMap ? 1 : 0
-    @mapMetadata      = $game_map.metadata
+    @mapMetadata      = $game_map.metadata if !@mapMetadata
     @playerPos        = (@mapMetadata) ? @mapMetadata.town_map_position : nil
     getPlayerPosition
     @regionName = @map.name.to_s if !@regionName
@@ -223,7 +223,7 @@ class PokemonRegionMap_Scene
         @spritesMap["player"] = BitmapSprite.new(@mapWidth, @mapHeight, @viewportMap)
         @spritesMap["player"].x = @spritesMap["map"].x
         @spritesMap["player"].y = @spritesMap["map"].y
-        @spritesMap["player"].visible = ARMSettings::ShowPlayerOnRegion[(@regionName.gsub(' ','')).to_sym]
+        @spritesMap["player"].visible = ARMSettings::ShowPlayerOnRegion.fetch(@regionName.gsub(' ','').to_sym, true)
       end
       @spritesMap["player"].z = 60
       pbDrawImagePositions(

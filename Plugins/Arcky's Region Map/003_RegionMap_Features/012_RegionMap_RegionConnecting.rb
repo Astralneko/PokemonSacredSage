@@ -3,8 +3,9 @@ class PokemonRegionMap_Scene
     @regionData.each do |region, data|
       if @mapX.between?(data[:beginX], data[:endX]) && @mapY.between?(data[:beginY], data[:endY])
         @region = region
+        
         @map = GameData::TownMap.get(@region)
-        getCounter
+        #getCounter #getCounter should only be called once on actual region changing not every frame or movement.
       end
     end
   end

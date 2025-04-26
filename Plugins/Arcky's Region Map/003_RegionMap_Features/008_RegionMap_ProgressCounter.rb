@@ -31,7 +31,7 @@ class PokemonRegionMap_Scene
       begin
         map = load_data(sprintf("Data/Map%03d.rxdata", gameMap.id))
       rescue
-        echoln_li("Map%03d.rxdata not found, please check your mapMetadata.txt PBS file", gameMap.id)
+        Console.echoln_li _INTL("Map%03d.rxdata not found, please check your mapMetadata.txt PBS file", gameMap.id)
         next
       end
       items = 0

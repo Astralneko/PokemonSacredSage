@@ -25,10 +25,12 @@ FormName = Joyous Pattern
 #-------------------------------
 [SILVALLY,19]
 FormName = Type: Celestial
+Types = CELESTIAL
 Pokedex = Thanks to its awakened powers, it can change to the Celestial type to match the memory it has equipped.
 #-------------------------------
 [SILVALLY,20]
 FormName = Type: Glitch
+Types = GLITCH
 Pokedex = Thanks to its awakened powers, it can change to the Glitch type to match the memory it has equipped.
 #-------------------------------
 [AMNIBALL,1]
@@ -37,28 +39,28 @@ FormName = Dark Mode
 [HOPPIP,1]
 FormName = Verelan
 Types = WATER,POISON
-Generation = 10
+Generation = 101
 #-------------------------------
 [SKIPLOOM,1]
 FormName = Verelan
 Types = WATER,POISON
-Generation = 10
+Generation = 101
 #-------------------------------
 [JUMPLUFF,1]
 FormName = Verelan
 Types = WATER,POISON
-Generation = 10
+Generation = 101
 #-------------------------------
 [WOOBAT,1]
 FormName = Verelan
 Types = ICE,FLYING
-Generation = 10
+Generation = 101
 Evolution = SWOOBAT,Item,ICESTONE
 #-------------------------------
 [SWOOBAT,1]
 FormName = Verelan
 Types = ICE,FLYING
-Generation = 10
+Generation = 101
 #-------------------------------
 [TOGEPI,1]
 Evolution = TOGETIC,ItemOriginalForm,OVALSTONE
@@ -68,7 +70,7 @@ Evolution = TOGETIC,LevelDarkInParty,2
 FormName = Verelan
 Types = DARK,FAIRY
 Abilities = LEVITATE,SERENEGRACE
-Generation = 10
+Generation = 101
 Flags = InheritFormWithEverStone
 Evolution = TOGEKISS,Item,MOONSTONE
 #-------------------------------
@@ -76,7 +78,7 @@ Evolution = TOGEKISS,Item,MOONSTONE
 FormName = Verelan
 Types = DARK,FAIRY
 Abilities = LEVITATE,SERENEGRACE
-Generation = 10
+Generation = 101
 Flags = InheritFormWithEverStone
 #-------------------------------
 [TEDDIURSA,2]
@@ -84,21 +86,21 @@ Flags = InheritFormWithEverStone
 [URSARING,2]
 FormName = Verelan
 Types = NORMAL,CELESTIAL
-Generation = 10
+Generation = 101
 Flags = InheritFormWithEverStone,HasGenderedSprites
 Evolution = URSALUNA,Item,MOONSTONE
 #-------------------------------
 [URSALUNA,2]
 FormName = Verelan
 Types = NORMAL,CELESTIAL
-Generation = 10
+Generation = 101
 Flags = InheritFormWithEverStone
 #-------------------------------
 [MILCERY,63]
 FormName = Verelan
 Types = POISON
 Pokedex = Verelan Milcery were first spotted after a huge explosion 25 years ago. They are a favorite treat of Nemateiloon.
-Generation = 10
+Generation = 101
 Flags = InheritFormWithEverStone
 Evolution = ALCREMIE,ItemVerelanAlcremie
 #-------------------------------
@@ -106,80 +108,80 @@ Evolution = ALCREMIE,ItemVerelanAlcremie
 FormName = Verelan
 Types = POISON,FAIRY
 Pokedex = In keeping with the other variants of Alcremie, Verelan ones are sometimes referred to as "Salted Trick" or something akin to this.
-Generation = 10
+Generation = 101
 #-------------------------------
 [ALCREMIE,64]
 PokedexForm = 63
 Types = POISON,FAIRY
-Generation = 10
+Generation = 101
 #-------------------------------
 [ALCREMIE,65]
 PokedexForm = 63
 Types = POISON,FAIRY
-Generation = 10
+Generation = 101
 #-------------------------------
 [ALCREMIE,66]
 PokedexForm = 63
 Types = POISON,FAIRY
-Generation = 10
+Generation = 101
 #-------------------------------
 [ALCREMIE,67]
 PokedexForm = 63
 Types = POISON,FAIRY
-Generation = 10
+Generation = 101
 #-------------------------------
 [ALCREMIE,68]
 PokedexForm = 63
 Types = POISON,FAIRY
-Generation = 10
+Generation = 101
 #-------------------------------
 [ALCREMIE,69]
 PokedexForm = 63
 Types = POISON,FAIRY
-Generation = 10
+Generation = 101
 #-------------------------------
 [MAREANIE,1]
 FormName = Verelan
 Types = ICE
 BaseStats = 50,43,62,53,52,45
-Generation = 10
+Generation = 101
 Evolution = TOXAPEX,None
 Evolution = CROWNDRA,Level,38
 #-------------------------------
 [VULLABY,1]
 FormName = Verelan
 Types = GHOST,GROUND
-Generation = 10
+Generation = 101
 Flags = InheritFormWithEverStone
 #-------------------------------
 [MANDIBUZZ,1]
 FormName = Verelan
 Types = GHOST,GROUND
-Generation = 10
+Generation = 101
 Flags = InheritFormWithEverStone
 #-------------------------------
 [SHUPPET,2]
 FormName = Verelan
 Types = STEEL,GHOST
-Generation = 10
+Generation = 101
 Flags = InheritFormWithEverStone
 #-------------------------------
 [BANETTE,2]
 FormName = Verelan
 Types = STEEL,GHOST
-Generation = 10
+Generation = 101
 Flags = InheritFormWithEverStone
 #-------------------------------
 [GOLETT,1]
 FormName = Verelan
 Types = ROCK,FAIRY
-Generation = 10
+Generation = 101
 Flags = InheritFormWithEverStone
 #-------------------------------
 [GOLURK,1]
 FormName = Verelan
 Types = ROCK,FAIRY
-Generation = 10
+Generation = 101
 Flags = InheritFormWithEverStone
 #-------------------------------
 [MARIHUSH,1]
@@ -698,3 +700,9 @@ BaseExp = 315
 FormName = Monster Form
 BaseStats = 124,101,88,68,175,144
 BaseExp = 315
+#-------------------------------
+[SURSKIT,1]
+FormName = Zantarean
+Types = BUG,ROCK
+Generation = 102
+Flags = InheritFormWithEverStone

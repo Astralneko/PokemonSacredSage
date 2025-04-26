@@ -1,7 +1,7 @@
 ﻿Name       = Arcky's Region Map
-Version    = 3.1.0
+Version    = 3.1.1
 Essentials = 21.1
-Requires  = Arcky's Utilities, 1.0.7
+Requires  = Arcky's Utilities, 1.0.8
 Optional   = Modern Quest System + UI, 1.0
 Optional   = Lin's Pokegear Themes, 1.0.9
 Optional   = Lin's Weather System, 1.3.3

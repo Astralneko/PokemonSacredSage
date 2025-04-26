@@ -48,16 +48,26 @@ class PokemonMartAdapter
         end
       end
     end
-    price = GameData::Item.get(item).price.to_f
+    itemData = GameData::Item.get(item)
+    case $currency.downcase
+    when "money", "gold"
+      price = itemData.price.to_f
+    when "coins"
+      price = itemData.coin_price.to_f
+    when "battle points", "bp"
+      price = itemData.bp_price.to_f
+    end
     newPrice = (price * ((100 - disc).to_f / 100)).round(0)
-    if $game_temp.mart_prices && $game_temp.mart_prices[item]
-      if selling
-        return $game_temp.mart_prices[item][1] if $game_temp.mart_prices[item][1] >= 0
-      elsif $game_temp.mart_prices[item][0] > 0
-        return $game_temp.mart_prices[item][0]
+    if selling
+      case $currency.downcase
+      when "money", "gold"
+        return itemData.sell_price
+      when "coins"
+        return itemData.sell_coin_price
+      when "battle points", "bp"
+        return itemData.sell_bp_price
       end
     end
-    return GameData::Item.get(item).sell_price if selling
     return newPrice
   end
 
@@ -543,7 +553,7 @@ def pbShelfMart(stockWithLimit, speech: nil, useCat: false, discount: nil, curre
   $game_temp.clear_mart_prices
 end
 
-def pbPokemonMart(stockWithLimit, speech: nil, useCat: false, discount: nil, currency: "money", cantSell: false)
+def pbPokemonMart(stockWithLimit, speech: nil, useCat: false, discount: nil, currency: "money", cantSell: false, billEnd: false)
   setCurrency(currency)
   refreshRate, stock = extractStock(stockWithLimit)
   # no speech given (optional useCat, discount, currency and cantSell):
@@ -577,6 +587,11 @@ def pbPokemonMart(stockWithLimit, speech: nil, useCat: false, discount: nil, cur
       payBill(getSpeech)
       $game_switches[APMSettings::BillSwitch] = false
       commands, cmdBuy, cmdSell, cmdBill, cmdQuit = setCommands(cantSell)
+      if billEnd
+        outroText = getTimeOfDay(getSpeech, "Outro")
+        pbMessage(_INTL(outroText&.sample || "Do come again!"))
+        break
+      end
     else
       outroText = getTimeOfDay(getSpeech, "Outro")
       pbMessage(_INTL(outroText&.sample || "Do come again!"))
@@ -628,6 +643,7 @@ def createPokeMartTracker(stockWithLimit, refreshRate)
       daysDiff = getPreviousRefreshDate(date)
       timeInDays = convertDays(refreshRate, daysDiff)
     end
+    pokeMartTracker = $ArckyGlobal.pokeMartTracker[@map_id][@event_id]
     # canRefresh is true if the daysDiff is equal to the refreshRate day requirement.
     pokeMartTracker = { :date => date, :refresh => timeInDays, :items => getItemList(stockWithLimit.drop(1)) } if pokeMartTracker.empty? || pokeMartTracker.length <= 1
     pokeMartTracker[:refresh] = timeInDays if !pokeMartTracker.empty?
@@ -680,7 +696,7 @@ end
 def getPreviousRefreshDate(date)
   pokeMartTracker = $ArckyGlobal.pokeMartTracker[@map_id][@event_id]
   return 0 if pokeMartTracker.empty? || pokeMartTracker.length <= 1
-  return (getDateFromString(date) - getDateFromString(pokeMartTracker[:date].to_s)) / (24 * 60 * 60)
+  return ((getDateFromString(date) - getDateFromString(pokeMartTracker[:date].to_s)) / (24 * 60 * 60)).round(0)
 end
 
 def convertDays(refreshRate, daysDiff)
@@ -714,7 +730,7 @@ def convertDays(refreshRate, daysDiff)
   end
   time = days - daysDiff
   time = 0 if time < 0
-  case time
+  case time.round(0)
   when 1
     return "tomorrow"
   when 2..6

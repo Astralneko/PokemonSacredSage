@@ -13,7 +13,7 @@
 
       # true = enabled: Keeps track of visited maps, wild pokemon (seen and caught), trainers and items.
       # false = disabled: In case you would still have issues with this feature, make sure to tell me them.
-      ProgressCounter = true 
+      ProgressCounter = false
 
       # Below I've provided a setting for each counter that the Progress Counter is using.
       # If you wish to not use one or more of these, you can turn them off here (or in case you would have an issue with one of them).
@@ -48,7 +48,7 @@
 
         # true = enabled: Unvisited Locations will be displayed with "???" if not visited.
         # false = disabled.
-        NoUnvistedMapInfo = false
+        NoUnvistedMapInfo = true
 
         # Change this to any text you want for Unvisited Locations.
         UnvisitedMapText = "???"
@@ -167,19 +167,19 @@
         # - Y coordinate of the graphic on the map, in squares.
         # - Name of the graphic, found in the Graphics/Pictures.
         # - false if you want it to render below. (true by default).
-        #RegionMapDecoration = [
-        #  [0, nil, 8, 6, "mapTrees"],
-        #  [0, 51, 16, 15, "mapTrees"]
-        #]
         RegionMapDecoration = [
-
+          [0, nil, 8, 6, "mapTrees"],
+          [0, 51, 16, 15, "mapTrees"]
         ]
+        #RegionMapDecoration = [
+
+        #]
 
       #======================== Region District Settings ========================#
 
         # true = enabled: Allows you to change the Region Name on certain parts of the Region Map
         # false = disabled.
-        UseRegionDistrictsNames = true
+        UseRegionDistrictsNames = false
 
         # - Region Number
         # - [min X, max X]; the minimum X value and the maximum X value, in squares.
@@ -188,16 +188,14 @@
         #    example: [0, 10]; when the cursor is between 0 and 10 (including 0 and 10) the name of the region changes (depending on the X value as well).
         # - Region District Name; this is the name the script will use only when the cursor is inside X and Y range.
         RegionDistricts = [
-						[0, [31, 34], [0, 11], "South Lauransel Ocean"],
-						[0, [32, 34], [12, 18], "South Lauransel Ocean"],
-						[0, [31, 34], [19, 23], "South Lauransel Ocean"],
-						[0, [0, 18], [0, 8], "Northwest Verela"],
-						[0, [19, 31], [0, 8], "Northeast Verela"],
-						[0, [0, 18], [9, 14], "West Verela"],
-						[0, [19, 31], [9, 14], "East Verela"],
-						[0, [0, 18], [15, 23], "Southwest Verela"],
-						[0, [19, 31], [15, 23], "Southeast Verela"],
-						[1, [10, 20], [5, 15], "Central Tiall"]
+          [0, [9, 19],  [4, 6],   _INTL("North Essen")],
+          [0, [15, 15], [7, 7],   _INTL("North Essen")],
+          [0, [16, 19], [7, 7],  _INTL("East Essen")],
+          [0, [15, 19], [8, 11],  _INTL("East Essen")],
+          [0, [9, 19],  [12, 15], _INTL("South Essen")],
+          [0, [9, 12],  [7, 11],  _INTL("West Essen")],
+          [0, [13, 14], [7, 11],  _INTL("Central Essen")],
+          [1, [10, 20], [5, 15],  _INTL("Central Tiall")]
         ]
 
         # Link a switch ID to each District (if used). This switch will be turned ON once it's at 100%.
@@ -257,7 +255,7 @@
 
       # true = enabled: The player is allowed to fly from 1 Region to another.
       # false = disabled: The player can't fly from 1 Region to another.
-      AllowFlyToOtherRegions = true
+      AllowFlyToOtherRegions = false
 
       # Set to which Regions you can fly from the current Region. (Use the name of the region)
       FlyToRegions = {
@@ -327,8 +325,7 @@
         # Set for each Region if you want the Player Icon to be visible (true) or invisible (false).
         ShowPlayerOnRegion = {
           Essen: true,
-          Tiall: true,
-					Verela: true
+          Tiall: true
         }
 
         # true = enabled: The script will change the Region Map based on the Current Time in the Game
@@ -368,7 +365,7 @@
         # For each Region you want the UI to change, make a new Folder and name it "Region1" or any Region number (as long as it matches with the one set in the PBS).
         # These folders are located in Graphics > Pictures > RegionMap > UI for v20.1 or Graphics > UI > Town Map > UI for v21.1.
         # The Default UI will be used if no Region Folder is found for the current Region or if there are missing Graphics.
-        ChangeUIOnRegion = true
+        ChangeUIOnRegion = false
 
       #========================== Text Position Settings ========================#
 
@@ -639,14 +636,6 @@
           :LandAfternoon => "Grass (Afternoon)",
           :LandEvening => "Grass (Evening)",
           :LandNight => "Grass (Night)",
-					:PhenomenonGrass => _INTL("Rustling grass"),
-					:DarkGrass => _INTL("Dark tall grass"),
-					:DarkGrassDay => _INTL("Dark grass (day)"),
-					:DarkGrassNight => _INTL("Dark grass (night)"),
-					:DarkGrassMorning => _INTL("Dark grass (morning)"),
-					:DarkGrassAfternoon => _INTL("Dark grass (afternoon)"),
-					:DarkGrassEvening => _INTL("Dark grass (evening)"),
-					:PhenomenonDarkGrass => _INTL("Rustling dark grass"),
           :PokeRadar => "Poké Radar",
           :Cave => "Cave",
           :CaveMorning => "Cave (Morning)",
@@ -654,19 +643,16 @@
           :CaveAfternoon => "Cave (Afternoon)",
           :CaveEvening => "Cave (Evening)",
           :CaveNight => "Cave (Night)",
-					:PhenomenonCave => _INTL("Dust clouds"),
           :Water => "Surfing",
           :WaterMorning => "Surfing (Morning)",
           :WaterDay => "Surfing (Day)",
           :WaterAfternoon => "Surfing (Afternoon)",
           :WaterEvening => "Surfing (Evening)",
           :WaterNight => "Surfing (Night)",
-					:PhenomenonWater => _INTL("Rippling waves"),
           :OldRod => "Fishing (Old Rod)",
           :GoodRod => "Fishing (Good Rod)",
           :SuperRod => "Fishing (Super Rod)",
           :RockSmash => "Rock Smash",
-					:PhenomenonBird => _INTL("Bird's shadow"),
           :HeadbuttLow => "Headbutt (Rare)",
           :HeadbuttHigh => "Headbutt (Common)",
           :BugContest => "Bug Contest"
@@ -691,7 +677,7 @@
 
         # true = enabled: The Icons for the Unseen Species will be shown but will have a black color overlay.
         # false = disabled: The Icons for the Unseen Species will be shown with a ? Icon.
-        UseSpritesForUnseenSpecies = false
+        UseSpritesForUnseenSpecies = true
 
         # Change the Color Unseen Species Icons will have when the Setting above is set to true (if false, this setting has no effect).
         UnseenSpeciesColor = Color.new(0, 0, 0)

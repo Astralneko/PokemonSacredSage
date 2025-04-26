@@ -1,7 +1,7 @@
 class PokemonRegionMap_Scene
   def getMapObject
     @mapInfo = {}
-    if @regionData
+    if @regionData && ARMSettings::UseRegionConnecting
       @mapPoints = []
       @regionData.each do |id, data|
         next unless @avRegions.any? { |_, region| region == id}

@@ -1,3 +1,24 @@
+v1.9.3
+- New Feature: Berry Seeds. You can make it so Berry Seeds are planted instead of the Berries themselves. Once a seed is planted, the Berry Plant will act as if you planted a Berry through the original method, but it uses up the Seed, instead. With this feature turned on, you won't be able to plant a Berry directly. Instead, you'll need to provide the player Berry Seed items in some fashion.
+	- I include some Berry Seed item PBS entries and graphics in the "(Optional) Seeds Addons" folder in the downloaded folder to act as an example. You'll have to create seeds for all the rest of the berries yourself. If someone does that and wants to contribute the final PBS and graphics to this plugin, I'll add them in.
+	- At this time, this feature is not set to work with the BerryPots plugin since it would require doing direct changes to that plugin's code.
+	- To have preplanted Berry Plants (the ones the player can pick right away) drop seeds when harvesting them, you must add pbDropBerrySeeds(berry_id, berry_yield) after the pbPickBerry(berry_id, berry_yield) script call in that event page. You do not add it after a pbBerryPlant script call.
+- New feature: Added a debug option to make a berry plant fully grown, so you can harvest the berries from it sooner.
+- Fixed a crash that would occur when trying to view berry plant icons in the town map and you don't have Arcky's Region Map plugin installed.
+
+v1.9.2
+- Added some extra handling to make sure crashes don't occur if you don't have the Berry Core and Dex plugin installed.
+
+v1.9.1
+- Added some extra handling to prevent crashes with soil graphics if an event variable isn't BerryPlantData.
+
+v1.9
+- New feature: Soil types. This feature allows you to set berry planting spots to have different soil types. Each soil you define can have different effects on berry plants. Soil type is defined by adding berrysoil(<name>) to the Event Name of berry planting spots, where <name> is the name of the soil you've defined in BERRY_SOIL_DEFINITIONS in 000_Settings.
+	- If using TDW Berry Core and Dex, you can also set berries to have a Preferred Soil.
+	- Included graphic options you can add to your game to go along with these soils (tileset recolorings, moisture recolorings, plant_dirt recolorings (for Berrydex)). To install these graphics, open the "(Optional) Soils Addons" folder in the downloaded folder, then install everything found in the Graphics folder. Using the "Tileset_Soils_Addon", you can add my provided tileset recoloring to your existing tilesets.
+- New feature: Debugging a plant. While playtesting, hold CTRL when interacting with a berry planting spot to access a debug menu. Currently, you can view information about the plant or reset the plant.
+- When using a composter, added an option to read the lid again (to read the instructions).
+
 v1.8.5
 - Added some extra handling to hopefully prevent crashes if pests exist but berries do not.
 

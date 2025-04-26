@@ -1,5 +1,5 @@
 ﻿Name       = Arcky's Poke Market
-Version    = 1.4.0
+Version    = 1.4.2
 Essentials = 20.1, 21.1
 Requires  = Arcky's Utilities, 1.0.5
 Optional   = Mega MewThree's Achievement System, 1.1

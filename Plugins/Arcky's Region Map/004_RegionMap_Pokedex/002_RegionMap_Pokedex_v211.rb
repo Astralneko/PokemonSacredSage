@@ -295,6 +295,7 @@ if Essentials::VERSION.include?("21")
 
       alias _region_map_pbPageCustomUse pbPageCustomUse
       def pbPageCustomUse(page_id)
+        echoln("hello?")
         if page_id == :page_area
           pbRegionMapControls
           return true

@@ -102,7 +102,7 @@ module APMSettings
     # Text when talking to them. This is the default one.
     IntroText: ["Good Day, welcome how may I serve you?", "Hello, welcome, what can I mean for you?", "Hello, Welcome what can I get for you?"],
     # Text when choosing to buy item. (optional: If you make this empty( [] ), you'll go to the buy screen directly.)
-    CategoryText: ["We listed our Items in Categories for you.","Exclusively for you, these are the Categories we have to offer."], # or CategoryText: [],
+    CategoryText: [], #["We listed our Items in Categories for you.","Exclusively for you, these are the Categories we have to offer."], # or CategoryText: [],
     # Text when choosing amount of item. {1} = item name.
     BuyItemAmount: ["So how many {1}?", "How many {1} would you like?"],
     # Text when choosing amount of item with discount. {1} = item name {2} = discount price {3} = original price.
@@ -175,20 +175,20 @@ end
 # For the different option Arguments, check the guide as it's explained in detail in there.
 
 def pbSomeMart
-  pbPokemonMart(["daily",
-    [:POKEBALL, 10, 20], :GREATBALL, :ULTRABALL,
-    :POTION, [:SUPERPOTION, 8, 12], [:HYPERPOTION, 5, 8], [:MAXPOTION, 2, 5],
-    :FULLRESTORE, [:REVIVE, 1, 4],
-    [:ANTIDOTE, 5], :PARALYZEHEAL, :AWAKENING, :BURNHEAL, :ICEHEAL,
+  pbPokemonMart(["2daily",
+    [:POKEBALL, 10, 15], :GREATBALL, :ULTRABALL,
+    [:POTION, 12, 19], :SUPERPOTION, :HYPERPOTION, :MAXPOTION,
+    :FULLRESTORE, :REVIVE,
+    :ANTIDOTE, :PARALYZEHEAL, :AWAKENING, :BURNHEAL, :ICEHEAL,
     :FULLHEAL,
     :REPEL, :SUPERREPEL, :MAXREPEL,
-    :ESCAPEROPE
-  ], speech: "ProSeller", discount: 26, useCat: true)
+    :ESCAPEROPE, :TM11
+  ], speech: "ProSeller", discount: 26, useCat: true, billEnd: true)
 end
 
 def pbSomeShelf
-  pbShelfMart(["daily",[:POTION, 11], :SUPERPOTION,
-    [:POKEBALL, 10, 15], :GREATBALL,
+  pbShelfMart(["daily",:POTION, :SUPERPOTION,
+    :POKEBALL, :GREATBALL,
     :REPEL,
     :ANTIDOTE, :BURNHEAL, :ICEHEAL, :AWAKENING, :PARALYZEHEAL
   ], speech: "ShelfOne", discount: 29)
@@ -198,4 +198,11 @@ def pbSomeShelf2
   pbShelfMart([:POTION,
     :POKEBALL, :REPEL
   ], discount: 26, currency: "Coins")
+end
+
+def pbTmShelf
+  pbShelfMart(
+    ["daily",
+      [:TM01, 3], :TM02, :TM03, :TM04, :TM05, :TM06, :TM07, :ESCAPEROPE
+    ], currency: "coins")
 end

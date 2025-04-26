@@ -11,9 +11,14 @@ class PokemonRegionMap_Scene
       selFlySpots.each do |index, spot|
         visited = spot.any? { |map| map[0][:visited] }
         mapData = GameData::MapMetadata.try_get(spot[0][0][:map])
+        if !mapData
+          Console.echoln_li _INTL("The Game Map '#{spot[0][0][:map]}' does not exist!")
+          next
+        end
         mapRegion = mapData.town_map_position[0]
         if mapRegion != @playerPos[0] || !ARMSettings::UseRegionConnecting
-          visited = canFlyOtherRegion(mapRegion) if visited
+          echoln("we're in here?")
+          visited = canFlyOtherRegion(mapRegion) if visited && mapRegion != @playerPos[0]
         end
         name = visited ? "mapFly" : "mapFlyDis"
         centerX = spot.map { |map| map[1] }.sum.to_f / spot.length
@@ -94,7 +99,7 @@ class PokemonRegionMap_Scene
     @mapInfo.each do |key, value|
       value[:positions].each do |pos|
         next if pos[:flyspot].empty? || !pos[:flyspot][:visited]
-        next if !canFlyOtherRegion(value[:region]) && ((value[:region] != @playerPos[0]) || !ARMSettings::UseRegionConnecting)
+        next if !canFlyOtherRegion(value[:region]) && ((value[:region] != @playerPos[0]) && ARMSettings::UseRegionConnecting)
         sel = { name: value[:mapname], x: pos[:x], y: pos[:y], flyspot: pos[:flyspot] }
         visits << sel unless visits.any? { |visited| visited[:flyspot] == sel[:flyspot] }
       end

@@ -41,7 +41,7 @@ class PokemonRegionMap_Scene
     @useAlt = "Alt"
     mapInfo = @mapInfo[@curMapLoc.gsub(" ", "").to_sym] unless @curMapLoc.nil?
     if !mapInfo.nil? && mapInfo[:mapname] == pbGetMessageFromHash(LocationNames, mapInfo[:realname]) && ARMSettings::CanViewInfoUnvisitedMaps
-      name = mapInfo[:realname].gsub(" ", "").gsub("'", "")
+      name = mapInfo[:realname].gsub(" ", "").gsub("'", "").gsub("-", "")
       locDescr = _INTL("No information given.")
       locDescr = pbGetMessageFromHash(ScriptTexts, locDescr)
       @cannotExtPreview = true
