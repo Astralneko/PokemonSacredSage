@@ -1,0 +1,89 @@
+Canon Gen.6 Type Chart Defense (the number is the average weakness multiplier for all dual-types that contain the type against all attacking types)
+"Amazing"/SS-Tier (less than 0.9)
+Steel 0.88
+"Great"/S-Tier (0.9-1.0)
+Ghost 0.98
+"Good"/A-Tier (1.00-1.05)
+Fairy 1.00
+Electric and Poison 1.01
+Water 1.02
+Normal and Fire 1.04
+Flying 1.05
+"OK"/B-Tier (1.05-1.125)
+Dragon and Dark 1.08
+Ground 1.09
+Fighting 1.11
+Bug 1.12
+"Bad"/C-Tier (1.125-1.2)
+Psychic 1.13
+Grass 1.18
+"Awful"/F-Tier (over 1.2)
+Rock 1.2
+Ice 1.23
+
+Canon Gen.6 Type Chart Offense (the number counts the dual types that take each type's attacks at least for neutral damage, out of a possible 324)
+"Amazing"/SS-Tier (over 260)
+Ghost 260
+"Great"/S-Tier (243-259; 0.75-0.8 of types)
+Dragon 258
+Rock 249
+Ground 245
+"Good"/A-Tier (230-243)
+Water, Flying, and Fairy 243
+Dark 237
+Psychic 233
+"OK"/B-Tier (210-230)
+Fire and Ice 228
+Normal 225
+Steel 220
+"Bad"/C-Tier (190-210)
+Electric 208
+Fighting 194
+"Awful"/F-Tier (less than 190)
+Poison 185
+Grass and Bug 163
+
+Canon Gen.AN-1 Type Chart Defense (the number is the average weakness multiplier for all dual-types that contain the type against all attacking types)
+"Amazing"/SS-Tier (less than 0.96)
+Steel 0.94
+Celestial 0.96
+"Great"/S-Tier (0.96-1)
+Electric 0.99
+Ghost 1.00
+"Good"/A-Tier (1-1.0625)
+Poison 1.02
+Normal and Fire 1.04
+Water and Fairy 1.05
+Flying 1.06
+"OK"/B-Tier (1.0625-1.125)
+Dark 1.08
+Dragon, Bug, and Fighting 1.11
+"Bad"/C-Tier (1.125-1.167)
+Ground 1.13
+Psychic and Rock 1.16
+"Awful"/F-Tier (over 1.167)
+Grass and Ice 1.18
+Glitch 1.19
+
+Canon Gen.AN-1 Type Chart Offense (the number counts the dual types that take each type's attacks at least for neutral damage, out of a possible 400)
+"Amazing"/SS-Tier (more than 320)
+Ghost 330
+Dragon 326
+"Great"/S-Tier (300-320; 0.75-0.8 of types)
+Fairy 313
+Dark 307
+"Good"/A-Tier (280-300)
+Fire, Water, Ice, Rock and Glitch 288
+Ground 286
+Flying 280
+"OK"/B-Tier (260-280)
+Psychic 274
+Normal 256
+Steel and Celestial 255
+"Bad"/C-Tier (240-260)
+Electric 249
+Bug 244
+Grass 241
+"Awful"/F-Tier (less than 240)
+Poison 216
+Fighting 214

@@ -1,0 +1,419 @@
+Challenge Runs and their Descriptions:
+- Nuzlocke (EBS) - Exactly what it sounds like.
+- Randomizer (EBS) - Exactly what it sounds like.
+- Solorun (AN, Switch 60; starter is stored in Variable 33) - Exactly what it sounds like.
+- Level 1 (AN, Switch 65, formerly known as First Forms Only) - All captured Pokémon are turned into Eggs upon capture, causing them to start at Level 1.
+- Realistic Levels (AN, Switch 66) - All wild Pokémon will have their level range extended dramatically.
+
+Pokémon found in Choraçu Park Safari Zone (in the wild):
+- Kangaskhan (Sage only)
+- Dratini
+- Finizen (exclusive)
+- Lapras (exclusive)
+- Smeargle (exclusive)
+- Arcanine
+- Driftloth
+- Mienfoo (exclusive)
+- Servolley (Azure only; postgame)
+- Tenderval (Rose only; postgame)
+- Vulpix (postgame; exclusive)
+- Oddish (postgame; exclusive)
+- Clamperl (postgame; exclusive)
+
+Fritz's Gym is actually a trip through Rio Bossano's narrow alleys, battling a few static Pokémon encounters before reaching Fritz
+
+Vergil's Gym is first in his house in Nova Cancioba, where you battle his wife, then you follow to Verela Route 12's Abandoned Mansion, where two Risen appear and are battled before battling Vergil himself
+
+Planned level curve: (Level listed is the average level of the Pokémon of that trainer)
+---------------------------------------------------------
+STORY A-SIDE (The Fountain of Life)
+---------------------------------------------------------
+Natsuki 1 Lv.5
+Mona 1 Lv.8
+Aria Lv.13
+#-----------------------
+Sorrel 1 Lv.16
+Desiree Lv.18
+#-----------------------
+Mona 2 Lv.19
+Natsuki 2 Lv.22
+Diego Lv.25
+#-----------------------
+Abel/Sorrel S (game choice dependent) Lv.27
+Maria Lv.28 (Gift box legend is at level 25)
+#-----------------------
+Sorrel 2 Lv.32
+Katy Lv.34
+#-----------------------
+Natsuki 3 Lv.37
+Mona 4 Lv.38
+Neka Lv.40
+#-----------------------
+Sorrel 3 Lv.41
+Cain & Abel Lv.43
+#-----------------------
+Rayann Lv.46
+#-----------------------
+Sorrel 4 Lv.48
+Enrique Lv.50
+#-----------------------
+Mona 5 Lv.53
+Maria 2 Lv.56
+Sorrel 5 Lv.57
+Cain & Abel 2 Lv.58
+Moses Lv.59
+Joseph Lv.60
+#-----------------------
+Natsuki 4 Lv.62
+Mona 6 Lv.64
+Arthur Lv.65
+#-----------------------
+Natsuki 5 Lv.67
+Mona 7 Lv.68
+Palmer Lv.70
+Astley Lv.70
+Bankoro Lv.71
+Rusty Lv.71
+Anemone Lv.72
+---------------------------------------------------------
+STORY B-SIDE (Cryptic Pokémon)
+---------------------------------------------------------
+Razilwood Lv.72
+Natsuki 6 Lv.74
+Mona 8 Lv.76
+Leaf Lv.80
+#-----------------------
+Beasts are all Lv.80
+Razilwood 2 Lv.82
+Mew is Lv.84
+---------------------------------------------------------
+STORY C-SIDE (Ultra Beasts and Where to Find Them)
+---------------------------------------------------------
+Dulse & Zossie Lv.84
+Colress Lv.87
+#-----------------------
+Moses 2 & Joseph 2 Lv.88
+Necrozma Lv.90
+#-----------------------
+All 3 required Max Raids are Lv.90
+Lusamine Lv.92
+Apu Eternatus Lv.92
+---------------------------------------------------------
+STORY D-SIDE (Across the Ages)
+---------------------------------------------------------
+Lord Amoonguss (Apu Brute Bonnet) Lv.92
+Adaman/Perla Lv.94
+Sada Lv.96
+Lord Luxray (Apu Midnight Sky) Lv.97
+#-----------------------
+Rika, Hassel, Poppy, and Larry Lv.98
+Geeta Lv.100
+Miraidon & Koraidon Lv.100
+Apu Porygon-Z Lv.120 (Its allies are both Lv.1 and it's the only Apu Pokémon boss whose Apu Aura is negative; you can't use it as a level cap really but if you do, Lv.100 is recommended)
+#-----------------------
+Maverick Cinccino (Apu Cyber Scarf) Lv.102
+Maverick Servolley x2 (Apu Cyber Sphere) Lv.103
+Turo Lv.105
+Lovely Lv.105
+Maverick Gallade (Apu Iron Valiant) Lv.108
+#-----------------------
+Father Time's Heroes Lv.110
+---------------------------------------------------------
+
+So basically the following are what should be considered level caps
+Aria Lv.13
+Desiree Lv.18
+Diego Lv.25
+Katy Lv.34
+Neka Lv.40
+Rayann Lv.46
+Enrique Lv.50
+Joseph Lv.60
+Arthur Lv.65
+Anemone Lv.72
+Leaf Lv.80
+Moses 2 & Joseph 2 Lv.88
+Lusamine Lv.92
+Sada Lv.96
+Geeta Lv.100
+Turo Lv.105
+Father Time's Heroes Lv.110
+
+AI skill codes:
+a - This Trainer will switch out more than usual.
+b - This Trainer will not use items on a Pokémon other than their ace, if they have one defined.
+c - This Trainer will highly prioritize status moves on the first turn the Pokémon is out.
+d - This Trainer's first action in the battle will be using their lead's first move.
+
+Study Team are a duo consisting of a Schoolboy and a Schoolgirl.
+Bandmates are a duo consisting of a Guitarist and a Rocker, or a Guitarist and a Roughneck.
+Classmates are a rename of the Teammates/Sr. and Jr./Senpai and Kohai trainer type from RSE/ORAS. It consists of two Lasses.
+Detainment Team is a duo consisting of a male and female Police Officer.
+Suspicious Duo is a duo consisting of a Delinquent and a Street Thug.
+Beauty Duo is a duo consisting of a Beauty and a Model.
+News Crew is a duo consisting of a Photographer and a Reporter.
+Business Team is a triad team consisting of a Businessman, a Businesswoman, and a Gentleman.
+Rich Family is a triad team consisting of a Rich Boy, a Rich Girl, and a Socialite.
+Cheapskates is a triad team consisting of a Pokéfan-M, an Influencer, and a Schoolboy.
+Swim Team is a triad team consisting of two Swimmer-M and a Swimmer-F.
+Psychic Circle is a triad team consisting of a Psychic-M and two Psychic-F.
+First Responders is a triad team consisting of a Firefighter, a Police Officer-F and a Doctor.
+
+Base EXP yields are as follows, where BST is base stat total and ABS is average base stat, or BST/6:
+Base form of an Evolving, non-Cryptic Pokémon (and Tediflame): BST * 4 / 20 or ABS * 1.2
+Base form of an Evolving one of Verela's Crypticmons (except Tediflame, but including Bearferno): BST * 6 / 20 or ABS * 1.8
+Base form of an unevolving, non-Legendary Pokémon: BST * 7 / 20 or ABS * 2.1
+Second form of a 3-stage Pokémon: BST * 7 / 20 or ABS * 2.1
+Final form of a 2-stage, non-Legendary Pokémon: BST * 7 / 20 or ABS * 2.1
+Final form of one of Verela's Crypticmons: BST * 8 / 20 or ABS * 2.4
+Base form of an unevolving, Legendary Pokémon: BST * 9 / 20 or ABS * 2.7
+Final form of an Evolving Legendary Pokémon and/or of a 3-stage Pokémon: BST * 9 / 20 or ABS * 2.7
+
+Make sure to tweak the Evolution methods of the following Pokémon once new ones get coded:
+Rellor, Pawmo, Bramblin (the three of which Evolve by walking 1000 steps in Let's Go mode in SV)
+Palafin (Evolves by level up to level 38 while in a Union Circle)
+Gimmighoul (Evolves by using 1,000 Gimmighoul Coins)
+
+Several Pokémon change their type. These type changes are based on either the type not existing in this game or on QOL hacks having changed the type (chiefly, Pokémon Blaze Black 2 Redux).
+Clefairy line -> Celestial/Fairy (Celestial type introduced in this game)
+Porygon line -> Normal/Glitch (Glitch type introduced in this game)
+Ninetales -> Fire/Ghost (Blaze Black 2 Redux changes it to Fire/Fairy, but I think Ghost fits better)
+Sceptile -> Grass/Dragon (Blaze Black 2 Redux type alteration)
+Swablu and Altaria -> Fairy instead of Normal (Altaria is not a Normal-type, so Flying is replaced instead) (change made due to Mega Evolution not being in ARS; Blaze Black 2 Redux also makes this change)
+Lunatone and Solrock -> Rock/Celestial (Celestial type introduced in this game)
+Flygon line -> Bug instead of Ground (Trapinch was only Ground type so it now has both) (Blaze Black 2 Redux type alteration)
+Staraptor -> Fighting/Flying (Blaze Black 2 Redux type alteration)
+Beheeyem line -> Psychic/Celestial (Celestial type introduced in this game)
+Beartic -> Ice/Fighting (Blaze Black 2 Redux type alteration)
+Goomy's Kalosian Evolutions -> Dragon/Water (not in BB2R, but probably would be in its XY equivalent)
+Light trio -> Celestial instead of Psychic (Celestial type introduced in this game)
+Zamazenta-Hero -> Fairy instead of Fighting (rebalancing; see Zamazenta-Crowned)
+Zamazenta-Crowned -> Fairy/Fighting instead of Fighting/Steel (rebalancing; now the Darkest Day trio either share a type in common (Fairy) or interact strongly with it (Fighting/Dragon weakness to Fairy, Fairy weakness to Steel/Poison))
+
+Note that while type changes from Blaze Black 2 Redux are included in this hack, not all of them are kept. Given some are made primarily because of BB2R, some explanation for not making all the BB2R type changes is needed. The following are type changes that Blaze Black 2 Redux has, but were not maintained in Azure and Rose:
+Charmeleon/Charizard Fire/Dragon - type change would have been made for the Mega Evolution, but base Charizard is already powerful enough (buffs to compensate for Mega Evolution were based on how strong the vanilla Pokémon already was)
+Spearow line pure Flying - I do not abhor the Normal/Flying dual type as much as Drayano.
+Golduck Water/Psychic - being mistaken for a Psychic-type is not enough reason to be a Psychic-type in my opinion
+Rapidash Fire/Fairy - Galarian Rapidash exists in this game, and the Fire/Fairy type also is not as unique as in BB2R due to Aurinti and Nachiika
+Farfetch'd Fighting/Flying - Galarian Farfetch'd exists in this game, and I do not abhor the Normal/Flying dual type as much as Drayano.
+Shellder Water/Ice - BB2R being limited to the Unova-era National Dex is the reason this change happened. In this game, you have Verelan Woobat, Verelan Mareanie, Alolan Vulpix, and Alolan Sandshrew, the first two of which are early-game Ice-types.
+Meganium Grass/Fairy - BB2R did not give Typhlosion or Feraligatr secondary types (which I would have; Fire/Fighting and Water/Dark), so evidently Meganium was only edited to add more Fairy-types to the game. ARS does not need more Fairy-types.
+Noctowl Psychic/Flying - see Spearow and Golduck, though of the three Normal/Flying Pokémon I did not edit to match BB2R typing, this is the one I think has the best justification to be changed
+Ampharos Electric/Dragon - earlier versions of ARS did make this change in Mega-compensation buffs, but I reverted it when I found out that half of the BB2R justification was a lie (according to The Cutting Room Floor, the line was always pure Electric in all forms - if the BB2R team knows differently they should submit that information to TCRF); the remaining justification of 電竜 meaning "electric dragon" is not enough as it received that name due to a pun (電竜 also means "electric circuit")
+Misdreavus line Ghost/Fairy - Flutter Mane exists now, though obviously it cannot be backported to BW2 atm so I do still like this type change for BB2R specifically
+Snubbull line Fighting/Fairy - this type change literally is due to a bug that Drayano introduced; additionally they spelled Snubbull and Granbull wrong in the documentation and I'm a spiteful bitch
+Teddiursa line Normal/Ground - even if I were to make this change it would likely only be to Ursaring due to Verelan Ursaring; plus the change was made due in part to not being able to backport Ursaluna (not true for ARS)
+Masquerain Bug/Water - for one, see Golduck, and for two, the next Gen.AN game introduces a Surskit regional variant which relies on Surskit not maintaining its Water-type for the gimmick to work
+Volbeat Bug/Electric and Illumise Bug/Fairy - while buffing these two would be nice, personally I do not like the idea of these two having different types, especially since being a counterpart to Volbeat is cited in Illumise's type changing reasoning (which I think is nonsensical), but I cannot choose between the two of them for which one both should have so they're staying pure Bug (due to the Masquerain reasoning I might reconsider and make both Bug/Fairy, though)
+Banette Ghost/Normal - "heavily requested by the community" is not enough of a reason, plus the "unique niche" reasoning is unnecessary due to Hisuian Zoroark being in the Verelan Pokédex, though I may reconsider in order to make Hoennian Banette more of a counterpart to Verelan Banette
+Glalie Ice/Rock - while I appreciate that the Pokédex says it's partially made of rock, the Timburr line was not also changed for the same reason so I don't care
+Luvdisc Water/Fairy - this thing needs an Evolution, not a type change, will consider for a possible Luvdisc evolution though
+Luxray Electric/Dark - this is the reason why I do not give a fuck what the community at large thinks a Pokémon's type should be: having a similar aesthetic to other Pokémon of the type cannot be the only reason to give a Pokémon the type known as 悪タイプ ; in the context of this fangame specifically, the unique niche reasons are unnecessary and Midnight Star already basically has this type (Electric/Celestial) as a tribute to the community's insistence that Luxray should be part-Dark
+Lopunny Normal/Fighting - while I agree with making this change, this would make another game in the same project useless (its regional variant of Lopunny is pure Fighting as tribute to the Mega) so I have held off on it
+Electivire Electric/Fighting - while I don't think the change is bad, Rayonsiera and Pawmot are readily obtainable, plus why can't we just let Electric-types have  prominent non-STAB moves for once
+Probopass Rock/Electric - this Pokémon frankly should maintain the Steel-type in my opinion; evolving by Thunder Stone is not enough of a reason to change it
+Lake trio Psychic/Fairy - the reasoning is not enough in my opinion, otherwise Zoroark should be Dark/Fairy; also ARS does not need more Fairy-types
+Unova starters - I may make this change in future, but if I do, then I will also be undoing the change to Sceptile as Sceptile already being Grass/Dragon is the primary reason for not making the change
+Munna line Psychic/Fairy - in ARS, Fairy does not resist Bug; might consider Psychic/Poison though
+Audino Normal/Fairy - while Audino did receive a Mega Evolution buff, I don't think being related to the Great Fairy is a good enough reason to maintain the type; in my opinion it's more obvious that it's a pun on 多分ね due to 多聞 (and possibly "bunny" as they're known for large ears, bushy tails, and insane hearing abilities, all of which Audino has), and ordinary bunnies get the ordinary type
+Gothita line Psychic/Dark - this is the Gen 5 version of Luxray, and even if I respected the idea (which to be fair, I do think Gothitelle deserves the Dark-type slightly more than Luxray does), they did not change Solosis's type, and I think these two should have the same type or at least the same number of types
+Vanilluxe Ice/Fairy - Vanilluxe is explicitly not actually ice cream, moreso a literal snow cone; if Vanilluxe was actually ice cream then I'd agree that it should be part Fairy-type
+
+Move changes are as follows:
+Tackle, Scratch, and Pound have all had their power changed to 45 (a nerf for Tackle, but a buff for Scratch and Pound)
+Future Sight's power increased from 120 to 130
+Doom Desire's power increased from 140 to 160 (since it's effectively a reverse Gigaton Hammer)
+Relic Song's power increased from 75 to 80, as Wicked Torque has the same effect but more power
+Gigaton Hammer causes the user to not be able to use status moves the turn after it is used (like Taunt)
+Rage Fist only starts building after the move is used once, like the original Rage, but it still doesn't have to be spammed to build up
+Salt Cure's effect ends after 5 turns
+Doodle doesn't change the user's allies' Ability (as of version 0.1.20221201)
+Dragon Cheer also affects the user
+
+Ability changes are as follows:
+As Booster Energy isn't obtainable in the game, Protosynthesis and Quark Drive have been indirectly nerfed
+Zero to Hero causes the Palafin to revert to Zero Form if it switches out while in Hero Form
+Commander finds the first indexed (leftmost) Dondozo in a Triple Battle
+Costar copies the stat stages of the ally with the highest overall number of stat stages. So for example, if one ally has a lot of debuffs and one ally has a lot of buffs, Costar will always target the latter. In a Double Battle, Costar still copies the ally's stat stages regardless of if they're raised overall or lowered overall.
+
+Twilight Trial, the Gym Leader theme, is a song with three segments:
+A - "Verse"
+B - "Chorus"
+C - A shorter verse
+B2 - "Chorus 2"
+There are several remixes of Twilight Trial for different Gym Leaders. These each have a specific theme and replace parts of the original song:
+- Twilight Trial (Twilightcore Remix) - Used for Neka. Speeds up the song as if it were nightcore. Entirely removes section C, replacing it with a record stop, then a slow version of section B's intro, and the rest of section B2 at the original sped-up speed.
+- Super Twilight Trial - Used for Arthur. Makes the entire soundtrack chiptune, and lengthens section B, moving it to section B2, removing section B2.
+- Twilight Trial Spooktacular - Used for Vergil. A version of Super Twilight Trial that replaces section C with a brief excerpt from the Lavender Tower theme, which is also used to lead back to section A from section B.
+- Twilight Trial With Lyrics - Used for Rivola. Lyrics are contained, and a guitar solo occurs in between sections C and B2, along with a brief excerpt from section C used to lead back into A, rather than the transition at the end of section B2.
+- Twilight Trial Karaoke - Twilight Trial With Lyrics, without the lyrics. Used for Rayann.
+- Twilight Trial (Plasma Remix) - Used for Enrique. Section B2 is replaced with the Neo Plasma theme, and ends with a mix of the victory theme before going back to section A. Partially uses instrumentation from the Neo Plasma theme.
+
+Pokemon found in Crystal Ridge:
+- Reginnfleuve - weakest distortions
+Grass: Terranine, Tinkaton, Lucario, Dyodetza
+Dark grass:
+Fish:
+Surf:
+- Iguana River
+Grass: Morpeko, Dedenne, Floatzel
+Dark grass:
+Fish: Corsola, Mareanie
+Surf: Feebas, Psyduck
+- Crystal Ridge East
+Grass:
+Dark grass:
+Fish:
+Surf:
+- Urdyno Volcano
+Grass: Turtonator, Jangmo-o
+Dark grass:
+Fish:
+Surf:
+Caves:
+Cave fish:
+Cave surf:
+- Urdyno Caldera - strongest distortions
+Grass: Torkoal, Vulpix-Alola, Sandshrew
+Dark grass: Jangmo-o
+Fish:
+Surf:
+- Crystal Ridge West
+Grass:
+Dark grass:
+Fish:
+Surf:
+
+Move Tutor moves:
+- SwSh move tutor moves (Terrain Pulse, Burning Jealousy, Flip Turn, Grassy Glide, Rising Voltage, Coaching, Scorching Sands, Dual Wingbeat, Meteor Beam, Skitter Smack, Triple Axel, Corrosive Gas, Expanding Force, Poltergeist, Scale Shot, Lash Out, Steel Roller, Misty Explosion)
+- Star Mash
+
+The translations for the games are
+Azure Wave -> Ultramarina
+Rose Flame -> Cornalina
+Sacred Sage -> Jade Nefrita
+
+The translations for companies and such are:
+Aether Foundation -> Fundación Æther -> エーテル財団
+Sunset League -> Liga Soleada -> ソレアダリーグ
+Twilight League -> Liga Soleada Menor
+Paldea League -> Liga Paldeana
+
+The translations for Paradox Pokémon are
+Midnight Sky -> ホシノヨゾラ Hoshinoyozora ("Star of Midnight Sky")
+Frozen Heart -> ワカレタナカ Wakaretanaka ("Separated Relationship")
+Rolling Curse -> ロウドウレイ Roudourei ("Laborous Order")
+Summer Yarn -> ナツムカシ Natsumukashi ("Long-Ago Summer")
+Wealth Stone -> トミセキ Tomiseki ("Wealth Stone")
+Ruinous Stone -> ヤブレタセキ Yaburetaseki ("Fallen Stone")
+Cyber Scarf -> アオイスカフ Aoisukafu ("Azure Scarf")
+Cyber Sphere -> アオイキュウ Aoikyuu ("Azure Ball")
+Cyber Fang -> アオイキバ Aoikiba ("Azure Tusk")
+Cyber Aide -> アオイケモノ Aoikemono ("Azure Beast")
+Cyber Raptor -> アオイタカ Aoitaka ("Azure Hawk")
+Cyber Comet -> アオイブレタ Aoibureta ("Azure Bullet")
+
+Paradox Pokémon bases:
+Gen 1 -> 2 (Scream Tail, Sandy Shocks)
+Gen 2 -> 8 (Great Tusk/Iron Treads, Flutter Mane, Walking Wake, Gouging Fire, Raging Bolt, Iron Bundle, Iron Thorns)
+Gen 3 -> 3 (Roaring Moon, Iron Hands, Iron Valiant)
+Gen 4 -> 1 (Iron Valiant)
+Gen 5 -> 7 (Brute Bonnet, Slither Wing/Iron Moth, Iron Jugulis, Iron Leaves, Iron Boulder, Iron Crown)
+Gen 9 -> 2 (Koraidon/Miraidon)
+Plus Gen AN:
+Gen 1 -> 2
+Gen 2 -> 8
+Gen 3 -> 5 (Cyber Raptor, Cyber Comet)
+Gen 4 -> 3 (Midnight Sky, Cyber Fang)
+Gen 5 -> 9 (Rolling Curse, Cyber Scarf)
+Gen 6 -> 2 (Wealth Stone, Ruinous Stone)
+Gen 9 -> 2
+Gen AN-1 -> 2 (Frozen Heart, Cyber Sphere)
+Gen AN-2 -> 2 (Summer Yarn, Cyber Aide)
+
+The translations for the characters are
+Aspin -> Espinelo -> Spinel
+Lapice -> Marina (same as JP)
+Jasper -> Jaspe (same as JP)
+Natsuki (same in ES) -> 夏希 Natsuki
+Mona (same in ES) -> 冬子 Fuyuko
+Sorrel -> Saríl -> ネペタ Nepeta
+Aria (same in ES) -> ヌベ Nubei
+Desiree -> Costa (same as JP コースタ) 
+Diego Rioda (same in ES) -> クーレル リオダ Quirelle Rioda
+Katy -> Salta (from "saltamonte hoja") -> パピラ Papila
+Neka -> Koronyán -> コロノヤ Koronoya
+DJ Purple Heart -> DJ Cempasuchíl -> MC Marigold エムチーｍａｒｉｇｏｌｄ
+Rayann -> Rayón -> スオリン Sterling
+Enrique Ospita (same in ES) -> パユス オーピタロ Pius Opitalo
+Arthur Pendragon -> Arturo Pendragon -> 明彦 ペンドラゴン Akihiko Pendragon
+Akita (remains same) (JP uses hiragana あきた)
+Fritz -> Caraca (from caracal) -> ルニンカ Luninka
+Sauta -> Saute (so that Sauta isn't confused with "Salta") -> ランシス Ramses
+Mateo (remains same) (JP uses katakana コロノヤ)
+Virgo (same in ES) -> フソリ Fusori
+Amber -> Árabe -> アイシ Aishi
+Vergil (same in JP) -> ヴエルギル Vergil
+Rivola (same in ES) -> モドレ Modore
+Palmer (remains same) (JP uses katakana パルマ)
+Bankoro (remains same) (JP uses katakana バンコロ)
+Astley (same in ES) -> リッコ Rikko
+Rusty -> Eisen (same as JP) (JP uses katakana アイゼン
+Anemone (remains same) (JP uses katakana アネモニ)
+Cane (remains same) (JP uses katakana ケイン)
+Abel (remains same) (JP uses katakana エイベル)
+Maria (remains same) (JP uses katakana メイリ)
+Moses (remains same) (JP uses katakana モセス)
+Joseph Lazarn -> Josef Lazán -> ジョセフ ラザルス Joseph Lazarus
+
+Badge (Medalla) names are translated as such:
+Glider -> Parapente -> 滑走 Glide
+Sandpit -> Oasis -> 砂丘 Dune
+Paintbrush -> Pincel -> 毛筆 Brush
+Elytra -> Carapace -> さや Sheath
+Twintail -> Cola Bifida (Forked Tail) -> また Repetition
+Sparkler -> Brillante (Sparkling) -> キラキラ Sparkling
+Glassy -> Vidrio de Colores (Stained Glass) -> Stained Glass
+Heroic -> Cumpletista (Completionist) -> 主人公 Hero
+Martial -> Cinta Negra (Black Belt) -> Karate
+Cattail -> Superstición (Superstition) -> 尾の猫 Cat Tail
+Baton (remains same) (JP uses katakana)
+Hemlock -> Belladona (Nightshade) -> ヘムロク Hemlock
+Gear -> Mecanismo -> Gear
+Petrified -> Enroqueado (sorta slangy translation of "Petrified") -> Fossil
+Scroll -> Manuscrito (Manuscript) -> Scroll
+Rocker -> Estrella (Celebrity) -> アイドル Idol
+
+Only the following places/place name parts are translated:
+Route -> Ruta
+Mountain -> Montaña
+Pikchu remains the same in ES, but is translated the same as Mountain in JP
+City -> Ciudad
+Town -> Pueblo
+Lake -> Lago
+Grove/Forest -> Bosque
+Bay -> Bahía
+River -> Rio
+Cove -> Cueva
+Cave -> Cueva
+Volcano -> Volcán
+Ridge -> Cadena
+Field -> Llanura
+-
+Mercalago -> Mercalaguz (so that the name doesn't end in Lago)
+Rising Star Grove -> Bosque de Venus
+Candlewax Field -> Candela Claro
+Crystal Ridge (Cliff) -> Necro Cadena
+Crystal Ridge (Top) -> Necro Cresta
+Mastasis -> Tasiga
+Starview and Stardew -> Esperanza
+Fairdune -> Subarene
+Choraçu -> Chorazu (in ES) -> Cordionza (in JP)
+São Samba -> Sau Samba (while ã by itself could be transliterated with an, "sano" is completely different from "são")
+Whitepetal -> Hoja Blanca (White Leaf)
+Hirihopa -> Turopa
+Casteliopolis -> Porcelanapolis -> Hiun Prefecture
+Urdyno remains same in ES, but in JP is Urudai ウルダイ (katakana because Daimax is written with katakana)
+Rio Bossano (same in ES) -> Rio Janova リオジァノヴァ
+
+RK names are generally equal to JP names except with voiceless vowels and extraneous /u/ removed

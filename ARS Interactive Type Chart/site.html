@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ARS Interactive Type Chart</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<style type="text/css">
+body {
+    font-size: 10pt;
+    font-family: verdana, sans-serif;
+}
+
+a:link, a:visited {
+    color: #000088;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:active, a:hover {
+    color:#AACCFF;
+}
+
+#options {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28%;
+}
+
+.attn {
+    color: red;
+    font-weight: bold;
+}
+
+#typechart-container {
+    position: relative;
+    max-width: 1600px;
+}
+
+.summary, #typechart thead th {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#typechart {
+    border: 1px solid black;
+    font-family: tahoma, sans-serif;
+    font-size: 11pt;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+#typechart td, #typechart th {
+    text-align: center;
+    border: 1px solid #666;
+}
+
+.highlight-combos td {
+    opacity: 0.2;
+}
+
+.highlight-combos td.highlight-combo, .highlight-combos td.summary {
+    opacity: 1.0;
+}
+
+#typechart thead th {
+    vertical-align: bottom;
+    line-height: 1em;
+}
+
+#typechart tbody th {
+    text-align: left;
+    width: 9em;
+}
+
+#typechart th.highlight-type, #typechart th.highlight-type input, #typechart th.highlight-row {
+    background: #CDF;
+}
+
+#typechart td.highlight-row {
+    background: #EEF;
+}
+
+#typechart tbody th.type-name {
+    padding: 0;
+}
+
+#typechart tbody th.type-name div {
+    position: relative;
+}
+
+#typechart tbody th.type-name input {
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: transparent;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    width: 8em;
+    line-height: 1em;
+}
+
+.remove-type:link, .remove-type:visited {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    color: #F00;
+    font-family: arial;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.remove-type:hover, .remove-type:active {
+    color: #F88;
+}
+
+.type-selection {
+    display:block;
+    overflow:hidden;
+}
+
+.type-selection label {
+    float:left;
+    width:90px;
+}
+
+#typechart td {
+    text-align: center;
+}
+
+#typechart tbody td.custom, #typechart.enable-edit-existing tbody td {
+    cursor: pointer;
+}
+
+#typechart.enable-edit-existing tbody td.summary {
+    cursor: auto;
+}
+
+#typechart .type-ne {
+    border-color: #800;
+    background: #F88;
+}
+
+#typechart .type-dnve {
+    border-color: #800;
+    background: #FCC;
+}
+
+#typechart .type-nve {
+    border-color: #840;
+    background: #FD9;
+}
+
+#typechart .type-se {
+    border-color: #080;
+    background: #CFC;
+}
+
+#typechart .type-dse {
+    border-color: #080;
+    background: #8F8;
+}
+
+#typechart .highlight-row.type-ne {
+    background: #F66;
+}
+
+#typechart .highlight-row.type-dnve {
+    background: #FAA;
+}
+
+#typechart .highlight-row.type-nve {
+    background: #FB7;
+}
+
+#typechart .highlight-row.type-se {
+    background: #9F9;
+}
+
+#typechart .highlight-row.type-dse {
+    background: #3F4;
+}
+
+.help-text {
+    font-size: smaller;
+    display: block;
+    color: #888;
+}
+
+#existing_symmetrical {
+    margin-left: 2em;
+}
+
+@media (max-width: 1200px) {
+  #typechart-container {
+    padding-right: 0;
+    float: none;
+  }
+
+  #options {
+    position: static;
+    width: auto;
+  }
+
+  #typechart {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  #typechart {
+    font-size:9pt;
+  }
+
+  .summary, thead td {
+    padding-left:3px;
+    padding-right:3px;
+  }
+}
+</style>
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="knockout-3.2.0.js"></script>
+<script type="text/javascript" src="knockout-deferred-updates.js"></script>
+<script type="text/html" id="existing_type"><span data-bind="text: name().toUpperCase()"></span></script>
+<script type="text/html" id="custom_type"><div><input type="text" title="Click to edit type name" data-bind="value: name, valueUpdate: 'afterkeydown', event: {keypress: function() { return name().length < 8}}"><a class="remove-type" href="#" title="Remove this type" data-bind="click: function() { $root.remove_type($data); return false; }">&times;</a></div></script>
+<script type="text/javascript" src="typechart.js"></script>
+</head>
+<body>
+<h1>The Interactive Type Chart (Azure/Rose/Sage Edition)</h1>
+<h2>Based on the Interactive Type Chart by <a href="https://www.dragonflycave.com/">The Cave of Dragonflies</a></h2>
+
+<noscript>
+<p class="attn">The Interactive Type Chart requires Javascript - it couldn't be very interactive without it. If for some reason you do not have the ability to run Javascript, the older, clunkier <a href="newtypetool.asp">not-so-Ultimate Type Tool</a> is still around in an emergency.</p>
+</noscript>
+
+<p>The Interactive Type Chart has five modes of operation:</p>
+<ul>
+<li><strong>Simple mode</strong> is a regular type chart, but with summaries of how many weaknesses/resistances/immunities each type has and the added ability to add your own custom types to the chart or even modify it outright.</li>
+<li><strong>Filtered simple mode</strong> shows you a regular type chart but for combos of one particular type instead of pure typings, allowing you to for instance quickly find Fire combos that are not weak to Water or something of the like.</li>
+<li><strong>Moveset coverage mode</strong> shows you the highest multiplier a combination of available attack types can achieve against every possible type combination.</li>
+<li><strong>Defensive summary mode</strong> analyzes how type combinations fare defensively, showing how many weaknesses, resistances, immunities, or even double weaknesses/resistances each one has.</li>
+<li><strong>Overall defense mode</strong> summarizes each type combination's overall defensive ability by showing the average type multiplier when each of the different types attacks it. You can also restrict the summary to only taking into account some attack types rather than all.</li>
+</ul>
+
+<p>In all five modes, every cell (including summary cells) has a tooltip that tells you somewhat more verbosely what its content means if you hover over it.</p>
+
+<div id="typechart-container">
+<div id="options">
+<p><select data-bind="value: mode, options: [simple_mode, filtered_mode, moveset_mode, summary_mode, defense_mode], optionsText: 'name'"></select></p>
+
+<p><label for="base_chart">Base chart:</label> <select data-bind="options: [gen1_chart, gen2_chart, gen6_chart, gen6_inverse_chart, genAN1_chart], optionsText: 'name', value: base_chart" id="base_chart"></select> <span class="help-text">Changing this setting will reset any modifications to existing type relations.</span></p>
+
+<p><input type="checkbox" id="enable_edit_existing" data-bind="checked: enable_edit_existing"> <label for="enable_edit_existing">Enable editing of existing types</label> <span class="help-text">When this box is checked, you can edit or delete existing Pokémon types. Unchecking this box will revert any edits to existing types, ensuring that any relations between existing types match up with the games.</span></p>
+
+<!-- ko if: mode().has_add_type -->
+<p><!-- ko if: has_localstorage -->Your modifications to the type chart are automatically saved in your browser's local storage as you make them. <!-- /ko -->The "Reset types" button will reset the type chart to the in-game base chart, with all customizations wiped. The "Reset to checkpoint" button will reset the type chart to whatever it was when you last loaded the page <em>or</em> when you last pressed the "Create checkpoint" button.</p>
+
+<p><button data-bind="click: add_type">Add new type</button> <button data-bind="click: reset_types">Reset types</button> <button data-bind="click: reset_to_stored">Reset to checkpoint</button> <button data-bind="click: save_types">Create checkpoint</button></p>
+
+<!--<p>A type polygon <button data-bind="click: find_polygons">Find type polygons possible with this chart</button></p>-->
+<!-- /ko -->
+
+<p data-bind="if: mode().has_moveset_selection">
+<select data-bind="options: type_objs, optionsText: 'name', optionsCaption: '---', value: attack_type1" id="attack_type1"></select>
+<select data-bind="options: type_objs, optionsText: 'name', optionsCaption: '---', value: attack_type2"></select>
+<select data-bind="options: type_objs, optionsText: 'name', optionsCaption: '---', value: attack_type3"></select>
+<select data-bind="options: type_objs, optionsText: 'name', optionsCaption: '---', value: attack_type4"></select>
+<select data-bind="options: type_objs, optionsText: 'name', optionsCaption: '---', value: attack_type5"></select>
+<select data-bind="options: type_objs, optionsText: 'name', optionsCaption: '---', value: attack_type6"></select>
+<select data-bind="options: type_objs, optionsText: 'name', optionsCaption: '---', value: attack_type7"></select>
+<select data-bind="options: type_objs, optionsText: 'name', optionsCaption: '---', value: attack_type8"></select>
+<select data-bind="options: type_objs, optionsText: 'name', optionsCaption: '---', value: attack_type9"></select>
+<select data-bind="options: type_objs, optionsText: 'name', optionsCaption: '---', value: attack_type10"></select>
+<span class="help-text">Select the types of attacks whose coverage should be checked. The chart will show the greatest multiplier achievable against each combo with these attack types.</span>
+</p>
+<p data-bind="if: mode().has_relation_selection"><label for="count_relation">Get summary for multiplier:</label>
+<select data-bind="options: mul_objs, optionsText: 'summary_name', value: count_relation" id="count_relation"></select>
+<span class="help-text">The chart will show the number of attack types that achieve this multiplier <em>or a more extreme one in the same direction</em> for each combo.</span>
+</p>
+<p data-bind="if: mode().has_type_selection"><label for="filter_type">Get chart for combos of this type:</label>
+<select data-bind="options: type_objs, optionsText: 'name', optionsCaption: '---', value: filter_type" id="filter_type"></select>
+<span class="help-text">If you filter on a type, essentially the whole chart will be multiplied by the multiplier when the attacking type attacks that type.</span></p>
+<p data-bind="if: mode().has_multi_type_selection">Calculate average for these attack types:<br>
+<span class="type-selection">
+<!-- ko foreach: type_objs -->
+<label><input type="checkbox" data-bind="checked: $parent.selected_types, checkedValue: $data"> <span data-bind="text: name()"></span></label>
+<!-- /ko -->
+</span>
+</p>
+<!-- ko if: mode().combos -->
+<p><input type="checkbox" id="highlight_existing" data-bind="checked: highlight_existing"> <label for="highlight_existing">Ignore nonexistent combos</label> <label for="existing_gen">in generation</label> <select id="existing_gen" data-bind="options: [1, 2, 3, 4, 5, 6, 7, 8, 8.5, 9, 10], value: existing_gen"></select><br><input type="checkbox" id="existing_symmetrical" data-bind="checked: existing_symmetrical, attr: {disabled: !highlight_existing()}"> <label for="existing_symmetrical">Symmetrical</label> <span class="help-text">When this box is checked, the combo modes will fade cells corresponding to type combinations that no actual existing Pokémon in the relevant generation currently have, and all summary cells will discount the contents of those cells. If the "Symmetrical" box is checked, a combination is treated as existent if <em>either</em> it or its inverse exists; if it is unchecked, Flying/Normal will for instance be treated as nonexistent, which may or may not be what you want.<br>8.5 is Pokémon Legends: Arceus, while 10 is Pokémon Azure, Rose, and Sage.</span></p>
+<!-- /ko -->
+</div>
+<p class="attn" data-bind="if: enable_edit_existing">This chart may not reflect the actual Pokémon games. To disable editing of existing types and revert any edits you've made, uncheck the relevant box on the right.</p>
+<table id="typechart" data-bind="css: css_class">
+<thead>
+<tr>
+<th><div style="text-align:right"><span data-bind="text: mode().vertical_label"></span> &rarr;</div><br><div><span data-bind="text: mode().horizontal_label"></span><br>&darr;</div></th>
+<!-- ko foreach: type_objs -->
+<th class="type-name" data-bind="html: name().toUpperCase().split('').join('<br>'), attr: {'data-type-col': index}"></th>
+<!-- /ko -->
+<!-- ko if: rows()[0].summary_cells().length -->
+<th data-bind="attr: {colspan: rows()[0].summary_cells().length}">Totals</th>
+<!-- /ko -->
+</tr>
+</thead>
+<tbody data-bind="foreach: rows, afterAdd: slide_add, beforeRemove: slide_remove">
+<tr>
+<th class="type-name" data-bind="template: {name: type.custom || $root.enable_edit_existing() ? 'custom_type' : 'existing_type', data: type}, attr: {'data-type-row': type.index}"></th>
+<!-- ko foreach: cells -->
+<td data-bind="html: content, css: css_class, attr: {title: title, 'data-type-row': type1.index, 'data-type-col': type2.index}, click: cycle_multiplier"></td>
+<!-- /ko -->
+<!-- ko foreach: summary_cells -->
+<td data-bind="text: content, css: css_class, attr: attr"></td>
+<!-- /ko -->
+</tr>
+</tbody>
+<tfoot data-bind="foreach: summary_rows">
+<tr>
+<!-- ko if: $index() == 0 -->
+<th data-bind="attr: {rowspan: $parent.summary_rows().length}">Totals</th>
+<!-- /ko -->
+<!-- ko foreach: $data -->
+<td data-bind="text: content, css: css_class, attr: attr"></td>
+<!-- /ko -->
+</tr>
+</tfoot>
+</table>
+</div>
+</body>
+</html>

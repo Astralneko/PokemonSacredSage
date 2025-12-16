@@ -1,0 +1,238 @@
+So I have three fan regions (that I actually have any sort of plan for the Gyms of), this journal is to document their gyms. All of them have a special thing related to their Gyms tho so here we go
+
+===============================================================
+VERELA - Sunset League
+===============================================================
+Sunset League (Main, must be battled)
+====================================
+Maracaleza Gym (Flying) - Aria - Ace: Marihush
+Team: Marihush, V.Woobat
+Rematch: Marihush (Tera Ghost), V.Swoobat, Oslazar, Scyther, Cloudeon
+TM Given: TM30 Aerial Ace
+
+Rocavideo Gym (Ground) - Desiree - Ace: Pebblineer
+Team: Pebblineer (Tera Fairy), Gligar
+Rematch: Pebblineer (Tera Fairy), Gliscor, Spikatus, Gastrodon, Quakeon
+TM Given: TM24 Bulldoze
+
+Frenaval Gym (Water) - Diego - Ace: Escueela (Azure) / Krillance (Rose/Sage)
+Team: [Game's ace], [Other game's ace], Lumineon
+Rematch: Escueela (Tera Psychic), Krillance (Tera Dark), Lumineon, Palafin, Corsaline
+TM Given: TM10 Rain Dance
+
+Tangoseiro Gym (Bug) - Katy - Ace: Oilorde
+Team: Oilorde (Tera Fire), Swallectro, Taronarch
+Rematch: Oilorde (Tera Fire), Swallectro, Taronarch, Kleavor, Fatafly
+TM Given: TM58 Bug Buzz
+
+Hirihopa Gym (Ghost) - Neka - Ace: H. Zoroark (Maingame) / Komblanche (Rematch/Canon)
+Team: H. Zoroark (Tera Ice), Gemillite, Mementa
+Rematch: H. Zoroark, Gemallen, Remottle, Komblanche (Tera Ice), Vr. Mandibuzz
+TM Given: TM77 Hex
+
+Sao Samba Gym (Electric) - Rayann - Ace: Ravarraw
+Team: Ravarraw, Raichu (Tera Fighting), Lazitelen, Rayonsiera
+Rematch: Ravarraw, Naruchu (Tera Fighting), Lazitelen, Rayonsiera, Jolteon
+TM Given: TM21 Thunder Wave
+
+Rio Bossano Gym (Fairy) - Enrique - Ace: Argeilla (Azure/Sage) / Aurinti (Rose)
+Team: [Game's ace], [Other game's ace], Vr.Golurk, Tenderval
+Rematch: Argeilla (Tera Fire), Aurinti (Tera Water), Vr. Golurk, Tenderval, Vixecary
+TM Given: TM96 Misty Terrain
+
+Veriachi Gym (Dragon) - Arthur - Ace: Nemateiloon
+Team: Nemateiloon (Tera Flying), Noivern, Pyrinuget, Dracohaya
+Rematch: Nemateiloon (Tera Flying), Noivern, Pyrinuget, Dracohaya, H. Goodra, Baxcalibur
+TM Given: TM52 Dragon Pulse
+====================================
+Twilight League (Optional, can battle anytime)
+TL Gyms use a different number of Pokémon and have a different maximum level depending on how many Gyms the player has beaten:
+1-2: 2, 20
+3-5: 3, 30
+6-9: 4, 40
+10-14: 5, 50
+However, their levels are increased programatically depending on where in the range they are:
+11: +2
+4, 7: +3
+12: +4
+2: +5
+5, 8, 13: +6
+9, 14: +8
+Rivola is not included and will always use a full team of 6. 15 Gyms is not boosted as Rivola is the only one that can be battled 16th.
+====================================
+Maracaleza Gym (Fighting) - Akita - Ace: Rayonsiera
+Team in order of importance: Rayonsiera, Ramantill, Sneasler (Tera Poison, only teras in rematches), Servolley, Cuffeon
+Unlocked after 1st Gym
+TM Given: TM17 Brick Break
+
+Lyra Alley Gym (Dark) - Fritz - Ace: Pikandine
+Team in order of importance: Umbreon (Tera Poison), V. Togekiss, Pikandine (Tera Fairy), Villyião, Maphidia
+Unlocked after 2nd Gym
+Umbreon is considered ace if the player has not beaten 3 Gyms yet
+TM Given: TM78 Beat Up
+
+Nightlight Street Gym (Fire) - Sauta - Ace: Bombalan
+Team in order of importance: Bombalan (Tera Fire), Nachiika, Baazelusk, Infernova, Volcarona
+Unlocked after 3rd Gym
+TM Given: TM48 Flamethrower
+
+Nova Cancioba Gym (Poison) - Mateo - Ace: Tinkaton / Zombilume
+Team in order of importance: Tinkaton (Tera Poison), Zombilume, Revavroom, Suerteside, Cosminage
+Unlocked after 3rd Gym
+TM Given: TM45 Fever
+
+Forroxada Gym (Steel) - Virgo - Ace: Chromeon
+Team in order of importance: V. Basculegion (Tera Ghost), Chromeon, Scizor, Mawile, V. Banette
+Unlocked after 4th Gym
+TM Given: TM61 Gyro Ball
+
+Choraçu Gym (Rock) - Amber - Ace: V. Golurk
+Team in order of importance: V. Golurk (Tera Ground), Minior, H. Arcanine, Dyodetza-Normal, Bedrocto
+Unlocked after 5th Gym
+TM Given: TM18 Rock Tomb
+
+Route 12 Mansion (Ghost) - Vergil - Ace: Memenada
+Team in order of importance: Matareon, Perselfly, Memenada (Tera Fairy), V. Banette, Bermurei
+Unlocked after 7th Gym
+TM Given: TM28 Psychic
+
+Popasaha Stadium (Glitch) - Rivola - Ace: Belledam
+Team in order of importance: Dyodetza-Glitch, Solursa, Pangshi, Porygon-Z, Wearlycan, Belledam
+Unlocked after 15 Gyms are defeated
+TM Given: TM40 Volt Switch
+====================================
+Elite Four and Champion
+====================================
+Fire Elite Four - Palmer - Ace: Corinavo
+Team: Corinavo, Flareon (Tera Water), Infernova, Driftloth, Furnursa
+
+Psychic Elite Four - Astley - Ace: Summer Yuconnit
+Team: Su.Yuconnit (Tera Fire), Supaizard, Farigiraf, Celestell, Amniball
+
+Ice Elite Four - Bankoro - Ace: Winter Sakumarga
+Team: Wi.Sakumarga, Crowndra, Felacier (Tera Fighting), Remottle, Wearlycan
+
+Steel Elite Four - Rusty - Ace: Weathered Cobralf
+Team: Wea.Cobralf, Knitriton, Chromeon, H. Goodra, Lunavy (Tera Steel)
+
+Champion: Anemone - Ace: Liberetzal
+Team: Naruchu, Nemateiloon, Solvenaga, Sacrasoot, Carrigater, Liberetzal
+
+Former Champion: Panem - Ace: Spikatus
+Team: Spikatus, Staraptor, Bombalan, Reuniclus, V. Ursaluna, Gastrodon
+===============================================================
+ZANTARU - Aster League
+===============================================================
+Zantaru has nine Gyms instead of eight. Each one still has 1 type, although there are three Elite Trainers instead of four. The Pokémon League is on Mount Aster, the tallest mountain in Zantaru’s eastern mountain range. The Gym types are like this:
+Aminade City's Flying Trial Captain - Avery - Ace: Sweetwan
+Â's B's F's H's T's O's Funny
+Mundibeau City's Bug Trial Captain - Beatrice - Ace: Vulcantern
+Idolda City's Electric Trial Captain - Circa - Ace: Vanishux
+Lagano City's Water Trial Captain - Joaquin - Ace: Lillinimba
+Kurtail City's Ghost Trial Captain - Azrani - Ace: Shedinja
+Avemara City's Ground Trial Captain - Trenton - Ace: Ratterup
+Tekakon City's Dark Trial Captain - Nicole - Ace: Lucenare
+Raicha City's Psychic Trial Captain - Gloria - Ace: Bellenhime
+Leyendo City's Steel Trial Captain - Gabriel - Ace: Carridillo
+Each of the Gyms do not offer a badge, rather, a nine-segmented pendant is used instead, which is marked with the proper color as each Gym is completed. There are two versions that are alternated every year - one themed after fire, the other after water.
+
+The Elite Trainers challenged before the Champion are handpicked by the Champion, and change when the Champion position is replaced usually, but Prof. Maple (the replacement for the late Ezuku Babel) does not replace them. They are:
+Fighting Elite Four - 
+Grass Elite Four - Yucca
+Dragon Elite Four - Sigurd
+Normal Elite Four - Boris
+Champion Ezuku - Ace: Gemallen
+Champion Ann Maple - Ace: Kumeichan
+
+In general: Think of the Aster League as a combination of the Alola League and literally any other region's League.
+===============================================================
+SILATI - Silati League
+===============================================================
+It has the normal League format.
+Batagna's Water Gym Leader - Aquarius
+Melagrande's Fire Gym Leader - Aries
+Lamporayo's Electric Gym Leader - Zachari
+Celiccia's Flying Gym Leader - Libra
+Tuzuccani's Psychic Gym Leader - Harle
+Narancia's Fighting Gym Leader - Mino
+Moranea's Dark Gym Leader - Lucy
+Neolive's Steel Gym Leader - Platinum
+Áy
+Ghost Elite Four - Dante
+Ground Elite Four - Pierre
+Poison Elite Four - Molly
+Glitch Elite Four - Hazzel
+Champion Sirius
+===============================================================
+XUREEN - Xureen League
+===============================================================
+Similar to the Aster League, but badges are used. No Gym Leader types are duplicated between the Aster and Xureen Leagues, though that is just coincidence. The only types between the two that remain unused are Glitch and Grass, the latter being the previous type of Evelyn’s Gym before that Gym Leader retired and the former being Mackenzie's specialty. There is also no Elite 4 or anything like it, rather, several Trainers, including the current top 4 available Trainers from previous sessions battle in a biannual tournament, similarly to the Galar League.
+Malchan's Normal Gym Leader - Evelyn - Ace: Lucideon
+Marinel's Fire Gym Leader - Savannah - Ace: Cherrykaze
+New Motostoke's Rock Gym Leader - Rory - Ace: Graphirida
+Morrighan's Ice Gym Leader - Claudia - Ace: Kochisuria
+Catiran's Celestial Gym Leader - Rosana - Ace: X. Inkdian
+Tanopal's Fairy Gym Leader - Sylvester - Ace: Alikurumi
+Safiran's Dragon Gym Leader - Wyatt - Ace: Velocragma
+Osbedol's Fighting Gym Leader - Nina - Ace: Tessukuren
+Peraday's Poison Gym Leader - Mary Jane - Ace: Mawberry-Rawst
+
+Trainer's Tournaments happen every even numbered year*, and returning Trainers are expected to appear in successive Trainer's Tournaments. This is what determines the strongest Trainer. Only Trainers with all nine Xureeni Gym Badges may enter. Being "The Champion" is more of a celebrity position than a leader position in Xureen. While at one point Chilan Shendi held this position, the most recent Champion of Xureen (according to the plot of the game I'd have in Xureen) simply goes by Mackenzie.
+
+Mackenzie's team consists of the following:
+Pawcelock (Ace), Goodra, Vikavolt, X. Thundixie, Peresteel, Rotom
+
+The first Trainer's Tournament's battles are hardcoded. They are as follows:
+Fighting Elite Trainer - Nina
+Normal Elite Trainer - Cheren
+Water Elite Trainer - Ciel (hardcoded to be the second to last Trainer, hence has the title "Semifinalist")
+Psychic Elite Trainer - Anki
+Champion Mackenzie (referred to as "Finalist" in the Trainer's Tournament, though can be battled outside the tournament)
+
+
+Canderant - Alexandrite
+Osbedol - Obsidian
+New Zeppali - Lapiz (spelled backwards)
+Morrighan - Morganite
+Catiran - Citrine
+Melicarn - Carnelian
+New Malie
+Courtena - Quartz
+Garnetti - Garnet
+Safiran - Sapphire
+Flormura - Fluorite
+Malchan - Malachite
+Marinel - Spinel
+New Motostoke
+Peraday - Peridot
+Tanopal - Opal
+Onyctar - Onyx
+
+*Celastian calendar
+
+===============================================================
+TZARIN - Tzarin League
+===============================================================
+It has the normal League format.
+Coperniv Gym Leader
+Keplanov Gym Leader
+Galilova  Gym Leader
+Schwarzyl Gym Leader
+Chandragov's Normal Gym Leader - Igor
+Maxelberg's Poison Gym Leader - Raston
+Newtov's Dragon Gym Leader - Fafnir
+Shanohiv's Ghost Gym Leader - Anika
+
+Ground Elite Four - Nikita
+Dark Elite Four - Alyosha
+Fighting Elite Four - Dobrynya
+Celestial Elite Four - Yugari
+Champion Ilya - Ace: Tz. Reuniclus
+
+AccAnimation:
+MatCap: textured
+RimLight: 7A8CA8
+Outline: textured, 4C398C, 0.104
+Emission: textured
+
+8C8DA6 0.132

@@ -1,0 +1,168 @@
+defend = 0
+precise = 1
+fierce = 2
+special = 3
+
+opponent-player
+0-0 = "Study each other's movesets" - nothing occurs
+0-1 = Attack goes through anyways
+0-2 = Attack is evaded
+0-3 = Special attack beats all non-special attacks
+1-0 = Attack is not blocked
+1-1 = Traded hit - no damage occurs
+1-2 = Both take damage equal to the index of the attack
+1-3 = Special attack beats all non-special attacks
+2-0 = Attack is evaded
+2-1 = Both take damage equal to the index of the attack
+2-2 = Both take damage equal to the index of the attack
+2-3 = Special attack beats all non-special attacks
+3-0 = Special attack beats all non-special attacks
+3-1 = Special attack beats all non-special attacks
+3-2 = Special attack beats all non-special attacks
+3-3 = Special attacks collide - both take 3 damage
+
+Verela Battle Facility - "Battle Parade"
+
+Functionally similar to Battle Subway: do a chain of 7 battles, then get a prize, repeat multiple times until the boss. This is itself identical to the RSE Battle Tower. You can do Single, Double, Triple, and Multi variants (in Multi mode, you get 3 pokemon instead of 2 like in the original Battle Subway, and are joined by either one of the other two player characters, or a Twilight League Gym Leader or rival if the League has been beaten). In Singles you get 3 party members, in Doubles you get 4, and in Triples you get 6. In all cases the final boss is either Panem or Circense, with Rayann replacing Panem in Doubles after becoming the Champion.
+
+During Hard Mode (the lowest one to have a battle against a Parade Leader), the chain goes like:
+Battle 01-07: 0 - 0 - 1 - 0 - 0 - 1 - 2 (+2)
+Battle 08-14: 0 - 1 - 1 - 0 - 1 - 1 - 2 (+4)
+Battle 15-21: 1 - 1 - 1 - 1 - 1 - 1 - 2 (+6)
+Battle 22-28: 1 - 1 - 1 - 1 - 1 - 1 - 2 (+8)
+Battle 28 is against Panem in Single Battles, Rayann in Double Battles, Circense in Triple Battles, and both in Multi Battles.
+In Normal, the last 7 battles are cut out, including the Leader battle. In Lunatic, another set of seven is added.
+
+However, the middle of each month is a special event.
+
+Summer Ides (February, June, October): Justice Carnival
+Battle 01-07: 0 - 0 - 1 - 0 - 0 - 1 - 2 (+2)
+Battle 08-14: 0 - 0 - 1 - 0 - 1 - 1 - 2 (+3)
+Battle 15-21: 0 - 1 - 1 - 1 - 1 - 1 - 2 (+4)
+Battle 22-28: 1 - 1 - 1 - 1 - 1 - 2 - 3 (+6)
+Battle 29-35: 1 - 1 - 1 - 1 - 2 - 2 - 3 (+8), Battle 35 is against Panem in Single Battles, Rayann in Double Battles, Circense in Triple Battles, and both in Multi Battles.
+
+Spring Ides (January, May, September): Flowering Carnival
+Battle 01-08: 0 - 0 - 1 - 0 - 0 - 1 - 2 - 3 (+2)
+Battle 09-16: 0 - 1 - 1 - 0 - 1 - 1 - 2 - 3 (+4)
+Battle 17-24: 1 - 1 - 1 - 1 - 1 - 1 - 2 - 3 (+6)
+Battle 25-32: 1 - 1 - 1 - 1 - 1 - 2 - 2 - 4 (+8), Battle 32 is against Panem in Single Battles, Rayann in Double Battles, Circense in Triple Battles, and both in Multi Battles.
+
+Winter Ides (April, August, December): Ash Carnival - Unlimited Chain Length
+Battle 01-07: 0 - 1 - 0 - 0 - 1 - 1 - 2 (+2)
+Battle 08-14: 0 - 1 - 1 - 0 - 0 - 1 - 2 (+3)
+Battle 15-21: 1 - 1 - 1 - 1 - 1 - 1 - 2 (+4)
+Battle 22-28: 1 - 1 - 1 - 1 - 1 - 2 - 3 (+6)
+Battle 29-35: 1 - 1 - 1 - 1 - 2 - 2 - 3 (+8), Battle 35 is against Panem in Single Battles, Rayann in Double Battles, Circense in Triple Battles, and both in Multi Battles.
+For higher battle numbers, simply do Battle # mod 35.
+
+Autumn Ides (March, July, November): Harvest Carnival - Extra BP
+Battle 01-07: 0 - 1 - 1 - 1 - 2 - 2 - 3 (+2)
+Battle 08-14: 0 - 1 - 1 - 1 - 2 - 2 - 3 (+3)
+Battle 15-21: 0 - 1 - 1 - 1 - 2 - 2 - 3 (+4)
+Battle 22-28: 0 - 1 - 1 - 1 - 2 - 2 - 3 (+5)
+Battle 29-35: 0 - 1 - 1 - 1 - 2 - 2 - 3 (+6)
+Battle 36-42: 0 - 1 - 1 - 1 - 2 - 2 - 3 (+7), Battle 42 is against Panem in Single Battles, Rayann in Double Battles, Circense in Triple Battles, and both in Multi Battles.
+You can still run through the chain twice in one sitting.
+
+If you start a Battle Parade in an event, you will finish in that event, even if it is no longer the correct time for this.
+
+░░░░░░░░░░░░░░░░░▄▄███<br>
+░░░░░░░░░░░░░░░░█░▄█▀<br>
+░░░░░░░░░░░░░░░█░██<br>
+░░░░░░░░░░░░░░░█░██░░▄<br>
+░░░░░░░░░░░░░▄█░▄▀█████▄<br>
+░░░░░░░░░░░▄██▀▄██░██████▄<br>
+░░░░░░░░░░░███░███▄▀█░█████▄<br>
+░░░░░░░░░░░██░██░██▄▀░██████<br>
+░░░░░░░░░░░▀██▀▄░░▀░▄░░█▀████<br>
+░░░░░░░░░░░▄██░█░░░░█░░█▄▀███<br>
+░░░░░░░░░░░███░░░░░░░░▄██░████<br>
+░░░░░░░░░░░▀███▄▄▀▀░░░▄███░███<br>
+░░░░░░░░░░░░░▀███▀▀░░█████░███▄<br>
+░░░░░░░░░░░░░▄█░▀█░░▄▀░██████<br>
+░░░░░░░░░░░░▄▀░░░█▀▀▄░░░██▄██<br>
+░░░░░░░░░░░█▀░█░█░▄░░▀▄░░████<br>
+░░░░░░░░░▄▀░░▄█░▀█▄░░░▀▄░▀█▀<br>
+░░░░░░░░▄▀░░▄▀█░░░▀█░░▄█▄░█<br>
+░░░░░░░▄▀░░░█░█░░░░█████▀░▀▄<br>
+░▄▀▀▄█▀░░░░▄▀█░░░░░▀██▀░░░░█<br>
+█░░░███░░░▄▀░█░░░░░░▀▄░░░░▄▀<br>
+█▄░░░███▄█░░█░░░░░░░░░▀▀▀█<br>
+░▀██████▀░░█░▄▀░░░░▄▀░░░░█<br>
+░░░░▀▀░░░░▄▀░█░░░░░█░░░░░░█<br>
+░░░░░░░░░░█░░░▀▀█▄▄▄▀░░░░░█<br>
+░░░░░░░░░░█░░░░░░░░░░░░░░░█<br>
+░░░░░░░░░░▀▀▄▄▄░░░░░░░░░░▄▄▀<br>
+░░░░░░░░░░░░█████████████<br>
+░░░░░░░░░░░███████▀██████<br>
+░░░░░░░░░░░▀▀████░░▀████▀▄<br>
+░░░░░░░░░░░██▄▄▄▀░░░▀▄▄▄██▄<br>
+░░░░░░░░░░▄█████░░░░░▀█████▄<br>
+░░░░░░░░░░██████░░░░░░▀█████<br>
+░░░░░░░░░░▀█████░░░░░░░░█████<br>
+░░░░░░░░░░░█████░░░░░░░░░████▄<br>
+░░░░░░░░░░░████░░░░░░░░░▄█████▄<br>
+░░░░░░░░░░███▄▀▀█▄░░░░░█▀▀▄████<br>
+░░░░░░░░░░████████░░░░░███████<br>
+░░░░░░░░░░░▀█████▀░░░░░░▀▀▀▀▀<br>
+
+Verela Battle Facility 2 - "Battle Frontier"
+
+The Battle Frontier has multiple different battle facilities.
+
+First is the Battle Arcade, more similar to Smogon/Showdown, while the Parade is more similar to VGC and similar formats. It can be challenged in Singles or Doubles formats. These rules are identical to those of the Battle Parade, except that unlike the Battle Parade, you can use a full team of six in singles and doubles. The Battle Parade functions identically to Tier 1 of the Battle Frontier, except with the limited list's count being half of the team's size rounded up instead of always being two. All Battle Parade and Battle Arcade fights have an Item Clause, where all items must be unique and only up to 2 of them can be Z-Crystals.
+
+Battle Frontier's tier system is as follows:
+Tier 0 - "Partazura Tier"
+This tier cannot actually be battled in. "Tier 0" refers to the ten Pokémon with a base stat total too high to be in Tier 1: Partazura, Daroseiku, Berantegon, Diuragon, Vernacht, Crowzoatch, Axobaltl, Itzaiman, Diwacucha, and Kachilida. They are called this because like YGO tier 0, if these were unbanned, they would likely be an auto-include in any team that could use them, even if they were limited like the 18 tier 1 Pokémon.
+
+Tier 1 - "Baazelusk Tier"
+You cannot use more than 2 team members with base stat totals between 535 and 600 inclusive. You cannot use any Pokémon with a base stat total over 600. You are still allowed to use any Legendary Pokémon with a suitable BST: the five Legendary Beasts, Nemeseta, Chupanida, Mew, Meloetta, and Celebi.
+The final boss for this tier is Arcade Star Dahlia, who will battle you on round 21, after three rounds of 7 battles. Defeating her grants you his Excellence Mark. You can continue playing endlessly, and Dahlia will challenge you again at round 49 and every 49th round thereafter. Again, you can continue playing endlessly up to a cap of 980.
+
+Tier 2 - "Nerictalure Tier"
+You cannot use any Pokémon with a base stat total over 534. This means Escueela (540), Nemateiloon (540), Cosminage (550), Memenada (550), Furronbu (570), Lucideon (570), S.Arcanine, S.Goodra, Baazelusk, Solvenaga, Naruchu, and all Legendaries are banned in this tier. (Furronbu is not considered a Legendary due to not being in the Undiscovered egg group, which is a requisite to being considered a Legendary. Its base stat total is exactly 534 anyways.) 534 is the exact base stat total for the final forms of the Verelan starters and no Verelan Pokémon currently has a base stat total of exactly 535, hence why it was chosen as the cutoff.
+Completing a Battle Frontier Challenge in tier 2, by completing three rounds of 6 battles, grants access to tier 1. However, you can continue playing endlessly (technically, up to a cap of 980).
+
+Tier 3 - "Marasagi Tier"
+You cannot use any Pokémon with a base stat total over 450. This means all Pokémon with a base stat total higher than Marasagi (who is at exactly 450) is banned.
+Completing a Battle Frontier Challenge in tier 3, by completing two rounds of 7 battles, grants access to tier 2. However, you can continue playing endlessly (technically, up to a cap of 980).
+
+Tier 4 - "Aluminnow Tier"
+You cannot use any Pokémon with a base stat total over 365. While the tier is named for Aluminnow, its base stat total is so low (206) that it's still pretty unviable even in Tier 4. It's just the bottom tier, as since the tiers are based on base stat totals, not many Pokémon would actually fall into a low BST limit like 280, which would be the next logical limit. (The base form starters are 295, for instance!)
+Completing a Battle Frontier Challenge in tier 4, by completing two rounds of 6 battles, grants access to tier 3. However, you can continue playing endlessly (technically, up to a cap of 980).
+
+There is also the Battle Stadium, based on Pokémon Stadium, which has three cups: the Professor's Cup, the Captain's Cup, and the Master's Cup. Only four Pokémon can be entered, and all Cups are Single Battles.
+
+In the Professor's Cup, only Pokémon at or below level 10 are allowed to enter, as level 10 is the highest level a gift starter has been in the main series (being the level of Prof. Sycamore's Kanto starters). This is based on Stadium 2's Little Cup. Completing 16 battles unlocks the Captain's Cup.
+
+In the Captain's Cup, only Pokémon between levels 45 and 55 are allowed to enter, and the combined level of all teammates must not exceed 200. This is based on Stadium 2's Poké Cup. Completing 20 battles unlocks the Master's Cup.
+
+In the Master's Cup, all Pokémon up to Level 100 may enter, as 100 was the previous maximum level. (As with the Battle Parade, standard Battle Frontier sets levels to 50. It really doesn't matter what level it actually is and could be 100, but 50 is already standard.) Neither cup has tiers. The final boss for all cups is Stadium Announcer Kamil, who will battle you after three sets of eight rounds in the Battle Stadium, in round 25. Defeating him in all three cups grants you his Excellence Mark.
+
+The Battle Factory is the third battle facility of the Verelan Battle Frontier, which is equivalent to the Platinum Battle Factory. Six random rental Pokémon will be given to the player, who will get to choose three (Singles) or four (Doubles) Pokémon.
+
+Factory Head Trevor will give clues as to what Pokémon the opponent will use, and will do the same for the player for flavor. He will name all three Pokémon in round 1, and the lead Pokémon (and a second one in singles) in round 2. He will name two moves of one of the opponent's Pokémon in rounds 3 and 4, but will only name that Pokémon in round 3. In rounds 5, 6, and 7, he will only name the two most common types the team has. This pattern repeats for rounds 8-21. The first time you beat round 21, in round 22, he will battle you himself, and give no clues. Victory grants you his Excellence Mark. After that run, he'll instead perform another 2 sets of 7 and battle you in round 36.
+
+The fourth battle facility is the Battle Valley. It is equivalent to the Platinum Battle Hall, and is headed by Valley Ranger Diamante. The valley is narrow, so only one-on-one battles may be conducted.
+
+The final battle facility is the Battle Dungeon, which is similar to Mt. Battle from the Shadow duology, the Battle Pyramid from the Emerald Battle Frontier, or Black City's Tower/White Forest's Treehollow from the Unovan games. You can choose Singles or Doubles. Clear 20 floors which each contain a certain number of Trainers. Each Trainer's team size and the number of Trainers on a floor is determined by floor number:
+Floors 1-2: 3 Trainers, 3 Pokémon each
+Floors 3-4: 4 Trainers, 3 Pokémon each
+Floors 5-7: 4 Trainers, 4 Pokémon each
+Floors 8-10: 5 Trainers, 3 Pokémon each
+Floors 11-14: 5 Trainers, 4 Pokémon each
+Floors 15-17: 6 Trainers, 3 Pokémon each
+Floors 18-20: 6 Trainers, 4 Pokémon each
+The final boss for the Dungeon is Dungeon Master Monika, and defeating her grants you her Excellence Mark. All trainers in the Tower are "Fighting Pixels" and use RBY style sprites.
+Youngsters, Lasses, and School Kids are "easy" Fighting Pixels.
+Tourists and Businesspeople are "medium" Fighting Pixels.
+Ace Trainers and Veterans are "hard" Fighting Pixels.
+The player may choose a difficulty level, and the majority of trainers will be of that level.
+In total, 98 trainers are battled.
+
+Note: Fandom calls Template [Plantilla] in spanish
+
+Ruka and Noga? (Arm and leg)
+Noznit and Bumaga? (Scissors, paper)

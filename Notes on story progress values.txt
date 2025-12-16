@@ -1,0 +1,251 @@
+Story Progress is a set of four digit values with the following format:
+XXYZ
+where XX is the chapter of the story, Y is a section of the chapter, Z is the "page" within the story
+Optional content that is completely seperate from any story segment (e.g. Twilight League Gyms, hooligan handling) should use Switches instead of using any Story Progress variable.
+On-map puzzles (Gym or otherwise) should use Switches or normal Variables instead of using a Story Progress variable, unless the puzzle being completed is part of a Story Progress segment.
+So for example, Rocavideo Gym's water position and Veriachi Gym's player level are stored separately. Himnora Kasteloj's six fountain director positions are stored separately, but each pool's status is technically part of Story Progress, as their status is directly related to the Team Xibal battles in the area.
+
+Each time XX is updated, a small ditty should play for the change in chapter accompanied with a graphic stating the new chapter's entry.
+
+There are also two Fun Values (named after the Undertale variable of the same name).
+These are variables 998 and 999.
+998 is the temporary variant, while 999 is the global variant.
+There is nothing planned to use the Fun Values currently. It might be used to influence some gift Pokémon later on.
+
+==========================================================================
+MAIN STORY (12 chapters)
+Variable ID: 990
+Quest Chapters: 1-10
+Twilight League Quest Chapters: 11-14
+Chapter Quest Color: Cyan (Used only for each Chapter Arc quest)
+Quest Color: Blue
+==========================================================================
+CHAPTER 00 - Getting Aria's Badge
+======================
+0000 - Initial value.
+0001 - The phone call from Natsuki has been finished.
+0002 - The player has talked to mom and can now leave the house.
+0003 - The player has left their house. (Used so "Chapter 1" displays only once)
+0004 - The player has met up with Natsuki and Mona at Mona's house, allowing the player to get a starter from Prof. Razilwood's Lab.
+0010 - The player has obtained the starter from Prof. Razilwood's Lab. (Quest 1)
+0011 - The player has talked to the Gym Guy for the first time.
+0012 - The player has entered the Pokémon Center.
+0020 - The player has met Aria in Alipigra City's pub. (Quest 2)
+0021 - The player has battled Natsuki on Route 5, allowing them to continue down Route 5.
+0022 - The player has battled Natsuki on Route 5 and lost the battle. They can still continue, but Natsuki will be in a different place.
+0030 - The player has defeated Teacher Bonnie in front of Maracaleza Primary. (This is seperate from entering because 30 is used to let Maracaleza Primary know it needs to set up for the events that take place here.)
+0031 - The player has entered Maracaleza Primary and started the stuff that takes place here.
+0032 - The player has battled Mona in Maracaleza Primary.
+0033 - The player has finished the Maracaleza Primary "sidequest" portion. (Quest 4)
+0040 - The player has talked to Aria at Starview Lake. At this point, Aria's Gym should be able to be challenged. (Quest 5)
+0041 - The player has talked to the Gym Guy in the Gym setting.
+0042 - The player has defeated Gym Leader Aria. (Quest 3)
+
+======================
+CHAPTER 01 - Getting Desiree's Badge
+======================
+0100 - The player has left the Alipigra Gym after defeating Aria. (Used so "Chapter 2" displays only once)
+0101 - The player has talked to the Route 5 dark grass tutorial Ranger. (Allows the player to go to Route 4)
+0110 - The player has had the phone conversation with Razilwood and Fennel. (So it doesn't trigger multiple times)
+0111 - The player has entered Rio Bossano City.
+0112 - The player has talked to Professor Fennel.
+0120 - The player has received the Z-Power Ring and the Normalium-Z. (Quest 102) (Veal checks this instead of checking for owning a Z-Ring, as an event page's conditions can't be set to "has Z-Power Ring")
+0121 - The player has defeated Veal on Route 15. (While Veal doesn't actually need to use an SPV to ensure he's defeated, this serves as a sanity check, such that you can't encounter Sorrel if you reach Rocavideo Town early.)
+0130 - The player has talked to Desiree in Rocavideo Town. (So it doesn't trigger multiple times; honestly most of these are things like this so)
+0131 - The player has encountered Sorrel at Rocavideo Town.
+0140 - The player has talked to the Gym Guy at Rocavideo Gym.
+0141 - The player has defeated Gym Leader Desiree. (Quest 101)
+
+======================
+CHAPTER 02 - Getting Diego's Badge
+======================
+0200 - The player has left Rocavideo Gym after defeating Desiree. (Used so "Chapter 3" displays only once)
+0210 - The player and Desiree have entered Route 6 to battle the Risen.
+0211 - The player has defeated all Risen. (Quest 202)
+0212 - The player has defeated Mona at Whitepetal Forest.
+0213 - The player has received TR62 Body Slam from Natsuki. (After the player has defeated all Risen)
+0220 - The player has entered Sao Samba City.
+0221 - The player has received the Bicycle.
+0222 - The player has battled Natsuki on Route 8.
+0230 - The player has talked to Palmer at Frenaval City. (End of Beta 1)
+0231 - The player has reported the Risen to the police. (Quest 203; start of Quest 301)
+0232 - The player has talked to the Gym Guy at Frenaval Gym.
+0233 - The player has defeated Gym Leader Diego. (Quest 201)
+
+======================
+CHAPTER 03 - Team Xibal Event 1 - Maria and Azure
+======================
+0300 - The player has left Frenaval Gym after defeating Diego. (Same as above; as Mona challenges you as soon as you leave this also serves as a trigger to spawn him outside Frenaval City's exit when the map is reloaded)
+0301 - The player has defeated Mona in Frenaval City. (Allows the player to leave Frenaval City)
+0310 - The player has talked to Anabel on Route 9.
+0311 - The player has had the Anabel/Anemone/Diego/player discussion in Frenaval City. (Quest 302)
+0312 - The player has already entered Mercalago for the first time.
+0320 - The player has found and talked to Sorrel. This deactivates the wild encounters in the area until the SPV is at least 323. (Quest 301)
+0321 - Sage-exclusive: The player has defeated Sorrel - in this case, Berantegon will battle the player, instead of Sorrel's Max Repel shooing them away.
+0322 - The player has caught the box legendary.
+0323 - The player has already battled Maria at least once.
+
+======================
+CHAPTER 04 - Getting Katy's Badge
+======================
+0400 - The player has defeated Maria. (Used to set Mercalago to a post-Xibal state; Quest 303)
+0410 - The player has battled Sorrel on Route 3.
+0420 - The player has gone through Tangoseiro Garden.
+0430 - The player has talked to Gym Guy at Tangoseiro Gym.
+0431 - The player has defeated Gym Leader Katy.
+
+======================
+CHAPTER 05 - Getting Neka's Badge
+======================
+0500 - The player has left Tangoseiro Gym after defeating Katy.
+
+======================
+CHAPTER 06 - Team Xibal Event 2 - Cain, Abel, and Rose
+======================
+0600 - The player has left Hirihopa Gym after defeating Neka.
+
+======================
+CHAPTER 07 - Getting Rayann's Badge
+======================
+
+======================
+CHAPTER 08 - Getting Enrique's Badge
+======================
+0800 - The player has left Samba Gym after defeating Rayann.
+
+======================
+CHAPTER 09 - Team Xibal Event 3 - Moses, Joseph, and the Fountain
+Note: The Legendary should disobey until the end of this event at Himnora Kasteloj.
+======================
+0900 - The player has left Rio Bossano Gym after defeating Enrique.
+0910 - The player has entered Himnora Kasteloj at least once.
+0920 - The player has filled water pool 1.
+0922 - The player has defeated Maria.
+0930 - The player has filled water pool 2.
+0932 - The player has defeated Sorrel.
+0940 - The player has filled water pool 3.
+0942 - The player has defeated Cain and Abel.
+0943 - The player has defeated Moses.
+0950 - The player has already battled Joseph at least once.
+
+======================
+CHAPTER 10 - Getting Arthur's Badge
+======================
+1000 - Defeated Joseph Lazarn.
+1010 - The player has entered Veriachi City, after defeating Joseph Lazarn. (This triggers a cutscene with the box legendary, hence the change in story mode value so it only happens once)
+1011 - The player has defeated Natsuki in Veriachi City.
+1012 - The player has talked to Arthur at Mastasis Lake.
+1013 - The player has defeated Mona on West Route 13.
+1020 - The player has found Arthur's Pyrinuget.
+1021 - The player has returned the Pyrinuget to Arthur.
+1030 - The player has talked to Gym Guy at Veriachi Gym.
+1031 - The player has defeated Gym Leader Arthur.
+
+======================
+CHAPTER 11 - Completing the Sunset League
+======================
+1100 - Leave the Veriachi Gym after defeating Arthur. (So "Chapter 12" displays only once)
+1101 - Defeat Palmer. (Used to allow you to battle Astley before Palmer once you have defeated him once. You still need to battle both before challenging Bankoro, though.)
+1102 - Defeat Astley. (Allows battling Palmer, Astley, and Bankoro in any order, however you still must defeat all three to challenge Rusty.)
+1103 - Defeat Bankoro. (Allows battling the Elite Four in any order.)
+1104 - Defeat Rusty. (Consistency - it feels unfair for Rusty to not get a value here.)
+1110 - Defeat Anemone. (This is used so the game plays end credits and teleports you to Alipigra City.)
+1200 - Main Story is complete and credits have rolled. (So that future HOF entry scenes do not play the credits.)
+
+==========================================================================
+SIDE STORY A - CRYPTIC POKEMON SIGHTINGS (4 chapters)
+Variable ID: 991
+Quest Chapters: 15-16
+Quest Color: Green
+==========================================================================
+CHAPTER 00 - Not Started
+======================
+0000 - Initial value.
+0001 - The player has defeated Joseph Lazarn in Himnora Kasteloj.
+
+======================
+CHAPTER 01 - Generic Glitchmons
+======================
+0100 - The player has talked to Professor Razilwood to start the quest. (Chapter A1 title card displays here)
+0101 - The player has caught the Amniball.
+
+======================
+CHAPTER 02 - The Legendary Beasts
+======================
+0200 - The player has defeated Leaf.
+Chapter A2 title card doesn't display until the player reaches the initial location of the legendary beasts.
+
+======================
+CHAPTER 03 - Unowns and Mew
+======================
+0300 - The player has obtained the Legendary Beasts.
+Chapter A3 title card doesn't display until the player goes to Himnora Kasteloj, as the first Unown sighting occurs near there. "Himnora Kasteloj Sewers" is where the actual encounter occurs.
+
+==========================================================================
+SIDE STORY B - THE TIMEKEEPER OF ILEX (4 chapters)
+Variable ID: 992
+Quest Chapters: 17-19
+Quest Color: Yellow
+==========================================================================
+CHAPTER 00 - Not Started
+======================
+0000 - Initial value.
+0001 - The player has seen Celebi.
+
+======================
+CHAPTER 01 - Begin Quest
+======================
+0100 - The player has completed Side Story A, Chapter 2, and has not seen Celebi.
+0101 - The player has seen Celebi and has completed Side Story A.
+0102 - The player has entered the map with Celebi on it. (It picks one of the locations it can be in at random; this will be decided later)
+0110 - The player has talked to Celebi.
+
+======================
+CHAPTER 02 - Sinnoh's Past
+======================
+0200 - The player has exited the time stream. (Chapter B1 title card displays here)
+0210 - The player has defeated Apu Brute Bonnet. (It's called Lord Amoonguss by NPCs, and uses Lord's Title, a variant of Apu's Offering.)
+0290 - The player has defeated Professor Sada.
+0291 - The player has talked to Celebi. (Used so if the player gets back to Hisui without Celebi somehow, the Thyme Warp portal will still be open, but won't display its special message. It'll only disappear once the player has obtained Celebi.)
+0292 - The player has defeated Apu Midnight Sky in the time stream. (It's called Lord Luxray by NPCs. Sada, for example, should say that "I've already sent Lord Luxray away. Alas, I can't stop the humans from reviving the fossils they find...")
+
+======================
+CHAPTER 03 - Paldea's Present
+======================
+0300 - The player has exited the time stream. (Chapter B2 title card displays here)
+0350 - The player has defeated Champion Geeta. (Possibly. Unsure what the final objective of Side Story B Chapter 03 is.)
+0351 - The player has talked to Celebi. (Used so if the player gets back to Paldea without Celebi somehow, the Thyme Warp portal will still be open, but won't display its special message. It'll only disappear once the player has obtained Celebi.)
+0352 - The player has defeated Apu Porygon-Z in the time stream. (Manifestation of the PPP from SV's story.)
+
+======================
+CHAPTER 04 - Unova's Future
+======================
+0400 - The player has exited the time stream. (Chapter B3 title card displays here)
+0410 - The player has defeated Apu Cyber Scarf. (Uses Maverick's Will, a variant of Apu Trigger. Yes, they're known as Maverick Cinccino by NPCs.)
+0430 - The player has defeated Professor Turo.
+0440 - The player has defeated Apu Iron Valiant. (It's aided by Miraidon and Cyber Raptor, but both Legendaries flee afterward. E-terrain is generated, though this time it's thanks to Hadron Engine and not due to overworld events.)
+0450 - The player has defeated ???. (It'll likely be someone from the present, who also appears in Edge of Reality to heal you)
+0451 - The player has defeated Celebi. (Celebi willingly joins the party.)
+0460 - The player has defeated Father Time's Heroes (Lord Daroseiku, Apu Partazura, Maverick Berantegon) at Edge of Reality.
+0500 - The player has finished Side Story B. (Might just consider 460 the "Side Story B finished" value though.)
+
+==========================================================================
+SIDE STORY C - ULTRA BEASTS AND WHERE TO FIND THEM (2 chapters)
+Variable ID: 993
+Quest Chapters: 20-21
+Quest Color: Red
+==========================================================================
+CHAPTER 00 - Not Started
+======================
+0000 - Initial value.
+
+======================
+CHAPTER 01 - Crystal Ridge
+======================
+0100 - The player has completed the Sunset League.
+0101 - The player has met Dulse and Zossie. Chapter C1 title card displays after the conversation.
+
+======================
+CHAPTER 02 - Urdyno Volcano
+======================
+0200 - The player has defeated or caught Necrozma.
