@@ -1,0 +1,58 @@
+Welcome to Crystalmon Collective!
+(based on Cosmicon Collective from Honkai: Star Rail, which may be based on something else but I do not know)
+
+What do Pokémon cards have?
+- Type (which is the primary type of the Pokémon unless the Pokémon is Normal/Flying (which uses Flying) or Glitch-type in this game (which always uses Glitch since outside of CC they are balanced around it; future games with more Glitch-types may use the same rules))
+- HP (which is max(floor(h/8), 30) + 10, where h is the base HP stat, thus ranging between 10 and 40)
+- Attack (which is formulated using a weighted average of both Attack stats)
+- Defense (same formulation as Attack, just with defense stats)
+- Ability (a unique effect that is usually shared amongst members of the same line)
+
+Attack and Defense are manipulated to go from the raw attacking/defending stats to the tcg stats:
+- Weighted average: 3a/4 + b/4 = w, where a is the higher of the two base stats, b is the lower of the two base stats, w is the weighted average
+- Manipulation into a stat between 1 and 6: w 20 or less goes to 1, 21-50 goes to 2, 51-80 goes to 3, 81-105 goes to 4, 106-130 goes to 5, >130 goes to 6
+
+From here on out, Attack is A, Defense is D; base Attack is BA and base Defense is BD. Both A and D are intended to never exceed 11; BA and BD are obviously never intended to exceed 6.
+
+Both players start the game with 3 Pokémon and 2 mulligans.
+
+On your first turn, you get max(A,4)d6 and (2+max(A-4,0))d4 unless effects say otherwise, which you roll, then select A of as your attack. The sum of the selected dice is X.
+The other player gets max(D,4)d6 and (2+max(D-4,0))d4 unless effects say otherwise, they roll, then select D of them as their defense. The sum of the selected dice is Y.
+
+Both players may choose to consume as many mulligans as they have, rerolling any number of dice before selection. Note that if an effect says mulligan, then it is a mulligan, but if it says reroll, then it is not a mulligan.
+
+If the defender's type is weak against the attacker's type, then D is subtracted from Y. If the defender's type is resistant to the attacker's type, then D is added to Y unless Y is larger than 4*D, in which case Y becomes the maximum of itself and 5*D. 
+
+The difference X-Y is dealt to the other player, subtracting from HP.
+
+Then, it becomes the other player's turn. If at this point their HP is 0, their Pokémon faints and is discarded, and must be replaced. If they cannot do so, they lose. Otherwise, both players recharge one mulligan (not all of them) and may choose to replace their active Pokémon with any non-discarded Pokémon. Unless effects say otherwise, neither player can hold more than 2 mulligans. Then, the other player attacks and you defend; then it becomes your turn and you check your HP, and so on until a player either forfeits or loses.
+
+There are also other cards, based on the battle gimmicks available in Sacred Sage. You can hold up to 7 non-Pokémon cards in your hand; they are always accessible.
+- Z-crystal items; if the item's type matches your type, then gain Z-Power; this can only be done once per battle, so it's best to only hold one of them; a Stellar-type Pokémon is matched to Normalium Z
+- Potion, which heals 5 damage; you can have up to 3 in your hand
+- Tera Orb items; these change the type of the Pokémon to the type on the item for the rest of the game; this can only be done once per battle, so it's best to only hold one of them. Stellar is included in the list of possible Tera Orbs, but only is considered super effective on other Stellar-types.
+- X Attack, which adds 5 to X before damage calculation; you can have up to 3 in your hand
+- Dire Hit, which turns all d4 into d6 for that Pokémon until they are replaced; this applies *before* the effect of Z-crystals; you can have up to 3 in your hand
+- Full Heal, which removes all removable negative effects from your Pokémon; you can have up to 3 in your hand
+
+Honestly, a good rule of thumb for hand composition is 3 Pokemon, a Z-crystal, a Tera Orb, any 2 of either X Attack or Dire Hit, 2 Potions, and a Full Heal.
+
+Effect index:
+- Burn: Negative. Afflicted Pokémon takes 3 damage at the end of the opponent's turn, and 1 is subtracted from A (minimum 1).
+- Poison: Negative. Afflicted Pokémon takes 3 damage at the end of the opponent's turn.
+- Frostbite: Negative. Afflicted Pokémon takes 3 damage at the end of the opponent's turn, and 1 is subtracted from D (minimum 1).
+- Combo: Positive. When the afflicted Pokémon next attacks, its attack is applied one more time for every stack of Combo, then remove all stacks of Combo.
+- Z-Power: Positive. All the afflicted Pokémon's dice promote twice (d4 -> d8, d6 -> d10, d8+ -> d12) for the rest of this turn. After this effect is applied, reroll all dice without consuming a mulligan.
+
+Ability ideas:
+- All Baby Pokémon, but not their Evolutions, have no Ability.
+- Angeal line: When attacking, heal either A HP or 3 HP, whichever is lower.
+- Radioso line: When attacking, if 2 selected dice are 4 or higher, the defender gains Burn.
+- Tempixie line: When attacking, if all selected dice are 4 or lower, the attacker gains 1 Combo.
+- Eevee line: When using a Tera Orb of any type except Stellar, you get to decide this Pokémon's type (excluding Stellar).
+- Verelan Hoppip line: When defending, if 2 or more selected dice are 4, the defender gains Poison.
+- Johtonian Togetic line: Automatically rerolls all dice that roll 1 once after rolling.
+- Verelan Togetic line: Automatically rerolls all dice that roll 1 once after rolling.
+- Absol line: Both the number of mulligans recharged per turn and the maximum holdable number of mulligans are doubled while it is out (2 recharged per turn, 4 maximum). If Absol is removed from play, excess mulligans are retained, but not recharged.
+- Pelateng line: When it gains Poison, this Pokémon loses Poison. :hotspot:
+- Amniball line: Technically, its BA and BD are 3 (as all its attack and defense base stats are 73), but at the beginning of either player's turn, BA or BD (depending on if it's attacking or defending) becomes 1d4+1.
