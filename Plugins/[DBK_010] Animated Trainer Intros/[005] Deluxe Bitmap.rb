@@ -32,22 +32,14 @@ class TrainerBitmapWrapper
   def each;   end
   
   #-----------------------------------------------------------------------------
-  # Assigns a Trainer object to this bitmap. 
+  # Sets the scale and hue properties from a trainer type. 
   #-----------------------------------------------------------------------------
-  def setTrainer(trainer, hue = nil)
-    case trainer
-    when Symbol, String
-      @trainer = nil
-      tr_data = GameData::TrainerType.get(trainer)
-    else
-      @trainer = trainer
-      tr_data = GameData::TrainerType.get(trainer.trainer_type)
-    end
+  def setTrainer(tr_type)
+    tr_data = GameData::TrainerType.get(tr_type)
     @scale = tr_data.trainer_sprite_scale
     refresh
     tr_hue = tr_data.trainer_sprite_hue
     hue_change(tr_hue) if tr_hue != 0
-    hue_change(hue) if hue && !changedHue?
   end
   
   #-----------------------------------------------------------------------------
@@ -141,10 +133,10 @@ class TrainerBitmapWrapper
   
   def finished?
     if @reversed
-	  return (@frame_idx == 0)
-	else
-	  return (@frame_idx >= @total_frames - 1)
-	end
+      return (@frame_idx == 0)
+    else
+      return (@frame_idx >= @total_frames - 1)
+    end
   end
 
   #-----------------------------------------------------------------------------

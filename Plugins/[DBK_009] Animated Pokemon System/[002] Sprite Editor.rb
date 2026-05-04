@@ -28,10 +28,10 @@ class SpritePositioner
     @sprites["messageBox"].setBitmap("Graphics/UI/Debug/battle_message")
     @sprites["messageBox"].z = 2
     @sprites["shadow_0"] = PokemonSprite.new(@viewport)
-    @sprites["shadow_0"].setOffset(PictureOrigin::BOTTOM)
+    @sprites["shadow_0"].setOffset(PictureOrigin::CENTER)
     @sprites["shadow_0"].z = 3
     @sprites["shadow_1"] = PokemonSprite.new(@viewport)
-    @sprites["shadow_1"].setOffset(PictureOrigin::BOTTOM)
+    @sprites["shadow_1"].setOffset(PictureOrigin::CENTER)
     @sprites["shadow_1"].z = 3
     @sprites["pokemon_0"] = PokemonSprite.new(@viewport)
     @sprites["pokemon_0"].setOffset(PictureOrigin::BOTTOM)
@@ -88,11 +88,11 @@ class SpritePositioner
     @shiny = shiny
     species_data = GameData::Species.get_species_form(@species, @form)
     return if !species_data
-    @sprites["pokeicon"].pbSetParams(@species, (@female) ? 1 : 0, @form, @shiny)
-    @sprites["pokemon_0"].setSpeciesBitmap(@species, (@female) ? 1 : 0, @form, (@shiny > 0), false, true)
-    @sprites["pokemon_1"].setSpeciesBitmap(@species, (@female) ? 1 : 0, @form, (@shiny > 0))
-    @sprites["shadow_0"].setSpeciesShadowBitmap(@sprites["pokemon_0"], @species, @form, @female, (@shiny > 0), false, true)
-    @sprites["shadow_1"].setSpeciesShadowBitmap(@sprites["pokemon_1"], @species, @form, @female, (@shiny > 0))
+    @sprites["pokeicon"].pbSetParams(@species, ((@female) ? 1 : 0), @form, @shiny)
+    @sprites["pokemon_0"].setSpeciesBitmap(@species, ((@female) ? 1 : 0), @form, (@shiny > 0), false, true)
+    @sprites["pokemon_1"].setSpeciesBitmap(@species, ((@female) ? 1 : 0), @form, (@shiny > 0))
+    @sprites["shadow_0"].setSpeciesShadowBitmap(@species, @form, @female, (@shiny > 0), false, false, true)
+    @sprites["shadow_1"].setSpeciesShadowBitmap(@species, @form, @female, (@shiny > 0))
   end
   
   def pbUpdateShinyInfo
@@ -131,21 +131,21 @@ class SpritePositioner
       @sprites["pokemon_#{i}"].iconBitmap.speed = speed
       @sprites["pokemon_#{i}"].iconBitmap.refresh
       @sprites["pokemon_#{i}"].iconBitmap.hue_change(hue)
-      pos = Battle::Scene.pbBattlerPosition(i, 1)
       @sprites["pokemon_#{i}"].update
+      pos = Battle::Scene.pbBattlerPosition(i, 1)
       @sprites["pokemon_#{i}"].setOffset(PictureOrigin::BOTTOM)
       @sprites["pokemon_#{i}"].x = pos[0]
       @sprites["pokemon_#{i}"].y = pos[1]
       metrics_data.apply_metrics_to_sprite(@sprites["pokemon_#{i}"], i)
       @sprites["pokemon_#{i}"].visible = true
       if @sprites["shadow_#{i}"].bitmap
+        @sprites["shadow_#{i}"].iconBitmap.scale = scale
         @sprites["shadow_#{i}"].iconBitmap.speed = speed
         @sprites["shadow_#{i}"].iconBitmap.refresh
-        @sprites["shadow_#{i}"].x  = @sprites["pokemon_#{i}"].x
-        @sprites["shadow_#{i}"].y  = @sprites["pokemon_#{i}"].y
-        @sprites["shadow_#{i}"].y -= @sprites["pokemon_#{i}"].bitmap.height / 4 if i == 1
-        @sprites["shadow_#{i}"].ox = @sprites["pokemon_#{i}"].bitmap.width / 2
-        @sprites["shadow_#{i}"].oy = @sprites["pokemon_#{i}"].bitmap.height / 2
+        @sprites["shadow_#{i}"].update
+        @sprites["shadow_#{i}"].setOffset(PictureOrigin::CENTER)
+        @sprites["shadow_#{i}"].x = pos[0]
+        @sprites["shadow_#{i}"].y = pos[1] - (@sprites["shadow_#{i}"].height / 4).round
         metrics_data.apply_metrics_to_sprite(@sprites["shadow_#{i}"], i, true)
       end
       @sprites["shadow_#{i}"].visible = metrics_data.shows_shadow?
@@ -296,8 +296,7 @@ class SpritePositioner
         hue = -255 if hue <= - 255
         metrics_data.super_shiny_hue = hue
         refresh
-      end
-      if Input.repeat?(Input::LEFT) || Input.repeat?(Input::RIGHT)
+      elsif Input.repeat?(Input::LEFT) || Input.repeat?(Input::RIGHT)
         hue += (Input.repeat?(Input::RIGHT)) ? 10 : -10
         hue = 255 if hue >= 255
         hue = -255 if hue <= - 255
@@ -665,8 +664,8 @@ class DynamaxSpritePositioner < SpritePositioner
     @sprites["pokemon_1"].clear_dynamax_pattern
     @sprites["pokemon_1"].setSpeciesBitmap(@species, (@female) ? 1 : 0, @form, (@shiny > 0))
     @sprites["pokemon_1"].set_dynamax_pattern(species_data.id, true)
-    @sprites["shadow_0"].setSpeciesShadowBitmap(@sprites["pokemon_0"], @species, @form, @female, (@shiny > 0), false, true)
-    @sprites["shadow_1"].setSpeciesShadowBitmap(@sprites["pokemon_1"], @species, @form, @female, (@shiny > 0))
+    @sprites["shadow_0"].setSpeciesShadowBitmap(@species, @form, @female, (@shiny > 0), false, true, true)
+    @sprites["shadow_1"].setSpeciesShadowBitmap(@species, @form, @female, (@shiny > 0), false, true)
   end
     
   def refresh
@@ -693,8 +692,8 @@ class DynamaxSpritePositioner < SpritePositioner
       @sprites["pokemon_#{i}"].iconBitmap.speed = speed
       @sprites["pokemon_#{i}"].iconBitmap.refresh
       @sprites["pokemon_#{i}"].iconBitmap.hue_change(hue)
-      pos = Battle::Scene.pbBattlerPosition(i, 1)
       @sprites["pokemon_#{i}"].update
+      pos = Battle::Scene.pbBattlerPosition(i, 1)
       @sprites["pokemon_#{i}"].setOffset(PictureOrigin::BOTTOM)
       @sprites["pokemon_#{i}"].x = pos[0]
       @sprites["pokemon_#{i}"].y = pos[1]
@@ -702,15 +701,14 @@ class DynamaxSpritePositioner < SpritePositioner
       @sprites["pokemon_#{i}"].set_dynamax_pattern(metrics_data.real_id, true)
       @sprites["pokemon_#{i}"].visible = true
       if @sprites["shadow_#{i}"].bitmap
+        @sprites["shadow_#{i}"].iconBitmap.scale = scale
         @sprites["shadow_#{i}"].iconBitmap.speed = speed
         @sprites["shadow_#{i}"].iconBitmap.refresh
-        @sprites["shadow_#{i}"].x  = @sprites["pokemon_#{i}"].x
-        @sprites["shadow_#{i}"].y  = @sprites["pokemon_#{i}"].y
-        @sprites["shadow_#{i}"].y -= @sprites["pokemon_#{i}"].bitmap.height / 4 if i == 1
-        @sprites["shadow_#{i}"].ox = @sprites["pokemon_#{i}"].bitmap.width / 2
-        @sprites["shadow_#{i}"].oy = @sprites["pokemon_#{i}"].bitmap.height / 2
-        metrics_data.apply_metrics_to_sprite(@sprites["shadow_#{i}"], i, true)
-        @sprites["shadow_#{i}"].y -= 25 if i == 1
+        @sprites["shadow_#{i}"].update
+        @sprites["shadow_#{i}"].setOffset(PictureOrigin::CENTER)
+        @sprites["shadow_#{i}"].x = pos[0]
+        @sprites["shadow_#{i}"].y = pos[1] - ((@sprites["shadow_#{i}"].height * 1.5) / 4).round
+        metrics_data.apply_dynamax_metrics_to_sprite(@sprites["shadow_#{i}"], i, true)
       end
       @sprites["shadow_#{i}"].visible = metrics_data.shows_shadow?
     end

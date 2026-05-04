@@ -90,6 +90,26 @@ class Battle
   end
 end
 
+class Battle::Battler
+  def pbSetPowerMoveIndex(choice, specialUsage, override = false)
+    if mega? && MultipleForms.hasFunction?(@pokemon, "getMegaMoves")
+      MultipleForms.call("getMegaMoves", @pokemon).each_value do |move_id|
+        next if choice[2].id != move_id
+        return choice[1]
+      end
+    end
+    return -1
+  end
+  
+  def pbResetPowerMoveIndex(used_move)
+    if mega? && used_move && MultipleForms.hasFunction?(@pokemon, "getMegaMoves")
+      mega_moves = MultipleForms.call("getMegaMoves", @pokemon)
+      base_move = @baseMoves[@powerMoveIndex].id
+      @powerMoveIndex = -1 if used_move.id != mega_moves[base_move]
+    end
+  end
+end
+
 
 class Battle::AI
   #-----------------------------------------------------------------------------
@@ -138,6 +158,7 @@ class Battle::Scene
   #-----------------------------------------------------------------------------
   def pbFightMenu_Cancel(battler, specialAction, cw)
     pbPlayCancelSE
+    battler.display_base_moves if specialAction == :mega
     return :cancel
   end
   
@@ -146,7 +167,11 @@ class Battle::Scene
   #-----------------------------------------------------------------------------
   def pbFightMenu_Action(battler, specialAction, cw)
     (cw.mode == 1) ? pbPlayActionSE : pbPlayCancelSE
-    return false if specialAction == :mega
+    if specialAction == :mega && MultipleForms.hasFunction?(battler.pokemon, "getMegaMoves")
+      (cw.mode == 1) ? battler.display_mega_moves : battler.display_base_moves(true)
+      return true
+    end
+    return false
   end
   
   #-----------------------------------------------------------------------------
@@ -228,6 +253,7 @@ class Battle::Battler
   def hasTera?;        return false; end
   def hasZodiacPower?; return false; end
   def isRivalSpecies?(arg); return false; end
+  def hasRaidShield?;  return false; end
 end
 
 class Battle::FakeBattler

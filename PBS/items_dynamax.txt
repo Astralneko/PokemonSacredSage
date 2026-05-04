@@ -7,6 +7,9 @@ Pocket = 8
 Price = 0
 Flags = KeyItem,DynamaxBand
 Description = A Wishing Star has been affixed to it. It lets out light that allows Pokémon to Dynamax when at a Power Spot.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [WISHINGSTAR]
 Name = Wishing Star
@@ -16,6 +19,10 @@ Price = 4000
 BattleUse = Direct
 Flags = Fling_50,UsesAllBattleActions
 Description = A stone that radiates Dynamax energy. It can fully recharge your Dynamax Band in battle.
+LauncherUse = Direct
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DYNAMAXCANDY]
 Name = Dynamax Candy
@@ -25,6 +32,9 @@ Price = 0
 FieldUse = OnPokemon
 Flags = Fling_30
 Description = Raises the Dynamax Level of a single Pokémon by one. A higher level means higher HP when Dynamaxed.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DYNAMAXCANDYXL]
 Name = Dynamax Candy XL
@@ -34,6 +44,9 @@ Price = 0
 FieldUse = OnPokemon
 Flags = Fling_30
 Description = Maxes out the Dynamax Level of a single Pokémon. A higher level means higher HP when Dynamaxed.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MAXSOUP]
 Name = Max Soup
@@ -45,3 +58,6 @@ Price = 10000
 FieldUse = OnPokemon
 Flags = Fling_30
 Description = A soup that packs a huge kick. Certain Pokémon that consume it may be given the ability to Gigantamax.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0

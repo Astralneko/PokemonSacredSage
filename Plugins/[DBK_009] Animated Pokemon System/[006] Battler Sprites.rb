@@ -1,267 +1,27 @@
 ################################################################################
 #
-# Pokemon sprites (Battle)
+# Pokemon mosaic sprite mixin.
 #
 ################################################################################
+module PokemonSprite::MosaicSprite
+  attr_accessor :prepare_mosaic
 
-class Battle::Scene::BattlerSprite < RPG::Sprite
-  attr_accessor :substitute, :speed, :reversed, :hue
-  
-  #-----------------------------------------------------------------------------
-  # General sprite utilities.
-  #-----------------------------------------------------------------------------
-  def animated?
-    return !@_iconBitmap.nil? && @_iconBitmap.is_a?(DeluxeBitmapWrapper)
-  end
-  
-  def static?
-    return true if !animated?
-    return @_iconBitmap.length > 1
-  end
-  
-  def play
-    return if !@_iconBitmap
-    @_iconBitmap.play
-    self.bitmap = @_iconBitmap.bitmap
-  end
-  
-  def to_first_frame
-    return if !@_iconBitmap
-    @_iconBitmap.to_frame(0)
-    self.bitmap = @_iconBitmap.bitmap
-  end
-  
-  def to_last_frame
-    return if !@_iconBitmap
-    @_iconBitmap.to_frame("last")
-    self.bitmap = @_iconBitmap.bitmap
-  end
-    
-  def finished?
-    return true if !@_iconBitmap
-    return @_iconBitmap.finished?
-  end
-  
-  def reversed=(value)
-    return if !@_iconBitmap
-	@_iconBitmap.reversed = value
-  end
-  
-  def iconBitmap; return @_iconBitmap; end
-  
-  #-----------------------------------------------------------------------------
-  # Rewritten for displaying Substitute doll and updating animation.
-  #-----------------------------------------------------------------------------
-  def setPokemonBitmap(pkmn, battler, back = false)
-    @pkmn = pkmn
-    @battler = battler
-    @_iconBitmap&.dispose
-    if @substitute
-      @_iconBitmap = GameData::Species.substitute_sprite_bitmap(back)
-      self.bitmap = (@_iconBitmap) ? @_iconBitmap.bitmap : nil
-      self.pattern = nil
-      self.pattern_type = nil
-    else
-      @_iconBitmap = GameData::Species.sprite_bitmap_from_pokemon(@pkmn, back)
-      @_iconBitmap.setPokemon(@battler, back, @hue)
-      self.bitmap = (@_iconBitmap) ? @_iconBitmap.bitmap : nil
-      self.set_plugin_pattern(@battler)
-    end
-    pbSetPosition
-  end
-  
-  #-----------------------------------------------------------------------------
-  # Rewritten to include Substitute doll metrics.
-  #-----------------------------------------------------------------------------
-  def pbSetPosition
-    return if !@_iconBitmap
-    pbSetOrigin
-    if @index.even?
-      self.z = 50 + (5 * @index / 2)
-    else
-      self.z = 50 - (5 * (@index + 1) / 2)
-    end
-    p = Battle::Scene.pbBattlerPosition(@index, @sideSize)
-    @spriteX = p[0]
-    @spriteY = p[1]
-    if @substitute
-      side = (@index.even?) ? 0 : 1
-      @spriteY += Settings::SUBSTITUTE_DOLL_METRICS[side]
-    else
-      @pkmn.species_data.apply_metrics_to_sprite(self, @index)
-    end
-  end
-  
-  #-----------------------------------------------------------------------------
-  # Rewritten for updating animations and patterns.
-  # Turns of sprite bobbing for animated sprites.
-  #-----------------------------------------------------------------------------
-  def update
-    return if !@_iconBitmap
-    @updating = true
-    @_iconBitmap.update
-    self.bitmap = @_iconBitmap.bitmap
-    @spriteYExtra = 0
-    if @selected == 1 && COMMAND_BOBBING_DURATION && $PokemonSystem.animated_sprites > 0
-      bob_delta = System.uptime % COMMAND_BOBBING_DURATION
-      bob_frame = (4 * bob_delta / COMMAND_BOBBING_DURATION).floor
-      case bob_frame
-      when 1 then @spriteYExtra = 2
-      when 3 then @spriteYExtra = -2
-      end
-    end
-    self.x       = self.x
-    self.y       = self.y
-    self.visible = @spriteVisible
-    if @selected == 2 && @spriteVisible && TARGET_BLINKING_DURATION
-      blink_delta = System.uptime % TARGET_BLINKING_DURATION   # 0-TARGET_BLINKING_DURATION
-      blink_frame = (3 * blink_delta / TARGET_BLINKING_DURATION).floor
-      self.visible = (blink_frame != 0)
-    end
-    @updating = false
-    self.set_status_pattern(@battler) if !@substitute
-    self.update_plugin_pattern
-    @_iconBitmap.update_pokemon_sprite(@speed, @reversed) if animated?
-  end
-end
-
-
-################################################################################
-#
-# Pokemon shadow sprites (Battle)
-#
-################################################################################
-
-class Battle::Scene::BattlerShadowSprite < RPG::Sprite
-  attr_accessor :substitute, :speed, :reversed
-  
-  #-----------------------------------------------------------------------------
-  # General sprite utilities.
-  #-----------------------------------------------------------------------------
-  def animated?
-    return !@_iconBitmap.nil? && @_iconBitmap.is_a?(DeluxeBitmapWrapper)
-  end
-  
-  def iconBitmap; return @_iconBitmap; end
-  
-  #-----------------------------------------------------------------------------
-  # Rewritten for setting animated shadows as well as Substitute doll shadows.
-  #-----------------------------------------------------------------------------
-  def setPokemonBitmap(pkmn, battler, sprite)
-    @pkmn = pkmn
-    @battler = battler
-    @_iconBitmap&.dispose
-    if @substitute
-      filename = pbResolveBitmap("Graphics/Pokemon/Shadow/2")
-      return if !filename
-      @_iconBitmap = AnimatedBitmap.new(filename)
-      self.bitmap = (@_iconBitmap) ? @_iconBitmap.bitmap : nil
-      pbSetDisplay
-    else
-      return if !sprite.animated?
-      @reversed = sprite.reversed
-      @_iconBitmap = GameData::Species.sprite_bitmap_from_pokemon(@pkmn, @index.even?)
-      @_iconBitmap.speed = sprite.iconBitmap.speed
-      @_iconBitmap.pokemon = sprite.iconBitmap.pokemon
-      self.bitmap = (@_iconBitmap) ? @_iconBitmap.bitmap : nil
-      self.mirror  = @index.even?
-      pbSetDisplay(sprite.opacity)
-    end
-    self.pattern = nil
-    self.pattern_type = nil
-    pbSetPosition(sprite)
-  end
-  
-  #-----------------------------------------------------------------------------
-  # Rewritten to include Substitute doll and animated shadow metrics.
-  #-----------------------------------------------------------------------------
-  def pbSetPosition(sprite)
-    return if !@_iconBitmap
-    if @substitute
-      pbSetOrigin
-      p = Battle::Scene.pbBattlerPosition(@index, @sideSize)
-      self.x      = p[0]
-      self.y      = p[1]
-      self.angle  = 0
-      self.zoom_x = 1
-      self.zoom_y = 1
-    else
-      self.ox     = sprite.bitmap.width / 2
-      self.oy     = sprite.bitmap.height / 2
-      self.x      = sprite.x
-      self.y      = sprite.y
-      self.y     -= sprite.bitmap.height / 4 if @index.odd?
-      self.y     -= 25 if @battler.dynamax? && @index.odd? && Settings::SHOW_DYNAMAX_SIZE
-      self.angle  = sprite.angle
-      self.angle += ((@index.even?) ? 176 : -2)
-      @pkmn.species_data.apply_metrics_to_sprite(self, @index, true)
-      metrics = GameData::SpeciesMetrics.get_species_form(@pkmn.species, @pkmn.form, @pkmn.female?)
-      size = metrics.shadow_size
-      if size != 0
-        size -= 1 if size > 0
-        size -= 4 if @battler&.airborneOffScreen?
-        self.zoom_x = sprite.zoom_x + (size * 0.1)
-        self.zoom_y = (sprite.zoom_y * @_iconBitmap.scale * 0.25) * 0.5 + (size * 0.025)
-      end
-    end
-    self.z = 3
-  end
-  
-  #-----------------------------------------------------------------------------
-  # Sets the visual parameters of shadow sprites.
-  #-----------------------------------------------------------------------------
-  def pbSetDisplay(opacity = 255)
-    if @substitute
-      self.opacity = opacity
-      self.tone = Tone.new(0, 0, 0, 0)
-    else
-      self.opacity = opacity * 0.3
-      self.tone = Tone.new(-255, -255, -255, 255)
-    end
-  end
-  
-  #-----------------------------------------------------------------------------
-  # Aliased for updating animations.
-  #-----------------------------------------------------------------------------
-  alias animated_update update
-  def update
-    animated_update
-    return if !animated?
-    pbSetDisplay
-    @_iconBitmap.update_pokemon_sprite(@speed, @reversed)
-  end
-end
-
-
-################################################################################
-#
-# Mosaic Battler sprites.
-#
-################################################################################
-
-class MosaicBattlerSprite < Battle::Scene::BattlerSprite
   INITIAL_MOSAIC = 10
 
-  def initialize(*args)
-    super(*args)
+  def initialize_mosaic
     @mosaic = 0
+    @prepare_mosaic = false
     @inrefresh = false
     @mosaicbitmap = nil
     @mosaicbitmap2 = nil
     @oldbitmap = self.bitmap
   end
 
-  def dispose
-    super
+  def dispose_mosaic
     @mosaicbitmap&.dispose
     @mosaicbitmap = nil
     @mosaicbitmap2&.dispose
     @mosaicbitmap2 = nil
-  end
-
-  def bitmap=(value)
-    super
-    mosaicRefresh(value)
   end
   
   def mosaic=(value)
@@ -276,8 +36,7 @@ class MosaicBattlerSprite < Battle::Scene::BattlerSprite
     @mosaic_timer_start = System.uptime if @mosaic_duration > 0
   end
   
-  def update
-    super
+  def update_mosaic
     if @mosaic_timer_start
       @start_mosaic = INITIAL_MOSAIC if !@start_mosaic || @start_mosaic == 0
       new_mosaic = lerp(@start_mosaic, 0, @mosaic_duration, @mosaic_timer_start, System.uptime).to_i
@@ -322,6 +81,301 @@ end
 
 ################################################################################
 #
+# Pokemon sprites (Battle)
+#
+################################################################################
+class Battle::Scene::BattlerSprite < RPG::Sprite
+  include PokemonSprite::MosaicSprite
+  attr_accessor :shadowVisible, :vanishMode, :substitute
+  
+  #-----------------------------------------------------------------------------
+  # Edits to general utilities for shadow sprite and/or mosaic properties.
+  #-----------------------------------------------------------------------------
+  alias animated_initialize initialize
+  def initialize(*args)
+    animated_initialize(*args)
+    @vanishMode = 0
+    initialize_mosaic
+  end
+  
+  def dispose
+    super
+    dispose_mosaic
+  end
+  
+  def bitmap=(value)
+    super
+    mosaicRefresh(value)
+  end
+  
+  #-----------------------------------------------------------------------------
+  # Animation-related sprite utilities.
+  #-----------------------------------------------------------------------------
+  def animated?
+    return !@_iconBitmap.nil? && @_iconBitmap.is_a?(DeluxeBitmapWrapper)
+  end
+  
+  def static?
+    return true if !animated?
+    return @_iconBitmap.length <= 1
+  end
+  
+  def finished?
+    return true if !animated?
+    return @_iconBitmap.finished?
+  end
+  
+  def play
+    return if !animated?
+    @_iconBitmap.play
+    self.bitmap = @_iconBitmap.bitmap
+    if shadowSprite
+      shadowSprite.iconBitmap.play
+      shadowSprite.bitmap = shadowSprite.iconBitmap.bitmap
+    end
+  end
+  
+  def deanimate
+    return if !animated?
+    @_iconBitmap.deanimate
+    self.bitmap = @_iconBitmap.bitmap
+    if shadowSprite
+      shadowSprite.iconBitmap.deanimate
+      shadowSprite.bitmap = shadowSprite.iconBitmap.bitmap
+    end
+  end
+  
+  def to_first_frame
+    return if !animated?
+    @_iconBitmap.to_frame(0)
+    self.bitmap = @_iconBitmap.bitmap
+    if shadowSprite
+      shadowSprite.iconBitmap.to_frame(0)
+      shadowSprite.bitmap = shadowSprite.iconBitmap.bitmap
+    end
+  end
+  
+  def to_last_frame
+    return if !animated?
+    @_iconBitmap.to_frame("last")
+    self.bitmap = @_iconBitmap.bitmap
+    if shadowSprite
+      shadowSprite.iconBitmap.to_frame("last")
+      shadowSprite.bitmap = shadowSprite.iconBitmap.bitmap
+    end
+  end
+  
+  def speed
+    return (animated?) ? @_iconBitmap.speed : -1
+  end
+    
+  def speed=(value)
+    return if !animated?
+    @_iconBitmap.update_pokemon_sprite(value)
+    self.bitmap = @_iconBitmap.bitmap
+    if shadowSprite
+      shadowSprite.iconBitmap.update_pokemon_sprite(value)
+      shadowSprite.bitmap = shadowSprite.iconBitmap.bitmap
+    end
+  end
+  
+  def reversed?
+    return false if !animated?
+    return @_iconBitmap.reversed
+  end
+  
+  def reversed=(value)
+    return if !animated?
+    @_iconBitmap.update_pokemon_sprite(nil, value)
+    self.bitmap = @_iconBitmap.bitmap
+    if shadowSprite
+      shadowSprite.iconBitmap.update_pokemon_sprite(nil, value)
+      shadowSprite.bitmap = shadowSprite.iconBitmap.bitmap
+    end
+  end
+  
+  def hue=(value)
+    return if !animated?
+    return if @pkmn.super_shiny? && @_iconBitmap.changedHue?
+    value = 255 if value > 255
+    value = -255 if value < -255
+    @_iconBitmap.hue_change(value)
+    self.bitmap = @_iconBitmap.bitmap
+  end
+  
+  def iconBitmap; return @_iconBitmap; end
+  
+  #-----------------------------------------------------------------------------
+  # Used to access a battler's shadow sprite, if one exists.
+  #-----------------------------------------------------------------------------
+  def shadowSprite
+    return if !@battler || @battler.fainted?
+    return @battler.shadowSprite
+  end
+  
+  def fullRefresh
+    self.update
+    shadowSprite.update if shadowSprite
+  end
+  
+  #-----------------------------------------------------------------------------
+  # Edited to set properties for animated sprite, shadow sprite, or Substitute doll.
+  #-----------------------------------------------------------------------------
+  def setPokemonBitmap(pkmn, battler, back = false)
+    @pkmn = pkmn
+    @battler = battler
+    @_iconBitmap&.dispose
+    if @substitute
+      @_iconBitmap = GameData::Species.substitute_sprite_bitmap(back)
+      self.bitmap = (@_iconBitmap) ? @_iconBitmap.bitmap : nil
+      self.pattern = nil
+      self.pattern_type = nil
+      @shadowVisible = @index.odd? || Settings::SHOW_PLAYER_SIDE_SHADOW_SPRITES
+    else
+      @_iconBitmap = GameData::Species.sprite_bitmap_from_pokemon(@pkmn, back)
+      @_iconBitmap.setPokemon(@battler, back)
+      self.bitmap = (@_iconBitmap) ? @_iconBitmap.bitmap : nil
+      self.set_plugin_pattern(@battler)
+      @shadowVisible = @pkmn.species_data.shows_shadow?(back)
+    end
+    pbSetPosition
+    @_iconBitmap.update_pokemon_sprite if animated?
+  end
+  
+  #-----------------------------------------------------------------------------
+  # Edits to utilities related to sprite positioning for setting shadow sprite position.
+  #-----------------------------------------------------------------------------
+  def pbSetPosition
+    return if !@_iconBitmap
+    pbSetOrigin
+    if @index.even?
+      self.z = 50 + (5 * @index / 2)
+    else
+      self.z = 50 - (5 * (@index + 1) / 2)
+    end
+    p = Battle::Scene.pbBattlerPosition(@index, @sideSize)
+    @spriteX = p[0]
+    @spriteY = p[1]
+    if @substitute
+      side = (@index.even?) ? 0 : 1
+      self.y += Settings::SUBSTITUTE_DOLL_METRICS[side]
+    elsif PluginManager.installed?("[DBK] Dynamax")
+      pbApplyMetricsToSprite
+    else
+      @pkmn.species_data.apply_metrics_to_sprite(self, @index)
+    end
+  end
+
+  #-----------------------------------------------------------------------------
+  # Rewritten for updating sprite animations and patterns.
+  # Turns off sprite bobbing if sprites are animated.
+  #-----------------------------------------------------------------------------
+  def update
+    return if !@_iconBitmap
+    @updating = true
+    @_iconBitmap.update
+    self.bitmap = @_iconBitmap.bitmap
+    @spriteYExtra = 0
+    if @selected == 1 && COMMAND_BOBBING_DURATION && $PokemonSystem.animated_sprites > 0
+      bob_delta = System.uptime % COMMAND_BOBBING_DURATION
+      bob_frame = (4 * bob_delta / COMMAND_BOBBING_DURATION).floor
+      case bob_frame
+      when 1 then @spriteYExtra = 2
+      when 3 then @spriteYExtra = -2
+      end
+    end
+    self.x = self.x
+    self.y = self.y
+    self.visible = @spriteVisible
+    if @selected == 2 && @spriteVisible && TARGET_BLINKING_DURATION
+      blink_delta = System.uptime % TARGET_BLINKING_DURATION
+      blink_frame = (3 * blink_delta / TARGET_BLINKING_DURATION).floor
+      self.visible = (blink_frame != 0)
+    end
+    @updating = false
+    self.set_status_pattern(@battler) if !@substitute
+    self.update_plugin_pattern
+    if animated?
+      @_iconBitmap.update_pokemon_sprite
+      shadowSprite.iconBitmap.update_pokemon_sprite if shadowSprite
+    end
+    update_mosaic
+  end
+end
+
+#===============================================================================
+# Shadow sprite for Pokémon (used in battle)
+#===============================================================================
+class Battle::Scene::BattlerShadowSprite < RPG::Sprite
+
+  alias animated_initialize initialize
+  def initialize(*args)
+    animated_initialize(*args)
+    @substitute = false
+    self.color = Color.black
+    self.opacity = 100
+  end
+  
+  def opacity=(value)
+    super
+    if self.opacity > 100
+      self.opacity = 100
+    end
+  end
+  
+  def iconBitmap; return @_iconBitmap; end
+  
+  def pbSetPosition
+    return if !@_iconBitmap
+    pbSetOrigin
+    self.z = 3
+    p = Battle::Scene.pbBattlerPosition(@index, @sideSize)
+    self.x = p[0]
+    self.y = p[1] 
+    return if @substitute
+    self.y -= (self.height / 4).round
+    if PluginManager.installed?("[DBK] Dynamax")
+      self.y = p[1] - ((self.height * 1.5) / 4).round if @pkmn.dynamax?
+      pbApplyMetricsToSprite(true)
+    else
+      @pkmn.species_data.apply_metrics_to_sprite(self, @index, true)
+    end
+  end
+
+  def setPokemonBitmap(pkmn, battler_sprite)
+    @pkmn = pkmn
+    @_iconBitmap&.dispose
+    @_iconBitmap = battler_sprite.iconBitmap.clone
+    self.bitmap = (@_iconBitmap) ? @_iconBitmap.bitmap : nil
+    return if !@_iconBitmap
+    @substitute = battler_sprite.substitute
+    pbSetPosition
+    refresh(battler_sprite)
+  end
+  
+  def refresh(battler_sprite)
+    return if battler_sprite.nil? || !@pkmn
+    if battler_sprite.shadowVisible
+      if battler_sprite.substitute
+        shadow_size = 1
+      else
+        metrics = GameData::SpeciesMetrics.get_species_form(@pkmn.species, @pkmn.form, @pkmn.female?)
+        shadow_size = metrics.shadow_size
+        shadow_size -= 1 if shadow_size > 0
+      end
+      shadow_size -= 3 if battler_sprite.vanishMode == 2
+      self.zoom_x = battler_sprite.zoom_x + (shadow_size * 0.1)
+      self.zoom_y = battler_sprite.zoom_y * 0.25 + (shadow_size * 0.025)
+      self.visible = true
+    else
+      self.visible = false
+    end
+  end
+end
+
+
+################################################################################
+#
 # Implements new battler sprites.
 #
 ################################################################################
@@ -331,21 +385,9 @@ end
 #===============================================================================
 class Battle::Scene
   #-----------------------------------------------------------------------------
-  # Rewritten to use mosaic sprites for battlers.
+  # Rewritten to update new Pokemon sprites and shadows.
   #-----------------------------------------------------------------------------
-  def pbCreatePokemonSprite(idxBattler)
-    sideSize = @battle.pbSideSize(idxBattler)
-    batSprite = MosaicBattlerSprite.new(@viewport, sideSize, idxBattler, @animations)
-    @sprites["pokemon_#{idxBattler}"] = batSprite
-    shaSprite = BattlerShadowSprite.new(@viewport, sideSize, idxBattler)
-    shaSprite.visible = false
-    @sprites["shadow_#{idxBattler}"] = shaSprite
-  end
-  
-  #-----------------------------------------------------------------------------
-  # Rewritten to use new sprite methods for displaying sprites and shadows.
-  #-----------------------------------------------------------------------------
-  def pbChangePokemon(idxBattler, pkmn, update = false)
+  def pbChangePokemon(idxBattler, pkmn, vanishMode = nil)
     idxBattler = idxBattler.index if idxBattler.respond_to?("index")
     pkmnSprite   = @sprites["pokemon_#{idxBattler}"]
     shadowSprite = @sprites["shadow_#{idxBattler}"]
@@ -353,59 +395,38 @@ class Battle::Scene
     pkmn = pbGetDynamaxPokemon(idxBattler, pkmn) if PluginManager.installed?("[DBK] Dynamax")
     battler = @battle.battlers[idxBattler]
     pkmnSprite.setPokemonBitmap(pkmn, battler, back)
-    shadowSprite.setPokemonBitmap(pkmn, battler, pkmnSprite)
-    showShadow = pkmn.species_data.shows_shadow?(back)
-    shadowSprite.visible = showShadow if shadowSprite && !battler.vanished
-    pkmnSprite.mosaic_duration = 0.50 if battler.mosaicChange
-    battler.mosaicChange = false
-    if update
-      if battler.vanishedOffScreen?
-        battler.vanished = true
-        pkmnSprite.visible = false
-        if shadowSprite.visible && !battler.airborneOffScreen?
-          shadowSprite.visible = false
-        end
-      else
-        battler.vanished = false
-        pkmnSprite.visible = true
-        shadowSprite.visible = showShadow
-      end
+    shadowSprite.setPokemonBitmap(pkmn, pkmnSprite)
+    if pkmnSprite.prepare_mosaic && pkmnSprite.vanishMode == 0
+      pkmnSprite.mosaic_duration = 0.5
+      pkmnSprite.prepare_mosaic = false
+	  pbPauseScene(0.5)
+    end
+    return if vanishMode.nil? || pkmnSprite.vanishMode == vanishMode
+    pkmnSprite.vanishMode = vanishMode
+    case pkmnSprite.vanishMode
+    #-----------------------------------------------------------------------------
+    when 0 # Pokemon is not vanished off screen.
+      pkmnSprite.visible = true
+      shadowSprite.refresh(pkmnSprite)
+    #-----------------------------------------------------------------------------
+    when 1 # Pokemon has vanished completely off screen.
+      pkmnSprite.visible = false
+      shadowSprite.visible = false
+    #-----------------------------------------------------------------------------
+    when 2 # Pokemon has vanished off screen high in the air.
+      pkmnSprite.visible = false
+      shadowSprite.refresh(pkmnSprite)
     end
   end
-  
-  #-----------------------------------------------------------------------------
-  # Rewritten for compatibility with Ally Switch/Shift command.
-  #-----------------------------------------------------------------------------
-  def pbSwapBattlerSprites(idxA, idxB)
-    @sprites["pokemon_#{idxA}"], @sprites["pokemon_#{idxB}"] = @sprites["pokemon_#{idxB}"], @sprites["pokemon_#{idxA}"]
-    @sprites["shadow_#{idxA}"], @sprites["shadow_#{idxB}"] = @sprites["shadow_#{idxB}"], @sprites["shadow_#{idxA}"]
-    @lastCmd[idxA], @lastCmd[idxB] = @lastCmd[idxB], @lastCmd[idxA]
-    @lastMove[idxA], @lastMove[idxB] = @lastMove[idxB], @lastMove[idxA]
-    [idxA, idxB].each do |i|
-      @sprites["pokemon_#{i}"].index = i
-      @sprites["pokemon_#{i}"].pbSetPosition
-      @sprites["shadow_#{i}"].index = i
-      @sprites["shadow_#{i}"].pbSetPosition(@sprites["pokemon_#{i}"])
-      @sprites["dataBox_#{i}"].battler = @battle.battlers[i]
-    end
-    pbRefresh
-  end
-  
+    
   #-----------------------------------------------------------------------------
   # Aliased to prevent animations for battlers who have vanished off screen.
   #-----------------------------------------------------------------------------
   alias animated_pbAnimationCore pbAnimationCore
   def pbAnimationCore(animation, user, target, oppMove = false)
-    return if user && user.vanished
-    return if target && target.vanished
+    return if user && user.battlerSprite.vanishMode > 0
+    return if target && target.battlerSprite.vanishMode > 0
     animated_pbAnimationCore(animation, user, target, oppMove)
-  end
-  
-  #-----------------------------------------------------------------------------
-  # Utility for returning a battler's sprite and shadow sprite.
-  #-----------------------------------------------------------------------------
-  def pbGetBattlerSprites(idxBattler)
-    return @sprites["pokemon_#{idxBattler}"], @sprites["shadow_#{idxBattler}"]
   end
 end
 
@@ -413,16 +434,15 @@ end
 # Battle::Battler
 #===============================================================================
 class Battle::Battler
-  attr_accessor :mosaicChange, :vanished
+  #-----------------------------------------------------------------------------
+  # Utility for getting a battler's sprite.
+  #-----------------------------------------------------------------------------
+  def battlerSprite
+    return @battle.scene.sprites["pokemon_#{self.index}"]
+  end
   
-  #-----------------------------------------------------------------------------
-  # Aliased to initialize new battler sprite attributes.
-  #-----------------------------------------------------------------------------
-  alias animated_pbInitialize pbInitialize
-  def pbInitialize(pkmn, idxParty, batonPass = false)
-    animated_pbInitialize(pkmn, idxParty, batonPass)
-    @mosaicChange = false
-    @vanished = false
+  def shadowSprite
+    return @battle.scene.sprites["shadow_#{self.index}"]
   end
   
   #-----------------------------------------------------------------------------
@@ -431,7 +451,7 @@ class Battle::Battler
   alias animated_pbChangeForm pbChangeForm
   def pbChangeForm(newForm, msg)
     return if fainted? || @effects[PBEffects::Transform] || @form == newForm
-    @mosaicChange = true
+    self.battlerSprite.prepare_mosaic = true
     animated_pbChangeForm(newForm, msg)
   end
   
@@ -441,9 +461,25 @@ class Battle::Battler
   alias animated_pbOnLosingAbility pbOnLosingAbility
   def pbOnLosingAbility(oldAbil, suppressed = false)
     if oldAbil == :ILLUSION && @effects[PBEffects::Illusion] && !@effects[PBEffects::Transform]
-      @mosaicChange = true
+      self.battlerSprite.prepare_mosaic = true
     end
     animated_pbOnLosingAbility(oldAbil, suppressed)
+  end
+  
+  #-----------------------------------------------------------------------------
+  # Aliased to properly reset Sky Drop if the move fails.
+  #-----------------------------------------------------------------------------
+  alias animated_pbCancelMoves pbCancelMoves
+  def pbCancelMoves(full_cancel = false)
+    tryMove = GameData::Move.try_get(@effects[PBEffects::TwoTurnAttack])
+    if tryMove && tryMove.function_code == "TwoTurnAttackInvulnerableInSkyTargetCannotAct"
+      self.allOpposing.each do |b|
+        next if b.effects[PBEffects::SkyDrop] != @index
+        b.effects[PBEffects::SkyDrop] = -1
+        @battle.scene.pbChangePokemon(b, b.visiblePokemon, 0)
+      end
+    end
+    animated_pbCancelMoves(full_cancel)
   end
   
   #-----------------------------------------------------------------------------
@@ -451,52 +487,26 @@ class Battle::Battler
   #-----------------------------------------------------------------------------
   alias animated_pbEndTurn pbEndTurn
   def pbEndTurn(_choice)
-    if @vanished || vanishedOffScreen?
-      @battle.scene.pbChangePokemon(self, self.visiblePokemon, true)
+    if self.battlerSprite.vanishMode > 0 &&
+	   !(semiInvulnerable? || @effects[PBEffects::SkyDrop] >= 0)
+      @battle.scene.pbChangePokemon(self, self.visiblePokemon, 0)
     end
     animated_pbEndTurn(_choice)
   end
-  
-  #-----------------------------------------------------------------------------
-  # Utility for determining if a battler is vanished off screen.
-  #-----------------------------------------------------------------------------
-  def vanishedOffScreen?(ignoreAirborne = false)
-    move = GameData::Move.try_get(@effects[PBEffects::TwoTurnAttack])
-    return true if move && [
-      "TwoTurnAttackInvulnerableUnderground",         # Dig
-      "TwoTurnAttackInvulnerableUnderwater",          # Dive
-      "TwoTurnAttackInvulnerableRemoveProtections",   # Phantom Force/Shadow Force
-    ].include?(move.function_code)
-    return (ignoreAirborne) ? false : airborneOffScreen?
-  end
-  
-  #-----------------------------------------------------------------------------
-  # Utility for determining if a battler is specifically vanished above the battlefield.
-  #-----------------------------------------------------------------------------
-  def airborneOffScreen?
-    return true if @effects[PBEffects::SkyDrop] >= 0
-    return false if !@effects[PBEffects::TwoTurnAttack]
-    move = GameData::Move.get(@effects[PBEffects::TwoTurnAttack])
-    return [
-      "TwoTurnAttackInvulnerableInSky",               # Fly
-      "TwoTurnAttackInvulnerableInSkyParalyzeTarget", # Bounce
-      "TwoTurnAttackInvulnerableInSkyTargetCannotAct" # Sky Drop
-    ].include?(move.function_code)
-  end
 end
 
-#===============================================================================
+#-------------------------------------------------------------------------------
 # Safari Zone compatibility.
-#===============================================================================
+#-------------------------------------------------------------------------------
 class Battle::FakeBattler
-  def vanishedOffScreen?; return false; end
-  def airborneOffScreen?; return false; end
-  def vanished;           return false; end
-  def mosaicChange;       return false; end
-  def vanished=(value);                 end
-  def mosaicChange=(value);             end
+  def battlerSprite; return @battle.battlerSprite; end
+  def shadowSprite;  return @battle.shadowSprite;  end
 end
 
+class SafariBattle
+  def battlerSprite; return @scene.sprites["pokemon_1"]; end
+  def shadowSprite;  return @scene.sprites["shadow_1"];  end
+end
 
 ################################################################################
 #
@@ -507,14 +517,14 @@ end
 #===============================================================================
 # Illusion
 #===============================================================================
-# Rewritten so that mosaic is triggered upon Illusion ending.
+# Rewritten so that mosaic is triggered upon Illusion ending upon being hit.
 #-------------------------------------------------------------------------------
 Battle::AbilityEffects::OnBeingHit.add(:ILLUSION,
   proc { |ability, user, target, move, battle|
     next if !target.effects[PBEffects::Illusion]
-    target.mosaicChange = true
     battle.scene.pbAnimateSubstitute(target, :hide)
     target.effects[PBEffects::Illusion] = nil
+    target.battlerSprite.prepare_mosaic = true
     battle.scene.pbChangePokemon(target, target.pokemon)
     battle.pbDisplay(_INTL("{1}'s illusion wore off!", target.pbThis))
     battle.pbSetSeen(target)
@@ -530,38 +540,93 @@ Battle::AbilityEffects::OnBeingHit.add(:ILLUSION,
 class Battle::Move::TwoTurnMove < Battle::Move
   def pbShowAnimation(id, user, targets, hitNum = 0, showAnimation = true)
     hitNum = 1 if @chargingTurn && !@damagingTurn
-    invulMove = [
-      "TwoTurnAttackInvulnerableInSky",               # Fly
-      "TwoTurnAttackInvulnerableUnderground",         # Dig
-      "TwoTurnAttackInvulnerableUnderwater",          # Dive
-      "TwoTurnAttackInvulnerableInSkyParalyzeTarget", # Bounce
-      "TwoTurnAttackInvulnerableRemoveProtections",   # Phantom Force/Shadow Force
-      "TwoTurnAttackInvulnerableInSkyTargetCannotAct" # Sky Drop
-    ].include?(@function_code)
-    if invulMove
-      @battle.scene.pbChangePokemon(user, user.visiblePokemon, true) if user.vanished
-      super
-      @battle.scene.pbChangePokemon(user, user.visiblePokemon, true) if !user.vanished
+    case @function_code
+    #-----------------------------------------------------------------------------
+    # These moves completely vanish the user during the charging turn.
+    when "TwoTurnAttackInvulnerableUnderground",         # Dig
+         "TwoTurnAttackInvulnerableUnderwater",          # Dive
+         "TwoTurnAttackInvulnerableRemoveProtections"    # Phantom Force/Shadow Force
+      vanishMode = 1
+    #-----------------------------------------------------------------------------
+    # These moves vanish the user but still casts its shadow during the charging turn.
+    when "TwoTurnAttackInvulnerableInSky",               # Fly
+         "TwoTurnAttackInvulnerableInSkyParalyzeTarget", # Bounce
+         "TwoTurnAttackInvulnerableInSkyTargetCannotAct" # Sky Drop
+      vanishMode = 2
+    #-----------------------------------------------------------------------------
+    # All other two-turn moves do not vanish the user.
     else
-      super
+      vanishMode = 0
     end
+    if vanishMode > 0
+	  #-----------------------------------------------------------------------------
+	  # Vanishes during the charging turn.
+      if hitNum == 1
+        @battle.scene.pbChangePokemon(user, user.visiblePokemon, vanishMode)
+        if @function_code == "TwoTurnAttackInvulnerableInSkyTargetCannotAct"  # Sky Drop also vanishes the targets.
+          targets.each do |b|
+          @battle.scene.pbChangePokemon(b, b.visiblePokemon, vanishMode)
+        end
+          end
+      #-----------------------------------------------------------------------------
+      # Reappears during the attacking turn.
+        else
+          @battle.scene.pbChangePokemon(user, user.visiblePokemon, 0)
+          if @function_code == "TwoTurnAttackInvulnerableInSkyTargetCannotAct"  # Targets of Sky Drop also reappear.
+            targets.each do |b|
+            @battle.scene.pbChangePokemon(b, b.visiblePokemon, 0)
+          end
+        end
+      end
+    end
+    super
   end
 end
 
 #===============================================================================
 # Sky Drop
 #===============================================================================
-# Edited to toggle visibility of the vanished target lifted up with Sky Drop.
+# Edited to ensure visibility of released targets is restored.
 #-------------------------------------------------------------------------------
 class Battle::Move::TwoTurnAttackInvulnerableInSkyTargetCannotAct < Battle::Move::TwoTurnMove
-  def pbChargingTurnEffect(user, target)
-    target.effects[PBEffects::SkyDrop] = user.index
-    @battle.scene.pbChangePokemon(target, target.visiblePokemon, true)
+  def pbAttackingTurnMessage(user, targets)
+    @battle.pbDisplay(_INTL("{1} was freed from the Sky Drop!", targets[0].pbThis))
+    targets.each do |b|
+      next if b.effects[PBEffects::SkyDrop] != user.index
+      b.effects[PBEffects::SkyDrop] = -1
+      @battle.scene.pbChangePokemon(b, b.visiblePokemon, 0)
+    end
   end
+end
 
+#===============================================================================
+# Smack Down, Thousand Arrows
+#===============================================================================
+# Edited to ensure visibility of grounded targets is restored.
+#-------------------------------------------------------------------------------
+class Battle::Move::HitsTargetInSkyGroundsTarget < Battle::Move
+  alias animated_pbEffectAfterAllHits pbEffectAfterAllHits
   def pbEffectAfterAllHits(user, target)
-    target.effects[PBEffects::SkyDrop] = -1 if @damagingTurn
-    [user, target].each { |b| @battle.scene.pbChangePokemon(b, b.visiblePokemon, true) }
+    animated_pbEffectAfterAllHits(user, target)
+    if target.effects[PBEffects::SmackDown] && target.battlerSprite.vanishMode == 2
+      @battle.scene.pbChangePokemon(target, target.visiblePokemon, 0)
+    end
+  end
+end
+
+#===============================================================================
+# Gravity
+#===============================================================================
+# Edited to ensure visibility of grounded targets is restored.
+#-------------------------------------------------------------------------------
+class Battle::Move::StartGravity < Battle::Move
+  alias animated_pbEffectGeneral pbEffectGeneral
+  def pbEffectGeneral(user)
+    animated_pbEffectGeneral(user)
+    @battle.allBattlers.each do |b|
+      next if b.battlerSprite.vanishMode != 2
+      @battle.scene.pbChangePokemon(b, b.visiblePokemon, 0)
+    end
   end
 end
 
@@ -577,17 +642,26 @@ end
 #===============================================================================
 module Battle::Scene::Animation::BallAnimationMixin
   def shadowAppear(battler, delay, shadow = nil)
-    shadow = addSprite(@sprites["shadow_#{battler.index}"], PictureOrigin::CENTER) if !shadow
-    pkmn = battler.visiblePokemon
-    metrics = GameData::SpeciesMetrics.get_species_form(pkmn.species, pkmn.form, pkmn.female?)
-    size = metrics.shadow_size
-    scale = (battler.opposes?(0)) ? metrics.front_sprite_scale : metrics.back_sprite_scale
-    zoomX = 100 * (1 + size * 0.1)
-    zoomY = 100 * (scale * 0.25 * 0.5 + (size * 0.025))
+    batSprite = battler.battlerSprite
+    return if !batSprite.shadowVisible
+    if !shadow
+      shadow = addSprite(@sprites["shadow_#{battler.index}"], PictureOrigin::CENTER)
+      shadow.setVisible(0, false)
+    end
+    if batSprite.substitute
+      shadow_size = 1
+    else
+      pkmn = batSprite.pkmn
+      metrics = GameData::SpeciesMetrics.get_species_form(pkmn.species, pkmn.form, pkmn.female?)
+      shadow_size = metrics.shadow_size
+      shadow_size -= 1 if shadow_size > 0
+    end
+    zoomX = 100 * (1 + shadow_size * 0.1)
+    zoomY = 100 * (1 * 0.25 + (shadow_size * 0.025))
     shadow.setZoomXY(delay, zoomX, zoomY)
     shadow.setOpacity(delay, 0)
-    shadow.setVisible(delay, @shadowVisible)
-    shadow.moveOpacity(delay + 5, 10, 255 * 0.3)
+    shadow.setVisible(delay, true)
+    shadow.moveOpacity(delay + 5, 10, 100)
   end
 end
 
@@ -633,7 +707,7 @@ class Battle::Scene::Animation::PokeballPlayerSendOut < Battle::Scene::Animation
     battler.setZoom(0, 0)
     battler.setColor(0, col)
     battlerAppear(battler, delay, battlerEndX, battlerEndY, batSprite, col)
-    shadowAppear(@battler, delay) if @shadowVisible
+    shadowAppear(@battler, delay)
   end
 end
 
@@ -665,7 +739,7 @@ class Battle::Scene::Animation::PokeballTrainerSendOut < Battle::Scene::Animatio
     battler.setZoom(0, 0)
     battler.setColor(0, col)
     battlerAppear(battler, delay, battlerEndX, battlerEndY, batSprite, col)
-    shadowAppear(@battler, delay) if @shadowVisible
+    shadowAppear(@battler, delay)
   end
 end
 
@@ -800,7 +874,7 @@ class Battle::Scene::Animation::PokeballThrowCapture < Battle::Scene::Animation
       col.alpha = 255
       battler.setColor(delay, col)
       battlerAppear(battler, delay, battlerStartX, battlerStartY, batSprite, col)
-      shadowAppear(@battler, delay, shadow) if @shadowVisible
+      shadowAppear(@battler, delay, shadow)
     end
   end
 end

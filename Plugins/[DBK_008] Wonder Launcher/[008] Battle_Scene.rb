@@ -317,6 +317,11 @@ class Battle::Scene::WonderLauncherPointsBar < Sprite
     imagepos = []
     spriteX = (@side == 0) ? 18 : self.bitmap.width - 50
     trySprite = "Graphics/Characters/trainer_" + @trainer.trainer_type.to_s
+    if @side == 0 && @index == 0 && $player.outfit > 0
+      if pbResolveBitmap(trySprite + "_#{$player.outfit}")
+        trySprite += "_#{$player.outfit}"
+      end
+    end
     imagepos.push([trySprite, spriteX, 10, 0, 0, 32, 48]) if pbResolveBitmap(trySprite) 
     @maxPoints.times do |i|
       xpos = (@side == 0) ? (spriteX + 40) + 10 * i : (spriteX - 20) - 10 * i

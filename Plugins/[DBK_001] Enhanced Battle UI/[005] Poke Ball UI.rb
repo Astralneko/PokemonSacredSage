@@ -5,16 +5,15 @@ class Battle::Scene
   #-----------------------------------------------------------------------------
   # Toggles the visibility of the Poke Ball selection menu.
   #-----------------------------------------------------------------------------
-  def pbToggleBallInfo(idxBattler)
+  def pbToggleBallInfo(idxBattler, raidCapture = false)
     return false if pbInSafari?
-    return false if !@battle.pbCanUsePokeBall?(idxBattler)
+    return false if !@battle.pbCanUsePokeBall?(idxBattler, raidCapture)
     ballPocket = $bag.get_ball_pocket
-    return false if ballPocket < 0
     pbHideInfoUI if @enhancedUIToggle != :ball
     @enhancedUIToggle = (@enhancedUIToggle.nil?) ? :ball : nil
     (@enhancedUIToggle) ? pbSEPlay("GUI party switch") : pbPlayCloseMenuSE
     @sprites["enhancedUI"].visible = !@enhancedUIToggle.nil?
-    return pbSelectBallInfo(idxBattler, ballPocket)
+    return pbSelectBallInfo(idxBattler, ballPocket, raidCapture)
   end
   
   #-----------------------------------------------------------------------------
@@ -77,7 +76,7 @@ class Battle::Scene
   #-----------------------------------------------------------------------------
   # Handles the controls for the Poke Ball menu.
   #-----------------------------------------------------------------------------
-  def pbSelectBallInfo(idxBattler, pocket)
+  def pbSelectBallInfo(idxBattler, pocket, raidCapture)
     return false if @enhancedUIToggle != :ball
     pbHideUIPrompt
     useBall = false
@@ -87,6 +86,7 @@ class Battle::Scene
     items.unshift([nil])
     index = $bag.last_viewed_index(pocket) + 1
     maxIdx = items.length - 1
+    idxBattler = idxBattler.index if idxBattler.respond_to?("index")
     battler = @battle.battlers[idxBattler].pbDirectOpposing(true)
     pbUpdateBallSelection(items, index, showDesc)
     @sprites["leftarrow"].x = 174
@@ -106,8 +106,12 @@ class Battle::Scene
           break
         end
         pbPlayDecisionSE
-        if ItemHandlers.triggerCanUseInBattle(item, battler.pokemon, battler, nil, true, @battle, self)
+        if raidCapture
+          useBall = item
+        elsif ItemHandlers.triggerCanUseInBattle(item, battler.pokemon, battler, nil, true, @battle, self)
           useBall = @battle.pbRegisterItem(idxBattler, item, battler.index)
+        end
+        if useBall
           $bag.set_last_viewed_index(pocket, index - 1)
           break
         end
@@ -145,7 +149,7 @@ class Battle::Scene
     pbHideInfoUI
     @sprites["leftarrow"].visible = false
     @sprites["rightarrow"].visible = false
-    pbRefreshUIPrompt(idxBattler) if !useBall
+    pbRefreshUIPrompt(idxBattler) if !useBall && !raidCapture
     return useBall
   end
 end
@@ -158,11 +162,13 @@ class Battle
   #-----------------------------------------------------------------------------
   # Utility for checking if Poke Balls are usable.
   #-----------------------------------------------------------------------------
-  def pbCanUsePokeBall?(idxBattler)
+  def pbCanUsePokeBall?(idxBattler, raidCapture = false)
     return false if pbInSafari? || pbInBugContest?
     return false if !@internalBattle
-    return false if @disablePokeBalls
     return false if trainerBattle?
+    return false if $bag.get_ball_pocket < 0
+    return true if raidCapture
+    return false if @disablePokeBalls
     idxBattler = idxBattler.index if idxBattler.respond_to?("index")
     return false if !pbOwnedByPlayer?(idxBattler || 0)
     return false if pbOpposingBattlerCount(idxBattler || 0) > 1

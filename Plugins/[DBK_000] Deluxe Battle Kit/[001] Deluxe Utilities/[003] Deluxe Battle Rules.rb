@@ -221,7 +221,6 @@ module Battle::CatchAndStoreMixin
       pkmn.calc_stats
       pkmn.hp = pkmn.hp.clamp(1, pkmn.totalhp)
     end
-    pbResetRaidProperties(pkmn) if pkmn.immunities.include?(:RAIDBOSS)
     pkmn.immunities = nil
     pkmn.name = nil if pkmn.nicknamed?
     if @raidStyleCapture && !@caughtPokemon.empty?
@@ -270,27 +269,30 @@ class Battle::Battler
     cmd = @battle.pbShowCommands(
       _INTL("Capture {1}?", target.pbThis(true)), ["Catch", "Don't Catch"], 1)
     pbPlayDecisionSE
-    @battle.scene.pbRevertBattlerEnd
     case cmd
     when 0
       @battle.sendToBoxes = 1
       if $PokemonStorage.full?
+        @battle.scene.pbRevertBattlerEnd
         @battle.pbDisplay(_INTL("But there is no room left in the PC!"))
         target.wild_flee(fleeMsg)
       else
         ball = nil
-        pbFadeOutIn {
-          scene  = PokemonBag_Scene.new
-          screen = PokemonBagScreen.new(scene, $bag)
-          ball   = screen.pbChooseItemScreen(Proc.new{ |item| GameData::Item.get(item).is_poke_ball? })
-        }
+        if PluginManager.installed?("[DBK] Enhanced Battle UI")
+          ball = @battle.scene.pbToggleBallInfo(pbDirectOpposing(true), true)
+        else
+          pbFadeOutIn {
+            scene  = PokemonBag_Scene.new
+            screen = PokemonBagScreen.new(scene, $bag)
+            ball   = screen.pbChooseItemScreen(Proc.new{ |item| GameData::Item.get(item).is_poke_ball? })
+          }
+        end
         if ball
           $bag.remove(ball, 1)
-          if !chance.nil? && chance > 0
-            r = rand(100)
-            capture = r < chance || ball == :MASTERBALL || ($DEBUG && Input.press?(Input::CTRL))
-            @battle.captureSuccess = capture
+          if !chance.nil?
+            @battle.captureSuccess = (ball == :MASTERBALL || ($DEBUG && Input.press?(Input::CTRL)) || rand(100) < chance)
           end
+          @battle.scene.pbRevertBattlerEnd
           @battle.pbThrowPokeBall(target.index, ball)
           target.wild_flee(fleeMsg) if @battle.poke_ball_failed
         else
@@ -333,12 +335,9 @@ class Battle::Battler
   def pbFaint(showMessage = true)
     if self.canRaidCapture?
       self.hp = 1
-      if defined?(@vanished)
+      if defined?(self.battlerSprite)
         @battle.scene.pbAnimateSubstitute(@index, :hide)
-        @effects[PBEffects::Substitute]    = 0
-        @effects[PBEffects::SkyDrop]       = -1
-        @effects[PBEffects::TwoTurnAttack] = nil
-        @battle.scene.pbChangePokemon(self, self.visiblePokemon, true)
+        @battle.scene.pbChangePokemon(self, self.visiblePokemon, 0)
       end
       raid = @battle.raidStyleCapture
       if raid.is_a?(Hash)

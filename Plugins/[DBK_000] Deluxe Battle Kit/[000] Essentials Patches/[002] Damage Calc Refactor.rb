@@ -169,7 +169,7 @@ class Battle::Move
       when :FIRE
         multipliers[:final_damage_multiplier] *= 1.5
       when :WATER
-        if @function_code = "IncreasePowerInSunWeather"
+        if @function_code == "IncreasePowerInSunWeather"
           multipliers[:final_damage_multiplier] *= 1.5
         else
           multipliers[:final_damage_multiplier] /= 2

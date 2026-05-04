@@ -476,11 +476,11 @@ MenuHandlers.add(:debug_menu, :set_trainer_types, {
   "description" => _INTL("Edit the properties of trainer types."),
   "effect"      => proc {
     cmd = 0
+    cmds = [
+      _INTL("Edit properties"),
+      _INTL("Edit sprites")
+    ]
     loop do
-      cmds = [
-        _INTL("Edit properties"),
-        _INTL("Edit sprites")
-      ]
       cmd = pbShowCommands(nil, cmds, -1, cmd)
       break if cmd < 0
       case cmd
@@ -493,6 +493,23 @@ MenuHandlers.add(:debug_menu, :set_trainer_types, {
           sps.pbStart
         end
       end
+    end
+  }
+})
+
+#===============================================================================
+# Trainer sprite editor also accessible through DBK debug menu.
+#===============================================================================
+MenuHandlers.add(:debug_menu, :deluxe_trainer_metrics, {
+  "name"        => _INTL("Edit trainer sprites"),
+  "parent"      => :deluxe_plugins_menu,
+  "description" => _INTL("Edit various metrics related to trainer sprites."),
+  "effect"      => proc {
+    pbPlayDecisionSE
+    pbFadeOutIn do
+      sp = TrainerSpriteEditor.new
+      sps = TrainerSpriteEditorScreen.new(sp)
+      sps.pbStart
     end
   }
 })

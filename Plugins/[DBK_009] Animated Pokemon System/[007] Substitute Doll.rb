@@ -10,15 +10,12 @@ class Battle::Scene
   #-----------------------------------------------------------------------------
   def pbUpdateSubstituteSprite(idxBattler, mode)
     battler = (idxBattler.respond_to?("index")) ? idxBattler : @battle.battlers[idxBattler]
-    pkmnSprite   = @sprites["pokemon_#{battler.index}"]
-    shadowSprite = @sprites["shadow_#{battler.index}"]
+    pkmnSprite = battler.battlerSprite
     if [:create, :show].include?(mode)
       return if battler.effects[PBEffects::Substitute] <= 0
       pkmnSprite.substitute = true
-      shadowSprite.substitute = true
     else
       pkmnSprite.substitute = false
-      shadowSprite.substitute = false
     end
   end
   
@@ -45,7 +42,6 @@ class Battle::Scene
     substituteAnim.dispose
     pbUpdateSubstituteSprite(battler, mode)
     @sprites["pokemon_#{battler.index}"].visible = true
-    @sprites["shadow_#{battler.index}"].visible = battler.pokemon.species_data.shows_shadow?(battler.index.even?)
     pbChangePokemon(battler.index, battler.visiblePokemon)
   end
   
@@ -58,7 +54,7 @@ class Battle::Scene
       next if !battler
       mode = (battler.effects[PBEffects::Substitute] > 0) ? :show : :hide
       pbUpdateSubstituteSprite(battler.index, mode)
-      pbChangePokemon(i, @sprites["pokemon_#{i}"].pkmn)
+      pbChangePokemon(i, battler.visiblePokemon)
       @sprites["dataBox_#{i}"].initializeDataBoxGraphic(@battle.pbSideSize(i))
       @sprites["dataBox_#{i}"].refresh
     end
@@ -175,13 +171,15 @@ class Battle::Scene::Animation::SubstituteAppear < Battle::Scene::Animation
 
   def createProcesses
     delay = 0
-    batSprite = @sprites["pokemon_#{@battler.index}"]
+    batSprite = @battler.battlerSprite
     return if batSprite.substitute
     pos = Battle::Scene.pbBattlerPosition(batSprite.index, batSprite.sideSize)
     offset = (@battler.opposes?) ? Settings::SUBSTITUTE_DOLL_METRICS[1] : Settings::SUBSTITUTE_DOLL_METRICS[0]
     substitute = addNewSprite(pos[0], pos[1] + offset - 128, @filename, PictureOrigin::BOTTOM)
     substitute.setZ(delay, batSprite.z)
     substitute.setOpacity(delay, 0)
+    zoom_mult = (@battler.opposes?) ? Settings::FRONT_BATTLER_SPRITE_SCALE : Settings::BACK_BATTLER_SPRITE_SCALE
+    substitute.setZoom(delay, zoom_mult * 100)
     shadow = addSprite(@sprites["shadow_#{@battler.index}"], PictureOrigin::CENTER)
     shadow.setVisible(delay, false)
     battler = addSprite(batSprite, PictureOrigin::BOTTOM)
@@ -216,7 +214,7 @@ class Battle::Scene::Animation::SubstituteSwapIn < Battle::Scene::Animation
 
   def createProcesses
     delay = 0
-    batSprite = @sprites["pokemon_#{@battler.index}"]
+    batSprite = @battler.battlerSprite
     return if batSprite.substitute
     pos = Battle::Scene.pbBattlerPosition(batSprite.index, batSprite.sideSize)
     offset = (@battler.opposes?) ? Settings::SUBSTITUTE_DOLL_METRICS[1] : Settings::SUBSTITUTE_DOLL_METRICS[0]
@@ -226,6 +224,8 @@ class Battle::Scene::Animation::SubstituteSwapIn < Battle::Scene::Animation
     substitute.setXY(delay, @pictureSprites[sprite].x + dir, @pictureSprites[sprite].y)
     substitute.setZ(delay, batSprite.z)
     substitute.setVisible(delay, false)
+    zoom_mult = (@battler.opposes?) ? Settings::FRONT_BATTLER_SPRITE_SCALE : Settings::BACK_BATTLER_SPRITE_SCALE
+    substitute.setZoom(delay, zoom_mult * 100)
     shadow = addSprite(@sprites["shadow_#{@battler.index}"], PictureOrigin::CENTER)
     shadow.setVisible(delay, false)
     battler = addSprite(batSprite, PictureOrigin::BOTTOM)
@@ -251,7 +251,7 @@ class Battle::Scene::Animation::SubstituteSwapOut < Battle::Scene::Animation
 
   def createProcesses
     delay = 0
-    batSprite = @sprites["pokemon_#{@battler.index}"]
+    batSprite = @battler.battlerSprite
     return if !batSprite.substitute
     pos = Battle::Scene.pbBattlerPosition(batSprite.index, batSprite.sideSize)
     pokemon = addPokeSprite(@pkmn, !@battler.opposes?, PictureOrigin::BOTTOM)

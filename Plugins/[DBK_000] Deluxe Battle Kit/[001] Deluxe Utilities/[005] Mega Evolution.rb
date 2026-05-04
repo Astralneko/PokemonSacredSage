@@ -49,6 +49,8 @@ end
 # Updates to Mega Evolution battle scripts.
 #-------------------------------------------------------------------------------
 class Battle
+  attr_reader :mega_rings
+
   def pbAttackPhaseMegaEvolution
     pbPriority.each do |b|
       next unless @choices[b.index][0] == :UseMove && !b.fainted?
@@ -143,9 +145,12 @@ class Battle
 end
 
 #-------------------------------------------------------------------------------
-# Mega Evolution battler eligibility check.
+# Battler Mega Evolution properties.
 #-------------------------------------------------------------------------------
 class Battle::Battler
+  #-----------------------------------------------------------------------------
+  # Updates to battler mega utilities.
+  #-----------------------------------------------------------------------------
   def hasMega?
     return false if shadowPokemon? || @effects[PBEffects::Transform]
     return false if wild? && @battle.wildBattleMode != :mega
@@ -160,6 +165,32 @@ class Battle::Battler
     @pokemon.makeUnmega if mega?
     self.form_update(true)
     @battle.scene.pbRevertBattlerEnd
+  end
+  
+  #-----------------------------------------------------------------------------
+  # Tracks the index of the last used "power" move.
+  #-----------------------------------------------------------------------------
+  alias dx_pbUseMove pbUseMove
+  def pbUseMove(choice, specialUsage = false)
+    @powerMoveIndex = pbSetPowerMoveIndex(choice, specialUsage)
+    dx_pbUseMove(choice, specialUsage)
+    used_move = GameData::Move.try_get(@lastMoveUsed)
+    pbResetPowerMoveIndex(used_move)
+  end
+  
+  #-----------------------------------------------------------------------------
+  # Displays updates to battler's moves in the fight menu.
+  #-----------------------------------------------------------------------------
+  def display_mega_moves
+    mega_moves = MultipleForms.call("getMegaMoves", @pokemon)
+    return if !mega_moves
+    for i in 0...@moves.length
+      @baseMoves.push(@moves[i])
+      new_id = mega_moves[@moves[i].id]
+      next if !new_id || !GameData::Move.exists?(new_id)
+      @pokemon.moves[i].id = new_id
+      @moves[i] = Battle::Move.from_pokemon_move(@battle, @pokemon.moves[i])
+    end
   end
 end
 
@@ -217,19 +248,18 @@ class Battle::Scene::Animation::BattlerMegaEvolve < Battle::Scene::Animation
     #---------------------------------------------------------------------------
     # Gets trainer data from battler index (non-wild only).
     if !@battler.wild?
-      items = []
       trainer_item = :MEGARING
       trainer = @battle.pbGetOwnerFromBattlerIndex(idxBattler)
-      @trainer_file = GameData::TrainerType.front_sprite_filename(trainer.trainer_type)
-      GameData::Item.each { |item| items.push(item.id) if item.has_flag?("MegaRing") }
       if @battle.pbOwnedByPlayer?(idxBattler)
-        items.each do |item|
+        @trainer_file = GameData::TrainerType.player_front_sprite_filename(trainer.trainer_type)
+        @battle.mega_rings.each do |item|
           next if !$bag.has?(item)
           trainer_item = item
         end
       else
+	    @trainer_file = GameData::TrainerType.front_sprite_filename(trainer.trainer_type)
         trainer_items = @battle.pbGetOwnerItems(idxBattler)
-        items.each do |item|
+        @battle.mega_rings.each do |item|
           next if !trainer_items&.include?(item)
           trainer_item = item
         end

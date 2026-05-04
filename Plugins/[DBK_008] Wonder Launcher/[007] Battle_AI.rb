@@ -8,7 +8,7 @@
 # Discourages use of items based on available Wonder Launcher points.
 #===============================================================================
 Battle::AI::Handlers::GeneralItemScore.add(:wonder_launcher,
-  proc { |score, item, ai, battle|
+  proc { |score, item, idxPkmn, idxMove, ai, battle|
     if battle.launcherBattle?
       old_score = score
       max_points = Settings::WONDER_LAUNCHER_MAX_POINTS

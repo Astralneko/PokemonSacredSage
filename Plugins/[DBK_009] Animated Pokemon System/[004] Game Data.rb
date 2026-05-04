@@ -99,11 +99,11 @@ module GameData
     def apply_metrics_to_sprite(sprite, index, shadow = false)
       if shadow
         if (index & 1) == 0
-          sprite.x -= @shadow_sprite[0] * 2
-          sprite.y += @shadow_sprite[1] * 2
+          sprite.x += (@back_sprite[0] * 2 + @shadow_sprite[0] * 2)
+          sprite.y += (@back_sprite[1] * 2 + @shadow_sprite[1] * 2)
         else
-          sprite.x += @shadow_sprite[0] * 2
-          sprite.y += @shadow_sprite[2] * 2
+          sprite.x += (@front_sprite[0] * 2 + @shadow_sprite[0] * 2)
+          sprite.y += (@front_sprite[1] * 2 + @shadow_sprite[2] * 2)
         end
       elsif (index & 1) == 0
         sprite.x += @back_sprite[0] * 2
@@ -112,6 +112,24 @@ module GameData
         sprite.x += @front_sprite[0] * 2
         sprite.y += @front_sprite[1] * 2
         sprite.y -= @front_sprite_altitude * 2
+      end
+    end
+	
+    def apply_dynamax_metrics_to_sprite(sprite, index, shadow = false)
+      if shadow
+        if (index & 1) == 0
+          sprite.x += (@dmax_back_sprite[0] * 2 + @shadow_sprite[0] * 2)
+          sprite.y += (@dmax_back_sprite[1] * 2 + @shadow_sprite[1] * 2)
+        else
+          sprite.x += (@dmax_front_sprite[0] * 2 + @shadow_sprite[0] * 2)
+          sprite.y += (@dmax_front_sprite[1] * 2 + @shadow_sprite[2] * 2)
+        end
+      elsif (index & 1) == 0
+        sprite.x += @dmax_back_sprite[0] * 2
+        sprite.y += @dmax_back_sprite[1] * 2
+      else
+        sprite.x += @dmax_front_sprite[0] * 2
+        sprite.y += @dmax_front_sprite[1] * 2
       end
     end
 	
@@ -196,6 +214,7 @@ module GameData
     def has_gendered_sprites?; return has_flag?("HasGenderedSprites"); end
     
     def shows_shadow?(back = false)
+      return false if back && !Settings::SHOW_PLAYER_SIDE_SHADOW_SPRITES
       metrics_data = GameData::SpeciesMetrics.get_species_form(@species, @form, @gender == 1)
       return metrics_data.shows_shadow?(back)
     end
@@ -216,7 +235,8 @@ module GameData
       filename = "Graphics/Pokemon/substitute"
       filename += "_back" if back
       filename = pbResolveBitmap(filename)
-      return (filename) ? DeluxeBitmapWrapper.new(filename, [1, 0]) : nil
+      scale = (back) ? Settings::BACK_BATTLER_SPRITE_SCALE : Settings::FRONT_BATTLER_SPRITE_SCALE
+      return (filename) ? DeluxeBitmapWrapper.new(filename, [scale, 0]) : nil
     end
   
     #---------------------------------------------------------------------------

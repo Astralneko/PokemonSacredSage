@@ -49,7 +49,7 @@ class Battle::Battler
     if @battle.totemBattle
       return false if !@totemBattler
       return false if @battle.sos_chain > 1
-      return true if @battle.turnCount == 0
+      return true if @battle.sos_chain == 0
       return true if self.hp < self.totalhp / 3
       return false
     end

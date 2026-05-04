@@ -10,6 +10,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A fang that was dropped by a fleeing Ekans. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SANDSHREWCLAW]
 Name = Sandshrew Claw
@@ -18,6 +21,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Sandshrew. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [VULPIXFUR]
 Name = Vulpix Fur
@@ -26,6 +32,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Vulpix. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ODDISHLEAF]
 Name = Oddish Leaf
@@ -34,6 +43,9 @@ Pocket = 7
 Price = 70
 Flags = Material_TM
 Description = A leaf that was dropped by a fleeing Oddish. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [VENONATFANG]
 Name = Venonat Fang
@@ -42,6 +54,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A fang that was dropped by a fleeing Venonat. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DIGLETTDIRT]
 Name = Diglett Dirt
@@ -50,6 +65,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some dirt that was dropped by a fleeing Diglett. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MEOWTHFUR]
 Name = Meowth Fur
@@ -58,6 +76,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Meowth. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PSYDUCKDOWN]
 Name = Psyduck Down
@@ -66,6 +87,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some feathers that were dropped by a fleeing Psyduck. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MANKEYFUR]
 Name = Mankey Fur
@@ -74,6 +98,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Mankey. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GROWLITHEFUR]
 Name = Growlithe Fur
@@ -82,6 +109,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Growlithe. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [POLIWAGSLIME]
 Name = Poliwag Slime
@@ -90,6 +120,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some slime that was dropped by a fleeing Poliwag. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BELLSPROUTVINE]
 Name = Bellsprout Vine
@@ -98,6 +131,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A vine that was dropped by a fleeing Bellsprout. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TENTACOOLSTINGER]
 Name = Tentacool Stinger
@@ -106,6 +142,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = A stinger that was dropped by a fleeing Tentacool. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GEODUDEFRAGMENT]
 Name = Geodude Fragment
@@ -114,6 +153,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A fragment that was dropped by a fleeing Geodude. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SLOWPOKECLAW]
 Name = Slowpoke Claw
@@ -122,6 +164,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Slowpoke. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MAGNEMITESCREW]
 Name = Magnemite Screw
@@ -130,6 +175,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A screw that was dropped by a fleeing Magnemite. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DODUODOWN]
 Name = Doduo Down
@@ -138,6 +186,9 @@ Pocket = 7
 Price = 20
 Flags = Material_TM
 Description = Some down that was dropped by a fleeing Doduo. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SEELFUR]
 Name = Seel Fur
@@ -146,6 +197,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Seel. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GRIMERTOXIN]
 Name = Grimer Toxin
@@ -154,6 +208,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some goop that was dropped by a fleeing Grimer. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SHELLDERPEARL]
 Name = Shellder Pearl
@@ -162,6 +219,9 @@ Pocket = 7
 Price = 70
 Flags = Material_TM
 Description = A pearl that was dropped by a fleeing Shellder. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GASTLYGAS]
 Name = Gastly Gas
@@ -170,6 +230,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some gas that was dropped by a fleeing Gastly. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DROWZEEFUR]
 Name = Drowzee Fur
@@ -178,6 +241,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Drowzee. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [VOLTORBSPARKS]
 Name = Voltorb Sparks
@@ -186,6 +252,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some sparks that were dropped by a fleeing Voltorb. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [EXEGGCUTESHELL]
 Name = Exeggcute Shell
@@ -194,6 +263,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = A shell that was dropped by a fleeing Exeggcute. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [KOFFINGGAS]
 Name = Koffing Gas
@@ -202,6 +274,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some gas that was dropped by a fleeing Koffing. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [RHYHORNFANG]
 Name = Rhyhorn Fang
@@ -210,6 +285,9 @@ Pocket = 7
 Price = 120
 Flags = Material_TM
 Description = A fang that was dropped by a fleeing Rhyhorn. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [HORSEAINK]
 Name = Horsea Ink
@@ -218,6 +296,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = Some ink that was dropped by a fleeing Horsea. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SCYTHERCLAW]
 Name = Scyther Claw
@@ -226,6 +307,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Scyther. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TAUROSHAIR]
 Name = Tauros Hair
@@ -234,6 +318,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some hair that was dropped by a fleeing Tauros. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MAGIKARPSCALES]
 Name = Magikarp Scales
@@ -242,6 +329,9 @@ Pocket = 7
 Price = 20
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Magikarp. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [LAPRASTEARDROP]
 Name = Lapras Teardrop
@@ -250,6 +340,9 @@ Pocket = 7
 Price = 120
 Flags = Material_TM
 Description = A teardrop that was dropped by a fleeing Lapras. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DITTOGOO]
 Name = Ditto Goo
@@ -258,6 +351,9 @@ Pocket = 7
 Price = 150
 Flags = Material_TM
 Description = Some goo that was dropped by a fleeing Ditto. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [EEVEEFUR]
 Name = Eevee Fur
@@ -266,6 +362,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Eevee. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PORYGONFRAGMENT]
 Name = Porygon Fragment
@@ -274,6 +373,9 @@ Pocket = 7
 Price = 120
 Flags = Material_TM
 Description = A fragment that was dropped by a fleeing Porygon. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DRATINISCALES]
 Name = Dratini Scales
@@ -282,6 +384,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Dratini. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SENTRETFUR]
 Name = Sentret Fur
@@ -290,6 +395,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Sentret. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [HOOTHOOTFEATHER]
 Name = Hoothoot Feather
@@ -298,6 +406,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Hoothoot. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SPINARAKTHREAD]
 Name = Spinarak Thread
@@ -306,6 +417,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some thread that was dropped by a fleeing Spinarak. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CHINCHOUSPARKS]
 Name = Chinchou Sparks
@@ -314,6 +428,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some sparks that were dropped by a fleeing Chinchou. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PICHUFUR]
 Name = Pichu Fur
@@ -322,6 +439,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Pichu. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CLEFFAFUR]
 Name = Cleffa Fur
@@ -330,6 +450,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Cleffa. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [IGGLYBUFFFLUFF]
 Name = Igglybuff Fluff
@@ -338,6 +461,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some fluff that was dropped by a fleeing Igglybuff. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MAREEPWOOL]
 Name = Mareep Wool
@@ -346,6 +472,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some wool that was dropped by a fleeing Mareep. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [HOPPIPLEAF]
 Name = Hoppip Leaf
@@ -354,6 +483,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = A leaf that was dropped by a fleeing Hoppip. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [AIPOMHAIR]
 Name = Aipom Hair
@@ -362,6 +494,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some hair that was dropped by a fleeing Aipom. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SUNKERNLEAF]
 Name = Sunkern Leaf
@@ -370,6 +505,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = A leaf that was dropped by a fleeing Sunkern. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [YANMASPIKE]
 Name = Yanma Spike
@@ -378,6 +516,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = A spike that was dropped by a fleeing Yanma. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [WOOPERSLIME]
 Name = Wooper Slime
@@ -386,6 +527,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some slime that was dropped by a fleeing Wooper. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MURKROWBAUBLE]
 Name = Murkrow Bauble
@@ -394,6 +538,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A bauble that was dropped by a fleeing Murkrow. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MISDREAVUSTEARS]
 Name = Misdreavus Tears
@@ -402,6 +549,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some tears that were dropped by a fleeing Misdreavus. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GIRAFARIGFUR]
 Name = Girafarig Fur
@@ -410,6 +560,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Girafarig. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PINECOHUSK]
 Name = Pineco Husk
@@ -418,6 +571,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A husk that was dropped by a fleeing Pineco. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DUNSPARCESCALES]
 Name = Dunsparce Scales
@@ -426,6 +582,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Dunsparce. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GLIGARFANG]
 Name = Gligar Fang
@@ -434,6 +593,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A fang that was dropped by a fleeing Gligar. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SNUBBULLHAIR]
 Name = Snubbull Hair
@@ -442,6 +604,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some hair that was dropped by a fleeing Snubbull. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [QWILFISHSPINES]
 Name = Qwilfish Spines
@@ -450,6 +615,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some spines that were dropped by a fleeing Qwilfish. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [HERACROSSCLAW]
 Name = Heracross Claw
@@ -458,6 +626,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Heracross. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SNEASELCLAW]
 Name = Sneasel Claw
@@ -466,6 +637,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Sneasel. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TEDDIURSACLAW]
 Name = Teddiursa Claw
@@ -474,6 +648,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Teddiursa. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SLUGMALAVA]
 Name = Slugma Lava
@@ -482,6 +659,9 @@ Pocket = 7
 Price = 70
 Flags = Material_TM
 Description = Some lava that was dropped by a fleeing Slugma. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SWINUBHAIR]
 Name = Swinub Hair
@@ -490,6 +670,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some hair that was dropped by a fleeing Swinub. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DELIBIRDPARCEL]
 Name = Delibird Parcel
@@ -498,6 +681,9 @@ Pocket = 7
 Price = 120
 Flags = Material_TM
 Description = A parcel that was dropped by a fleeing Delibird. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SKARMORYFEATHER]
 Name = Skarmory Feather
@@ -506,6 +692,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Skarmory. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [HOUNDOURFANG]
 Name = Houndour Fang
@@ -514,6 +703,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A fang that was dropped by a fleeing Houndour. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PHANPYNAIL]
 Name = Phanpy Nail
@@ -522,6 +714,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A nail that was dropped by a fleeing Phanpy. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [STANTLERHAIR]
 Name = Stantler Hair
@@ -530,6 +725,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some hair that was dropped by a fleeing Stantler. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SMEARGLEPAINT]
 Name = Smeargle Paint
@@ -538,6 +736,9 @@ Pocket = 7
 Price = 20
 Flags = Material_TM
 Description = Some paint that was dropped by a fleeing Smeargle. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TYROGUESWEAT]
 Name = Tyrogue Sweat
@@ -546,6 +747,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some sweat that was dropped by a fleeing Tyrogue. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ELEKIDFUR]
 Name = Elekid Fur
@@ -554,6 +758,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Elekid. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MAGBYHAIR]
 Name = Magby Hair
@@ -562,6 +769,9 @@ Pocket = 7
 Price = 150
 Flags = Material_TM
 Description = Some hair that was dropped by a fleeing Magby. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [LARVITARCLAW]
 Name = Larvitar Claw
@@ -570,6 +780,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Larvitar. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [POOCHYENAFANG]
 Name = Poochyena Fang
@@ -578,6 +791,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A fang that was dropped by a fleeing Houndour. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [LOTADLEAF]
 Name = Lotad Leaf
@@ -586,6 +802,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = A leaf that was dropped by a fleeing Lotad. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SEEDOTSTEM]
 Name = Seedot Stem
@@ -594,6 +813,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A stem that was dropped by a fleeing Seedot. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [WINGULLFEATHER]
 Name = Wingull Feather
@@ -602,6 +824,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Wingull. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [RALTSDUST]
 Name = Ralts Dust
@@ -610,6 +835,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some dust that was dropped by a fleeing Ralts. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SURSKITSYRUP]
 Name = Surskit Syrup
@@ -618,6 +846,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some syrup that was dropped by a fleeing Surskit. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SHROOMISHSPORES]
 Name = Shroomish Spores
@@ -626,6 +857,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some syrup that was dropped by a fleeing Shroomish. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SLAKOTHFUR]
 Name = Slakoth Fur
@@ -634,6 +868,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Slakoth. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MAKUHITASWEAT]
 Name = Makuhita Sweat
@@ -642,6 +879,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some sweat that was dropped by a fleeing Makuhita. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [AZURILLFUR]
 Name = Azurill Fur
@@ -650,6 +890,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Azurill. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [NOSEPASSFRAGMENT]
 Name = Nosepass Fragment
@@ -658,6 +901,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A fragment that was dropped by a fleeing Nosepass. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SABLEYEGEM]
 Name = Sableye Gem
@@ -666,6 +912,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = A gem that was dropped by a fleeing Gem. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MEDITITESWEAT]
 Name = Meditite Sweat
@@ -674,6 +923,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some sweat that was dropped by a fleeing Meditite. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PLUSLEFUR]
 Name = Plusle Fur
@@ -682,6 +934,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Plusle. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MINUNFUR]
 Name = Minun Fur
@@ -690,6 +945,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Minun. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [VOLBEATFLUID]
 Name = Volbeat Fluid
@@ -698,6 +956,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some fluid that was dropped by a fleeing Volbeat. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ILLUMISEFLUID]
 Name = Illumise Fluid
@@ -706,6 +967,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some fluid that was dropped by a fleeing Illumise. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GULPINMUCUS]
 Name = Gulpin Mucus
@@ -714,6 +978,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some mucus that was dropped by a fleeing Gulpin. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [NUMELLAVA]
 Name = Numel Lava
@@ -722,6 +989,9 @@ Pocket = 7
 Price = 70
 Flags = Material_TM
 Description = Some lava that was dropped by a fleeing Numel. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TORKOALCOAL]
 Name = Torkoal Coal
@@ -730,6 +1000,9 @@ Pocket = 7
 Price = 70
 Flags = Material_TM
 Description = A coal that was dropped by a fleeing Torkoal. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SPOINKPEARL]
 Name = Spoink Pearl
@@ -738,6 +1011,9 @@ Pocket = 7
 Price = 70
 Flags = Material_TM
 Description = A pearl that was dropped by a fleeing Spoink. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TRAPINCHSHELL]
 Name = Trapinch Shell
@@ -746,6 +1022,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = A shell that was dropped by a fleeing Trapinch. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CACNEANEEDLE]
 Name = Cacnea Needle
@@ -754,6 +1033,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A needle that was dropped by a fleeing Cacnea. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SWABLUFLUFF]
 Name = Swablu Fluff
@@ -762,6 +1044,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some fluff that was dropped by a fleeing Swablu. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ZANGOOSECLAW]
 Name = Zangoose Claw
@@ -770,6 +1055,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Zangoose. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SEVIPERFANG]
 Name = Seviper Fang
@@ -778,6 +1066,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = A fang that was dropped by a fleeing Seviper. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BARBOACHSLIME]
 Name = Barboach Slime
@@ -786,6 +1077,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some slime that was dropped by a fleeing Barboach. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CORPHISHSHELL]
 Name = Corphish Shell
@@ -794,6 +1088,9 @@ Pocket = 7
 Price = 20
 Flags = Material_TM
 Description = A shell that was dropped by a fleeing Corphish. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FEEBASSCALES]
 Name = Feebas Scales
@@ -802,6 +1099,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Feebas. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SHUPPETSCRAP]
 Name = Shuppet Scrap
@@ -810,6 +1110,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A fabric scrap that was dropped by a fleeing Shuppet. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DUSKULLFRAGMENT]
 Name = Duskull Fragment
@@ -818,6 +1121,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A fragment that was dropped by a fleeing Duskull. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TROPIUSLEAF]
 Name = Tropius Leaf
@@ -826,6 +1132,9 @@ Pocket = 7
 Price = 70
 Flags = Material_TM
 Description = A leaf that was dropped by a fleeing Tropius. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SNORUNTFUR]
 Name = Snorunt Fur
@@ -834,6 +1143,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Snorunt. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [LUVDISCSCALES]
 Name = Luvdisc Scales
@@ -842,6 +1154,9 @@ Pocket = 7
 Price = 80
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Luvdisc. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BAGONSCALES]
 Name = Bagon Scales
@@ -850,6 +1165,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Bagon. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BELDUMCLAW]
 Name = Beldum Claw
@@ -858,6 +1176,9 @@ Pocket = 7
 Price = 150
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Beldum. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [STARLYFEATHER]
 Name = Starly Feather
@@ -866,6 +1187,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Starly. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [KRICKETOTSHELL]
 Name = Kricketot Shell
@@ -874,6 +1198,9 @@ Pocket = 7
 Price = 20
 Flags = Material_TM
 Description = A shell that was dropped by a fleeing Kricketot. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SHINXFANG]
 Name = Shinx Fang
@@ -882,6 +1209,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = A fang that was dropped by a fleeing Shinx. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CRANIDOSSPIKE]
 Name = Cranidos Spike
@@ -890,6 +1220,9 @@ Pocket = 7
 Price = 80
 Flags = Material_TM
 Description = A spike that was dropped by a fleeing Cranidos. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SHIELDONCLAW]
 Name = Shieldon Claw
@@ -898,6 +1231,9 @@ Pocket = 7
 Price = 80
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Shieldon. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [COMBEEHONEY]
 Name = Combee Honey
@@ -906,6 +1242,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some honey that was dropped by a fleeing Combee. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PACHIRISUFUR]
 Name = Pachirisu Fur
@@ -914,6 +1253,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Pachirisu. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BUIZELFUR]
 Name = Buizel Fur
@@ -922,6 +1264,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Buizel. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SHELLOSMUCUS]
 Name = Shellos Mucus
@@ -930,6 +1275,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some mucus that was dropped by a fleeing Shellos. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DRIFLOONGAS]
 Name = Drifloon Gas
@@ -938,6 +1286,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some gas that was dropped by a fleeing Drifloon. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CHINGLINGFRAGMENT]
 Name = Chingling Fragment
@@ -946,6 +1297,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A fragment that was dropped by a fleeing Chingling. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [STUNKYFUR]
 Name = Stunky Fur
@@ -954,6 +1308,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Stunky. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BRONZORFRAGMENT]
 Name = Bronzor Fragment
@@ -962,6 +1319,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A fragment that was dropped by a fleeing Bronzor. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BONSLYTEARS]
 Name = Bonsly Tears
@@ -970,6 +1330,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some tears that were dropped by a fleeing Bonsly. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [HAPPINYDUST]
 Name = Happiny Dust
@@ -978,6 +1341,9 @@ Pocket = 7
 Price = 150
 Flags = Material_TM
 Description = Some dust that was dropped by a fleeing Happiny. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SPIRITOMBFRAGMENT]
 Name = Spiritomb Fragment
@@ -986,6 +1352,9 @@ Pocket = 7
 Price = 120
 Flags = Material_TM
 Description = A fragment that was dropped by a fleeing Spiritomb. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GIBLESCALES]
 Name = Gible Scales
@@ -994,6 +1363,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Gible. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MUNCHLAXFANG]
 Name = Munchlax Fang
@@ -1002,6 +1374,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A fang that was dropped by a fleeing Munchlax. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [RIOLUFUR]
 Name = Riolu Fur
@@ -1010,6 +1385,9 @@ Pocket = 7
 Price = 80
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Riolu. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [HIPPOPOTASSAND]
 Name = Hippopotas Sand
@@ -1018,6 +1396,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some sand that was dropped by a fleeing Hippopotas. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CROAGUNKPOISON]
 Name = Croagunk Poison
@@ -1026,6 +1407,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some poison that was dropped by a fleeing Croagunk. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FINNEONSCALES]
 Name = Finneon Scales
@@ -1034,6 +1418,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Finneon. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SNOVERBERRIES]
 Name = Snover Berries
@@ -1042,6 +1429,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some berries that were dropped by a fleeing Snover. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ROTOMSPARKS]
 Name = Rotom Sparks
@@ -1050,6 +1440,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = Some sparks that were dropped by a fleeing Rotom. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BLITZLEMANEHAIR]
 Name = Blitzle Mane Hair
@@ -1058,6 +1451,9 @@ Pocket = 7
 Price = 80
 Flags = Material_TM
 Description = Some hair that was dropped by a fleeing Blitzle. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DRILBURCLAW]
 Name = Drilbur Claw
@@ -1066,6 +1462,9 @@ Pocket = 7
 Price = 120
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Drilbur. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TIMBURRSWEAT]
 Name = Timburr Sweat
@@ -1074,6 +1473,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some sweat that was dropped by a fleeing Timburr. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SEWADDLELEAF]
 Name = Sewaddle Leaf
@@ -1082,6 +1484,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = A leaf that was dropped by a fleeing Sewaddle. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [COTTONEEFLUFF]
 Name = Cottonee Fluff
@@ -1090,6 +1495,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some fluff that was dropped by a fleeing Cottonee. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PETILILLEAF]
 Name = Petilil Leaf
@@ -1098,6 +1506,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = A leaf that was dropped by a fleeing Petilil. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BASCULINFANG]
 Name = Basculin Fang
@@ -1106,6 +1517,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A fang that was dropped by a fleeing Basculin. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SANDILECLAW]
 Name = Sandile Claw
@@ -1114,6 +1528,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Sandile. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SCRAGGYSWEAT]
 Name = Scraggy Sweat
@@ -1122,6 +1539,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some sweat that was dropped by a fleeing Scraggy. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ZORUAFUR]
 Name = Zorua Fur
@@ -1130,6 +1550,9 @@ Pocket = 7
 Price = 70
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Zorua. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MINCCINOFUR]
 Name = Minccino Fur
@@ -1138,6 +1561,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Minccino. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GOTHITAEYELASH]
 Name = Gothita Eyelash
@@ -1146,6 +1572,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = An eyelash that was dropped by a fleeing Gothita. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SOLOSISGEL]
 Name = Solosis Gel
@@ -1154,6 +1583,9 @@ Pocket = 7
 Price = 70
 Flags = Material_TM
 Description = Some gel that was dropped by a fleeing Solosis. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DUCKLETTFEATHER]
 Name = Ducklett Feather
@@ -1162,6 +1594,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Ducklett. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DEERLINGHAIR]
 Name = Deerling Hair
@@ -1170,6 +1605,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some hair that was dropped by a fleeing Deerling. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FOONGUSSPORES]
 Name = Foongus Spores
@@ -1178,6 +1616,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some syrup that was dropped by a fleeing Foongus. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ALOMOMOLAMUCUS]
 Name = Alomomola Mucus
@@ -1186,6 +1627,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some mucus that was dropped by a fleeing Alomomola. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [JOLTIKTHREAD]
 Name = Joltik Thread
@@ -1194,6 +1638,9 @@ Pocket = 7
 Price = 20
 Flags = Material_TM
 Description = Some thread that was dropped by a fleeing Joltik. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TYNAMOSLIME]
 Name = Tynamo Slime
@@ -1202,6 +1649,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some slime that was dropped by a fleeing Tynamo. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [LITWICKSOOT]
 Name = Litwick Soot
@@ -1210,6 +1660,9 @@ Pocket = 7
 Price = 80
 Flags = Material_TM
 Description = Some soot that was dropped by a fleeing Litwick. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [AXEWSCALES]
 Name = Axew Scales
@@ -1218,6 +1671,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Axew. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CUBCHOOFUR]
 Name = Cubchoo Fur
@@ -1226,6 +1682,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Cubchoo. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CRYOGONALICE]
 Name = Cryogonal Ice
@@ -1234,6 +1693,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = An ice fragment that was dropped by a fleeing Cryogonal. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MIENFOOCLAW]
 Name = Mienfoo Claw
@@ -1242,6 +1704,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Mienfoo. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GOLETTSHARD]
 Name = Golett Shard
@@ -1250,6 +1715,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = A shard that was dropped by a fleeing Golett. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PAWNIARDBLADE]
 Name = Pawniard Blade
@@ -1258,6 +1726,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A blade that was dropped by a fleeing Pawniard. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [RUFFLETFEATHER]
 Name = Rufflet Feather
@@ -1266,6 +1737,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Rufflet. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [VULLABYFEATHER]
 Name = Vullaby Feather
@@ -1274,6 +1748,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Vullaby. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DEINOSCALES]
 Name = Deino Scales
@@ -1282,6 +1759,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Deino. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [LARVESTAFUZZ]
 Name = Larvesta Fuzz
@@ -1290,6 +1770,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = Some fuzz that was dropped by a fleeing Larvesta. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FLETCHLINGFEATHER]
 Name = Fletchling Feather
@@ -1298,6 +1781,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Fletchling. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SCATTERBUGPOWDER]
 Name = Scatterbug Powder
@@ -1306,6 +1792,9 @@ Pocket = 7
 Price = 20
 Flags = Material_TM
 Description = Some powder that was dropped by a fleeing Scatterbug. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [LITLEOTUFT]
 Name = Litleo Tuft
@@ -1314,6 +1803,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Litleo. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FLABEBEPOLLEN]
 Name = Flabébé Pollen
@@ -1322,6 +1814,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some pollen that was dropped by a fleeing Flabébé. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SKIDDOLEAF]
 Name = Skiddo Leaf
@@ -1330,6 +1825,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A leaf that was dropped by a fleeing Skiddo. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ESPURRFUR]
 Name = Espurr Fur
@@ -1338,6 +1836,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some furthat was dropped by a fleeing Espurr. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [INKAYINK]
 Name = Inkay Ink
@@ -1346,6 +1847,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some ink that was dropped by a fleeing Inkay. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SKRELPKELP]
 Name = Skrelp Kelp
@@ -1354,6 +1858,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some kelp that was dropped by a fleeing Skrelp. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CLAUNCHERCLAW]
 Name = Clauncher Claw
@@ -1362,6 +1869,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Clauncher. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [HAWLUCHADOWN]
 Name = Hawlucha Down
@@ -1370,6 +1880,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some feathers that were dropped by a fleeing Hawlucha. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DEDENNEFUR]
 Name = Dedenne Fur
@@ -1378,6 +1891,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Dedenne. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CARBINKJEWEL]
 Name = Carbink Jewel
@@ -1386,6 +1902,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A jewel that was dropped by a fleeing Carbink. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GOOMYGOO]
 Name = Goomy Goo
@@ -1394,6 +1913,9 @@ Pocket = 7
 Price = 70
 Flags = Material_TM
 Description = Some goo that was dropped by a fleeing Goomy. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [KLEFKIKEY]
 Name = Klefki Key
@@ -1402,6 +1924,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A key that was dropped by a fleeing Klefki. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PHANTUMPTWIG]
 Name = Phantump Twig
@@ -1410,6 +1935,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A twig that was dropped by a fleeing Phantump. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BERGMITEICE]
 Name = Bergmite Ice
@@ -1418,6 +1946,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = An ice fragment that was dropped by a fleeing Bergmite. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [NOIBATFUR]
 Name = Noibat Fur
@@ -1426,6 +1957,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Noibat. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PIKIPEKFEATHER]
 Name = Pikipek Feather
@@ -1434,6 +1968,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Pikipek. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [YUNGOOSFUR]
 Name = Yungoos Fur
@@ -1442,6 +1979,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Yungoos. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GRUBBINTHREAD]
 Name = Grubbin Thread
@@ -1450,6 +1990,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some thread that was dropped by a fleeing Grubbin. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CRABRAWLERSHELL]
 Name = Crabrawler Shell
@@ -1458,6 +2001,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A shell that was dropped by a fleeing Crabrawler. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ORICORIOFEATHER]
 Name = Oricorio Feather
@@ -1466,6 +2012,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Oricorio. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CUTIEFLYPOWDER]
 Name = Cutiefly Powder
@@ -1474,6 +2023,9 @@ Pocket = 7
 Price = 20
 Flags = Material_TM
 Description = Some powder that was dropped by a fleeing Cutiefly. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ROCKRUFFROCK]
 Name = Rockruff Rock
@@ -1482,6 +2034,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A rock that was dropped by a fleeing Rockruff. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MAREANIESPIKE]
 Name = Mareanie Spike
@@ -1490,6 +2045,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A spike that was dropped by a fleeing Mareanie. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MUDBRAYMUD]
 Name = Mudbray Mud
@@ -1498,6 +2056,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some mud that was dropped by a fleeing Mudbray. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DEWPIDERTHREAD]
 Name = Dewpider Thread
@@ -1506,6 +2067,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some thread that was dropped by a fleeing Drilbur. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FOMANTISLEAF]
 Name = Fomantis Leaf
@@ -1514,6 +2078,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A leaf that was dropped by a fleeing Fomantis. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SALANDITGAS]
 Name = Salandit Gas
@@ -1522,6 +2089,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some gas that was dropped by a fleeing Salandit. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BOUNSWEETSWEAT]
 Name = Bounsweet Sweat
@@ -1530,6 +2100,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some sweat that was dropped by a fleeing Bounsweet. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [COMFEYFLOWER]
 Name = Comfey Flower
@@ -1538,6 +2111,9 @@ Pocket = 7
 Price = 70
 Flags = Material_TM
 Description = A flower that was dropped by a fleeing Comfey. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ORANGURUFUR]
 Name = Oranguru Fur
@@ -1546,6 +2122,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Oranguru. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PASSIMIANFUR]
 Name = Passimian Fur
@@ -1554,6 +2133,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Passimian. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SANDYGASTSAND]
 Name = Sandygast Sand
@@ -1562,6 +2144,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some sand that was dropped by a fleeing Sandygast. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MINIORSHELL]
 Name = Minior Shell
@@ -1570,6 +2155,9 @@ Pocket = 7
 Price = 20
 Flags = Material_TM
 Description = A shell that was dropped by a fleeing Minior. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [KOMALACLAW]
 Name = Komala Claw
@@ -1578,6 +2166,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Komala. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MIMIKYUSCRAP]
 Name = Mimikyu Scrap
@@ -1586,6 +2177,9 @@ Pocket = 7
 Price = 20
 Flags = Material_TM
 Description = A fabric scrap that was dropped by a fleeing Mimikyu. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BRUXISHTOOTH]
 Name = Bruxish Tooth
@@ -1594,6 +2188,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A tooth that was dropped by a fleeing Bruxish. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [JANGMOOSCALES]
 Name = Jangmo-o Scales
@@ -1602,6 +2199,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Jangmo-o. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SKWOVETFUR]
 Name = Skwovet Fur
@@ -1610,6 +2210,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Skwovet. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ROOKIDEEFEATHER]
 Name = Rookidee Feather
@@ -1618,6 +2221,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Rookidee. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CHEWTLECLAW]
 Name = Chewtle Claw
@@ -1626,6 +2232,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Chewtle. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ROLYCOLYCOAL]
 Name = Rolycoly Coal
@@ -1634,6 +2243,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A coal that was dropped by a fleeing Rolycoly. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [APPLINJUICE]
 Name = Applin Juice
@@ -1642,6 +2254,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some juice that was dropped by a fleeing Applin. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SILICOBRASAND]
 Name = Silicobra Sand
@@ -1650,6 +2265,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some sand that was dropped by a fleeing Silicobra. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CRAMORANTDOWN]
 Name = Cramorant Down
@@ -1658,6 +2276,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some feathers that were dropped by a fleeing Cramorant. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ARROKUDASCALES]
 Name = Arrokuda Scales
@@ -1666,6 +2287,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Arrokuda. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TOXELSPARKS]
 Name = Toxel Sparks
@@ -1674,6 +2298,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some sparks that were dropped by a fleeing Toxel. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SINISTEACHIP]
 Name = Sinistea Chip
@@ -1682,6 +2309,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A chip that was dropped by a fleeing Sinistea. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [HATENNADUST]
 Name = Hatenna Dust
@@ -1690,6 +2320,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some dust that was dropped by a fleeing Hatenna. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [IMPIDIMPHAIR]
 Name = Impidimp Hair
@@ -1698,6 +2331,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some hair that was dropped by a fleeing Impidimp. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MILCERYCREAM]
 Name = Milcery Cream
@@ -1706,6 +2342,9 @@ Pocket = 7
 Price = 80
 Flags = Material_TM
 Description = Some cream that was dropped by a fleeing Milcery. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FALINKSSWEAT]
 Name = Falinks Sweat
@@ -1714,6 +2353,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some sweat that was dropped by a fleeing Falinks. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PINCURCHINSPINES]
 Name = Pincurchin Spines
@@ -1722,6 +2364,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some spines that were dropped by a fleeing Pincurchin. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SNOMTHREAD]
 Name = Snom Thread
@@ -1730,6 +2375,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some thread that was dropped by a fleeing Snom. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [STONJOURNERSTONE]
 Name = Stonjourner Stone
@@ -1738,6 +2386,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = A stone that was dropped by a fleeing Stonjourner. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [EISCUEDOWN]
 Name = Eiscue Down
@@ -1746,6 +2397,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some feathers that were dropped by a fleeing Eiscue. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [INDEEDEEFUR]
 Name = Indeedee Fur
@@ -1754,6 +2408,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Indeedee. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MORPEKOSNACK]
 Name = Morpeko Snack
@@ -1762,6 +2419,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A snack that was dropped by a fleeing Morpeko. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CUFANTTARNISH]
 Name = Cufant Tarnish
@@ -1770,6 +2430,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some tarnish that was dropped by a fleeing Cufant. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DURALUDONTARNISH]
 Name = Duraludon Tarnish
@@ -1778,6 +2441,9 @@ Pocket = 7
 Price = 120
 Flags = Material_TM
 Description = Some tarnish that was dropped by a fleeing Duraludon. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DREEPYPOWDER]
 Name = Dreepy Powder
@@ -1786,6 +2452,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = Some powder that was dropped by a fleeing Dreepy. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [LECHONKHAIR]
 Name = Lechonk Hair
@@ -1794,6 +2463,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some hair that was dropped by a fleeing Lechonk. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TAROUNTULATHREAD]
 Name = Tarountula Thread
@@ -1802,6 +2474,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = Some thread that was dropped by a fleeing Tarountula. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [NYMBLECLAW]
 Name = Nymble Claw
@@ -1810,6 +2485,9 @@ Pocket = 7
 Price = 30
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Nymble. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PAWMIFUR]
 Name = Pawmi Fur
@@ -1818,6 +2496,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Pawmi. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TANDEMAUSFUR]
 Name = Tandemaus Fur
@@ -1826,6 +2507,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Tandemaus. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FIDOUGHFUR]
 Name = Fidough Fur
@@ -1834,6 +2518,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Fidough. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SMOLIVOIL]
 Name = Smoliv Oil
@@ -1842,6 +2529,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some oil that was dropped by a fleeing Smoliv. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SQUAWKABILLYFEATHER]
 Name = Squawkabilly Feather
@@ -1850,6 +2540,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Squawkabilly. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [NACLISALT]
 Name = Nacli Salt
@@ -1858,6 +2551,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some salt that was dropped by a fleeing Nacli. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CHARCADETSOOT]
 Name = Charcadet Soot
@@ -1866,6 +2562,9 @@ Pocket = 7
 Price = 80
 Flags = Material_TM
 Description = Some soot that was dropped by a fleeing Charcadet. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TADBULBMUCUS]
 Name = Tadbulb Mucus
@@ -1874,6 +2573,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some mucus that was dropped by a fleeing Tadbulb. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [WATTRELFEATHER]
 Name = Wattrel Feather
@@ -1882,6 +2584,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Wattrel. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MASCHIFFFANG]
 Name = Maschiff Fang
@@ -1890,6 +2595,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A fang that was dropped by a fleeing Maschiff. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SHROODLEINK]
 Name = Shroodle Ink
@@ -1898,6 +2606,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some ink that was dropped by a fleeing Shroodle. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BRAMBLINTWIG]
 Name = Bramblin Twig
@@ -1906,6 +2617,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A twig that was dropped by a fleeing Bramblin. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TOEDSCOOLFLAPS]
 Name = Toedscool Flaps
@@ -1914,6 +2628,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some flaps that were dropped by a fleeing Toedscool. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [KLAWFCLAW]
 Name = Klawf Claw
@@ -1922,6 +2639,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Klawf. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CAPSAKIDSEED]
 Name = Capsakid Seed
@@ -1930,6 +2650,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A seed that was dropped by a fleeing Capsakid. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [RELLORMUD]
 Name = Rellor Mud
@@ -1938,6 +2661,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some mud that was dropped by a fleeing Rellor. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FLITTLEDOWN]
 Name = Flittle Down
@@ -1946,6 +2672,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some feathers that were dropped by a fleeing Flittle. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TINKATINKHAIR]
 Name = Tinkatink Hair
@@ -1954,6 +2683,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some hair that was dropped by a fleeing Tinkatink. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [WIGLETTSAND]
 Name = Wiglett Sand
@@ -1962,6 +2694,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some sand that was dropped by a fleeing Wiglett. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BOMBIRDIERFEATHER]
 Name = Bombirdier Feather
@@ -1970,6 +2705,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Bombirdier. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FINIZENMUCUS]
 Name = Finizen Mucus
@@ -1978,6 +2716,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some mucus that was dropped by a fleeing Finizen. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [VAROOMFUME]
 Name = Varoom Fume
@@ -1986,6 +2727,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some gas that was dropped by a fleeing Varoom. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CYCLIZARSCALES]
 Name = Cyclizar Scales
@@ -1994,6 +2738,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Cyclizar. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ORTHWORMTARNISH]
 Name = Orthworm Tarnish
@@ -2002,6 +2749,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = Some tarnish that was dropped by a fleeing Orthworm. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GLIMMETCRYSTAL]
 Name = Glimmet Crystal
@@ -2010,6 +2760,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = A crystal that was dropped by a fleeing Glimmet. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GREAVARDWAX]
 Name = Greavard Wax
@@ -2018,6 +2771,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some wax that was dropped by a fleeing Greavard. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FLAMIGODOWN]
 Name = Flamigo Down
@@ -2026,6 +2782,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some feathers that were dropped by a fleeing Flamigo. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CETODDLEGREASE]
 Name = Cetoddle Grease
@@ -2034,6 +2793,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = Some grease that was dropped by a fleeing Cetoddle. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [VELUZAFILLET]
 Name = Veluza Fillet
@@ -2042,6 +2804,9 @@ Pocket = 7
 Price = 70
 Flags = Material_TM
 Description = A slice of a fleeing Veluza that was dropped. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DONDOZOWHISKER]
 Name = Dondozo Whisker
@@ -2050,6 +2815,9 @@ Pocket = 7
 Price = 80
 Flags = Material_TM
 Description = A whisker that was dropped by a fleeing Dondozo. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TATSUGIRISCALES]
 Name = Tatsugiri Scales
@@ -2058,6 +2826,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Tatsugiri. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FRIGIBAXSCALES]
 Name = Frigibax Scales
@@ -2066,6 +2837,9 @@ Pocket = 7
 Price = 100
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Frigibax. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [POLTCHAGEISTPOWDER]
 Name = Poltchageist Powder
@@ -2074,6 +2848,9 @@ Pocket = 7
 Price = 20
 Flags = Material_TM
 Description = Some powder that was dropped by a fleeing Poltchageist. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PANGSHIFLUFF]
 Name = Pangshi Fluff
@@ -2082,6 +2859,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some fluff that was dropped by a fleeing Pangshi. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [WARFURSFUR]
 Name = Warfurs Fur
@@ -2090,6 +2870,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Warfurs. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MOIBELLEBELL]
 Name = Moibelle Bell
@@ -2098,6 +2881,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A bell that was dropped by a fleeing Moibelle. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TEDIFLAMETUFT]
 Name = Tediflame Tuft
@@ -2106,6 +2892,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Tediflame. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FURRONBULEAF]
 Name = Furronbu Leaf
@@ -2114,6 +2903,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A leaf that was dropped by a fleeing Furronbu. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CUTTETRASCALES]
 Name = Cuttetra Scales
@@ -2122,6 +2914,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Cuttetra. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [AMNIBALLORB]
 Name = Amniball Orb
@@ -2130,6 +2925,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = An orb that was dropped by a fleeing Amniball. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MACAWKFEATHER]
 Name = Macawk Feather
@@ -2138,6 +2936,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Macawk. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ONSAILFUR]
 Name = Onsail Fur
@@ -2146,6 +2947,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Onsail. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [LUNAVYFUR]
 Name = Lunavy Fur
@@ -2154,6 +2958,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Lunavy. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MARIHUSHFEATHER]
 Name = Marihush Feather
@@ -2162,6 +2969,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Marihush. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CLAUSTROASCALES]
 Name = Claustroa Scales
@@ -2170,6 +2980,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Claustroa. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ALUMINNOWSCALES]
 Name = Aluminnow Scales
@@ -2178,6 +2991,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some scales that were dropped by a fleeing Aluminnow. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [JOUSHRIMPCLAW]
 Name = Joushrimp Claw
@@ -2186,6 +3002,9 @@ Pocket = 7
 Price = 40
 Flags = Material_TM
 Description = A claw that was dropped by a fleeing Joushrimp. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FROSTKITFUR]
 Name = Frostkit Fur
@@ -2194,6 +3013,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Frostkit. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MARASAGILEAF]
 Name = Marasagi Leaf
@@ -2202,6 +3024,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A leaf that was dropped by a fleeing Marasagi. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PERSELFLYWING]
 Name = Perselfly Wing
@@ -2210,6 +3035,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A wing piece that was dropped by a fleeing Perselfly. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [AZULINDUST]
 Name = Azulin Dust
@@ -2218,6 +3046,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some dust that was dropped by a fleeing Azulin. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ROSESHDUST]
 Name = Rosesh Dust
@@ -2226,6 +3057,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some dust that was dropped by a fleeing Rosesh. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [LAZENSPARKS]
 Name = Lazen Sparks
@@ -2234,6 +3068,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = Some sparks that were dropped by a fleeing Lazen. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PEBBLEAKPEBBLE]
 Name = Pebbleak Pebble
@@ -2242,6 +3079,9 @@ Pocket = 7
 Price = 50
 Flags = Material_TM
 Description = A pebble that was dropped by a fleeing Pebbleak. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [DANGOTAILFUR]
 Name = Dangotail Fur
@@ -2250,6 +3090,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Dangotail. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [NECTAHOPHONEY]
 Name = Nectahop Honey
@@ -2258,6 +3101,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some honey that was dropped by a fleeing Nectahop. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GINGARAFUR]
 Name = Gingara Fur
@@ -2266,6 +3112,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Gingara. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CRYSTODECRYSTAL]
 Name = Crystode Crystal
@@ -2274,6 +3123,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = A crystal that was dropped by a fleeing Crystode. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ASTELLFUR]
 Name = Astell Fur
@@ -2282,6 +3134,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = Some fur that was dropped by a fleeing Astell. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [RESPLUMAFEATHER]
 Name = Respluma Feather
@@ -2290,6 +3145,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Respluma. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PAVOFUEGOFEATHER]
 Name = Pavofuego Feather
@@ -2298,6 +3156,9 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Pavofuego. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PANHALIFEATHER]
 Name = Panhali Feather
@@ -2306,3 +3167,6 @@ Pocket = 7
 Price = 60
 Flags = Material_TM
 Description = A feather that was dropped by a fleeing Panhali. It can be used for crafting.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0

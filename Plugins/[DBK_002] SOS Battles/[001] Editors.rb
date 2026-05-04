@@ -494,15 +494,9 @@ end
 #-------------------------------------------------------------------------------
 # General Debug options
 #-------------------------------------------------------------------------------
-MenuHandlers.add(:debug_menu, :deluxe_mode_toggles, {
-  "name"        => _INTL("Toggle plugin battle modes..."),
-  "parent"      => :deluxe_plugins_menu,
-  "description" => _INTL("Toggles for various battle modes implemented by add-on plugins.")
-})
-
 MenuHandlers.add(:debug_menu, :deluxe_sos, {
   "name"        => _INTL("Toggle SOS battles"),
-  "parent"      => :deluxe_mode_toggles,
+  "parent"      => :deluxe_gimmick_toggles,
   "description" => _INTL("Toggles SOS call functionality for wild Pokémon."),
   "effect"      => proc {
     $game_switches[Settings::SOS_CALL_SWITCH] = !$game_switches[Settings::SOS_CALL_SWITCH]

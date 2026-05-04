@@ -8,6 +8,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_NORMAL,CannotMetronome
 Description = The user builds up its momentum using its Z-Power and crashes into the target at full speed.
 #-------------------------------
@@ -19,6 +20,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_FIGHTING,CannotMetronome
 Description = The user rams an energy orb created by its Z-Power into the target with full force.
 #-------------------------------
@@ -30,6 +32,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_FLYING,CannotMetronome
 Description = The user soars up with its Z-Power and plummets toward the target at full speed.
 #-------------------------------
@@ -41,6 +44,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_POISON,CannotMetronome
 Description = The user creates a poisonous swamp using its Z-Power and sinks the target into it at full force.
 #-------------------------------
@@ -52,6 +56,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_GROUND,CannotMetronome
 Description = The user burrows deep into the ground and slams into the target with the full force of its Z-Power.
 #-------------------------------
@@ -63,6 +68,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_ROCK,CannotMetronome
 Description = The user summons a huge rock mountain using its Z-Power and drops it onto the target with full force.
 #-------------------------------
@@ -74,6 +80,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_BUG,CannotMetronome
 Description = The user binds the target with full force with threads of silk that the user spits using its Z-Power.
 #-------------------------------
@@ -85,6 +92,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_GHOST,CannotMetronome
 Description = Deep-seated grudges summoned by the user's Z-Power trap the target.
 #-------------------------------
@@ -96,6 +104,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_STEEL,CannotMetronome
 Description = The user spins very fast and rams into the target with the full force of its Z-Power.
 #-------------------------------
@@ -107,6 +116,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_FIRE,CannotMetronome
 Description = The user breathes a stream of intense fire toward the target with the full force of its Z-Power.
 #-------------------------------
@@ -118,6 +128,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_WATER,CannotMetronome
 Description = The user creates a huge whirling current using its Z-Power to swallow the target with full force.
 #-------------------------------
@@ -129,6 +140,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_GRASS,CannotMetronome
 Description = The user collects energy from plants using its Z-Power and attacks the target with full force.
 #-------------------------------
@@ -140,6 +152,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_ELECTRIC,CannotMetronome
 Description = The user hits the target with a powerful electric current collected by its Z-Power.
 #-------------------------------
@@ -151,6 +164,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_PSYCHIC,CannotMetronome
 Description = The user controls the target with its Z-Power and hurts the target with full force.
 #-------------------------------
@@ -162,6 +176,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_ICE,CannotMetronome
 Description = The user dramatically drops the temperature using its Z-Power and freezes the target with full force.
 #-------------------------------
@@ -173,6 +188,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_DRAGON,CannotMetronome
 Description = The user materializes its aura using its Z-Power and attacks the target with full force.
 #-------------------------------
@@ -184,6 +200,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_DARK,CannotMetronome
 Description = The user gathers dark energy using its Z-Power and sucks the target into it.
 #-------------------------------
@@ -195,6 +212,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_FAIRY,CannotMetronome
 Description = The user creates a very charming space using its Z-Power and totally toys with the target.
 #-------------------------------
@@ -206,6 +224,7 @@ Power = 210
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove,Contact,CannotMetronome
 Description = Pikachu surrounds itself with the maximum amount of electricity using its Z-Power.
 #-------------------------------
@@ -217,6 +236,7 @@ Power = 195
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove,HighCriticalHitRate_2,CannotMetronome
 Description = Pikachu wearing a cap unleashes a jolt of electricity. Critical hits land more easily.
 #-------------------------------
@@ -252,6 +272,7 @@ Power = 210
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove,Contact,CannotMetronome
 Description = Snorlax moves its enormous body energetically and attacks the target with full force.
 #-------------------------------
@@ -276,6 +297,7 @@ Power = 180
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove,CannotMetronome
 Description = Decidueye shoots the target with countless arrows using its Z-Power.
 #-------------------------------
@@ -287,6 +309,7 @@ Power = 180
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove,Contact,TramplesMinimize,CannotMetronome
 Description = Incineroar crashes into the target using its Z-Power.
 #-------------------------------
@@ -298,6 +321,7 @@ Power = 195
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove,CannotMetronome
 Description = Primarina summons a massive amount of water using its Z-Power.
 #-------------------------------
@@ -322,6 +346,7 @@ Power = 190
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove,Contact,CannotMetronome
 Description = After obtaining Z-Power, the user, Mimikyu, punches the target with full force.
 #-------------------------------
@@ -394,11 +419,10 @@ Power = 195
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove,Contact,CannotMetronome
 Description = Marshadow punches and kicks the target consecutively with full force.
-#------------------------------
-# Gen AN Z-Moves
-#------------------------------##
+#-------------------------------
 [CONSTELLATIONMAKER]
 Name = Constellation Maker
 Type = CELESTIAL
@@ -407,6 +431,7 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_CELESTIAL,CannotMetronome
 Description = The user creates a very charming space using its Z-Power and totally toys with the target.
 #-------------------------------
@@ -418,9 +443,10 @@ Power = 1
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove_GLITCH,CannotMetronome
 Description = The user creates a very charming space using its Z-Power and totally toys with the target.
-#------------------------------
+#-------------------------------
 [SNOWSTORMPOUNCE]
 Name = Snowstorm Pounce
 Type = ICE
@@ -489,6 +515,7 @@ Power = 175
 Accuracy = 0
 TotalPP = 1
 Target = NearOther
+FunctionCode = None
 Flags = ZMove,CannotMetronome
 Description = The user, Minior, fires a massive meteor at the target, crushing it under the meteor's weight.
 #-------------------------------

@@ -389,7 +389,6 @@ class Battle
       @scene.pbAnimateSubstitute(caller, :show)
       pbCalculatePriority(true)
       pbOnBattlerEnteringBattle(idxNewBattler)
-      battler.pbCheckForm
       pbSetSeen(battler)
       pbDeluxeTriggers(caller, nil, "AfterSOS", caller.species, *caller.pokemon.types)
     else
@@ -425,7 +424,7 @@ class Battle
       @scene.pbAnimateSubstitute(caller, :show)
       pbCalculatePriority(true)
       pbOnBattlerEnteringBattle(idxNewBattler)
-      battler.pbCheckForm
+      pbSetSeen(battler)
     else
       PBDebug.log("[SOS] #{caller.pbThis}'s (#{caller.index}) call failed (Answer rate = 100)")
       @lastCallAnswered = false
@@ -468,7 +467,6 @@ class Battle
     pbDisplay(_INTL("{1} appeared!", battler.name))
     pbCalculatePriority(true)
     pbOnBattlerEnteringBattle(idxBattler)
-    battler.pbCheckForm
     pbSetSeen(battler)
   end
   
@@ -509,6 +507,13 @@ class Battle
     end
     @scene.pbTrainerJoin(sendOuts, idxTrainer)
     pbCalculatePriority(true)
+    battler_indices = []
+    sendOuts.each { |sendOut| battler_indices.push(sendOut.first) }
+    pbOnBattlerEnteringBattle(battler_indices)
+    battler_indices.each do |idxBattler|
+      @battlers[idxBattler].pbCheckForm
+      pbSetSeen(@battlers[idxBattler])
+    end
   end
   
   #-----------------------------------------------------------------------------

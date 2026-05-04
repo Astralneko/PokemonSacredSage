@@ -81,12 +81,13 @@ class DeluxeBitmapWrapper
   #-----------------------------------------------------------------------------
   # Assigns a Pokemon object to this bitmap. Sets hue and animation speed. 
   #-----------------------------------------------------------------------------
-  def setPokemon(pokemon, back = false, hue = nil)
+  def setPokemon(pokemon, back = false, hue = nil, species = nil)
     @pokemon = pokemon
     return if !@pokemon
     case @pokemon
     when Pokemon
-      metrics = GameData::SpeciesMetrics.get_species_form(@pokemon.species, @pokemon.form, @pokemon.gender == 1)
+      species = @pokemon.species if !species
+      metrics = GameData::SpeciesMetrics.get_species_form(species, @pokemon.form, @pokemon.gender == 1)
       hue_change(metrics.sprite_super_hue) if @pokemon.super_shiny?
       if $PokemonSystem.animated_sprites == 0
         @speed = (back) ? metrics.back_sprite_speed : metrics.front_sprite_speed
@@ -208,10 +209,10 @@ class DeluxeBitmapWrapper
   
   def finished?
     if @reversed
-	  return (@frame_idx == 0)
-	else
-	  return (@frame_idx >= @total_frames - 1)
-	end
+      return (@frame_idx == 0)
+    else
+      return (@frame_idx >= @total_frames - 1)
+    end
   end
 
   #-----------------------------------------------------------------------------

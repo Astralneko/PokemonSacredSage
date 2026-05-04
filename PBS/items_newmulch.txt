@@ -1,3 +1,4 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [SURPRISEMULCH]
 Name = Surprise Mulch
@@ -6,6 +7,9 @@ Pocket = 1
 Price = 200
 Flags = Mulch,Fling_30
 Description = A fertilizer for growing Berries. It causes strange, sudden mutations based on other Berries nearby.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ALLUREMULCH]
 Name = Allure Mulch
@@ -14,6 +18,9 @@ Pocket = 1
 Price = 200
 Flags = Mulch,Fling_30
 Description = A fertilizer for growing Berries. Berries that fall from nearby plants can take root in this mulch.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [RICHMULCH]
 Name = Rich Mulch
@@ -22,6 +29,9 @@ Pocket = 1
 Price = 200
 Flags = Mulch,Fling_30
 Description = A fertilizer for growing Berries. It increases the harvest without the need for particularly diligent care.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BOOSTMULCH]
 Name = Boost Mulch
@@ -30,6 +40,9 @@ Pocket = 1
 Price = 200
 Flags = Mulch,Fling_30
 Description = A fertilizer for growing Berries. It makes the soil dry out faster.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [AMAZEMULCH]
 Name = Amaze Mulch
@@ -38,3 +51,6 @@ Pocket = 1
 Price = 200
 Flags = Mulch,Fling_30
 Description = A fertilizer for growing Berries. It increases the harvest, chance of mutations, and drying rate.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0

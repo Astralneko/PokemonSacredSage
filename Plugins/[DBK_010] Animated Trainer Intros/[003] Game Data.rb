@@ -58,15 +58,16 @@ module GameData
     end
 	
     #---------------------------------------------------------------------------
-    # Returns a bitmap from an entered trainer or trainer type.
+    # Returns a trainer front sprite bitmap from a trainer type.
     #---------------------------------------------------------------------------
-    def self.sprite_bitmap_from_trainer(trainer, trainerType = nil)
-      trainerType = trainer.trainer_type if !trainerType
-      trainerType = GameData::TrainerType.try_get(trainerType)
-      return nil if !trainerType
-      filename = self.front_sprite_filename(trainerType.id) || "Graphics/Trainers/000"
-      scale = trainerType.trainer_sprite_scale
-      ret = (filename) ? TrainerBitmapWrapper.new(filename, scale) : nil
+    def self.front_sprite_bitmap(tr_type, filename = nil)
+      filename = self.front_sprite_filename(tr_type) if !filename
+      if filename && self.exists?(tr_type)
+        scale = self.get(tr_type).trainer_sprite_scale
+        ret = TrainerBitmapWrapper.new(filename, scale)
+      else
+        ret = TrainerBitmapWrapper.new("Graphics/Trainers/000")
+      end
       ret.compile_strip
       return ret
     end

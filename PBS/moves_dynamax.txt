@@ -623,9 +623,7 @@ Target = NearFoe
 FunctionCode = IgnoreProtections
 Flags = GmaxMove,CannotMetronome
 Description = A G-Max Move used by G-Max Urshifu. This rapid-strike move can ignore Max Guard.
-#------------------------------
-# Gen AN Max Moves
-#------------------------------##
+#-------------------------------
 [MAXNEBULA]
 Name = Max Nebula
 Type = CELESTIAL
@@ -635,7 +633,7 @@ Accuracy = 0
 TotalPP = 1
 Target = NearFoe
 FunctionCode = RaiseUserSideSpAtk1
-Flags = Dynamax 
+Flags = Dynamax
 Description = A Celestial-type attack Dynamax Pokémon use. This raises ally Pokémon's Sp. Atk stats.
 #-------------------------------
 [MAXJAILBREAK]
@@ -647,5 +645,5 @@ Accuracy = 0
 TotalPP = 1
 Target = NearFoe
 FunctionCode = LowerTargetSideDef1
-Flags = Dynamax 
+Flags = Dynamax
 Description = A Glitch-type attack Dynamax Pokémon use. his lowers the target's Defense stat.

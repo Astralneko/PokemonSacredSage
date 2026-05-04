@@ -308,7 +308,8 @@ module Settings
       _INTL("Mail"),
       _INTL("Crafting"),
       _INTL("Battle Items"),
-      _INTL("Key Items")
+      _INTL("Key Items"),
+      _INTL("Z-Crystals")
     ]
   end
   # The maximum number of slots per pocket (-1 means infinite number).

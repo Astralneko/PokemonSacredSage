@@ -145,45 +145,24 @@ class Battle::Battler
   end
   
   #-----------------------------------------------------------------------------
-  # Edited for allowing Z-Moves when called by other moves.
+  # Aliased to set Z-Move properties upon using a move.
   #-----------------------------------------------------------------------------  
-  def pbUseMoveSimple(moveID, target = -1, idxMove = -1, specialUsage = true)
-    choice = []
-    choice[0] = :UseMove
-    choice[1] = idxMove
-    if idxMove >= 0
-      choice[2] = @moves[idxMove]
-    else
-      choice[2] = Battle::Move.from_pokemon_move(@battle, Pokemon::Move.new(moveID))
-      choice[2].pp = -1
+  alias zmove_pbSetPowerMoveIndex pbSetPowerMoveIndex
+  def pbSetPowerMoveIndex(choice, specialUsage)
+    @lastMoveUsedIsZMove = false
+    if choice[2].zMove? && !choice[2].specialUseZMove || @selectedMoveIsZMove && choice[2].damagingMove?
+      choice[2] = choice[2].convert_zmove(self, @battle, choice[1], specialUsage)
+      return choice[1]
     end
-    choice[3] = target
-    PBDebug.log("[Move usage] #{pbThis} started using the called/simple move #{choice[2].name}")
-    side  = (@battle.opposes?(self.index)) ? 1 : 0
-    owner = @battle.pbGetOwnerIndexFromBattlerIndex(self.index)
-    if @selectedMoveIsZMove && choice[2].damagingMove?
-      @powerMoveIndex = choice[1]
-      choice[2] = choice[2].convert_zmove(self, @battle, specialUsage)
-      pbUseMove(choice, specialUsage)
-    else
-      pbUseMove(choice, specialUsage)
-    end
+    return zmove_pbSetPowerMoveIndex(choice, specialUsage)
   end
   
-  #-----------------------------------------------------------------------------
-  # Aliased to set Z-Move properties upon using a move.
-  #-----------------------------------------------------------------------------
-  alias zmove_pbUseMove pbUseMove
-  def pbUseMove(choice, specialUsage = false)
-    @lastMoveUsedIsZMove = false
-    if choice[2].zMove? & !choice[2].specialUseZMove
-      @powerMoveIndex = choice[1]
-      choice[2] = choice[2].convert_zmove(self, @battle, specialUsage)
-    end
-    zmove_pbUseMove(choice, specialUsage)
-    if @lastMoveUsed && !@lastMoveUsedIsZMove
+  alias zmove_pbResetPowerMoveIndex pbResetPowerMoveIndex
+  def pbResetPowerMoveIndex(used_move)
+    if used_move && @selectedMoveIsZMove && !@lastMoveUsedIsZMove
       @powerMoveIndex = -1
     end
+    zmove_pbResetPowerMoveIndex(used_move)
   end
   
   #-----------------------------------------------------------------------------

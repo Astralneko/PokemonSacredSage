@@ -31,9 +31,9 @@ module Settings
   CONSTRICT_POKEMON_SPRITES = true
   
   #-----------------------------------------------------------------------------
-  # Y-coordinate metrics for the Substitute doll's back and front sprites, respectively.
+  # Y-coordinate metrics for the Substitute doll's back/front sprites, respectively.
   #-----------------------------------------------------------------------------
-  SUBSTITUTE_DOLL_METRICS = [36, 56]
+  SUBSTITUTE_DOLL_METRICS = [87, 60]
   
   #-----------------------------------------------------------------------------
   # Adjustments to the [X, Y] coordinates for species sprites displayed in UI's.

@@ -138,7 +138,7 @@ Description = Boosts the Pokémon's Speed in sunshine.
 #-------------------------------
 [ILLUMINATE]
 Name = Illuminate
-Description = Raises the likelihood of meeting wild Pokémon.
+Description = Prevents other Pokémon from lowering accuracy.
 #-------------------------------
 [TRACE]
 Name = Trace
@@ -468,7 +468,7 @@ Description = Reduces damage from super-effective attacks.
 #-------------------------------
 [SNOWWARNING]
 Name = Snow Warning
-Description = The Pokémon summons a hailstorm in battle.
+Description = The Pokémon summons a snowstorm in battle.
 #-------------------------------
 [HONEYGATHER]
 Name = Honey Gather
@@ -672,7 +672,7 @@ Description = Restores HP as well when the Pokémon eats a Berry.
 #-------------------------------
 [PROTEAN]
 Name = Protean
-Description = It changes type to that of the move it's about to use.
+Description = Changes type to the first selected move.
 #-------------------------------
 [FURCOAT]
 Name = Fur Coat
@@ -840,7 +840,7 @@ Description = Its shroud protects it from an attack just once.
 #-------------------------------
 [BATTLEBOND]
 Name = Battle Bond
-Description = Defeating a foe lets it become Ash-Greninja.
+Description = Defeating a foe powers up the user one time.
 #-------------------------------
 [POWERCONSTRUCT]
 Name = Power Construct
@@ -936,15 +936,15 @@ Description = Powers up moves that are super-effective.
 #-------------------------------
 [INTREPIDSWORD]
 Name = Intrepid Sword
-Description = Boosts Attack when entering a battle.
+Description = Boosts Attack when entering battle one time.
 #-------------------------------
 [DAUNTLESSSHIELD]
 Name = Dauntless Shield
-Description = Boosts Defense when entering a battle.
+Description = Boosts Defense when entering battle one time.
 #-------------------------------
 [LIBERO]
 Name = Libero
-Description = It changes type to that of the move it's about to use.
+Description = Changes type to the first selected move.
 #-------------------------------
 [BALLFETCH]
 Name = Ball Fetch

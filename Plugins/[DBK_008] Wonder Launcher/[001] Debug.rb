@@ -5,15 +5,9 @@
 #-------------------------------------------------------------------------------
 # General Debug options
 #-------------------------------------------------------------------------------
-MenuHandlers.add(:debug_menu, :deluxe_mode_toggles, {
-  "name"        => _INTL("Toggle plugin battle modes..."),
-  "parent"      => :deluxe_plugins_menu,
-  "description" => _INTL("Toggles for various battle modes implemented by add-on plugins.")
-})
-
 MenuHandlers.add(:debug_menu, :deluxe_wonder_launcher, {
   "name"        => _INTL("Toggle Wonder Launcher"),
-  "parent"      => :deluxe_mode_toggles,
+  "parent"      => :deluxe_gimmick_toggles,
   "description" => _INTL("Toggles Wonder Launcher functionality during trainer battles."),
   "effect"      => proc {
     $game_switches[Settings::WONDER_LAUNCHER_SWITCH] = !$game_switches[Settings::WONDER_LAUNCHER_SWITCH]

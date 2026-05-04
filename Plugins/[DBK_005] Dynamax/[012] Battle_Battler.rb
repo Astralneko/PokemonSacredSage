@@ -83,17 +83,21 @@ class Battle::Battler
   #-----------------------------------------------------------------------------
   # Aliased to convert Dynamax moves if an effect should force it to.
   #-----------------------------------------------------------------------------
-  alias dynamax_pbUseMove pbUseMove
-  def pbUseMove(choice, specialUsage = false)
+  alias dynamax_pbSetPowerMoveIndex pbSetPowerMoveIndex
+  def pbSetPowerMoveIndex(choice, specialUsage)
     if choice[2].dynamaxMove?
-      @powerMoveIndex = choice[1]
-      choice[2] = choice[2].convert_dynamax_move(self, @battle)
+      choice[2] = choice[2].convert_dynamax_move(self, @battle, choice[1])
+      return choice[1]
     end
-    dynamax_pbUseMove(choice, specialUsage)
-    move = GameData::Move.try_get(@lastMoveUsed)
-    if @lastMoveUsed && move && move.dynamaxMove?
+    return dynamax_pbSetPowerMoveIndex(choice, specialUsage)
+  end
+  
+  alias dynamax_pbResetPowerMoveIndex pbResetPowerMoveIndex
+  def pbResetPowerMoveIndex(used_move)
+    if dynamax? && used_move && !used_move.dynamaxMove?
       @powerMoveIndex = -1
     end
+    dynamax_pbResetPowerMoveIndex(used_move)
   end
   
   #-----------------------------------------------------------------------------

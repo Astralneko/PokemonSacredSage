@@ -229,6 +229,7 @@ def mergeArrayToString(array)
 end
 
 def getDateFromString(date)
+  date = Time.now if date.nil?
   dateArray = date.split('-')
   return Time.local(dateArray[0], dateArray[1], dateArray[2])
 end
@@ -251,6 +252,7 @@ def registerSpecies(type, species, gender, form, shiny)
   mapID = $game_map.map_id
   return if [speciesID, gender, shiny].all?(&:nil?)
   spCounter, spMapCounter, lastSpCounter, lastSpMapCounter = getCounters(type, mapID)
+  return if !spCounter
   spCounter[speciesID] ||= [[[], []], [[], []]]
   spCounter[speciesID][gender][shiny][form] ||= 0
   spCounter[speciesID][gender][shiny][form] += 1
@@ -375,5 +377,35 @@ def pbWait(duration)
     Graphics.update
     Input.update
     pbUpdateSceneMap if $amount.nil? || $amount.empty?
+  end
+end
+
+def setCurrency(currency)
+  if ["money", "gold", "coins", "battle points", "bp"].any? { |value| value == currency.downcase }
+    return currency
+  else
+    Console.echoln_li _INTL("#{currency} is an invalid currency!")
+    return "money"
+  end
+end
+
+def pbDrawImagePositionsScalable(bitmap, textpos)
+  textpos.each do |i|
+    srcbitmap = AnimatedBitmap.new(pbBitmapName(i[0]))
+    x      = i[1]
+    y      = i[2]
+    srcx   = i[3] || 0
+    srcy   = i[4] || 0
+    srcw   = (i[5] && i[5] >= 0) ? i[5] : srcbitmap.width
+    srch   = (i[6] && i[6] >= 0) ? i[6] : srcbitmap.height
+
+    destw  = i[7] || srcw   # new
+    desth  = i[8] || srch   # new
+
+    src_rect  = Rect.new(srcx, srcy, srcw, srch)
+    dest_rect = Rect.new(x, y, destw, desth)
+
+    bitmap.stretch_blt(dest_rect, srcbitmap.bitmap, src_rect)
+    srcbitmap.dispose
   end
 end

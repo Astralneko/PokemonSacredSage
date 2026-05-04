@@ -1,10 +1,8 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
-# Gen AN-I Z-Crystals
-#-------------------------------
 [CELESTIUMZ]
 Name = Celestium Z
-NamePlural = 
+NamePlural = Celestium Z
 PortionName = piece of Celestium Z
 PortionNamePlural = pieces of Celestium Z
 Pocket = 10
@@ -13,10 +11,13 @@ FieldUse = OnPokemon
 Flags = KeyItem,ZCrystal
 Move = CONSTELLATIONMAKER
 Description = It converts Z-Power into crystals that upgrade Celestial-type moves to Celestial-type Z-Moves.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BIRDIUMZ]
 Name = Birdium Z
-NamePlural = 
+NamePlural = Birdium Z
 PortionName = piece of Birdium Z
 PortionNamePlural = pieces of Birdium Z
 Pocket = 10
@@ -25,10 +26,13 @@ FieldUse = OnPokemon
 Flags = KeyItem,ZCrystal
 Move = BLUESCREENSLICE
 Description = It converts Z-Power into crystals that upgrade Glitch-type moves to Glitch-type Z-Moves.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FELACIUMZ]
 Name = Felacium Z
-NamePlural = 
+NamePlural = Felacium Z
 PortionName = piece of Felacium Z
 PortionNamePlural = pieces of Felacium Z
 Pocket = 10
@@ -38,10 +42,13 @@ Flags = KeyItem,ZCrystal
 Move = SNOWSTORMPOUNCE
 Description = It converts Z-Power into crystals that upgrade Felacier's Freezing Touch to an exclusive Z-Move.
 ZCombo = FREEZINGTOUCH,FELACIER
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SPIKATIUMZ]
 Name = Spikatium Z
-NamePlural = 
+NamePlural = Spikatium Z
 PortionName = piece of Spikatium Z
 PortionNamePlural = pieces of Spikatium Z
 Pocket = 10
@@ -51,10 +58,13 @@ Flags = KeyItem,ZCrystal
 Move = SPIRALNEEDLESLAMMER
 Description = It converts Z-Power into crystals that upgrade Spikatus's Needle Arm to an exclusive Z-Move.
 ZCombo = NEEDLEARM,SPIKATUS
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GLIMMORIUMZ]
 Name = Glimmorium Z
-NamePlural = 
+NamePlural = Glimmorium Z
 PortionName = piece of Glimmorium Z
 PortionNamePlural = pieces of Glimmorium Z
 Pocket = 10
@@ -64,10 +74,13 @@ Flags = KeyItem,ZCrystal
 Move = SIXFOLDRAILLASER
 Description = It converts Z-Power into crystals that upgrade Glimmora's Mortal Spin to an exclusive Z-Move.
 ZCombo = MORTALSPIN,GLIMMORA
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TINKATIUMZ]
 Name = Tinkatium Z
-NamePlural = 
+NamePlural = Tinkatium Z
 PortionName = piece of Tinkatium Z
 PortionNamePlural = pieces of Tinkatium Z
 Pocket = 10
@@ -77,10 +90,13 @@ Flags = KeyItem,ZCrystal
 Move = TITANICWARHEADSLAM
 Description = It converts Z-Power into crystals that upgrade Tinkaton's Gigaton Hammer to an exclusive Z-Move.
 ZCombo = GIGATONHAMMER,TINKATON
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TOGEKIUMZ]
 Name = Togekium Z
-NamePlural = 
+NamePlural = Togekium Z
 PortionName = piece of Togekium Z
 PortionNamePlural = pieces of Togekium Z
 Pocket = 10
@@ -90,10 +106,13 @@ Flags = KeyItem,ZCrystal
 Move = SUPERSONARGRAZE
 Description = It converts Z-Power into crystals that upgrade Togekiss's Air Slash to an exclusive Z-Move.
 ZCombo = AIRSLASH,TOGEKISS
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MINIORIUMZ]
 Name = Miniorium Z
-NamePlural = 
+NamePlural = Miniorium Z
 PortionName = piece of Miniorium Z
 PortionNamePlural = pieces of Miniorium Z
 Pocket = 10
@@ -103,10 +122,13 @@ Flags = KeyItem,ZCrystal
 Move = CATASTROPHICMETEORICSLAM
 Description = It converts Z-Power into crystals that upgrade Minior's Power Gem to an exclusive Z-Move.
 ZCombo = POWERGEM,MINIOR
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [VOLCARONIUMZ]
 Name = Volcaronium Z
-NamePlural = 
+NamePlural = Volcaronium Z
 PortionName = piece of Volcaronium Z
 PortionNamePlural = pieces of Volcaronium Z
 Pocket = 10
@@ -116,10 +138,13 @@ Flags = KeyItem,ZCrystal
 Move = BURNINGSUNSHINEDANCE
 Description = It converts Z-Power into crystals that upgrade Volcarona's Fiery Dance to an exclusive Z-Move.
 ZCombo = FIERYDANCE,VOLCARONA
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [QURITAKIUMZ]
 Name = Quritakium Z
-NamePlural = 
+NamePlural = Quritakium Z
 PortionName = piece of Quritakium Z
 PortionNamePlural = pieces of Quritakium Z
 Pocket = 10
@@ -129,24 +154,32 @@ Flags = KeyItem,ZCrystal
 Move = MEMORIALDIRGE
 Description = It converts Z-Power into crystals that upgrade Partazura, Daroseiku, and Berantegon's call moves to an exclusive Z-Move.
 ZCombo = AZURESCALL,PARTAZURA
-#-------------------------------
-# Gen AN-I Key Items
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FAMECHECKER]
 Name = Fame Checker
-NamePlural =  Fame Checkers
+NamePlural = Fame Checkers
 Pocket = 9
 Price = 0
 FieldUse = Direct
 Flags = KeyItem
 Description = A machine that allows you to see who people are talking about.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TEMYSPOKEBALL]
 Name = Temy's Poké Ball
+NamePlural = Unnamed
 Pocket = 9
 Price = 0
 Flags = KeyItem
 Description = A Poké Ball with a pet Onstereo inside. Return it to Nessie in Maracaleza Town!
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CARDCASE]
 Name = Card Case
@@ -156,6 +189,9 @@ Price = 0
 FieldUse = Direct
 Flags = KeyItem
 Description = A box to hold Triple Triad trading cards.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MACHETE]
 Name = Machete
@@ -165,8 +201,9 @@ Price = 0
 FieldUse = Direct
 Flags = KeyItem
 Description = A sharp knife. This item allows cutting small trees and such in the field.
-#-------------------------------
-# Gen AN-I Berries
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [NACHNABERRY]
 Name = Nachna Berry
@@ -175,6 +212,9 @@ Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_DARK_80
 Description = Weakens a supereffective Celestial-type attack against the holding Pokémon.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GRANATCHBERRY]
 Name = Granatch Berry
@@ -183,6 +223,9 @@ Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_DARK_80
 Description = Weakens a supereffective Glitch-type attack against the holding Pokémon.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [FURANIBERRY]
 Name = Furani Berry
@@ -191,6 +234,9 @@ Pocket = 5
 Price = 20
 Flags = Berry
 Description = It fully restores the holder's HP and status effects when eaten, but will also burn them.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [NEDAVIBERRY]
 Name = Nedavi Berry
@@ -199,6 +245,9 @@ Pocket = 5
 Price = 20
 Flags = Berry
 Description = It fully restores the holder's HP and status effects when eaten, but will also give them frostbite.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [RAYONIBERRY]
 Name = Rayoni Berry
@@ -207,6 +256,9 @@ Pocket = 5
 Price = 20
 Flags = Berry
 Description = It fully restores the holder's HP and status effects when eaten,but will also paralyze them.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ASIRRIBERRY]
 Name = Asirri Berry
@@ -215,6 +267,9 @@ Pocket = 5
 Price = 20
 Flags = Berry
 Description = It fully restores the holder's HP and status effects when eaten, but will also poison them.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SUENNIBERRY]
 Name = Suenni Berry
@@ -223,8 +278,9 @@ Pocket = 5
 Price = 20
 Flags = Berry
 Description = It fully restores the holder's HP and status effects when eaten, but will also put them to sleep.
-#-------------------------------
-# Gen AN-I Type-boosting Items
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [NEBULAFRAGMENT]
 Name = Nebula Fragment
@@ -233,6 +289,9 @@ Pocket = 1
 Price = 100
 Flags = Fling_30
 Description = An item to be held by a Pokémon. It is a cloud-shaped crystal that boosts the power of Celestial-type moves.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [STARRYPLATE]
 Name = Starry Plate
@@ -241,6 +300,9 @@ Pocket = 1
 Price = 1000
 Flags = Fling_30
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Celestial-type moves.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CELESTIALGEM]
 Name = Celestial Gem
@@ -249,6 +311,9 @@ Pocket = 1
 Price = 200
 Flags = TypeGem
 Description = A gem with an astral essence. When held, it strengthens the power of a Celestial-type move only once.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CELESTIALMEMORY]
 Name = Celestial Memory
@@ -256,6 +321,9 @@ NamePlural = Celestial Memories
 Pocket = 1
 Price = 0
 Description = A memory disc that contains Celestial-type data. It changes the type of the holder if held by a certain Pokémon.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CORRUPTEDDRIVE]
 Name = Corrupted Drive
@@ -263,6 +331,9 @@ NamePlural = Corrupted Drives
 Pocket = 1
 Price = 100
 Description = An item to be held by a Pokémon. It is a hard drive that boosts the power of Glitch-type moves.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [NULLPLATE]
 Name = Null Plate
@@ -270,6 +341,9 @@ NamePlural = Null Plates
 Pocket = 1
 Price = 1000
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Glitch-type moves.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GLITCHGEM]
 Name = Glitch Gem
@@ -278,6 +352,9 @@ Pocket = 1
 Price = 200
 Flags = TypeGem
 Description = A gem with a corrupt essence. When held, it strengthens the power of a Glitch-type move only once.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GLITCHMEMORY]
 Name = Glitch Memory
@@ -285,15 +362,19 @@ NamePlural = Glitch Memories
 Pocket = 1
 Price = 0
 Description = A memory disc that contains Glitch-type data. It changes the type of the holder if held by a certain Pokémon.
-#-------------------------------
-# Gen AN-I Other Items
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [APUTRIGGER]
 Name = Apu's Offering
-Names = Apu's Offerings
+NamePlural = Unnamed
 Pocket = 9
 Price = 0
 Description = Does nothing, because you shouldn't have this.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [KNOWLEDGERUNE]
 Name = Knowledge Rune
@@ -303,6 +384,9 @@ Price = 5000
 FieldUse = OnPokemon
 Flags = EvolutionStone
 Description = A peculiar stone that makes certain species of Pokémon evolve. It has an ancient rune embedded into the center.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [STEAMBALL]
 Name = Steam Ball
@@ -312,6 +396,10 @@ Price = 200
 BattleUse = OnFoe
 Flags = PokeBall
 Description = An ancient device for catching wild Pokémon. It is thrown like a ball at the target Pokémon, and captures that target.
+LauncherUse = OnFoe
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [STELLARBALL]
 Name = Stellar Ball
@@ -321,8 +409,10 @@ Price = 1000
 BattleUse = OnFoe
 Flags = PokeBall
 Description = A somewhat different Poké Ball that works especially well on Paradox and Terastallizing Pokémon.
-#-------------------------------
-# Gen AN-I Stew Items
+LauncherUse = OnFoe
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GRUMPIGTENDERLOIN]
 Name = Grumpig Tenderloin
@@ -331,6 +421,9 @@ Pocket = 7
 Price = 250
 Flags = Material_Stew
 Description = A tenderloin made from a Grumpig. It's dense, so the packs are relatively small.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [STEAK]
 Name = Steak
@@ -339,6 +432,9 @@ Pocket = 7
 Price = 450
 Flags = Material_Stew
 Description = A steak made using the meat of a Bouffalant. It could feed seven easily.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [HAMBURGER]
 Name = Hamburger
@@ -347,6 +443,9 @@ Pocket = 7
 Price = 300
 Flags = Material_Stew
 Description = A serving of hamburger. Unovan stews often contain this ingredient.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SAUSAGE]
 Name = Sausage
@@ -355,6 +454,9 @@ Pocket = 7
 Price = 350
 Flags = Material_Stew
 Description = A serving of sausages. It's a common saying that there's no way to know for sure what's in it.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CORINAVOBREAST]
 Name = Corinavo Breast
@@ -363,6 +465,9 @@ Pocket = 7
 Price = 600
 Flags = Material_Stew
 Description = While dangerous if eaten raw, it's a delicious Verelan delicacy.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [LUMINEONFILLET]
 Name = Lumineon Fillet
@@ -371,6 +476,9 @@ Pocket = 7
 Price = 800
 Flags = Material_Stew
 Description = An uncommon stew ingredient. The phospholumen glands need to be cut out before it's eaten.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SHREDDEDCHEESE]
 Name = Shredded Cheese
@@ -379,6 +487,9 @@ Pocket = 7
 Price = 450
 Flags = Material_Stew
 Description = A basic package of shredded cheese. It's usually used to ease the spiciness of stew.,serving of Shredded Cheese,servings of Shredded Cheese,
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CREMAVERELANA]
 Name = Crema Verelana
@@ -387,6 +498,9 @@ Pocket = 7
 Price = 480
 Flags = Material_Stew
 Description = Unovans refer to it as 'sour cream.' It's often used as a topping across south-Laurimeritan cuisine.,serving of Crema Verelana,servings of Crema Verelana,
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CHEESECURDS]
 Name = Cheese Curds
@@ -395,6 +509,9 @@ Pocket = 7
 Price = 780
 Flags = Material_Stew
 Description = It's more commonly used in Iradian cuisine than Verelan, but it's a strong thickening and de-spicifying agent.,serving of Cheese Curds,servings of Cheese Curds,
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BLAZIKENSAUCE]
 Name = Blaziken Sauce
@@ -403,6 +520,9 @@ Pocket = 7
 Price = 560
 Flags = Material_Stew
 Description = It's not made from actual Blaziken, but it's so spicy that it feels like it would have been.,serving of Blaziken Sauce,servings of Blaziken Sauce,
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [PICODEGALLO]
 Name = Pico de Gallo
@@ -411,6 +531,9 @@ Pocket = 7
 Price = 660
 Flags = Material_Stew
 Description = Orrenian cuisine often involves this salsa. It's got a strong taste, so most either hate or love it.,serving of Pico de Gallo,servings of Pico de Gallo,
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [NOMELTAMATOSAUCE]
 Name = Nomel-Tamato Sauce
@@ -419,6 +542,9 @@ Pocket = 7
 Price = 430
 Flags = Material_Stew
 Description = The Nomel Berries give this sauce a somewhat sour flavor. It goes well with pork.,serving of Nomel-Tamato Sauce,servings of Nomel-Tamato Sauce,
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BLACKBEANS]
 Name = Black Beans
@@ -427,6 +553,9 @@ Pocket = 7
 Price = 350
 Flags = Material_Stew
 Description = A can of black beans. It's a good base for any stew.,serving of Black Beans,servings of Black Beans,
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BROWNBEANS]
 Name = Brown Beans
@@ -435,6 +564,9 @@ Pocket = 7
 Price = 480
 Flags = Material_Stew
 Description = They're said to be 'painted'. They're denser than black beans, giving stew a stronger punch.,serving of Brown Beans,servings of Brown Beans,
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [REDBEANS]
 Name = Red Beans
@@ -443,6 +575,9 @@ Pocket = 7
 Price = 610
 Flags = Material_Stew
 Description = The red beans have a heavier taste than their black or brown equivalents. It's the heartiest bean type.,serving of Red Beans,servings of Red Beans,
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [WHITEBEANS]
 Name = White Beans
@@ -453,6 +588,9 @@ Pocket = 7
 Price = 490
 Flags = Material_Stew
 Description = A can of white beans. Their bigger size makes them good for making for large groups.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [ONION]
 Name = Onion
@@ -461,6 +599,9 @@ Pocket = 7
 Price = 140
 Flags = Material_Stew
 Description = A stew ingredient with a very strong taste. It can be tough to balance.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [REDONION]
 Name = Red Onion
@@ -469,6 +610,9 @@ Pocket = 7
 Price = 160
 Flags = Material_Stew
 Description = A stew ingredient that, while less strong than the white onion raw, is better at leeching its flavor.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [SCALLION]
 Name = Scallion
@@ -477,6 +621,9 @@ Pocket = 7
 Price = 130
 Flags = Material_Stew
 Description = A stew ingredient. Unlike white and red onions, this onion variant is relatively mild.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [BLACKOLIVES]
 Name = Black Olives
@@ -485,6 +632,9 @@ Pocket = 7
 Price = 170
 Flags = Material_Stew
 Description = A stew ingredient. They don't have much of their own flavor, but can serve as filling.,serving of Black Olives,servings of Black Olives,
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GREENOLIVES]
 Name = Green Olives
@@ -495,6 +645,9 @@ Pocket = 7
 Price = 180
 Flags = Material_Stew
 Description = A stew ingredient. Though its taste is powerful, Ranseleans tend to enjoy it.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TOMATO]
 Name = Tomato
@@ -503,6 +656,9 @@ Pocket = 7
 Price = 120
 Flags = Material_Stew
 Description = A stew ingredient. It's very juicy, so when used, it'll often become part of the sauce.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [POTATO]
 Name = Potato
@@ -511,6 +667,9 @@ Pocket = 7
 Price = 190
 Flags = Material_Stew
 Description = A stew ingredient. The skin is very tough, but its flesh is soft.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [AVOCADO]
 Name = Avocado
@@ -519,6 +678,9 @@ Pocket = 7
 Price = 200
 Flags = Material_Stew
 Description = A stew ingredient. It's very soft, and can be whipped into a sauce.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GREENPEPPER]
 Name = Green Pepper
@@ -527,6 +689,9 @@ Pocket = 7
 Price = 160
 Flags = Material_Stew
 Description = A stew ingredient. It's somewhat tough, so chopping it finely is recommended.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [NANABPEPPER]
 Name = Nanab Pepper
@@ -535,6 +700,9 @@ Pocket = 7
 Price = 170
 Flags = Material_Stew
 Description = A stew ingredient named due to its similar colors to a Nanab Berry. It's got a mild kick.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [JALAPENO]
 Name = Jalapeño
@@ -543,6 +711,9 @@ Pocket = 7
 Price = 180
 Flags = Material_Stew
 Description = A stew ingredient. It's quite spicy, so often it'll be de-seeded for young children.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GREENCHILES]
 Name = Green Chiles
@@ -551,6 +722,9 @@ Pocket = 7
 Price = 150
 Flags = Material_Stew
 Description = A stew ingredient that's less spicy than jalapeños or other peppers, so it's less alienating.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MUSHROOM]
 Name = Mushroom
@@ -559,6 +733,9 @@ Pocket = 7
 Price = 190
 Flags = Material_Stew
 Description = A stew ingredient. Its fleshy, weak nature lets it take on the flavor of what it's put into.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [MAIZE]
 Name = Maize
@@ -567,6 +744,9 @@ Pocket = 7
 Price = 150
 Flags = Material_Stew
 Description = A stew ingredient known as 'corn' in the north. This grain has an unassuming taste.,ear of Maize,ears of Maize,
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [GREENBEANS]
 Name = Green Beans
@@ -575,6 +755,9 @@ Pocket = 7
 Price = 190
 Flags = Material_Stew
 Description = A stew ingredient. It's quite stringy, so it can be an acquired taste.,serving of Green Beans,servings of Green Beans,
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CUCUMBER]
 Name = Cucumber
@@ -583,6 +766,9 @@ Pocket = 7
 Price = 140
 Flags = Material_Stew
 Description = A stew ingredient. It's a bit dry when uncooked, and draws in water easily.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [RADISH]
 Name = Radish
@@ -591,6 +777,9 @@ Pocket = 7
 Price = 170
 Flags = Material_Stew
 Description = A stew ingredient. It takes on the flavor of what it's cooked with.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [EGGPLANT]
 Name = Eggplant
@@ -599,6 +788,9 @@ Pocket = 7
 Price = 190
 Flags = Material_Stew
 Description = A stew ingredient. It's got a somewhat bitter taste.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [TOMATILLO]
 Name = Tomatillo
@@ -607,6 +799,9 @@ Pocket = 7
 Price = 150
 Flags = Material_Stew
 Description = A stew ingredient. It's somewhat sour.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CARROT]
 Name = Carrot
@@ -615,6 +810,9 @@ Pocket = 7
 Price = 130
 Flags = Material_Stew
 Description = A stew ingredient. This vegetable is said to be good for one's eyesight.
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [WHITERICE]
 Name = White Rice
@@ -623,6 +821,9 @@ Pocket = 7
 Price = 110
 Flags = Material_Stew
 Description = It makes a good bed for a stew, and thus it's frequently served with them.,serving of White Rice,servings of White Rice,
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0
 #-------------------------------
 [CILANTRO]
 Name = Cilantro
@@ -631,3 +832,6 @@ Pocket = 7
 Price = 180
 Flags = Material_Stew
 Description = A stew ingredient. Typically it's chopped very finely and used as a spice.,serving of Cilantro,servings of Cilantro,
+SellBPPrice = 0
+CoinPrice = 1
+SellCoinPrice = 0

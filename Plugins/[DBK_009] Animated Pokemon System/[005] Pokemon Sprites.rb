@@ -6,10 +6,10 @@
 
 class PokemonSprite < Sprite
   attr_reader   :pkmn
-  attr_accessor :hue, :display_values
+  attr_accessor :display_values
 
   #-----------------------------------------------------------------------------
-  # General sprite utilities.
+  # Animated sprite utilities.
   #-----------------------------------------------------------------------------
   def animated?
     return !@_iconbitmap.nil? && @_iconbitmap.is_a?(DeluxeBitmapWrapper)
@@ -25,7 +25,7 @@ class PokemonSprite < Sprite
   def hue=(value)
     return if !animated? || @_iconbitmap.changedHue?
     @_iconbitmap.hue_change(value)
-    @hue = value
+    self.bitmap = @_iconbitmap.bitmap
   end
   
   def to_first_frame
@@ -53,7 +53,7 @@ class PokemonSprite < Sprite
   
   def reversed=(value)
     return if !@_iconbitmap
-	@_iconbitmap.reversed = value
+    @_iconbitmap.reversed = value
   end
   
   #-----------------------------------------------------------------------------
@@ -72,22 +72,22 @@ class PokemonSprite < Sprite
   def setPokemonBitmapSpecies(pokemon, species, back = false)
     animated_setPokemonBitmapSpecies(pokemon, species, back)
     @pkmn = pokemon
-    @_iconbitmap.setPokemon(@pkmn, back)
+    @_iconbitmap.setPokemon(@pkmn, back, nil, species)
     @_iconbitmap.update_pokemon_sprite
     pbSetDisplay
   end
   
   alias animated_setSpeciesBitmap setSpeciesBitmap
-  def setSpeciesBitmap(*args)
-    animated_setSpeciesBitmap(*args)
-	pbSetDisplay
+  def setSpeciesBitmap(species, gender = 0, form = 0, shiny = false, shadow = false, back = false, egg = false)
+    animated_setSpeciesBitmap(species, gender, form, shiny, shadow, back, egg)
+    species_id = (species) ? GameData::Species.get_species_form(species, form).id : nil
+    pbSetDisplay([], species_id, back)
   end
   
   alias animated_update update
   def update
+    @_iconbitmap.update_pokemon_sprite if animated?
     animated_update
-    return if !animated?
-    @_iconbitmap.update_pokemon_sprite
   end
   
   #-----------------------------------------------------------------------------
@@ -118,58 +118,40 @@ class PokemonSprite < Sprite
   #-----------------------------------------------------------------------------
   # Generates a shadow sprite cast by the inputted Pokemon.
   #-----------------------------------------------------------------------------
-  def setShadowBitmap(sprite, pkmn, back = false)
+  def setShadowBitmap(pkmn_sprite, back = false)
+    @pkmn = pkmn_sprite.pkmn
     @_iconbitmap&.dispose
-    return if !sprite.animated?
-    @pkmn = sprite.pkmn
     @_iconbitmap = (pkmn) ? GameData::Species.sprite_bitmap_from_pokemon(pkmn, back) : nil
+    self.bitmap = (@_iconbitmap) ? @_iconbitmap.bitmap : nil
     return if !@_iconbitmap
-    @_iconbitmap.speed = sprite.iconBitmap.speed
-    @_iconbitmap.reversed = sprite.iconBitmap.reversed
-    @_iconbitmap.pokemon = sprite.iconBitmap.pokemon
-    self.bitmap  = @_iconbitmap.bitmap
+    setOffset
+    self.color = Color.black
+    self.opacity = 100
     metrics = GameData::SpeciesMetrics.get_species_form(@pkmn.species, @pkmn.form, @pkmn.female?)
-    size = metrics.shadow_size
-    size -= 1 if size > 0
-    self.zoom_x  = sprite.zoom_x + (size * 0.1)
-    self.zoom_y  = (sprite.zoom_y * @_iconbitmap.scale * 0.25) * 0.5 + (size * 0.025)
     self.visible = false if !metrics.shows_shadow?(back)
-    pbSetShadow(sprite, back)
+    shadow_size = metrics.shadow_size
+    shadow_size -= 1 if shadow_size > 0
+    self.zoom_x = pkmn_sprite.zoom_x + (shadow_size * 0.1)
+    self.zoom_y = pkmn_sprite.zoom_y * 0.25 + (shadow_size * 0.025)
   end
   
   #-----------------------------------------------------------------------------
   # Generates a shadow sprite for a species.
   #-----------------------------------------------------------------------------
-  def setSpeciesShadowBitmap(sprite, species, form = 0, female = false, shiny = shadow, shadow = false, back = false)
+  def setSpeciesShadowBitmap(species, form = 0, female = false, shiny = false, shadow = false, dynamax = false, back = false)
     @_iconbitmap&.dispose
-    return if !sprite.animated?
-    @_iconbitmap = GameData::Species.sprite_bitmap(species, form, (female) ? 1 : 0, shiny, shadow, back)
-    @_iconbitmap.speed = sprite.iconBitmap.speed
-    @_iconbitmap.reversed = sprite.iconBitmap.reversed
-    self.bitmap  = @_iconbitmap.bitmap
-    metrics = GameData::SpeciesMetrics.get_species_form(species, form, female)
-    size = metrics.shadow_size
-    size -= 1 if size > 0
-    self.zoom_x  = sprite.zoom_x + (size * 0.1)
-    self.zoom_y  = (sprite.zoom_y * @_iconbitmap.scale * 0.25) * 0.5 + (size * 0.025)
-    self.visible = false if !metrics.shows_shadow?(back)
-    pbSetShadow(sprite, back)
-  end
-  
-  #-----------------------------------------------------------------------------
-  # Sets the general parameters for a shadow sprite.
-  #-----------------------------------------------------------------------------
-  def pbSetShadow(sprite, back = false)
+    @_iconbitmap = GameData::Species.sprite_bitmap(species, form, ((female) ? 1 : 0), shiny, shadow, back)
+    self.bitmap = (@_iconbitmap) ? @_iconbitmap.bitmap : nil
     return if !@_iconbitmap
-    self.mirror  = back
-    self.opacity = sprite.opacity * 0.3
-    self.tone    = Tone.new(-255, -255, -255, 255)
-    self.ox      = self.bitmap.width / 2
-    self.oy      = self.bitmap.height / 2
-    self.x       = sprite.x
-    self.y      -= sprite.bitmap.height / 4 if !back
-    self.angle   = sprite.angle
-    self.angle  += ((back) ? 176 : -2)
+    setOffset
+    self.color = Color.black
+    self.opacity = 100
+    metrics = GameData::SpeciesMetrics.get_species_form(species, form, female)
+    self.visible = false if !metrics.shows_shadow?(back)
+    shadow_size = metrics.shadow_size
+    shadow_size -= 1 if shadow_size > 0
+    self.zoom_x = (dynamax ? 1.5 : 1) + (shadow_size * 0.1)
+    self.zoom_y = (dynamax ? 1.5 : 1) * 0.25 + (shadow_size * 0.025)
   end
   
   #-----------------------------------------------------------------------------
@@ -182,10 +164,9 @@ class PokemonSprite < Sprite
     v = @display_values.clone
     self.x = v[0] || 0
     self.y = v[1] || 0
-    oldX, oldY = self.x, self.y
     offset = findCenter(self.bitmap)
     sp_metrics = Settings::POKEMON_UI_METRICS
-    species_offset = (@pkmn) ? sp_metrics[@pkmn.species_data.id] : sp_metrics[species]
+    species_offset = (species) ? sp_metrics[species] : (@pkmn) ? sp_metrics[@pkmn.species_data.id] : nil
     if species_offset
       offset[0] = (back) ? (offset[0] - species_offset[0]) : (offset[0] + species_offset[0])
       offset[1] += species_offset[1]
@@ -194,7 +175,7 @@ class PokemonSprite < Sprite
     self.y += offset[1]
     if Settings::CONSTRICT_POKEMON_SPRITES
       width, height = self.bitmap.width, self.bitmap.height
-      v[2] += (v[2] * self.zoom_x * 0.6).ceil if self.zoom_x != 1
+      v[2] += (v[2] * self.zoom_x * 0.6).ceil if v[2] && self.zoom_x != 1
       v[3] += (v[3] * self.zoom_y * 0.6).ceil if v[3] && self.zoom_y != 1
       c_x = v[2] || width
       if width < c_x

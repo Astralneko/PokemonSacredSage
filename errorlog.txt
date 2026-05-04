@@ -1,0 +1,795 @@
+
+=================
+
+[2026-05-04 08:47:40 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Compilation of Astralneko's Trivia data failed, default_trivia.txt may not exist or PBS may not exist.
+
+Backtrace:
+[Astralneko's Trivia] 001 Compile Data.rb:24:in `compile'
+[Astralneko's Trivia] 001 Compile Data.rb:131:in `compile_all'
+001_Compiler.rb:1102:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+
+=================
+
+[2026-05-04 08:51:10 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 08:55:52 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Compilation of Astralneko's Trivia data failed, default_trivia.txt may not exist or PBS may not exist.
+
+Backtrace:
+[Astralneko's Trivia] 001 Compile Data.rb:24:in `compile'
+[Astralneko's Trivia] 001 Compile Data.rb:131:in `compile_all'
+001_Compiler.rb:1102:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+
+=================
+
+[2026-05-04 08:56:05 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 08:58:08 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Compilation of Astralneko's Trivia data failed, default_trivia.txt may not exist or PBS may not exist.
+
+Backtrace:
+[Astralneko's Trivia] 001 Compile Data.rb:24:in `compile'
+[Astralneko's Trivia] 001 Compile Data.rb:131:in `compile_all'
+001_Compiler.rb:1102:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+
+=================
+
+[2026-05-04 08:58:21 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 09:00:42 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Undefined species constant name: FROSABY.
+Make sure the species is defined in PBS/pokemon.txt.
+File PBS/regional_dexes.txt, line 87
+FROSABY,YUCONNIT
+
+
+
+Backtrace:
+001_Compiler.rb:880:in `parseSpecies'
+002_Compiler_CompilePBS.rb:611:in `block (3 levels) in compile_regional_dexes'
+002_Compiler_CompilePBS.rb:609:in `each'
+002_Compiler_CompilePBS.rb:609:in `block (2 levels) in compile_regional_dexes'
+001_Compiler.rb:244:in `block (2 levels) in pbCompilerEachPreppedLine'
+001_Compiler.rb:236:in `each_line'
+001_Compiler.rb:236:in `block in pbCompilerEachPreppedLine'
+001_Compiler.rb:233:in `open'
+001_Compiler.rb:233:in `pbCompilerEachPreppedLine'
+002_Compiler_CompilePBS.rb:598:in `block in compile_regional_dexes'
+
+=================
+
+[2026-05-04 09:02:15 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 09:02:26 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Undefined species constant name: FROSABY.
+Make sure the species is defined in PBS/pokemon.txt.
+File PBS/regional_dexes.txt, line 224
+FROSABY,YUCONNIT
+
+
+
+Backtrace:
+001_Compiler.rb:880:in `parseSpecies'
+002_Compiler_CompilePBS.rb:611:in `block (3 levels) in compile_regional_dexes'
+002_Compiler_CompilePBS.rb:609:in `each'
+002_Compiler_CompilePBS.rb:609:in `block (2 levels) in compile_regional_dexes'
+001_Compiler.rb:244:in `block (2 levels) in pbCompilerEachPreppedLine'
+001_Compiler.rb:236:in `each_line'
+001_Compiler.rb:236:in `block in pbCompilerEachPreppedLine'
+001_Compiler.rb:233:in `open'
+001_Compiler.rb:233:in `pbCompilerEachPreppedLine'
+002_Compiler_CompilePBS.rb:598:in `block in compile_regional_dexes'
+
+=================
+
+[2026-05-04 09:02:50 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 09:02:59 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `events' for nil:NilClass
+
+Backtrace:
+003_Intl_Messages.rb:122:in `block in gather_script_and_event_texts'
+003_Intl_Messages.rb:112:in `each_key'
+003_Intl_Messages.rb:112:in `gather_script_and_event_texts'
+001_Compiler.rb:1032:in `compile_all'
+001_Compiler.rb:1102:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+
+=================
+
+[2026-05-04 09:04:06 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 09:04:16 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Compilation of Astralneko's Trivia data failed, default_trivia.txt may not exist or PBS may not exist.
+
+Backtrace:
+[Astralneko's Trivia] 001 Compile Data.rb:24:in `compile'
+[Astralneko's Trivia] 001 Compile Data.rb:131:in `compile_all'
+001_Compiler.rb:1102:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+
+=================
+
+[2026-05-04 09:04:23 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 09:04:37 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `events' for nil:NilClass
+
+Backtrace:
+003_Intl_Messages.rb:122:in `block in gather_script_and_event_texts'
+003_Intl_Messages.rb:112:in `each_key'
+003_Intl_Messages.rb:112:in `gather_script_and_event_texts'
+001_Compiler.rb:1032:in `compile_all'
+001_Compiler.rb:1102:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+
+=================
+
+[2026-05-04 09:04:50 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 09:05:13 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `events' for nil:NilClass
+
+Backtrace:
+003_Intl_Messages.rb:122:in `block in gather_script_and_event_texts'
+003_Intl_Messages.rb:112:in `each_key'
+003_Intl_Messages.rb:112:in `gather_script_and_event_texts'
+001_Compiler.rb:1032:in `compile_all'
+001_Compiler.rb:1102:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+
+=================
+
+[2026-05-04 09:06:01 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 09:06:27 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `events' for nil:NilClass
+
+Backtrace:
+003_Intl_Messages.rb:122:in `block in gather_script_and_event_texts'
+003_Intl_Messages.rb:112:in `each_key'
+003_Intl_Messages.rb:112:in `gather_script_and_event_texts'
+001_Compiler.rb:1032:in `compile_all'
+001_Compiler.rb:1102:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+
+=================
+
+[2026-05-04 09:06:32 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 09:08:38 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `events' for nil:NilClass
+
+Backtrace:
+003_Intl_Messages.rb:122:in `block in gather_script_and_event_texts'
+003_Intl_Messages.rb:112:in `each_key'
+003_Intl_Messages.rb:112:in `gather_script_and_event_texts'
+001_Compiler.rb:1032:in `compile_all'
+001_Compiler.rb:1102:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+
+=================
+
+[2026-05-04 09:08:41 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 09:09:08 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `events' for nil:NilClass
+
+Backtrace:
+003_Intl_Messages.rb:122:in `block in gather_script_and_event_texts'
+003_Intl_Messages.rb:112:in `each_key'
+003_Intl_Messages.rb:112:in `gather_script_and_event_texts'
+001_Compiler.rb:1032:in `compile_all'
+001_Compiler.rb:1102:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+
+=================
+
+[2026-05-04 09:13:30 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 09:13:49 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `events' for nil:NilClass
+
+Backtrace:
+003_Intl_Messages.rb:122:in `block in gather_script_and_event_texts'
+003_Intl_Messages.rb:112:in `each_key'
+003_Intl_Messages.rb:112:in `gather_script_and_event_texts'
+001_Compiler.rb:1032:in `compile_all'
+001_Compiler.rb:1102:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+
+=================
+
+[2026-05-04 09:16:24 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 09:16:33 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `events' for nil:NilClass
+
+Backtrace:
+003_Intl_Messages.rb:122:in `block in gather_script_and_event_texts'
+003_Intl_Messages.rb:112:in `each_key'
+003_Intl_Messages.rb:112:in `gather_script_and_event_texts'
+001_Compiler.rb:1032:in `compile_all'
+001_Compiler.rb:1102:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+
+=================
+
+[2026-05-04 09:18:04 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 09:22:56 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `events' for nil:NilClass
+
+Backtrace:
+003_Intl_Messages.rb:122:in `block in gather_script_and_event_texts'
+003_Intl_Messages.rb:112:in `each_key'
+003_Intl_Messages.rb:112:in `gather_script_and_event_texts'
+001_Compiler.rb:1032:in `compile_all'
+001_Compiler.rb:1102:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+
+=================
+
+[2026-05-04 09:30:31 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 09:31:50 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `events' for nil:NilClass
+
+Backtrace:
+003_Intl_Messages.rb:122:in `block in gather_script_and_event_texts'
+003_Intl_Messages.rb:112:in `each_key'
+003_Intl_Messages.rb:112:in `gather_script_and_event_texts'
+001_Compiler.rb:1032:in `compile_all'
+001_Compiler.rb:1102:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+
+=================
+
+[2026-05-04 09:31:54 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 09:33:05 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `events' for nil:NilClass
+
+Backtrace:
+003_Intl_Messages.rb:122:in `block in gather_script_and_event_texts'
+003_Intl_Messages.rb:112:in `each_key'
+003_Intl_Messages.rb:112:in `gather_script_and_event_texts'
+001_Compiler.rb:1032:in `compile_all'
+001_Compiler.rb:1102:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+
+=================
+
+[2026-05-04 09:33:09 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2026-05-04 09:35:28 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Script error in event 1 (coords 17,15), map 33 (Alipigra City)
+Exception: RuntimeError
+Message: Unknown ID CORSALINE.
+
+***Full script:
+Compiler.update_gen9
+
+Backtrace:
+001_GameData.rb:103:in `get'
+[v21.1 Hotfixes] Compiler bug fixes.rb:124:in `block (2 levels) in pbWriteCsvRecord'
+[v21.1 Hotfixes] Compiler bug fixes.rb:98:in `each'
+[v21.1 Hotfixes] Compiler bug fixes.rb:98:in `block in pbWriteCsvRecord'
+[v21.1 Hotfixes] Compiler bug fixes.rb:97:in `loop'
+[v21.1 Hotfixes] Compiler bug fixes.rb:97:in `pbWriteCsvRecord'
+003_Compiler_WritePBS.rb:270:in `block (5 levels) in write_pokemon_forms'
+003_Compiler_WritePBS.rb:268:in `each'
+003_Compiler_WritePBS.rb:268:in `block (4 levels) in write_pokemon_forms'
+003_Compiler_WritePBS.rb:263:in `each_key'
+
+=================
+
+[2026-05-04 09:36:08 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Undefined value  in GameData::Species.
+File PBS/pokemon_forms.txt, section CORSOLA,1, key Evolution
+["CURSOLA,Level,38", ""]
+
+
+
+Backtrace:
+001_Compiler.rb:454:in `checkEnumField'
+[v21.1 Hotfixes] Compiler bug fixes.rb:53:in `cast_csv_value'
+001_Compiler.rb:724:in `block (2 levels) in get_csv_record'
+001_Compiler.rb:710:in `each'
+001_Compiler.rb:710:in `block in get_csv_record'
+001_Compiler.rb:708:in `loop'
+001_Compiler.rb:708:in `get_csv_record'
+002_Compiler_CompilePBS.rb:420:in `block (5 levels) in compile_pokemon_forms'
+002_Compiler_CompilePBS.rb:419:in `each'
+002_Compiler_CompilePBS.rb:419:in `block (4 levels) in compile_pokemon_forms'
+
+=================
+
+[2026-05-04 09:39:37 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'

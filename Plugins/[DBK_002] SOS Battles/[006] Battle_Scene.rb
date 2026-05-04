@@ -58,7 +58,11 @@ class Battle::Scene
       pbUpdate
     end
     if @battle.showAnims && battler.shiny?
-      pbCommonAnimation("Shiny", battler)
+      if Settings::SUPER_SHINY && battler.super_shiny?
+        pbCommonAnimation("SuperShiny", battler)
+      else
+        pbCommonAnimation("Shiny", battler)
+      end
     end
   end
   
@@ -72,24 +76,19 @@ class Battle::Scene
       addNewBattler = addNew if i == 0
     end
     trainer = @battle.opponent[idxTrainer]
-    animated = PluginManager.installed?("[DBK] Animated Trainer Intros")
-    id = "trainer_#{idxTrainer + 1}"
-    if @sprites[id]
-      if animated
-        sh = "trshadow_#{idxTrainer + 1}"
-        [id, sh].each do |sprite|
-          @sprites[sprite].index = idxTrainer
-          @sprites[sprite].numTrainers = @battle.opponent.length
-          @sprites[id].setTrainerBitmap(trainer, nil, sprite == sh)
-        end
+    sprite = @sprites["trainer_#{idxTrainer + 1}"]
+    if sprite
+      if PluginManager.installed?("[DBK] Animated Trainer Intros")
+        sprite.numTrainers = @battle.opponent.length
+        sprite.setTrainerBitmap(trainer.trainer_type)
       else
         trainerFile = GameData::TrainerType.front_sprite_filename(trainer.trainer_type)
         spriteX, spriteY = Battle::Scene.pbTrainerPosition(1, idxTrainer, @battle.opponent.length)
-        @sprites[id].setBitmap(trainerFile)
-        @sprites[id].x = spriteX
-        @sprites[id].y = spriteY
-        @sprites[id].ox = @sprites[id].src_rect.width / 2
-        @sprites[id].oy = @sprites[id].bitmap.height
+        sprite.setBitmap(trainerFile)
+        sprite.x = spriteX
+        sprite.y = spriteY
+        sprite.ox = sprite.src_rect.width / 2
+        sprite.oy = sprite.bitmap.height
       end
     else
       pbCreateTrainerFrontSprite(idxTrainer, trainer.trainer_type, @battle.opponent.length)
@@ -102,12 +101,11 @@ class Battle::Scene
     while inPartyAnimation?
       pbUpdate
     end
-    if animated
+    if PluginManager.installed?("[DBK] Animated Trainer Intros")
       loop do 
         pbUpdate
-        break if @sprites[id].iconBitmap.finished?
-        @sprites[id]&.play
-        @sprites["trshadow_#{idxTrainer + 1}"]&.play
+        break if @sprites["trainer_#{idxTrainer + 1}"].finished?
+        @sprites["trainer_#{idxTrainer + 1}"].play
       end
     end
     pbDisplayPausedMessage(_INTL("{1} joined the battle!", trainer.full_name))
@@ -148,13 +146,19 @@ class Battle::Scene
     end
     if idxTrainer
       trainer = @battle.opponent[idxTrainer]
-      id = "trainer_#{idxTrainer + 1}"
-      if @sprites[id]
+      sprite = @sprites["trainer_#{idxTrainer + 1}"]
+      if sprite
         trainerFile = GameData::TrainerType.front_sprite_filename(trainer.trainer_type)
-        @sprites[id].setBitmap(trainerFile)
+        oldX = sprite.x
+        if PluginManager.installed?("[DBK] Animated Trainer Intros")
+          sprite.setTrainerBitmap(trainer.trainer_type)
+        else
+          sprite.setBitmap(trainerFile)
+        end
+        sprite.x = oldX
       else
         pbCreateTrainerFrontSprite(idxTrainer, trainer.trainer_type, @battle.opponent.length)
-        @sprites[id].x = @sprites["trainer_1"].x
+        sprite.x = @sprites["trainer_1"].x
       end
       if @battle.launcherBattle?
         @sprites["launcherBar_1_#{idxTrainer}"] = WonderLauncherPointsBar.new(1, idxTrainer, trainer, @viewport)
@@ -162,7 +166,6 @@ class Battle::Scene
     end
   end
 end
-
 
 #===============================================================================
 # Allows the size of side to be edited mid-battle.
@@ -176,55 +179,59 @@ class Battle::Scene::BattlerShadowSprite < RPG::Sprite
 end
 
 #===============================================================================
+# Mixin for determining new positions for battler sprites.
+#===============================================================================
+module Battle::Scene::Animation::SOSPositionMixin
+  def pbGetBattlerPosition(b, sideSize)
+    p = Battle::Scene.pbBattlerPosition(b.index, sideSize)
+    newX, newY = p[0], p[1]
+    if PluginManager.installed?("[DBK] Animated Pokémon System")
+      if b.battlerSprite.substitute
+        newY += Settings::SUBSTITUTE_DOLL_METRICS[1]
+      else
+        metrics = GameData::SpeciesMetrics.get_species_form(b.species, b.form, b.gender == 1)
+      end
+    else
+      metrics = GameData::SpeciesMetrics.get_species_form(b.species, b.form)
+    end
+    if metrics
+      newX += metrics.front_sprite[0] * 2
+      newY += metrics.front_sprite[1] * 2
+      newY -= metrics.front_sprite_altitude * 2
+    end
+    newZ = 50 - (5 * (b.index + 1) / 2)
+    return newX, newY, newZ
+  end
+  
+  def pbGetShadowPosition(b, sideSize)
+    p = Battle::Scene.pbBattlerPosition(b.index, sideSize)
+    newX, newY, newZ = p[0], p[1], 3
+    if PluginManager.installed?("[DBK] Animated Pokémon System")
+      if !b.battlerSprite.substitute
+        metrics = GameData::SpeciesMetrics.get_species_form(b.species, b.form, b.gender == 1)
+        newX += (metrics.front_sprite[0] * 2 + metrics.shadow_sprite[0] * 2)
+        newY += (metrics.front_sprite[1] * 2 + metrics.shadow_sprite[2] * 2)
+        newY -= (b.shadowSprite.height / 4).round
+      end
+    else
+      metrics = GameData::SpeciesMetrics.get_species_form(b.species, b.form)
+      newX += metrics.shadow_x * 2
+    end
+    return newX, newY, newZ
+  end
+end
+
+#===============================================================================
 # Animation used for new wild Pokemon joining the battle.
 #===============================================================================
 class Battle::Scene::Animation::SOSJoin < Battle::Scene::Animation
+  include Battle::Scene::Animation::SOSPositionMixin
+  
   def initialize(sprites, viewport, battle, idxSOS, addNewBattler)
     @battle = battle
     @idxSOS = idxSOS
     @addNewBattler = addNewBattler
     super(sprites, viewport)
-  end
-  
-  def pbGetShadowCoords(b, sideSize)
-    p = Battle::Scene.pbBattlerPosition(b.index, sideSize)
-    newX, newY, newZ = p[0], p[1], 3
-    if PluginManager.installed?("[DBK] Animated Pokémon System")
-      sprite, shadow = @battle.scene.pbGetBattlerSprites(b.index)
-      if !shadow.substitute
-        m = GameData::SpeciesMetrics.get_species_form(b.species, b.form, b.gender == 1)
-        newX += (m.front_sprite[0] + m.shadow_sprite[0]) * 2 
-        newY += ((m.front_sprite[1] + m.shadow_sprite[2]) * 2) - (m.front_sprite_altitude * 2)
-        newY -= sprite.bitmap.height / 4
-        newY -= 25 if b.dynamax? 
-      end
-    else
-      m = GameData::SpeciesMetrics.get_species_form(b.species, b.form)
-      newX += m.shadow_x * 2
-    end
-    return newX, newY, newZ
-  end
-  
-  def pbGetBattlerCoords(b, sideSize)
-    p = Battle::Scene.pbBattlerPosition(b.index, sideSize)
-    newX, newY = p[0], p[1]
-    if PluginManager.installed?("[DBK] Animated Pokémon System")
-      sprite, shadow = @battle.scene.pbGetBattlerSprites(b.index)
-      if shadow.substitute
-        newY += Settings::SUBSTITUTE_DOLL_METRICS[1]
-      else
-        m = GameData::SpeciesMetrics.get_species_form(b.species, b.form, b.gender == 1)
-      end
-    else
-      m = GameData::SpeciesMetrics.get_species_form(b.species, b.form)
-    end
-    if m
-      newX = p[0] + m.front_sprite[0] * 2
-      newY = p[1] + m.front_sprite[1] * 2
-      newY -= m.front_sprite_altitude * 2
-    end
-    newZ = 50 - (5 * (b.index + 1) / 2)
-    return newX, newY, newZ
   end
  
   def createProcesses
@@ -235,31 +242,31 @@ class Battle::Scene::Animation::SOSJoin < Battle::Scene::Animation
       shaSprite = @sprites["shadow_#{b.index}"]
       boxSprite = @sprites["dataBox_#{b.index}"]
       if b.index == @idxSOS
-        shaSprite.visible = false
-        shadow = addSprite(shaSprite, PictureOrigin::CENTER)
-        shadow.setOpacity(delay, 0)
-        shadow.setVisible(delay, true)
-        shadow.moveOpacity(delay, 4, 255)
         battler = addSprite(batSprite, PictureOrigin::BOTTOM)
         battler.setTone(delay, Tone.new(-196, -196, -196, -196))
         battler.setOpacity(delay, 0)
         battler.setVisible(delay, true)
         battler.moveOpacity(delay, 4, 255)
         battler.moveTone(delay + 4, 10, Tone.new(0, 0, 0, 0), [batSprite,:pbPlayIntroAnimation])
+        shaSprite.visible = false
+        shadow = addSprite(shaSprite, PictureOrigin::CENTER)
+        shadow.setOpacity(delay, 0)
+        shadow.setVisible(delay, true)
+        shadow.moveOpacity(delay, 4, 255)
         dir = (b.index.even?) ? 1 : -1
         box = addSprite(boxSprite)
         box.setDelta(delay, dir * Graphics.width / 2, 0)
         box.setVisible(delay, true)
         box.moveDelta(delay, 8, -dir * Graphics.width / 2, 0)
       else
-        x, y, z = pbGetShadowCoords(b, shaSprite.sideSize)
-        shadow = addSprite(shaSprite, PictureOrigin::CENTER)	
-        shadow.setZ(delay, z)
-        shadow.moveXY(delay, 4, x, y)
-        x, y, z = pbGetBattlerCoords(b, batSprite.sideSize)
-        battler = addSprite(batSprite, PictureOrigin::BOTTOM)	
-        battler.setZ(delay, z)
-        battler.moveXY(delay, 4, x, y)
+        battler = addSprite(batSprite, PictureOrigin::BOTTOM)
+        newX, newY, newZ = pbGetBattlerPosition(b, batSprite.sideSize)
+        battler.setZ(delay, newZ)
+        battler.moveXY(delay, 4, newX, newY)
+        shadow = addSprite(shaSprite, PictureOrigin::CENTER)
+        newX, newY, newZ = pbGetShadowPosition(b, shaSprite.sideSize)
+        shadow.setZ(delay, newZ)
+        shadow.moveXY(delay, 4, newX, newY)
         if @addNewBattler
           dir = (b.index.even?) ? 1 : -1
           box = addSprite(boxSprite)
@@ -276,11 +283,12 @@ class Battle::Scene::Animation::SOSJoin < Battle::Scene::Animation
   end
 end
 
-
 #===============================================================================
 # Animation used for a new trainer joining the battle.
 #===============================================================================
 class Battle::Scene::Animation::TrainerJoin < Battle::Scene::Animation
+  include Battle::Scene::Animation::SOSPositionMixin
+  
   def initialize(sprites, viewport, battle, idxSOS, idxTrainer, addNewBattler)
     @battle = battle
     @idxSOS = idxSOS
@@ -297,15 +305,13 @@ class Battle::Scene::Animation::TrainerJoin < Battle::Scene::Animation
       shaSprite = @sprites["shadow_#{b.index}"]
       boxSprite = @sprites["dataBox_#{b.index}"]
       battler = addSprite(batSprite, PictureOrigin::BOTTOM)
+      newX, newY, newZ = pbGetBattlerPosition(b, batSprite.sideSize)
+      battler.setZ(delay, newZ)
+      battler.moveXY(delay, 4, newX, newY)
       shadow = addSprite(shaSprite, PictureOrigin::CENTER)
-      batSprite.pbSetPosition
-      if PluginManager.installed?("[DBK] Animated Pokémon System")
-        shaSprite.pbSetPosition(batSprite)
-      else
-        shaSprite.pbSetPosition
-      end
-      battler.moveXY(delay, 4, batSprite.x, batSprite.y)
-      shadow.moveXY(delay, 4, shaSprite.x, shaSprite.y)
+      newX, newY, newZ = pbGetShadowPosition(b, shaSprite.sideSize)
+      shadow.setZ(delay, newZ)
+      shadow.moveXY(delay, 4, newX, newY)
       if @addNewBattler
         dir = (b.index.even?) ? 1 : -1
         box = addSprite(boxSprite)

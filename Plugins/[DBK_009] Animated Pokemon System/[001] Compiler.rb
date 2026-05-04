@@ -143,4 +143,54 @@ module Compiler
       process_pbs_file_message_end
     end
   end
+  
+  #-----------------------------------------------------------------------------
+  # Used specifically for recreating metrics files for plugin distribution.
+  #-----------------------------------------------------------------------------
+  def write_pokemon_plugin_metrics
+    paths = get_all_PBS_file_paths(GameData::SpeciesMetrics)
+    schema = GameData::SpeciesMetrics.schema
+    idx = 0
+    paths.each do |path|
+      path[0].gsub!("/", "/Plugins/")
+      write_pbs_file_message_start(path[0])
+      File.open(path[0], "wb") do |f|
+        add_PBS_header_to_file(f)
+        GameData::SpeciesMetrics.each do |element|
+          next if element.pbs_file_suffix != path[1]
+          echo "." if idx % 100 == 0
+          Graphics.update if idx % 500 == 0
+          idx += 1
+          f.write("\#-------------------------------\r\n")
+          if schema["SectionName"]
+            f.write("[")
+            pbWriteCsvRecord(element.get_property_for_PBS("SectionName"), f, schema["SectionName"])
+            f.write("]\r\n")
+          else
+            f.write("[#{element.id}]\r\n")
+          end
+          schema.each_key do |key|
+            next if ![
+              "BackSprite", "FrontSprite", 
+              "ShadowSize", "ShadowSprite",
+              "AnimationSpeed"].include?(key)
+            val = element.get_property_for_PBS(key)
+            next if val.nil?
+            if schema[key][1][0] == "^" && val.is_a?(Array)
+              val.each do |sub_val|
+                f.write(sprintf("%s = ", key))
+                pbWriteCsvRecord(sub_val, f, schema[key])
+                f.write("\r\n")
+              end
+            else
+              f.write(sprintf("%s = ", key))
+              pbWriteCsvRecord(val, f, schema[key])
+              f.write("\r\n")
+            end
+          end
+        end
+      end
+      process_pbs_file_message_end
+    end
+  end
 end

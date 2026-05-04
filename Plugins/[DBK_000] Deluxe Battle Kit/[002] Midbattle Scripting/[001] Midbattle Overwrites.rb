@@ -174,7 +174,7 @@ class Battle
             check_trigger = (t.last == "random") ? trigger : t[0..t.length - 2].join("_")
             next if !trigger_array.include?(check_trigger)
             odds = (t.last == "random") ? 50 : t.last.to_i
-            next if rand(100) < odds
+            next if rand(100) > odds
           elsif trigger.include?("_repeat_every")
             t = trigger.split("_")
             check_trigger = t[0..t.length - 2].join("_")
@@ -707,12 +707,14 @@ class Battle::Battler
   alias dx_pbBeginTurn pbBeginTurn
   def pbBeginTurn(_choice)
     dx_pbBeginTurn(_choice)
+	return if !@pokemon
     @battle.pbDeluxeTriggers(self, nil, "TurnStart", @turnCount, @species, *@pokemon.types)
   end
   
   alias dx_pbEndTurn pbEndTurn
   def pbEndTurn(_choice)
     dx_pbEndTurn(_choice)
+	return if !@pokemon
     @battle.pbDeluxeTriggers(self, nil, "TurnEnd", @turnCount, @species, *@pokemon.types)
   end
 end
