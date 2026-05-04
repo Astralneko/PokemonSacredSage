@@ -90,8 +90,9 @@ class Battle::AI::AITrainer
     return @skill >= 32
   end
 
+  # 50 is the skill level/base money of the Pokémon Ranger which is probably a good cutoff for High Skill
   def high_skill?
-    return @skill >= 48
+    return @skill >= 50
   end
 
   def best_skill?

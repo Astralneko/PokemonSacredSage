@@ -74,17 +74,21 @@ BaseMoney = 32
 [JUGGLER]
 Name = Juggler
 Gender = Male
+# Jugglers do not need the ConsiderSwitching tag as it is already applied to all trainers with SkillLevel >= 32 or BaseMoney >= 32 and no defined SkillLevel
+Flags = SwitchOften,SwitchRandom
 BaseMoney = 32
 #-------------------------------
 [FURSUITER_1]
 Name = Fursuiter
 Gender = Male
 BaseMoney = 64
+SkillLevel = 40
 #-------------------------------
 [FURSUITER_2]
 Name = Fursuiter
 Gender = Female
 BaseMoney = 64
+SkillLevel = 40
 #-------------------------------
 [POKEMONFARMER]
 Name = Pokémon Farmer
@@ -222,16 +226,19 @@ SkillLevel = 16
 Name = Scientist
 Gender = Male
 BaseMoney = 48
+SkillLevel = 72
 #-------------------------------
 [SCIENTIST_F]
 Name = Scientist
 Gender = Female
 BaseMoney = 48
+SkillLevel = 72
 #-------------------------------
 [THEORIST]
 Name = Theorist
 Gender = Male
 BaseMoney = 48
+SkillLevel = 72
 #-------------------------------
 [INFLUENCER]
 Name = Influencer

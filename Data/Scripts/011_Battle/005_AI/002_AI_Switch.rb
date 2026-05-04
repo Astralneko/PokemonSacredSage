@@ -28,14 +28,22 @@ class Battle::AI
       reserves = get_non_active_party_pokemon(@user.index)
       return false if reserves.empty?
       should_switch = Battle::AI::Handlers.should_switch?(@user, reserves, self, @battle)
-      if should_switch && @trainer.medium_skill?
+	  # Added SwitchOften skill flag; this allows 32-50 skill trainers to ignore should_not_switch
+      if should_switch && @trainer.medium_skill? && !@trainer.has_skill_flag?("SwitchOften") 
         should_switch = false if Battle::AI::Handlers.should_not_switch?(@user, reserves, self, @battle)
       end
+	  # Added RandomSwitch skill flag; this gives an additional flat 12.5% chance to switch (25% if SwitchOften flag is also present)
+	  if @trainer.has_skill_flag?("RandomSwitch") 
+		chance_random_switch = 125
+		chance_random_switch += 125 * @trainer.has_skill_flag?("SwitchOften") 
+		should_switch = true if @battle.pbRandom(1000) < chance_random_switch
+	  end
       return false if !should_switch
     end
-    # Want to switch; find the best replacement Pokémon
-    idxParty = choose_best_replacement_pokemon(@user.index, terrible_moves)
-    if idxParty < 0   # No good replacement Pokémon found
+    # Want to switch; find replacement Pokémon
+	# (RandomSwitch tag is handled in this function too)
+	idxParty = choose_best_replacement_pokemon(@user.index, terrible_moves)
+    if idxParty < 0  # No good replacement Pokémon found
       PBDebug.log("   => no good replacement Pokémon, will not switch after all")
       return false
     end
@@ -96,8 +104,8 @@ class Battle::AI
       reserves[i][1] = rate_replacement_pokemon(idxBattler, party[reserve[0]], reserve[1])
     end
     reserves.sort! { |a, b| b[1] <=> a[1] }   # Sort from highest to lowest rated
-    # Don't bother choosing to switch if all replacements are poorly rated
-    if @trainer.high_skill? && !terrible_moves
+    # Don't bother choosing to switch if all replacements are poorly rated and trainer doesn't have RandomSwitch tag
+    if @trainer.high_skill? && !terrible_moves && !@trainer.has_skill_flag?("RandomSwitch") 
       return -1 if reserves[0][1] < 100   # If best replacement rated at <100, don't switch
     end
     # Return the party index of the best rated replacement Pokémon
