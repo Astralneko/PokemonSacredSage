@@ -1,5 +1,7 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
+# Generation AN-I
+#-------------------------------
 [ARCEUS,19]
 FormName = Celestial Type
 Types = CELESTIAL
@@ -172,13 +174,13 @@ Types = STEEL,GHOST
 Generation = 101
 Flags = InheritFormWithEverStone
 #-------------------------------
-[GOLETT,1]
+[GOLETT,2]
 FormName = Verelan
 Types = ROCK,FAIRY
 Generation = 101
 Flags = InheritFormWithEverStone
 #-------------------------------
-[GOLURK,1]
+[GOLURK,2]
 FormName = Verelan
 Types = ROCK,FAIRY
 Generation = 101
@@ -700,6 +702,8 @@ BaseExp = 315
 FormName = Monster Form
 BaseStats = 124,101,88,68,175,144
 BaseExp = 315
+#-------------------------------
+# Generation AN-II
 #-------------------------------
 [SURSKIT,1]
 FormName = Zantarean

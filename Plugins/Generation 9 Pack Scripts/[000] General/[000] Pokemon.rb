@@ -375,55 +375,7 @@ end
 #-------------------------------------------------------------------------------
 # Regional forms upon creating an egg.
 #-------------------------------------------------------------------------------
-MultipleForms.register(:RATTATA, {
-  "getFormOnEggCreation" => proc { |pkmn, parent|
-    if $game_map
-      map_pos = $game_map.metadata&.town_map_position
-      if map_pos
-        form = 0
-        case map_pos[0]
-        #-----------------------------------------------------------------------
-        when 1  # Alola region
-          case pkmn.species
-          when :RATTATA, :SANDSHREW, :VULPIX, :DIGLETT, :MEOWTH, :GEODUDE, :GRIMER
-            form = 1
-          end
-        #-----------------------------------------------------------------------
-        when 2  # Galar region
-          case pkmn.species
-          when :PONYTA, :SLOWPOKE, :FARFETCHD, :ARTICUNO, :ZAPDOS, :MOLTRES, :CORSOLA, :ZIGZAGOON, :YAMASK, :STUNFISK
-            form = 1
-          when :MEOWTH, :DARUMAKA
-            form = 2
-          end
-        #-----------------------------------------------------------------------
-        when 3  # Hisui region
-          case pkmn.species
-          when :GROWLITHE, :VOLTORB, :QWILFISH, :SNEASEL, :ZORUA
-            form = 1
-          end
-        #-----------------------------------------------------------------------
-        when 4  # Paldea region
-          case pkmn.species
-          when :WOOPER
-            form = 1
-          when :TAUROS
-            form = (parent.form == 0) ? 1 : parent.form
-          end
-        end
-        next form if form > 0 && GameData::Species.get_species_form(pkmn.species, form).form == form
-      end
-    end
-    next 0
-  }
-})
-
-MultipleForms.copy(:RATTATA, :SANDSHREW, :VULPIX, :DIGLETT, :MEOWTH, :GEODUDE, :GRIMER,      # Alolan
-                   :PONYTA, :FARFETCHD, :CORSOLA, :ZIGZAGOON, :YAMASK, :STUNFISK,            # Galarian                                   
-                   :SLOWPOKE, :ARTICUNO, :ZAPDOS, :MOLTRES,                                  # Galarian (DLC)
-                   :GROWLITHE, :VOLTORB, :QWILFISH, :SNEASEL, :ZORUA,                        # Hisuian
-                   :TAUROS, :WOOPER                                                          # Paldean
-                  )                                             
+# Moved to Astaryuu's Miscellaneous Scripts for compactness                                           
 
 #-------------------------------------------------------------------------------
 # Species with regional evolutions (Hisuian forms).

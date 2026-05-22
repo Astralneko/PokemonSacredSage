@@ -519,7 +519,7 @@ Power = 50
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
-FunctionCode = UsesUserSecondaryType
+FunctionCode = TypeIsUserSecondType
 Flags = CanProtect,CanMirrorMove
 Description = The user fires a blast of energy that resonates with its type.
 #-------------------------------

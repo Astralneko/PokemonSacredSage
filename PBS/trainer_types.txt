@@ -39,6 +39,7 @@ BaseMoney = 16
 Name = Roughneck
 Gender = Male
 BaseMoney = 24
+Flags = PreferRiskyMoves
 #-------------------------------
 [FISHERMAN]
 Name = Fisherman
@@ -49,6 +50,7 @@ BaseMoney = 32
 Name = Gambler
 Gender = Male
 BaseMoney = 72
+Flags = PreferRiskyMoves
 SkillLevel = 32
 #-------------------------------
 [GENTLEMAN]
@@ -74,9 +76,9 @@ BaseMoney = 32
 [JUGGLER]
 Name = Juggler
 Gender = Male
+BaseMoney = 32
 # Jugglers do not need the ConsiderSwitching tag as it is already applied to all trainers with SkillLevel >= 32 or BaseMoney >= 32 and no defined SkillLevel
 Flags = SwitchOften,SwitchRandom
-BaseMoney = 32
 #-------------------------------
 [FURSUITER_1]
 Name = Fursuiter
@@ -124,11 +126,13 @@ BaseMoney = 40
 Name = Black Belt
 Gender = Male
 BaseMoney = 32
+Flags = Turn1BoostIfAble
 #-------------------------------
 [BATTLEGIRL]
 Name = Battle Girl
 Gender = Female
 BaseMoney = 24
+Flags = Turn1BoostIfAble
 #-------------------------------
 [BUSINESSMAN]
 Name = Businessman
@@ -238,12 +242,14 @@ SkillLevel = 72
 Name = Theorist
 Gender = Male
 BaseMoney = 48
+Flags = PreferFlashyMoves
 SkillLevel = 72
 #-------------------------------
 [INFLUENCER]
 Name = Influencer
 Gender = Female
 BaseMoney = 2
+Flags = PreferFlashyMoves
 SkillLevel = 48
 #-------------------------------
 [VETERAN_M]

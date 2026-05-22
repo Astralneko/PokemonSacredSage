@@ -1,5 +1,7 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
+# Gen AN-I Z-Crystals
+#-------------------------------
 [CELESTIUMZ]
 Name = Celestium Z
 NamePlural = Celestium Z
@@ -158,6 +160,8 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
+# Gen AN-I Key Items
+#-------------------------------
 [FAMECHECKER]
 Name = Fame Checker
 NamePlural = Fame Checkers
@@ -204,6 +208,8 @@ Description = A sharp knife. This item allows cutting small trees and such in th
 SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
+#-------------------------------
+# Gen AN-I Berries
 #-------------------------------
 [NACHNABERRY]
 Name = Nachna Berry
@@ -281,6 +287,8 @@ Description = It fully restores the holder's HP and status effects when eaten, b
 SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
+#-------------------------------
+# Gen AN-I Type-boosting Items
 #-------------------------------
 [NEBULAFRAGMENT]
 Name = Nebula Fragment
@@ -366,6 +374,8 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
+# Gen AN-I Other Items
+#-------------------------------
 [APUTRIGGER]
 Name = Apu's Offering
 NamePlural = Unnamed
@@ -413,6 +423,8 @@ LauncherUse = OnFoe
 SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
+#-------------------------------
+# Gen AN-I Stew Items
 #-------------------------------
 [GRUMPIGTENDERLOIN]
 Name = Grumpig Tenderloin

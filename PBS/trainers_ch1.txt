@@ -172,7 +172,7 @@ Pokemon = BEAUTIFLY,10
 Pokemon = RESPLUMA,10
 #-------------------------------
 [LEADERS_Aria,Aria]
-LoseText = "Well done, PN... Congratulations!"
+LoseText = "Well done, \PN... Congratulations!"
 Pokemon = WOOBAT,11
     Form = 1
     Moves = POWDERSNOW,ENDEAVOR,ATTRACT,AERIALACE

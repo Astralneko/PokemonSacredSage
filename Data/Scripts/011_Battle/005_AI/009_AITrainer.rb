@@ -85,7 +85,7 @@ class Battle::AI::AITrainer
   def has_skill_flag?(flag)
     return @skill_flags.include?(flag)
   end
-
+  
   def medium_skill?
     return @skill >= 32
   end

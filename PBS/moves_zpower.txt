@@ -423,6 +423,8 @@ FunctionCode = None
 Flags = ZMove,Contact,CannotMetronome
 Description = Marshadow punches and kicks the target consecutively with full force.
 #-------------------------------
+# Generation AN-I Z-Moves
+#-------------------------------
 [CONSTELLATIONMAKER]
 Name = Constellation Maker
 Type = CELESTIAL

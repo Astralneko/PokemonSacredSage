@@ -1,0 +1,241 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+# PLZA
+#-------------------------------
+[RAICHU,2]
+FormName = Mega Raichu X
+MegaStone = RAICHUNITEX
+BaseStats = 60,135,95,110,90,95
+# BaseExp = 292
+Height = 1.2
+Weight = 38.0
+Pokedex = It resembles an X as it flies through the air with 50 million volts of electricity sparking from its ears and forked tail.
+Generation = 9
+#-------------------------------
+[RAICHU,3]
+FormName = Mega Raichu Y
+MegaStone = RAICHUNITEY
+BaseStats = 60,135,95,110,90,95
+# BaseExp = 292
+Height = 1.0
+Weight = 26.0
+Pokedex = It fires bolts of electricity from the tip of its tail and from the spiky tufts of fur growing out of its temples. This electricity forms the letter Y.
+Generation = 9
+#-------------------------------
+[CHIMECHO,1]
+FormName = Mega Chimecho
+Types = PSYCHIC,STEEL
+MegaStone = CHIMECHITE
+BaseStats = 75,50,110,65,135,120
+# BaseExp = 292
+Height = 1.2
+Weight = 8.0
+Pokedex = It vibrates its entire body to attack in all directions using sound waves. Any who hear the vibrations get so confused, they forget who they are.
+Generation = 9
+#-------------------------------
+[ABSOL,2]
+FormName = Mega Absol Z
+Types = DARK,GHOST
+MegaStone = ABSOLITEZ
+BaseStats = 65,154,60,151,75,60
+# BaseExp = 292
+Height = 1.0
+Weight = 26.0
+Pokedex = Using fur that it has made into sharp, clawlike shapes, it cuts down foes with a single blow. This is an act of kindness to keep them from suffering.
+Generation = 9
+#-------------------------------
+[STARAPTOR,1]
+FormName = Mega Staraptor
+Types = FIGHTING,FLYING
+MegaStone = STARAPTITE
+BaseStats = 85,140,100,110,60,90
+# BaseExp = 292
+Height = 1.9
+Weight = 50.0
+Pokedex = Mega Staraptor is a top-class flier. It can easily soar through the sky while gripping a Steelix that weighs more than 880 lbs.
+Generation = 9
+#-------------------------------
+[GARCHOMP,2]
+FormName = Mega Garchomp Z
+Types = DRAGON
+MegaStone = GARCHOMPITEZ
+BaseStats = 108,130,85,151,141,85
+# BaseExp = 292
+Weight = 99.0
+Pokedex = Garchomp has gained a new Mega-Evolved form. It flies around foes at Mach speed and cuts them to shreds with its sinister wing claws.
+Generation = 9
+#-------------------------------
+[LUCARIO,2]
+FormName = Mega Lucario Z
+MegaStone = LUCARIONITEZ
+BaseStats = 70,100,70,151,164,70
+# BaseExp = 292
+Height = 1.3
+Weight = 49.4
+Pokedex = By completely cloaking itself in its aura, Mega Lucario Z can parry all manner of attacks, battling as if it were gracefully dancing.
+Generation = 9
+#-------------------------------
+[HEATRAN,1]
+FormName = Mega Heatran
+MegaStone = HEATRANITE
+BaseStats = 91,120,106,67,175,141
+# BaseExp = 292
+Height = 2.8
+Weight = 570.0
+Pokedex = It's said that if it goes all out, it can heat its body up to temperatures over 1.8 million degrees Fahrenheit. This heat keeps enemies at bay.
+Generation = 9
+#-------------------------------
+[DARKRAI,1]
+FormName = Mega Darkrai
+MegaStone = DARKRANITE
+BaseStats = 70,120,130,85,165,130
+# BaseExp = 292
+Height = 3.0
+Weight = 240.0
+Pokedex = Its dark power blocks out the sun, plunging the surrounding area into darkness. There is no escaping its evil eye.
+Generation = 9
+#-------------------------------
+[GOLURK,1]
+FormName = Mega Golurk
+MegaStone = GOLURKITE
+BaseStats = 89,159,105,55,70,105
+# BaseExp = 292
+Height = 4.0
+Weight = 330.0
+Pokedex = The energy within Golurk has been stimulated by Mega Evolution. The Pokémon could explode at any moment.
+Generation = 9
+#-------------------------------
+[MEOWSTIC,2]
+FormName = Mega Meowstic
+MegaStone = MEOWSTICITE
+BaseStats = 74,48,76,124,143,101
+# BaseExp = 292
+Height = 0.8
+Weight = 10.1
+Pokedex = Mega Meowstic can use its psychic power to compress or expand anything. It overwhelms foes by contorting space itself.
+Generation = 9
+#-------------------------------
+[MEOWSTIC,3]
+FormName = Mega Meowstic
+UnmegaForm = 1
+MegaStone = MEOWSTICITE
+BaseStats = 74,48,76,124,143,101
+# BaseExp = 292
+Height = 0.8
+Weight = 10.1
+Pokedex = Mega Meowstic can use its psychic power to compress or expand anything. It overwhelms foes by contorting space itself.
+Generation = 9
+#-------------------------------
+[CRABOMINABLE,1]
+FormName = Mega Crabominable
+MegaStone = CRABOMINITE
+BaseStats = 97,157,122,33,62,107
+# BaseExp = 292
+Height = 2.6
+Weight = 252.8
+Pokedex = It can pulverize reinforced concrete with a light swing of one of its fists, each of which is covered in a thick layer of ice.
+Generation = 9
+#-------------------------------
+[GOLISOPOD,1]
+FormName = Mega Golisopod
+Types = BUG,STEEL
+MegaStone = GOLISOPITE
+BaseStats = 75,150,175,40,70,120
+# BaseExp = 292
+Height = 2.3
+Weight = 148.0
+Pokedex = It uses four of its arms to fiercely assail its foes. Once they've been pushed to the brink of defeat, it finishes them off with the arms it kept hidden.
+Generation = 9
+#-------------------------------
+[MAGEARNA,2]
+FormName = Mega Magearna (Original Color)
+MegaStone = MAGEARNITE
+BaseStats = 80,125,115,95,170,115
+# BaseExp = 292
+Height = 1.3
+Weight = 248.1
+Pokedex = This is Magearna once a previously hidden mode activates. The emotions Magearna had begun to feel now hide away as it fells foe after foe.
+Generation = 9
+#-------------------------------
+[MAGEARNA,3]
+FormName = Mega Magearna
+UnmegaForm = 1
+MegaStone = MAGEARNITE
+BaseStats = 80,125,115,95,170,115
+# BaseExp = 292
+Height = 1.3
+Weight = 248.1
+Pokedex = A mechanism to remove Magerna's limitations has lain secretly with Magerna for 500 years. This mechanism is triggered by a Mega Stone.
+Generation = 9
+#-------------------------------
+[ZERAORA,1]
+FormName = Mega Zeraora
+MegaStone = ZERAORITE
+BaseStats = 88,157,75,153,147,80
+# BaseExp = 292
+Height = 1.5
+Weight = 44.5
+Pokedex = It stores up 10 lightning strikes' worth of electricity. When it stops limiting itself, it's in the strongest class of electric Pokémon.
+Generation = 9
+#-------------------------------
+[SCOVILLAIN,1]
+FormName = Mega Scovillain
+MegaStone = SCOVILLAINITE
+BaseStats = 65,138,85,75,138,85
+# BaseExp = 292
+Height = 1.2
+Weight = 22.0
+Pokedex = Mega Evolution has dialed up this Pokémon's spiciness. It swings its "necktie" around to wallop its foes.
+Generation = 9
+#-------------------------------
+[GLIMMORA,1]
+FormName = Mega Glimmora
+MegaStone = GLIMMORANITE
+BaseStats = 83,90,105,101,150,96
+# BaseExp = 292
+Height = 2.8
+Weight = 77.0
+Pokedex = Glimmora's petals-now larger and separated from its main body-rotate around it to provide defense while scattering poisonous fragments.
+Generation = 9
+#-------------------------------
+[TATSUGIRI,3]
+FormName = Mega Tatsugiri (Curly Form)
+MegaStone = TATSUGIRINITE
+BaseStats = 68,65,90,92,135,125
+# BaseExp = 292
+Height = 0.6
+Weight = 24.0
+Pokedex = Tatsugiri's brain has been invigorated by Mega Evolution, making it even wilier. It can create and command copies of itself.
+Generation = 9
+#-------------------------------
+[TATSUGIRI,4]
+FormName = Mega Tatsugiri (Droopy Form)
+UnmegaForm = 1
+MegaStone = TATSUGIRINITE
+BaseStats = 68,65,90,92,135,125
+# BaseExp = 292
+Height = 0.6
+Weight = 24.0
+Pokedex = It solidifies the energy of Mega Evolution, building up an overflowing pile to launch as projectiles. These projectiles explode on contact.
+Generation = 9
+#-------------------------------
+[TATSUGIRI,5]
+FormName = Mega Tatsugiri (Stretchy Form)
+UnmegaForm = 2
+MegaStone = TATSUGIRINITE
+BaseStats = 68,65,90,92,135,125
+# BaseExp = 292
+Height = 0.6
+Weight = 24.0
+Pokedex = Using the energy of Mega Evolution, it creates a dish to ride upon, allowing it to move with total freedom-even through the air.
+Generation = 9
+#-------------------------------
+[BAXCALIBUR,1]
+FormName = Mega Baxcalibur
+MegaStone = BAXCALIBRITE
+BaseStats = 115,175,117,87,105,101
+# BaseExp = 292
+Height = 2.1
+Weight = 315.0
+Pokedex = Baxcalibur's dorsal blade has grown even more massive thanks to Mega Evolution. This Pokémon fires beams from the hilt at its solar plexus.
+Generation = 9
