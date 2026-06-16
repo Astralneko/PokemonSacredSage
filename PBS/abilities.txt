@@ -816,7 +816,7 @@ Description = Uses moves without making contact with the target.
 #-------------------------------
 [LIQUIDVOICE]
 Name = Liquid Voice
-Description = Its sound-based moves become Water-type.
+Description = Its sound-based moves become Water-type and powered up.
 #-------------------------------
 [TRIAGE]
 Name = Triage
@@ -824,7 +824,7 @@ Description = Gives priority to a healing move.
 #-------------------------------
 [GALVANIZE]
 Name = Galvanize
-Description = Normal-type moves become Electric-type and powered.
+Description = Normal-type moves become Electric-type and powered up.
 #-------------------------------
 [SURGESURFER]
 Name = Surge Surfer
@@ -1243,6 +1243,22 @@ Description = Resists all types when HP is full.
 Name = Teraform Zero
 Description = Eliminates all weather and terrain.
 #-------------------------------
+[MEGASOL]
+Name = Mega Sol
+Description = Uses its moves as if in sunny weather.
+#-------------------------------
+[DRAGONIZE]
+Name = Dragonize
+Description = Normal-type moves become Dragon-type and powered up.
+#-------------------------------
+[PIERCINGDRILL]
+Name = Piercing Drill
+Description = Contact moves deals a quarter of damage against protections.
+#-------------------------------
+[SPICYSPRAY]
+Name = Spicy Spray
+Description = Burns the attacker when hit by a damaging move.
+#-------------------------------
 [PACKMENTALITY]
 Name = Pack Mentality
 Description = Gets a power boost from similar allies.
@@ -1293,31 +1309,31 @@ Description = Heals when struck by Fire-type attacks.
 #-------------------------------
 [ASTRALIZE]
 Name = Astralize
-Description = Normal-type moves become Celestial-type.
+Description = Normal-type moves become Celestial-type and powered up.
 #-------------------------------
 [INCENDIATE]
 Name = Incendiate
-Description = Normal-type moves become Fire-type.
+Description = Normal-type moves become Fire-type and powered up.
 #-------------------------------
 [AQUILATE]
 Name = Aquilate
-Description = Normal-type moves become Water-type.
+Description = Normal-type moves become Water-type and powered up.
 #-------------------------------
 [VERDARIZE]
 Name = Verdarize
-Description = Normal-type moves become Grass-type.
+Description = Normal-type moves become Grass-type and powered up.
 #-------------------------------
 [VILLAINIZE]
 Name = Villainize
-Description = Normal-type moves become Dark-type.
+Description = Normal-type moves become Dark-type and powered up.
 #-------------------------------
 [ARCANIZE]
 Name = Arcanize
-Description = Normal-type moves become Dragon-type.
+Description = Normal-type moves become Dragon-type and powered up.
 #-------------------------------
 [SPECTRALIZE]
 Name = Spectralize
-Description = Normal-type moves become Ghost-type.
+Description = Normal-type moves become Ghost-type and powered up.
 #-------------------------------
 [QUICKPLAY]
 Name = Quickplay
