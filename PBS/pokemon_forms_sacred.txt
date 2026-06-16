@@ -2,6 +2,13 @@
 #-------------------------------
 # Generation AN-I
 #-------------------------------
+[ROTOM,6]
+FormName = Stereo Rotom
+Types = ELECTRIC,NORMAL
+BaseStats = 50,65,107,86,105,107
+BaseExp = 182
+Pokedex = This is Rotom after it's seized control of a stereo that has a special speaker.
+#-------------------------------
 [ARCEUS,19]
 FormName = Celestial Type
 Types = CELESTIAL
