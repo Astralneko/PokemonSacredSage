@@ -187,7 +187,7 @@ class Window_PokemonBag < Window_DrawableCommand
         baseColor   = self.baseColor
         shadowColor = self.shadowColor
       end
-      textpos.push([_INTL("CLOSE BAG"), rect.x, rect.y + 4, :left, baseColor, shadowColor])
+      textpos.push([_INTL("CLOSE BAG"), rect.x, rect.y + 6, :left, baseColor, shadowColor])
     else
       item = (@filterlist) ? thispocket[@filterlist[@pocket][index]][0] : thispocket[index][0]
       baseColor   = self.baseColor
@@ -203,7 +203,7 @@ class Window_PokemonBag < Window_DrawableCommand
         shadowColor = Color.new(157, 171, 178)
       end
       textpos.push(
-        [@adapter.getDisplayName(item), rect.x, rect.y + 4, :left, baseColor, shadowColor]
+        [@adapter.getDisplayName(item), rect.x, rect.y + 6, :left, baseColor, shadowColor]
       )
       item_data = GameData::Item.get(item)
       showing_register_icon = false
@@ -550,7 +550,10 @@ class PokemonBag_Scene
   def pbUpdate
     pbUpdateSpriteHash(@sprites)
     @sprites["panorama"].x  = 0 if @sprites["panorama"].x == - 56
-    @sprites["panorama"].x -= 2 if BagScreenWiInParty::PANORAMA == true
+	if BagScreenWiInParty::PANORAMA == true && (System.uptime * 100).floor > @last_anim_time + 1
+		@sprites["panorama"].x -= 1
+		@last_anim_time = (System.uptime * 100).floor
+	end
   end
 
   def pbStartScene(bag, party, choosing = false, filterproc = nil, resetpocket = true)
@@ -561,6 +564,8 @@ class PokemonBag_Scene
     @filterproc = filterproc
     @party      = party
     
+	@last_anim_time = (System.uptime * 100).floor
+	
     pbRefreshFilter
     lastpocket = @bag.last_viewed_pocket
     numfilledpockets = @bag.pockets.length - 1
@@ -649,7 +654,7 @@ class PokemonBag_Scene
     @sprites["itemlist"].shadowColor = ITEMLISTSHADOWCOLOR
     @sprites["itemicon"] = ItemIconSprite.new(48, Graphics.height - 46, nil, @viewport)
     @sprites["itemtext"] = Window_UnformattedTextPokemon.newWithSize(
-      "", 72, 274, Graphics.width - 72 - 24, 128, @viewport
+      "", 72, 276, Graphics.width - 72 - 24, 128, @viewport
     )
     @sprites["itemtext"].baseColor   = ITEMTEXTBASECOLOR
     @sprites["itemtext"].shadowColor = ITEMTEXTSHADOWCOLOR
@@ -703,6 +708,14 @@ class PokemonBag_Scene
       @sprites["gradient"].color = Color.new(37, 125, 255)
       @sprites["panorama"].color = Color.new(48, 112, 224)
     when 8
+      @sprites["background"].color = Color.new(152, 187, 233)
+      @sprites["gradient"].color = Color.new(37, 125, 255)
+      @sprites["panorama"].color = Color.new(48, 112, 224)
+    when 9
+      @sprites["background"].color = Color.new(178, 152, 233)
+      @sprites["gradient"].color = Color.new(145, 37, 255)
+      @sprites["panorama"].color = Color.new(144, 72, 216)
+    when 10
       @sprites["background"].color = Color.new(178, 152, 233)
       @sprites["gradient"].color = Color.new(145, 37, 255)
       @sprites["panorama"].color = Color.new(144, 72, 216)

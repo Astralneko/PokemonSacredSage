@@ -35,8 +35,8 @@ module Modular_Messages
     # allows [] brackets
     cmds_0 = "\\\\(#{cmds_0.join("|")})\\[([^\\]]*)\\]"
     # vanilla: "g|cn|pt|wd|wm|op|cl|wu"
-    # also allows .|!^
-    cmds_1 += [".", "|", "!", "^"]
+    # also allows .|!^;
+    cmds_1 += [".", ";", "|", "!", "^"]
     cmds_1 = cmds_1.map { |cmd| Regexp.escape(cmd) }.join("|")
     cmds_1 = "\\\\(#{cmds_1})"
     # note: \i means not case sensitive!
@@ -62,7 +62,7 @@ module Modular_Messages
     text_len = 0
     @@hash["controls"].length.times do |i|
       control = @@hash["controls"][i][0]
-      control = "wtnp" if [".", "|"].include?(control)
+      control = "wtnp" if [".", "|", ";"].include?(control)
       # stops regexp being weird!
       control = "exclam" if ["!"].include?(control)
       @@hash["index"] = i
@@ -100,6 +100,7 @@ module Modular_Messages
       end
       control = @@hash["controls"][i][0]
       control = "fstp" if control == "."
+      control = "scln" if control == ";"
       control = "line" if control == "|"
       control = "wtnp" if control == "^"
       param = @@hash["controls"][i][1]

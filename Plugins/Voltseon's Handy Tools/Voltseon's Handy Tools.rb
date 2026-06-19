@@ -217,10 +217,10 @@ end
 #
 ################################################################################
 
-# Play Cry | Variables: i = Index, the National Number of the Pokémon
+# Play Cry | Variables: pok = species ID
 # vol = Volume, pch = Pitch
-def vCry(i,vol=80,pch=100,form=0)
-  cry=GameData::Species.cry_filename(i,form)
+def vCry(pok,form=0,vol=80,pch=100)
+  cry=GameData::Species.cry_filename(pok.upcase,form)
   pbSEPlay(cry,vol,pch)
   #Example: vCry(25,120,50) - Plays Pikachu's Cry at 120% volume and 50% pitch.
   #Alternatives: vPlayCry(), vPC()

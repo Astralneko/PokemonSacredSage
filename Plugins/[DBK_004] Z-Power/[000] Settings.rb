@@ -19,12 +19,12 @@ module Settings
   #-----------------------------------------------------------------------------
   # Switch used to determine whether Z-Move functionality is available.
   #-----------------------------------------------------------------------------
-  NO_ZMOVE = 64
+  NO_ZMOVE = 101
   
   #-----------------------------------------------------------------------------
   # Switch used to determine whether Ultra Burst functionality is available.
   #-----------------------------------------------------------------------------
-  NO_ULTRA_BURST = 65
+  NO_ULTRA_BURST = 102
   
   #-----------------------------------------------------------------------------
   # When true, plays the Z-Move animation whenever triggered.
@@ -45,5 +45,5 @@ module Settings
   # Sets the bag pocket used for Z-Crystals. This adds a new bag slot by default.
   # YOU WILL NEED TO RECOMPILE AND CLEAR YOUR BAG WHENEVER YOU CHANGE THIS SETTING.
   #-----------------------------------------------------------------------------
-  ZCRYSTAL_BAG_POCKET = 9
+  ZCRYSTAL_BAG_POCKET = 10
 end

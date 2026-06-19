@@ -491,7 +491,7 @@ def pbMessageDisplay(msgwindow, message, letterbyletter = true, commandProc = ni
   # Controls
   textchunks = []
   controls = []
-  while text[/(?:\\(f|ff|ts|cl|me|se|wt|wtnp|ch|xn)\[([^\]]*)\]|\\(g|cn|pt|wd|wm|op|cl|wu|\.|\||\!|\^))/i]
+  while text[/(?:\\(f|ff|ts|cl|me|se|wt|wtnp|ch|xn)\[([^\]]*)\]|\\(g|cn|pt|wd|wm|op|cl|wu|\.|\||\;|\!|\^))/i]
     textchunks.push($~.pre_match)
     if $~[1]
       controls.push([$~[1].downcase, $~[2], -1])
@@ -508,7 +508,7 @@ def pbMessageDisplay(msgwindow, message, letterbyletter = true, commandProc = ni
   controls.length.times do |i|
     control = controls[i][0]
     case control
-    when "wt", "wtnp", ".", "|"
+    when "wt", "wtnp", ".", "|", ";"
       textchunks[i] += "\2"
     when "!"
       textchunks[i] += "\1"
@@ -650,8 +650,10 @@ def pbMessageDisplay(msgwindow, message, letterbyletter = true, commandProc = ni
         end
       when "ts"     # Change text speed
         msgwindow.textspeed = (param == "") ? 0 : param.to_i / 80.0
-      when "."      # Wait 0.25 seconds
-        msgwindow.waitcount += 0.25
+      when "."      # Wait 1/6 seconds
+        msgwindow.waitcount += 1.0 / 6.0
+      when ";"      # Wait 1/2 seconds
+        msgwindow.waitcount += 0.5
       when "|"      # Wait 1 second
         msgwindow.waitcount += 1.0
       when "wt"     # Wait X/20 seconds

@@ -210,11 +210,20 @@ Modular_Messages::Controls.add("ts", {
 })
 
 #-------------------------------
-# Wait 0.25 seconds
+# Wait 0.1666 seconds
 Modular_Messages::Controls.add("fstp", {
   "solo" => true,
   "during_loop" => proc { |hash, param|
-    hash["msg_window"].waitcount += 0.25
+    hash["msg_window"].waitcount += 1.0/6.0
+  }
+})
+
+#-------------------------------
+# Wait 0.5 seconds
+Modular_Messages::Controls.add("scln", {
+  "solo" => true,
+  "during_loop" => proc { |hash, param|
+    hash["msg_window"].waitcount += 0.5
   }
 })
 

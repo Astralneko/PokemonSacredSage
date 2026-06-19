@@ -10,7 +10,7 @@
 #
 #===============================================================================
 module DialogueSound
-  @sound_effect_name = "boopSINE"    # This is the default SE for the text.
+  @sound_effect_name = "Dialogue/boopSINE"    # This is the default SE for the text.
   @sound_enabled = true              # If it's enabled by default.
   @sound_interval = 2                # This is the number of letters to be 
 #                                      displayed before the sound is played.

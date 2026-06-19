@@ -226,6 +226,15 @@ class Game_Event < Game_Character
     end
     @tile_id              = @page.graphic.tile_id
     @character_name       = @page.graphic.character_name
+    #============================================
+    # Overworld pokemon folder script
+    #============================================
+    if @event.name[/poke\((\w+)\)/i]
+      @character_name = "Followers/"+$~[1]
+    elsif @event.name[/poke\((\w+),(\d+)\)/i]
+      @character_name = "Followers/"+$~[1]+"_"+$~[2]
+    end
+    #============================================
     @character_hue        = @page.graphic.character_hue
     if @original_direction != @page.graphic.direction
       @direction          = @page.graphic.direction

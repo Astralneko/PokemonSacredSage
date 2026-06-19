@@ -207,9 +207,9 @@ module Astralneko_Config
 #=====================================================================================
 
 	# Map of dialogue sounds
-	DIALOGUE_SFX = {
-		'Natsuki': 'boopSQUARE'
-	}
+	DIALOGUE_SFX = [
+		["Natsuki", "Dialogue/boopSQUARE2"]
+	]
 
 	# Form data for Vivillon forms
 	VIVILLON_FORMS = [

@@ -61,7 +61,7 @@ class VPM_BugContestHud < Component
 end
 
 #-------------------------------------------------------------------------------
-# Pokemon Party Hud component
+# Pokemon Party Hud component - Everything has been moved down 12 px from the default (except the shiny star)
 #-------------------------------------------------------------------------------
 class VPM_PokemonPartyHud < Component
   def start_component(viewport, menu)
@@ -94,12 +94,12 @@ class VPM_PokemonPartyHud < Component
       # Pokémon Icon
       @sprites["pokemon_#{i}"] = PokemonIconSprite.new(pokemon, @viewport) if !@sprites["pokemon#{i}"] || @sprites["pokemon#{i}"].disposed?
       @sprites["pokemon_#{i}"].x = spacing + (Graphics.width / 8)
-      @sprites["pokemon_#{i}"].y = Graphics.height - 164
+      @sprites["pokemon_#{i}"].y = Graphics.height - 152
       @sprites["pokemon_#{i}"].y += Graphics.height / 2 if @menu.hidden && !@menu.start_up
       @sprites["pokemon_#{i}"].z = -2
       next if pokemon.egg?
       # Information Overlay
-      @sprites["overlay"].bitmap.blt(spacing + (Graphics.width / 8) + 16, (Graphics.height / 2) - 102,
+      @sprites["overlay"].bitmap.blt(spacing + (Graphics.width / 8) + 16, (Graphics.height / 2) - 90,
                           @info_bar_bmp, Rect.new(0, 0, @info_bar_bmp.width, @info_bar_bmp.height))
       # Health
       if pokemon.hp > 0
@@ -110,7 +110,7 @@ class VPM_PokemonPartyHud < Component
         hpzone = 1 if pokemon.hp <= (pokemon.totalhp/2).floor
         hpzone = 2 if pokemon.hp <= (pokemon.totalhp/4).floor
         hprect = Rect.new(0, hpzone * 4, w, 4)
-        @sprites["overlay"].bitmap.blt(spacing + (Graphics.width/8) + 18, (Graphics.height / 2) - 100, @hp_bar_bmp, hprect)
+        @sprites["overlay"].bitmap.blt(spacing + (Graphics.width/8) + 18, (Graphics.height / 2) - 88, @hp_bar_bmp, hprect)
       end
       # EXP
       if pokemon.exp > 0
@@ -122,11 +122,11 @@ class VPM_PokemonPartyHud < Component
         w = 0 if w.is_a?(Float) && w.nan?
         w = ((w / 2).round) * 2 if w > 0 # I heard Pokémon Beekeeper was good
         exprect = Rect.new(0, 0, w, 2)
-        @sprites["overlay"].bitmap.blt(spacing + (Graphics.width / 8) + 22, (Graphics.height / 2) - 94, @exp_bar_bmp, exprect)
+        @sprites["overlay"].bitmap.blt(spacing + (Graphics.width / 8) + 22, (Graphics.height / 2) - 82, @exp_bar_bmp, exprect)
       end
       # Item Icon
       if pokemon.hasItem?
-        @sprites["overlay"].bitmap.blt(spacing + (Graphics.width / 8) + 52, (Graphics.height / 2) - 116,
+        @sprites["overlay"].bitmap.blt(spacing + (Graphics.width / 8) + 52, (Graphics.height / 2) - 104,
         @item_bmp,Rect.new(0, 0, @item_bmp.width, @item_bmp.height))
       end
       # Status
@@ -140,7 +140,7 @@ class VPM_PokemonPartyHud < Component
       end
       if status > 0
         statusrect = Rect.new(0, 8 * status, 8, 8)
-        @sprites["overlay"].bitmap.blt(spacing + (Graphics.width/8) + 48, (Graphics.height / 2) - 106, @status_bmp, statusrect)
+        @sprites["overlay"].bitmap.blt(spacing + (Graphics.width/8) + 48, (Graphics.height / 2) - 94, @status_bmp, statusrect)
       end
       # Shiny Icon
       if pokemon.shiny?

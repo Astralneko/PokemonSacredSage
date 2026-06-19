@@ -183,7 +183,7 @@ class VoltseonsPauseMenu_Scene
         yvals[cname][key] = sprite.y
       end
     end
-    duration = (6 * (Graphics.average_frame_rate / 60.0)).floor
+    duration = (6 * (Graphics.average_frame_rate / 40.0)).floor
     duration.times do |i|
       factor = (i + 1).to_f / duration
       Graphics.update

@@ -10,17 +10,17 @@ module Settings
   #-----------------------------------------------------------------------------
   # Switch used to determine whether Dynamax functionality is available.
   #-----------------------------------------------------------------------------
-  NO_DYNAMAX = 66
+  NO_DYNAMAX = 103
   
   #-----------------------------------------------------------------------------
   # Switch used to determine whether every map is considered a Power Spot.
   #-----------------------------------------------------------------------------
-  DYNAMAX_ON_ANY_MAP = 67
+  DYNAMAX_ON_ANY_MAP = 111
   
   #-----------------------------------------------------------------------------
   # Switch used to determine whether the player may Dynamax in wild battles.
   #-----------------------------------------------------------------------------
-  DYNAMAX_IN_WILD_BATTLES = 68
+  DYNAMAX_IN_WILD_BATTLES = 112
   
   #-----------------------------------------------------------------------------
   # The number of turns Dynamax lasts before expiring.

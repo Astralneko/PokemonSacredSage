@@ -3,2856 +3,3306 @@
 # Gen AN-I Crafting Items
 # Note: Starters, Legendary Pokémon, Ultra Beasts, and Paradox Pokémon get skipped
 #-------------------------------
-[EKANSFANG]
-Name = Ekans Fang
-NamePlural = Ekans Fangs
+[ABRA]
+Name = Abra Tail
+NamePlural = Abra Tails
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A fang that was dropped by a fleeing Ekans. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[SANDSHREWCLAW]
-Name = Sandshrew Claw
-NamePlural = Sandshrew Claws
+[ABSOL]
+Name = Absol Claw
+NamePlural = Absol Claws
 Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Sandshrew. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[VULPIXFUR]
-Name = Vulpix Fur
-NamePlural = Vulpix Fur
+[AERODACTYL]
+Name = Aerodactyl Fang
+NamePlural = Aerodactyl Fangs
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Vulpix. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[ODDISHLEAF]
-Name = Oddish Leaf
-NamePlural = Oddish Leaves
-Pocket = 7
-Price = 70
-Flags = Material_TM
-Description = A leaf that was dropped by a fleeing Oddish. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[VENONATFANG]
-Name = Venonat Fang
-NamePlural = Venonat Fangs
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A fang that was dropped by a fleeing Venonat. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[DIGLETTDIRT]
-Name = Diglett Dirt
-NamePlural = Diglett Dirt
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some dirt that was dropped by a fleeing Diglett. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MEOWTHFUR]
-Name = Meowth Fur
-NamePlural = Meowth Fur
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Meowth. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[PSYDUCKDOWN]
-Name = Psyduck Down
-NamePlural = Psyduck Down
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some feathers that were dropped by a fleeing Psyduck. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MANKEYFUR]
-Name = Mankey Fur
-NamePlural = Mankey Fur
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Mankey. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[GROWLITHEFUR]
-Name = Growlithe Fur
-NamePlural = Growlithe Fur
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Growlithe. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[POLIWAGSLIME]
-Name = Poliwag Slime
-NamePlural = Poliwag Slime
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some slime that was dropped by a fleeing Poliwag. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[BELLSPROUTVINE]
-Name = Bellsprout Vine
-NamePlural = Bellsprout Vines
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A vine that was dropped by a fleeing Bellsprout. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[TENTACOOLSTINGER]
-Name = Tentacool Stinger
-NamePlural = Tentacool Stingers
-Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = A stinger that was dropped by a fleeing Tentacool. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[GEODUDEFRAGMENT]
-Name = Geodude Fragment
-NamePlural = Geodude Fragments
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A fragment that was dropped by a fleeing Geodude. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SLOWPOKECLAW]
-Name = Slowpoke Claw
-NamePlural = Slowpoke Claws
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Slowpoke. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MAGNEMITESCREW]
-Name = Magnemite Screw
-NamePlural = Magnemite Screws
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A screw that was dropped by a fleeing Magnemite. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[DODUODOWN]
-Name = Doduo Down
-NamePlural = Doduo Down
-Pocket = 7
-Price = 20
-Flags = Material_TM
-Description = Some down that was dropped by a fleeing Doduo. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SEELFUR]
-Name = Seel Fur
-NamePlural = Seel Fur
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Seel. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[GRIMERTOXIN]
-Name = Grimer Toxin
-NamePlural = Grimer Toxins
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some goop that was dropped by a fleeing Grimer. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SHELLDERPEARL]
-Name = Shellder Pearl
-NamePlural = Shellder Pearls
-Pocket = 7
-Price = 70
-Flags = Material_TM
-Description = A pearl that was dropped by a fleeing Shellder. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[GASTLYGAS]
-Name = Gastly Gas
-NamePlural = Gastly Gas
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some gas that was dropped by a fleeing Gastly. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[DROWZEEFUR]
-Name = Drowzee Fur
-NamePlural = Drowzee Fur
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Drowzee. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[VOLTORBSPARKS]
-Name = Voltorb Sparks
-NamePlural = Voltorb Sparks
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some sparks that were dropped by a fleeing Voltorb. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[EXEGGCUTESHELL]
-Name = Exeggcute Shell
-NamePlural = Exeggcute Shells
-Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = A shell that was dropped by a fleeing Exeggcute. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[KOFFINGGAS]
-Name = Koffing Gas
-NamePlural = Koffing Gas
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some gas that was dropped by a fleeing Koffing. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[RHYHORNFANG]
-Name = Rhyhorn Fang
-NamePlural = Rhyhorn Fangs
-Pocket = 7
-Price = 120
-Flags = Material_TM
-Description = A fang that was dropped by a fleeing Rhyhorn. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[HORSEAINK]
-Name = Horsea Ink
-NamePlural = Horsea Ink
-Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = Some ink that was dropped by a fleeing Horsea. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SCYTHERCLAW]
-Name = Scyther Claw
-NamePlural = Scyther Claws
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Scyther. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[TAUROSHAIR]
-Name = Tauros Hair
-NamePlural = Tauros Hair
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some hair that was dropped by a fleeing Tauros. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MAGIKARPSCALES]
-Name = Magikarp Scales
-NamePlural = Magikarp Scales
-Pocket = 7
-Price = 20
-Flags = Material_TM
-Description = Some scales that were dropped by a fleeing Magikarp. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[LAPRASTEARDROP]
-Name = Lapras Teardrop
-NamePlural = Lapras Teardrops
-Pocket = 7
-Price = 120
-Flags = Material_TM
-Description = A teardrop that was dropped by a fleeing Lapras. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[DITTOGOO]
-Name = Ditto Goo
-NamePlural = Ditto Goo
-Pocket = 7
-Price = 150
-Flags = Material_TM
-Description = Some goo that was dropped by a fleeing Ditto. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[EEVEEFUR]
-Name = Eevee Fur
-NamePlural = Eevee Fur
-Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Eevee. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[PORYGONFRAGMENT]
-Name = Porygon Fragment
-NamePlural = Porygon Fragments
-Pocket = 7
-Price = 120
-Flags = Material_TM
-Description = A fragment that was dropped by a fleeing Porygon. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[DRATINISCALES]
-Name = Dratini Scales
-NamePlural = Dratini Scales
-Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = Some scales that were dropped by a fleeing Dratini. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SENTRETFUR]
-Name = Sentret Fur
-NamePlural = Sentret Fur
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Sentret. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[HOOTHOOTFEATHER]
-Name = Hoothoot Feather
-NamePlural = Hoothoot Feathers
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = A feather that was dropped by a fleeing Hoothoot. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SPINARAKTHREAD]
-Name = Spinarak Thread
-NamePlural = Spinarak Thread
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some thread that was dropped by a fleeing Spinarak. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[CHINCHOUSPARKS]
-Name = Chinchou Sparks
-NamePlural = Chinchou Sparks
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some sparks that were dropped by a fleeing Chinchou. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[PICHUFUR]
-Name = Pichu Fur
-NamePlural = Pichu Fur
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Pichu. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[CLEFFAFUR]
-Name = Cleffa Fur
-NamePlural = Cleffa Fur
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Cleffa. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[IGGLYBUFFFLUFF]
-Name = Igglybuff Fluff
-NamePlural = Igglybuff Fluff
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some fluff that was dropped by a fleeing Igglybuff. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MAREEPWOOL]
-Name = Mareep Wool
-NamePlural = Mareep Wool
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some wool that was dropped by a fleeing Mareep. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[HOPPIPLEAF]
-Name = Hoppip Leaf
-NamePlural = Hoppip Leaves
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = A leaf that was dropped by a fleeing Hoppip. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[AIPOMHAIR]
+[AIPOM]
 Name = Aipom Hair
-NamePlural = Aipom Hair
+NamePlural = Aipom Hairs
 Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some hair that was dropped by a fleeing Aipom. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[SUNKERNLEAF]
-Name = Sunkern Leaf
-NamePlural = Sunkern Leaves
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = A leaf that was dropped by a fleeing Sunkern. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[YANMASPIKE]
-Name = Yanma Spike
-NamePlural = Yanma Spikes
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = A spike that was dropped by a fleeing Yanma. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[WOOPERSLIME]
-Name = Wooper Slime
-NamePlural = Wooper Slime
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some slime that was dropped by a fleeing Wooper. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MURKROWBAUBLE]
-Name = Murkrow Bauble
-NamePlural = Murkrow Baubles
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = A bauble that was dropped by a fleeing Murkrow. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MISDREAVUSTEARS]
-Name = Misdreavus Tears
-NamePlural = Misdreavus Tears
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some tears that were dropped by a fleeing Misdreavus. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[GIRAFARIGFUR]
-Name = Girafarig Fur
-NamePlural = Girafarig Fur
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Girafarig. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[PINECOHUSK]
-Name = Pineco Husk
-NamePlural = Pineco Husks
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A husk that was dropped by a fleeing Pineco. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[DUNSPARCESCALES]
-Name = Dunsparce Scales
-NamePlural = Dunsparce Scales
-Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = Some scales that were dropped by a fleeing Dunsparce. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[GLIGARFANG]
-Name = Gligar Fang
-NamePlural = Gligar Fangs
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A fang that was dropped by a fleeing Gligar. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SNUBBULLHAIR]
-Name = Snubbull Hair
-NamePlural = Snubbull Hair
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some hair that was dropped by a fleeing Snubbull. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[QWILFISHSPINES]
-Name = Qwilfish Spines
-NamePlural = Qwilfish Spines
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some spines that were dropped by a fleeing Qwilfish. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[HERACROSSCLAW]
-Name = Heracross Claw
-NamePlural = Heracross Claws
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Heracross. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SNEASELCLAW]
-Name = Sneasel Claw
-NamePlural = Sneasel Claws
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Sneasel. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[TEDDIURSACLAW]
-Name = Teddiursa Claw
-NamePlural = Teddiursa Claws
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Teddiursa. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SLUGMALAVA]
-Name = Slugma Lava
-NamePlural = Slugma Lava
-Pocket = 7
-Price = 70
-Flags = Material_TM
-Description = Some lava that was dropped by a fleeing Slugma. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SWINUBHAIR]
-Name = Swinub Hair
-NamePlural = Swinub Hair
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some hair that was dropped by a fleeing Swinub. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[DELIBIRDPARCEL]
-Name = Delibird Parcel
-NamePlural = Delibird Parcels
-Pocket = 7
-Price = 120
-Flags = Material_TM
-Description = A parcel that was dropped by a fleeing Delibird. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SKARMORYFEATHER]
-Name = Skarmory Feather
-NamePlural = Skarmory Feathers
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = A feather that was dropped by a fleeing Skarmory. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[HOUNDOURFANG]
-Name = Houndour Fang
-NamePlural = Houndour Fangs
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A fang that was dropped by a fleeing Houndour. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[PHANPYNAIL]
-Name = Phanpy Nail
-NamePlural = Phanpy Nails
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A nail that was dropped by a fleeing Phanpy. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[STANTLERHAIR]
-Name = Stantler Hair
-NamePlural = Stantler Hair
-Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = Some hair that was dropped by a fleeing Stantler. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SMEARGLEPAINT]
-Name = Smeargle Paint
-NamePlural = Smeargle Paint
-Pocket = 7
-Price = 20
-Flags = Material_TM
-Description = Some paint that was dropped by a fleeing Smeargle. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[TYROGUESWEAT]
-Name = Tyrogue Sweat
-NamePlural = Tyrogue Sweat
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some sweat that was dropped by a fleeing Tyrogue. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[ELEKIDFUR]
-Name = Elekid Fur
-NamePlural = Elekid Fur
-Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Elekid. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MAGBYHAIR]
-Name = Magby Hair
-NamePlural = Magby Hair
-Pocket = 7
-Price = 150
-Flags = Material_TM
-Description = Some hair that was dropped by a fleeing Magby. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[LARVITARCLAW]
-Name = Larvitar Claw
-NamePlural = Larvitar Claws
-Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Larvitar. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[POOCHYENAFANG]
-Name = Poochyena Fang
-NamePlural = Poochyena Fangs
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A fang that was dropped by a fleeing Houndour. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[LOTADLEAF]
-Name = Lotad Leaf
-NamePlural = Lotad Leaves
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = A leaf that was dropped by a fleeing Lotad. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SEEDOTSTEM]
-Name = Seedot Stem
-NamePlural = Seedot Stems
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A stem that was dropped by a fleeing Seedot. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[WINGULLFEATHER]
-Name = Wingull Feather
-NamePlural = Wingull Feathers
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = A feather that was dropped by a fleeing Wingull. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[RALTSDUST]
-Name = Ralts Dust
-NamePlural = Ralts Dust
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some dust that was dropped by a fleeing Ralts. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SURSKITSYRUP]
-Name = Surskit Syrup
-NamePlural = Surskit Syrup
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some syrup that was dropped by a fleeing Surskit. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SHROOMISHSPORES]
-Name = Shroomish Spores
-NamePlural = Shroomish Spores
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some syrup that was dropped by a fleeing Shroomish. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SLAKOTHFUR]
-Name = Slakoth Fur
-NamePlural = Slakoth Fur
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Slakoth. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MAKUHITASWEAT]
-Name = Makuhita Sweat
-NamePlural = Makuhita Sweat
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some sweat that was dropped by a fleeing Makuhita. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[AZURILLFUR]
-Name = Azurill Fur
-NamePlural = Azurill Fur
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Azurill. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[NOSEPASSFRAGMENT]
-Name = Nosepass Fragment
-NamePlural = Nosepass Fragments
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A fragment that was dropped by a fleeing Nosepass. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SABLEYEGEM]
-Name = Sableye Gem
-NamePlural = Sableye Gems
-Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = A gem that was dropped by a fleeing Gem. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MEDITITESWEAT]
-Name = Meditite Sweat
-NamePlural = Meditite Sweat
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some sweat that was dropped by a fleeing Meditite. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[PLUSLEFUR]
-Name = Plusle Fur
-NamePlural = Plusle Fur
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Plusle. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MINUNFUR]
-Name = Minun Fur
-NamePlural = Minun Fur
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Minun. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[VOLBEATFLUID]
-Name = Volbeat Fluid
-NamePlural = Volbeat Fluid
-Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = Some fluid that was dropped by a fleeing Volbeat. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[ILLUMISEFLUID]
-Name = Illumise Fluid
-NamePlural = Illumise Fluid
-Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = Some fluid that was dropped by a fleeing Illumise. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[GULPINMUCUS]
-Name = Gulpin Mucus
-NamePlural = Gulpin Mucus
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some mucus that was dropped by a fleeing Gulpin. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[NUMELLAVA]
-Name = Numel Lava
-NamePlural = Numel Lava
-Pocket = 7
-Price = 70
-Flags = Material_TM
-Description = Some lava that was dropped by a fleeing Numel. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[TORKOALCOAL]
-Name = Torkoal Coal
-NamePlural = Torkoal Coals
-Pocket = 7
-Price = 70
-Flags = Material_TM
-Description = A coal that was dropped by a fleeing Torkoal. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SPOINKPEARL]
-Name = Spoink Pearl
-NamePlural = Spoink Pearls
-Pocket = 7
-Price = 70
-Flags = Material_TM
-Description = A pearl that was dropped by a fleeing Spoink. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[TRAPINCHSHELL]
-Name = Trapinch Shell
-NamePlural = Trapinch Shells
-Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = A shell that was dropped by a fleeing Trapinch. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[CACNEANEEDLE]
-Name = Cacnea Needle
-NamePlural = Cacnea Needle
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A needle that was dropped by a fleeing Cacnea. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SWABLUFLUFF]
-Name = Swablu Fluff
-NamePlural = Swablu Fluff
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some fluff that was dropped by a fleeing Swablu. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[ZANGOOSECLAW]
-Name = Zangoose Claw
-NamePlural = Zangoose Claws
-Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Zangoose. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SEVIPERFANG]
-Name = Seviper Fang
-NamePlural = Seviper Fangs
-Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = A fang that was dropped by a fleeing Seviper. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[BARBOACHSLIME]
-Name = Barboach Slime
-NamePlural = Barboach Slime
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some slime that was dropped by a fleeing Barboach. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[CORPHISHSHELL]
-Name = Corphish Shell
-NamePlural = Corphish Shells
-Pocket = 7
-Price = 20
-Flags = Material_TM
-Description = A shell that was dropped by a fleeing Corphish. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[FEEBASSCALES]
-Name = Feebas Scales
-NamePlural = Feebas Scales
-Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = Some scales that were dropped by a fleeing Feebas. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SHUPPETSCRAP]
-Name = Shuppet Scrap
-NamePlural = Shuppet Scraps
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A fabric scrap that was dropped by a fleeing Shuppet. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[DUSKULLFRAGMENT]
-Name = Duskull Fragment
-NamePlural = Duskull Fragments
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A fragment that was dropped by a fleeing Duskull. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[TROPIUSLEAF]
-Name = Tropius Leaf
-NamePlural = Tropius Leaves
-Pocket = 7
-Price = 70
-Flags = Material_TM
-Description = A leaf that was dropped by a fleeing Tropius. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SNORUNTFUR]
-Name = Snorunt Fur
-NamePlural = Snorunt Fur
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Snorunt. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[LUVDISCSCALES]
-Name = Luvdisc Scales
-NamePlural = Luvdisc Scales
-Pocket = 7
-Price = 80
-Flags = Material_TM
-Description = Some scales that were dropped by a fleeing Luvdisc. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[BAGONSCALES]
-Name = Bagon Scales
-NamePlural = Bagon Scales
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some scales that were dropped by a fleeing Bagon. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[BELDUMCLAW]
-Name = Beldum Claw
-NamePlural = Beldum Claws
-Pocket = 7
-Price = 150
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Beldum. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[STARLYFEATHER]
-Name = Starly Feather
-NamePlural = Starly Feathers
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = A feather that was dropped by a fleeing Starly. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[KRICKETOTSHELL]
-Name = Kricketot Shell
-NamePlural = Kricketot Shells
-Pocket = 7
-Price = 20
-Flags = Material_TM
-Description = A shell that was dropped by a fleeing Kricketot. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SHINXFANG]
-Name = Shinx Fang
-NamePlural = Shinx Fangs
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = A fang that was dropped by a fleeing Shinx. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[CRANIDOSSPIKE]
-Name = Cranidos Spike
-NamePlural = Cranidos Spikes
-Pocket = 7
-Price = 80
-Flags = Material_TM
-Description = A spike that was dropped by a fleeing Cranidos. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SHIELDONCLAW]
-Name = Shieldon Claw
-NamePlural = Shieldon Claws
-Pocket = 7
-Price = 80
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Shieldon. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[COMBEEHONEY]
-Name = Combee Honey
-NamePlural = Combee Honey
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some honey that was dropped by a fleeing Combee. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[PACHIRISUFUR]
-Name = Pachirisu Fur
-NamePlural = Pachirisu Fur
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Pachirisu. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[BUIZELFUR]
-Name = Buizel Fur
-NamePlural = Buizel Fur
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Buizel. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SHELLOSMUCUS]
-Name = Shellos Mucus
-NamePlural = Shellos Mucus
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some mucus that was dropped by a fleeing Shellos. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[DRIFLOONGAS]
-Name = Drifloon Gas
-NamePlural = Drifloon Gas
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some gas that was dropped by a fleeing Drifloon. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[CHINGLINGFRAGMENT]
-Name = Chingling Fragment
-NamePlural = Chingling Fragments
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A fragment that was dropped by a fleeing Chingling. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[STUNKYFUR]
-Name = Stunky Fur
-NamePlural = Stunky Fur
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Stunky. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[BRONZORFRAGMENT]
-Name = Bronzor Fragment
-NamePlural = Bronzor Fragments
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A fragment that was dropped by a fleeing Bronzor. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[BONSLYTEARS]
-Name = Bonsly Tears
-NamePlural = Bonsly Tears
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some tears that were dropped by a fleeing Bonsly. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[HAPPINYDUST]
-Name = Happiny Dust
-NamePlural = Happiny Dust
-Pocket = 7
-Price = 150
-Flags = Material_TM
-Description = Some dust that was dropped by a fleeing Happiny. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SPIRITOMBFRAGMENT]
-Name = Spiritomb Fragment
-NamePlural = Spiritomb Fragments
-Pocket = 7
-Price = 120
-Flags = Material_TM
-Description = A fragment that was dropped by a fleeing Spiritomb. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[GIBLESCALES]
-Name = Gible Scales
-NamePlural = Gible Scales
-Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = Some scales that were dropped by a fleeing Gible. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MUNCHLAXFANG]
-Name = Munchlax Fang
-NamePlural = Munchlax Fangs
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A fang that was dropped by a fleeing Munchlax. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[RIOLUFUR]
-Name = Riolu Fur
-NamePlural = Riolu Fur
-Pocket = 7
-Price = 80
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Riolu. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[HIPPOPOTASSAND]
-Name = Hippopotas Sand
-NamePlural = Hippopotas Sand
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some sand that was dropped by a fleeing Hippopotas. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[CROAGUNKPOISON]
-Name = Croagunk Poison
-NamePlural = Croagunk Poison
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some poison that was dropped by a fleeing Croagunk. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[FINNEONSCALES]
-Name = Finneon Scales
-NamePlural = Finneon Scales
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some scales that were dropped by a fleeing Finneon. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SNOVERBERRIES]
-Name = Snover Berries
-NamePlural = Snover Berries
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some berries that were dropped by a fleeing Snover. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[ROTOMSPARKS]
-Name = Rotom Sparks
-NamePlural = Rotom Sparks
-Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = Some sparks that were dropped by a fleeing Rotom. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[BLITZLEMANEHAIR]
-Name = Blitzle Mane Hair
-NamePlural = Blitzle Mane Hair
-Pocket = 7
-Price = 80
-Flags = Material_TM
-Description = Some hair that was dropped by a fleeing Blitzle. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[DRILBURCLAW]
-Name = Drilbur Claw
-NamePlural = Drilbur Claws
-Pocket = 7
-Price = 120
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Drilbur. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[TIMBURRSWEAT]
-Name = Timburr Sweat
-NamePlural = Timburr Sweat
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some sweat that was dropped by a fleeing Timburr. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SEWADDLELEAF]
-Name = Sewaddle Leaf
-NamePlural = Sewaddle Leaves
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = A leaf that was dropped by a fleeing Sewaddle. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[COTTONEEFLUFF]
-Name = Cottonee Fluff
-NamePlural = Cottonee Fluff
-Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = Some fluff that was dropped by a fleeing Cottonee. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[PETILILLEAF]
-Name = Petilil Leaf
-NamePlural = Petilil Leaves
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = A leaf that was dropped by a fleeing Petilil. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[BASCULINFANG]
-Name = Basculin Fang
-NamePlural = Basculin Fangs
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A fang that was dropped by a fleeing Basculin. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SANDILECLAW]
-Name = Sandile Claw
-NamePlural = Sandile Claws
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Sandile. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SCRAGGYSWEAT]
-Name = Scraggy Sweat
-NamePlural = Scraggy Sweat
-Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = Some sweat that was dropped by a fleeing Scraggy. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[ZORUAFUR]
-Name = Zorua Fur
-NamePlural = Zorua Fur
-Pocket = 7
-Price = 70
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Zorua. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MINCCINOFUR]
-Name = Minccino Fur
-NamePlural = Minccino Fur
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Minccino. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[GOTHITAEYELASH]
-Name = Gothita Eyelash
-NamePlural = Gothita Eyelashes
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = An eyelash that was dropped by a fleeing Gothita. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SOLOSISGEL]
-Name = Solosis Gel
-NamePlural = Solosis Gel
-Pocket = 7
-Price = 70
-Flags = Material_TM
-Description = Some gel that was dropped by a fleeing Solosis. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[DUCKLETTFEATHER]
-Name = Ducklett Feather
-NamePlural = Ducklett Feathers
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = A feather that was dropped by a fleeing Ducklett. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[DEERLINGHAIR]
-Name = Deerling Hair
-NamePlural = Deerling Hair
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some hair that was dropped by a fleeing Deerling. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[FOONGUSSPORES]
-Name = Foongus Spores
-NamePlural = Foongus Spores
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some syrup that was dropped by a fleeing Foongus. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[ALOMOMOLAMUCUS]
+[ALOMOMOLA]
 Name = Alomomola Mucus
 NamePlural = Alomomola Mucus
 Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = Some mucus that was dropped by a fleeing Alomomola. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[JOLTIKTHREAD]
-Name = Joltik Thread
-NamePlural = Joltik Thread
+[AMAURA]
+Name = Amaura Sail
+NamePlural = Amaura Sails
 Pocket = 7
-Price = 20
-Flags = Material_TM
-Description = Some thread that was dropped by a fleeing Joltik. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[TYNAMOSLIME]
-Name = Tynamo Slime
-NamePlural = Tynamo Slime
+[ANORITH]
+Name = Anorith Claw
+NamePlural = Anorith Claws
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some slime that was dropped by a fleeing Tynamo. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[LITWICKSOOT]
-Name = Litwick Soot
-NamePlural = Litwick Soot
-Pocket = 7
-Price = 80
-Flags = Material_TM
-Description = Some soot that was dropped by a fleeing Litwick. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[AXEWSCALES]
-Name = Axew Scales
-NamePlural = Axew Scales
-Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = Some scales that were dropped by a fleeing Axew. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[CUBCHOOFUR]
-Name = Cubchoo Fur
-NamePlural = Cubchoo Fur
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Cubchoo. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[CRYOGONALICE]
-Name = Cryogonal Ice
-NamePlural = Cryogonal Ice
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = An ice fragment that was dropped by a fleeing Cryogonal. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MIENFOOCLAW]
-Name = Mienfoo Claw
-NamePlural = Mienfoo Claws
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Mienfoo. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[GOLETTSHARD]
-Name = Golett Shard
-NamePlural = Golett Shards
-Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = A shard that was dropped by a fleeing Golett. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[PAWNIARDBLADE]
-Name = Pawniard Blade
-NamePlural = Pawniard Blades
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A blade that was dropped by a fleeing Pawniard. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[RUFFLETFEATHER]
-Name = Rufflet Feather
-NamePlural = Rufflet Feathers
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A feather that was dropped by a fleeing Rufflet. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[VULLABYFEATHER]
-Name = Vullaby Feather
-NamePlural = Vullaby Feathers
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = A feather that was dropped by a fleeing Vullaby. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[DEINOSCALES]
-Name = Deino Scales
-NamePlural = Deino Scales
-Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = Some scales that were dropped by a fleeing Deino. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[LARVESTAFUZZ]
-Name = Larvesta Fuzz
-NamePlural = Larvesta Fuzz
-Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = Some fuzz that was dropped by a fleeing Larvesta. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[FLETCHLINGFEATHER]
-Name = Fletchling Feather
-NamePlural = Fletchling Feathers
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = A feather that was dropped by a fleeing Fletchling. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SCATTERBUGPOWDER]
-Name = Scatterbug Powder
-NamePlural = Scatterbug Powder
-Pocket = 7
-Price = 20
-Flags = Material_TM
-Description = Some powder that was dropped by a fleeing Scatterbug. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[LITLEOTUFT]
-Name = Litleo Tuft
-NamePlural = Litleo Tufts
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Litleo. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[FLABEBEPOLLEN]
-Name = Flabébé Pollen
-NamePlural = Flabébé Pollen
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some pollen that was dropped by a fleeing Flabébé. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SKIDDOLEAF]
-Name = Skiddo Leaf
-NamePlural = Skiddo Leaves
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A leaf that was dropped by a fleeing Skiddo. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[ESPURRFUR]
-Name = Espurr Fur
-NamePlural = Espurr Fur
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some furthat was dropped by a fleeing Espurr. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[INKAYINK]
-Name = Inkay Ink
-NamePlural = Inkay Ink
-Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = Some ink that was dropped by a fleeing Inkay. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SKRELPKELP]
-Name = Skrelp Kelp
-NamePlural = Skrelp Kelp
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some kelp that was dropped by a fleeing Skrelp. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[CLAUNCHERCLAW]
-Name = Clauncher Claw
-NamePlural = Clauncher Claws
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Clauncher. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[HAWLUCHADOWN]
-Name = Hawlucha Down
-NamePlural = Hawlucha Down
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some feathers that were dropped by a fleeing Hawlucha. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[DEDENNEFUR]
-Name = Dedenne Fur
-NamePlural = Dedenne Fur
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Dedenne. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[CARBINKJEWEL]
-Name = Carbink Jewel
-NamePlural = Carbink Jewels
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A jewel that was dropped by a fleeing Carbink. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[GOOMYGOO]
-Name = Goomy Goo
-NamePlural = Goomy Goo
-Pocket = 7
-Price = 70
-Flags = Material_TM
-Description = Some goo that was dropped by a fleeing Goomy. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[KLEFKIKEY]
-Name = Klefki Key
-NamePlural = Klefki Keys
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = A key that was dropped by a fleeing Klefki. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[PHANTUMPTWIG]
-Name = Phantump Twig
-NamePlural = Phantump Twigs
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A twig that was dropped by a fleeing Phantump. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[BERGMITEICE]
-Name = Bergmite Ice
-NamePlural = Bergmite Ice
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = An ice fragment that was dropped by a fleeing Bergmite. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[NOIBATFUR]
-Name = Noibat Fur
-NamePlural = Noibat Fur
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Noibat. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[PIKIPEKFEATHER]
-Name = Pikipek Feather
-NamePlural = Pikipek Feathers
-Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = A feather that was dropped by a fleeing Pikipek. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[YUNGOOSFUR]
-Name = Yungoos Fur
-NamePlural = Yungoos Fur
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Yungoos. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[GRUBBINTHREAD]
-Name = Grubbin Thread
-NamePlural = Grubbin Thread
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some thread that was dropped by a fleeing Grubbin. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[CRABRAWLERSHELL]
-Name = Crabrawler Shell
-NamePlural = Crabrawler Shells
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = A shell that was dropped by a fleeing Crabrawler. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[ORICORIOFEATHER]
-Name = Oricorio Feather
-NamePlural = Oricorio Feathers
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = A feather that was dropped by a fleeing Oricorio. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[CUTIEFLYPOWDER]
-Name = Cutiefly Powder
-NamePlural = Cutiefly Powder
-Pocket = 7
-Price = 20
-Flags = Material_TM
-Description = Some powder that was dropped by a fleeing Cutiefly. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[ROCKRUFFROCK]
-Name = Rockruff Rock
-NamePlural = Rockruff Rock
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A rock that was dropped by a fleeing Rockruff. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MAREANIESPIKE]
-Name = Mareanie Spike
-NamePlural = Mareanie Spikes
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A spike that was dropped by a fleeing Mareanie. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MUDBRAYMUD]
-Name = Mudbray Mud
-NamePlural = Mudbray Mud
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some mud that was dropped by a fleeing Mudbray. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[DEWPIDERTHREAD]
-Name = Dewpider Thread
-NamePlural = Dewpider Thread
-Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = Some thread that was dropped by a fleeing Drilbur. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[FOMANTISLEAF]
-Name = Fomantis Leaf
-NamePlural = Fomantis Leaves
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A leaf that was dropped by a fleeing Fomantis. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SALANDITGAS]
-Name = Salandit Gas
-NamePlural = Salandit Gas
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some gas that was dropped by a fleeing Salandit. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[BOUNSWEETSWEAT]
-Name = Bounsweet Sweat
-NamePlural = Bounsweet Sweat
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some sweat that was dropped by a fleeing Bounsweet. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[COMFEYFLOWER]
-Name = Comfey Flower
-NamePlural = Comfey Flowers
-Pocket = 7
-Price = 70
-Flags = Material_TM
-Description = A flower that was dropped by a fleeing Comfey. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[ORANGURUFUR]
-Name = Oranguru Fur
-NamePlural = Oranguru Fur
-Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Oranguru. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[PASSIMIANFUR]
-Name = Passimian Fur
-NamePlural = Passimian Fur
-Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Passimian. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SANDYGASTSAND]
-Name = Sandygast Sand
-NamePlural = Sandygast Sand
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some sand that was dropped by a fleeing Sandygast. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MINIORSHELL]
-Name = Minior Shell
-NamePlural = Minior Shells
-Pocket = 7
-Price = 20
-Flags = Material_TM
-Description = A shell that was dropped by a fleeing Minior. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[KOMALACLAW]
-Name = Komala Claw
-NamePlural = Komala Claws
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Komala. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MIMIKYUSCRAP]
-Name = Mimikyu Scrap
-NamePlural = Mimikyu Scraps
-Pocket = 7
-Price = 20
-Flags = Material_TM
-Description = A fabric scrap that was dropped by a fleeing Mimikyu. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[BRUXISHTOOTH]
-Name = Bruxish Tooth
-NamePlural = Bruxish Teeth
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = A tooth that was dropped by a fleeing Bruxish. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[JANGMOOSCALES]
-Name = Jangmo-o Scales
-NamePlural = Jangmo-o Scales
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some scales that were dropped by a fleeing Jangmo-o. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SKWOVETFUR]
-Name = Skwovet Fur
-NamePlural = Skwovet Fur
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Skwovet. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[ROOKIDEEFEATHER]
-Name = Rookidee Feather
-NamePlural = Rookidee Feathers
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A feather that was dropped by a fleeing Rookidee. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[CHEWTLECLAW]
-Name = Chewtle Claw
-NamePlural = Chewtle Claws
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Chewtle. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[ROLYCOLYCOAL]
-Name = Rolycoly Coal
-NamePlural = Rolycoly Coals
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = A coal that was dropped by a fleeing Rolycoly. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[APPLINJUICE]
+[APPLIN]
 Name = Applin Juice
-NamePlural = Applin Juice
+NamePlural = Applin Juices
 Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some juice that was dropped by a fleeing Applin. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[SILICOBRASAND]
-Name = Silicobra Sand
-NamePlural = Silicobra Sand
+[ARCHEN]
+Name = Archen Feather
+NamePlural = Archen Feathers
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some sand that was dropped by a fleeing Silicobra. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[CRAMORANTDOWN]
-Name = Cramorant Down
-NamePlural = Cramorant Down
+[ARON]
+Name = Aron Fang
+NamePlural = Aron Fangs
 Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some feathers that were dropped by a fleeing Cramorant. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[ARROKUDASCALES]
+[ARROKUDA]
 Name = Arrokuda Scales
 NamePlural = Arrokuda Scales
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some scales that were dropped by a fleeing Arrokuda. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[TOXELSPARKS]
-Name = Toxel Sparks
-NamePlural = Toxel Sparks
+[AUDINO]
+Name = Audino Fur
+NamePlural = Audino Fur
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some sparks that were dropped by a fleeing Toxel. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[SINISTEACHIP]
-Name = Sinistea Chip
-NamePlural = Sinistea Chips
+[AXEW]
+Name = Axew Scales
+NamePlural = Axew Scales
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A chip that was dropped by a fleeing Sinistea. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[HATENNADUST]
-Name = Hatenna Dust
-NamePlural = Hatenna Dust
+[AZURILL]
+Name = Azurill Fur
+NamePlural = Azurill Fur
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some dust that was dropped by a fleeing Hatenna. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[IMPIDIMPHAIR]
-Name = Impidimp Hair
-NamePlural = Impidimp Hair
+[BAGON]
+Name = Bagon Scales
+NamePlural = Bagon Scales
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some hair that was dropped by a fleeing Impidimp. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[MILCERYCREAM]
-Name = Milcery Cream
-NamePlural = Milcery Cream
+[BALTOY]
+Name = Baltoy Clay
+NamePlural = Baltoy Clay
 Pocket = 7
-Price = 80
-Flags = Material_TM
-Description = Some cream that was dropped by a fleeing Milcery. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[FALINKSSWEAT]
-Name = Falinks Sweat
-NamePlural = Falinks Sweat
+[BARBOACH]
+Name = Barboach Slime
+NamePlural = Barboach Slime
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some sweat that was dropped by a fleeing Falinks. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[PINCURCHINSPINES]
-Name = Pincurchin Spines
-NamePlural = Pincurchin Spines
+[BASCULIN]
+Name = Basculin Fang
+NamePlural = Basculin Fangs
 Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some spines that were dropped by a fleeing Pincurchin. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[SNOMTHREAD]
-Name = Snom Thread
-NamePlural = Snom Thread
+[BELDUM]
+Name = Beldum Claw
+NamePlural = Beldum Claws
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some thread that was dropped by a fleeing Snom. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[STONJOURNERSTONE]
-Name = Stonjourner Stone
-NamePlural = Stonjourner Stones
+[BELLSPROUT]
+Name = Bellsprout Vine
+NamePlural = Bellsprout Vines
 Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = A stone that was dropped by a fleeing Stonjourner. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[EISCUEDOWN]
-Name = Eiscue Down
-NamePlural = Eiscue Down
+[BERGMITE]
+Name = Bergmite Ice
+NamePlural = Bergmite Ice
 Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = Some feathers that were dropped by a fleeing Eiscue. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[INDEEDEEFUR]
-Name = Indeedee Fur
-NamePlural = Indeedee Fur
+[BIDOOF]
+Name = Bidoof Incisor
+NamePlural = Bidoof Incisors
 Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Indeedee. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[MORPEKOSNACK]
-Name = Morpeko Snack
-NamePlural = Morpeko Snacks
+[BINACLE]
+Name = Binacle Barnacle
+NamePlural = Binacle Barnacles
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A snack that was dropped by a fleeing Morpeko. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[CUFANTTARNISH]
-Name = Cufant Tarnish
-NamePlural = Cufant Tarnish
+[BLIPBUG]
+Name = Blipbug Hair
+NamePlural = Blipbug Hairs
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some tarnish that was dropped by a fleeing Cufant. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[DURALUDONTARNISH]
-Name = Duraludon Tarnish
-NamePlural = Duraludon Tarnish
+[BLITZLE]
+Name = Blitzle Mane Hair
+NamePlural = Blitzle Mane Hairs
 Pocket = 7
-Price = 120
-Flags = Material_TM
-Description = Some tarnish that was dropped by a fleeing Duraludon. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[DREEPYPOWDER]
-Name = Dreepy Powder
-NamePlural = Dreepy Powder
-Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = Some powder that was dropped by a fleeing Dreepy. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[LECHONKHAIR]
-Name = Lechonk Hair
-NamePlural = Lechonk Hair
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some hair that was dropped by a fleeing Lechonk. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[TAROUNTULATHREAD]
-Name = Tarountula Thread
-NamePlural = Tarountula Thread
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = Some thread that was dropped by a fleeing Tarountula. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[NYMBLECLAW]
-Name = Nymble Claw
-NamePlural = Nymble Claws
-Pocket = 7
-Price = 30
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Nymble. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[PAWMIFUR]
-Name = Pawmi Fur
-NamePlural = Pawmi Fur
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Pawmi. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[TANDEMAUSFUR]
-Name = Tandemaus Fur
-NamePlural = Tandemaus Fur
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Tandemaus. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[FIDOUGHFUR]
-Name = Fidough Fur
-NamePlural = Fidough Fur
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some fur that was dropped by a fleeing Fidough. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SMOLIVOIL]
-Name = Smoliv Oil
-NamePlural = Smoliv Oil
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some oil that was dropped by a fleeing Smoliv. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SQUAWKABILLYFEATHER]
-Name = Squawkabilly Feather
-NamePlural = Squawkabilly Feathers
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A feather that was dropped by a fleeing Squawkabilly. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[NACLISALT]
-Name = Nacli Salt
-NamePlural = Nacli Salt
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some salt that was dropped by a fleeing Nacli. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[CHARCADETSOOT]
-Name = Charcadet Soot
-NamePlural = Charcadet Soot
-Pocket = 7
-Price = 80
-Flags = Material_TM
-Description = Some soot that was dropped by a fleeing Charcadet. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[TADBULBMUCUS]
-Name = Tadbulb Mucus
-NamePlural = Tadbulb Mucus
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some mucus that was dropped by a fleeing Tadbulb. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[WATTRELFEATHER]
-Name = Wattrel Feather
-NamePlural = Wattrel Feathers
-Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = A feather that was dropped by a fleeing Wattrel. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[MASCHIFFFANG]
-Name = Maschiff Fang
-NamePlural = Maschiff Fangs
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A fang that was dropped by a fleeing Maschiff. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[SHROODLEINK]
-Name = Shroodle Ink
-NamePlural = Shroodle Ink
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some ink that was dropped by a fleeing Shroodle. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[BRAMBLINTWIG]
-Name = Bramblin Twig
-NamePlural = Bramblin Twigs
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A twig that was dropped by a fleeing Bramblin. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[TOEDSCOOLFLAPS]
-Name = Toedscool Flaps
-NamePlural = Toedscool Flaps
-Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some flaps that were dropped by a fleeing Toedscool. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[KLAWFCLAW]
-Name = Klawf Claw
-NamePlural = Klawf Claws
-Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = A claw that was dropped by a fleeing Klawf. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[CAPSAKIDSEED]
-Name = Capsakid Seed
-NamePlural = Capsakid Seeds
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = A seed that was dropped by a fleeing Capsakid. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[RELLORMUD]
-Name = Rellor Mud
-NamePlural = Rellor Mud
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some mud that was dropped by a fleeing Rellor. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[FLITTLEDOWN]
-Name = Flittle Down
-NamePlural = Flittle Down
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some feathers that were dropped by a fleeing Flittle. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[TINKATINKHAIR]
-Name = Tinkatink Hair
-NamePlural = Tinkatink Hair
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some hair that was dropped by a fleeing Tinkatink. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[WIGLETTSAND]
-Name = Wiglett Sand
-NamePlural = Wiglett Sand
-Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some sand that was dropped by a fleeing Wiglett. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
-#-------------------------------
-[BOMBIRDIERFEATHER]
+[BOMBIRDIER]
 Name = Bombirdier Feather
 NamePlural = Bombirdier Feathers
 Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = A feather that was dropped by a fleeing Bombirdier. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[FINIZENMUCUS]
-Name = Finizen Mucus
-NamePlural = Finizen Mucus
+[BONSLY]
+Name = Bonsly Tears
+NamePlural = Bonsly Tears
 Pocket = 7
-Price = 50
-Flags = Material_TM
-Description = Some mucus that was dropped by a fleeing Finizen. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[VAROOMFUME]
-Name = Varoom Fume
-NamePlural = Varoom Fumes
+[BOUFFALANT]
+Name = Bouffalant Fur
+NamePlural = Bouffalant Fur
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some gas that was dropped by a fleeing Varoom. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[CYCLIZARSCALES]
-Name = Cyclizar Scales
-NamePlural = Cyclizar Scales
+[BOUNSWEET]
+Name = Bounsweet Sweat
+NamePlural = Bounsweet Sweat
 Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = Some scales that were dropped by a fleeing Cyclizar. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[ORTHWORMTARNISH]
-Name = Orthworm Tarnish
-NamePlural = Orthworm Tarnish
+[BRAMBLIN]
+Name = Bramblin Twig
+NamePlural = Bramblin Twigs
 Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = Some tarnish that was dropped by a fleeing Orthworm. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[GLIMMETCRYSTAL]
-Name = Glimmet Crystal
-NamePlural = Glimmet Crystals
+[BRONZOR]
+Name = Bronzor Fragment
+NamePlural = Bronzor Fragments
 Pocket = 7
-Price = 60
-Flags = Material_TM
-Description = A crystal that was dropped by a fleeing Glimmet. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[GREAVARDWAX]
-Name = Greavard Wax
-NamePlural = Greavard Wax
+[BRUXISH]
+Name = Bruxish Tooth
+NamePlural = Bruxish Teeth
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some wax that was dropped by a fleeing Greavard. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[FLAMIGODOWN]
-Name = Flamigo Down
-NamePlural = Flamigo Down
+[BUDEW]
+Name = Budew Seed
+NamePlural = Budew Seeds
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some feathers that were dropped by a fleeing Flamigo. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[CETODDLEGREASE]
+[BUIZEL]
+Name = Buizel Fur
+NamePlural = Buizel Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[BULBASAUR]
+Name = Bulbasaur Seeds
+NamePlural = Bulbasaur Seeds
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[BUNEARY]
+Name = Buneary Fur
+NamePlural = Buneary Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[BUNNELBY]
+Name = Bunnelby Fur
+NamePlural = Bunnelby Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[BURMY]
+Name = Burmy Cloak Material
+NamePlural = Burmy Cloak Materials
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CACNEA]
+Name = Cacnea Needle
+NamePlural = Cacnea Needles
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CAPSAKID]
+Name = Capsakid Seed
+NamePlural = Capsakid Seeds
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CARBINK]
+Name = Carbink Jewel
+NamePlural = Carbink Jewels
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CARVANHA]
+Name = Carvanha Fang
+NamePlural = Carvanha Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CASTFORM]
+Name = Castform Precipitation
+NamePlural = Castform Precipitation
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CATERPIE]
+Name = Caterpie Thread
+NamePlural = Caterpie Threads
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CETODDLE]
 Name = Cetoddle Grease
 NamePlural = Cetoddle Grease
 Pocket = 7
-Price = 40
-Flags = Material_TM
-Description = Some grease that was dropped by a fleeing Cetoddle. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[VELUZAFILLET]
-Name = Veluza Fillet
-NamePlural = Veluza Fillets
+[CHARCADET]
+Name = Charcadet Soot
+NamePlural = Charcadet Soots
 Pocket = 7
-Price = 70
-Flags = Material_TM
-Description = A slice of a fleeing Veluza that was dropped. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[DONDOZOWHISKER]
+[CHARMANDER]
+Name = Charmander Tail
+NamePlural = Charmander Tails
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CHERUBI]
+Name = Cherubi Leaf
+NamePlural = Cherubi Leaves
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CHESPIN]
+Name = Chespin Chesnut
+NamePlural = Chespin Chesnuts
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CHEWTLE]
+Name = Chewtle Claw
+NamePlural = Chewtle Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CHIKORITA]
+Name = Chikorita Claw
+NamePlural = Chikorita Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CHIMCHAR]
+Name = Chimchar Claw
+NamePlural = Chimchar Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CHINCHOU]
+Name = Chinchou Sparks
+NamePlural = Chinchou Sparks
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CHINGLING]
+Name = Chingling Fragment
+NamePlural = Chingling Fragments
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CLAMPERL]
+Name = Clamperl Pearl
+NamePlural = Clamperl Pearls
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CLAUNCHER]
+Name = Clauncher Claw
+NamePlural = Clauncher Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CLEFFA]
+Name = Cleffa Fur
+NamePlural = Cleffa Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CLOBBOPUS]
+Name = Clobbopus Tentacle
+NamePlural = Clobbopus Tentacles
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[COMBEE]
+Name = Combee Honey
+NamePlural = Combee Honey
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[COMFEY]
+Name = Comfey Flower
+NamePlural = Comfey Flowers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CORPHISH]
+Name = Corphish Shell
+NamePlural = Corphish Shells
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CORSOLA]
+Name = Corsola Twig
+NamePlural = Corsola Twigs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[COTTONEE]
+Name = Cottonee Fluff
+NamePlural = Cottonee Fluff
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CRABRAWLER]
+Name = Crabrawler Shell
+NamePlural = Crabrawler Shells
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CRAMORANT]
+Name = Cramorant Down
+NamePlural = Cramorant Downs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CRANIDOS]
+Name = Cranidos Spike
+NamePlural = Cranidos Spikes
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CROAGUNK]
+Name = Croagunk Poison
+NamePlural = Croagunk Poison
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CRYOGONAL]
+Name = Cryogonal Ice
+NamePlural = Cryogonal Ice
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CUBCHOO]
+Name = Cubchoo Fur
+NamePlural = Cubchoo Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CUBONE]
+Name = Cubone Bone
+NamePlural = Cubone Bones
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CUFANT]
+Name = Cufant Tarnish
+NamePlural = Cufant Tarnish
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CUTIEFLY]
+Name = Cutiefly Powder
+NamePlural = Cutiefly Powders
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CYCLIZAR]
+Name = Cyclizar Scales
+NamePlural = Cyclizar Scales
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[CYNDAQUIL]
+Name = Cyndaquil Claw
+NamePlural = Cyndaquil Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DARUMAKA]
+Name = Darumaka Dropping
+NamePlural = Darumaka Droppings
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DEDENNE]
+Name = Dedenne Fur
+NamePlural = Dedenne Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DEERLING]
+Name = Deerling Hair
+NamePlural = Deerling Hairs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DEINO]
+Name = Deino Scales
+NamePlural = Deino Scales
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DELIBIRD]
+Name = Delibird Parcel
+NamePlural = Delibird Parcels
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DEWPIDER]
+Name = Dewpider Thread
+NamePlural = Dewpider Threads
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DHELMISE]
+Name = Dhelmise Kelp
+NamePlural = Dhelmise Kelp
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DIGLETT]
+Name = Diglett Dirt
+NamePlural = Diglett Dirt
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DITTO]
+Name = Ditto Goo
+NamePlural = Ditto Goo
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DODUO]
+Name = Doduo Down
+NamePlural = Doduo Downs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DONDOZO]
 Name = Dondozo Whisker
 NamePlural = Dondozo Whiskers
 Pocket = 7
-Price = 80
-Flags = Material_TM
-Description = A whisker that was dropped by a fleeing Dondozo. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[TATSUGIRISCALES]
-Name = Tatsugiri Scales
-NamePlural = Tatsugiri Scales
+[DRAMPA]
+Name = Drampa Scale
+NamePlural = Drampa Scales
 Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = Some scales that were dropped by a fleeing Tatsugiri. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[FRIGIBAXSCALES]
+[DRATINI]
+Name = Dratini Scales
+NamePlural = Dratini Scales
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DREEPY]
+Name = Dreepy Powder
+NamePlural = Dreepy Powders
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DRIFLOON]
+Name = Drifloon Gas
+NamePlural = Drifloon Gases
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DRILBUR]
+Name = Drilbur Claws
+NamePlural = Drilbur Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DROWZEE]
+Name = Drowzee Fur
+NamePlural = Drowzee Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DRUDDIGON]
+Name = Druddigon Scale
+NamePlural = Druddigon Scales
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DUCKLETT]
+Name = Ducklett Feather
+NamePlural = Ducklett Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DUNSPARCE]
+Name = Dunsparce Scales
+NamePlural = Dunsparce Scales
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DURALUDON]
+Name = Duraludon Tarnish
+NamePlural = Duraludon Tarnishes
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DURANT]
+Name = Durant Mandible
+NamePlural = Durant Mandibles
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DUSKULL]
+Name = Duskull Fragment
+NamePlural = Duskull Fragments
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[DWEBBLE]
+Name = Dwebble Claw
+NamePlural = Dwebble Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[EEVEE]
+Name = Eevee Fur
+NamePlural = Eevee Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[EISCUE]
+Name = Eiscue Down
+NamePlural = Eiscue Downs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[EKANS]
+Name = Ekans Fang
+NamePlural = Ekans Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ELECTRIKE]
+Name = Electrike Fang
+NamePlural = Electrike Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ELEKID]
+Name = Elekid Fur
+NamePlural = Elekid Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ELGYEM]
+Name = Elgyem Finger
+NamePlural = Elgyem Fingers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[EMOLGA]
+Name = Emolga Fur
+NamePlural = Emolga Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ESPURR]
+Name = Espurr Fur
+NamePlural = Espurr Furs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[EXEGGCUTE]
+Name = Exeggcute Shell
+NamePlural = Exeggcute Shells
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FALINKS]
+Name = Falinks Sweat
+NamePlural = Falinks Sweat
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FARFETCHD]
+Name = Farfetch'd Leek
+NamePlural = Farfetch'd Leeks
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FEEBAS]
+Name = Feebas Scales
+NamePlural = Feebas Scales
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FENNEKIN]
+Name = Fennekin Fur
+NamePlural = Fennekin Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FERROSEED]
+Name = Ferroseed Spike
+NamePlural = Ferroseed Spikes
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FIDOUGH]
+Name = Fidough Fur
+NamePlural = Fidough Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FINIZEN]
+Name = Finizen Mucus
+NamePlural = Finizen Mucus
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FINNEON]
+Name = Finneon Scales
+NamePlural = Finneon Scales
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FLABEBE]
+Name = Flabébé Pollen
+NamePlural = Flabébé Pollen
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FLAMIGO]
+Name = Flamigo Down
+NamePlural = Flamigo Downs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FLETCHLING]
+Name = Fletchling Feather
+NamePlural = Fletchling Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FLITTLE]
+Name = Flittle Down
+NamePlural = Flittle Downs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FOMANTIS]
+Name = Fomantis Leaf
+NamePlural = Fomantis Leaves
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FOONGUS]
+Name = Foongus Spores
+NamePlural = Foongus Spores
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FRIGIBAX]
 Name = Frigibax Scales
 NamePlural = Frigibax Scales
 Pocket = 7
-Price = 100
-Flags = Material_TM
-Description = Some scales that were dropped by a fleeing Frigibax. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[POLTCHAGEISTPOWDER]
-Name = Poltchageist Powder
-NamePlural = Poltchageist Powder
+[FRILLISH]
+Name = Frillish Stinger
+NamePlural = Frillish Stingers
 Pocket = 7
-Price = 20
-Flags = Material_TM
-Description = Some powder that was dropped by a fleeing Poltchageist. It can be used for crafting.
-SellBPPrice = 0
-CoinPrice = 1
-SellCoinPrice = 0
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
 #-------------------------------
-[PANGSHIFLUFF]
+[FROAKIE]
+Name = Froakie Bubble
+NamePlural = Froakie Bubbles
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FUECOCO]
+Name = Fuecoco Fang
+NamePlural = Fuecoco Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[FURFROU]
+Name = Furfrou Fur
+NamePlural = Furfrou Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GASTLY]
+Name = Gastly Gas
+NamePlural = Gastly Gas
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GEODUDE]
+Name = Geodude Fragment
+NamePlural = Geodude Fragments
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GIBLE]
+Name = Gible Scales
+NamePlural = Gible Scales
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GIMMIGHOUL]
+Name = Gimmighoul Coin
+NamePlural = Gimmighoul Coins
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GIRAFARIG]
+Name = Girafarig Fur
+NamePlural = Girafarig Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GLAMEOW]
+Name = Glameow Claw
+NamePlural = Glameow Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GLIGAR]
+Name = Gligar Fang
+NamePlural = Gligar Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GLIMMET]
+Name = Glimmet Crystal
+NamePlural = Glimmet Crystals
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GOLDEEN]
+Name = Goldeen Horn
+NamePlural = Goldeen Horns
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GOLETT]
+Name = Golett Shard
+NamePlural = Golett Shards
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GOOMY]
+Name = Goomy Goo
+NamePlural = Goomy Goo
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GOSSIFLEUR]
+Name = Gossifleur Leaf
+NamePlural = Gossifleur Leaves
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GOTHITA]
+Name = Gothita Eyelash
+NamePlural = Gothita Eyelashes
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GREAVARD]
+Name = Greavard Wax
+NamePlural = Greavard Wax
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GRIMER]
+Name = Grimer Toxin
+NamePlural = Grimer Toxins
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GROOKEY]
+Name = Grookey Twig
+NamePlural = Grookey Twigs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GROWLITHE]
+Name = Growlithe Fur
+NamePlural = Growlithe Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GRUBBIN]
+Name = Grubbin Thread
+NamePlural = Grubbin Threads
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[GULPIN]
+Name = Gulpin Mucus
+NamePlural = Gulpin Mucus
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[HAPPINY]
+Name = Happiny Dust
+NamePlural = Happiny Dust
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[HATENNA]
+Name = Hatenna Dust
+NamePlural = Hatenna Dust
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[HAWLUCHA]
+Name = Hawlucha Down
+NamePlural = Hawlucha Downs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[HEATMOR]
+Name = Heatmor Claw
+NamePlural = Heatmor Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[HELIOPTILE]
+Name = Helioptile Frill
+NamePlural = Helioptile Frills
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[HERACROSS]
+Name = Heracross Claw
+NamePlural = Heracross Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[HIPPOPOTAS]
+Name = Hippopotas Sand
+NamePlural = Hippopotas Sand
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[HONEDGE]
+Name = Honedge Metal
+NamePlural = Honedge Metal
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[HOOTHOOT]
+Name = Hoothoot Feather
+NamePlural = Hoothoot Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[HOPPIP]
+Name = Hoppip Leaf
+NamePlural = Hoppip Leaves
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[HORSEA]
+Name = Horsea Ink
+NamePlural = Horsea Ink
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[HOUNDOUR]
+Name = Houndour Fang
+NamePlural = Houndour Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[IGGLYBUFF]
+Name = Igglybuff Fluff
+NamePlural = Igglybuff Fluff
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ILLUMISE]
+Name = Illumise Fluid
+NamePlural = Illumise Fluids
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[IMPIDIMP]
+Name = Impidimp Hair
+NamePlural = Impidimp Hairs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[INDEEDEE]
+Name = Indeedee Fur
+NamePlural = Indeedee Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[INKAY]
+Name = Inkay Ink
+NamePlural = Inkay Ink
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[JANGMOO]
+Name = Jangmo-o Scales
+NamePlural = Jangmo-o Scales
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[JOLTIK]
+Name = Joltik Thread
+NamePlural = Joltik Threads
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[KABUTO]
+Name = Kabuto Claw
+NamePlural = Kabuto Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[KANGASKHAN]
+Name = Kangaskhan Claw
+NamePlural = Kangaskhan Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[KARRABLAST]
+Name = Karrablast Fur
+NamePlural = Karrablast Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[KECLEON]
+Name = Kecleon Claw
+NamePlural = Kecleon Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[KLAWF]
+Name = Klawf Claw
+NamePlural = Klawf Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[KLEFKI]
+Name = Klefki Key
+NamePlural = Klefki Keys
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[KLINK]
+Name = Klink Gear
+NamePlural = Klink Gears
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[KOFFING]
+Name = Koffing Gas
+NamePlural = Koffing Gases
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[KOMALA]
+Name = Komala Claw
+NamePlural = Komala Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[KRABBY]
+Name = Krabby Claw
+NamePlural = Krabby Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[KRICKETOT]
+Name = Kricketot Shell
+NamePlural = Kricketot Shells
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[LAPRAS]
+Name = Lapras Teardrop
+NamePlural = Lapras Teardrops
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[LARVESTA]
+Name = Larvesta Fuzz
+NamePlural = Larvesta Fuzz
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[LARVITAR]
+Name = Larvitar Claw
+NamePlural = Larvitar Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[LECHONK]
+Name = Lechonk Hair
+NamePlural = Lechonk Hairs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[LEDYBA]
+Name = Ledyba Elytra
+NamePlural = Ledyba Elytras
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[LICKITUNG]
+Name = Lickitung Claw
+NamePlural = Lickitung Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[LILEEP]
+Name = Lileep Sucker
+NamePlural = Lileep Suckers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[LILLIPUP]
+Name = Lillipup Fur
+NamePlural = Lillipup Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[LITLEO]
+Name = Litleo Tuft
+NamePlural = Litleo Tufts
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[LITTEN]
+Name = Litten Fur
+NamePlural = Litten Furs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[LITWICK]
+Name = Litwick Soot
+NamePlural = Litwick Soot
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[LOTAD]
+Name = Lotad Leaf
+NamePlural = Lotad Leaves
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[LUNATONE]
+Name = Lunatone Stone
+NamePlural = Lunatone Stones
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[LUVDISC]
+Name = Luvdisc Scales
+NamePlural = Luvdisc Scales
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MACHOP]
+Name = Machop Sweat
+NamePlural = Machop Sweat
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MAGBY]
+Name = Magby Hair
+NamePlural = Magby Hairs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MAGIKARP]
+Name = Magikarp Scales
+NamePlural = Magikarp Scales
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MAGNEMITE]
+Name = Magnemite Screw
+NamePlural = Magnemite Screws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MAKUHITA]
+Name = Makuhita Sweat
+NamePlural = Makuhita Sweat
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MANKEY]
+Name = Mankey Fur
+NamePlural = Mankey Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MANTYKE]
+Name = Mantyke Skin
+NamePlural = Mantyke Skin
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MARACTUS]
+Name = Maractus Needle
+NamePlural = Maractus Needles
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MAREANIE]
+Name = Mareanie Spike
+NamePlural = Mareanie Spikes
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MAREEP]
+Name = Mareep Wool
+NamePlural = Mareep Wool
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MASCHIFF]
+Name = Maschiff Fang
+NamePlural = Maschiff Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MAWILE]
+Name = Mawile Fang
+NamePlural = Mawile Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MEDITITE]
+Name = Meditite Sweat
+NamePlural = Meditite Sweat
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MEOWTH]
+Name = Meowth Fur
+NamePlural = Meowth Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MIENFOO]
+Name = Mienfoo Claw
+NamePlural = Mienfoo Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MILCERY]
+Name = Milcery Cream
+NamePlural = Milcery Creams
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MILTANK]
+Name = Miltank Milk
+NamePlural = Miltank Milk
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MIMEJR]
+Name = Mime Jr. Barrier Shard
+NamePlural = Mime Jr. Barrier Shards
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MIMIKYU]
+Name = Mimikyu Scrap
+NamePlural = Mimikyu Scraps
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MINCCINO]
+Name = Minccino Fur
+NamePlural = Minccino Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MINIOR]
+Name = Minior Shell
+NamePlural = Minior Shells
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MINUN]
+Name = Minun Fur
+NamePlural = Minun Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MISDREAVUS]
+Name = Misdreavus Tears
+NamePlural = Misdreavus Tears
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MORELULL]
+Name = Morelull Mycelium
+NamePlural = Morelull Mycelium
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MORPEKO]
+Name = Morpeko Snack
+NamePlural = Morpeko Snacks
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MUDBRAY]
+Name = Mudbray Mud
+NamePlural = Mudbray Mud
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MUDKIP]
+Name = Mudkip Slime
+NamePlural = Mudkip Slime
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MUNNA]
+Name = Munna Mist
+NamePlural = Munna Mist
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[MURKROW]
+Name = Murkrow Bauble
+NamePlural = Murkrow Baubles
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[NACLI]
+Name = Nacli Salt
+NamePlural = Nacli Salt
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[NATU]
+Name = Natu Feather
+NamePlural = Natu Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[NICKIT]
+Name = Nickit Fur
+NamePlural = Nickit Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[NIDORANfE]
+Name = Nidoran Horn
+NamePlural = Nidoran Horns
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[NIDORANmA]
+Name = Nidoran Horn
+NamePlural = Nidoran Horns
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[NINCADA]
+Name = Nincada Claw
+NamePlural = Nincada Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[NOIBAT]
+Name = Noibat Fur
+NamePlural = Noibat Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[NOSEPASS]
+Name = Nosepass Fragment
+NamePlural = Nosepass Fragments
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[NUMEL]
+Name = Numel Lava
+NamePlural = Numel Lava
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ODDISH]
+Name = Oddish Leaf
+NamePlural = Oddish Leaves
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[OMANYTE]
+Name = Omanyte Fang
+NamePlural = Omanyte Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ONIX]
+Name = Onix Pebble
+NamePlural = Onix Pebbles
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ORANGURU]
+Name = Oranguru Fur
+NamePlural = Oranguru Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ORICORIO]
+Name = Oricorio Feather
+NamePlural = Oricorio Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ORTHWORM]
+Name = Orthworm Tarnish
+NamePlural = Orthworm Tarnishes
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PACHIRISU]
+Name = Pachirisu Fur
+NamePlural = Pachirisu Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PANCHAM]
+Name = Pancham Fur
+NamePlural = Pancham Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PANPOUR]
+Name = Panpour Claw
+NamePlural = Panpour Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PANSAGE]
+Name = Pansage Claw
+NamePlural = Pansage Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PANSEAR]
+Name = Pansear Claw
+NamePlural = Pansear Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PARAS]
+Name = Paras Claw
+NamePlural = Paras Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PASSIMIAN]
+Name = Passimian Fur
+NamePlural = Passimian Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PATRAT]
+Name = Patrat Fang
+NamePlural = Patrat Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PAWMI]
+Name = Pawmi Fur
+NamePlural = Pawmi Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PAWNIARD]
+Name = Pawniard Blade
+NamePlural = Pawniard Blade
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PETILIL]
+Name = Petilil Leaf
+NamePlural = Petilil Leaves
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PHANPY]
+Name = Phanpy Nail
+NamePlural = Phanpy Nails
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PHANTUMP]
+Name = Phantump Twig
+NamePlural = Phantump Twigs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PICHU]
+Name = Pichu Fur
+NamePlural = Pichu Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PIDGEY]
+Name = Pidgey Feather
+NamePlural = Pidgey Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PIDOVE]
+Name = Pidove Down
+NamePlural = Pidove Downs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PIKIPEK]
+Name = Pikipek Feather
+NamePlural = Pikipek Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PINCURCHIN]
+Name = Pincurchin Spines
+NamePlural = Pincurchin Spines
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PINECO]
+Name = Pineco Husk
+NamePlural = Pineco Husks
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PINSIR]
+Name = Pinsir Mandible
+NamePlural = Pinsir Mandibles
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PIPLUP]
+Name = Piplup Feather
+NamePlural = Piplup Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PLUSLE]
+Name = Plusle Fur
+NamePlural = Plusle Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[POLIWAG]
+Name = Poliwag Slime
+NamePlural = Poliwag Slime
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[POLTCHAGEIST]
+Name = Poltchageist Powder
+NamePlural = Poltchageist Powders
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PONYTA]
+Name = Ponyta Hoof
+NamePlural = Ponyta Hooves
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[POOCHYENA]
+Name = Poochyena Fang
+NamePlural = Poochyena Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[POPPLIO]
+Name = Popplio Bubble
+NamePlural = Popplio Bubbles
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PORYGON]
+Name = Porygon Fragment
+NamePlural = Porygon Fragments
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PSYDUCK]
+Name = Psyduck Down
+NamePlural = Psyduck Downs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PUMPKABOO]
+Name = Pumpkaboo Gourd
+NamePlural = Pumpkaboo Gourds
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PURRLOIN]
+Name = Purrloin Claw
+NamePlural = Purrloin Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[PYUKUMUKU]
+Name = Pyukumuku Mucus
+NamePlural = Pyukumuku Mucus
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[QUAXLY]
+Name = Quaxly Down
+NamePlural = Quaxly Downs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[QWILFISH]
+Name = Qwilfish Spines
+NamePlural = Qwilfish Spines
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[RALTS]
+Name = Ralts Dust
+NamePlural = Ralts Dust
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[RATTATA]
+Name = Rattata Fangs
+NamePlural = Rattata Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[RELICANTH]
+Name = Relicanth Scale
+NamePlural = Relicanth Scales
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[RELLOR]
+Name = Rellor Mud
+NamePlural = Rellor Mud
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[REMORAID]
+Name = Remoraid Fang
+NamePlural = Remoraid Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[RHYHORN]
+Name = Rhyhorn Fang
+NamePlural = Rhyhorn Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[RIOLU]
+Name = Riolu Fur
+NamePlural = Riolu Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ROCKRUFF]
+Name = Rockruff Rock
+NamePlural = Rockruff Rocks
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ROGGENROLA]
+Name = Roggenrola Stone
+NamePlural = Roggenrola Stones
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ROLYCOLY]
+Name = Rolycoly Coal
+NamePlural = Rolycoly Coals
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ROOKIDEE]
+Name = Rookidee Feather
+NamePlural = Rookidee Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ROTOM]
+Name = Rotom Sparks
+NamePlural = Rotom Sparks
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ROWLET]
+Name = Rowlet Down
+NamePlural = Rowlet Downs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[RUFFLET]
+Name = Rufflet Feather
+NamePlural = Rufflet Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SABLEYE]
+Name = Sableye Gem
+NamePlural = Sableye Gems
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SALANDIT]
+Name = Salandit Gas
+NamePlural = Salandit Gases
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SANDILE]
+Name = Sandile Claw
+NamePlural = Sandile Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SANDSHREW]
+Name = Sandshrew Claw
+NamePlural = Sandshrew Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SANDYGAST]
+Name = Sandygast Sand
+NamePlural = Sandygast Sand
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SAWK]
+Name = Sawk Belt
+NamePlural = Sawk Belts
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SCATTERBUG]
+Name = Scatterbug Powder
+NamePlural = Scatterbug Powder
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SCORBUNNY]
+Name = Scorbunny Fur
+NamePlural = Scorbunny Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SCRAGGY]
+Name = Scraggy Sweat
+NamePlural = Scraggy Sweat
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SCYTHER]
+Name = Scyther Claw
+NamePlural = Scyther Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SEEDOT]
+Name = Seedot Stem
+NamePlural = Seedot Stems
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SEEL]
+Name = Seel Fur
+NamePlural = Seel Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SENTRET]
+Name = Sentret Fur
+NamePlural = Sentret Furs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SEVIPER]
+Name = Seviper Fang
+NamePlural = Seviper Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SEWADDLE]
+Name = Spinarak Thread
+NamePlural = Spinarak Threads
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SHELLDER]
+Name = Shellder Pearl
+NamePlural = Shellder Pearls
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SHELLOS]
+Name = Shellos Mucus
+NamePlural = Shellos Mucus
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SHELMET]
+Name = Shelmet Fur
+NamePlural = Shelmet Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SHIELDON]
+Name = Shieldon Claw
+NamePlural = Shieldon Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SHINX]
+Name = Shinx Fang
+NamePlural = Shinx Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SHROODLE]
+Name = Shroodle Ink
+NamePlural = Shroodle Ink
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SHROOMISH]
+Name = Shroomish Spores
+NamePlural = Shroomish Spores
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SHUCKLE]
+Name = Shuckle Juice
+NamePlural = Shuckle Juices
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SHUPPET]
+Name = Shuppet Scrap
+NamePlural = Shuppet Scraps
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SIGILYPH]
+Name = Sigilyph "Feather"
+NamePlural = Sigilyph "Feathers"
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon resembling a feather, but not quite so.
+#-------------------------------
+[SILICOBRA]
+Name = Silicobra Tail
+NamePlural = Silicobra Tails
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SINISTEA]
+Name = Sinistea Chip
+NamePlural = Sinistea Chips
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SIZZLIPEDE]
+Name = Sizzlipede Fang
+NamePlural = Sizzlipede Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SKARMORY]
+Name = Skarmory Feather
+NamePlural = Skarmory Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SKIDDO]
+Name = Skiddo Leaf
+NamePlural = Skiddo Leaves
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SKITTY]
+Name = Skitty Fur
+NamePlural = Skitty Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SKORUPI]
+Name = Skorupi Stinger
+NamePlural = Skorupi Stingers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SKRELP]
+Name = Skrelp Kelp
+NamePlural = Skrelp Kelp
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SKWOVET]
+Name = Skwovet Fur
+NamePlural = Skwovet Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SLAKOTH]
+Name = Slakoth Fur
+NamePlural = Slakoth Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SLOWPOKE]
+Name = Slowpoke Claw
+NamePlural = Slowpoke Claw
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SLUGMA]
+Name = Slugma Lava
+NamePlural = Slugma Lava
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SMEARGLE]
+Name = Smeargle Paint
+NamePlural = Smeargle Paints
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SMOLIV]
+Name = Smoliv Oil
+NamePlural = Smoliv Oil
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SMOOCHUM]
+Name = Smoochum Fur
+NamePlural = Smoochum Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SNEASEL]
+Name = Sneasel Claw
+NamePlural = Sneasel Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SNOM]
+Name = Snom Thread
+NamePlural = Snom Threads
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SNORUNT]
+Name = Snorunt Fur
+NamePlural = Snorunt Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SNOVER]
+Name = Snover Berries
+NamePlural = Snover Berries
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SNUBBULL]
+Name = Snubbull Hair
+NamePlural = Snubbull Hairs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SOBBLE]
+Name = Sobble Scale
+NamePlural = Sobble Scales
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SOLOSIS]
+Name = Solosis Gel
+NamePlural = Solosis Gel
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SOLROCK]
+Name = Solrock Stone
+NamePlural = Solrock Stones
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SPEAROW]
+Name = Spearow Feather
+NamePlural = Spearow Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SPHEAL]
+Name = Spheal Blubber
+NamePlural = Spheal Blubber
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SPINARAK]
+Name = Spinarak Thread
+NamePlural = Spinarak Threads
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SPINDA]
+Name = Spinda Fur
+NamePlural = Spinda Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SPIRITOMB]
+Name = Spiritomb Fragment
+NamePlural = Spiritomb Fragments
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SPOINK]
+Name = 	Spoink Pearl
+NamePlural = Spoink Pearls
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SPRIGATITO]
+Name = Sprigatito Fur
+NamePlural = Sprigatito Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SPRITZEE]
+Name = Spritzee Down
+NamePlural = Spritzee Downs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SQUAWKABILLY]
+Name = Squawkabilly Feather
+NamePlural = Squawkabilly Feather
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SQUIRTLE]
+Name = Squirtle Scute
+NamePlural = Squirtle Scutes
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[STANTLER]
+Name = Stantler Hair
+NamePlural = Stantler Hairs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[STARLY]
+Name = Starly Feather
+NamePlural = Starly Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[STARYU]
+Name = Staryu Core
+NamePlural = Staryu Cores
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[STONJOURNER]
+Name = Stonjourner Stone
+NamePlural = Stonjourner Stones
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[STUFFUL]
+Name = Stufful Fur
+NamePlural = Stufful Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[STUNFISK]
+Name = Stunfisk Mud
+NamePlural = Stunfisk Mud
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[STUNKY]
+Name = Stunky Fur
+NamePlural = Stunky Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SUNKERN]
+Name = Sunkern Leaf
+NamePlural = Sunkern Leaves
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SURSKIT]
+Name = Surskit Syrup
+NamePlural = Surskit Syrup
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SWABLU]
+Name = Swablu Fluff
+NamePlural = Swablu Fluff
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SWINUB]
+Name = Swinub Hair
+NamePlural = Swinub Hairs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[SWIRLIX]
+Name = Swirlix Fur
+NamePlural = Swirlix Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TADBULB]
+Name = Tadbulb Mucus
+NamePlural = Tadbulb Mucus
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TAILLOW]
+Name = Taillow Feather
+NamePlural = Taillow Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TANDEMAUS]
+Name = Tandemaus Fur
+NamePlural = Tandemaus Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TANGELA]
+Name = Tangela Vine
+NamePlural = Tangela Vines
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TAROUNTULA]
+Name = Tarountula Thread
+NamePlural = Tarountula Threads
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TATSUGIRI]
+Name = Tatsugiri Scales
+NamePlural = Tatsugiri Scales
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TAUROS]
+Name = Tauros Hair
+NamePlural = Tauros Hairs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TEDDIURSA]
+Name = Teddiursa Claw
+NamePlural = Teddiursa Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TENTACOOL]
+Name = Tentacool Stinger
+NamePlural = Tentacool Stingers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[THROH]
+Name = Throh Belt
+NamePlural = Throh Belts
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TIMBURR]
+Name = Timburr Sweat
+NamePlural = Timburr Sweat
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TINKATINK]
+Name = Tinkatink Hair
+NamePlural = Tinkatink Hairs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TIRTOUGA]
+Name = Tirtouga Scute
+NamePlural = Tirtouga Scutes
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TOEDSCOOL]
+Name = Toedscool Flaps
+NamePlural = Toedscool Flaps
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TOGEDEMARU]
+Name = Togedemaru Fur
+NamePlural = Togedemaru Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TOGEPI]
+Name = Togepi Eggshell
+NamePlural = Togepi Eggshells
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TORCHIC]
+Name = Torchic Feather
+NamePlural = Torchic Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TORKOAL]
+Name = Torkoal Coal
+NamePlural = Torkoal Coals
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TOTODILE]
+Name = Totodile Fang
+NamePlural = Totodile Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TOXEL]
+Name = Toxel Sparks
+NamePlural = Toxel Sparks
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TRAPINCH]
+Name = Trapinch Shell
+NamePlural = Trapinch Shells
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TREECKO]
+Name = Treecko Tail
+NamePlural = Treecko Tails
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TROPIUS]
+Name = Tropius Banana
+NamePlural = Tropius Bananas
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TRUBBISH]
+Name = Trubbish Rubbish
+NamePlural = Trubbish Rubbish
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TURTONATOR]
+Name = Turtonator Scute
+NamePlural = Turtonator Scutes
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TURTWIG]
+Name = Turtwig Twig
+NamePlural = Turtwig Twigs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TYMPOLE]
+Name = Tympole Slime
+NamePlural = Tympole Slime
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TYNAMO]
+Name = Tynamo Slime
+NamePlural = Tynamo Slime
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TYROGUE]
+Name = Tyrogue Sweat
+NamePlural = Tyrogue Sweat
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[TYRUNT]
+Name = Tyrunt Fang
+NamePlural = Tyrunt Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[UNOWN]
+Name = Unown ???
+NamePlural = Unown ???
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = A mysterious material accidentally dropped by a Pokémon.
+#-------------------------------
+[VANILLLITE]
+Name = Vanillite Ice
+NamePlural = Vanillite Ice
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[VAROOM]
+Name = Varoom Fume
+NamePlural = Varoom Fumes
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[VELUZA]
+Name = Veluza Fillet
+NamePlural = Veluza Fillet
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[VENIPEDE]
+Name = Venipede Antennae
+NamePlural = Venipede Antennaes
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[VENONAT]
+Name = Venonat Fang
+NamePlural = Venonat Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[VOLBEAT]
+Name = Volbeat Fluid
+NamePlural = Volbeat Fluids
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[VOLTORB]
+Name = Voltorb Sparks
+NamePlural = Voltorb Sparks
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[VULLABY]
+Name = Vullaby Feather
+NamePlural = Vullaby Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[VULPIX]
+Name = Vulpix Fur
+NamePlural = Vulpix Furs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[WAILMER]
+Name = Wailmer Blubber
+NamePlural = Wailmer Blubber
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[WATTREL]
+Name = Wattrel Feather
+NamePlural = Wattrel Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[WEEDLE]
+Name = Weedle Stinger
+NamePlural = Weedle Stingers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[WHISMUR]
+Name = Whismur Fur
+NamePlural = Whismur Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[WIGLETT]
+Name = Wiglett Sand
+NamePlural = Wiglett Sand
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[WIMPOD]
+Name = Wimpod Claw
+NamePlural = Wimpod Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[WINGULL]
+Name = Wingull Feather
+NamePlural = Wingull Feathers
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[WISHIWASHI]
+Name = Wishiwashi Scales
+NamePlural = Wishiwashi Scales
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[WOOBAT]
+Name = Woobat Fur
+NamePlural = Woobat Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[WOOLOO]
+Name = Wooloo Wool
+NamePlural = Wooloo Wool
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[WOOPER]
+Name = Wooper Slime
+NamePlural = Wooper Slime
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[WURMPLE]
+Name = Wurmple Silk
+NamePlural = Wurmple Silk
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[WYNAUT]
+Name = Wynaut Fur
+NamePlural = Wynaut Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[YAMASK]
+Name = Yamask Mask
+NamePlural = Yamask Masks
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[YAMPER]
+Name = Yamper Fur
+NamePlural = Yamper Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[YANMA]
+Name = Yanma Spike
+NamePlural = Yanma Spikes
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[YUNGOOS]
+Name = Yungoos Fur
+NamePlural = Yungoos Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ZANGOOSE]
+Name = Zangoose Claw
+NamePlural = Zangoose Claws
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ZIGZAGOON]
+Name = Zigzagoon Fur
+NamePlural = Zigzagoon Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ZORUA]
+Name = Zorua Fur
+NamePlural = Zorua Fur
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+[ZUBAT]
+Name = Zubat Fang
+NamePlural = Zubat Fangs
+Pocket = 7
+Price = 10
+Flags = Material,Fling_10
+Description = Material accidentally dropped by a Pokémon.
+#-------------------------------
+# Generation AN-I
+# Listed in pokedex number order for easy checking
+#-------------------------------
+[PANGSHI]
 Name = Pangshi Fluff
 NamePlural = Pangshi Fluff
 Pocket = 7
@@ -2863,7 +3313,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[WARFURSFUR]
+[WARFURS]
 Name = Warfurs Fur
 NamePlural = Warfurs Fur
 Pocket = 7
@@ -2874,7 +3324,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[MOIBELLEBELL]
+[MOIBELLE]
 Name = Moibelle Bell
 NamePlural = Moibelle Bells
 Pocket = 7
@@ -2885,7 +3335,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[TEDIFLAMETUFT]
+[TEDIFLAME]
 Name = Tediflame Tuft
 NamePlural = Tediflame Tufts
 Pocket = 7
@@ -2896,7 +3346,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[FURRONBULEAF]
+[FURRONBU]
 Name = Furronbu Leaf
 NamePlural = Furronbu Leaves
 Pocket = 7
@@ -2907,7 +3357,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[CUTTETRASCALES]
+[CUTTETRA]
 Name = Cuttetra Scales
 NamePlural = Cuttetra Scales
 Pocket = 7
@@ -2918,7 +3368,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[AMNIBALLORB]
+[AMNIBALL]
 Name = Amniball Orb
 NamePlural = Amniball Orbs
 Pocket = 7
@@ -2929,7 +3379,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[MACAWKFEATHER]
+[MACAWK]
 Name = Macawk Feather
 NamePlural = Macawk Feathers
 Pocket = 7
@@ -2940,7 +3390,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[ONSAILFUR]
+[ONSAIL]
 Name = Onsail Fur
 NamePlural = Onsail Fur
 Pocket = 7
@@ -2951,7 +3401,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[LUNAVYFUR]
+[LUNAVY]
 Name = Lunavy Fur
 NamePlural = Lunavy Fur
 Pocket = 7
@@ -2962,7 +3412,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[MARIHUSHFEATHER]
+[MARIHUSH]
 Name = Marihush Feather
 NamePlural = Marihush Feathers
 Pocket = 7
@@ -2973,7 +3423,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[CLAUSTROASCALES]
+[CLAUSTROA]
 Name = Claustroa Scales
 NamePlural = Claustroa Scales
 Pocket = 7
@@ -2984,7 +3434,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[ALUMINNOWSCALES]
+[ALUMINNOW]
 Name = Aluminnow Scales
 NamePlural = Aluminnow Scales
 Pocket = 7
@@ -2995,7 +3445,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[JOUSHRIMPCLAW]
+[JOUSHRIMP]
 Name = Joushrimp Claw
 NamePlural = Joushrimp Claws
 Pocket = 7
@@ -3006,7 +3456,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[FROSTKITFUR]
+[FROSTKIT]
 Name = Frostkit Fur
 NamePlural = Frostkit Fur
 Pocket = 7
@@ -3017,7 +3467,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[MARASAGILEAF]
+[MARASAGI]
 Name = Marasagi Leaf
 NamePlural = Marasagi Leaves
 Pocket = 7
@@ -3028,7 +3478,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[PERSELFLYWING]
+[PERSELFLY]
 Name = Perselfly Wing
 NamePlural = Perselfly Wings
 Pocket = 7
@@ -3039,7 +3489,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[AZULINDUST]
+[AZULIN]
 Name = Azulin Dust
 NamePlural = Azulin Dust
 Pocket = 7
@@ -3050,7 +3500,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[ROSESHDUST]
+[ROSESH]
 Name = Rosesh Dust
 NamePlural = Rosesh Dust
 Pocket = 7
@@ -3061,7 +3511,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[LAZENSPARKS]
+[LAZEN]
 Name = Lazen Sparks
 NamePlural = Lazen Sparks
 Pocket = 7
@@ -3072,7 +3522,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[PEBBLEAKPEBBLE]
+[PEBBLEAK]
 Name = Pebbleak Pebble
 NamePlural = Pebbleak Pebbles
 Pocket = 7
@@ -3083,7 +3533,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[DANGOTAILFUR]
+[DANGOTAIL]
 Name = Dangotail Fur
 NamePlural = Dangotail Fur
 Pocket = 7
@@ -3094,7 +3544,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[NECTAHOPHONEY]
+[NECTAHOP]
 Name = Nectahop Honey
 NamePlural = Nectahop Honey
 Pocket = 7
@@ -3105,7 +3555,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[GINGARAFUR]
+[GINGARA]
 Name = Gingara Fur
 NamePlural = Gingara Fur
 Pocket = 7
@@ -3116,7 +3566,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[CRYSTODECRYSTAL]
+[CRYSTODE]
 Name = Crystode Crystal
 NamePlural = Crystode Crystals
 Pocket = 7
@@ -3127,7 +3577,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[ASTELLFUR]
+[ASTELL]
 Name = Astell Fur
 NamePlural = Astell Fur
 Pocket = 7
@@ -3138,7 +3588,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[RESPLUMAFEATHER]
+[RESPLUMA]
 Name = Respluma Feather
 NamePlural = Respluma Feathers
 Pocket = 7
@@ -3149,7 +3599,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[PAVOFUEGOFEATHER]
+[PAVOFUEGO]
 Name = Pavofuego Feather
 NamePlural = Pavofuego Feathers
 Pocket = 7
@@ -3160,7 +3610,7 @@ SellBPPrice = 0
 CoinPrice = 1
 SellCoinPrice = 0
 #-------------------------------
-[PANHALIFEATHER]
+[PANHALI]
 Name = Panhali Feather
 NamePlural = Panhali Feathers
 Pocket = 7

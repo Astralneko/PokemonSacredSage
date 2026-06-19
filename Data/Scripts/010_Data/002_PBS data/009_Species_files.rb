@@ -115,9 +115,10 @@ module GameData
       return (ret) ? ret : pbResolveBitmap("Graphics/Pokemon/Eggs/000_icon")
     end
 
+	# Downcase the species name here because I cannot be assed to rename 1400 sprites
     def self.icon_filename(species, form = 0, gender = 0, shiny = false, shadow = false, egg = false)
       return self.egg_icon_filename(species, form) if egg
-      return self.check_graphic_file("Graphics/Pokemon/", species, form, gender, shiny, shadow, "Icons")
+      return self.check_graphic_file("Graphics/Pokemon/", species.to_s.downcase, form, gender, shiny, shadow, "Icons 68x56")
     end
 
     def self.icon_filename_from_pokemon(pkmn)

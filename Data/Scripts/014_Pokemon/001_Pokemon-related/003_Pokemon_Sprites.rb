@@ -130,11 +130,13 @@ class PokemonIconSprite < Sprite
       @current_frame = 0
       return
     end
+	# the sprite is no longer actually animated, so some edits have been made
     @animBitmap = AnimatedBitmap.new(GameData::Species.icon_filename_from_pokemon(value))
     self.bitmap = @animBitmap.bitmap
-    self.src_rect.width  = @animBitmap.height
+    self.src_rect.width  = @animBitmap.width #@animBitmap.height
     self.src_rect.height = @animBitmap.height
-    @frames_count = @animBitmap.width / @animBitmap.height
+	# code still relies on there being 2 sprites
+    @frames_count = 2 #@animBitmap.width / @animBitmap.height
     @current_frame = 0 if @current_frame >= @frames_count
     changeOrigin
   end
@@ -149,19 +151,19 @@ class PokemonIconSprite < Sprite
     @offset = PictureOrigin::TOP_LEFT if !@offset
     case @offset
     when PictureOrigin::TOP_LEFT, PictureOrigin::LEFT, PictureOrigin::BOTTOM_LEFT
-      self.ox = 0
+      self.ox = 16 # Left 12 pixels are assumed blank per Pokesprite
     when PictureOrigin::TOP, PictureOrigin::CENTER, PictureOrigin::BOTTOM
       self.ox = self.src_rect.width / 2
     when PictureOrigin::TOP_RIGHT, PictureOrigin::RIGHT, PictureOrigin::BOTTOM_RIGHT
-      self.ox = self.src_rect.width
+      self.ox = self.src_rect.width - 16 # Right 12 pixels are assumed blank per Pokesprite
     end
     case @offset
     when PictureOrigin::TOP_LEFT, PictureOrigin::TOP, PictureOrigin::TOP_RIGHT
-      self.oy = 0
+      self.oy = 24 # Top 16 pixels are assumed blank per PokeSprite
     when PictureOrigin::LEFT, PictureOrigin::CENTER, PictureOrigin::RIGHT
-      # NOTE: This assumes the top quarter of the icon is blank, so oy is placed
-      #       in the middle of the lower three quarters of the image.
-      self.oy = self.src_rect.height * 5 / 8
+      # NOTE: This previously assumed the top 1/4 of the icon is blank, and oy was placed
+      #       in the middle of the lower 3/4 of the image. (Previously top quarter and three quarters)
+      self.oy = self.src_rect.height - 12
     when PictureOrigin::BOTTOM_LEFT, PictureOrigin::BOTTOM, PictureOrigin::BOTTOM_RIGHT
       self.oy = self.src_rect.height
     end
@@ -178,7 +180,8 @@ class PokemonIconSprite < Sprite
     elsif @pokemon.hp <= @pokemon.totalhp / 2   # Yellow HP - 0.5 seconds
       duration *= 2
     end
-    @current_frame = (@frames_count * (System.uptime % duration) / duration).floor
+	# 2 below this was previously @frames_count
+    @current_frame = (2 * (System.uptime % duration) / duration).floor
   end
 
   def update
@@ -188,14 +191,17 @@ class PokemonIconSprite < Sprite
     self.bitmap = @animBitmap.bitmap
     # Update animation
     update_frame
-    self.src_rect.x = self.src_rect.width * @current_frame
-    # Update "jumping" animation (used in party screen)
+    # self.src_rect.x = self.src_rect.width * @current_frame # Handled in code now
+	# set zoom since the new icon sprites are 1x1 (Uses Luka Scripting Utilities zoom=)
+	self.zoom = 2.0
+    # Update "jumping" animation (used in party screen) - 2 in this section was previously @frames_count
     if @selected
-      @adjusted_x = 4
-      @adjusted_y = (@current_frame >= @frames_count / 2) ? -2 : 6
+      @adjusted_x = 2
+      @adjusted_y = (@current_frame >= 2 / 2) ? -2 : 8
     else
-      @adjusted_x = 0
-      @adjusted_y = 0
+      @adjusted_x = -2
+	  # Handle jumping animation in code, duplicate frames are stupid
+      @adjusted_y = (@current_frame >= 2 / 2) ? 0 : 2
     end
     self.x = self.x
     self.y = self.y

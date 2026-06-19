@@ -6,7 +6,7 @@
 
 module Settings
   # The version of your game. It has to adhere to the MAJOR.MINOR.PATCH format.
-  GAME_VERSION = "0.1.20241114"
+  GAME_VERSION = "0.1.20260617"
   # MINOR is the number of completed story markers if MAJOR is 0
   # PATCH is the date if MAJOR is 0
   # MINOR is the current story marker update if MAJOR is nonzero
@@ -308,8 +308,7 @@ module Settings
       _INTL("Mail"),
       _INTL("Crafting"),
       _INTL("Battle Items"),
-      _INTL("Key Items"),
-      _INTL("Z-Crystals")
+      _INTL("Key Items")
     ]
   end
   # The maximum number of slots per pocket (-1 means infinite number).
@@ -558,11 +557,11 @@ module Settings
   # Whether the game will ask you if you want to fully compile every time you
   # start the game (in Debug mode). You will not need to hold Ctrl/Shift to
   # compile anything.
-  PROMPT_TO_COMPILE    = false
+  PROMPT_TO_COMPILE    = true
   # Whether the game will skip the Continue/New Game screen and go straight into
   # a saved game (if there is one) or start a new game (if there isn't). Only
   # applies to playing in Debug mode.
-  SKIP_CONTINUE_SCREEN = false
+  SKIP_CONTINUE_SCREEN = true
 end
 
 #===============================================================================

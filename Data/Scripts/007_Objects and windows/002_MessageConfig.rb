@@ -14,7 +14,7 @@ module MessageConfig
   NB_TEXT_SHADOW_COLOR = Color.new(185, 178, 42)
   FONT_NAME                = "Truth and Ideals"
   FONT_SIZE                = 36
-  FONT_Y_OFFSET            = 6
+  FONT_Y_OFFSET            = 4
   SMALL_FONT_NAME          = "Truth and Ideals - Fighting Ideals"
   SMALL_FONT_SIZE          = 35
   SMALL_FONT_Y_OFFSET      = 8

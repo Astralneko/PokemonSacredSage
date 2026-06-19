@@ -12,9 +12,9 @@ module AstralnekoTrivia
 		
 		pbSetWindowText("Compiling Astralneko's Trivia data")
 		refresh = mustCompile
-		refresh = true if !safeExists?("Data/astralneko_trivia.dat")
+		refresh = true if !FileTest.exist?("Data/astralneko_trivia.dat")
 		refresh = true if Input.press?(Input::CTRL)
-		refresh = true if !refresh && safeExists?("PBS/default_trivia.txt") &&
+		refresh = true if !refresh && FileTest.exist?("PBS/default_trivia.txt") &&
 																	File.mtime("PBS/default_trivia.txt") > File.mtime("Data/astralneko_trivia.dat")
 
 		if refresh

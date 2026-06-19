@@ -13,7 +13,7 @@
 
       # true = enabled: Keeps track of visited maps, wild pokemon (seen and caught), trainers and items.
       # false = disabled: In case you would still have issues with this feature, make sure to tell me them.
-      ProgressCounter = false
+      ProgressCounter = true
 
       # Below I've provided a setting for each counter that the Progress Counter is using.
       # If you wish to not use one or more of these, you can turn them off here (or in case you would have an issue with one of them).
@@ -179,7 +179,7 @@
 
         # true = enabled: Allows you to change the Region Name on certain parts of the Region Map
         # false = disabled.
-        UseRegionDistrictsNames = false
+        UseRegionDistrictsNames = true
 
         # - Region Number
         # - [min X, max X]; the minimum X value and the maximum X value, in squares.
@@ -188,26 +188,29 @@
         #    example: [0, 10]; when the cursor is between 0 and 10 (including 0 and 10) the name of the region changes (depending on the X value as well).
         # - Region District Name; this is the name the script will use only when the cursor is inside X and Y range.
         RegionDistricts = [
-          [0, [9, 19],  [4, 6],   _INTL("North Essen")],
-          [0, [15, 15], [7, 7],   _INTL("North Essen")],
-          [0, [16, 19], [7, 7],  _INTL("East Essen")],
-          [0, [15, 19], [8, 11],  _INTL("East Essen")],
-          [0, [9, 19],  [12, 15], _INTL("South Essen")],
-          [0, [9, 12],  [7, 11],  _INTL("West Essen")],
-          [0, [13, 14], [7, 11],  _INTL("Central Essen")],
-          [1, [10, 20], [5, 15],  _INTL("Central Tiall")]
+			[0, [31, 34], [0, 11], "South Lauransel Ocean"],
+			[0, [32, 34], [12, 18], "South Lauransel Ocean"],
+			[0, [31, 34], [19, 23], "South Lauransel Ocean"],
+			[0, [0, 18], [0, 8], "Northwest Verela"],
+			[0, [19, 31], [0, 8], "Northeast Verela"],
+			[0, [0, 18], [9, 14], "West Verela"],
+			[0, [19, 31], [9, 14], "East Verela"],
+			[0, [0, 18], [15, 23], "Southwest Verela"],
+			[0, [19, 31], [15, 23], "Southeast Verela"],
+			[1, [10, 20], [5, 15], "Central Hisui"]
         ]
 
         # Link a switch ID to each District (if used). This switch will be turned ON once it's at 100%.
         # You'll need to add a script command containing switchesForDistricts in an event before checking if any switches are turned ON.
         ProgressSwitches = {
-          "Essen" => 106,
-          "North Essen" => 99,
-          "East Essen" => 100,
-          "South Essen" => 101,
-          "West Essen" => 102,
-          "Central Essen" => 103,
-          "Central Tiall" => 104
+          "South Lauransel Ocean" => 90,
+		  "Northwest Verela" => 91,
+		  "Northeast Verela" => 92,
+		  "West Verela" => 93,
+		  "East Verela" => 94,
+		  "Southwest Verela" => 95,
+		  "Southeast Verela" => 96,
+          "Central Hisui" => 97
         }
       #========================= Region Map Connecting =========================#
 
@@ -324,8 +327,10 @@
 
         # Set for each Region if you want the Player Icon to be visible (true) or invisible (false).
         ShowPlayerOnRegion = {
-          Essen: true,
-          Tiall: true
+          Verela: true,
+		  Hisui: true,
+		  Paldea: true,
+		  Unova: true
         }
 
         # true = enabled: The script will change the Region Map based on the Current Time in the Game
@@ -630,32 +635,43 @@
 
         # If you have any custom Encounter Types, you should add them here
         EncounterTypes = {
-          :Land => "Grass",
-          :LandMorning => "Grass (Morning)",
-          :LandDay => "Grass (Day)",
-          :LandAfternoon => "Grass (Afternoon)",
-          :LandEvening => "Grass (Evening)",
-          :LandNight => "Grass (Night)",
-          :PokeRadar => "Poké Radar",
-          :Cave => "Cave",
-          :CaveMorning => "Cave (Morning)",
-          :CaveDay => "Cave (Day)",
-          :CaveAfternoon => "Cave (Afternoon)",
-          :CaveEvening => "Cave (Evening)",
-          :CaveNight => "Cave (Night)",
-          :Water => "Surfing",
-          :WaterMorning => "Surfing (Morning)",
-          :WaterDay => "Surfing (Day)",
-          :WaterAfternoon => "Surfing (Afternoon)",
-          :WaterEvening => "Surfing (Evening)",
-          :WaterNight => "Surfing (Night)",
-          :OldRod => "Fishing (Old Rod)",
-          :GoodRod => "Fishing (Good Rod)",
-          :SuperRod => "Fishing (Super Rod)",
-          :RockSmash => "Rock Smash",
-          :HeadbuttLow => "Headbutt (Rare)",
-          :HeadbuttHigh => "Headbutt (Common)",
-          :BugContest => "Bug Contest"
+			:Land => "Grass",
+			:LandMorning => "Grass (Morning)",
+			:LandDay => "Grass (Day)",
+			:LandAfternoon => "Grass (Afternoon)",
+			:LandEvening => "Grass (Evening)",
+			:LandNight => "Grass (Night)",
+			:PhenomenonGrass => _INTL("Rustling grass"),
+			:DarkGrass => _INTL("Dark tall grass"),
+			:DarkGrassDay => _INTL("Dark grass (day)"),
+			:DarkGrassNight => _INTL("Dark grass (night)"),
+			:DarkGrassMorning => _INTL("Dark grass (morning)"),
+			:DarkGrassAfternoon => _INTL("Dark grass (afternoon)"),
+			:DarkGrassEvening => _INTL("Dark grass (evening)"),
+			:PhenomenonDarkGrass => _INTL("Rustling dark grass"),
+			:PokeRadar => "Poké Radar",
+			:Cave => "Cave",
+			:CaveMorning => "Cave (Morning)",
+			:CaveDay => "Cave (Day)",
+			:CaveAfternoon => "Cave (Afternoon)",
+			:CaveEvening => "Cave (Evening)",
+			:CaveNight => "Cave (Night)",
+			:PhenomenonCave => _INTL("Dust clouds"),
+			:Water => "Surfing",
+			:WaterMorning => "Surfing (Morning)",
+			:WaterDay => "Surfing (Day)",
+			:WaterAfternoon => "Surfing (Afternoon)",
+			:WaterEvening => "Surfing (Evening)",
+			:WaterNight => "Surfing (Night)",
+			:PhenomenonWater => _INTL("Rippling waves"),
+			:OldRod => "Fishing (Old Rod)",
+			:GoodRod => "Fishing (Good Rod)",
+			:SuperRod => "Fishing (Super Rod)",
+			:RockSmash => "Rock Smash",
+			:PhenomenonBird => _INTL("Bird's shadow"),
+			:HeadbuttLow => "Headbutt (Rare)",
+			:HeadbuttHigh => "Headbutt (Common)",
+			:BugContest => "Bug Contest"
         }
 
         # true = enabled: The mapExtBoxMain will be replaced with for ex. mapExtBoxGrass for the Grass Encounter Type.
