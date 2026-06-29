@@ -180,15 +180,15 @@ FunctionCode = StartGravity
 Flags = CanProtect,CanMirrorMove,Pulse
 Description = The user briefly increases the power of gravity, making flying Pokémon fall to the ground when hit.
 #-------------------------------
-[SOLARSTORM]
-Name = Solar Storm
+[STARSTORM]
+Name = Starstorm
 Type = CELESTIAL
 Category = Status
 Accuracy = 0
 TotalPP = 5
 Target = BothSides
 FunctionCode = StartStarstorm
-Description = The user creates a star-storm. The winds power up Celestial and Electric moves for 5 turns.
+Description = The user creates a star-storm. Stellar winds power up Celestial and Electric moves for 5 turns.
 #-------------------------------
 [AXIALTILT]
 Name = Axial Tilt

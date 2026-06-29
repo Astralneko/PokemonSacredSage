@@ -75,15 +75,24 @@ module WeatherConfig
   # Using .downcase will make them lowercase.
   def self.weather_names
     return {
-	  :None			=> _INTL("None"),
-	  :Rain			=> _INTL("Rain"),
-	  :Storm		=> _INTL("Storm"),
-	  :Snow			=> _INTL("Snow"),
-	  :Blizzard		=> _INTL("Blizzard"),
-	  :Sandstorm	=> _INTL("Sandstorm"),
-	  :HeavyRain	=> _INTL("Heavy rain"),
-	  :Sun			=> _INTL("Sun"),
-	  :Fog			=> _INTL("Fog")
+	  :None			 => _INTL("None"),
+	  :Rain			 => _INTL("Rain"),
+	  :Storm		 => _INTL("Storm"),
+	  :Snow			 => _INTL("Snow"),
+	  :Blizzard		 => _INTL("Blizzard"),
+	  :Sandstorm	 => _INTL("Sandstorm"),
+	  :HeavyRain	 => _INTL("Heavy rain"),
+	  :Sun			 => _INTL("Sun"),
+	  :Fog			 => _INTL("Fog"),
+	  :Starstorm     => _INTL("Star storms"),
+	  :DiamondDust   => _INTL("Diamond dust"),
+	  :Embers        => _INTL("Falling embers"),
+	  :FallingPetals => _INTL("Falling petals"),
+	  :SparklingIce  => _INTL("Sparkling ice"),
+	  :StrongWinds   => _INTL("Strong winds"),
+	  :FallingAsh    => _INTL("Falling ash"),
+	  :Fireflies     => _INTL("Fireflies"),
+	  :Glitch        => _INTL("Glitch City")
     }
   end
 #===============================================================================

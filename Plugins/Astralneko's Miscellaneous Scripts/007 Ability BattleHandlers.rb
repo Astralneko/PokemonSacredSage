@@ -232,7 +232,7 @@ Battle::AbilityEffects::OnSwitchIn.add(:QUICKPLAY,
 
 Battle::AbilityEffects::OnSwitchIn.add(:STARRYSURGE,
   proc { |ability, battler, battle, switch_in|
-    pbBattleWeatherAbility(:SolarStorm, battler, battle)
+    pbBattleWeatherAbility(:Starstorm, battler, battle)
   }
 )
 

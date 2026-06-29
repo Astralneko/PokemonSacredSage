@@ -456,7 +456,7 @@ class Battle::Move::UsesUserSecondaryTypeUserLosesSecondaryType < Battle::Move::
 end
 
 #===============================================================================
-# Starts solar winds. (Solar Storm)
+# Starts solar winds. (Starstorm)
 #===============================================================================
 class Battle::Move::StartStarstorm < Battle::Move::WeatherMove
   def initialize(battle,move)
