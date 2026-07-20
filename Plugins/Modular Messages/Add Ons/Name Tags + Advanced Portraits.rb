@@ -223,7 +223,7 @@ Modular_Messages::Controls.add("xn", {
   "both" => true,
   "before_appears" => proc { |hash, param|
     param = pbAdjustNameTag(param)
-		anSetDialogueSound(param)
+	anSetDialogueSound(param)
     hash["windows_name"]&.dispose
     hash["windows_name"] = pbDisplayNameWindow(hash["msg_window"],
           hash["current_control"] == "dxn", param)
@@ -248,7 +248,7 @@ Modular_Messages::Controls.add("ml", {
   "before_appears" => proc { |hash, param|
     d = hash["current_control"] == "ml" ? "left" : "right"
     param = pbAdjustPortrait(param, d == "right")
-      s = "windows_face_" + d
+    s = "windows_face_" + d
     hash[s]&.dispose
     hash[s] = FaceWindowVXNew.new(param)
     gap = Gela_Settings::PORTRAIT_GAP_EDGE
@@ -275,3 +275,55 @@ Modular_Messages::Controls.add("ml", {
 })
 
 Modular_Messages::Controls.copy("ml", "mr")
+
+#-------------------------------
+# Control Handlers: Do Both
+# Literally just passes the argument to both the xn and ml functions
+Modular_Messages::Controls.add("xnml", {
+  "both" => true,
+  "before_appears" => proc { |hash, param|
+    param1 = pbAdjustNameTag(param)
+	anSetDialogueSound(param1)
+    d = (hash["current_control"] == "xnml" || hash["current_control"] == "dxnml") ? "left" : "right"
+    param2 = pbAdjustPortrait(param, d == "right")
+    s = "windows_face_" + d
+	
+    hash[s]&.dispose
+    hash[s] = FaceWindowVXNew.new(param2)
+    gap = Gela_Settings::PORTRAIT_GAP_EDGE
+    hash[s].x = d == "left" ? gap : Graphics.width - hash[s].width - gap
+    hash[s].y = hash["msg_window"].y - hash[s].height
+    hash[s].y -= Gela_Settings::PORTRAIT_GAP_HEIGHT
+    hash[s].viewport = hash["msg_window"].viewport
+    hash[s].z = hash["msg_window"].z #+ 10
+	
+    hash["windows_name"]&.dispose
+    hash["windows_name"] = pbDisplayNameWindow(hash["msg_window"],
+		hash["current_control"] == "dxnml" || hash["current_control"] == "dxnmr", param1)
+    hash["windows_name"].z = hash["msg_window"].z + 20
+  },
+  "during_loop" => proc { |hash, param|
+    param1 = pbAdjustNameTag(param)
+    d = (hash["current_control"] == "xnml" || hash["current_control"] == "dxnml") ? "left" : "right"
+    param2 = pbAdjustPortrait(param, d == "right")
+    s = "windows_face_" + d
+	
+    hash[s]&.dispose
+    hash[s] = FaceWindowVXNew.new(param)
+    pbPositionNearMsgWindow(hash[s], hash["msg_window"], :left)
+    gap = Gela_Settings::PORTRAIT_GAP_EDGE
+    hash[s].x = d == "left" ? gap : Graphics.width - hash[s].width - gap
+    hash[s].y = hash["msg_window"].y - hash[s].height
+    hash[s].y -= Gela_Settings::PORTRAIT_GAP_HEIGHT
+    hash[s].viewport = hash["msg_window"].viewport
+    hash[s].z = hash["msg_window"].z #+ 10
+	
+    hash["windows_name"]&.dispose
+    hash["windows_name"] = pbDisplayNameWindow(hash["msg_window"],
+		hash["current_control"] == "dxnml" || hash["current_control"] == "dxnmr", param1)
+    hash["windows_name"].viewport = hash["msg_window"].viewport
+    hash["windows_name"].z        = hash["msg_window"].z + 20
+  }
+})
+
+Modular_Messages::Controls.copy("xnml", "xnmr", "dxnml", "dxnmr")

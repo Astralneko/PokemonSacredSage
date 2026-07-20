@@ -1,12 +1,6 @@
-#===============================================================================
-# Custom Weather Plugin - Embers Weather
-# Glowing fire embers drift upward and sideways, fading as they cool.
-#===============================================================================
 
 EMBER_SPRITE_COUNT = 150
 
-# Helper methods defined directly on Spriteset_Map.
-# Plain def (no alias) is safe to re-evaluate — Ruby simply replaces the method.
 class Spriteset_Map
   def ember_make_bitmaps
     @ember_bitmaps = []
@@ -34,11 +28,15 @@ class Spriteset_Map
       sprite         = Sprite.new(@ember_viewport)
       sprite.z       = 1000
       sprite.bitmap  = @ember_bitmaps[rand(@ember_bitmaps.size)]
-      sprite.x       = rand(Graphics.width + 200) - 100
-      sprite.y       = rand(Graphics.height)
       sprite.opacity = rand(140) + 20
+
+      wx = cw_map_offset_x + rand(Graphics.width + 200) - 100
+      wy = cw_map_offset_y + rand(Graphics.height)
+      sprite.x = cw_world_to_screen_x(wx)
+      sprite.y = cw_world_to_screen_y(wy)
+
       @ember_sprites.push(sprite)
-      @ember_info.push(rand(3))
+      @ember_info.push([rand(3), wx, wy])
       @ember_phase.push(rand(60))
     end
     @ember_active = true
@@ -46,18 +44,29 @@ class Spriteset_Map
 
   def ember_update_sprites
     @ember_sprites.each_with_index do |sprite, i|
-      sprite.y -= (@ember_info[i] % 3) + 1
+      rise, wx, wy = @ember_info[i]
+
+      wy -= (rise % 3) + 1
       @ember_phase[i] = (@ember_phase[i] + 1) % 60
-      sprite.x -= 1 if @ember_phase[i] < 15
-      sprite.x += 1 if @ember_phase[i] >= 45
+      wx -= 1 if @ember_phase[i] < 15
+      wx += 1 if @ember_phase[i] >= 45
+
       sprite.opacity -= 2
       sprite.opacity += rand(6) - 2
+
+      sprite.x = cw_world_to_screen_x(wx)
+      sprite.y = cw_world_to_screen_y(wy)
+
+      @ember_info[i] = [rise, wx, wy]
+
       if sprite.opacity <= 0 || sprite.y < -sprite.bitmap.height
         sprite.opacity  = rand(80) + 80
-        sprite.x        = rand(Graphics.width + 200) - 100
-        sprite.y        = Graphics.height + rand(30)
         sprite.bitmap   = @ember_bitmaps[rand(@ember_bitmaps.size)]
-        @ember_info[i]  = rand(3)
+        wx = cw_map_offset_x + rand(Graphics.width + 200) - 100
+        wy = cw_map_offset_y + Graphics.height + rand(30)
+        sprite.x        = cw_world_to_screen_x(wx)
+        sprite.y        = cw_world_to_screen_y(wy)
+        @ember_info[i]  = [rand(3), wx, wy]
         @ember_phase[i] = rand(60)
       end
     end
@@ -74,7 +83,6 @@ class Spriteset_Map
   end
 end
 
-# Register update handler — called every frame by the master patch in 008
 CustomWeather::SpritesetHandlers.register(:Embers) do |spriteset|
   spriteset.instance_eval do
     unless @ember_bitmaps
@@ -96,7 +104,6 @@ CustomWeather::SpritesetHandlers.register(:Embers) do |spriteset|
   end
 end
 
-# Register dispose handler
 CustomWeather::SpritesetHandlers.register_dispose(:Embers) do |spriteset|
   spriteset.instance_eval do
     ember_clear_layer if @ember_active
@@ -107,9 +114,6 @@ CustomWeather::SpritesetHandlers.register_dispose(:Embers) do |spriteset|
   end
 end
 
-#===============================================================================
-# Register Overworld & Battle Weather
-#===============================================================================
 CustomWeather.register_weather(
   { :id => :Embers, :id_number => 14, :category => :None, :graphics => [],
     :tone_proc => proc { |strength| Tone.new(strength / 3, -strength / 6, -strength / 3, 0) } },

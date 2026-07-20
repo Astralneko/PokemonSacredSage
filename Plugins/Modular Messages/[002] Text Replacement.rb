@@ -42,10 +42,20 @@ module Modular_Messages
     if $game_actors
       @@hash["text"].gsub!(/\\n\[([1-8])\]/i) { next $game_actors[$1.to_i].name }
     end
+	# \ptalk[something] gets turned to \xn[something]\mr[\v[32]]\ds[\v[32]]\pg
+	# if something is empty, it is turned to \pn
+    @@hash["text"].gsub!(/\\ptalk\[([^\]]*)\]/i) do
+		something = $1
+		if something == ""
+			something = "\\pn"
+		end
+		next "\\xn[" + something + "]\\mr[\\v[32]]\\ds[\\v[32]]\\pg" if $player
+		next "\\xnmr[Aspin]"
+	end
   end
   
 #-------------------------------
-# Player Name
+# Player Name and Speech
   def replace_player_name
     @@hash["text"].gsub!(/\\pn/i,  $player.name) if $player
   end
@@ -80,7 +90,7 @@ module Modular_Messages
     @@hash["text"].gsub!(/\\b/i, male_text_tag)
     @@hash["text"].gsub!(/\\r/i, female_text_tag)
     @@hash["text"].gsub!(/\\y/i, nonbinary_text_tag)
-		@@hash["text"].gsub!(/\\ppg\[([0-9]+)\]\[([0-9]+)\]/i) { anPlayerPronoun[$1.to_i][$2.to_i] }
+	@@hash["text"].gsub!(/\\ppr\[([0-9]+)\]\[([0-9]+)\]/i) { anPlayerPronoun[$1.to_i][$2.to_i] }
   end
   
 #-------------------------------

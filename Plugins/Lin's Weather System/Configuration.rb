@@ -27,21 +27,21 @@ module WeatherConfig
 
   # Set to true to have the outdoor maps change with seasons.
   # The map's appearance will update when leaving an indoor map.
-  SEASON_CHANGE = false		# Default: false
+  SEASON_CHANGE = true		# Default: false
 
   # Set to true if your game starts outdoors and want to show the season splash when going somewhere indoors.
   # Set to false if your game starts indoors and want to show the season splash when going somewhere outdoors.
   OUTDOOR = false		# Default: false
 
   # Array with the ID of outside tilesets that will change with seasons.
-  OUTDOOR_TILESETS = [1, 2]
+  OUTDOOR_TILESETS = [1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49, 53, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97]
 
   # The difference between the ID of the tileset defined for an outdoor map and it's season version.
   # The difference has to be the same for any tileset defined in OUTDOOR_TILESETS.
   # Use the same season tileset as the default outdoor map tileset and define the diference for that season as 0.
-  SUMMER_TILESET = 22
-  AUTUMN_TILESET = 24
-  WINTER_TILESET = 26
+  SUMMER_TILESET = 1
+  AUTUMN_TILESET = 2
+  WINTER_TILESET = 3
   SPRING_TILESET = 0
 
 #===============================================================================
@@ -63,7 +63,11 @@ module WeatherConfig
   # There has to be a hash (defined between {}) for each defined zone with weather to substitute.
   # Any weather not defined in the hash for a zone will use the main weather instead.
   WEATHER_SUBSTITUTE = [
-	{:None => :None, :Rain => :Rain, :Storm => :Storm, :Snow => :Rain, :Blizzard => :Storm, :Sandstorm => :None, :HeavyRain => :HeavyRain, :Sun => :Sun, :Fog => :Fog},
+	{:Snow => :Rain, :Blizzard => :Storm, :Sandstorm => :None},
+	{:Snow => :Rain, :Blizzard => :Storm, :Sandstorm => :None},
+	{:Snow => :Rain, :Blizzard => :Storm, :Sandstorm => :None},
+	{:Snow => :Rain, :Blizzard => :HeavyRain, :Sandstorm => :StrongWinds},
+	{:Snow => :Rain, :Blizzard => :Storm, :Sandstorm => :None},
 	{:Snow => :Rain, :Blizzard => :Storm, :Sandstorm => :None},
 	{:Snow => :Rain, :Blizzard => :HeavyRain}
   ]
@@ -85,13 +89,13 @@ module WeatherConfig
 	  :Sun			 => _INTL("Sun"),
 	  :Fog			 => _INTL("Fog"),
 	  :Starstorm     => _INTL("Star storms"),
-	  :DiamondDust   => _INTL("Diamond dust"),
-	  :Embers        => _INTL("Falling embers"),
+	  #:DiamondDust   => _INTL("Diamond dust"),
+	  #:Embers        => _INTL("Falling embers"),
 	  :FallingPetals => _INTL("Falling petals"),
-	  :SparklingIce  => _INTL("Sparkling ice"),
+	  #:SparklingIce  => _INTL("Sparkling ice"),
 	  :StrongWinds   => _INTL("Strong winds"),
-	  :FallingAsh    => _INTL("Falling ash"),
-	  :Fireflies     => _INTL("Fireflies"),
+	  #:FallingAsh    => _INTL("Falling ash"),
+	  #:Fireflies     => _INTL("Fireflies"),
 	  :Glitch        => _INTL("Glitch City")
     }
   end
@@ -102,9 +106,13 @@ module WeatherConfig
   # The maps within each zone will have the same weather at the same time.
   # Each zone may have a different weather than the others.
   ZONE_MAPS = [
-    [2, 5],
-    [7],
-    [21]
+	[6, 10, 33], # Alipigra
+	[11, 16, 72, 73], # Capoeiroda and Maracaleza
+    [2, 58], # Whitepetal Forest
+	[14, 19, 22, 25, 26], # Route 15 and Rio Bossano
+	[18, 23, 55], # São Samba
+	[24], # Candlewax Field
+	[27] # Rocavideo
   ]
 #===============================================================================
 # * Map Display
@@ -114,9 +122,22 @@ module WeatherConfig
   # In Map ID you have to put the ID of the map the name corresponds to, like in ZONE_MAPS.
   MAPS_POSITIONS = [
     #{"Map Name" => Map ID},
-    {"Lappet Town" => 2, "Route 1" => 5},
-    {"Cedolan City" => 7},
-    {"Route 2" => 21}
+	{
+		"Starview Lake" => 6, "West Route 5" => 10, "Alipigra City" => 33
+	},{
+		"Maracaleza Town" => 11, "Maracaleza Beach" => 16, "East Route 5" => 72, "Capoeiroda Town" => 73
+	},{
+		"Route 6" => 2, "Whitepetal Forest" => 58
+	},{
+		"North Route 4" => 14, "Paragonas River" => 19, "Rio Bossano City" => 22, "Pachaqucha" => 25, 
+		"Route 15" => 26
+	},{
+		"South Route 4" => 18, "São Samba City" => 23, "Samba Seaboard" => 55
+	},{
+		"Candlewax Field" => 24
+	},{
+		"Rocavideo Town" => 27
+	}
   ]
 
   # A hash for the plugin to display the proper weather image on the map.
@@ -129,7 +150,8 @@ module WeatherConfig
     :Sandstorm => "mapSand",
     :HeavyRain => "mapRain",
     :Sun => "mapSun",
-    :Fog => "mapFog"
+    :Fog => "mapFog",
+	:FallingPetals => "mapPetals"
   }
 #===============================================================================
 # * Season Probability Configuration
@@ -138,36 +160,60 @@ module WeatherConfig
   # Each array within the main array corresponds to a zone in ZONE_MAPS.
   # Put 0 to weather you don't want if you define a probability after it.
   # If your game doesn't use seasons, edit the probabilities of one season and copy it to the others.
-
+  ZONE_MAPS = [
+	[6, 10, 33], # Alipigra
+	[11, 16, 72, 73], # Capoeiroda and Maracaleza
+    [2, 58], # Whitepetal Forest
+	[14, 19, 22, 25, 26], # Route 15 and Rio Bossano
+	[18, 23, 55], # São Samba
+	[24], # Candlewax Field
+	[27] # Rocavideo
+  ]
   # Probability of weather in summer.
-  # Order: None, Rain, Storm, Snow, Blizzard, Sandstorm, HeavyRain, Sun/Sunny, Fog
+  # Order: None, Rain, Storm, Snow, Blizzard, Sandstorm, HeavyRain, Sun/Sunny, Fog, Starstorm, FallingPetals, StrongWinds, Glitch
   ZONE_WEATHER_SUMMER = [
-    [50, 20, 3, 0, 0, 0, 5, 30],
-    [40, 50],
-    [60]
+    [60, 20, 3, 0, 0, 0, 5, 12, 0, 0, 0, 0, 0],
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[50, 20, 3, 0, 0, 0, 5, 20, 10]
   ]
 
   # Probability of weather in autumn.
-  # Order: None, Rain, Storm, Snow, Blizzard, Sandstorm, HeavyRain, Sun/Sunny, Fog
+  # Order: None, Rain, Storm, Snow, Blizzard, Sandstorm, HeavyRain, Sun/Sunny, Fog, Starstorm, FallingPetals, StrongWinds, Glitch
   ZONE_WEATHER_AUTUMN = [
-    [50, 20, 3, 0, 0, 0, 5, 30],
-    [40, 50],
-    [60]
+    [60, 20, 3, 0, 0, 0, 5, 12, 0, 0, 0, 0, 0],
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[20, 12, 3, 0, 0, 0, 5, 20, 0, 0, 40], # Whitepetal Forest becomes full of petals in spring and autumn
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[50, 20, 3, 0, 0, 0, 5, 20, 10]
   ]
 
   # Probability of weather in winter.
-  # Order: None, Rain, Storm, Snow, Blizzard, Sandstorm, HeavyRain, Sun/Sunny, Fog
+  # Order: None, Rain, Storm, Snow, Blizzard, Sandstorm, HeavyRain, Sun/Sunny, Fog, Starstorm, FallingPetals, StrongWinds, Glitch
   ZONE_WEATHER_WINTER = [
-    [50, 20, 3, 0, 0, 0, 5, 30],
-    [40, 50],
-    [60]
+    [60, 20, 3, 0, 0, 0, 5, 12, 0, 0, 0, 0, 0],
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[50, 20, 3, 0, 0, 0, 5, 20, 10]
   ]
 
   # Probability of weather in spring.
-  # Order: None, Rain, Storm, Snow, Blizzard, Sandstorm, HeavyRain, Sun/Sunny, Fog
+  # Order: None, Rain, Storm, Snow, Blizzard, Sandstorm, HeavyRain, Sun/Sunny, Fog, Starstorm, FallingPetals, StrongWinds, Glitch
   ZONE_WEATHER_SPRING = [
-    [50, 20, 3, 0, 0, 0, 5, 30],
-    [40, 50],
-    [60]
+    [60, 20, 3, 0, 0, 0, 5, 12, 0, 0, 0, 0, 0],
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[20, 12, 3, 0, 0, 0, 5, 20, 0, 0, 40], # Whitepetal Forest becomes full of petals in spring and autumn
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[60, 20, 3, 0, 0, 0, 5, 12],
+	[50, 20, 3, 0, 0, 0, 5, 20, 10]
   ]
 end

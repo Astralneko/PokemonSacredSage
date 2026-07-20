@@ -966,3 +966,724 @@ Backtrace:
 [Modular Messages] [003] Controls Methods.rb:85:in `block in controls_before_appears'
 [Modular Messages] [003] Controls Methods.rb:79:in `times'
 [Modular Messages] [003] Controls Methods.rb:79:in `controls_before_appears'
+
+=================
+
+[2026-07-19 14:13:22 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Error in Plugin: [Astralneko's Sounds On Step]
+Exception: NameError
+Message: uninitialized constant Events
+
+Backtrace:
+[Astralneko's Sounds On Step] Sounds On Step.rb:55:in `<main>'
+005_PluginManager.rb:635:in `eval'
+005_PluginManager.rb:635:in `block (2 levels) in runPlugins'
+005_PluginManager.rb:625:in `each'
+005_PluginManager.rb:625:in `block in runPlugins'
+005_PluginManager.rb:616:in `each'
+005_PluginManager.rb:616:in `runPlugins'
+999_Main.rb:34:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+
+=================
+
+[2026-07-19 14:17:59 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Error in Plugin: [Astralneko's Sounds On Step]
+Exception: SyntaxError
+Message: [Astralneko's Sounds On Step] Sounds On Step.rb:73: syntax error, unexpected `def', expecting ')'
+def pbPlaySoundEffectEvent(event...
+^~~
+
+
+Backtrace:
+005_PluginManager.rb:635:in `eval'
+005_PluginManager.rb:635:in `block (2 levels) in runPlugins'
+005_PluginManager.rb:625:in `each'
+005_PluginManager.rb:625:in `block in runPlugins'
+005_PluginManager.rb:616:in `each'
+005_PluginManager.rb:616:in `runPlugins'
+999_Main.rb:34:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+
+=================
+
+[2026-07-19 14:18:27 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Error in Plugin: [Astralneko's Sounds On Step]
+Exception: NameError
+Message: uninitialized constant EventHandles
+
+Backtrace:
+[Astralneko's Sounds On Step] Sounds On Step.rb:56:in `<main>'
+005_PluginManager.rb:635:in `eval'
+005_PluginManager.rb:635:in `block (2 levels) in runPlugins'
+005_PluginManager.rb:625:in `each'
+005_PluginManager.rb:625:in `block in runPlugins'
+005_PluginManager.rb:616:in `each'
+005_PluginManager.rb:616:in `runPlugins'
+999_Main.rb:34:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+
+=================
+
+[2026-07-19 14:18:42 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `[]' for nil:NilClass
+
+Backtrace:
+[Astralneko's Sounds On Step] Sounds On Step.rb:57:in `block in <main>'
+005_Event_Handlers.rb:89:in `block in trigger'
+005_Event_Handlers.rb:89:in `each_value'
+005_Event_Handlers.rb:89:in `trigger'
+006_Event_HandlerCollections.rb:63:in `trigger'
+006_Game_Character.rb:983:in `update_move'
+[Terrain Tag Side Stairs] Terrain Tag Stairs.rb:83:in `update_move'
+008_Game_Player.rb:493:in `update_move'
+006_Game_Character.rb:907:in `update'
+008_Game_Player.rb:420:in `update'
+
+=================
+
+[2026-07-19 14:22:21 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `getTerrainTag' for nil:NilClass
+
+Backtrace:
+[Astralneko's Sounds On Step] Sounds On Step.rb:85:in `block in pbPlaySoundEffectToLocation'
+006_Game_Character.rb:105:in `block (2 levels) in each_occupied_tile'
+006_Game_Character.rb:104:in `each'
+006_Game_Character.rb:104:in `block in each_occupied_tile'
+006_Game_Character.rb:103:in `each'
+006_Game_Character.rb:103:in `each_occupied_tile'
+[Astralneko's Sounds On Step] Sounds On Step.rb:83:in `pbPlaySoundEffectToLocation'
+[Astralneko's Sounds On Step] Sounds On Step.rb:77:in `pbPlaySoundEffectEvent'
+[Astralneko's Sounds On Step] Sounds On Step.rb:60:in `block in <main>'
+005_Event_Handlers.rb:89:in `block in trigger'
+
+=================
+
+[2026-07-19 15:01:06 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: RuntimeError
+Message: Filename is nil (missing graphic).
+
+Backtrace:
+008_AnimatedBitmap.rb:6:in `initialize'
+[Modular Messages] Name Tags + Advanced Portraits.rb:144:in `new'
+[Modular Messages] Name Tags + Advanced Portraits.rb:144:in `initialize'
+[Modular Messages] Name Tags + Advanced Portraits.rb:178:in `initialize'
+[Modular Messages] Name Tags + Advanced Portraits.rb:253:in `new'
+[Modular Messages] Name Tags + Advanced Portraits.rb:253:in `block in <main>'
+[Swdfm Utilities] Other.rb:189:in `trigger_sect'
+[Modular Messages] [003] Controls Methods.rb:85:in `block in controls_before_appears'
+[Modular Messages] [003] Controls Methods.rb:79:in `times'
+[Modular Messages] [003] Controls Methods.rb:79:in `controls_before_appears'
+
+=================
+
+[2026-07-19 23:44:10 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Error in Plugin: [Deluxe Battle Kit]
+Exception: SyntaxError
+Message: [Deluxe Battle Kit] [005] AN MidbattleScripts.rb:43: syntax error, unexpected string literal, expecting '}'
+      "setVariable" => 0
+      ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:44: syntax error, unexpected '.', expecting `end'
+      "addVariable" => battle.player[0].able_pokemon_count
+                             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:45: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:50: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:56: syntax error, unexpected string literal, expecting local variable or method
+    "BeforeItemUse_player" => "Hey! I forgot to pack my bag....
+                              ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:56: syntax error, unexpected ',', expecting `end'
+...ck my bag... Come on, \\PN...",
+...                              ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:60: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:72: syntax error, unexpected string literal, expecting '}'
+      "speech_B" => "Alright, let's ...
+      ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:73: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:77: syntax error, unexpected terminator, expecting literal content or tSTRING_DBEG or tSTRING_DVAR or tLABEL_END
+      "setSpeaker" => :Self,
+                 ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:79: syntax error, unexpected string literal, expecting local variable or method
+      "speech" => "Crap... \\PN might win this.....
+                  ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:80: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:84: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:96: syntax error, unexpected '}', expecting ']'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:107: syntax error, unexpected string literal, expecting '}'
+      "speech_B" => "Slow and steady...
+      ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:108: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:112: syntax error, unexpected terminator, expecting literal content or tSTRING_DBEG or tSTRING_DVAR or tLABEL_END
+      "setSpeaker" => :Self,
+                 ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:114: syntax error, unexpected string literal, expecting local variable or method
+      "speech" => "\\PN, you're doing good! But ...
+                  ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:115: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:123: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:133: syntax error, unexpected string literal, expecting '}'
+      "addVariable" => battle.player...
+      ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:133: syntax error, unexpected '.', expecting `end'
+      "addVariable" => battle.player[0].able_pokemon_count
+                             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:134: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:138: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:144: syntax error, unexpected [, expecting local variable or method
+...BeforeTerastallize_player" => [:Opposing, "H-huh?! What's th...
+...                              ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:148: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:167: syntax error, unexpected string literal, expecting '}'
+    "BeforeTerastallize_foe" => "W...
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:171: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:186: syntax error, unexpected string literal, expecting ']'
+        "|t’s tıme you simply gɑve...
+        ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:186: syntax error, unexpected ']', expecting `end'
+... you simply gɑve up, chiլd."],
+...                              ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:189: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:199: syntax error, unexpected string literal, expecting '}'
+      "disableBalls" => true
+      ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:200: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:202: syntax error, unexpected terminator, expecting literal content or tSTRING_DBEG or tSTRING_DVAR or tLABEL_END
+      "speech" => "Yoʊ wιll not be ɑllow...
+             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:203: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:205: syntax error, unexpected terminator, expecting literal content or tSTRING_DBEG or tSTRING_DVAR or tLABEL_END
+      "speech" => "The dɑta say | am the s...
+             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:206: syntax error, unexpected '}', expecting `end'
+    }
+    ^
+
+
+Backtrace:
+005_PluginManager.rb:635:in `eval'
+005_PluginManager.rb:635:in `block (2 levels) in runPlugins'
+005_PluginManager.rb:625:in `each'
+005_PluginManager.rb:625:in `block in runPlugins'
+005_PluginManager.rb:616:in `each'
+005_PluginManager.rb:616:in `runPlugins'
+999_Main.rb:34:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+
+=================
+
+[2026-07-19 23:45:39 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Error in Plugin: [Deluxe Battle Kit]
+Exception: SyntaxError
+Message: [Deluxe Battle Kit] [005] AN MidbattleScripts.rb:53: syntax error, unexpected =>, expecting `end'
+    "LastTargetHPHalf_foe" => "It's down to the wire... C'...
+                           ^~
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:53: syntax error, unexpected ',', expecting `end'
+...wn to the wire... C'mon! {1}!",
+...                              ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:59: syntax error, unexpected string literal, expecting local variable or method
+    "BattleEndLoss" => "I won? ...I won! Yes!"
+                       ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:60: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:84: syntax error, unexpected '}', expecting '}'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:96: syntax error, unexpected '}', expecting ']'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:121: syntax error, unexpected string literal, expecting '}'
+    "BeforeTerastallize_foe" => ["...
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:123: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:133: syntax error, unexpected string literal, expecting '}'
+      "addVariable" => battle.player...
+      ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:133: syntax error, unexpected '.', expecting `end'
+      "addVariable" => battle.player[0].able_pokemon_count
+                             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:134: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:140: syntax error, unexpected string literal, expecting local variable or method
+    "LastTargetHPHalf" => "It's down to the wire... C'mo...
+                          ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:140: syntax error, unexpected ',', expecting `end'
+...wn to the wire... C'mon! {1}!",
+...                              ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:146: syntax error, unexpected string literal, expecting local variable or method
+    "BattleEndLoss" => "...huh. Better hope they aren...
+                       ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:147: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:166: syntax error, unexpected string literal, expecting '}'
+    "BeforeTerastallize_foe" => "W...
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:170: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:185: syntax error, unexpected string literal, expecting ']'
+        "|t’s tıme you simply gɑve...
+        ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:185: syntax error, unexpected ']', expecting `end'
+... you simply gɑve up, chiլd."],
+...                              ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:188: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:198: syntax error, unexpected string literal, expecting '}'
+      "disableBalls" => true
+      ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:199: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:201: syntax error, unexpected terminator, expecting literal content or tSTRING_DBEG or tSTRING_DVAR or tLABEL_END
+      "speech" => "Yoʊ wιll not be ɑllow...
+             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:202: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:204: syntax error, unexpected terminator, expecting literal content or tSTRING_DBEG or tSTRING_DVAR or tLABEL_END
+      "speech" => "The dɑta say | am the s...
+             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:205: syntax error, unexpected '}', expecting `end'
+    }
+    ^
+
+
+Backtrace:
+005_PluginManager.rb:635:in `eval'
+005_PluginManager.rb:635:in `block (2 levels) in runPlugins'
+005_PluginManager.rb:625:in `each'
+005_PluginManager.rb:625:in `block in runPlugins'
+005_PluginManager.rb:616:in `each'
+005_PluginManager.rb:616:in `runPlugins'
+999_Main.rb:34:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+
+=================
+
+[2026-07-19 23:46:17 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Error in Plugin: [Deluxe Battle Kit]
+Exception: SyntaxError
+Message: [Deluxe Battle Kit] [005] AN MidbattleScripts.rb:95: syntax error, unexpected '}', expecting ']'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:120: syntax error, unexpected string literal, expecting '}'
+    "BeforeTerastallize_foe" => ["...
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:122: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:132: syntax error, unexpected string literal, expecting '}'
+      "addVariable" => battle.player...
+      ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:132: syntax error, unexpected '.', expecting `end'
+      "addVariable" => battle.player[0].able_pokemon_count
+                             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:133: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:139: syntax error, unexpected string literal, expecting local variable or method
+    "LastTargetHPHalf" => "It's down to the wire... C'mo...
+                          ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:139: syntax error, unexpected ',', expecting `end'
+...wn to the wire... C'mon! {1}!",
+...                              ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:145: syntax error, unexpected string literal, expecting local variable or method
+    "BattleEndLoss" => "...huh. Better hope they aren...
+                       ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:146: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:165: syntax error, unexpected string literal, expecting '}'
+    "BeforeTerastallize_foe" => "W...
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:169: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:184: syntax error, unexpected string literal, expecting ']'
+        "|t’s tıme you simply gɑve...
+        ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:184: syntax error, unexpected ']', expecting `end'
+... you simply gɑve up, chiլd."],
+...                              ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:187: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:197: syntax error, unexpected string literal, expecting '}'
+      "disableBalls" => true
+      ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:198: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:200: syntax error, unexpected terminator, expecting literal content or tSTRING_DBEG or tSTRING_DVAR or tLABEL_END
+      "speech" => "Yoʊ wιll not be ɑllow...
+             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:201: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:203: syntax error, unexpected terminator, expecting literal content or tSTRING_DBEG or tSTRING_DVAR or tLABEL_END
+      "speech" => "The dɑta say | am the s...
+             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:204: syntax error, unexpected '}', expecting `end'
+    }
+    ^
+
+
+Backtrace:
+005_PluginManager.rb:635:in `eval'
+005_PluginManager.rb:635:in `block (2 levels) in runPlugins'
+005_PluginManager.rb:625:in `each'
+005_PluginManager.rb:625:in `block in runPlugins'
+005_PluginManager.rb:616:in `each'
+005_PluginManager.rb:616:in `runPlugins'
+999_Main.rb:34:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+
+=================
+
+[2026-07-19 23:46:44 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Error in Plugin: [Deluxe Battle Kit]
+Exception: SyntaxError
+Message: [Deluxe Battle Kit] [005] AN MidbattleScripts.rb:95: syntax error, unexpected '}', expecting ']'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:132: syntax error, unexpected string literal, expecting '}'
+      "addVariable" => battle.player...
+      ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:132: syntax error, unexpected '.', expecting `end'
+      "addVariable" => battle.player[0].able_pokemon_count
+                             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:133: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:139: syntax error, unexpected string literal, expecting local variable or method
+    "LastTargetHPHalf" => "It's down to the wire... C'mo...
+                          ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:139: syntax error, unexpected ',', expecting `end'
+...wn to the wire... C'mon! {1}!",
+...                              ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:145: syntax error, unexpected string literal, expecting local variable or method
+    "BattleEndLoss" => "...huh. Better hope they aren...
+                       ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:146: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:184: syntax error, unexpected string literal, expecting ']'
+        "|t’s tıme you simply gɑve...
+        ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:184: syntax error, unexpected ']', expecting `end'
+... you simply gɑve up, chiլd."],
+...                              ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:187: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:197: syntax error, unexpected string literal, expecting '}'
+      "disableBalls" => true
+      ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:198: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:200: syntax error, unexpected terminator, expecting literal content or tSTRING_DBEG or tSTRING_DVAR or tLABEL_END
+      "speech" => "Yoʊ wιll not be ɑllow...
+             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:201: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:203: syntax error, unexpected terminator, expecting literal content or tSTRING_DBEG or tSTRING_DVAR or tLABEL_END
+      "speech" => "The dɑta say | am the s...
+             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:204: syntax error, unexpected '}', expecting `end'
+    }
+    ^
+
+
+Backtrace:
+005_PluginManager.rb:635:in `eval'
+005_PluginManager.rb:635:in `block (2 levels) in runPlugins'
+005_PluginManager.rb:625:in `each'
+005_PluginManager.rb:625:in `block in runPlugins'
+005_PluginManager.rb:616:in `each'
+005_PluginManager.rb:616:in `runPlugins'
+999_Main.rb:34:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+
+=================
+
+[2026-07-19 23:47:17 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Error in Plugin: [Deluxe Battle Kit]
+Exception: SyntaxError
+Message: [Deluxe Battle Kit] [005] AN MidbattleScripts.rb:185: syntax error, unexpected string literal, expecting ']'
+        "|t’s tıme you simply gɑve...
+        ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:185: syntax error, unexpected ']', expecting `end'
+... you simply gɑve up, chiլd."],
+...                              ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:188: syntax error, unexpected '}', expecting `end'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:198: syntax error, unexpected string literal, expecting '}'
+      "disableBalls" => true
+      ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:199: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:201: syntax error, unexpected terminator, expecting literal content or tSTRING_DBEG or tSTRING_DVAR or tLABEL_END
+      "speech" => "Yoʊ wιll not be ɑllow...
+             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:202: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:204: syntax error, unexpected terminator, expecting literal content or tSTRING_DBEG or tSTRING_DVAR or tLABEL_END
+      "speech" => "The dɑta say | am the s...
+             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:205: syntax error, unexpected '}', expecting `end'
+    }
+    ^
+
+
+Backtrace:
+005_PluginManager.rb:635:in `eval'
+005_PluginManager.rb:635:in `block (2 levels) in runPlugins'
+005_PluginManager.rb:625:in `each'
+005_PluginManager.rb:625:in `block in runPlugins'
+005_PluginManager.rb:616:in `each'
+005_PluginManager.rb:616:in `runPlugins'
+999_Main.rb:34:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+
+=================
+
+[2026-07-19 23:47:57 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Error in Plugin: [Deluxe Battle Kit]
+Exception: SyntaxError
+Message: [Deluxe Battle Kit] [005] AN MidbattleScripts.rb:188: syntax error, unexpected '}', expecting ']'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:198: syntax error, unexpected string literal, expecting '}'
+      "disableBalls" => true
+      ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:199: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:201: syntax error, unexpected terminator, expecting literal content or tSTRING_DBEG or tSTRING_DVAR or tLABEL_END
+      "speech" => "Yoʊ wιll not be ɑllow...
+             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:202: syntax error, unexpected '}', expecting `end'
+    },
+    ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:204: syntax error, unexpected terminator, expecting literal content or tSTRING_DBEG or tSTRING_DVAR or tLABEL_END
+      "speech" => "The dɑta say | am the s...
+             ^
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:205: syntax error, unexpected '}', expecting `end'
+    }
+    ^
+
+
+Backtrace:
+005_PluginManager.rb:635:in `eval'
+005_PluginManager.rb:635:in `block (2 levels) in runPlugins'
+005_PluginManager.rb:625:in `each'
+005_PluginManager.rb:625:in `block in runPlugins'
+005_PluginManager.rb:616:in `each'
+005_PluginManager.rb:616:in `runPlugins'
+999_Main.rb:34:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+
+=================
+
+[2026-07-19 23:48:33 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Error in Plugin: [Deluxe Battle Kit]
+Exception: SyntaxError
+Message: [Deluxe Battle Kit] [005] AN MidbattleScripts.rb:188: syntax error, unexpected '}', expecting ']'
+
+Backtrace:
+005_PluginManager.rb:635:in `eval'
+005_PluginManager.rb:635:in `block (2 levels) in runPlugins'
+005_PluginManager.rb:625:in `each'
+005_PluginManager.rb:625:in `block in runPlugins'
+005_PluginManager.rb:616:in `each'
+005_PluginManager.rb:616:in `runPlugins'
+999_Main.rb:34:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+
+=================
+
+[2026-07-19 23:48:57 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Error in Plugin: [Deluxe Battle Kit]
+Exception: NameError
+Message: undefined local variable or method `battle' for MidbattleScripts:Module
+
+Backtrace:
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:44:in `<module:MidbattleScripts>'
+[Deluxe Battle Kit] [005] AN MidbattleScripts.rb:18:in `<main>'
+005_PluginManager.rb:635:in `eval'
+005_PluginManager.rb:635:in `block (2 levels) in runPlugins'
+005_PluginManager.rb:625:in `each'
+005_PluginManager.rb:625:in `block in runPlugins'
+005_PluginManager.rb:616:in `each'
+005_PluginManager.rb:616:in `runPlugins'
+999_Main.rb:34:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+
+=================
+
+[2026-07-19 23:51:19 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Error in Plugin: [Modular Messages]
+Exception: SyntaxError
+Message: [Modular Messages] [002] Text Replacement.rb:52: invalid hex escape
+    next "\xn[" + something + "]\mr[\v[32...
+          ^~
+[Modular Messages] [002] Text Replacement.rb:52: syntax error, unexpected ')', expecting `end'
+...+ "]\mr[\v[32]]\ds[\v[32]]\pg") if $player
+...                              ^
+[Modular Messages] [002] Text Replacement.rb:53: invalid hex escape
+    next "\xnmr[Aspin]"
+          ^~
+[Modular Messages] [002] Text Replacement.rb:72: syntax error, unexpected tLAMBEG, expecting `end'
+...ub!(/\\\[([0-9a-f]{8,8})\]/i) { "<c2=" + $1 + ">" }
+...                              ^
+[Modular Messages] [002] Text Replacement.rb:72: syntax error, unexpected '}', expecting `end'
+...,8})\]/i) { "<c2=" + $1 + ">" }
+...                              ^
+[Modular Messages] [002] Text Replacement.rb:93: syntax error, unexpected tLAMBEG, expecting `end'
+...pr\[([0-9]+)\]\[([0-9]+)\]/i) { anPlayerPronoun[$1.to_i][$2....
+...                              ^
+[Modular Messages] [002] Text Replacement.rb:93: syntax error, unexpected '}', expecting `end'
+...ayerPronoun[$1.to_i][$2.to_i] }
+...                              ^
+[Modular Messages] [002] Text Replacement.rb:100: syntax error, unexpected `do' for lambda, expecting `end'
+....gsub!(/\\[Ww]\[([^\]]*)\]/) do
+...                             ^~
+[Modular Messages] [002] Text Replacement.rb:114: syntax error, unexpected `do' for lambda, expecting `end'
+..."].gsub!(/\\c\[([0-9]+)\]/i) do
+...                             ^~
+[Modular Messages] [002] Text Replacement.rb:126: syntax error, unexpected `do' for lambda, expecting `end'
+    loop do
+         ^~
+[Modular Messages] [002] Text Replacement.rb:128: syntax error, unexpected `do' for lambda, expecting `end'
+....gsub!(/\\[Vv]\[([^\]]*)\]/) do
+...                             ^~
+[Modular Messages] [002] Text Replacement.rb:142: syntax error, unexpected `end', expecting end-of-input
+    end
+    ^~~
+
+
+Backtrace:
+005_PluginManager.rb:635:in `eval'
+005_PluginManager.rb:635:in `block (2 levels) in runPlugins'
+005_PluginManager.rb:625:in `each'
+005_PluginManager.rb:625:in `block in runPlugins'
+005_PluginManager.rb:616:in `each'
+005_PluginManager.rb:616:in `runPlugins'
+999_Main.rb:34:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+
+=================
+
+[2026-07-19 23:52:42 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Error in Plugin: [Modular Messages]
+Exception: SyntaxError
+Message: [Modular Messages] [002] Text Replacement.rb:52: syntax error, unexpected ')', expecting `end'
+...\mr[\\v[32]]\\ds[\\v[32]]\\pg") if $player
+...                              ^
+[Modular Messages] [002] Text Replacement.rb:72: syntax error, unexpected tLAMBEG, expecting `end'
+...ub!(/\\\[([0-9a-f]{8,8})\]/i) { "<c2=" + $1 + ">" }
+...                              ^
+[Modular Messages] [002] Text Replacement.rb:72: syntax error, unexpected '}', expecting `end'
+...,8})\]/i) { "<c2=" + $1 + ">" }
+...                              ^
+[Modular Messages] [002] Text Replacement.rb:93: syntax error, unexpected tLAMBEG, expecting `end'
+...pr\[([0-9]+)\]\[([0-9]+)\]/i) { anPlayerPronoun[$1.to_i][$2....
+...                              ^
+[Modular Messages] [002] Text Replacement.rb:93: syntax error, unexpected '}', expecting `end'
+...ayerPronoun[$1.to_i][$2.to_i] }
+...                              ^
+[Modular Messages] [002] Text Replacement.rb:100: syntax error, unexpected `do' for lambda, expecting `end'
+....gsub!(/\\[Ww]\[([^\]]*)\]/) do
+...                             ^~
+[Modular Messages] [002] Text Replacement.rb:114: syntax error, unexpected `do' for lambda, expecting `end'
+..."].gsub!(/\\c\[([0-9]+)\]/i) do
+...                             ^~
+[Modular Messages] [002] Text Replacement.rb:126: syntax error, unexpected `do' for lambda, expecting `end'
+    loop do
+         ^~
+[Modular Messages] [002] Text Replacement.rb:128: syntax error, unexpected `do' for lambda, expecting `end'
+....gsub!(/\\[Vv]\[([^\]]*)\]/) do
+...                             ^~
+[Modular Messages] [002] Text Replacement.rb:142: syntax error, unexpected `end', expecting end-of-input
+    end
+    ^~~
+
+
+Backtrace:
+005_PluginManager.rb:635:in `eval'
+005_PluginManager.rb:635:in `block (2 levels) in runPlugins'
+005_PluginManager.rb:625:in `each'
+005_PluginManager.rb:625:in `block in runPlugins'
+005_PluginManager.rb:616:in `each'
+005_PluginManager.rb:616:in `runPlugins'
+999_Main.rb:34:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'

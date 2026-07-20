@@ -1,4 +1,4 @@
 Name       = Easy Weather Effects
-Version    = 2.0.0
+Version    = 3.0.0
 Essentials = 21.1
-Credits = BloodyNeonz, TheOnlyFelicity, ForeverZer0, Pokemon Rejuvenation
+Credits = BloodyNeonz, TheOnlyFelicity, ForeverZer0, Pokemon Rejuvenation, Luka SJ

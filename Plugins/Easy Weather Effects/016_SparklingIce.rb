@@ -1,7 +1,3 @@
-#===============================================================================
-# Custom Weather Plugin - Sparkling Ice Weather
-# Tiny glittering ice crystals hang nearly static in the air. No battle effects.
-#===============================================================================
 
 SPARKLE_SPRITE_COUNT = 200
 
@@ -34,11 +30,15 @@ class Spriteset_Map
       sprite         = Sprite.new(@sparkle_viewport)
       sprite.z       = 1000
       sprite.bitmap  = @sparkle_bitmaps[rand(@sparkle_bitmaps.size)]
-      sprite.x       = rand(Graphics.width)
-      sprite.y       = rand(Graphics.height)
       sprite.opacity = rand(200) + 30
+
+      wx = cw_map_offset_x + rand(Graphics.width)
+      wy = cw_map_offset_y + rand(Graphics.height)
+      sprite.x = cw_world_to_screen_x(wx)
+      sprite.y = cw_world_to_screen_y(wy)
+
       @sparkle_sprites.push(sprite)
-      @sparkle_info.push(rand(120))
+      @sparkle_info.push([rand(120), wx, wy])
     end
     @sparkle_active = true
   end
@@ -46,21 +46,31 @@ class Spriteset_Map
   def sparkle_update_sprites
     frame = Graphics.frame_count
     @sparkle_sprites.each_with_index do |sprite, i|
-      @sparkle_info[i] = (@sparkle_info[i] + 1) % 120
-      phase = @sparkle_info[i]
+      phase, wx, wy = @sparkle_info[i]
+      phase = (phase + 1) % 120
+
       if    phase < 30  then sprite.opacity += 3
       elsif phase < 60  then sprite.opacity -= 1
       elsif phase < 90  then sprite.opacity -= 3
       else                   sprite.opacity += 1
       end
-      sprite.y += 1 if (frame + @sparkle_info[i]) % 4 == 0
-      sprite.x += (rand(3) - 1) if frame % 30 == @sparkle_info[i] % 30
+
+      wy += 1 if (frame + phase) % 4 == 0
+      wx += (rand(3) - 1) if frame % 30 == phase % 30
+
+      sprite.x = cw_world_to_screen_x(wx)
+      sprite.y = cw_world_to_screen_y(wy)
+
+      @sparkle_info[i] = [phase, wx, wy]
+
       if sprite.opacity <= 0 || sprite.y > Graphics.height
         sprite.opacity   = rand(60) + 10
-        sprite.x         = rand(Graphics.width)
-        sprite.y         = -sprite.bitmap.height
         sprite.bitmap    = @sparkle_bitmaps[rand(@sparkle_bitmaps.size)]
-        @sparkle_info[i] = 0
+        wx = cw_map_offset_x + rand(Graphics.width)
+        wy = cw_map_offset_y + (-sprite.bitmap.height)
+        sprite.x         = cw_world_to_screen_x(wx)
+        sprite.y         = cw_world_to_screen_y(wy)
+        @sparkle_info[i] = [0, wx, wy]
       end
     end
   end
@@ -103,9 +113,6 @@ CustomWeather::SpritesetHandlers.register_dispose(:SparklingIce) do |spriteset|
   end
 end
 
-#===============================================================================
-# Register Overworld & Battle Weather
-#===============================================================================
 CustomWeather.register_weather(
   { :id => :SparklingIce, :id_number => 15, :category => :None, :graphics => [],
     :tone_proc => proc { |strength| Tone.new(strength / 5, strength / 5, strength / 3, strength / 6) } },

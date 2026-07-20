@@ -1,8 +1,3 @@
-#===============================================================================
-# Custom Weather Plugin - Falling Ash Weather
-# Fine grey ash flakes drifting slowly downward. No battle effects.
-# Slightly larger flakes than original.
-#===============================================================================
 
 ASH_SPRITE_COUNT = 180
 
@@ -25,7 +20,6 @@ class Spriteset_Map
       if data[:irregular]
         (0...data[:w]).each do |x|
           (0...data[:h]).each do |y|
-            # Skip corners to give irregular shape
             next if x == 0 && y == 0
             next if x == data[:w] - 1 && y == 0
             next if x == 0 && y == data[:h] - 1
@@ -48,32 +42,45 @@ class Spriteset_Map
       sprite         = Sprite.new(@ash_viewport)
       sprite.z       = 1000
       sprite.bitmap  = @ash_bitmaps[rand(@ash_bitmaps.size)]
-      sprite.x       = rand(Graphics.width + 40) - 20
-      sprite.y       = rand(Graphics.height)
       sprite.opacity = rand(160) + 40
+
+      wx = cw_map_offset_x + rand(Graphics.width + 40) - 20
+      wy = cw_map_offset_y + rand(Graphics.height)
+      sprite.x = cw_world_to_screen_x(wx)
+      sprite.y = cw_world_to_screen_y(wy)
+
       @ash_sprites.push(sprite)
-      @ash_info.push([rand(2) + 1, rand(120)])
+      @ash_info.push([rand(2) + 1, rand(120), wx, wy])
     end
     @ash_active = true
   end
 
   def ash_update_sprites
     @ash_sprites.each_with_index do |sprite, i|
-      speed, phase = @ash_info[i]
-      sprite.y += speed == 2 ? 1 : (Graphics.frame_count % 2 == i % 2 ? 1 : 0)
+      speed, phase, wx, wy = @ash_info[i]
+
+      wy += speed == 2 ? 1 : (Graphics.frame_count % 2 == i % 2 ? 1 : 0)
       phase = (phase + 1) % 120
-      if    phase < 30  then sprite.x -= 1
-      elsif phase < 90  then sprite.x += 0
-      else                   sprite.x += 1
+      if    phase < 30  then wx -= 1
+      elsif phase < 90  then wx += 0
+      else                   wx += 1
       end
-      @ash_info[i] = [speed, phase]
+
       sprite.opacity += rand(3) - 1
+
+      sprite.x = cw_world_to_screen_x(wx)
+      sprite.y = cw_world_to_screen_y(wy)
+
+      @ash_info[i] = [speed, phase, wx, wy]
+
       if sprite.y > Graphics.height + sprite.bitmap.height
         sprite.opacity = rand(160) + 40
-        sprite.x       = rand(Graphics.width + 40) - 20
-        sprite.y       = -sprite.bitmap.height - rand(20)
         sprite.bitmap  = @ash_bitmaps[rand(@ash_bitmaps.size)]
-        @ash_info[i]   = [rand(2) + 1, rand(120)]
+        wx = cw_map_offset_x + rand(Graphics.width + 40) - 20
+        wy = cw_map_offset_y + (-sprite.bitmap.height - rand(20))
+        sprite.x       = cw_world_to_screen_x(wx)
+        sprite.y       = cw_world_to_screen_y(wy)
+        @ash_info[i]   = [rand(2) + 1, rand(120), wx, wy]
       end
     end
   end

@@ -3,147 +3,147 @@
 # Extends Battle class to handle custom weather effects
 #===============================================================================
 class Battle
-  #=============================================================================
-  # Extend pbStartBattleCore to show custom weather announcement at battle start
-  #=============================================================================
-  alias_method :customweather_pbStartBattleCore, :pbStartBattleCore
+  unless @__customweather_battle_patched
+    @__customweather_battle_patched = true
 
-  def pbStartBattleCore
-    # Check if we have custom weather that needs announcement
-    if CustomWeather.custom_weather?(@field.weather)
-      # Set up the battlers on each side
-      sendOuts = pbSetUpSides
-      @battleAI.create_ai_objects
-      # Create all the sprites and play the battle intro animation
-      @scene.pbStartBattle(self)
-      # Show trainers on both sides sending out Pokémon
-      pbStartBattleSendOut(sendOuts)
-      # Custom weather announcement
-      weather_data = GameData::BattleWeather.try_get(@field.weather)
-      pbCommonAnimation(weather_data.animation) if weather_data
-      # Get custom start message for battle start
-      start_msg = CustomWeather::Handlers.triggerStartMessage(@field.weather, self)
-      pbDisplay(start_msg) if start_msg
-      # Terrain announcement (keep original behavior)
-      terrain_data = GameData::BattleTerrain.try_get(@field.terrain)
-      pbCommonAnimation(terrain_data.animation) if terrain_data
-      case @field.terrain
-      when :Electric
-        pbDisplay(_INTL("An electric current runs across the battlefield!"))
-      when :Grassy
-        pbDisplay(_INTL("Grass is covering the battlefield!"))
-      when :Misty
-        pbDisplay(_INTL("Mist swirls about the battlefield!"))
-      when :Psychic
-        pbDisplay(_INTL("The battlefield is weird!"))
+    #===========================================================================
+    # pbEORWeatherDamage — run custom weather EOR damage as an overlay.
+    # Follows the standard EOR damage pattern used throughout the codebase:
+    #   scene.pbDamageAnimation  (done inside each Handlers::EORDamage proc)
+    #   pbReduceHP               (done inside each Handlers::EORDamage proc)
+    #   pbItemHPHealCheck
+    #   pbAbilitiesOnDamageTaken   ← was missing in original; required
+    #   pbFaint
+    # Falls through to the original for :None / built-in weather.
+    #===========================================================================
+    alias customweather_pbEORWeatherDamage pbEORWeatherDamage
+
+    def pbEORWeatherDamage(battler)
+      unless CustomWeather.custom_weather?(battler.effectiveWeather)
+        return customweather_pbEORWeatherDamage(battler)
       end
-      # Abilities upon entering battle
-      pbOnAllBattlersEnteringBattle
-      # Main battle loop
-      pbBattleLoop
-      return
-    end
-    # Fall back to original method for built-in weather
-    customweather_pbStartBattleCore
-  end
-
-  #=============================================================================
-  # Extend pbEORWeatherDamage to handle custom weather damage
-  #=============================================================================
-  alias_method :customweather_pbEORWeatherDamage, :pbEORWeatherDamage
-
-  def pbEORWeatherDamage(battler)
-    # First try custom weather handling
-    if CustomWeather.custom_weather?(battler.effectiveWeather)
       return if battler.fainted?
       CustomWeather::Handlers.triggerEORDamage(battler.effectiveWeather, battler, self)
+      return if battler.fainted?
       battler.pbItemHPHealCheck
+      battler.pbAbilitiesOnDamageTaken
       battler.pbFaint if battler.fainted?
-      return
     end
-    # Fall back to original method for built-in weather
-    customweather_pbEORWeatherDamage(battler)
-  end
 
-  #=============================================================================
-  # Extend pbEOREndWeather to handle custom weather messages
-  #=============================================================================
-  alias_method :customweather_pbEOREndWeather, :pbEOREndWeather
+    #===========================================================================
+    # pbEOREndWeather — drive the custom weather EOR loop (count-down, messages,
+    # ability triggers, damage). Built-in weather falls through to original.
+    #
+    # The field-system alias (from 009_Field_Passive_Effects.rb) loads after
+    # this file, so it sits outside in the chain and calls through first.
+    # Field weather-duration extensions are therefore applied before this runs.
+    #===========================================================================
+    alias customweather_pbEOREndWeather pbEOREndWeather
 
-  def pbEOREndWeather(priority)
-    # Check if this is a custom weather
-    if CustomWeather.custom_weather?(@field.weather)
-      # Count down weather duration
+    def pbEOREndWeather(priority)
+      unless CustomWeather.custom_weather?(@field.weather)
+        return customweather_pbEOREndWeather(priority)
+      end
+
+      # Count down duration (-1 means infinite)
       @field.weatherDuration -= 1 if @field.weatherDuration > 0
-      # Weather wears off
+
       if @field.weatherDuration == 0
-        # Get custom end message
         end_msg = CustomWeather::Handlers.triggerEndMessage(@field.weather, self)
         pbDisplay(end_msg) if end_msg
         @field.weather = :None
-        # Check for form changes caused by the weather changing
-        allBattlers.each { |battler| battler.pbCheckFormOnWeatherChange }
-        # Start up the default weather
+        allBattlers.each { |b| b.pbCheckFormOnWeatherChange }
         pbStartWeather(nil, @field.defaultWeather) if @field.defaultWeather != :None
         return if @field.weather == :None
       end
-      # Weather continues
+
+      # Weather continues — animation, message, then per-battler effects
       weather_data = GameData::BattleWeather.try_get(@field.weather)
       pbCommonAnimation(weather_data.animation) if weather_data
-      # Get custom continue message
       continue_msg = CustomWeather::Handlers.triggerContinueMessage(@field.weather, self)
       pbDisplay(continue_msg) if continue_msg
-      # Effects due to weather
+
       priority.each do |battler|
-        # Weather-related abilities
         if battler.abilityActive?
-          Battle::AbilityEffects.triggerEndOfRoundWeather(battler.ability, battler.effectiveWeather, battler, self)
+          Battle::AbilityEffects.triggerEndOfRoundWeather(
+            battler.ability, battler.effectiveWeather, battler, self
+          )
           battler.pbFaint if battler.fainted?
         end
-        # Weather damage
         pbEORWeatherDamage(battler)
       end
-      return
     end
-    # Fall back to original method for built-in weather
-    customweather_pbEOREndWeather(priority)
-  end
 
-  #=============================================================================
-  # Extend pbStartWeather to handle custom weather start messages
-  #=============================================================================
-  alias_method :customweather_pbStartWeather, :pbStartWeather
+    #===========================================================================
+    # pbStartWeather — handle custom weather start.
+    #
+    # FIELD OVERLAY RULE: if the active field explicitly blocks this weather
+    # (via field_blocks_weather? from the field system), the weather is rejected
+    # and the appropriate block message is shown — exactly as built-in weather
+    # is blocked by certain fields (e.g. Volcanic blocks Hail, Infernal blocks
+    # Rain). Built-in weather falls through to the original method unchanged,
+    # which already has the field-system's alias for pbStartWeather.
+    #===========================================================================
+    alias customweather_pbStartWeather pbStartWeather
 
-  def pbStartWeather(user, newWeather, fixedDuration = false, showAnimation = true)
-    return if @field.weather == newWeather
-    # Check if new weather is custom
-    if CustomWeather.custom_weather?(newWeather)
-      @field.weather = newWeather
-      @field.weatherDuration = fixedDuration ? 5 : -1
-      if user
-        @field.weatherDuration = 8 if fixedDuration && user.hasActiveItem?(:WEATHEREXTENDER)
+    def pbStartWeather(user, newWeather, fixedDuration = false, showAnimation = true)
+      unless CustomWeather.custom_weather?(newWeather)
+        return customweather_pbStartWeather(user, newWeather, fixedDuration, showAnimation)
       end
-      weather_data = GameData::BattleWeather.try_get(@field.weather)
-      pbCommonAnimation(weather_data.animation) if showAnimation && weather_data
-      # Get custom start message
+
+      return if @field.weather == newWeather
+
+      # Respect field weather-blocking rules (overlay rule)
+      if respond_to?(:field_blocks_weather?) && field_blocks_weather?(newWeather)
+        if respond_to?(:field_weather_block_message)
+          msg = field_weather_block_message(newWeather)
+          pbDisplay(msg) if msg
+        end
+        return
+      end
+
+      @field.weather = newWeather
+
+      # Duration: -1 = infinite, 5 = default, 8 = with Weather Extender
+      if fixedDuration
+        @field.weatherDuration = 5
+        @field.weatherDuration = 8 if user && user.hasActiveItem?(:WEATHEREXTENDER)
+      else
+        @field.weatherDuration = -1
+      end
+
+      # Apply field-specific weather duration extension (from fieldtxt :weatherDuration)
+      # The field system sets this when pbStartWeather is called via its own alias;
+      # since built-in weather falls through to that alias, custom weather must
+      # replicate the extension check here.
+      if fixedDuration && has_field? && respond_to?(:current_field)
+        field_data = current_field
+        if field_data.respond_to?(:weatherDuration)
+          ext = field_data.weatherDuration[newWeather]
+          @field.weatherDuration = ext if ext && ext > @field.weatherDuration
+        end
+      end
+
+      if showAnimation
+        weather_data = GameData::BattleWeather.try_get(@field.weather)
+        pbCommonAnimation(weather_data.animation) if weather_data
+      end
+
       start_msg = CustomWeather::Handlers.triggerStartMessage(newWeather, self)
       pbDisplay(start_msg) if start_msg
-      # Check for form changes caused by the weather changing
-      allBattlers.each { |battler| battler.pbCheckFormOnWeatherChange }
-      # Trigger abilities that activate upon weather changing
-      pbStartWeatherAbilities(newWeather)
-      return
-    end
-    # Fall back to original method for built-in weather
-    customweather_pbStartWeather(user, newWeather, fixedDuration, showAnimation)
-  end
 
-  #=============================================================================
-  # Helper: Trigger abilities that activate when weather changes
-  #=============================================================================
-  def pbStartWeatherAbilities(weather)
-    pbPriority(true).each do |battler|
-      battler.pbAbilityOnTerrainChange if battler.abilityActive?
+      allBattlers.each { |b| b.pbCheckFormOnWeatherChange }
+      pbStartWeatherAbilities(newWeather)
     end
-  end
+
+    #===========================================================================
+    # Helper: trigger abilities that respond to a weather change
+    #===========================================================================
+    def pbStartWeatherAbilities(weather)
+      pbPriority(true).each do |battler|
+        battler.pbAbilityOnTerrainChange if battler.abilityActive?
+      end
+    end
+
+  end # unless @__customweather_battle_patched
 end

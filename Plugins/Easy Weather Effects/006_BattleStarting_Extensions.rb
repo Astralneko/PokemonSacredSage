@@ -3,22 +3,26 @@
 # Extends battle preparation to convert overworld custom weather to battle weather
 #===============================================================================
 module BattleCreationHelperMethods
-  class << self
-    alias_method :customweather_prepare_battle, :prepare_battle
-  end
+  unless singleton_class.instance_variable_get(:@__customweather_battlestart_patched)
+    singleton_class.instance_variable_set(:@__customweather_battlestart_patched, true)
 
-  def self.prepare_battle(battle)
-    # Call original method first
-    customweather_prepare_battle(battle)
+    class << self
+      alias customweather_prepare_battle prepare_battle
+    end
 
-    # Check for custom weather conversion
-    battleRules = $game_temp.battle_rules
-    if battleRules["defaultWeather"].nil?
-      overworld_weather = $game_screen.weather_type
-      battle_weather = CustomWeather.get_battle_weather(overworld_weather)
-      if battle_weather
-        battle.defaultWeather = battle_weather
+    def self.prepare_battle(battle)
+      # Run the original (which includes any field-system prepare_battle hooks)
+      customweather_prepare_battle(battle)
+
+      # If no explicit weather rule was set, check whether the overworld weather
+      # maps to a custom battle weather and apply it as the default
+      battleRules = $game_temp.battle_rules
+      if battleRules["defaultWeather"].nil?
+        overworld_weather = $game_screen.weather_type
+        battle_weather = CustomWeather.get_battle_weather(overworld_weather)
+        battle.defaultWeather = battle_weather if battle_weather
       end
     end
-  end
+
+  end # unless singleton patched
 end

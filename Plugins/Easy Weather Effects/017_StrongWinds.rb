@@ -1,7 +1,3 @@
-#===============================================================================
-# Custom Weather Plugin - Strong Winds Weather
-# Driving horizontal wind streaks. Flying-type moves boosted 30% in battle.
-#===============================================================================
 
 WIND_SPRITE_COUNT = 120
 
@@ -44,33 +40,47 @@ class Spriteset_Map
       sprite         = Sprite.new(@wind_viewport)
       sprite.z       = 1000
       sprite.bitmap  = bm
-      sprite.x       = rand(Graphics.width + bm.width) - bm.width
-      sprite.y       = rand(Graphics.height)
       sprite.opacity = rand(180) + 40
+
+      wx = cw_map_offset_x + rand(Graphics.width + bm.width) - bm.width
+      wy = cw_map_offset_y + rand(Graphics.height)
+      sprite.x = cw_world_to_screen_x(wx)
+      sprite.y = cw_world_to_screen_y(wy)
+
       @wind_sprites.push(sprite)
-      @wind_info.push([rand(12) + 8, rand(4)])
+      @wind_info.push([rand(12) + 8, rand(4), wx, wy])
     end
     @wind_active = true
   end
 
   def wind_update_sprites
     @wind_sprites.each_with_index do |sprite, i|
-      speed, drift = @wind_info[i]
-      sprite.x += speed
+      speed, drift, wx, wy = @wind_info[i]
+
+      wx += speed
       drift += 1
       if drift >= 6
-        sprite.y += rand(3) - 1
+        wy += rand(3) - 1
         drift = 0
       end
-      @wind_info[i] = [speed, drift]
+
+      @wind_info[i] = [speed, drift, wx, wy]
+
       sprite.opacity -= 1
       sprite.opacity += rand(4) if rand(20) == 0
+
+      sprite.x = cw_world_to_screen_x(wx)
+      sprite.y = cw_world_to_screen_y(wy)
+
       if sprite.x > Graphics.width || sprite.opacity <= 0
-        sprite.bitmap  = @wind_bitmaps[rand(@wind_bitmaps.size)]
-        sprite.x       = -sprite.bitmap.width - rand(80)
-        sprite.y       = rand(Graphics.height)
+        bm             = @wind_bitmaps[rand(@wind_bitmaps.size)]
+        sprite.bitmap  = bm
+        wx = cw_map_offset_x + (-bm.width - rand(80))
+        wy = cw_map_offset_y + rand(Graphics.height)
+        sprite.x       = cw_world_to_screen_x(wx)
+        sprite.y       = cw_world_to_screen_y(wy)
         sprite.opacity = rand(160) + 60
-        @wind_info[i]  = [rand(12) + 8, rand(4)]
+        @wind_info[i]  = [rand(12) + 8, rand(4), wx, wy]
       end
     end
   end
@@ -85,7 +95,7 @@ class Spriteset_Map
   end
 end
 
-CustomWeather::SpritesetHandlers.register(:StrongWinds) do |spriteset|
+CustomWeather::SpritesetHandlers.register(:Windy) do |spriteset|
   spriteset.instance_eval do
     unless @wind_bitmaps
       @wind_sprites  = []
@@ -94,7 +104,7 @@ CustomWeather::SpritesetHandlers.register(:StrongWinds) do |spriteset|
       @wind_active   = false
       wind_make_bitmaps
     end
-    if $game_screen.weather_type == :StrongWinds
+    if $game_screen.weather_type == :Windy
       wind_setup_layer unless @wind_active
       wind_update_sprites
     elsif @wind_active
@@ -103,7 +113,7 @@ CustomWeather::SpritesetHandlers.register(:StrongWinds) do |spriteset|
   end
 end
 
-CustomWeather::SpritesetHandlers.register_dispose(:StrongWinds) do |spriteset|
+CustomWeather::SpritesetHandlers.register_dispose(:Windy) do |spriteset|
   spriteset.instance_eval do
     wind_clear_layer if @wind_active
     if @wind_bitmaps
@@ -113,22 +123,19 @@ CustomWeather::SpritesetHandlers.register_dispose(:StrongWinds) do |spriteset|
   end
 end
 
-#===============================================================================
-# Register Overworld & Battle Weather
-#===============================================================================
 CustomWeather.register_weather(
-  { :id => :StrongWinds, :id_number => 17, :category => :None, :graphics => [],
+  { :id => :Windy, :id_number => 17, :category => :None, :graphics => [],
     :tone_proc => proc { |strength| Tone.new(strength / 8, strength / 8, strength / 8, strength / 10) } },
-  { :id => :StrongWinds, :name => _INTL("Strong Winds"), :animation => "StrongWinds" }
+  { :id => :Windy, :name => _INTL("Strong Winds"), :animation => "Windy" }
 )
 
-CustomWeather::Handlers::StartMessage.add(:StrongWinds,
+CustomWeather::Handlers::StartMessage.add(:Windy,
   proc { |weather, battle| next _INTL("A fierce wind began to blow across the battlefield!") })
-CustomWeather::Handlers::ContinueMessage.add(:StrongWinds,
+CustomWeather::Handlers::ContinueMessage.add(:Windy,
   proc { |weather, battle| next _INTL("The fierce wind continues to blow!") })
-CustomWeather::Handlers::EndMessage.add(:StrongWinds,
+CustomWeather::Handlers::EndMessage.add(:Windy,
   proc { |weather, battle| next _INTL("The wind died down.") })
-CustomWeather::Handlers::TypeBoost.add(:StrongWinds,
+CustomWeather::Handlers::TypeBoost.add(:Windy,
   proc { |weather, move_type, user, target|
     next 1.3 if move_type == :FLYING
     next 1.0

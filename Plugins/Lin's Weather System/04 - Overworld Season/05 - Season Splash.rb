@@ -11,6 +11,7 @@ if WeatherConfig::SEASON_CHANGE
       next if !$game_map.metadata&.outdoor_map && !$WeatherSystem.seasons[:outdoor]
       $WeatherSystem.seasons[:outdoor] = false
       $WeatherSystem.seasons[:outdoor] = true if $game_map.metadata&.outdoor_map
+	  next if PluginManager.installed?("BW Location Signposts") && Essentials::VERSION.include?("21")
       pbSeasonSplash
     }
   )

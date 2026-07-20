@@ -94,62 +94,6 @@ end
 #  end
 #}
 
-# anPlayerPronoun is used whenever a message has \ppg[X][Y] in it.
-# X is the person - 1 for first, 2 for second, 3 for third - use 0 for nonpronoun things such as Spanish adding -o/a/e to adjectives
-# Y is a number with the following IDs:
-# 1 = formal nominative 2 = formal accusative 3 = formal genitive 4 = formal dative
-# 5 = informal nominative 6 = informal accusative 7 = informal genitive 8 = informal dative
-# These handlers are used so that it's easy to identify these in translation - seeing as >1000 map IDs already mandate a separate english.dat from common, I consider this to be fine
-# English translated text will likely use exclusively category 3 due to very rare gender agreement otherwise
-def anPlayerPronoun
-	gender = $player.gender
-	return [
-		[ # Masculine
-			[ # 0 is used only for non-pronoun things, such as adjective endings
-				_INTL("masc adj ending 1"),_INTL("masc adj ending 2"),_INTL("masc adj ending 3"),_INTL("masc adj ending 4"),
-				_INTL("masc adj ending 5"),_INTL("masc adj ending 6"),_INTL("masc adj ending 7"),_INTL("masc adj ending 8")
-			],[ # First person
-				_INTL("1SG.M.FOR.NOM"),_INTL("1SG.M.FOR.ACC"),_INTL("1SG.M.FOR.GEN"),_INTL("1SG.M.FOR.DAT"),
-				_INTL("1SG.M.FAM.NOM"),_INTL("1SG.M.FAM.ACC"),_INTL("1SG.M.FAM.GEN"),_INTL("1SG.M.FAM.DAT")
-			],[ # Second person
-				_INTL("2SG.M.FOR.NOM"),_INTL("2SG.M.FOR.ACC"),_INTL("2SG.M.FOR.GEN"),_INTL("2SG.M.FOR.DAT"),
-				_INTL("2SG.M.FAM.NOM"),_INTL("2SG.M.FAM.ACC"),_INTL("2SG.M.FAM.GEN"),_INTL("2SG.M.FAM.DAT")
-			],[ # Third person
-				_INTL("3SG.M.FOR.NOM"),_INTL("3SG.M.FOR.ACC"),_INTL("3SG.M.FOR.GEN"),_INTL("3SG.M.FOR.DAT"),
-				_INTL("3SG.M.FAM.NOM"),_INTL("3SG.M.FAM.ACC"),_INTL("3SG.M.FAM.GEN"),_INTL("3SG.M.FAM.DAT")
-			]
-		],[ # Feminine
-			[ # 0 is used only for non-pronoun things, such as adjective endings
-				_INTL("fem adj ending 1"),_INTL("fem adj ending 2"),_INTL("fem adj ending 3"),_INTL("fem adj ending 4"),
-				_INTL("fem adj ending 5"),_INTL("fem adj ending 6"),_INTL("fem adj ending 7"),_INTL("fem adj ending 8")
-			],[ # First person
-				_INTL("1SG.F.FOR.NOM"),_INTL("1SG.F.FOR.ACC"),_INTL("1SG.F.FOR.GEN"),_INTL("1SG.F.FOR.DAT"),
-				_INTL("1SG.F.FAM.NOM"),_INTL("1SG.F.FAM.ACC"),_INTL("1SG.F.FAM.GEN"),_INTL("1SG.F.FAM.DAT")
-			],[ # Second person
-				_INTL("2SG.F.FOR.NOM"),_INTL("2SG.F.FOR.ACC"),_INTL("2SG.F.FOR.GEN"),_INTL("2SG.F.FOR.DAT"),
-				_INTL("2SG.F.FAM.NOM"),_INTL("2SG.F.FAM.ACC"),_INTL("2SG.F.FAM.GEN"),_INTL("2SG.F.FAM.DAT")
-			],[ # Third person
-				_INTL("3SG.F.FOR.NOM"),_INTL("3SG.F.FOR.ACC"),_INTL("3SG.F.FOR.GEN"),_INTL("3SG.F.FOR.DAT"),
-				_INTL("3SG.F.FAM.NOM"),_INTL("3SG.F.FAM.ACC"),_INTL("3SG.F.FAM.GEN"),_INTL("3SG.F.FAM.DAT")
-			]
-		],[ # Neuter
-			[ # 0 is used only for non-pronoun things, such as adjective endings
-				_INTL("neutral adj ending 1"),_INTL("neutral adj ending 2"),_INTL("neutral adj ending 3"),_INTL("neutral adj ending 4"),
-				_INTL("neutral adj ending 5"),_INTL("neutral adj ending 6"),_INTL("neutral adj ending 7"),_INTL("neutral adj ending 8")
-			],[ # First person
-				_INTL("1SG.N.FOR.NOM"),_INTL("1SG.N.FOR.ACC"),_INTL("1SG.N.FOR.GEN"),_INTL("1SG.N.FOR.DAT"),
-				_INTL("1SG.N.FAM.NOM"),_INTL("1SG.N.FAM.ACC"),_INTL("1SG.N.FAM.GEN"),_INTL("1SG.N.FAM.DAT")
-			],[ # Second person
-				_INTL("2SG.N.FOR.NOM"),_INTL("2SG.N.FOR.ACC"),_INTL("2SG.N.FOR.GEN"),_INTL("2SG.N.FOR.DAT"),
-				_INTL("2SG.N.FAM.NOM"),_INTL("2SG.N.FAM.ACC"),_INTL("2SG.N.FAM.GEN"),_INTL("2SG.N.FAM.DAT")
-			],[ # Third person
-				_INTL("3SG.N.FOR.NOM"),_INTL("3SG.N.FOR.ACC"),_INTL("3SG.N.FOR.GEN"),_INTL("3SG.N.FOR.DAT"),
-				_INTL("3SG.N.FAM.NOM"),_INTL("3SG.N.FAM.ACC"),_INTL("3SG.N.FAM.GEN"),_INTL("3SG.N.FAM.DAT")
-			]
-		]
-	][gender]
-end
-
 def anHasPokemonUprising
 	return pbSaveTest("Pokemon Uprising","Exist",nil,18)
 end

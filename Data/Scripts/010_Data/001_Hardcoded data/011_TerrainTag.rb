@@ -393,7 +393,21 @@ GameData::TerrainTag.register({
   :sound_effect           => ["Step/Wood",140]
 })
 
+GameData::TerrainTag.register({
+  :id                     => :Carpet,
+  :id_number              => 44,
+  :sound_effect           => ["Step/Carpet",140]
+})
+
+GameData::TerrainTag.register({
+  :id                     => :Asphalt,
+  :id_number              => 45,
+  :sound_effect           => ["Step/Concrete",140]
+})
+
 # NOTE: id 50 is used in BoonsPhenomena
+# NOTE: id 51-58 is used in Lin's Weather System
+# NOTE: id 72 is used in SecretBasesRemade
 
 GameData::TerrainTag.register({
   :id                     => :NoEffect,
