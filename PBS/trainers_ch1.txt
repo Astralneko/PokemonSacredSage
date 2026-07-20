@@ -171,6 +171,11 @@ LoseText = "Ack, you clipped my wings!"
 Pokemon = BEAUTIFLY,10
 Pokemon = RESPLUMA,10
 #-------------------------------
+[BUGCATCHER,Lexington]
+LoseText = "Ack, you clipped my wings!"
+Pokemon = BEAUTIFLY,10
+Pokemon = MACAWK,10
+#-------------------------------
 [LEADERS_Aria,Aria]
 LoseText = "Well done, \PN... Congratulations!"
 Pokemon = WOOBAT,11

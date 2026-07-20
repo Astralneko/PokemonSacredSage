@@ -277,10 +277,10 @@ Modular_Messages::Controls.add("ml", {
 Modular_Messages::Controls.copy("ml", "mr")
 
 #-------------------------------
-# Control Handlers: Do Both
+# Control Handlers: Do Both of the Below
 # Literally just passes the argument to both the xn and ml functions
 Modular_Messages::Controls.add("xnml", {
-  "both" => true,
+  # Does not get the "Both" tag because it does not work
   "before_appears" => proc { |hash, param|
     param1 = pbAdjustNameTag(param)
 	anSetDialogueSound(param1)
