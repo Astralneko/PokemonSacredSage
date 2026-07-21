@@ -45,6 +45,7 @@ BaseMoney = 32
 Name = Channeler
 Gender = Female
 BaseMoney = 32
+ShadowXY = 0,-2
 #-------------------------------
 [CRUSHGIRL]
 Name = Crush Girl
@@ -55,11 +56,13 @@ BaseMoney = 24
 Name = Cue Ball
 Gender = Male
 BaseMoney = 24
+ShadowXY = 0,-6
 #-------------------------------
 [PAINTER]
 Name = Painter
 Gender = Female
 BaseMoney = 16
+ShadowXY = 0,-3
 #-------------------------------
 [POKEMANIAC]
 Name = Poké Maniac
@@ -126,6 +129,7 @@ Name = Scientist
 Gender = Male
 BaseMoney = 16
 SkillLevel = 32
+ShadowXY = 2,-2
 #-------------------------------
 [COOLCOUPLE]
 Name = Cool Couple
@@ -161,6 +165,7 @@ Gender = Female
 BaseMoney = 100
 BattleBGM = Battle Gym Leader
 VictoryBGM = Battle victory leader
+ShadowXY = 0,-2
 #-------------------------------
 [LEADER_Surge]
 Name = Gym Leader
@@ -168,6 +173,7 @@ Gender = Male
 BaseMoney = 100
 BattleBGM = Battle Gym Leader
 VictoryBGM = Battle victory leader
+ShadowXY = 0,-2
 #-------------------------------
 [LEADER_Erika]
 Name = Gym Leader
@@ -182,6 +188,7 @@ Gender = Male
 BaseMoney = 100
 BattleBGM = Battle Gym Leader
 VictoryBGM = Battle victory leader
+ShadowXY = 0,-3
 #-------------------------------
 [LEADER_Sabrina]
 Name = Gym Leader
@@ -196,6 +203,7 @@ Gender = Male
 BaseMoney = 100
 BattleBGM = Battle Gym Leader
 VictoryBGM = Battle victory leader
+ShadowXY = 0,-3
 #-------------------------------
 [LEADER_Giovanni]
 Name = Gym Leader
@@ -203,6 +211,7 @@ Gender = Male
 BaseMoney = 100
 BattleBGM = Battle Gym Leader
 VictoryBGM = Battle victory leader
+ShadowXY = 0,-3
 #-------------------------------
 [ELITEFOUR_Lorelei]
 Name = Elite Four

@@ -6,6 +6,7 @@ Gender = Female
 BaseMoney = 100
 BattleBGM = ARS_Battle_Gym Leader
 VictoryBGM = 35 Victory! Team Plasma
+ShadowXY = 0,-2
 #-------------------------------
 [LEADERS_Desiree]
 Name = Gym Leader
@@ -27,6 +28,7 @@ Gender = Female
 BaseMoney = 100
 BattleBGM = ARS_Battle_Gym Leader
 VictoryBGM = 35 Victory! Team Plasma
+ShadowXY = 0,-2
 #-------------------------------
 [LEADERS_Neka]
 Name = Gym Leader
@@ -41,6 +43,7 @@ Gender = Female
 BaseMoney = 100
 BattleBGM = ARS_Battle_Gym Leader
 VictoryBGM = 35 Victory! Team Plasma
+ShadowXY = 0,-2
 #-------------------------------
 [LEADERS_Enrique]
 Name = Gym Leader
@@ -69,6 +72,7 @@ Gender = Female
 BaseMoney = 100
 BattleBGM = ARS_Battle_Gym Leader
 VictoryBGM = 35 Victory! Team Plasma
+ShadowXY = 0,-6
 #-------------------------------
 [LEADERT_Sauta]
 Name = Gym Leader
@@ -97,6 +101,7 @@ Gender = Female
 BaseMoney = 100
 BattleBGM = ARS_Battle_Gym Leader
 VictoryBGM = 35 Victory! Team Plasma
+ShadowXY = 0,-8
 #-------------------------------
 [LEADERT_Vergil]
 Name = Gym Leader
@@ -151,16 +156,19 @@ VictoryBGM = 35 Victory! Team Plasma
 Name = Pokémon Trainer
 Gender = Male
 BaseMoney = 60
+ShadowXY = 0,-2
 #-------------------------------
 [POKEMONTRAINER_Lapice]
 Name = Pokémon Trainer
 Gender = Female
 BaseMoney = 60
+ShadowXY = 0,-2
 #-------------------------------
 [POKEMONTRAINER_Jasper]
 Name = Pokémon Trainer
 Gender = Nonbinary
 BaseMoney = 60
+ShadowXY = 0,-2
 #-------------------------------
 [RIVAL_Mona]
 Name = Rival
@@ -168,6 +176,7 @@ Gender = Male
 BaseMoney = 60
 IntroBGM = ARS_Cutscene_Mona's Theme
 BattleBGM = ARS_Battle_Mona
+ShadowXY = 1,-2
 #-------------------------------
 [RIVAL_Natsuki]
 Name = Rival
@@ -176,6 +185,7 @@ BaseMoney = 50
 SkillLevel = 60
 IntroBGM = ARS_Cutscene_Natsuki's Theme
 BattleBGM = ARS_Battle_Natsuki
+ShadowXY = 0,-5
 #-------------------------------
 [RIVAL_Sorrel]
 Name = Pokémon Trainer
@@ -218,11 +228,13 @@ BattleBGM = ARS_Battle_Joseph Lazarn
 Name = Adventurer
 Gender = Male
 BaseMoney = 60
+ShadowXY = 0,-3
 #-------------------------------
 [ADVENTURER_Akari]
 Name = Adventurer
 Gender = Female
 BaseMoney = 60
+ShadowXY = 0,-3
 #-------------------------------
 [POKEMONTRAINER_Yellow]
 Name = Pokémon Trainer

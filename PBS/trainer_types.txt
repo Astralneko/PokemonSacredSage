@@ -9,6 +9,7 @@ BaseMoney = 32
 Name = Aroma Lady
 Gender = Female
 BaseMoney = 32
+ShadowXY = 0,2
 #-------------------------------
 [MODEL]
 Name = Model
@@ -29,44 +30,52 @@ BaseMoney = 32
 Name = Bird Keeper
 Gender = Male
 BaseMoney = 32
+ShadowXY = 0,-3
 #-------------------------------
 [BUGCATCHER]
 Name = Bug Catcher
 Gender = Male
 BaseMoney = 16
+ShadowXY = 0,-2
 #-------------------------------
 [ROUGHNECK]
 Name = Roughneck
 Gender = Male
 BaseMoney = 24
 Flags = PreferRiskyMoves
+ShadowXY = 0,-2
 #-------------------------------
 [FISHERMAN]
 Name = Fisherman
 Gender = Male
 BaseMoney = 32
+ShadowXY = 0,-2
 #-------------------------------
 [GAMBLER]
 Name = Gambler
 Gender = Male
 BaseMoney = 72
-Flags = PreferRiskyMoves
 SkillLevel = 32
+Flags = PreferRiskyMoves
+ShadowXY = 0,-2
 #-------------------------------
 [GENTLEMAN]
 Name = Gentleman
 Gender = Male
 BaseMoney = 72
+ShadowXY = 0,-2
 #-------------------------------
 [SOCIALITE]
 Name = Socialite
 Gender = Female
 BaseMoney = 72
+ShadowXY = 1,-2
 #-------------------------------
 [HIKER]
 Name = Hiker
 Gender = Male
 BaseMoney = 32
+ShadowXY = 0,-2
 #-------------------------------
 [BACKPACKER]
 Name = Backpacker
@@ -96,6 +105,7 @@ SkillLevel = 40
 Name = Pokémon Farmer
 Gender = Male
 BaseMoney = 48
+ShadowXY = 0,-2
 #-------------------------------
 [POKEMONBREEDER]
 Name = Pokémon Breeder
@@ -116,6 +126,7 @@ BaseMoney = 48
 Name = Sailor
 Gender = Male
 BaseMoney = 32
+ShadowXY = 4,-2
 #-------------------------------
 [TAMER]
 Name = Tamer
@@ -127,12 +138,14 @@ Name = Black Belt
 Gender = Male
 BaseMoney = 32
 Flags = Turn1BoostIfAble
+ShadowXY = 0,-5
 #-------------------------------
 [BATTLEGIRL]
 Name = Battle Girl
 Gender = Female
 BaseMoney = 24
 Flags = Turn1BoostIfAble
+ShadowXY = 0,-2
 #-------------------------------
 [BUSINESSMAN]
 Name = Businessman
@@ -145,6 +158,7 @@ Name = Businesswoman
 Gender = Female
 BaseMoney = 30
 SkillLevel = 40
+ShadowXY = 0,-2
 #-------------------------------
 [MANAGER]
 Name = Manager
@@ -156,6 +170,7 @@ SkillLevel = 40
 Name = Camper
 Gender = Male
 BaseMoney = 16
+ShadowXY = 0,-8
 #-------------------------------
 [CAMPER_F]
 Name = Camper
@@ -176,6 +191,7 @@ BaseMoney = 72
 Name = Youngster
 Gender = Male
 BaseMoney = 16
+ShadowXY = 2,-3
 #-------------------------------
 [LASS]
 Name = Lass
@@ -186,33 +202,39 @@ BaseMoney = 16
 Name = Pokémon Ranger
 Gender = Male
 BaseMoney = 60
+ShadowXY = 0,-5
 #-------------------------------
 [POKEMONRANGER_F]
 Name = Pokémon Ranger
 Gender = Female
 BaseMoney = 60
+ShadowXY = 0,-5
 #-------------------------------
 [PSYCHIC_M]
 Name = Psychic
 Gender = Male
 BaseMoney = 32
+ShadowXY = 0,-3
 #-------------------------------
 [PSYCHIC_F]
 Name = Psychic
 Gender = Female
 BaseMoney = 32
+ShadowXY = 0,-5
 #-------------------------------
 [SWIMMER_M]
 Name = Swimmer
 Gender = Male
 BaseMoney = 16
 SkillLevel = 32
+ShadowXY = 4,-14
 #-------------------------------
 [SWIMMER_F]
 Name = Swimmer
 Gender = Female
 BaseMoney = 16
 SkillLevel = 32
+ShadowXY = -2,-2
 #-------------------------------
 [TUBER_M]
 Name = Tuber
@@ -231,32 +253,37 @@ Name = Scientist
 Gender = Male
 BaseMoney = 48
 SkillLevel = 72
+ShadowXY = 1,-2
 #-------------------------------
 [SCIENTIST_F]
 Name = Scientist
 Gender = Female
 BaseMoney = 48
 SkillLevel = 72
+ShadowXY = 0,-2
 #-------------------------------
 [THEORIST]
 Name = Theorist
 Gender = Male
 BaseMoney = 48
-Flags = PreferFlashyMoves
 SkillLevel = 72
+Flags = PreferFlashyMoves
+ShadowXY = 3,-2
 #-------------------------------
 [INFLUENCER]
 Name = Influencer
 Gender = Female
 BaseMoney = 2
-Flags = PreferFlashyMoves
 SkillLevel = 48
+Flags = PreferFlashyMoves
+ShadowXY = 0,-3
 #-------------------------------
 [VETERAN_M]
 Name = Veteran
 Gender = Male
 BaseMoney = 50
 SkillLevel = 72
+ShadowXY = 0,-2
 #-------------------------------
 [VETERAN_F]
 Name = Veteran
@@ -269,6 +296,7 @@ Name = Preschooler
 Gender = Male
 BaseMoney = 4
 SkillLevel = 16
+ShadowXY = 0,-2
 #-------------------------------
 [PRESCHOOLER_F]
 Name = Preschooler
@@ -280,39 +308,46 @@ SkillLevel = 16
 Name = Cyclist
 Gender = Male
 BaseMoney = 32
+ShadowXY = 0,-2
 #-------------------------------
 [CYCLIST_F]
 Name = Cyclist
 Gender = Female
 BaseMoney = 32
+ShadowXY = 0,-3
 #-------------------------------
 [DOCTOR]
 Name = Doctor
 Gender = Male
 BaseMoney = 60
+ShadowXY = 0,-1
 #-------------------------------
 [NURSE]
 Name = Nurse
 Gender = Female
 BaseMoney = 60
+ShadowXY = 0,-3
 #-------------------------------
 [SCHOOLBOY]
 Name = School Boy
 Gender = Male
 BaseMoney = 16
 SkillLevel = 32
+ShadowXY = 2,0
 #-------------------------------
 [SCHOOLGIRL]
 Name = School Girl
 Gender = Female
 BaseMoney = 16
 SkillLevel = 32
+ShadowXY = 1,0
 #-------------------------------
 [TOURIST_M]
 Name = Tourist
 Gender = Male
 BaseMoney = 40
 SkillLevel = 32
+ShadowXY = 3,-2
 #-------------------------------
 [TOURIST_F]
 Name = Tourist
@@ -324,23 +359,27 @@ SkillLevel = 32
 Name = Poké-Fan
 Gender = Male
 BaseMoney = 32
+ShadowXY = 0,-5
 #-------------------------------
 [POKEFAN_F]
 Name = Poké-Fan
 Gender = Female
 BaseMoney = 32
+ShadowXY = 0,-3
 #-------------------------------
 [RICHBOY]
 Name = Rich Boy
 Gender = Male
 BaseMoney = 120
 SkillLevel = 32
+ShadowXY = 4,-3
 #-------------------------------
 [LADY]
 Name = Lady
 Gender = Female
 BaseMoney = 160
 SkillLevel = 72
+ShadowXY = 0,-3
 #-------------------------------
 [TEACHER_M]
 Name = Teacher
@@ -351,42 +390,50 @@ BaseMoney = 24
 Name = Teacher
 Gender = Female
 BaseMoney = 24
+ShadowXY = 4,-5
 #-------------------------------
 [HEXMANIAC]
 Name = Hex Maniac
 Gender = Female
 BaseMoney = 32
+ShadowXY = 0,-3
 #-------------------------------
 [PILOT]
 Name = Pilot
 Gender = Male
 BaseMoney = 32
+ShadowXY = 0,-2
 #-------------------------------
 [WAITER]
 Name = Waiter
 Gender = Male
 BaseMoney = 32
+ShadowXY = 0,-2
 #-------------------------------
 [WAITRESS]
 Name = Waitress
 Gender = Female
 BaseMoney = 32
+ShadowXY = -1,-2
 #-------------------------------
 [RISINGSTAR_M]
 Name = Rising Star
 Gender = Male
 BaseMoney = 48
+ShadowXY = 0,-8
 #-------------------------------
 [RISINGSTAR_F]
 Name = Rising Star
 Gender = Female
 BaseMoney = 48
+ShadowXY = 0,-2
 #-------------------------------
 [POLICEOFFICER_M]
 Name = Police Officer
 Gender = Male
 BaseMoney = 32
 SkillLevel = 100
+ShadowXY = 0,-3
 #-------------------------------
 [POLICEOFFICER_F]
 Name = Police Officer
@@ -399,6 +446,7 @@ Name = Investigator
 Gender = Male
 BaseMoney = 32
 SkillLevel = 100
+ShadowXY = 0,-2
 #-------------------------------
 [FIREFIGHTER]
 Name = Firefighter
@@ -419,6 +467,7 @@ BaseMoney = 48
 Name = Guitarist
 Gender = Female
 BaseMoney = 48
+ShadowXY = 0,-2
 #-------------------------------
 [STONER_M]
 Name = Stoner
@@ -434,6 +483,7 @@ BaseMoney = 48
 Name = Street Thug
 Gender = Male
 BaseMoney = 48
+ShadowXY = -2,-2
 #-------------------------------
 [DELINQUENT]
 Name = Delinquent
@@ -467,6 +517,7 @@ Name = Reporter
 Gender = Female
 BaseMoney = 32
 SkillLevel = 48
+ShadowXY = 0,-2
 #-------------------------------
 [GARDENER]
 Name = Gardener
@@ -478,11 +529,13 @@ Name = Janitor
 Gender = Male
 BaseMoney = 32
 SkillLevel = 48
+ShadowXY = 0,-12
 #-------------------------------
 [HOOPSTER]
 Name = Hoopster
 Gender = Male
 BaseMoney = 32
+ShadowXY = 0,-2
 #-------------------------------
 [INFIELDER]
 Name = Infielder
@@ -493,11 +546,13 @@ BaseMoney = 32
 Name = Smasher
 Gender = Female
 BaseMoney = 32
+ShadowXY = -1,-2
 #-------------------------------
 [STRIKER]
 Name = Striker
 Gender = Male
 BaseMoney = 32
+ShadowXY = 1,-3
 #-------------------------------
 [RISEN_M]
 Name = Risen
@@ -516,9 +571,11 @@ Name = Aether Paradise
 Gender = Male
 BaseMoney = 32
 SkillLevel = 48
+ShadowXY = 0,-3
 #-------------------------------
 [AETHER_F]
 Name = Aether Paradise
 Gender = Female
 BaseMoney = 32
 SkillLevel = 48
+ShadowXY = 0,-2

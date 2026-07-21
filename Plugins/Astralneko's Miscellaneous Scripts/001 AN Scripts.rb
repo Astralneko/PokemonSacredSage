@@ -373,3 +373,60 @@ def anLongCount(epoch,epochOffset = 0,radices = nil)
 		return day_difference.to_s
 	end
 end
+
+# Get the charset for a given tr_type
+def anGetTrainerCharset(tr_type)
+	# Attempt to get "Graphics/Characters/ARS_" + the true name of the trainer type
+	true_typename = GameData::TrainerType.get(tr_type).realName
+	charset = (pbResolveBitmap("Graphics/Characters/ARS_" + true_typename)) ? pbResolveBitmap("Graphics/Characters/ARS_" + true_typename) : nil
+	if charset
+		return charset
+	end
+	# Attempt to get "Graphics/Characters/ARS_" + the ID of the trainer type with underscores replaced with spaces
+	id_typenamearr = tr_type.to_s.split("_")
+	id_typenamearr[0].capitalize!
+	id_typename = id_typenamearr.join(" ")
+	charset = (pbResolveBitmap("Graphics/Characters/ARS_" + id_typename)) ? pbResolveBitmap("Graphics/Characters/ARS_" + id_typename) : nil
+	if charset
+		return charset
+	end
+	# Attempt to get "Graphics/Characters/ARS_" + everything after the underscore; this is probably already capitalized properly but just in case, do it again
+	id_typename = tr_type.to_s.split("_")[-1].capitalize
+	charset = (pbResolveBitmap("Graphics/Characters/ARS_" + id_typename)) ? pbResolveBitmap("Graphics/Characters/ARS_" + id_typename) : nil
+	if charset
+		return charset
+	end
+	
+	# Attempt to return "Graphics/Characters/ARS_" + the element of this list if one is found
+	# Used to attempt to fix items that don't match the expected formatting of any of the above
+	charsetHash = {
+		# "Ace Trainer" is 2 words
+		:ACETRAINER_M => "Ace Trainer M",
+		:ACETRAINER_F => "Ace Trainer F",
+		# AetherM and AetherF don't have a space
+		:AETHER_M => "AetherM",
+		:AETHER_F => "AetherF",
+		# "Police Officer" is 2 words
+		:POLICEOFFICER_M => "Police Officer M",
+		:POLICEOFFICER_F => "Police Officer F",
+		# POKEFAN does not have its acute
+		:POKEFAN_M => "Poké-Fan M",
+		:POKEFAN_F => "Poké-Fan F",
+		# POKEMONRANGER is shortened to just Ranger
+		:POKEMONRANGER_M => "Ranger M",
+		:POKEMONRANGER_F => "Ranger F",
+		# "Rising Star" is 2 words
+		:RISINGSTAR_M => "Rising Star M",
+		:RISINGSTAR_F => "Rising Star F",
+	}
+	# While pbResolveBitmap should always work, sanity checking is good
+	if charsetHash[tr_type]
+		charset = (pbResolveBitmap("Graphics/Characters/ARS_" + charsetHash[tr_type])) ? pbResolveBitmap("Graphics/Characters/ARS_" + charsetHash[tr_type]) : nil
+		if charset
+			return charset
+		end
+	end
+	
+	# If both failed, try the default method (which only works for trainer_ files, which ARS doesn't use anyway)
+	return GameData::TrainerType.charset_filename(tr_type)
+end

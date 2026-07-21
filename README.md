@@ -1,6 +1,6 @@
-# Pokémon Azure and Rose Masterproject
+# Pokémon Azure Wave and Rose Flame Masterproject
 
-This project contains code for both Pokémon Azure and Pokémon Rose, a pair of fangames made by Astralneko.
+This project contains code for a trio of fangames made by Astralneko.
 
 Based on Essentials v21.1.
 

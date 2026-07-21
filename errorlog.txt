@@ -1750,3 +1750,87 @@ Backtrace:
 999_Main.rb:50:in `loop'
 999_Main.rb:50:in `block in load_scripts_from_folder'
 Main:35:in `eval'
+
+=================
+
+[2026-07-20 19:52:06 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: Errno::ENOENT
+Message: File Graphics/Trainers/000 not found.
+
+Backtrace:
+[[DBK] Animated Trainer Intros] [005] Deluxe Bitmap.rb:65:in `initialize'
+[[DBK] Animated Trainer Intros] [005] Deluxe Bitmap.rb:65:in `new'
+[[DBK] Animated Trainer Intros] [005] Deluxe Bitmap.rb:65:in `refresh'
+[[DBK] Animated Trainer Intros] [005] Deluxe Bitmap.rb:21:in `initialize'
+[[DBK] Animated Trainer Intros] [003] Game Data.rb:67:in `new'
+[[DBK] Animated Trainer Intros] [003] Game Data.rb:67:in `front_sprite_bitmap'
+[[DBK] Animated Trainer Intros] [004] Trainer Sprite.rb:245:in `setTrainerBitmap'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:103:in `pbChangeTrainer'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:404:in `block in pbChooseTrainer'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:398:in `loop'
+
+=================
+
+[2026-07-20 20:46:00 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `realName' for GameData::TrainerType:Class
+
+Backtrace:
+[Astralneko's Miscellaneous Scripts] 001 AN Scripts.rb:380:in `anGetTrainerCharset'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:109:in `pbChangeTrainer'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:405:in `block in pbChooseTrainer'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:399:in `loop'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:399:in `pbChooseTrainer'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:456:in `block in pbStart'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:455:in `loop'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:455:in `pbStart'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:494:in `block (3 levels) in <main>'
+002_MessageConfig.rb:577:in `pbFadeOutIn'
+
+=================
+
+[2026-07-20 20:50:51 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: TypeError
+Message: no implicit conversion of nil into String
+
+Backtrace:
+[Astralneko's Miscellaneous Scripts] 001 AN Scripts.rb:423:in `+'
+[Astralneko's Miscellaneous Scripts] 001 AN Scripts.rb:423:in `anGetTrainerCharset'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:109:in `pbChangeTrainer'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:405:in `block in pbChooseTrainer'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:399:in `loop'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:399:in `pbChooseTrainer'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:456:in `block in pbStart'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:455:in `loop'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:455:in `pbStart'
+[[DBK] Animated Trainer Intros] [001] Sprite Editor.rb:494:in `block (3 levels) in <main>'
+
+=================
+
+[2026-07-20 21:12:23 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `foor' for 0:Integer
+
+Backtrace:
+[[DBK] Dynamax] [002] Editors.rb:325:in `block in pbDynamaxAutoPositionAll'
+001_GameData.rb:125:in `block in each'
+001_GameData.rb:125:in `each_value'
+001_GameData.rb:125:in `each'
+[[DBK] Dynamax] [002] Editors.rb:310:in `pbDynamaxAutoPositionAll'
+[[DBK] Dynamax] [001] Debug.rb:67:in `block (2 levels) in <main>'
+[[DBK] Dynamax] [001] Debug.rb:45:in `loop'
+[[DBK] Dynamax] [001] Debug.rb:45:in `block in <main>'
+006_Event_HandlerCollections.rb:121:in `call'
+001_Debug_Menus.rb:138:in `block in pbDebugMenu'

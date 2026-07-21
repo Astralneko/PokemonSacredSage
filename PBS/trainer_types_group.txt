@@ -4,42 +4,44 @@
 #-------------------------------
 [STUDYTEAM]
 Name = Study Team
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 25
 SkillLevel = 32
 #-------------------------------
 [SISANDBRO]
 Name = Sis and Bro
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 16
 SkillLevel = 48
 #-------------------------------
 [TWINS]
 Name = Twins
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 24
+ShadowXY = -2,-2
 #-------------------------------
 [YOUNGCOUPLE]
 Name = Young Couple
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 60
 SkillLevel = 32
+ShadowXY = 0,-1
 #-------------------------------
 [RISINGSTARS]
 Name = Rising Stars
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 60
 SkillLevel = 48
 #-------------------------------
 [BANDMATES_1]
 Name = Bandmates
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 60
 SkillLevel = 48
 #-------------------------------
 [BANDMATES_2]
 Name = Bandmates
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 60
 SkillLevel = 48
 #-------------------------------
@@ -48,77 +50,79 @@ Name = Classmates
 Gender = Female
 BaseMoney = 16
 IntroBGM = 128 Spotted! Lass
+ShadowXY = 0,-2
 #-------------------------------
 [MEDICALTEAM]
 Name = Medical Team
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 60
 #-------------------------------
 [DETAINMENTTEAM]
 Name = Detainment Team
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 48
 #-------------------------------
 [SUSPICIOUSDUO]
 Name = Suspicious Duo
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 60
 #-------------------------------
 [CRUSHKIN]
 Name = Crush Kin
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 48
+ShadowXY = 0,-3
 #-------------------------------
 [BEAUTYDUO]
 Name = Beauty Duo
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 48
 #-------------------------------
 [NEWSCREW]
 Name = News Crew
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 48
 #-------------------------------
 # Triple Battle trainers
 #-------------------------------
 [BUSINESSTEAM]
 Name = Business Team
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 90
 SkillLevel = 48
 #-------------------------------
 [RICHFAMILY]
 Name = Rich Family
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 120
 SkillLevel = 48
 #-------------------------------
 [CHEAPSKATES]
 Name = Cheapskates
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 12
 SkillLevel = 72
 #-------------------------------
 [SWIMTEAM]
 Name = Swim Team
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 60
 SkillLevel = 48
 #-------------------------------
 [TOURISTFAMILY]
 Name = Tourist Family
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 90
 SkillLevel = 48
 #-------------------------------
 [PSYCHICCIRCLE]
 Name = Psychic Circle
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 90
 SkillLevel = 100
 #-------------------------------
 [FIRSTRESPONDERS]
 Name = First Responders
-Gender = Mixed
+Gender = Unknown
 BaseMoney = 90
 SkillLevel = 100

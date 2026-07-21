@@ -105,7 +105,8 @@ class TrainerSpriteEditor
     back_sprite = GameData::TrainerType.back_sprite_filename(@trainerID)
     hue = GameData::TrainerType.get(@trainerID).sprite_hue || 0
     @sprites["trainer_0"].setBitmap(back_sprite, hue)
-    icon_sprite = GameData::TrainerType.charset_filename(@trainerID)
+	# Originally set to GameData::TrainerType.charset_filename(@trainerID)
+    icon_sprite = anGetTrainerCharset(@trainerID)
     @sprites["icon"].setBitmap(icon_sprite)
     mugshot_sprite = pbFindTrainerMugshot
     @sprites["mugshot"].setBitmap(mugshot_sprite, hue)

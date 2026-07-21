@@ -2,13 +2,13 @@
 #-------------------------------
 # Battle Frontier
 #-------------------------------
-#-------------------------------
 [FRONTIERBRAIN_Dahlia]
 Name = Arcade Star
 Gender = Female
 BaseMoney = 0
 SkillLevel = 120
 BattleBGM = ARS_Battle_Frontier Brain
+ShadowXY = 0,-1
 #-------------------------------
 [FRONTIERBRAIN_Kamil]
 Name = Stadium Announcer
@@ -23,6 +23,7 @@ Gender = Male
 BaseMoney = 0
 SkillLevel = 120
 BattleBGM = ARS_Battle_Frontier Brain
+ShadowXY = 0,-2
 #-------------------------------
 [FRONTIERBRAIN_Arashiko]
 Name = Valley Ranger
@@ -44,6 +45,7 @@ Gender = Nonbinary
 BaseMoney = 0
 SkillLevel = 16
 BattleBGM = ARS_Fighting Pixel_Battle Tower
+ShadowXY = 0,-3
 #-------------------------------
 [FIGHTINGPIXEL_EASY2]
 Name = Fighting Pixel
@@ -72,6 +74,7 @@ Gender = Nonbinary
 BaseMoney = 0
 SkillLevel = 48
 BattleBGM = ARS_Fighting Pixel_Battle Tower
+ShadowXY = 0,-2
 #-------------------------------
 [FIGHTINGPIXEL_MEDIUM2]
 Name = Fighting Pixel
@@ -93,6 +96,7 @@ Gender = Nonbinary
 BaseMoney = 0
 SkillLevel = 48
 BattleBGM = ARS_Fighting Pixel_Battle Tower
+ShadowXY = 0,-2
 #-------------------------------
 [FIGHTINGPIXEL_HARD1]
 Name = Fighting Pixel
@@ -114,6 +118,7 @@ Gender = Nonbinary
 BaseMoney = 0
 SkillLevel = 72
 BattleBGM = ARS_Fighting Pixel_Battle Tower
+ShadowXY = 0,-2
 #-------------------------------
 [FIGHTINGPIXEL_HARD4]
 Name = Fighting Pixel
@@ -128,6 +133,7 @@ Gender = Nonbinary
 BaseMoney = 0
 SkillLevel = 120
 BattleBGM = ARS_Fighting Pixel_Battle Tower
+ShadowXY = 0,-2
 #-------------------------------
 # Neon Skyline
 #-------------------------------
