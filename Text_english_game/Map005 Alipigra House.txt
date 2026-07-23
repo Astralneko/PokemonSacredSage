@@ -1,0 +1,48 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map005]
+\xn[Ashe]\mr[Ace Trainer F]\rA battle? No thanks... I'm busy studying.
+\xn[Ashe]\mr[Ace Trainer F]\rA battle? No thanks... I'm busy studying.
+\xn[Natsuki's Grandma]\mr[Old Lady NPC]Hello there little one!
+\xn[Natsuki's Grandma]\mr[Old Lady NPC]Hello there little one!
+\xn\mrOh? You're looking for Natsuki? She's hanging out at Mona's place.
+\xn\mrOh? You're looking for Natsuki? She's hanging out at Mona's place.
+Bwa neow?
+Bwa neow?
+\xn[Natsuki's Brother]Natsuki says I can get a Pokémon when I'm older too!
+\xn[Natsuki's Brother]Natsuki says I can get a Pokémon when I'm older too!
+\xn[Natsuki]\mr[Natsuki]\rOh hey \PN!\; Ready to get our first Pokémon?
+\xn[Natsuki]\mr[Natsuki]\rOh hey \PN!\; Ready to get our first Pokémon?
+\xn[Natsuki]\mr[Natsuki]\rOh boy, I can't wait!
+\xn[Natsuki]\mr[Natsuki]\rOh boy, I can't wait!
+\xn[\PN]\mr[\v[32]]\ds[\v[32]]\pgSame here! Can't wait!
+\xn[\PN]\mr[\v[32]]\ds[\v[32]]\pgSame here! Can't wait!
+\xn[Natsuki]\mr[Natsuki]\rRace you there!
+\xn[Natsuki]\mr[Natsuki]\rRace you there!
+\xn[Mona]\mr[Mona]\bEh, I think you could.\..\..
+\xn[Mona]\mr[Mona]\bEh, I think you could.\..\..
+\xn[Natsuki]\mr[Natsuki]\r.\..\..\.Right. Anyways, race you there!
+\xn[Natsuki]\mr[Natsuki]\r.\..\..\.Right. Anyways, race you there!
+\xn[Mona]\mr[Mona]\bDoes it have to be a race.\..\..\.?
+\xn[Mona]\mr[Mona]\bDoes it have to be a race.\..\..\.?
+\xn[Natsuki]\mr[Natsuki]\rYeah! Last one there is a rotten egg!
+\xn[Natsuki]\mr[Natsuki]\rYeah! Last one there is a rotten egg!
+\xn[Mona]\mr[Mona]\bYou know I'm not.\..\..\. Ugh, fine.\..\..
+\xn[Mona]\mr[Mona]\bYou know I'm not.\..\..\. Ugh, fine.\..\..
+\xn[Natsuki]\mr[Natsuki]\rOh hey \PN! Ready to get our first Pokémon?
+\xn[Natsuki]\mr[Natsuki]\rOh hey \PN! Ready to get our first Pokémon?
+\xn[\PN]\pgSame here! Can't wait!
+\xn[\PN]\pgSame here! Can't wait!
+\xn[Mona]\mr[Mona]\bEh, I think you could...
+\xn[Mona]\mr[Mona]\bEh, I think you could...
+\xn[Natsuki]\mr[Natsuki]\r...Right. Anyways, race you there!
+\xn[Natsuki]\mr[Natsuki]\r...Right. Anyways, race you there!
+\xn[Mona]\mr[Mona]\bDoes it have to be a race...?
+\xn[Mona]\mr[Mona]\bDoes it have to be a race...?
+\xn[Mona]\mr[Mona]\bYou know I'm not... Ugh, fine...
+\xn[Mona]\mr[Mona]\bYou know I'm not... Ugh, fine...
+Me too!
+Me too!
+Eeh...
+Eeh...

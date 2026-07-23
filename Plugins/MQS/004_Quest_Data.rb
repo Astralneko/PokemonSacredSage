@@ -7,7 +7,7 @@ module QuestModule
 	:Name => _INTL("The Journey Begins"),
 	:QuestGiver => _INTL("Natsuki"),
 	:Stage1 => _INTL("Meet up with Natsuki and Amano."),
-	:Stage2 => _INTL("Come to Prof. Zilnatta's Lab."),
+	:Stage2 => _INTL("Come to Prof. Razilwood's Lab."),
 	:Location1 => _INTL("Alipigra City"),
 	:Map => [0,25,12],
 	:QuestDescription => _INTL("Your adventure as a Pokémon Trainer begins! Get your first Pokémon!"),

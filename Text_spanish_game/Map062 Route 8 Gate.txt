@@ -1,0 +1,12 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map062]
+\xn[Bicycle Fanatic]\bAh! Do you have a Bicycle?
+\xn[Bicycle Fanatic]\bAh! Do you have a Bicycle?
+\xn[Bicycle Fanatic]\bNo? You gotta get one for the authentic Rua Octavo experience!
+\xn[Bicycle Fanatic]\bNo? You gotta get one for the authentic Rua Octavo experience!
+\xn[Bicycle Fanatic]\bAh! You've got a Bike!
+\xn[Bicycle Fanatic]\bAh! You've got a Bike!
+\xn[Bicycle Fanatic]\bHowever, I hate to say it, but Beta 1 ends here...
+\xn[Bicycle Fanatic]\bHowever, I hate to say it, but Beta 1 ends here...

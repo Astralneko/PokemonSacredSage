@@ -1,0 +1,68 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map010]
+\bHi! I like shorts! They're comfy and easy to wear!
+\bHi! I like shorts! They're comfy and easy to wear!
+\bMan, these must not have been my lucky shorts...
+\bMan, these must not have been my lucky shorts...
+\rHey, look at my cute Pokémon!
+\rHey, look at my cute Pokémon!
+\rNext time, I'll get you for sure...
+\rNext time, I'll get you for sure...
+\sign[sign hgss dir]\l[3]<ac><b>ROUTE 5</b></ac>&larrow; Alipigra City<r>Maracaleza Town &rarrow;<ac>&darrow; Route 4
+\sign[sign hgss dir]\l[3]<ac><b>ROUTE 5</b></ac>&larrow; Alipigra City<r>Maracaleza Town &rarrow;<ac>&darrow; Route 4
+\bCycling on a bridge... Pretty extreme, right?
+\bCycling on a bridge... Pretty extreme, right?
+\bYou know what else is extreme? Battling everyone on Route 5!
+\bYou know what else is extreme? Battling everyone on Route 5!
+\bIf you do, I'll battle you too!
+\bIf you do, I'll battle you too!
+\bSeems you've defeated \v[39] of them.
+\bSeems you've defeated \v[39] of them.
+\bSince you have, let's battle!
+\bSince you have, let's battle!
+\xn[Tonio]\bImpressive team...
+\xn[Tonio]\bImpressive team...
+\xn[Tonio]\bWell, um... you've completed Route 5's Trainer Challenge!\me[Badge Obtained (Gen 8)\wt[170]
+\xn[Tonio]\bWell, um... you've completed Route 5's Trainer Challenge!\me[Badge Obtained (Gen 8)\wt[170]
+\xn[Tonio]\bHere's your prize, I guess... Stupid bet...
+\xn[Tonio]\bHere's your prize, I guess... Stupid bet...
+\bImpressive team you've built!
+\bImpressive team you've built!
+\l[3]\sign[sign hgss tt]Trainer Tips: In dark tall grass, stronger Pokémon appear!
+\l[3]\sign[sign hgss tt]Trainer Tips: In dark tall grass, stronger Pokémon appear!
+There's Pokémon that way... Probably best to stay in town until you get one of your own.
+There's Pokémon that way... Probably best to stay in town until you get one of your own.
+\xn[Natsuki]\rWait up, \PN!
+\xn[Natsuki]\rWait up, \PN!
+\xnmr[Natsuki]\rSince we're now freshly Pokémon Trainers, I think we should have a battle!
+\xnmr[Natsuki]\rSince we're now freshly Pokémon Trainers, I think we should have a battle!
+\xn[Natsuki]\mr[Natsuki_wink]\rAfter all, we need to try out our new Pokémon!
+\xn[Natsuki]\mr[Natsuki_wink]\rAfter all, we need to try out our new Pokémon!
+\xnmr[Natsuki]\rWhat a good battle!
+\xnmr[Natsuki]\rWhat a good battle!
+\xnmr[Natsuki]\rUnfortunately, my Tempixie is all tuckered out...
+\xnmr[Natsuki]\rUnfortunately, my Tempixie is all tuckered out...
+\xnmr[Natsuki]\rUnfortunately, my Angeal is all tuckered out...
+\xnmr[Natsuki]\rUnfortunately, my Angeal is all tuckered out...
+\xn[Natsuki]\mr[Natsuki]\rUnfortunately, my Radioso is all tuckered out...
+\xn[Natsuki]\mr[Natsuki]\rUnfortunately, my Radioso is all tuckered out...
+\xn[Natsuki]\mr[Natsuki]\rWell, talk to ya later! I gotta heal up my Pokémon quickly!
+\xn[Natsuki]\mr[Natsuki]\rWell, talk to ya later! I gotta heal up my Pokémon quickly!
+\xn[Natsuki]\mr[Natsuki]\rNice battling, \PN! Though, you're gonna have to keep up, heehee!
+\xn[Natsuki]\mr[Natsuki]\rNice battling, \PN! Though, you're gonna have to keep up, heehee!
+\xn[Natsuki]\mr[Natsuki_wink]\rHere, lemme heal ya up. I bought a Revive, so...
+\xn[Natsuki]\mr[Natsuki_wink]\rHere, lemme heal ya up. I bought a Revive, so...
+\xn[Natsuki]\mr[Natsuki]\rWell, talk to ya later! I'm gonna see what I can catch around here.
+\xn[Natsuki]\mr[Natsuki]\rWell, talk to ya later! I'm gonna see what I can catch around here.
+This here is dark tall grass. Stronger Pokémon can appear in it.
+This here is dark tall grass. Stronger Pokémon can appear in it.
+But, I don't think your team is ready for that just yet. Maybe when your team is stronger...
+But, I don't think your team is ready for that just yet. Maybe when your team is stronger...
+Oih. I said, you're not ready.
+Oih. I said, you're not ready.
+Do you need me to spell it out for you?
+Do you need me to spell it out for you?
+Get the first Gym Badge. I'm not going to let you enter Route 4 until you do.
+Get the first Gym Badge. I'm not going to let you enter Route 4 until you do.

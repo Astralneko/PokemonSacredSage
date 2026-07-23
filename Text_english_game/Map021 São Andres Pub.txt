@@ -1,0 +1,18 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map021]
+\xnmr[Aria]\rOh, good,\. you're here!\; The tourney's just started,\. wanna watch it with me?
+\xnmr[Aria]\rOh, good,\. you're here!\; The tourney's just started,\. wanna watch it with me?
+\xnmr[Aria]\r.\..\..\.Wait.
+\xnmr[Aria]\r.\..\..\.Wait.
+\xn[Aria]\mr[Aria_shock]\rOh crap!
+\xn[Aria]\mr[Aria_shock]\rOh crap!
+\xn\mr\r\ts[1]I should've left for Maracaleza before,\. I need to go to the Trainer's School!
+\xn\mr\r\ts[1]I should've left for Maracaleza before,\. I need to go to the Trainer's School!
+\xnmr[Aria]\rTell me how the games go, brother!
+\xnmr[Aria]\rTell me how the games go, brother!
+\xn[Bartender]\mr[Waiter]\bUh.\..\..\. Okay.\..\..\.?
+\xn[Bartender]\mr[Waiter]\bUh.\..\..\. Okay.\..\..\.?
+\xnmr[Aria]\rOh, you're trying to find the professor,\. aren't you?\; He's in his lab in the northwest of town.
+\xnmr[Aria]\rOh, you're trying to find the professor,\. aren't you?\; He's in his lab in the northwest of town.

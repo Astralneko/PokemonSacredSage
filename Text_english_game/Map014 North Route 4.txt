@@ -1,0 +1,8 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map014]
+\bHi! I like shorts! They're comfy and easy to wear!
+\bHi! I like shorts! They're comfy and easy to wear!
+\bMan, these must not have been my lucky shorts...
+\bMan, these must not have been my lucky shorts...

@@ -1,0 +1,12 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map002]
+\sign[sign hgss dir]\l[3]<ac><b>ROUTE 6</b>\n&uarrow; Alipigra City\nNova Cancioba City &darrow;
+\sign[sign hgss dir]\l[3]<ac><b>ROUTE 6</b>\n&uarrow; Alipigra City\nNova Cancioba City &darrow;
+\xn[Scientist]\bHey! I'm doing scientific research here! There seems to be a Bigfoot afoot!
+\xn[Scientist]\bHey! I'm doing scientific research here! There seems to be a Bigfoot afoot!
+\xn[Scientist]\bIt seems that the suspected Bigfoot, was simply just a man with big feet... Sorry to block your way.
+\xn[Scientist]\bIt seems that the suspected Bigfoot, was simply just a man with big feet... Sorry to block your way.
+\xn[Scientist]\bYou sound like you've heard this before!
+\xn[Scientist]\bYou sound like you've heard this before!

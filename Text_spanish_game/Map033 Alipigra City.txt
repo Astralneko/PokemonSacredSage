@@ -1,0 +1,98 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map033]
+\rDaisy: Hi, \PN!
+\rDaisy: Hi, \PN!
+\rDaisy: Would you like me to tell you your Pokémon's Tera Type?
+\rDaisy: Would you like me to tell you your Pokémon's Tera Type?
+\rDaisy: Which Pokémon do you want me to identify?
+\rDaisy: Which Pokémon do you want me to identify?
+\rDaisy: Oh, okay then.
+\rDaisy: Oh, okay then.
+\rDaisy: Hmm... Can't tell right now... That's strange...
+\rDaisy: Hmm... Can't tell right now... That's strange...
+\xn[Yancy]\mr[TEST_Yancy2]This is quite a quaint town...
+\xn[Yancy]\mr[TEST_Yancy2]This is quite a quaint town...
+The Pokémon Center's right there...!
+The Pokémon Center's right there...!
+\sign[sign hgss loc]\l[1]<ac>Razilwood Laboratory</ac>
+\sign[sign hgss loc]\l[1]<ac>Razilwood Laboratory</ac>
+Adding follower...
+Adding follower...
+\v[1]
+\v[1]
+\PN's House
+\PN's House
+\xn[\PN]\mr[\v[32]]\pgThey're not up here...
+\xn[\PN]\mr[\v[32]]\pgThey're not up here...
+\xn[\PN]\mr[\v[32]]\pgWait, the pub's next to the Pokémon Center!
+\xn[\PN]\mr[\v[32]]\pgWait, the pub's next to the Pokémon Center!
+\sign[sign hgss loc]\l[3]<ac>Alipigra City Gym</ac>\nLeader: Aria\nGrade-A Glider
+\sign[sign hgss loc]\l[3]<ac>Alipigra City Gym</ac>\nLeader: Aria\nGrade-A Glider
+Natsuki's House
+Natsuki's House
+Hold it! You don't have a Pokémon!
+Hold it! You don't have a Pokémon!
+Hold on. I've still got business in town...
+Hold on. I've still got business in town...
+\xn[Gym Guy]\bHey there!\; Sorry for the inconvenience,\. but Aria is currently AFG.\| Uh\wt[1]h\wt[1]h, that's "away from gym."
+\xn[Gym Guy]\bHey there!\; Sorry for the inconvenience,\. but Aria is currently AFG.\| Uh\wt[1]h\wt[1]h, that's "away from gym."
+\xn[Gym Guy]\bSo uh.\; Sorry,\; but you can't challenge the Alipigra City Gym yet.
+\xn[Gym Guy]\bSo uh.\; Sorry,\; but you can't challenge the Alipigra City Gym yet.
+\xnmr[Natsuki]\rWhew.\..\..\. Our first Pokémon.\..\..\; What should we do first?
+\xnmr[Natsuki]\rWhew.\..\..\. Our first Pokémon.\..\..\; What should we do first?
+\xnmr[Mona]\bMaybe we should see what Aria thinks?
+\xnmr[Mona]\bMaybe we should see what Aria thinks?
+\ptalk[]Sure!\. The Gym Challenge sounds fun!
+\ptalk[]Sure!\. The Gym Challenge sounds fun!
+\xnmr[Natsuki]\rAlright then, Aria it is!
+\xnmr[Natsuki]\rAlright then, Aria it is!
+\xnmr[Natsuki]\rSounds like a plan to me.
+\xnmr[Natsuki]\rSounds like a plan to me.
+\ptalk[]Well, maybe we shouldn't be a bother...
+\ptalk[]Well, maybe we shouldn't be a bother...
+\xnmr[Natsuki]\rCome on, \PN.\..\..\. It'll be fun!
+\xnmr[Natsuki]\rCome on, \PN.\..\..\. It'll be fun!
+\ptalk[]Whatever you say.
+\ptalk[]Whatever you say.
+\xnmr[Mona]\bAlrighty, let's go.
+\xnmr[Mona]\bAlrighty, let's go.
+\xnmr[Natsuki]\rHuh?\. Why's the Gym Guy in front of the Gym?
+\xnmr[Natsuki]\rHuh?\. Why's the Gym Guy in front of the Gym?
+\xn[Mona]\mr[Mona_unamused]\bDarn it.\..\..\. I was excited to challenge the Gym!
+\xn[Mona]\mr[Mona_unamused]\bDarn it.\..\..\. I was excited to challenge the Gym!
+\xn[Natsuki]\mr[Natsuki_nervous]\rWell, we'll just have to find her.\..\..
+\xn[Natsuki]\mr[Natsuki_nervous]\rWell, we'll just have to find her.\..\..
+\xnmr[Mona]\bLet's go to the Pokémon Center first.\; It's probably the best place to check.
+\xnmr[Mona]\bLet's go to the Pokémon Center first.\; It's probably the best place to check.
+\ptalk[]Sounds like a plan.
+\ptalk[]Sounds like a plan.
+Kaya's House
+Kaya's House
+\sign[sign hgss town]\l[2]<ac><b>Alipigra City</b>\nSurfing to a Fresh Adventure</ac>
+\sign[sign hgss town]\l[2]<ac><b>Alipigra City</b>\nSurfing to a Fresh Adventure</ac>
+\xn[Aries]\mr[Janitor]\bI take care of the plants around town...
+\xn[Aries]\mr[Janitor]\bI take care of the plants around town...
+\xn[Aries]\mr[Janitor]\bThese plants won't water themselves...
+\xn[Aries]\mr[Janitor]\bThese plants won't water themselves...
+\xn[Aries]\mr[Janitor]\bI take care of the plants around town... but they only need minimal care in the summer.
+\xn[Aries]\mr[Janitor]\bI take care of the plants around town... but they only need minimal care in the summer.
+The current Long Count is \v[1].
+The current Long Count is \v[1].
+Removing follower...
+Removing follower...
+\xn[Weber Troy]\mr[Nerd_shock]\bIsn't technology amazing? Now there are entire economies that are solely online!
+\xn[Weber Troy]\mr[Nerd_shock]\bIsn't technology amazing? Now there are entire economies that are solely online!
+\xn[Weber Troy]\mr[Nerd_shock]\bSounds like a lot of work though... Dunno if my PC is up to the task.
+\xn[Weber Troy]\mr[Nerd_shock]\bSounds like a lot of work though... Dunno if my PC is up to the task.
+Yes
+Yes
+No
+No
+Sure!
+Sure!
+Hmm...
+Hmm...
+Well...
+Well...

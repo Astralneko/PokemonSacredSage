@@ -1,0 +1,22 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map066]
+\b¡Hola! Would you like to battle?
+\b¡Hola! Would you like to battle?
+\bAy... My Plusle...
+\bAy... My Plusle...
+\bNow hold your horses! What're ya doing?
+\bNow hold your horses! What're ya doing?
+\bWell, seems you're strong enough to handle this place...
+\bWell, seems you're strong enough to handle this place...
+\rGood luck hopping about!
+\rGood luck hopping about!
+\rHuh... Well to hop about, just move toward a nearby platform.
+\rHuh... Well to hop about, just move toward a nearby platform.
+\rTo hop about, just move toward a nearby platform.
+\rTo hop about, just move toward a nearby platform.
+\rHah, this region's so quaint!
+\rHah, this region's so quaint!
+\rNo! My Minun!
+\rNo! My Minun!

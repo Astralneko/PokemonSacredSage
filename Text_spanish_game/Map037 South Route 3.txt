@@ -1,0 +1,8 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map037]
+\bEverything in here uses a temporary switch to decide what to do, rather than a Self Switch, because it all needs to reset each time you enter.
+\bEverything in here uses a temporary switch to decide what to do, rather than a Self Switch, because it all needs to reset each time you enter.
+\bYou beat me! Go on to the Hall of Fame.
+\bYou beat me! Go on to the Hall of Fame.

@@ -1,0 +1,36 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map067]
+You can't go in there, you can't go in the contest.
+You can't go in there, you can't go in the contest.
+It's an empty poster.
+It's an empty poster.
+You can view the latest contest winners by looking at the posters on these pillars!
+You can view the latest contest winners by looking at the posters on these pillars!
+I start up the Berry Blender with other people!
+I start up the Berry Blender with other people!
+I start up the Berry Blender!
+I start up the Berry Blender!
+Surge: Wanna blend some berries?
+Surge: Wanna blend some berries?
+Misty: What's your favorite berry?
+Misty: What's your favorite berry?
+I'll be in your next contest, if it's a Master Rank!
+I'll be in your next contest, if it's a Master Rank!
+The Pokemon I use will depend on the category!
+The Pokemon I use will depend on the category!
+Brock: If you'd like to blend berries with us, go ahead and start up the blender!
+Brock: If you'd like to blend berries with us, go ahead and start up the blender!
+I'll be in your next contest, if it's a Normal Rank!
+I'll be in your next contest, if it's a Normal Rank!
+You can now see Contest information in Pokemon Summary by using the D Key!
+You can now see Contest information in Pokemon Summary by using the D Key!
+Use it when in the SKILLS or MOVES tab of Pokemon Summary to toggle viewing Contest information and regular information.
+Use it when in the SKILLS or MOVES tab of Pokemon Summary to toggle viewing Contest information and regular information.
+Oh, you can't see Contest information anymore...
+Oh, you can't see Contest information anymore...
+Would you like a Contest Pass?
+Would you like a Contest Pass?
+With that Contest Pass, you can participate in contests!
+With that Contest Pass, you can participate in contests!

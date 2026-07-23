@@ -1,0 +1,286 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map003]
+\xn[Mom]\rWhere are you headed, sweetie?
+\xn[Mom]\rWhere are you headed, sweetie?
+\xn[Mom]\rOh, to Mona's place? Alrighty, just make sure to... Wait, TODAY'S the day, isn't it!
+\xn[Mom]\rOh, to Mona's place? Alrighty, just make sure to... Wait, TODAY'S the day, isn't it!
+\xn[Mom]\rAlright... Today's when you get your first Pokémon.
+\xn[Mom]\rAlright... Today's when you get your first Pokémon.
+\xn[Mom]\rIt's like when your brother graduated from college! Man, they grow up so fast...
+\xn[Mom]\rIt's like when your brother graduated from college! Man, they grow up so fast...
+\xn[Mom]\rAnyways... It's nice that Professor Razilwood is able to get you a Pokémon... I am AWFUL at catching Pokémon.
+\xn[Mom]\rAnyways... It's nice that Professor Razilwood is able to get you a Pokémon... I am AWFUL at catching Pokémon.
+\xn[Mom]\rWell, say hi to him for me! And make sure to show me your amazing Pokémon, even if it's just by video call.
+\xn[Mom]\rWell, say hi to him for me! And make sure to show me your amazing Pokémon, even if it's just by video call.
+\xn[Mom]\rGood luck, \PN!
+\xn[Mom]\rGood luck, \PN!
+\xn[Mom]\rOh, and make sure to grab your shoes on the way out!
+\xn[Mom]\rOh, and make sure to grab your shoes on the way out!
+\PN received a Pokédex!
+\PN received a Pokédex!
+You already have a Pokédex.
+You already have a Pokédex.
+It's a Sega Master System! ...Even \ppg[2][1] don't know why these are still sold.
+It's a Sega Master System! ...Even \ppg[2][1] don't know why these are still sold.
+It's an old journal I used to Save.
+It's an old journal I used to Save.
+The last entry was \v[1]. Best not to damage it, or I'll forget what happened before then!
+The last entry was \v[1]. Best not to damage it, or I'll forget what happened before then!
+Choose a topic.
+Choose a topic.
+You don't have any able Pokémon with you.
+You don't have any able Pokémon with you.
+\v[2] is the first Pokémon in your party.
+\v[2] is the first Pokémon in your party.
+You have a Celebi in your party.
+You have a Celebi in your party.
+You don't have a Celebi in your party.
+You don't have a Celebi in your party.
+\rI will offer you more than 4 choices at once. You can put multiple "Show Choices" commands in a row to do this.
+\rI will offer you more than 4 choices at once. You can put multiple "Show Choices" commands in a row to do this.
+\rPlease choose one.
+\rPlease choose one.
+Choice 1 was chosen.
+Choice 1 was chosen.
+Choice 2 was chosen.
+Choice 2 was chosen.
+Choice 3 was chosen.
+Choice 3 was chosen.
+Choice 4 was chosen.
+Choice 4 was chosen.
+Choice 5 was chosen.
+Choice 5 was chosen.
+Choice 6 was chosen.
+Choice 6 was chosen.
+Choice 7 was chosen.
+Choice 7 was chosen.
+The choice was cancelled.
+The choice was cancelled.
+\rPlease choose one. This choice can't be cancelled.
+\rPlease choose one. This choice can't be cancelled.
+\rPlease choose one. Cancelling will result in Choice 3.
+\rPlease choose one. Cancelling will result in Choice 3.
+\PN got the Running Shoes!
+\PN got the Running Shoes!
+\xn[Natsuki]\rHello there \PN! Did you hear?
+\xn[Natsuki]\rHello there \PN! Did you hear?
+\xn[Natsuki]\rHear that today's the day, silly!
+\xn[Natsuki]\rHear that today's the day, silly!
+\xn[Natsuki]\rTo get a Pokémon!\. Did you just wake up or something?
+\xn[Natsuki]\rTo get a Pokémon!\. Did you just wake up or something?
+\xn[Natsuki]\rYeah!\. Today's the day we get our first Pokémon!
+\xn[Natsuki]\rYeah!\. Today's the day we get our first Pokémon!
+\xn[Natsuki]\rMy mom convinced her friend Balt to give us some of his rare Pokémon, and he's back in town, s\ts[3]ooo\ts[2] we can get one today!
+\xn[Natsuki]\rMy mom convinced her friend Balt to give us some of his rare Pokémon, and he's back in town, s\ts[3]ooo\ts[2] we can get one today!
+\xn[Natsuki]\rSo am I, I can't believe it!\. This opportunity is really rare!
+\xn[Natsuki]\rSo am I, I can't believe it!\. This opportunity is really rare!
+\xn[Natsuki]\rWell, I'm with Mona right now.\; Let's meet at his house when you're ready to go!
+\xn[Natsuki]\rWell, I'm with Mona right now.\; Let's meet at his house when you're ready to go!
+\xn[Natsuki]\rSee you soon!
+\xn[Natsuki]\rSee you soon!
+\xnmr[Mom]\rGood morning, \PN!\; What's up?
+\xnmr[Mom]\rGood morning, \PN!\; What's up?
+\xn\mr\rOh, you're going to Mona's place?\; Alrighty,\. just make sure to.\..\..\. Wait,\. TODAY'S the day,\. isn't it!
+\xn\mr\rOh, you're going to Mona's place?\; Alrighty,\. just make sure to.\..\..\. Wait,\. TODAY'S the day,\. isn't it!
+\xn\mr\rAlright.\..\..\. Today's when you get your first Pokémon.
+\xn\mr\rAlright.\..\..\. Today's when you get your first Pokémon.
+\xn\mr\rIt's like when your brother graduated from college!\| Man, they grow up so fast...
+\xn\mr\rIt's like when your brother graduated from college!\| Man, they grow up so fast...
+\xn\mr\rAnyways.\..\..\. It's nice that Professor Razilwood is able to get you a Pokémon.\..\..\. I am AWFUL at catching Pokémon.
+\xn\mr\rAnyways.\..\..\. It's nice that Professor Razilwood is able to get you a Pokémon.\..\..\. I am AWFUL at catching Pokémon.
+\xn\mr\rWell, say hi to him for me!\; And make sure to show me your amazing Pokémon,\. even if it's just by video call.
+\xn\mr\rWell, say hi to him for me!\; And make sure to show me your amazing Pokémon,\. even if it's just by video call.
+\xn\mr\rGood luck, \PN!
+\xn\mr\rGood luck, \PN!
+\xn\mr\rOh, and make sure to grab your shoes on the way out!
+\xn\mr\rOh, and make sure to grab your shoes on the way out!
+\xnmr[Mom]\rOh, welcome back, \PN!
+\xnmr[Mom]\rOh, welcome back, \PN!
+\xn\mr\rWould you like to rest for a bit?
+\xn\mr\rWould you like to rest for a bit?
+\xn\mrAll ready! Good luck, \PN!
+\xn\mrAll ready! Good luck, \PN!
+\xnmr[Mom]\rOh... Are you all right? Well, you'll have better luck this time.
+\xnmr[Mom]\rOh... Are you all right? Well, you'll have better luck this time.
+Choose a text option.
+Choose a text option.
+\bThis is the text of a male character. \rThis is the text of a female character.
+\bThis is the text of a male character. \rThis is the text of a female character.
+\pgThis text is the colour of the player's gender. \pogThis text is the colour of the opposite gender to the player.
+\pgThis text is the colour of the player's gender.  \pogThis text is the colour of the opposite gender to the player.
+\c[0]Default, \c[1]blue, \c[2]red, \c[3]green, \c[4]cyan, \c[5]magenta, \c[6]yellow, \c[7]grey, \c[8]white, \c[9]purple, \c[10]orange, \c[11]dark, \c[12]light.
+\c[0]Default, \c[1]blue, \c[2]red, \c[3]green, \c[4]cyan, \c[5]magenta, \c[6]yellow, \c[7]grey, \c[8]white, \c[9]purple, \c[10]orange, \c[11]dark, \c[12]light.
+<b>Bold text,</b> <i>italic text,</i> <u>underlined text,</u> <s>strikethrough text,</s> <outln>outline text,</outln> <outln2>thicker outline text.</outln2>
+<b>Bold text,</b> <i>italic text,</i> <u>underlined text,</u> <s>strikethrough text,</s> <outln>outline text,</outln> <outln2>thicker outline text.</outln2>
+<fn=Power Clear Bold>Power Clear Bold text,</fn> <fs=25>size 25 text,</fs> <fs=40>size 40 text,</fs> <o=128>half-transparent text.</o>
+<fn=Power Clear Bold>Power Clear Bold text,</fn> <fs=25>size 25 text,</fs> <fs=40>size 40 text,</fs> <o=128>half-transparent text.</o>
+This is a line\n break. Text is \n<r>right-aligned until next line\n break. Text is <ac>centred</ac> here. Text is <ar>right-aligned</ar> here.
+This is a line\n break. Text is \n<r>right-aligned until next line\n break. Text is <ac>centred</ac> here.  Text is <ar>right-aligned</ar> here.
+\PN is the player's name, \PM is the player's money, \v[12] is the content of Game Variable 12.
+\PN is the player's name, \PM is the player's money, \v[12] is the content of Game Variable 12.
+\GThe money window is shown.
+\GThe money window is shown.
+\CNThe coins window is shown.
+\CNThe coins window is shown.
+\G\CNThe money and coins windows are both shown. The coins window must be shown second.
+\G\CNThe money and coins windows are both shown. The coins window must be shown second.
+\f[introBoy]The introBoy picture from the Graphics/Pictures folder is shown.
+\f[introBoy]The introBoy picture from the Graphics/Pictures folder is shown.
+\ff[introBoy]The introBoy picture is shown again, but cropped to the top-left 96x96 pixels of it.
+\ff[introBoy]The introBoy picture is shown again, but cropped to the top-left 96x96 pixels of it.
+This is <icon=bagPocket3> bagPocket3 from the folder Graphics/Icons. Icons shown this way are not padded.
+This is <icon=bagPocket3> bagPocket3 from the folder Graphics/Icons. Icons shown this way are not padded.
+\w[signskin]The windowskin has changed to "signskin" here.
+\w[signskin]The windowskin has changed to "signskin" here.
+\l[3]This message box has 3 lines to it rather than 2, so more text can be shown at once. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+\l[3]This message box has 3 lines to it rather than 2, so more text can be shown at once. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+\wuThis message box is at the top.
+\wuThis message box is at the top.
+\wmThis message box is in the middle.
+\wmThis message box is in the middle.
+\wuThis message box is\wm jumping around the screen\wd in a rather off-putting way.
+\wuThis message box is\wm jumping around the screen\wd in a rather off-putting way.
+\opThis message box slides on-screen at the start.
+\opThis message box slides on-screen at the start.
+\clThis message box slides off-screen at the end.
+\clThis message box slides off-screen at the end.
+\ts[]This text appeared instantly!
+\ts[]This text appeared instantly!
+\ts[5]This text is slow to appear.
+\ts[5]This text is slow to appear.
+\se[Pkmn move learnt]Sound effect "Pkmn move learnt" was played.
+\se[Pkmn move learnt]Sound effect "Pkmn move learnt" was played.
+Music effect "Item get" will be played. \me[Item get]
+Music effect "Item get" will be played. \me[Item get]
+A complete list of all message options is available on the wiki.
+A complete list of all message options is available on the wiki.
+The $Trainer global variable contains information about the player, such as their trainer type, ID number, name, party Pokémon and money.
+The $Trainer global variable contains information about the player, such as their trainer type, ID number, name, party Pokémon and money.
+This information is in class Player.
+This information is in class Player.
+Map connections are how two maps are displayed next to each other in the overworld, allowing you to walk from one to the other.
+Map connections are how two maps are displayed next to each other in the overworld, allowing you to walk from one to the other.
+The connections are defined in the PBS file "connections.txt". There is a Debug feature that makes connecting maps easier.
+The connections are defined in the PBS file "connections.txt". There is a Debug feature that makes connecting maps easier.
+In the Debug menu, go to "Information options..." > "Edit Map Connections". Instructions are available within. You can move maps around with the mouse.
+In the Debug menu, go to "Information options..." > "Edit Map Connections". Instructions are available within. You can move maps around with the mouse.
+Every tile in a tileset has a terrain tag, which is a number. This number is used to give certain tiles special effects.
+Every tile in a tileset has a terrain tag, which is a number. This number is used to give certain tiles special effects.
+For example, ledge tiles have terrain tag 1, which means the player jumps over them. Ledge tiles also have a single passable direction (set separately).
+For example, ledge tiles have terrain tag 1, which means the player jumps over them. Ledge tiles also have a single passable direction (set separately).
+Grass tiles (in which you can have wild encounters) have terrain tag 2. Water tiles have terrain tag 6 or 7.
+Grass tiles (in which you can have wild encounters) have terrain tag 2. Water tiles have terrain tag 6 or 7.
+Terrain tag 0 means the tile has no special effect. See the wiki for more information and a complete list of all terrain tags and their effects.
+Terrain tag 0 means the tile has no special effect.  See the wiki for more information and a complete list of all terrain tags and their effects.
+You can only set terrain tags up to 7 via RPG Maker XP's Database. Essentials has terrain tags with higher numbers.
+You can only set terrain tags up to 7 via RPG Maker XP's Database. Essentials has terrain tags with higher numbers.
+To fully set a tileset's terrain tags, open the Debug menu and go to "Information options..." > "Edit Terrain Tags".
+To fully set a tileset's terrain tags, open the Debug menu and go to "Information options..." > "Edit Terrain Tags".
+Choose a roaming Pokémon.
+Choose a roaming Pokémon.
+Switch 53 is on. Latias and Latios are roaming.
+Switch 53 is on. Latias and Latios are roaming.
+Switch 53 is off. Latias and Latios are not roaming. Do you want to make Latias and Latios roam?
+Switch 53 is off. Latias and Latios are not roaming.  Do you want to make Latias and Latios roam?
+Latias and Latios are now roaming.
+Latias and Latios are now roaming.
+Switch 54 is on. Kyogre is roaming.
+Switch 54 is on. Kyogre is roaming.
+Switch 54 is off. Kyogre is not roaming. Do you want to make Kyogre roam?
+Switch 54 is off. Kyogre is not roaming. Do you want to make Kyogre roam?
+Kyogre is now roaming.
+Kyogre is now roaming.
+Switch 55 is on. Entei is roaming.
+Switch 55 is on. Entei is roaming.
+Switch 55 is off. Entei is not roaming. Do you want to make Entei roam?
+Switch 55 is off. Entei is not roaming. Do you want to make Entei roam?
+Entei is now roaming.
+Entei is now roaming.
+Debug mode is a special way of playing the game. It unlocks various developer features to make it easier to access all parts of the game and test things.
+Debug mode is a special way of playing the game. It unlocks various developer features to make it easier to access all parts of the game and test things.
+Playing in Debug mode allows you to access the Debug menu (press F9 or find it in the pause menu).
+Playing in Debug mode allows you to access the Debug menu (press F9 or find it in the pause menu).
+The party screen and Pokémon storage have a similar debug menu for modifying a Pokémon's properties, such as its level or species.
+The party screen and Pokémon storage have a similar debug menu for modifying a Pokémon's properties, such as its level or species.
+You can use field moves at any time, and hold Ctrl to skip any battles and decide the outcome of Trainer battles. Hold Ctrl while moving to walk over anything.
+You can use field moves at any time, and hold Ctrl to skip any battles and decide the outcome of Trainer battles. Hold Ctrl while moving to walk over anything.
+A full list of Debug mode features is available on the wiki.
+A full list of Debug mode features is available on the wiki.
+The $DEBUG variable was set to true. This flag is set automatically during playtesting within RMXP. This is what causes the game to be in Debug mode.
+The $DEBUG variable was set to true. This flag is set automatically during playtesting within RMXP. This is what causes the game to be in Debug mode.
+Obtained all Gym Badges for the first and second regions.
+Obtained all Gym Badges for the first and second regions.
+To add a Gym Badge, use $Trainer.badges[X]=true where X is a number from 0 through 7. Use $Trainer.badges[X] to see if you have a Badge.
+To add a Gym Badge, use $Trainer.badges[X]=true where X is a number from 0 through 7. Use $Trainer.badges[X] to see if you have a Badge.
+Note that the first Gym Badge is number 0, the second Badge is number 1, and so on.
+Note that the first Gym Badge is number 0, the second Badge is number 1, and so on.
+In Debug mode, you can set which Gym Badges you have via the Debug menu.
+In Debug mode, you can set which Gym Badges you have via the Debug menu.
+Press F8 to take a screenshot of the game.
+Press F8 to take a screenshot of the game.
+The screenshot will be put in the same folder as the one containing the save file.
+The screenshot will be put in the same folder as the one containing the save file.
+What is your first Pokémon?
+What is your first Pokémon?
+Is a Celebi in your party?
+Is a Celebi in your party?
+Give a Celebi
+Give a Celebi
+Cancel
+Cancel
+Choice 1
+Choice 1
+Choice 2
+Choice 2
+Choice 3
+Choice 3
+Choice 4
+Choice 4
+Choice 5
+Choice 5
+Choice 6
+Choice 6
+Choice 7
+Choice 7
+Hear what?
+Hear what?
+Really?!
+Really?!
+For what?
+For what?
+Oh my gosh!
+Oh my gosh!
+That's awesome!
+That's awesome!
+I'm shocked!
+I'm shocked!
+Colour and formatting
+Colour and formatting
+Showing extra things
+Showing extra things
+Other
+Other
+About the trainer
+About the trainer
+Map connections
+Map connections
+Terrain Tags
+Terrain Tags
+Latias/Latios
+Latias/Latios
+Kyogre
+Kyogre
+Entei
+Entei
+Yes
+Yes
+No
+No
+Debug mode
+Debug mode
+Give all badges
+Give all badges
+Taking screenshots
+Taking screenshots

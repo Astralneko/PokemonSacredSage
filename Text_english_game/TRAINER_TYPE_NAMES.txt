@@ -1,0 +1,184 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[TRAINER_TYPE_NAMES]
+Mysterious Trainer
+Mysterious Trainer
+Model
+Model
+Roughneck
+Roughneck
+Socialite
+Socialite
+Backpacker
+Backpacker
+Fursuiter
+Fursuiter
+Pokémon Farmer
+Pokémon Farmer
+Battle Girl
+Battle Girl
+Businessman
+Businessman
+Businesswoman
+Businesswoman
+Manager
+Manager
+Ace Trainer
+Ace Trainer
+Theorist
+Theorist
+Influencer
+Influencer
+Veteran
+Veteran
+Preschooler
+Preschooler
+Cyclist
+Cyclist
+Doctor
+Doctor
+Nurse
+Nurse
+School Boy
+School Boy
+School Girl
+School Girl
+Tourist
+Tourist
+Poké-Fan
+Poké-Fan
+Rich Boy
+Rich Boy
+Teacher
+Teacher
+Hex Maniac
+Hex Maniac
+Pilot
+Pilot
+Waiter
+Waiter
+Waitress
+Waitress
+Rising Star
+Rising Star
+Police Officer
+Police Officer
+Investigator
+Investigator
+Firefighter
+Firefighter
+Dancer
+Dancer
+Musician
+Musician
+Guitarist
+Guitarist
+Stoner
+Stoner
+Street Thug
+Street Thug
+Delinquent
+Delinquent
+Worker
+Worker
+Photographer
+Photographer
+Reporter
+Reporter
+Gardener
+Gardener
+Janitor
+Janitor
+Hoopster
+Hoopster
+Infielder
+Infielder
+Smasher
+Smasher
+Striker
+Striker
+Risen
+Risen
+Aether Paradise
+Aether Paradise
+Study Team
+Study Team
+Rising Stars
+Rising Stars
+Bandmates
+Bandmates
+Classmates
+Classmates
+Medical Team
+Medical Team
+Detainment Team
+Detainment Team
+Suspicious Duo
+Suspicious Duo
+Beauty Duo
+Beauty Duo
+News Crew
+News Crew
+Business Team
+Business Team
+Rich Family
+Rich Family
+Cheapskates
+Cheapskates
+Swim Team
+Swim Team
+Tourist Family
+Tourist Family
+Psychic Circle
+Psychic Circle
+First Responders
+First Responders
+Arcade Star
+Arcade Star
+Stadium Announcer
+Stadium Announcer
+Factory Head
+Factory Head
+Valley Ranger
+Valley Ranger
+Dungeon Master
+Dungeon Master
+Fighting Pixel
+Fighting Pixel
+Neon Champion
+Neon Champion
+Runner
+Runner
+Neon Chairman
+Neon Chairman
+Neon CFO
+Neon CFO
+Neon CIO
+Neon CIO
+Neon COO
+Neon COO
+Neon Challenger
+Neon Challenger
+Neon CTO
+Neon CTO
+Neon CEO
+Neon CEO
+Neon VP
+Neon VP
+Neon Developer
+Neon Developer
+Neon Researcher
+Neon Researcher
+Sunset Champion
+Sunset Champion
+Team Xibal
+Team Xibal
+Adventurer
+Adventurer
+Parade Leader
+Parade Leader
+Mysterious Lady
+Mysterious Lady
+Idol
+Idol

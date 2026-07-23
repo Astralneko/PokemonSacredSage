@@ -1,0 +1,40 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map027]
+\xn[Backpacker]\bThe Rocavideo Well is our main source of water.
+\xn[Backpacker]\bThe Rocavideo Well is our main source of water.
+\xn[Backpacker]\bYou'd think it'd be the river, but we mainly use that for transit!
+\xn[Backpacker]\bYou'd think it'd be the river, but we mainly use that for transit!
+\xn[Backpacker]\bIt wouldn't do to drink our shipping lane.
+\xn[Backpacker]\bIt wouldn't do to drink our shipping lane.
+\xn[Backpacker]\rAh, hello! Do you like camping?
+\xn[Backpacker]\rAh, hello! Do you like camping?
+\xn[Backpacker]\rMe too! Ah, the joys of the great outdoors...
+\xn[Backpacker]\rMe too! Ah, the joys of the great outdoors...
+\xn[Backpacker]\rWhat?! How can that be?
+\xn[Backpacker]\rWhat?! How can that be?
+\xn[Backpacker]\rIt's so amazing sleeping under a bed of stars...
+\xn[Backpacker]\rIt's so amazing sleeping under a bed of stars...
+\sign[sign hgss loc]\l[3]<ac>Rocavideo Town Gym</ac>\nLeader: Desiree\nThe Kantonian Legend
+\sign[sign hgss loc]\l[3]<ac>Rocavideo Town Gym</ac>\nLeader: Desiree\nThe Kantonian Legend
+\xn[Old Man]\bAll you young whippersnappers going into caves and whatnot...
+\xn[Old Man]\bAll you young whippersnappers going into caves and whatnot...
+\xn[Old Man]\bWhen I was your age I was told to stay far away!
+\xn[Old Man]\bWhen I was your age I was told to stay far away!
+\xn[Old Man]\bThough I guess that was before those cell phone things... Maybe that's why you all are so bold?
+\xn[Old Man]\bThough I guess that was before those cell phone things... Maybe that's why you all are so bold?
+Geck?
+Geck?
+\rBerries are grown all over the region, even if the north grows them the most...
+\rBerries are grown all over the region, even if the north grows them the most...
+\rThese spots were placed by Desiree, but her actual Berries are grown in the Gym.
+\rThese spots were placed by Desiree, but her actual Berries are grown in the Gym.
+\rSo, these are communal Berries!
+\rSo, these are communal Berries!
+Rocavideo Well
+Rocavideo Well
+Yes
+Yes
+No
+No

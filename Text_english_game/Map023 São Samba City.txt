@@ -1,0 +1,20 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map023]
+Tussle Avenue
+Tussle Avenue
+Nightlight Street
+Nightlight Street
+Thunderbolt Games\nThe place for electrifying joy!
+Thunderbolt Games\nThe place for electrifying joy!
+\bSorry. We're currently expanding this street...
+\bSorry. We're currently expanding this street...
+Flighty Street
+Flighty Street
+\sign[sign hgss tt]<ac><b>New things coming by 1530!</b></ac>\n<ar>- Mato Grosso Construction</ar>
+\sign[sign hgss tt]<ac><b>New things coming by 1530!</b></ac>\n<ar>- Mato Grosso Construction</ar>
+Battle Parade HQ
+Battle Parade HQ
+Gym Avenue
+Gym Avenue

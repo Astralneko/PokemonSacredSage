@@ -42,14 +42,14 @@ module Modular_Messages
     if $game_actors
       @@hash["text"].gsub!(/\\n\[([1-8])\]/i) { next $game_actors[$1.to_i].name }
     end
-	# \ptalk[something] gets turned to \xn[something]\mr[\v[32]]\ds[\v[32]]\pg
-	# if something is empty, it is turned to \pn
+	# \ptalk[something] gets turned to \xn[\pn]\mr[\v[32]_something]\ds[\v[32]]\pg
+	# if something is empty, it is turned to \v[32]
     @@hash["text"].gsub!(/\\ptalk\[([^\]]*)\]/i) do
-		something = $1
-		if something == ""
-			something = "\\pn"
+		something = ["\\v[32]"]
+		if !$1.empty?
+			something.add($1)
 		end
-		next "\\xn[" + something + "]\\mr[\\v[32]]\\ds[\\v[32]]\\pg" if $player
+		next "\\xn[\\pn]\\mr[" + something.join("_") + "]\\ds[\\v[32]]\\pg" if $player
 		next "\\xnmr[Aspin]"
 	end
   end

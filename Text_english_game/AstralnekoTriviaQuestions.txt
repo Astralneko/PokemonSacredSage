@@ -1,0 +1,36 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[AstralnekoTriviaQuestions]
+\xn[Leto]\rWhich city does famous influencer Iono both stream and run a Pokémon Gym from?
+\xn[Leto]\rWhich city does famous influencer Iono both stream and run a Pokémon Gym from?
+\xn[Leto]\rWhich city does famous inventor Clemont run a Pokémon Gym from?
+\xn[Leto]\rWhich city does famous inventor Clemont run a Pokémon Gym from?
+\xn[Leto]\rThe famous Rage Candy Bar was invented by a confectioner living where?
+\xn[Leto]\rThe famous Rage Candy Bar was invented by a confectioner living where?
+\xn[Leto]\rIn Professor Oak's Oritarian Pokédex, what is the first Pokémon whose ID number requires 3 digits to represent?
+\xn[Leto]\rIn Professor Oak's Oritarian Pokédex, what is the first Pokémon whose ID number requires 3 digits to represent?
+\xn[Leto]\rIn terms of Oritarian Pokédex number, what is the first Pikachu look-alike with two types?
+\xn[Leto]\rIn terms of Oritarian Pokédex number, what is the first Pikachu look-alike with two types?
+\xn[Leto]\rWhat is commonly cited as the hottest Pokémon, with internal flames in excess of 10,000 degrees Fahrenheit?
+\xn[Leto]\rWhat is commonly cited as the hottest Pokémon, with internal flames in excess of 10,000 degrees Fahrenheit?
+\xn[Leto]\rOf the following, which never was either elected Unova's Champion or defeated the incumbent Unovan Champion?
+\xn[Leto]\rOf the following, which never was either elected Unova's Champion or defeated the incumbent Unovan Champion?
+\xn[Leto]\rWho is commonly credited as the creator of the modern Pokédex?
+\xn[Leto]\rWho is commonly credited as the creator of the modern Pokédex?
+\xn[Leto]\rWhat place did former Chairman Rose get in the Champion Cup?
+\xn[Leto]\rWhat place did former Chairman Rose get in the Champion Cup?
+\xn[Leto]\rThe Verelan League has a lot of musicians. Which ones composed their own battle themes?
+\xn[Leto]\rThe Verelan League has a lot of musicians. Which ones composed their own battle themes?
+\xn[Leto]\rAlongside former Champion Panem, who runs the Battle Parade in São Samba City?
+\xn[Leto]\rAlongside former Champion Panem, who runs the Battle Parade in São Samba City?
+\xn[Leto]\rSome Berries reduce damage from certain types of move, depending on the user's type. Which one is least likely to activate?
+\xn[Leto]\rSome Berries reduce damage from certain types of move, depending on the user's type. Which one is least likely to activate?
+\xn[Leto]\rWhich city is known for a tower that shines bright like a prism?
+\xn[Leto]\rWhich city is known for a tower that shines bright like a prism?
+\xn[Leto]\rWhich city functions as a port town?
+\xn[Leto]\rWhich city functions as a port town?
+\xn[Leto]\rWhich city's power grid is provided by a Pokémon?
+\xn[Leto]\rWhich city's power grid is provided by a Pokémon?
+\xn[Leto]\rWhich city is known for its high-end clothing stores?
+\xn[Leto]\rWhich city is known for its high-end clothing stores?

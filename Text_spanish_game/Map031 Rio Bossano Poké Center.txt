@@ -1,0 +1,52 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map031]
+\xn[Nurse Lucky]\mr[Nurse NPC]\rHello, and welcome to the Pokémon Center.
+\xn[Nurse Lucky]\mr[Nurse NPC]\rHello, and welcome to the Pokémon Center.
+\xn\mr\rWe restore your tired Pokémon to full health.
+\xn\mr\rWe restore your tired Pokémon to full health.
+\xn\mr\rWould you like to rest your Pokémon?
+\xn\mr\rWould you like to rest your Pokémon?
+\xn\mr[Nurse NPC_smile]\rOK,\. I'll take your Pokémon for a few seconds.
+\xn\mr[Nurse NPC_smile]\rOK,\. I'll take your Pokémon for a few seconds.
+\xn\mr[Nurse NPC]\rIt seems that your Pokémon are infected by Pokérus.
+\xn\mr[Nurse NPC]\rIt seems that your Pokémon are infected by Pokérus.
+\xn\mr\rThat's a microscopic lifeform that can attach to Pokémon,\. inflicting them with a condition commonly called "Pokérus Potential."
+\xn\mr\rThat's a microscopic lifeform that can attach to Pokémon,\. inflicting them with a condition commonly called "Pokérus Potential."
+\xn\mr\rWhile infected,\. Pokémon produce way more life energy than normal,\. allowing them to perform stronger feats.
+\xn\mr\rWhile infected,\. Pokémon produce way more life energy than normal,\. allowing them to perform stronger feats.
+\xn\mr\rHowever,\. they can occasionally overestimate their abilities while dealing with it,\. so keep an eye on your Pokémon.
+\xn\mr\rHowever,\. they can occasionally overestimate their abilities while dealing with it,\. so keep an eye on your Pokémon.
+\xn\mr\rThank you for waiting.
+\xn\mr\rThank you for waiting.
+\xn\mr\rWe've restored your Pokémon to full health.
+\xn\mr\rWe've restored your Pokémon to full health.
+\xn\mr[Nurse NPC_smile]\rStay safe out there!
+\xn\mr[Nurse NPC_smile]\rStay safe out there!
+\xn[Nurse Lucky]\mr[Nurse NPC]\rFirst, you should restore your Pokémon to full health.
+\xn[Nurse Lucky]\mr[Nurse NPC]\rFirst, you should restore your Pokémon to full health.
+\xn\mr\rYour Pokémon have been healed to perfect health.
+\xn\mr\rYour Pokémon have been healed to perfect health.
+Yee na!
+Yee na!
+\xn[Lilian]\rOh, to have so much excess...
+\xn[Lilian]\rOh, to have so much excess...
+\xn[Lilian]\rI have a Suerteside, would you happen to have a Grass Body Crystode?
+\xn[Lilian]\rI have a Suerteside, would you happen to have a Grass Body Crystode?
+\xn[Lilian]\rIt's okay, I just really need one to finish my collection...
+\xn[Lilian]\rIt's okay, I just really need one to finish my collection...
+\xn[Lilian]\rOh! Excellent! Let's trade!
+\xn[Lilian]\rOh! Excellent! Let's trade!
+Tails
+Tails
+Lilian
+Lilian
+\PN traded Crystode for Suerteside!
+\PN traded Crystode for Suerteside!
+\xn[Lilian]\rThank you so, so much!
+\xn[Lilian]\rThank you so, so much!
+Yes
+Yes
+No
+No

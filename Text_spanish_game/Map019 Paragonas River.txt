@@ -1,0 +1,34 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map019]
+\sign[signskin]Rooftop Square: Vending Machines
+\sign[signskin]Rooftop Square: Vending Machines
+It's a vending machine.\nWhich drink would you like? \G
+It's a vending machine.\nWhich drink would you like? \G
+\GA Fresh Water dropped down!
+\GA Fresh Water dropped down!
+\GBonus! Another Fresh Water dropped down.
+\GBonus! Another Fresh Water dropped down.
+\GYou have no room left in the Bag.
+\GYou have no room left in the Bag.
+\GYou don't have enough money.
+\GYou don't have enough money.
+\GA Soda Pop dropped down!
+\GA Soda Pop dropped down!
+\GBonus! Another Soda Pop dropped down.
+\GBonus! Another Soda Pop dropped down.
+\GA Lemonade dropped down!
+\GA Lemonade dropped down!
+\GBonus! Another Lemonade dropped down.
+\GBonus! Another Lemonade dropped down.
+\GDecided not to buy a drink.
+\GDecided not to buy a drink.
+Fresh Water - $200
+Fresh Water - $200
+Soda Pop - $300
+Soda Pop - $300
+Lemonade - $350
+Lemonade - $350
+Cancel
+Cancel

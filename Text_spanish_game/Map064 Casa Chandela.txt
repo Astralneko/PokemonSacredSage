@@ -1,0 +1,40 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map064]
+It's an old journal I used to Save.
+It's an old journal I used to Save.
+The last entry was \v[1]. Best not to damage it, or I'll forget what happened before then!
+The last entry was \v[1]. Best not to damage it, or I'll forget what happened before then!
+Choose a roaming Pokémon.
+Choose a roaming Pokémon.
+Switch 53 is on. Latias and Latios are roaming.
+Switch 53 is on. Latias and Latios are roaming.
+Switch 53 is off. Latias and Latios are not roaming. Do you want to make Latias and Latios roam?
+Switch 53 is off. Latias and Latios are not roaming.  Do you want to make Latias and Latios roam?
+Latias and Latios are now roaming.
+Latias and Latios are now roaming.
+Switch 54 is on. Kyogre is roaming.
+Switch 54 is on. Kyogre is roaming.
+Switch 54 is off. Kyogre is not roaming. Do you want to make Kyogre roam?
+Switch 54 is off. Kyogre is not roaming. Do you want to make Kyogre roam?
+Kyogre is now roaming.
+Kyogre is now roaming.
+Switch 55 is on. Entei is roaming.
+Switch 55 is on. Entei is roaming.
+Switch 55 is off. Entei is not roaming. Do you want to make Entei roam?
+Switch 55 is off. Entei is not roaming. Do you want to make Entei roam?
+Entei is now roaming.
+Entei is now roaming.
+Latias/Latios
+Latias/Latios
+Kyogre
+Kyogre
+Entei
+Entei
+Cancel
+Cancel
+Yes
+Yes
+No
+No

@@ -1,0 +1,8 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map008]
+\xn[Weber Deux]\bTechnology is incredible!
+\xn[Weber Deux]\bTechnology is incredible!
+\xn[Weber Deux]\bHowever, it takes time to develop... Sorry, but this marks the end of Beta 1...
+\xn[Weber Deux]\bHowever, it takes time to develop... Sorry, but this marks the end of Beta 1...

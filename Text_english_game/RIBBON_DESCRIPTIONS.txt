@@ -1,0 +1,190 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[RIBBON_DESCRIPTIONS]
+A commemorative Ribbon representing all of the Ribbons you collected for contests somewhere long ago.
+A commemorative Ribbon representing all of the Ribbons you collected for contests somewhere long ago.
+A Ribbon awarded to a Pokémon that has perfectly embodied Coolness in Pokémon Contests.
+A Ribbon awarded to a Pokémon that has perfectly embodied Coolness in Pokémon Contests.
+A Ribbon awarded to a Pokémon that has perfectly embodied Beauty in Pokémon Contests.
+A Ribbon awarded to a Pokémon that has perfectly embodied Beauty in Pokémon Contests.
+A Ribbon awarded to a Pokémon that has perfectly embodied Cuteness in Pokémon Contests.
+A Ribbon awarded to a Pokémon that has perfectly embodied Cuteness in Pokémon Contests.
+A Ribbon awarded to a Pokémon that has perfectly embodied Cleverness in Pokémon Contests.
+A Ribbon awarded to a Pokémon that has perfectly embodied Cleverness in Pokémon Contests.
+A Ribbon awarded to a Pokémon that has perfectly embodied Toughness in Pokémon Contests.
+A Ribbon awarded to a Pokémon that has perfectly embodied Toughness in Pokémon Contests.
+A Ribbon awarded to a Pokémon that has performed superbly in every kind of contest.
+A Ribbon awarded to a Pokémon that has performed superbly in every kind of contest.
+A Ribbon awarded to a Pokémon that has perfectly embodied shining brilliance in Super Contest Shows.
+A Ribbon awarded to a Pokémon that has perfectly embodied shining brilliance in Super Contest Shows.
+A Ribbon awarded for clearing the Pokémon League and entering the Hall of Fame somewhere long ago.
+A Ribbon awarded for clearing the Pokémon League and entering the Hall of Fame somewhere long ago.
+A Ribbon awarded for beating the Hoenn Champion and entering the Hoenn Hall of Fame.
+A Ribbon awarded for beating the Hoenn Champion and entering the Hoenn Hall of Fame.
+A Ribbon awarded for beating the Sinnoh Champion and entering the Sinnoh Hall of Fame.
+A Ribbon awarded for beating the Sinnoh Champion and entering the Sinnoh Hall of Fame.
+A Ribbon awarded for beating the Kalos Champion and entering the Kalos Hall of Fame.
+A Ribbon awarded for beating the Kalos Champion and entering the Kalos Hall of Fame.
+A Ribbon awarded for beating the Alola Champion and entering the Alola Hall of Fame.
+A Ribbon awarded for beating the Alola Champion and entering the Alola Hall of Fame.
+A Ribbon awarded for beating the Galar Champion and entering the Galar Hall of Fame.
+A Ribbon awarded for beating the Galar Champion and entering the Galar Hall of Fame.
+A Ribbon awarded for beating the Paldea Champion and entering the Paldea Hall of Fame.
+A Ribbon awarded for beating the Paldea Champion and entering the Paldea Hall of Fame.
+A commemorative Ribbon representing all of the Ribbons you collected for battling somewhere long ago.
+A commemorative Ribbon representing all of the Ribbons you collected for battling somewhere long ago.
+A Ribbon that can be given to a Pokémon that has achieved victory in difficult battles.
+A Ribbon that can be given to a Pokémon that has achieved victory in difficult battles.
+A Ribbon that can be given to a brave Pokémon that has honed its battle skills to an art.
+A Ribbon that can be given to a brave Pokémon that has honed its battle skills to an art.
+A Ribbon awarded for winning against a Battle Legend in the Battle Tree.
+A Ribbon awarded for winning against a Battle Legend in the Battle Tree.
+A Ribbon awarded for winning against a Battle Legend in super battles in the Battle Tree.
+A Ribbon awarded for winning against a Battle Legend in super battles in the Battle Tree.
+A Ribbon awarded for winning against a champion in the Battle Tower.
+A Ribbon awarded for winning against a champion in the Battle Tower.
+A Ribbon awarded for being chosen as a super sketch model in the Hoenn region.
+A Ribbon awarded for being chosen as a super sketch model in the Hoenn region.
+A Ribbon that can be given to a Pokémon with which you share a close and meaningful bond.
+A Ribbon that can be given to a Pokémon with which you share a close and meaningful bond.
+A Ribbon that can be given to a Pokémon that has overcome rigorous trials and training.
+A Ribbon that can be given to a Pokémon that has overcome rigorous trials and training.
+A Ribbon that can be given to a Pokémon that has achieved victory in the Battle Royal.
+A Ribbon that can be given to a Pokémon that has achieved victory in the Battle Royal.
+A Ribbon awarded for winning against a Trainer in the Master Ball Tier of Ranked Battles.
+A Ribbon awarded for winning against a Trainer in the Master Ball Tier of Ranked Battles.
+A ribbon awarded to a Pokémon that posed for a photograph in Hisui in the distant past.
+A ribbon awarded to a Pokémon that posed for a photograph in Hisui in the distant past.
+A rare ribbon found extremely infrequently on Pokémon obtained in a Surprise Trade.
+A rare ribbon found extremely infrequently on Pokémon obtained in a Surprise Trade.
+A Ribbon awarded for participating in a special Pokémon event.
+A Ribbon awarded for participating in a special Pokémon event.
+A Ribbon that commemorates a birthday.
+A Ribbon that commemorates a birthday.
+A Ribbon for cherishing a special memory.
+A Ribbon for cherishing a special memory.
+A Ribbon awarded to a Pokémon League Champion.
+A Ribbon awarded to a Pokémon League Champion.
+A Ribbon awarded to a Battle Competition Champion.
+A Ribbon awarded to a Battle Competition Champion.
+A Ribbon awarded to a Regional Champion in the Pokémon World Championships.
+A Ribbon awarded to a Regional Champion in the Pokémon World Championships.
+A Ribbon awarded for winning one hundred battles in a row.
+A Ribbon awarded for winning one hundred battles in a row.
+A Ribbon awarded to a National Champion in the Pokémon World Championships.
+A Ribbon awarded to a National Champion in the Pokémon World Championships.
+A Ribbon awarded to a World Champion in the Pokémon World Championships.
+A Ribbon awarded to a World Champion in the Pokémon World Championships.
+A Ribbon awarded for a special holiday.
+A Ribbon awarded for a special holiday.
+A commemorative Ribbon obtained in a Mystery Zone.
+A commemorative Ribbon obtained in a Mystery Zone.
+A mark for a peckish Pokémon.
+A mark for a peckish Pokémon.
+A mark for a sleepy Pokémon.
+A mark for a sleepy Pokémon.
+A mark for a dozy Pokémon.
+A mark for a dozy Pokémon.
+A mark for an early-riser Pokémon.
+A mark for an early-riser Pokémon.
+A mark for a cloud-watching Pokémon.
+A mark for a cloud-watching Pokémon.
+A mark for a sodden Pokémon.
+A mark for a sodden Pokémon.
+A mark for a thunderstruck Pokémon.
+A mark for a thunderstruck Pokémon.
+A mark for a snow-frolicking Pokémon.
+A mark for a snow-frolicking Pokémon.
+A mark for a shivering Pokémon.
+A mark for a shivering Pokémon.
+A mark for a parched Pokémon.
+A mark for a parched Pokémon.
+A mark for a sandswept Pokémon.
+A mark for a sandswept Pokémon.
+A mark for a mist-drifter Pokémon.
+A mark for a mist-drifter Pokémon.
+A mark of a chosen Pokémon.
+A mark of a chosen Pokémon.
+A mark for a catch-of-the-day Pokémon.
+A mark for a catch-of-the-day Pokémon.
+A mark for a curry-connoisseur Pokémon.
+A mark for a curry-connoisseur Pokémon.
+A mark for a reclusive Pokémon.
+A mark for a reclusive Pokémon.
+A mark for a sociable Pokémon.
+A mark for a sociable Pokémon.
+A mark for a rowdy Pokémon.
+A mark for a rowdy Pokémon.
+A mark for a spacey Pokémon.
+A mark for a spacey Pokémon.
+A mark for an anxious Pokémon.
+A mark for an anxious Pokémon.
+A mark for a giddy Pokémon.
+A mark for a giddy Pokémon.
+A mark for a radiant Pokémon.
+A mark for a radiant Pokémon.
+A mark for a serene Pokémon.
+A mark for a serene Pokémon.
+A mark for a feisty Pokémon.
+A mark for a feisty Pokémon.
+A mark for a daydreaming Pokémon.
+A mark for a daydreaming Pokémon.
+A mark for a joyful Pokémon.
+A mark for a joyful Pokémon.
+A mark for a furious Pokémon.
+A mark for a furious Pokémon.
+A mark for a beaming Pokémon.
+A mark for a beaming Pokémon.
+A mark for a teary-eyed Pokémon.
+A mark for a teary-eyed Pokémon.
+A mark for a chipper Pokémon.
+A mark for a chipper Pokémon.
+A mark for a grumpy Pokémon.
+A mark for a grumpy Pokémon.
+A mark for a scholarly Pokémon.
+A mark for a scholarly Pokémon.
+A mark for a rampaging Pokémon.
+A mark for a rampaging Pokémon.
+A mark for an opportunistic Pokémon.
+A mark for an opportunistic Pokémon.
+A mark for a stern Pokémon.
+A mark for a stern Pokémon.
+A mark for a kindhearted Pokémon.
+A mark for a kindhearted Pokémon.
+A mark for an easily flustered Pokémon.
+A mark for an easily flustered Pokémon.
+A mark for a driven Pokémon.
+A mark for a driven Pokémon.
+A mark for an apathetic Pokémon.
+A mark for an apathetic Pokémon.
+A mark for an arrogant Pokémon.
+A mark for an arrogant Pokémon.
+A mark for an unsure Pokémon.
+A mark for an unsure Pokémon.
+A mark for a humble Pokémon.
+A mark for a humble Pokémon.
+A mark for a pompous Pokémon.
+A mark for a pompous Pokémon.
+A mark for a lively Pokémon.
+A mark for a lively Pokémon.
+A mark for a worn-out Pokémon.
+A mark for a worn-out Pokémon.
+A mark for a Pokémon that's the largest it can be.
+A mark for a Pokémon that's the largest it can be.
+A mark for a Pokémon that's the smallest it can be.
+A mark for a Pokémon that's the smallest it can be.
+A mark for a Pokémon that likes to pick things up.
+A mark for a Pokémon that likes to pick things up.
+A mark for a friendly Pokémon.
+A mark for a friendly Pokémon.
+A mark for a Pokémon gourmet.
+A mark for a Pokémon gourmet.
+A mark for a Pokémon that was an alpha.
+A mark for a Pokémon that was an alpha.
+A mark for an especially mighty Pokémon.
+A mark for an especially mighty Pokémon.
+A mark for a Pokémon that was a Titan.
+A mark for a Pokémon that was a Titan.
+A special Ribbon awarded to a Pokémon that was once partnered with another great Trainer.
+A special Ribbon awarded to a Pokémon that was once partnered with another great Trainer.

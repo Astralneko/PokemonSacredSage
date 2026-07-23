@@ -1,0 +1,80 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map004]
+\xn[Mason]\mr[Youngster]\bHey, I heard you're a new Pokémon Trainer!
+\xn[Mason]\mr[Youngster]\bHey, I heard you're a new Pokémon Trainer!
+\xn\mr\bHow's about a trade? Your Panhali for my strangely pink Woobat?
+\xn\mr\bHow's about a trade? Your Panhali for my strangely pink Woobat?
+\xn\mr\bYou don't want to trade? Aww...
+\xn\mr\bYou don't want to trade?  Aww...
+\xn\mr\bOK, let's get started!
+\xn\mr\bOK, let's get started!
+Ace
+Ace
+Mason
+Mason
+\PN traded Panhali for Woobat!
+\PN traded Panhali for Woobat!
+\xn\mr\bThank you so much!
+\xn\mr\bThank you so much!
+\xn\mr\bOh, we can do it later...
+\xn\mr\bOh, we can do it later...
+\xn[Mason]\mr[Youngster]\bGood luck, \PN!
+\xn[Mason]\mr[Youngster]\bGood luck, \PN!
+\xn[Nurse Lucky]\mr[Nurse NPC]\rHello, and welcome to the Pokémon Center.
+\xn[Nurse Lucky]\mr[Nurse NPC]\rHello, and welcome to the Pokémon Center.
+\xn\mr\rWe restore your tired Pokémon to full health.
+\xn\mr\rWe restore your tired Pokémon to full health.
+\xn\mr\rWould you like to rest your Pokémon?
+\xn\mr\rWould you like to rest your Pokémon?
+\xn\mr[Nurse NPC_smile]\rOK,\. I'll take your Pokémon for a few seconds.
+\xn\mr[Nurse NPC_smile]\rOK,\. I'll take your Pokémon for a few seconds.
+\xn\mr[Nurse NPC]\rIt seems that your Pokémon are infected by Pokérus.
+\xn\mr[Nurse NPC]\rIt seems that your Pokémon are infected by Pokérus.
+\xn\mr\rThat's a microscopic lifeform that can attach to Pokémon,\. inflicting them with a condition commonly called "Pokérus Potential."
+\xn\mr\rThat's a microscopic lifeform that can attach to Pokémon,\. inflicting them with a condition commonly called "Pokérus Potential."
+\xn\mr\rWhile infected,\. Pokémon produce way more life energy than normal,\. allowing them to perform stronger feats.
+\xn\mr\rWhile infected,\. Pokémon produce way more life energy than normal,\. allowing them to perform stronger feats.
+\xn\mr\rHowever,\. they can occasionally overestimate their abilities while dealing with it,\. so keep an eye on your Pokémon.
+\xn\mr\rHowever,\. they can occasionally overestimate their abilities while dealing with it,\. so keep an eye on your Pokémon.
+\xn\mr\rThank you for waiting.
+\xn\mr\rThank you for waiting.
+\xn\mr\rWe've restored your Pokémon to full health.
+\xn\mr\rWe've restored your Pokémon to full health.
+\xn\mr[Nurse NPC_smile]\rStay safe out there!
+\xn\mr[Nurse NPC_smile]\rStay safe out there!
+\xn[Nurse Lucky]\mr[Nurse NPC]\rFirst, you should restore your Pokémon to full health.
+\xn[Nurse Lucky]\mr[Nurse NPC]\rFirst, you should restore your Pokémon to full health.
+\xn\mr\rYour Pokémon have been healed to perfect health.
+\xn\mr\rYour Pokémon have been healed to perfect health.
+Yee na!
+Yee na!
+\xnmr[Natsuki]\rWell, here we are.\..\..
+\xnmr[Natsuki]\rWell, here we are.\..\..
+\xnmr[Natsuki]\rYou look confused about this place.\..\..\; I guess we never really had a reason to come in here since we're not Trainers,\. but still.
+\xnmr[Natsuki]\rYou look confused about this place.\..\..\; I guess we never really had a reason to come in here since we're not Trainers,\. but still.
+\xnmr[Natsuki]\rLet me show you around.
+\xnmr[Natsuki]\rLet me show you around.
+\xnmr[Natsuki]\rThis is the Nurse.\. She'll heal your Pokémon!\. Best part is,\. it's completely free.
+\xnmr[Natsuki]\rThis is the Nurse.\. She'll heal your Pokémon!\. Best part is,\. it's completely free.
+\xn[Nurse Lucky]\mr[Nurse NPC]\rHeh,\. imagine paying to get your Pokémon healed.\. Sounds Unovan.
+\xn[Nurse Lucky]\mr[Nurse NPC]\rHeh,\. imagine paying to get your Pokémon healed.\. Sounds Unovan.
+\xnmr[Natsuki]\rHaha.\..\..\. Right.
+\xnmr[Natsuki]\rHaha.\..\..\. Right.
+\xnmr[Natsuki]\rNow then,\. we're gonna go downstairs to miss Lucky's left.
+\xnmr[Natsuki]\rNow then,\. we're gonna go downstairs to miss Lucky's left.
+\xnmr[Natsuki]\rThe blue corner is the convenience store.\; It offers useful items for Trainers.
+\xnmr[Natsuki]\rThe blue corner is the convenience store.\; It offers useful items for Trainers.
+\xnmr[Natsuki]\rYou know, things like Potions\. and Repels\. and such.
+\xnmr[Natsuki]\rYou know, things like Potions\. and Repels\. and such.
+\xnmr[Natsuki]\rThere are also two corner waiting areas.\; One on the left,\. and one on the right.
+\xnmr[Natsuki]\rThere are also two corner waiting areas.\; One on the left,\. and one on the right.
+\xnmr[Natsuki]\rTrainers will often like to hang around there,\. especially those with requests.
+\xnmr[Natsuki]\rTrainers will often like to hang around there,\. especially those with requests.
+\xnmr[Natsuki]\rUnfortunately, Aria isn't one of them.\..\..\| Wait, it's game day!\. She's probably at the bar!
+\xnmr[Natsuki]\rUnfortunately, Aria isn't one of them.\..\..\| Wait, it's game day!\. She's probably at the bar!
+Yes
+Yes
+No
+No

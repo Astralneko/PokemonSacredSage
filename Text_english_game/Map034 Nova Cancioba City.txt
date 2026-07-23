@@ -1,0 +1,22 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map034]
+\xn[Hex Maniac]\rWhat's that? You want to battle?
+\xn[Hex Maniac]\rWhat's that? You want to battle?
+\xn[Hex Maniac]\rSorry. You'll have to wait for v0.6.
+\xn[Hex Maniac]\rSorry. You'll have to wait for v0.6.
+<<[>>A required location for this quest isn't included in the present version.<<]>>
+<<[>>A required location for this quest isn't included in the present version.<<]>>
+<<[>>You may battle this Trainer anyway, but quest step 3 will not be possible.<<]>>
+<<[>>You may battle this Trainer anyway, but quest step 3 will not be possible.<<]>>
+<<[>>Do so anyway?<<]>>
+<<[>>Do so anyway?<<]>>
+Nova Cancioba High\nEx Astris, Scientia
+Nova Cancioba High\nEx Astris, Scientia
+Casa Chandela
+Casa Chandela
+Yes
+Yes
+No
+No

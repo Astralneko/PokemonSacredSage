@@ -1,0 +1,96 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[AstralnekoTriviaAnswers]
+Levincia
+Levincia
+Medali
+Medali
+Lumiose
+Lumiose
+Veriachi
+Veriachi
+Hammerlocke
+Hammerlocke
+Mahogany Town
+Mahogany Town
+Blackthorn City
+Blackthorn City
+Pewter City
+Pewter City
+Lavender Town
+Lavender Town
+Voltorb
+Voltorb
+Skitty
+Skitty
+Tinkatink
+Tinkatink
+Pidgey
+Pidgey
+Emolga
+Emolga
+Dedenne
+Dedenne
+Pachirisu
+Pachirisu
+Naruchu
+Naruchu
+Magcargo
+Magcargo
+Houndoom
+Houndoom
+Flareon
+Flareon
+Entei
+Entei
+Ghetsis
+Ghetsis
+N
+N
+Alder
+Alder
+Iris
+Iris
+Professor Oak
+Professor Oak
+Professor Laventon
+Professor Laventon
+Professor Rowan
+Professor Rowan
+Professor Bamb'o
+Professor Bamb'o
+2nd
+2nd
+1st
+1st
+8th
+8th
+Did not compete
+Did not compete
+Neka and Rivola
+Neka and Rivola
+Neka and Rayann
+Neka and Rayann
+Rayann and Enrique
+Rayann and Enrique
+Rivola and Arthur
+Rivola and Arthur
+Rayann
+Rayann
+Leto
+Leto
+Circense
+Circense
+Rusty
+Rusty
+Haban Berry
+Haban Berry
+Chilan Berry
+Chilan Berry
+Kebia Berry
+Kebia Berry
+Wacan Berry
+Wacan Berry
+Roseli Berry
+Roseli Berry

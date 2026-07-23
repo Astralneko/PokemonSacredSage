@@ -1,0 +1,26 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map015]
+\bIn caves, Pokémon can jump out at you from any angle!
+\bIn caves, Pokémon can jump out at you from any angle!
+\bCave fishing's a bit different...
+\bCave fishing's a bit different...
+\bWhaddya mean this isn't a cave fish?
+\bWhaddya mean this isn't a cave fish?
+\xn[Luna]\rPrepare for trouble...
+\xn[Luna]\rPrepare for trouble...
+\xn[Toto]\rAnd make it double!
+\xn[Toto]\rAnd make it double!
+\rOur Team Rocket play didn't work! D:
+\rOur Team Rocket play didn't work! D:
+\rDaddy works in this cave!
+\rDaddy works in this cave!
+\bGo back to start!
+\bGo back to start!
+\bWhew... This cave's humid!
+\bWhew... This cave's humid!
+\bWatch out! You almost stepped on a Crystode!
+\bWatch out! You almost stepped on a Crystode!
+\bJust be more careful out there!
+\bJust be more careful out there!

@@ -1,0 +1,12 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map025]
+\xn[Museum Worker]\rWelcome to the Museum of Himnoran History.
+\xn[Museum Worker]\rWelcome to the Museum of Himnoran History.
+Now, who are you?
+Now, who are you?
+\rWhile this is probably safer than going through actual ruins, it does ruin the vibe to have that modern looking museum over there...
+\rWhile this is probably safer than going through actual ruins, it does ruin the vibe to have that modern looking museum over there...
+Mundalkia Museum of Himnoran Heritage
+Mundalkia Museum of Himnoran Heritage

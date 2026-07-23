@@ -1,0 +1,44 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map012]
+\xn[Tobias]\mr[Bird Keeper]\bOoh... It's you again!\. Let's battle!\. This time with my full team!
+\xn[Tobias]\mr[Bird Keeper]\bOoh... It's you again!\. Let's battle!\. This time with my full team!
+\xn[Tobias]\mr[Bird Keeper]\bAh jeez.\..\..\. Lost twice.
+\xn[Tobias]\mr[Bird Keeper]\bAh jeez.\..\..\. Lost twice.
+\xn[Tobias]\mr[Bird Keeper]\bWelp.\. Go ahead on to Aria...
+\xn[Tobias]\mr[Bird Keeper]\bWelp.\. Go ahead on to Aria...
+\xn[Tobias]\mr[Bird Keeper]\bAh jeez.\..\..\.
+\xn[Tobias]\mr[Bird Keeper]\bAh jeez.\..\..\.
+\xn[Bug Catcher]\mr[Bug Catcher]\bBugs and birds don't mix, you say?\; Well bugs can still fly!
+\xn[Bug Catcher]\mr[Bug Catcher]\bBugs and birds don't mix, you say?\; Well bugs can still fly!
+\xn[Lawrence]\mr[Bug Catcher]\bSeems bugs aren't superior...
+\xn[Lawrence]\mr[Bug Catcher]\bSeems bugs aren't superior...
+\xnmr[Aria]\rSeems you've solved my Gym puzzle!
+\xnmr[Aria]\rSeems you've solved my Gym puzzle!
+\xnmr[Aria]\rI knew you could do it, \PN. You always seemed to be an intelligent problem solver.
+\xnmr[Aria]\rI knew you could do it, \PN. You always seemed to be an intelligent problem solver.
+\xnmr[Aria]\rWell, it's time for us to battle. Are you ready?
+\xnmr[Aria]\rWell, it's time for us to battle. Are you ready?
+\ptalk[]Ready!
+\ptalk[]Ready!
+\xnmr[Aria]\rWell, congratulations! You've earned this!
+\xnmr[Aria]\rWell, congratulations! You've earned this!
+\xnmr[Aria]\rThat Glider Badge shows that you've defeated my Gym!
+\xnmr[Aria]\rThat Glider Badge shows that you've defeated my Gym!
+\xnmr[Aria]\rBadges also are a sign of respect. Pokémon you get from others might disobey you, but with that badge, Pokémon up to Level \v[5] will obey!
+\xnmr[Aria]\rBadges also are a sign of respect. Pokémon you get from others might disobey you, but with that badge, Pokémon up to Level \v[5] will obey!
+\xnmr[Aria]\rHere, have this TM too!
+\xnmr[Aria]\rHere, have this TM too!
+\xnmr[Aria]\rThat TM contains the Normal-type move Swift.
+\xnmr[Aria]\rThat TM contains the Normal-type move Swift.
+\xnmr[Aria]\rIt is a special move, that never, ever misses! It should be a great help on your travels.
+\xnmr[Aria]\rIt is a special move, that never, ever misses! It should be a great help on your travels.
+\xnmr[Aria]\rWell, say hello to the other Gym Leaders for me! The closest one is probably Desiree, in Rocavideo Town.
+\xnmr[Aria]\rWell, say hello to the other Gym Leaders for me! The closest one is probably Desiree, in Rocavideo Town.
+\xnmr[Aria]\rCiao, \PN!
+\xnmr[Aria]\rCiao, \PN!
+\xn[Lexington]\mr[Bug Catcher]\bBug Catchers aren't all about bugs, you know - we've gotta have Flying types to help catch them!
+\xn[Lexington]\mr[Bug Catcher]\bBug Catchers aren't all about bugs, you know - we've gotta have Flying types to help catch them!
+\xn[Lexington]\mr[Bug Catcher]\bI got extinguished...
+\xn[Lexington]\mr[Bug Catcher]\bI got extinguished...

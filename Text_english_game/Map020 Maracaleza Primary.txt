@@ -1,0 +1,54 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map020]
+\xnmr[Aria]\rAh, there you are \PN!
+\xnmr[Aria]\rAh, there you are \PN!
+\xnmr[Mona]\bHey... Are you here to help Aria too?
+\xnmr[Mona]\bHey... Are you here to help Aria too?
+\ptalk[]Of course!
+\ptalk[]Of course!
+\xnmr[Aria]\rHuh, you might actually be a great help! I have an idea...
+\xnmr[Aria]\rHuh, you might actually be a great help! I have an idea...
+\ptalk[]Oh? What is it?
+\ptalk[]Oh? What is it?
+\xnmr[Aria]\rWould you like to show the class a live Pokémon battle, since you both are here?
+\xnmr[Aria]\rWould you like to show the class a live Pokémon battle, since you both are here?
+\xnmr[Mona]\bOh I want to do one... Showing off my new Pokémon sounds cool!
+\xnmr[Mona]\bOh I want to do one... Showing off my new Pokémon sounds cool!
+\xnmr[Aria]\rThen it's decided! Here, let's go...
+\xnmr[Aria]\rThen it's decided! Here, let's go...
+\xnmr[Aria]\rGood morning, students!
+\xnmr[Aria]\rGood morning, students!
+\xn[Class]\yGood morning, Gym Leader Aria!
+\xn[Class]\yGood morning, Gym Leader Aria!
+\xnmr[Aria]\rToday, with the help of \PN and Mona, we're going to learn about held items!
+\xnmr[Aria]\rToday, with the help of \PN and Mona, we're going to learn about held items!
+\xnmr[Mona]\bI'm Mona, and if you're like me, you've probably seen people on TV equip items to your Pokémon.
+\xnmr[Mona]\bI'm Mona, and if you're like me, you've probably seen people on TV equip items to your Pokémon.
+\xn[Student A]\bOh yeah! Like Champion Elio's weird crystals?
+\xn[Student A]\bOh yeah! Like Champion Elio's weird crystals?
+\xnmr[Mona]\bExactly! Those items are among many that Trainers can give their Pokémon.
+\xnmr[Mona]\bExactly! Those items are among many that Trainers can give their Pokémon.
+\xnmr\bPro Trainers do that because Pokémon can use these items to get a battle advantage!
+\xnmr\bPro Trainers do that because Pokémon can use these items to get a battle advantage!
+\xnmr[Aria]\rThat's right! For example, a Pokémon can eat a Berry mid-battle to get energy back.
+\xnmr[Aria]\rThat's right! For example, a Pokémon can eat a Berry mid-battle to get energy back.
+\xn[Student B]\rOoh... So that's why Pokémon eat Berries...
+\xn[Student B]\rOoh... So that's why Pokémon eat Berries...
+\xnmr[Mona]\bYeah! Wild Pokémon often forage for items on their own for the same reason Trainers might give them those items.
+\xnmr[Mona]\bYeah! Wild Pokémon often forage for items on their own for the same reason Trainers might give them those items.
+\xnmr[Aria]\rIn fact, that's related to today's activity... Right now, Mrs. Eisner is hiding a bunch of items, and you'll be pairing up to find them!
+\xnmr[Aria]\rIn fact, that's related to today's activity... Right now, Mrs. Eisner is hiding a bunch of items, and you'll be pairing up to find them!
+\xnmr\rWe call it... the Doubles Scavenger Hunt! After the battling style, of course.
+\xnmr\rWe call it... the Doubles Scavenger Hunt! After the battling style, of course.
+\xnmr[Mona]\bOne of the key items you'll be looking for, I'll show off... in battle! To fully prove what it can do.
+\xnmr[Mona]\bOne of the key items you'll be looking for, I'll show off... in battle! To fully prove what it can do.
+\xnmr[Mona]\bIn fact... we haven't battled yet! Wanna help?
+\xnmr[Mona]\bIn fact... we haven't battled yet! Wanna help?
+\xn[Mona]\mr[Mona_smirk]\bBah, I know you do... That's why you came here!
+\xn[Mona]\mr[Mona_smirk]\bBah, I know you do... That's why you came here!
+Yes
+Yes
+No
+No

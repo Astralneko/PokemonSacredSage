@@ -1,0 +1,84 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map026]
+\xn[Veal]\bWhy, I do think it's time for a...
+\xn[Veal]\bWhy, I do think it's time for a...
+\xn[Veal]\b...Oh. You are far too peasantly in appearance to ever hold a candle to my brilliance.
+\xn[Veal]\b...Oh. You are far too peasantly in appearance to ever hold a candle to my brilliance.
+\xn[Veal]\bWhy, you don't even have a Z-Ring!
+\xn[Veal]\bWhy, you don't even have a Z-Ring!
+\xn[Veal]\bNo, you shan't battle me until you get one! And, because of Pokémon logic, it means you shan't pass either! Ohohoh!
+\xn[Veal]\bNo, you shan't battle me until you get one! And, because of Pokémon logic, it means you shan't pass either! Ohohoh!
+\xn[Veal]\bWhy, I do think it's time for a battle, isn't it?
+\xn[Veal]\bWhy, I do think it's time for a battle, isn't it?
+\xn[Veal]\bUgh. Fine. You may pass, peasant.
+\xn[Veal]\bUgh. Fine. You may pass, peasant.
+\xn[Veal]\bBut, we shall meet again, and I shall be stronger by then!
+\xn[Veal]\bBut, we shall meet again, and I shall be stronger by then!
+\xn[Veal]\bWe shall meet again, and I shall be stronger by then!
+\xn[Veal]\bWe shall meet again, and I shall be stronger by then!
+\rWhy, what are you doing here?
+\rWhy, what are you doing here?
+\rYou must be good at Pokémon battles!
+\rYou must be good at Pokémon battles!
+\bHave you seen my Styler?!
+\bHave you seen my Styler?!
+\bAlas, my Styler is still missing...
+\bAlas, my Styler is still missing...
+\xn[Sean]\bHah! I am a Duelist Trainer!
+\xn[Sean]\bHah! I am a Duelist Trainer!
+\xn[Sean]\bWe fight, and if you lose, our Pokémon must duel instead!
+\xn[Sean]\bWe fight, and if you lose, our Pokémon must duel instead!
+\xn[Sean]\bI warn you, my team is strong. You should probably get the second Badge first.
+\xn[Sean]\bI warn you, my team is strong. You should probably get the second Badge first.
+\xn[Sean]\bDo you accept?
+\xn[Sean]\bDo you accept?
+\xn[Sean]\bIt's time to duel!
+\xn[Sean]\bIt's time to duel!
+Your moves won't delude me!
+Your moves won't delude me!
+I'm prepared for your punch!
+I'm prepared for your punch!
+Who rocks the world with dodging skill?!
+Who rocks the world with dodging skill?!
+Shoryu-reppa!
+Shoryu-reppa!
+My hot spirits won't be stopped!
+My hot spirits won't be stopped!
+I'm on fire, baby! Take this!
+I'm on fire, baby! Take this!
+Time to try something different!
+Time to try something different!
+Don't hold back!
+Don't hold back!
+I'll knock you down with one punch!
+I'll knock you down with one punch!
+Prepare for my special move!
+Prepare for my special move!
+Eat this!
+Eat this!
+Shoryuu... CANNON!
+Shoryuu... CANNON!
+\xn[Sean]\bYou won! Nice!
+\xn[Sean]\bYou won! Nice!
+\xn[Sean]\bIf you want to, we can still battle though. It is up to you.
+\xn[Sean]\bIf you want to, we can still battle though. It is up to you.
+\xn[Sean]\bWow! That actually worked?!
+\xn[Sean]\bWow! That actually worked?!
+\xn[Sean]\bWell, you heard the rules! Now it's time for our Pokémon duel!
+\xn[Sean]\bWell, you heard the rules! Now it's time for our Pokémon duel!
+\sign[sign hgss dir]\l[3]<ac><b>ROUTE 15</b>\n&uarrow; Route 3</ac>&larrow; Rocavideo Town<r>Rio Bossano City &rarrow;
+\sign[sign hgss dir]\l[3]<ac><b>ROUTE 15</b>\n&uarrow; Route 3</ac>&larrow; Rocavideo Town<r>Rio Bossano City &rarrow;
+\sign[sign hgss dir]<ac><b>ROUTE 15</b></ac>&larrow; Rocavideo Town<r>Rio Bossano City &rarrow;
+\sign[sign hgss dir]<ac><b>ROUTE 15</b></ac>&larrow; Rocavideo Town<r>Rio Bossano City &rarrow;
+\rLet the lesson begin!
+\rLet the lesson begin!
+\rMan, it was so close too!
+\rMan, it was so close too!
+\rSeems I'm not the strong Trainer I thought I was...
+\rSeems I'm not the strong Trainer I thought I was...
+Yes
+Yes
+No
+No

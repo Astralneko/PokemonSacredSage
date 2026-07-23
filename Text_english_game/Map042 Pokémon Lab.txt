@@ -1,0 +1,76 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map042]
+\xn[Prof. Razilwood]\mr[Razilwood]\yYou should battle with your Pokémon to make it strong.
+\xn[Prof. Razilwood]\mr[Razilwood]\yYou should battle with your Pokémon to make it strong.
+\xn\mr\yIf you register me in your Pokégear,\. you can call me any time to rate your Pokédex completion.
+\xn\mr\yIf you register me in your Pokégear,\. you can call me any time to rate your Pokédex completion.
+\xn\mr\yPlease let me know how you get on!
+\xn\mr\yPlease let me know how you get on!
+\xn\mr\yOh, okay.\| Let me know if you change your mind.
+\xn\mr\yOh, okay.\| Let me know if you change your mind.
+\xn[Prof. Razilwood]\mr[Razilwood]\yWell, which one do you want?
+\xn[Prof. Razilwood]\mr[Razilwood]\yWell, which one do you want?
+\bOak: Wait, don't leave yet!
+\bOak: Wait, don't leave yet!
+\xn[Prof. Razilwood]\mr[Razilwood]\yOh, hey!\; It's you three!
+\xn[Prof. Razilwood]\mr[Razilwood]\yOh, hey!\; It's you three!
+\xn\mr\ySo yeah,\. as I said,\. I'd like some help filling out the Pokédex.
+\xn\mr\ySo yeah,\. as I said,\. I'd like some help filling out the Pokédex.
+\xn\mr\yAfter all,\. in a region as vast and full as this one,\. there's bound to be some things I haven't heard of yet!
+\xn\mr\yAfter all,\. in a region as vast and full as this one,\. there's bound to be some things I haven't heard of yet!
+\xn\mr\ySo,\. will you help me fill out the Pokédex?
+\xn\mr\ySo,\. will you help me fill out the Pokédex?
+\ptalk[]Sure thing,\. let's do this!
+\ptalk[]Sure thing,\. let's do this!
+\xnmr[Natsuki]\rOf course, prof!
+\xnmr[Natsuki]\rOf course, prof!
+\xnmr[Mona]\bI suppose.\..\..
+\xnmr[Mona]\bI suppose.\..\..
+\xn[Prof. Razilwood]\mr[Razilwood]\yGreat!\; Alright, let's do this!
+\xn[Prof. Razilwood]\mr[Razilwood]\yGreat!\; Alright, let's do this!
+\xnmr[Natsuki]\rAlright, I'll choose \species[tempixie]!
+\xnmr[Natsuki]\rAlright, I'll choose \species[tempixie]!
+\xnmr[Mona]\bThat leaves me with \species[radioso], then...
+\xnmr[Mona]\bThat leaves me with \species[radioso], then...
+\xnmr[Mona]\bNatsuki,\. let me have \species[tempixie]!
+\xnmr[Mona]\bNatsuki,\. let me have \species[tempixie]!
+\xnmr[Natsuki]\rFine.\..\..\. I wanted \species[angeal], anyway.
+\xnmr[Natsuki]\rFine.\..\..\. I wanted \species[angeal], anyway.
+\xnmr[Natsuki]\rI call \species[radioso]!
+\xnmr[Natsuki]\rI call \species[radioso]!
+\xnmr[Mona]\bFine then.\; I'll take \species[angeal].
+\xnmr[Mona]\bFine then.\; I'll take \species[angeal].
+\xn[Prof. Razilwood]\mr[Razilwood]\yAlright, take care of that Pokémon,\. I'm trusting you with one of the rarest Pokémon I've ever discovered.\..\..
+\xn[Prof. Razilwood]\mr[Razilwood]\yAlright, take care of that Pokémon,\. I'm trusting you with one of the rarest Pokémon I've ever discovered.\..\..
+\xn\mr\yOh!\.\. This device might be helpful during your adventure!
+\xn\mr\yOh!\.\. This device might be helpful during your adventure!
+\PN got the Pokédex!
+\PN got the Pokédex!
+\xn[Prof. Razilwood]\mr[Razilwood]\yThat device will record data on the Pokémon you've seen throughout Verela.
+\xn[Prof. Razilwood]\mr[Razilwood]\yThat device will record data on the Pokémon you've seen throughout Verela.
+\xn\mr\yAnd who knows?\; I've heard rumors of strange Pokémon out in the wilderness,\. maybe they're rare species I haven't discovered yet!
+\xn\mr\yAnd who knows?\; I've heard rumors of strange Pokémon out in the wilderness,\. maybe they're rare species I haven't discovered yet!
+\xn\mr\yOh!\. Seems your new Pokémon really wants to make friends!
+\xn\mr\yOh!\. Seems your new Pokémon really wants to make friends!
+\xn\mr\yYou know,\. walking with your lead Pokémon is a good bonding activity.\..\..
+\xn\mr\yYou know,\. walking with your lead Pokémon is a good bonding activity.\..\..
+\xn\mr\yWell, with all that said and done,\. good luck, and bon voyage!
+\xn\mr\yWell, with all that said and done,\. good luck, and bon voyage!
+\xn[Prof. Razilwood]\mr[Razilwood]\yNow hold on,\. are you sure about that?
+\xn[Prof. Razilwood]\mr[Razilwood]\yNow hold on,\. are you sure about that?
+\bOak: Ah, you made your choice!
+\bOak: Ah, you made your choice!
+\bOak: Bulbasaur, an excellent choice!
+\bOak: Bulbasaur, an excellent choice!
+\bOak: Charmander, an excellent choice!
+\bOak: Charmander, an excellent choice!
+\bOak: Squirtle, an excellent choice!
+\bOak: Squirtle, an excellent choice!
+\bOak: If I had a grandson, he would probably want his own Pokémon around now...
+\bOak: If I had a grandson, he would probably want his own Pokémon around now...
+Yes
+Yes
+No
+No

@@ -211,6 +211,7 @@ Modular_Messages::Controls.add("ts", {
 
 #-------------------------------
 # Wait 0.1666 seconds
+# While not n/20, it's 1/3 of \; (scln) because that way the code .\..\..\. is equal to ...\; but displays better
 Modular_Messages::Controls.add("fstp", {
   "solo" => true,
   "during_loop" => proc { |hash, param|
@@ -220,6 +221,7 @@ Modular_Messages::Controls.add("fstp", {
 
 #-------------------------------
 # Wait 0.5 seconds
+# \; (scln) is shorthand for \wt[10]
 Modular_Messages::Controls.add("scln", {
   "solo" => true,
   "during_loop" => proc { |hash, param|
@@ -229,6 +231,7 @@ Modular_Messages::Controls.add("scln", {
 
 #-------------------------------
 # Wait 1 second
+# \| (line) is shorthand for \wt[20]
 Modular_Messages::Controls.add("line", {
   "solo" => true,
   "during_loop" => proc { |hash, param|

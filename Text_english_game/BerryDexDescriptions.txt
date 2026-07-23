@@ -1,0 +1,138 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[BerryDexDescriptions]
+This bright red Berry is very spicy and has a provocative flavor. It blooms with delicate, pretty flowers.
+This bright red Berry is very spicy and has a provocative flavor. It blooms with delicate, pretty flowers.
+This Berry's thick skin and fruit are very tough and dry tasting. However, every bit of it can be eaten.
+This Berry's thick skin and fruit are very tough and dry tasting. However, every bit of it can be eaten.
+Because of its hollow inside pocket, there isn't a lot to eat. What can be eaten is very sweet and delicious.
+Because of its hollow inside pocket, there isn't a lot to eat. What can be eaten is very sweet and delicious.
+If the leaves grow longer and curlier than average, this Berry will have a somewhat-bitter taste.
+If the leaves grow longer and curlier than average, this Berry will have a somewhat-bitter taste.
+This Berry's peel is hard, but the flesh inside is very juicy. It is distinguished by its bracing sourness.
+This Berry's peel is hard, but the flesh inside is very juicy. It is distinguished by its bracing sourness.
+It takes longer to grow than Berries such as Cheri. The smaller Berries taste better.
+It takes longer to grow than Berries such as Cheri. The smaller Berries taste better.
+Nature's gifts came together as one in this Berry. It has a wondrous mix of flavors that spread in the mouth.
+Nature's gifts came together as one in this Berry. It has a wondrous mix of flavors that spread in the mouth.
+The more this berry absorbs energy from sunlight, the more vividly colorful it grows.
+The more this berry absorbs energy from sunlight, the more vividly colorful it grows.
+This Berry's gradual process of storing nutrients beneficial to Pokémon health causes it to mature slowly.
+This Berry's gradual process of storing nutrients beneficial to Pokémon health causes it to mature slowly.
+Sitrus came from the same family as Oran. It is larger and smoother tasting than Oran.
+Sitrus came from the same family as Oran. It is larger and smoother tasting than Oran.
+This Berry is oddly shaped, appearing as if someone took a bite out of it. It is packed full of spicy substances.
+This Berry is oddly shaped, appearing as if someone took a bite out of it. It is packed full of spicy substances.
+It is said that this Berry grew lumps to help Pokémon grip it, allowing propagation farther afield.
+It is said that this Berry grew lumps to help Pokémon grip it, allowing propagation farther afield.
+This Berry progressively curves as it grows. The curvier the Berry, the sweeter and tastier.
+This Berry progressively curves as it grows. The curvier the Berry, the sweeter and tastier.
+This Berry turns bitter toward the stem. The dainty flower it grows from doesn't absorb much sunlight.
+This Berry turns bitter toward the stem. The dainty flower it grows from doesn't absorb much sunlight.
+This Berry is very big and sour. The juiciness of the pulp accentuates the sourness.
+This Berry is very big and sour. The juiciness of the pulp accentuates the sourness.
+A small hint of spiciness lingers in the red granules surrounding this Berry. Their centers have a dry taste.
+A small hint of spiciness lingers in the red granules surrounding this Berry. Their centers have a dry taste.
+Though this small, delicately skinned Berry is blue in color, it dyes the mouth black when eaten.
+Though this small, delicately skinned Berry is blue in color, it dyes the mouth black when eaten.
+Bitter, but with a trace of sweetness, the Nanab Berry was the seventh to be discovered in the world.
+Bitter, but with a trace of sweetness, the Nanab Berry was the seventh to be discovered in the world.
+The potent mix of bitter and sour in this Berry seems to promote digestion. The flower is white and beautiful.
+The potent mix of bitter and sour in this Berry seems to promote digestion. The flower is white and beautiful.
+It is said that when the sour skin is peeled, this spicy Berry can be crushed to make medicine.
+It is said that when the sour skin is peeled, this spicy Berry can be crushed to make medicine.
+When this sweetly spicy Berry's thick skin is peeled, many pieces of the fruit spill out.
+When this sweetly spicy Berry's thick skin is peeled, many pieces of the fruit spill out.
+This Berry can be eaten as is or boiled to obtain an extract that adds a dash of flavor to food.
+This Berry can be eaten as is or boiled to obtain an extract that adds a dash of flavor to food.
+Even in places of constant rain and high humidity, this Berry's plant grows healthy and strong.
+Even in places of constant rain and high humidity, this Berry's plant grows healthy and strong.
+This somewhat-rare Berry projects an image of luxury, so it is favored as a gift item.
+This somewhat-rare Berry projects an image of luxury, so it is favored as a gift item.
+One bite of this very tender Berry fills the mouth with its sweet and tangy flavor.
+One bite of this very tender Berry fills the mouth with its sweet and tangy flavor.
+This Berry is large and spicy. When eaten during the cold season, it warms the body from inside.
+This Berry is large and spicy. When eaten during the cold season, it warms the body from inside.
+Its dryness is quite strong. As a result, its true deliciousness can't be appreciated by just eating one or two.
+Its dryness is quite strong. As a result, its true deliciousness can't be appreciated by just eating one or two.
+The grown-up flavor and dreamy sweetness of this Berry make it a favorite of Pokémon everywhere.
+The grown-up flavor and dreamy sweetness of this Berry make it a favorite of Pokémon everywhere.
+Even though it is bitter, it should be eaten peel and all. The hair on the peel cleans the stomach from the inside.
+Even though it is bitter, it should be eaten peel and all. The hair on the peel cleans the stomach from the inside.
+This Berry is quite sour overall, with the sourness especially concentrated at the pointed end.
+This Berry is quite sour overall, with the sourness especially concentrated at the pointed end.
+So spicy is the Spelon Berry that, Fire type or not, Pokémon will try to breathe fire after eating a single one.
+So spicy is the Spelon Berry that, Fire type or not, Pokémon will try to breathe fire after eating a single one.
+This Berry drifted from a faraway sea. It is now cultivated in the Sinnoh region.
+This Berry drifted from a faraway sea. It is now cultivated in the Sinnoh region.
+A bounty of nature that is exceedingly sweet. The Berry is huge, with some discovered that exceed 20 inches.
+A bounty of nature that is exceedingly sweet. The Berry is huge, with some discovered that exceed 20 inches.
+This Berry is tremendously bitter. Just one bite is enough to instantly stop hiccups.
+This Berry is tremendously bitter. Just one bite is enough to instantly stop hiccups.
+This glossy and colorful Berry has a mouthwateringly delicious appearance. However, it is awfully sour.
+This glossy and colorful Berry has a mouthwateringly delicious appearance. However, it is awfully sour.
+This Berry is said to have grown plentiful in the tropics of the past. It boasts an intensely hot spiciness.
+This Berry is said to have grown plentiful in the tropics of the past. It boasts an intensely hot spiciness.
+This Berry's flesh is dotted with countless tiny bubbles of air that keep it afloat in water.
+This Berry's flesh is dotted with countless tiny bubbles of air that keep it afloat in water.
+Energy from lightning strikes is drawn into the plant, making the Berries grow big and rich.
+Energy from lightning strikes is drawn into the plant, making the Berries grow big and rich.
+This berry has a disagreeable "green" flavor and scent typical of vegetables. It is rich in health-promoting fiber.
+This berry has a disagreeable "green" flavor and scent typical of vegetables. It is rich in health-promoting fiber.
+This Berry has a refreshing flavor that strikes a good balance of dryness and sourness. It tastes better chilled.
+This Berry has a refreshing flavor that strikes a good balance of dryness and sourness. It tastes better chilled.
+This Berry contains a substance that generates heat. It can even heat up a chilly heart.
+This Berry contains a substance that generates heat. It can even heat up a chilly heart.
+This Berry is a brilliant green on the outside. Inside, it is packed with a dry-flavored, black-colored flesh.
+This Berry is a brilliant green on the outside. Inside, it is packed with a dry-flavored, black-colored flesh.
+The sweetness-laden pulp has just the hint of a hard-edged and fragrant bite to it.
+The sweetness-laden pulp has just the hint of a hard-edged and fragrant bite to it.
+This Berry is said to be a new kind that is a cross of two Berries brought together by winds from far away.
+This Berry is said to be a new kind that is a cross of two Berries brought together by winds from far away.
+This Berry is said to sense human emotions for the way it swells roundly when a person approaches.
+This Berry is said to sense human emotions for the way it swells roundly when a person approaches.
+The flower grows at the tip of this Berry. It attracts Bug Pokémon by letting its stringy petals stream out.
+The flower grows at the tip of this Berry. It attracts Bug Pokémon by letting its stringy petals stream out.
+It is often used for pickles because of its very dry flavor. It can also be eaten raw for its provocative taste.
+It is often used for pickles because of its very dry flavor. It can also be eaten raw for its provocative taste.
+Considered to have a special power from the olden days, this Berry is sometimes dried and used as a good-luck charm.
+Considered to have a special power from the olden days, this Berry is sometimes dried and used as a good-luck charm.
+If a large enough volume of this Berry is boiled down, its bitterness fades away. It makes a good jam.
+If a large enough volume of this Berry is boiled down, its bitterness fades away. It makes a good jam.
+Tiny hooks grow on the surface of this Berry. It latches on to Pokémon so it can be carried to far-off places.
+Tiny hooks grow on the surface of this Berry. It latches on to Pokémon so it can be carried to far-off places.
+This Berry is very tough with a strong flavor. It was used to make medicine by people in the past.
+This Berry is very tough with a strong flavor. It was used to make medicine by people in the past.
+This Berry can be cored out and dried to make a whistle. Blowing through its hole makes an indescribable sound.
+This Berry can be cored out and dried to make a whistle. Blowing through its hole makes an indescribable sound.
+This Berry is surrounded by mystery. It is rumored to be imbued with the power of the sea.
+This Berry is surrounded by mystery. It is rumored to be imbued with the power of the sea.
+This Berry is surrounded by mystery. It is rumored to be imbued with the power of the land.
+This Berry is surrounded by mystery. It is rumored to be imbued with the power of the land.
+This Berry is surrounded by mystery. It is rumored to be imbued with the power of the sky.
+This Berry is surrounded by mystery. It is rumored to be imbued with the power of the sky.
+This Berry is surrounded by mystery. It is rumored to be imbued with the power of all living things.
+This Berry is surrounded by mystery. It is rumored to be imbued with the power of all living things.
+This is a very, very mystifying Berry. There is no telling how it can be used, or what may happen if it is used.
+This is a very, very mystifying Berry. There is no telling how it can be used, or what may happen if it is used.
+This is said to be a legendary Berry. Holding it supposedly brings great joy.
+This is said to be a legendary Berry. Holding it supposedly brings great joy.
+This Berry is considered a mirage. It was said to be so strong that it had to be abandoned at the world's edge.
+This Berry is considered a mirage. It was said to be so strong that it had to be abandoned at the world's edge.
+A completely enigmatic Berry. It apparently has the power of the stars that fill the night sky.
+A completely enigmatic Berry. It apparently has the power of the stars that fill the night sky.
+This berry has a very dry flavor. It has the effect of making other food eaten at the same time taste sweet.
+This berry has a very dry flavor. It has the effect of making other food eaten at the same time taste sweet.
+The flesh underneath the Custap Berry's tough skin is sweet and creamy soft.
+The flesh underneath the Custap Berry's tough skin is sweet and creamy soft.
+The cluster of drupelets that make up this berry pop rhythmically if the berry is handled roughly.
+The cluster of drupelets that make up this berry pop rhythmically if the berry is handled roughly.
+In days of old, people worked the top-shaped pieces of this Berry free and used them as toys.
+In days of old, people worked the top-shaped pieces of this Berry free and used them as toys.
+The slight bitterness that cuts through the rich sweetness makes this Berry a perfect ingredient for adding an accent.
+The slight bitterness that cuts through the rich sweetness makes this Berry a perfect ingredient for adding an accent.
+You'll be hit first by its burning spiciness, then its extreme bitterness.
+You'll be hit first by its burning spiciness, then its extreme bitterness.
+Its outside is very bitter, but its inside tastes like a sweet drink.
+Its outside is very bitter, but its inside tastes like a sweet drink.

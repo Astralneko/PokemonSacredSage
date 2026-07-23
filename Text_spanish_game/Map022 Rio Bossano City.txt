@@ -1,0 +1,22 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map022]
+\rWhat's it like to like... level up, you know?
+\rWhat's it like to like... level up, you know?
+\rMaybe it's like that feeling when you try a new food and it's really good?
+\rMaybe it's like that feeling when you try a new food and it's really good?
+* It's locked.
+* It's locked.
+\sign[sign hgss loc]\l[3]<ac>Rio Bossano City Gym</ac>\nLeader: Enrique\nGiver of Electrifying Sermons
+\sign[sign hgss loc]\l[3]<ac>Rio Bossano City Gym</ac>\nLeader: Enrique\nGiver of Electrifying Sermons
+\bThe Aether Foundation says if you've found a Pokémon in critical care, take it to the nearest Aether Care Center.
+\bThe Aether Foundation says if you've found a Pokémon in critical care, take it to the nearest Aether Care Center.
+\bPokémon Centers are not equipped to deal with non-captured Pokémon!
+\bPokémon Centers are not equipped to deal with non-captured Pokémon!
+\bLookit this bug I caught!
+\bLookit this bug I caught!
+\sign[sign hgss loc]\l[1]<ac>Sitares Cantus Cathedral</ac>
+\sign[sign hgss loc]\l[1]<ac>Sitares Cantus Cathedral</ac>
+Raar!
+Raar!

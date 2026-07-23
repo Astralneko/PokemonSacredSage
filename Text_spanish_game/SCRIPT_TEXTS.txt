@@ -2262,6 +2262,8 @@ Press the Special Button to flip the card.
 Press the Special Button to flip the card.
 HALL OF FAME DEBUT
 HALL OF FAME DEBUT
+
+ 
 STRING 2
 STRING 2
 STRING 3
@@ -4188,3 +4190,1697 @@ Your Item list is too long, the following items won't be shown and used: #{merge
 Your Item list is too long, the following items won't be shown and used: #{mergeArrayToString(@stock[18..-1])}
 Quick traveling to {1}!
 Quick traveling to {1}!
+The Journey Begins
+The Journey Begins
+Natsuki
+Natsuki
+Meet up with Natsuki and Amano.
+Meet up with Natsuki and Amano.
+Come to Prof. Zilnatta's Lab.
+Come to Prof. Zilnatta's Lab.
+Alipigra City
+Alipigra City
+Your adventure as a Pokémon Trainer begins! Get your first Pokémon!
+Your adventure as a Pokémon Trainer begins! Get your first Pokémon!
+A catalogue? How boring!
+A catalogue? How boring!
+Missing in Action
+Missing in Action
+Gym Guide Gully
+Gym Guide Gully
+Find Aria somewhere in Alipigra City.
+Find Aria somewhere in Alipigra City.
+Starview Lake
+Starview Lake
+Ah yes, the "she's not here right now, go find her elsewhere" gimmick. How amazing.
+Ah yes, the "she's not here right now, go find her elsewhere" gimmick. How amazing.
+The right to collect the Glider Badge.
+The right to collect the Glider Badge.
+The Great Gym Challenge!! I
+The Great Gym Challenge!! I
+The Pokémon League
+The Pokémon League
+Defeat Aria.
+Defeat Aria.
+Defeat the first Gym, the first checkpoint on the road to becoming Sunset League Champion!
+Defeat the first Gym, the first checkpoint on the road to becoming Sunset League Champion!
+1/8 of the right to collect the Elite Four Badge.
+1/8 of the right to collect the Elite Four Badge.
+Teacher's Pet
+Teacher's Pet
+Bonnie Jerelta
+Bonnie Jerelta
+Battle Mona.
+Battle Mona.
+Maracaleza Primary
+Maracaleza Primary
+Obtain an item for the hunt.
+Obtain an item for the hunt.
+Outside Maracaleza Primary
+Outside Maracaleza Primary
+Help Aria give the students of Maracaleza Primary lessons on Pokémon battling!
+Help Aria give the students of Maracaleza Primary lessons on Pokémon battling!
+Knowledge, I suppose?
+Knowledge, I suppose?
+Starry Lake
+Starry Lake
+Gym Leader Aria
+Gym Leader Aria
+Talk to Aria.
+Talk to Aria.
+Aria wants you to go get Tobias from Starview Lake while she gets the Gym set up again. Better go quick!
+Aria wants you to go get Tobias from Starview Lake while she gets the Gym set up again. Better go quick!
+Finally being able to collect the Glider Badge.
+Finally being able to collect the Glider Badge.
+The Great Gym Challenge!! II
+The Great Gym Challenge!! II
+Defeat Desiree.
+Defeat Desiree.
+With Aria defeated, the Gym Challenge continues... Conquer the dunes of Rocavideo Gym!
+With Aria defeated, the Gym Challenge continues... Conquer the dunes of Rocavideo Gym!
+Another eighth of the right to collect the Elite Four Badge.
+Another eighth of the right to collect the Elite Four Badge.
+Get Out Of Dreamland
+Get Out Of Dreamland
+Professor Razilwood
+Professor Razilwood
+Wake up Fennel.
+Wake up Fennel.
+Rio Bossano City
+Rio Bossano City
+Seems the prof's friend Fennel is still asleep... Since we're already close to Rio Bossano, let's just pop in.
+Seems the prof's friend Fennel is still asleep... Since we're already close to Rio Bossano, let's just pop in.
+A battle, I think? Maybe?
+A battle, I think? Maybe?
+A Strange Visitor
+A Strange Visitor
+Gym Leader Desiree
+Gym Leader Desiree
+Locate the strange lady.
+Locate the strange lady.
+Rocavideo Town
+Rocavideo Town
+Someone blocked up the Rocavideo Gym, sounds like someone needs to investigate.
+Someone blocked up the Rocavideo Gym, sounds like someone needs to investigate.
+Access to the Gym.
+Access to the Gym.
+The Great Gym Challenge!! III
+The Great Gym Challenge!! III
+Defeat Diego.
+Defeat Diego.
+Complete the artsy puzzles of Frenaval Gym and collect your third Gym Badge!
+Complete the artsy puzzles of Frenaval Gym and collect your third Gym Badge!
+Yet another eighth of the right to collect the Elite Four Badge.
+Yet another eighth of the right to collect the Elite Four Badge.
+The Lost of Us
+The Lost of Us
+Mona
+Mona
+Handle the strange spirits.
+Handle the strange spirits.
+Route 6
+Route 6
+Strange spirits have been detected near Nova Cancioba City. Time to investigate!
+Strange spirits have been detected near Nova Cancioba City. Time to investigate!
+Safety of Alipigra City.
+Safety of Alipigra City.
+Wind Flower, Purple Flower
+Wind Flower, Purple Flower
+Elite Four Palmer
+Elite Four Palmer
+Report the Risen to the police.
+Report the Risen to the police.
+Frenaval City
+Frenaval City
+You should probably report the strange spirits you and Mona saw on Route 6...
+You should probably report the strange spirits you and Mona saw on Route 6...
+Peace of mind.
+Peace of mind.
+Follow the Fox's Paws
+Follow the Fox's Paws
+Sorrel
+Sorrel
+Talk to Sorrel privately.
+Talk to Sorrel privately.
+Sorrel has something to discuss... Sounds important, since she needs to discuss it in private.
+Sorrel has something to discuss... Sounds important, since she needs to discuss it in private.
+Valuable information, perhaps?
+Valuable information, perhaps?
+Wind Flower, Purple Flower II
+Wind Flower, Purple Flower II
+Gym Leader Diego
+Gym Leader Diego
+Report the Risen to Anemone.
+Report the Risen to Anemone.
+Route 9
+Route 9
+The police told you that this sounds like a job for the Gym Leader. Champion Anemone is in town, so we can report this to her, right?
+The police told you that this sounds like a job for the Gym Leader. Champion Anemone is in town, so we can report this to her, right?
+Actual peace of mind.
+Actual peace of mind.
+The Great Gym Challenge!! IV
+The Great Gym Challenge!! IV
+Defeat Katy.
+Defeat Katy.
+Glorified bug catcher she ain't... It might be a challenge, but you can do it! Complete the fourth part of the Gym Challenge!
+Glorified bug catcher she ain't... It might be a challenge, but you can do it! Complete the fourth part of the Gym Challenge!
+One half of the Elite Four's required badges.
+One half of the Elite Four's required badges.
+The Great Gym Challenge!! V
+The Great Gym Challenge!! V
+Defeat Neka.
+Defeat Neka.
+DJ Purple Heart is in the house, and seems like she's ready to pounce! Try not to get put into a trance, and complete her Gym with song and dance!
+DJ Purple Heart is in the house, and seems like she's ready to pounce! Try not to get put into a trance, and complete her Gym with song and dance!
+To get past the cringiest quest description. Probably.
+To get past the cringiest quest description. Probably.
+Time To Move
+Time To Move
+Interpol
+Interpol
+Stop Team Xibal from taking Partazura.
+Stop Team Xibal from taking Partazura.
+Ancient City Laqhamayu
+Ancient City Laqhamayu
+Cain and Abel have warned you that they're about to take the Legendary Pokémon Partazura... Looker is concerned, it's probably best to stop them!
+Cain and Abel have warned you that they're about to take the Legendary Pokémon Partazura... Looker is concerned, it's probably best to stop them!
+Hopefully, to stop Team Xibal's plans.
+Hopefully, to stop Team Xibal's plans.
+The Great Gym Challenge!! VI
+The Great Gym Challenge!! VI
+Defeat Rayann.
+Defeat Rayann.
+The electrifying party master, Rayann, is next on the menu... Try to keep up, and challenge her to an unforgettable battle!
+The electrifying party master, Rayann, is next on the menu... Try to keep up, and challenge her to an unforgettable battle!
+To be 75% done with the Gyms.
+To be 75% done with the Gyms.
+The Great Gym Challenge!! VII
+The Great Gym Challenge!! VII
+Defeat Enrique.
+Defeat Enrique.
+Rio Bossano Gym
+Rio Bossano Gym
+You met him long before, and he's about ready to retire... but one final hurrah for the Fairy-type Gym Leader is in order!
+You met him long before, and he's about ready to retire... but one final hurrah for the Fairy-type Gym Leader is in order!
+One step closer to Vitori Pikta.
+One step closer to Vitori Pikta.
+The River of Life
+The River of Life
+Champion Anemone
+Champion Anemone
+Find and apprehend Dr. Lazarn.
+Find and apprehend Dr. Lazarn.
+Himnora Kasteloj
+Himnora Kasteloj
+Turns out, preventing the capture of Partazura was not enough... they're gonna flood the Paragonas with their plans! It's time to stop Team Xibal for good!
+Turns out, preventing the capture of Partazura was not enough... they're gonna flood the Paragonas with their plans! It's time to stop Team Xibal for good!
+Saving the Verela region from untold destruction.
+Saving the Verela region from untold destruction.
+The Great Gym Challenge!! VIII
+The Great Gym Challenge!! VIII
+Defeat Arthur.
+Defeat Arthur.
+You may have saved Verela, but there's still one more Gym... Time to get competitive, it's Arthur!
+You may have saved Verela, but there's still one more Gym... Time to get competitive, it's Arthur!
+The ability to battle the Elite Four.
+The ability to battle the Elite Four.
+Reach For The Sunset!!
+Reach For The Sunset!!
+Obtain all eight Badges.
+Obtain all eight Badges.
+Defeat Palmer.
+Defeat Palmer.
+Defeat Bankoro.
+Defeat Bankoro.
+Defeat Astley.
+Defeat Astley.
+Defeat Rusty.
+Defeat Rusty.
+Defeat Anemone.
+Defeat Anemone.
+Sunset League
+Sunset League
+It's time... The final test of strength... Defeat the Elite Four, and the Champion, Anemone, and you will become the new Sunset League Champion!
+It's time... The final test of strength... Defeat the Elite Four, and the Champion, Anemone, and you will become the new Sunset League Champion!
+The title of Champion.
+The title of Champion.
+The Other Gym Challenge?
+The Other Gym Challenge?
+Defeat Akita.
+Defeat Akita.
+Seems there are eight other Gyms... While they aren't the ticket to the League, it's still worth it!
+Seems there are eight other Gyms... While they aren't the ticket to the League, it's still worth it!
+A nice workout.
+A nice workout.
+The Other Gym Challenge! II
+The Other Gym Challenge! II
+Defeat Fritz.
+Defeat Fritz.
+Fennel told you that Fritz would be difficult to find... but now that you've found her place, time for battle!
+Fennel told you that Fritz would be difficult to find... but now that you've found her place, time for battle!
+The chance to meet a catboy.
+The chance to meet a catboy.
+The Other Gym Challenge! III
+The Other Gym Challenge! III
+Defeat Sauta.
+Defeat Sauta.
+Nightlight Street
+Nightlight Street
+A daring individual, Sauta... He's ready for the challenge, so battle him, and obtain the Baton Badge!
+A daring individual, Sauta... He's ready for the challenge, so battle him, and obtain the Baton Badge!
+An incredible show.
+An incredible show.
+The Other Gym Challenge! IV
+The Other Gym Challenge! IV
+Defeat Mateo.
+Defeat Mateo.
+Another town, another Gym... The Poison-type botanist Mateo is ready to show his roll!
+Another town, another Gym... The Poison-type botanist Mateo is ready to show his roll!
+An immunity to iocaine.
+An immunity to iocaine.
+The Other Gym Challenge! V
+The Other Gym Challenge! V
+Defeat Virgo.
+Defeat Virgo.
+In the shop's second floor, battles rage... It's time to battle the mechanic Virgo!
+In the shop's second floor, battles rage... It's time to battle the mechanic Virgo!
+A fixed Bag pocket dimension. I think.
+A fixed Bag pocket dimension. I think.
+The Other Gym Challenge! VI
+The Other Gym Challenge! VI
+Defeat Amber.
+Defeat Amber.
+Ruin Maniac Amber is back from her safari, but that doesn't mean she'll go easy on you!
+Ruin Maniac Amber is back from her safari, but that doesn't mean she'll go easy on you!
+Knowledge of a key spot to explore.
+Knowledge of a key spot to explore.
+The Other Gym Challenge! VII
+The Other Gym Challenge! VII
+Meet Vergil.
+Meet Vergil.
+Vergil's house
+Vergil's house
+Defeat Vergil.
+Defeat Vergil.
+Route 12's Mansion
+Route 12's Mansion
+Back to Nova Cancioba, where the seventh Gym Leader, Vergil, is about to go on scene to the abandoned mansion, to prove it's not as dangerous as it looks!
+Back to Nova Cancioba, where the seventh Gym Leader, Vergil, is about to go on scene to the abandoned mansion, to prove it's not as dangerous as it looks!
+Blessings and prayers.
+Blessings and prayers.
+The Other Gym Challenge! VIII
+The Other Gym Challenge! VIII
+Defeat Rivola.
+Defeat Rivola.
+Popasaha Gym
+Popasaha Gym
+The newest Gym Leader, Rivola... Show this Xureeni idol who's boss! Finish the Twilight League!
+The newest Gym Leader, Rivola... Show this Xureeni idol who's boss! Finish the Twilight League!
+Concert tickets, a bodypillow... Hah, I wish!
+Concert tickets, a bodypillow... Hah, I wish!
+The Lake of Knowledge
+The Lake of Knowledge
+Fisherman Antelmo
+Fisherman Antelmo
+Locate the rumored shiny Escueela.
+Locate the rumored shiny Escueela.
+Show the shiny Escueela to Antelmo.
+Show the shiny Escueela to Antelmo.
+Unknown body of water
+Unknown body of water
+A rumor of the catch of the century, but an unknown location... Where could the shiny Escueela be? It was said to be seen in Hirihopa Bay, Mastasis Lake, and the Iguana River, but it couldn't move that fast to all three locations...
+A rumor of the catch of the century, but an unknown location... Where could the shiny Escueela be? It was said to be seen in Hirihopa Bay, Mastasis Lake, and the Iguana River, but it couldn't move that fast to all three locations...
+Probably not enough funds for the effort.
+Probably not enough funds for the effort.
+Onsail Catnapper!
+Onsail Catnapper!
+Lady Nessie
+Lady Nessie
+Locate the black-hooded hooligan.
+Locate the black-hooded hooligan.
+Return the Onstereo to the lady.
+Return the Onstereo to the lady.
+Maracaleza Town
+Maracaleza Town
+Oh no! Someone has stolen an innocent lady's Pokémon! Please, try to find him and get it back!
+Oh no! Someone has stolen an innocent lady's Pokémon! Please, try to find him and get it back!
+Some money for his safe return!
+Some money for his safe return!
+A Strange Woobat
+A Strange Woobat
+Youngster Mason
+Youngster Mason
+Perform the trade.
+Perform the trade.
+Alipigra Pokémon Center
+Alipigra Pokémon Center
+Mason found a strange Woobat in a nearby cave, and wants to give it to a Trainer he can trust, like you. Though, he wants a Panhali for it...
+Mason found a strange Woobat in a nearby cave, and wants to give it to a Trainer he can trust, like you. Though, he wants a Panhali for it...
+A pink Woobat.
+A pink Woobat.
+Finishing The Collection
+Finishing The Collection
+Rich Girl Lilian
+Rich Girl Lilian
+Rio Bossano Pokémon Center
+Rio Bossano Pokémon Center
+Lilian wants a Grass Body Crystode, to complete her collection. She's willing to give a rare Pokémon for one, if you can find it!
+Lilian wants a Grass Body Crystode, to complete her collection. She's willing to give a rare Pokémon for one, if you can find it!
+A powerful Suerteside.
+A powerful Suerteside.
+The Birds And The Bees
+The Birds And The Bees
+Pokémon Farmer Benson
+Pokémon Farmer Benson
+Show Benson an Apu-Vespiquen.
+Show Benson an Apu-Vespiquen.
+Tangoseiro City
+Tangoseiro City
+Farmer Benson says he wants a lot of honey, and you can help...
+Farmer Benson says he wants a lot of honey, and you can help...
+A share of the honey profits.
+A share of the honey profits.
+Soul Eater
+Soul Eater
+Black Belt Naoto
+Black Belt Naoto
+Meet Hex Maniac Saya.
+Meet Hex Maniac Saya.
+Talk to Black Belt Ragna.
+Talk to Black Belt Ragna.
+Fight Risen Izanami.
+Fight Risen Izanami.
+Return the Ghost Memory.
+Return the Ghost Memory.
+Nova Cancioba City
+Nova Cancioba City
+Tlanti Pikchu
+Tlanti Pikchu
+Black Belt Naoto has ran off to Nova Cancioba Town, because her sister started saying weird things... Let's investigate!
+Black Belt Naoto has ran off to Nova Cancioba Town, because her sister started saying weird things... Let's investigate!
+A new friend, possibly?
+A new friend, possibly?
+The Heart of the Cards
+The Heart of the Cards
+Psychic Gumi
+Psychic Gumi
+Defeat Laiba in a Triple Triad Duel.
+Defeat Laiba in a Triple Triad Duel.
+São Samba City
+São Samba City
+Believe in the heart of the cards... Ace Trainer Laiba is the queen of Triple Triad, and it's time someone knocked her down a few pegs!
+Believe in the heart of the cards... Ace Trainer Laiba is the queen of Triple Triad, and it's time someone knocked her down a few pegs!
+Blue-eyes white dragon.
+Blue-eyes white dragon.
+The Heart of the Cards II
+The Heart of the Cards II
+Defeat Mari in a Triple Triad Duel.
+Defeat Mari in a Triple Triad Duel.
+Axécife City
+Axécife City
+Mari has been acting strangely lately... Almost like there's another, darker side to him... Better go check on him.
+Mari has been acting strangely lately... Almost like there's another, darker side to him... Better go check on him.
+Pharaoh's card... unless...
+Pharaoh's card... unless...
+The Heart of the Cards III
+The Heart of the Cards III
+Defeat Akurabi in a Triple Triad Duel.
+Defeat Akurabi in a Triple Triad Duel.
+Takuaqu
+Takuaqu
+So this weird dude is responsible for Mari's madness... Can cards even do the things he's saying they can?!
+So this weird dude is responsible for Mari's madness... Can cards even do the things he's saying they can?!
+Memories? And they're not even yours?!
+Memories? And they're not even yours?!
+Graphics/Items/Key Items/{1}_key
+Graphics/Items/Key Items/{1}_key
+Graphics/Items/{1}
+Graphics/Items/{1}
+Graphics/Items/Key Items/{1}
+Graphics/Items/Key Items/{1}
+Graphics/Pictures/Location/icon_numbers
+Graphics/Pictures/Location/icon_numbers
+Remove
+Remove
+Do what with this rule?
+Do what with this rule?
+There are no remaining battle rules to add.
+There are no remaining battle rules to add.
+Selected battle rule is invalid.
+Selected battle rule is invalid.
+Battle rule inverted.
+Battle rule inverted.
+Set battle rules...
+Set battle rules...
+Set battle rules to apply to the next encounter.
+Set battle rules to apply to the next encounter.
+Set partner trainer
+Set partner trainer
+Set a partner trainer to accompany the player in battle.
+Set a partner trainer to accompany the player in battle.
+Replace
+Replace
+Do what with the player's existing partner? ({1})
+Do what with the player's existing partner? ({1})
+Removed {1} as partner.
+Removed {1} as partner.
+Choose a new partner.
+Choose a new partner.
+PARTNER TRAINER
+PARTNER TRAINER
+Registered {1} as partner.
+Registered {1} as partner.
+Trainer is missing a back sprite.<<n>>Unable to set as partner.
+Trainer is missing a back sprite.<<n>>Unable to set as partner.
+<<[>>ADD NEW RULE<<]>>
+<<[>>ADD NEW RULE<<]>>
+Select a new battle rule to apply.
+Select a new battle rule to apply.
+<<[>>CLEAR ALL RULES<<]>>
+<<[>>CLEAR ALL RULES<<]>>
+Clear all active battle rules.
+Clear all active battle rules.
+No battle active battle rules to clear.
+No battle active battle rules to clear.
+Are you sure you want to clear all active battle rules?
+Are you sure you want to clear all active battle rules?
+Determines the number of battlers on each side of the field.
+Determines the number of battlers on each side of the field.
+Set the battle size.
+Set the battle size.
+The player's partner trainer will not participate in battle.
+The player's partner trainer will not participate in battle.
+The game will continue even if the player loses the battle.
+The game will continue even if the player loses the battle.
+The player will be unable to select the Run command.
+The player will be unable to select the Run command.
+Wild Pokémon will always attempt to flee as their first action.
+Wild Pokémon will always attempt to flee as their first action.
+Trainers will be unable to manually switch out Pokémon.
+Trainers will be unable to manually switch out Pokémon.
+Determines whether or not switch mode is enabled.
+Determines whether or not switch mode is enabled.
+Set whether switch mode should be enabled. (Trainer battles only)
+Set whether switch mode should be enabled. (Trainer battles only)
+The player's Pokémon will not gain any experience.
+The player's Pokémon will not gain any experience.
+The player will not lose or receive any prize money.
+The player will not lose or receive any prize money.
+Determines the default battle weather.
+Determines the default battle weather.
+Set the default battle weather.
+Set the default battle weather.
+Determines the default battle terrain.
+Determines the default battle terrain.
+Set the default battle terrain.
+Set the default battle terrain.
+Determines the battle environment.
+Determines the battle environment.
+Set the battle environment.
+Set the battle environment.
+Poké Balls will be unable to be selected from the bag.
+Poké Balls will be unable to be selected from the bag.
+Any captured Pokémon must be added to the party.
+Any captured Pokémon must be added to the party.
+Determines whether or not battle animations are enabled.
+Determines whether or not battle animations are enabled.
+Set whether battle animations should be enabled.
+Set whether battle animations should be enabled.
+Determines the graphic used for the battle background.
+Determines the graphic used for the battle background.
+Set the name of the background graphic.
+Set the name of the background graphic.
+Determines the graphics used for the battle bases.
+Determines the graphics used for the battle bases.
+Set the name of the battle base graphics.
+Set the name of the battle base graphics.
+The variable number used to store the battle outcome.
+The variable number used to store the battle outcome.
+Set a variable number.
+Set a variable number.
+Determines temporary player attributes.
+Determines temporary player attributes.
+Enter the player's temporary display name.
+Enter the player's temporary display name.
+Set the player's temporary outfit number.
+Set the player's temporary outfit number.
+Determines the player's temporary party.
+Determines the player's temporary party.
+Add a temporary party member (slot {1}).<<n>>(Exit menu to end early)
+Add a temporary party member (slot {1}).<<n>>(Exit menu to end early)
+Set a level for {1}.
+Set a level for {1}.
+Set a temporary party of {1}.
+Set a temporary party of {1}.
+Determines the player's temporary inventory.
+Determines the player's temporary inventory.
+Add a new item to the temporary bag.<<n>>(Exit menu to end)
+Add a new item to the temporary bag.<<n>>(Exit menu to end)
+Set the number of {1} to add.
+Set the number of {1} to add.
+Set a temporary inventory of {1} items.
+Set a temporary inventory of {1} items.
+Trainers are unable to use any items from their inventories.
+Trainers are unable to use any items from their inventories.
+Determines which side Mega Evolution is disabled for.
+Determines which side Mega Evolution is disabled for.
+Choose a side to disable Mega Evolution for.
+Choose a side to disable Mega Evolution for.
+The AI will control the player's commands.
+The AI will control the player's commands.
+The battle functions like a Battle Tower or PvP battle.
+The battle functions like a Battle Tower or PvP battle.
+Type effectiveness will be inverted.
+Type effectiveness will be inverted.
+Determines a battle gimmick to be used by wild Pokémon.
+Determines a battle gimmick to be used by wild Pokémon.
+Choose a battle gimmick for wild Pokémon to use.
+Choose a battle gimmick for wild Pokémon to use.
+Determines whether Poké Balls always succeeed or fail.
+Determines whether Poké Balls always succeeed or fail.
+Set whether Poké Balls will always succeed or fail.
+Set whether Poké Balls will always succeed or fail.
+Captured Pokémon will not be kept or registered in the Pokédex.
+Captured Pokémon will not be kept or registered in the Pokédex.
+You're prompted to capture a wild Pokémon when its HP drops to zero.
+You're prompted to capture a wild Pokémon when its HP drops to zero.
+Determines the music effect upon capturing a Pokémon.
+Determines the music effect upon capturing a Pokémon.
+Set the music effect that plays upon capturing a Pokémon.
+Set the music effect that plays upon capturing a Pokémon.
+Determines the battle background music.
+Determines the battle background music.
+Set the battle background music. (Set to None to disable)
+Set the battle background music. (Set to None to disable)
+Determines the battle victory music.
+Determines the battle victory music.
+Set the battle victory music. (Set to None to disable)
+Set the battle victory music. (Set to None to disable)
+Determines the low HP background music.
+Determines the low HP background music.
+Set the low HP background music. (Set to None to disable)
+Set the low HP background music. (Set to None to disable)
+Determines the text displayed at the start of an encounter.
+Determines the text displayed at the start of an encounter.
+Set the displayed encounter text.
+Set the displayed encounter text.
+Determines the opposing trainer's win speech.
+Determines the opposing trainer's win speech.
+Set the opposing trainer's win speech. (PvP-style battles only)
+Set the opposing trainer's win speech. (PvP-style battles only)
+Determines the opposing trainer's lose speech.
+Determines the opposing trainer's lose speech.
+Set the opposing trainer's lose speech.
+Set the opposing trainer's lose speech.
+Determines the way opponents slide on screen when encountered.
+Determines the way opponents slide on screen when encountered.
+Set the way opponents slide on screen.
+Set the way opponents slide on screen.
+Determines the style of the displayed databoxes.
+Determines the style of the displayed databoxes.
+Set the databox style to display.
+Set the databox style to display.
+Determines which mid-battle script to run.
+Determines which mid-battle script to run.
+No valid midbattle scripts found.
+No valid midbattle scripts found.
+Set a mid-battle script to run.
+Set a mid-battle script to run.
+{1} reverted to its original typing!
+{1} reverted to its original typing!
+Determines which side Dynamax is disabled for.
+Determines which side Dynamax is disabled for.
+Choose a side to disable Dynamax for.
+Choose a side to disable Dynamax for.
+Other plugin settings...
+Other plugin settings...
+Dynamax species metrics...
+Dynamax species metrics...
+Toggle plugin battle modes...
+Toggle plugin battle modes...
+Determines whether or not the Wonder Launcher is enabled.
+Determines whether or not the Wonder Launcher is enabled.
+Set whether the Wonder Launcher is enabled. (Trainer battles only)
+Set whether the Wonder Launcher is enabled. (Trainer battles only)
+Determines which side Terastallization is disabled for.
+Determines which side Terastallization is disabled for.
+Choose a side to disable Terastallization for.
+Choose a side to disable Terastallization for.
+Still
+Still
+Normal
+Normal
+Slowest
+Slowest
+Both
+Both
+Ally
+Ally
+Enemy
+Enemy
+Set Animation Speed
+Set Animation Speed
+Set Super Shiny Hue
+Set Super Shiny Hue
+Search for a specific species.
+Search for a specific species.
+Pokémon Animations
+Pokémon Animations
+Choose whether Pokémon sprites should be animated.
+Choose whether Pokémon sprites should be animated.
+Determines which side Z-Moves are disabled for.
+Determines which side Z-Moves are disabled for.
+Choose a side to disable Z-Moves for.
+Choose a side to disable Z-Moves for.
+Determines which side Ultra Burst is disabled for.
+Determines which side Ultra Burst is disabled for.
+Choose a side to disable Ultra Burst for.
+Choose a side to disable Ultra Burst for.
+Determines whether or not wild Pokémon can use SOS calls.
+Determines whether or not wild Pokémon can use SOS calls.
+Set whether wild Pokémon can use SOS calls.
+Set whether wild Pokémon can use SOS calls.
+Wild Pokémon will be flagged as Totem Pokemon.
+Wild Pokémon will be flagged as Totem Pokemon.
+Determines the species called via SOS.
+Determines the species called via SOS.
+Set which species should be called via SOS.
+Set which species should be called via SOS.
+Determines an extra species that may be called via SOS.
+Determines an extra species that may be called via SOS.
+Add a species to the pool of possible SOS calls.
+Add a species to the pool of possible SOS calls.
+Quests
+Quests
+Rustling grass
+Rustling grass
+Dark tall grass
+Dark tall grass
+Dark grass (day)
+Dark grass (day)
+Dark grass (night)
+Dark grass (night)
+Dark grass (morning)
+Dark grass (morning)
+Dark grass (afternoon)
+Dark grass (afternoon)
+Dark grass (evening)
+Dark grass (evening)
+Rustling dark grass
+Rustling dark grass
+Dust clouds
+Dust clouds
+Rippling waves
+Rippling waves
+Bird's shadow
+Bird's shadow
+{1}'s {2} transform into {3}!
+{1}'s {2} transform into {3}!
+Set {1}'s frozen count (0-99).
+Set {1}'s frozen count (0-99).
+{1} has to use Struggle!
+{1} has to use Struggle!
+It's extremely effective on {1}!
+It's extremely effective on {1}!
+It's extremely effective!
+It's extremely effective!
+It's mostly ineffective on {1}...
+It's mostly ineffective on {1}...
+It's mostly ineffective...
+It's mostly ineffective...
+{1} can't use {2} in the later turn!
+{1} can't use {2} in the later turn!
+The opposing {1} couldn't fully protect itself and got hurt!
+The opposing {1} couldn't fully protect itself and got hurt!
+#{g}You don't have enough Pokémon in your party that can participate...
+#{g}You don't have enough Pokémon in your party that can participate...
+#{g}Come back when you have enough Pokémon to battle with.
+#{g}Come back when you have enough Pokémon to battle with.
+#{g}Huh? Changed your mind?
+#{g}Huh? Changed your mind?
+#{g}Come back when you have the right Pokéméon you want to battle with.
+#{g}Come back when you have the right Pokéméon you want to battle with.
+{1} made a wish!
+{1} made a wish!
+'{1}' is not a defined memento ({2}, PreviousRanks).
+'{1}' is not a defined memento ({2}, PreviousRanks).
+Bad size: {1} (must be 0-255).<<n>>{2}
+Bad size: {1} (must be 0-255).<<n>>{2}
+Size variance of the Pokémon (0-255).
+Size variance of the Pokémon (0-255).
+Memento
+Memento
+The memento adorned on the Pokémon. This determines its title.
+The memento adorned on the Pokémon. This determines its title.
+Mementos...
+Mementos...
+Set Ribbons/Marks
+Set Ribbons/Marks
+Mementos:<<n>>{1}
+Mementos:<<n>>{1}
+Set Memento/Title
+Set Memento/Title
+{1} doesn't have any mementos that may grant it a title.
+{1} doesn't have any mementos that may grant it a title.
+<<[>>Random<<]>>
+<<[>>Random<<]>>
+<<[>>Remove<<]>>
+<<[>>Remove<<]>>
+Memento:<<n>>{1}.
+Memento:<<n>>{1}.
+{1} already has the title granted by that memento.
+{1} already has the title granted by that memento.
+Cleared {1}'s memento and title.
+Cleared {1}'s memento and title.
+{1} will now be known as<<n>>{2}.
+{1} will now be known as<<n>>{2}.
+Set size
+Set size
+Scale the Pokémon's size (max. 255).
+Scale the Pokémon's size (max. 255).
+{1} is now considered {2} in size.
+{1} is now considered {2} in size.
+Set player birthday
+Set player birthday
+Sets the month and day of the player's birthday.
+Sets the month and day of the player's birthday.
+The player's birthdate was set to {1} {2}.
+The player's birthdate was set to {1} {2}.
+#{new_title}
+#{new_title}
+#{title.first.upcase + title[1..title.length]}
+#{title.first.upcase + title[1..title.length]}
+Which month is your birthday in?
+Which month is your birthday in?
+Which day in {1} is your birthday?
+Which day in {1} is your birthday?
+So, your birthday is {1} {2}{3}, correct?
+So, your birthday is {1} {2}{3}, correct?
+'{1}'
+'{1}'
+Type:
+Type:
+ID No.:
+ID No.:
+#{idnum}
+#{idnum}
+Rank:
+Rank:
+Name:
+Name:
+#{name}
+#{name}
+Title Conferred:
+Title Conferred:
+#{title}
+#{title}
+View mementos:
+View mementos:
+#{type}
+#{type}
+#{rank}
+#{rank}
+#{count}
+#{count}
+#{header}
+#{header}
+Confer title
+Confer title
+Remove title
+Remove title
+Sort mementos
+Sort mementos
+Would you like to remove {1}'s attached memento and conferred title?
+Would you like to remove {1}'s attached memento and conferred title?
+{1}'s memento and any associated titles were removed.
+{1}'s memento and any associated titles were removed.
+Only highest rank
+Only highest rank
+Only ribbons
+Only ribbons
+Only marks
+Only marks
+Only contest ribbons
+Only contest ribbons
+Only league ribbons
+Only league ribbons
+Only frontier ribbons
+Only frontier ribbons
+Only memorial ribbons
+Only memorial ribbons
+Only special ribbons
+Only special ribbons
+All mementos
+All mementos
+This memento has multiple ranks.<<n>>Which title should be conferred?
+This memento has multiple ranks.<<n>>Which title should be conferred?
+{1} has already been conferred with this title...
+{1} has already been conferred with this title...
+Would you like to remove this attached memento from {1}?
+Would you like to remove this attached memento from {1}?
+{1} will now be known as<<n>>{2}!
+{1} will now be known as<<n>>{2}!
+Would you like to attach this memento and confer its title to {1}?
+Would you like to attach this memento and confer its title to {1}?
+This memento doesn't have any associated title to confer...
+This memento doesn't have any associated title to confer...
+Some edits have been made. Save changes?
+Some edits have been made. Save changes?
+This trainer doesn't have a shadow to edit.
+This trainer doesn't have a shadow to edit.
+Set this shadow visibility?
+Set this shadow visibility?
+Replay Animation
+Replay Animation
+Set Sprite Scaling
+Set Sprite Scaling
+Set Shadow Visibility
+Set Shadow Visibility
+Set Sprite Hue
+Set Sprite Hue
+Search for a specific trainer type.
+Search for a specific trainer type.
+Edit properties
+Edit properties
+Edit sprites
+Edit sprites
+Edit trainer sprites
+Edit trainer sprites
+Edit various metrics related to trainer sprites.
+Edit various metrics related to trainer sprites.
+Normal sprites
+Normal sprites
+Dynamax sprites
+Dynamax sprites
+Are you sure you want to reposition all Dynamax sprites?
+Are you sure you want to reposition all Dynamax sprites?
+Edit Dynamax availability and Dynamax metrics.
+Edit Dynamax availability and Dynamax metrics.
+{1}'s Tera type changed to {2}!
+{1}'s Tera type changed to {2}!
+Loamy
+Loamy
+soft, loamy
+soft, loamy
+soft and loamy
+soft and loamy
+Sandy
+Sandy
+coarse, sandy
+coarse, sandy
+coarse and sandy
+coarse and sandy
+dense, heavy
+dense, heavy
+dense and heavy
+dense and heavy
+Marshy
+Marshy
+wet, marshy
+wet, marshy
+wet and marshy
+wet and marshy
+Rocky
+Rocky
+uneven, gravelly
+uneven, gravelly
+uneven and gravelly
+uneven and gravelly
+Fertile
+Fertile
+rich, fertile
+rich, fertile
+rich and fertile
+rich and fertile
+It's {1} soil.
+It's {1} soil.
+soft, earthy
+soft, earthy
+Plant #{(Settings::BERRY_USE_BERRY_SEEDS ?
+Plant #{(Settings::BERRY_USE_BERRY_SEEDS ? 
+It's {1} soil. Want to plant a #{(Settings::BERRY_USE_BERRY_SEEDS ?
+It's {1} soil. Want to plant a #{(Settings::BERRY_USE_BERRY_SEEDS ? 
+Want to plant a #{(Settings::BERRY_USE_BERRY_SEEDS ?
+Want to plant a #{(Settings::BERRY_USE_BERRY_SEEDS ? 
+The {1} was planted in the {2} soil.
+The {1} was planted in the {2} soil.
+{1} planted an {2} in the {3} soil.
+{1} planted an {2} in the {3} soil.
+{1} planted a {2} in the {3} soil.
+{1} planted a {2} in the {3} soil.
+Plant Info
+Plant Info
+Make Fully Grown
+Make Fully Grown
+Reset Plant
+Reset Plant
+View info about the plant event.
+View info about the plant event.
+Make the plant fully grown and ready to harvest.
+Make the plant fully grown and ready to harvest.
+Reset the entire plant (will clear all data).
+Reset the entire plant (will clear all data).
+Continue.
+Continue.
+Zone: {1}
+Zone: {1}
+Map Location: {1}
+Map Location: {1}
+Soil: {1} | Mulch: {2}
+Soil: {1}  |  Mulch: {2}
+Mulch: {1}
+Mulch: {1}
+Seed: {1}
+Seed: {1}
+Current Yield: {1}
+Current Yield: {1}
+Berry: {1}
+Berry: {1}
+Stage: {1}
+Stage: {1}
+Hrs per stage: {1}
+Hrs per stage: {1}
+Max replants: {1}
+Max replants: {1}
+Moisture: {1}% | Dry rate: {2}%/hr
+Moisture: {1}%  |  Dry rate: {2}%/hr
+Fully grown stage count: {1}
+Fully grown stage count: {1}
+Exposed to Pref Weather?: {1}
+Exposed to Pref Weather?: {1}
+In Pref Zone?: {1}
+In Pref Zone?: {1}
+In Unpref Zone?: {1}
+In Unpref Zone?: {1}
+In Pref Soil?: {1}
+In Pref Soil?: {1}
+Weed chance: {1}%
+Weed chance: {1}%
+Pest chance: {1}%
+Pest chance: {1}%
+Mutation chance: {1}%
+Mutation chance: {1}%
+Mutation: {1} [{2}]
+Mutation: {1} [{2}]
+Propagation chance: {1}%
+Propagation chance: {1}%
+Watering cans (with traits) used: None
+Watering cans (with traits) used: None
+Watering cans (with traits) used:
+Watering cans (with traits) used:
+The berry plant is ready to harvest.
+The berry plant is ready to harvest.
+Are you sure you want to reset all data for this plant?
+Are you sure you want to reset all data for this plant?
+Berry plant reset.
+Berry plant reset.
+The soil returned to its {1} state.
+The soil returned to its {1} state.
+soft and earthy
+soft and earthy
+You may be able to dig up the seed. Dig up the {1}?
+You may be able to dig up the seed. Dig up the {1}?
+Oh, something dropped!
+Oh, something dropped!
+Read lid
+Read lid
+\w[signskin]Put {1} Berries in, and you can make Mulch.
+\w[signskin]Put {1} Berries in, and you can make Mulch.
+\w[signskin]Using Mulch on the soil before planting a Berry helps the Berries grow.
+\w[signskin]Using Mulch on the soil before planting a Berry helps the Berries grow.
+Oh I don't know how to plant seeds yet. Maybe one day.
+Oh I don't know how to plant seeds yet. Maybe one day.
+You received {1} {2}s!
+You received {1} {2}s!
+You received {1} {2}!
+You received {1} {2}!
+You received ${1}!
+You received ${1}!
+Your highest score in Infinite Mode is: {1}
+Your highest score in Infinite Mode is: {1}
+No survival time record yet for mode #{survival_id}.
+No survival time record yet for mode #{survival_id}.
+Your best survival time in mode #{survival_id} is: {1}:{2}
+Your best survival time in mode #{survival_id} is: {1}:{2}
+The Pokémon is immune to status moves and takes less damage.
+The Pokémon is immune to status moves and takes less damage.
+Raid Shield
+Raid Shield
+The Pokémon is in its Mega Evolved form.
+The Pokémon is in its Mega Evolved form.
+The Pokémon is in its Primal form.
+The Pokémon is in its Primal form.
+Primal Reversion
+Primal Reversion
+The Pokémon is in its Ultra form.
+The Pokémon is in its Ultra form.
+Fire type moves deal 50% more damage. Halves Water move damage.
+Fire type moves deal 50% more damage. Halves Water move damage.
+Fire type moves deal 50% more damage. Negates Water type moves.
+Fire type moves deal 50% more damage. Negates Water type moves.
+Water type moves deal 50% more damage. Halves Fire move damage.
+Water type moves deal 50% more damage. Halves Fire move damage.
+Water type moves deal 50% more damage. Negates Fire type moves.
+Water type moves deal 50% more damage. Negates Fire type moves.
+All Flying-type weaknesses are suppressed.
+All Flying-type weaknesses are suppressed.
+The combined effects of both Hail and Snow.
+The combined effects of both Hail and Snow.
+Boosts the Sp. Defense stat of the Pokémon by 50%.
+Boosts the Sp. Defense stat of the Pokémon by 50%.
+The Pokémon loses {1} HP each turn.
+The Pokémon loses {1} HP each turn.
+Pokémon may lose HP each turn. Boosts Sp. Defense of Rock types.
+Pokémon may lose HP each turn. Boosts Sp. Defense of Rock types.
+The Pokémon loses {1} HP each turn. Blizzard always hits.
+The Pokémon loses {1} HP each turn. Blizzard always hits.
+Pokémon may lose HP each turn. Blizzard always hits.
+Pokémon may lose HP each turn. Blizzard always hits.
+Boosts the Defense of the Pokémon by 50%. Blizzard always hits.
+Boosts the Defense of the Pokémon by 50%. Blizzard always hits.
+The move Blizzard always hits. Boosts Defense of Ice types.
+The move Blizzard always hits. Boosts Defense of Ice types.
+The power of the Pokémon's Shadow type moves are boosted by 50%.
+The power of the Pokémon's Shadow type moves are boosted by 50%.
+Non-Shadow Pokémon may lose HP each turn.
+Non-Shadow Pokémon may lose HP each turn.
+The Pokémon can't fall asleep. Electric moves boosted by 30%.
+The Pokémon can't fall asleep. Electric moves boosted by 30%.
+Grounded Pokémon can't fall asleep. Boosts Electric moves.
+Grounded Pokémon can't fall asleep. Boosts Electric moves.
+The Pokémon heals {1} HP each turn. Grass moves boosted by 30%.
+The Pokémon heals {1} HP each turn. Grass moves boosted by 30%.
+Grounded Pokémon may recover HP each turn. Boosts Grass moves.
+Grounded Pokémon may recover HP each turn. Boosts Grass moves.
+The Pokémon is immune to priority. Psychic moves boosted by 30%.
+The Pokémon is immune to priority. Psychic moves boosted by 30%.
+Grounded Pokémon immune to priority. Boosts Psychic moves.
+Grounded Pokémon immune to priority. Boosts Psychic moves.
+The Pokémon is immune to statuses. Dragon moves weakened.
+The Pokémon is immune to statuses. Dragon moves weakened.
+Grounded Pokémon immune to statuses. Weakens Dragon moves.
+Grounded Pokémon immune to statuses. Weakens Dragon moves.
+Normal type moves of all Pokémon on the field become Electric type.
+Normal type moves of all Pokémon on the field become Electric type.
+No Pokémon on the field can flee.
+No Pokémon on the field can flee.
+Grounds all Pokémon. Prevents midair actions. Increases accuracy.
+Grounds all Pokémon. Prevents midair actions. Increases accuracy.
+No Pokémon on the field can use their held items.
+No Pokémon on the field can use their held items.
+All Pokémon on the field swap their Defense and Sp. Defense stats.
+All Pokémon on the field swap their Defense and Sp. Defense stats.
+Reverses Speed order so slower Pokémon on the field move first.
+Reverses Speed order so slower Pokémon on the field move first.
+All Pokémon on the field take less damage from Electric moves.
+All Pokémon on the field take less damage from Electric moves.
+All Pokémon on the field take less damage from Fire moves.
+All Pokémon on the field take less damage from Fire moves.
+Attacks of Pokémon on this side deal increased damage.
+Attacks of Pokémon on this side deal increased damage.
+Attacks Pokémon on this side always trigger effects.
+Attacks Pokémon on this side always trigger effects.
+Attacks of Pokémon on this side bypass protections.
+Attacks of Pokémon on this side bypass protections.
+Pokémon on this side take reduced damage from attacks.
+Pokémon on this side take reduced damage from attacks.
+Pokémon on this side are immune to move effects.
+Pokémon on this side are immune to move effects.
+Pokémon on this side will endure incoming attacks.
+Pokémon on this side will endure incoming attacks.
++1/1
++1/1
+Pokémon on this side take Rock type damage upon entry.
+Pokémon on this side take Rock type damage upon entry.
+Pokémon on this side take Steel type damage upon entry.
+Pokémon on this side take Steel type damage upon entry.
+The Speed of grounded Pokémon on this side is lowered upon entry.
+The Speed of grounded Pokémon on this side is lowered upon entry.
+Grounded Pokémon on this side lose HP upon entry.
+Grounded Pokémon on this side lose HP upon entry.
+Grounded Pokémon on this side are poisoned upon entry.
+Grounded Pokémon on this side are poisoned upon entry.
+Pokémon on this side lose HP each turn. No effect on Grass types.
+Pokémon on this side lose HP each turn. No effect on Grass types.
+Pokémon on this side lose HP each turn. No effect on Fire types.
+Pokémon on this side lose HP each turn. No effect on Fire types.
+Pokémon on this side lose HP each turn. No effect on Water types.
+Pokémon on this side lose HP each turn. No effect on Water types.
+Pokémon on this side lose HP each turn. No effect on Rock types.
+Pokémon on this side lose HP each turn. No effect on Rock types.
+Pokémon on this side are more likely to trigger move effects.
+Pokémon on this side are more likely to trigger move effects.
+The Speed of the Pokémon on this side is halved.
+The Speed of the Pokémon on this side is halved.
+The Speed of the Pokémon on this side is doubled.
+The Speed of the Pokémon on this side is doubled.
+Pokémon on this side are protected from most status moves.
+Pokémon on this side are protected from most status moves.
+Pokémon on this side are protected from most priority moves.
+Pokémon on this side are protected from most priority moves.
+Pokémon on this side are protected from most spread moves.
+Pokémon on this side are protected from most spread moves.
+Pokémon on this side are protected from most damaging moves.
+Pokémon on this side are protected from most damaging moves.
+All moves deal less damage to Pokémon on this side.
+All moves deal less damage to Pokémon on this side.
+Physical moves deal less damage to Pokémon on this side.
+Physical moves deal less damage to Pokémon on this side.
+Special moves deal less damage to Pokémon on this side.
+Special moves deal less damage to Pokémon on this side.
+Pokémon on this side are protected from status conditions.
+Pokémon on this side are protected from status conditions.
+The stats of Pokémon on this side cannot be lowered.
+The stats of Pokémon on this side cannot be lowered.
+Pokémon on this side are immune to critical hits.
+Pokémon on this side are immune to critical hits.
+{1} will strike the Pokémon in this spot in {2} more turn(s).
+{1} will strike the Pokémon in this spot in {2} more turn(s).
+The Pokémon in this spot will restore {1} HP in {2} more turn(s).
+The Pokémon in this spot will restore {1} HP in {2} more turn(s).
+A substitute with {1} HP stands in for the Pokémon.
+A substitute with {1} HP stands in for the Pokémon.
+The Pokémon restores {1} HP at the end of each turn.
+The Pokémon restores {1} HP at the end of each turn.
+The Pokémon restores {1} HP every turn, but cannot escape.
+The Pokémon restores {1} HP every turn, but cannot escape.
+Each turn, {1} leeches {2} HP from the Pokémon.
+Each turn, {1} leeches {2} HP from the Pokémon.
+The Pokémon loses {1} HP at the end of each turn.
+The Pokémon loses {1} HP at the end of each turn.
+The Pokémon loses {1} HP each turn it spends asleep.
+The Pokémon loses {1} HP each turn it spends asleep.
+The Pokémon takes {1} type damage at the end of each turn.
+The Pokémon takes {1} type damage at the end of each turn.
+The Pokémon cannot use any healing effects that restores HP.
+The Pokémon cannot use any healing effects that restores HP.
+?/?
+?/?
+The Pokémon may hurt itself in confusion instead of attacking.
+The Pokémon may hurt itself in confusion instead of attacking.
+The Pokémon rampages for a few turns. It then becomes confused.
+The Pokémon rampages for a few turns. It then becomes confused.
+The Pokémon cannot use the same move twice in a row.
+The Pokémon cannot use the same move twice in a row.
+The Pokémon cannot use any sound-based moves.
+The Pokémon cannot use any sound-based moves.
+The Pokémon may only use the move {1}.
+The Pokémon may only use the move {1}.
+The Pokémon cannot use the move {1}.
+The Pokémon cannot use the move {1}.
+The Pokémon cannot use any status moves.
+The Pokémon cannot use any status moves.
+The Pokémon's ability is negated.
+The Pokémon's ability is negated.
+The next Electric move used by the Pokémon will double in power.
+The next Electric move used by the Pokémon will double in power.
+The next move used by the Pokémon will become Electric type.
+The next move used by the Pokémon will become Electric type.
+The next Fire move used by the Pokémon will ignite and explode.
+The next Fire move used by the Pokémon will ignite and explode.
+The Pokémon is grounded and no longer immune to Ground moves.
+The Pokémon is grounded and no longer immune to Ground moves.
+The Pokémon's evasion boosts are ignored. No Ghost immunities.
+The Pokémon's evasion boosts are ignored. No Ghost immunities.
+The Pokémon's evasion boosts are ignored. No Dark immunities.
+The Pokémon's evasion boosts are ignored. No Dark immunities.
+The Attack stat of the Pokémon increases whenever it is hit.
+The Attack stat of the Pokémon increases whenever it is hit.
+The damage dealt with the Pokémon's next move will be increased.
+The damage dealt with the Pokémon's next move will be increased.
+The Attack and Defense stats of the Pokémon are swapped.
+The Attack and Defense stats of the Pokémon are swapped.
+The Pokémon's next attack will be a guaranteed critical hit.
+The Pokémon's next attack will be a guaranteed critical hit.
+The Pokémon is amassing a stockpile to use or consume.
+The Pokémon is amassing a stockpile to use or consume.
+The Pokémon takes more damage from certain moves while minimized.
+The Pokémon takes more damage from certain moves while minimized.
+The Pokémon cannot evade and takes double damage from attacks.
+The Pokémon cannot evade and takes double damage from attacks.
+The Pokémon's next move is sure to hit {1}.
+The Pokémon's next move is sure to hit {1}.
+Each turn, {1} lowers the Pokémon's Speed.
+Each turn, {1} lowers the Pokémon's Speed.
+The Pokémon refuses to flee or switch out.
+The Pokémon refuses to flee or switch out.
+Trapped by {1}.
+Trapped by {1}.
+Trapped by {1}. Defense drops each turn.
+Trapped by {1}. Defense drops each turn.
+Trapped by {1}. Loses HP each turn.
+Trapped by {1}. Loses HP each turn.
+Trapped and loses HP each turn.
+Trapped and loses HP each turn.
+The Pokémon bounces back most incoming status moves.
+The Pokémon bounces back most incoming status moves.
+The Pokémon is protected from most incoming attacks.
+The Pokémon is protected from most incoming attacks.
+Protected from most moves. Contact inflicts damage.
+Protected from most moves. Contact inflicts damage.
+Protected from most moves. Contact inflicts poison.
+Protected from most moves. Contact inflicts poison.
+Protected from damage dealing moves. Contact inflicts a burn.
+Protected from damage dealing moves. Contact inflicts a burn.
+Protected from damage dealing moves. Contact lowers Attack.
+Protected from damage dealing moves. Contact lowers Attack.
+Protected from damage dealing moves. Contact lowers Defense.
+Protected from damage dealing moves. Contact lowers Defense.
+Protected from damage dealing moves. Contact lowers Speed.
+Protected from damage dealing moves. Contact lowers Speed.
+Charging Turn
+Charging Turn
+The Pokémon will use {1} next turn.
+The Pokémon will use {1} next turn.
+The Pokémon cannot act for {1} more turn(s).
+The Pokémon cannot act for {1} more turn(s).
+The Pokémon will fall asleep in {1} more turn(s).
+The Pokémon will fall asleep in {1} more turn(s).
+Perish Count
+Perish Count
+The Pokémon will be forced to faint in {1} more turn(s).
+The Pokémon will be forced to faint in {1} more turn(s).
+The Pokémon gets its act together in {1} more turn(s).
+The Pokémon gets its act together in {1} more turn(s).
+The Pokémon is trapped while latched to {1}.
+The Pokémon is trapped while latched to {1}.
+The Pokémon can't use moves known by {1}.
+The Pokémon can't use moves known by {1}.
+{1}'s uproar prevents sleeping.
+{1}'s uproar prevents sleeping.
+#{currency} is an invalid currency!
+#{currency} is an invalid currency!
+The Game Map '#{spot[0][0][:map]}' does not exist!
+The Game Map '#{spot[0][0][:map]}' does not exist!
+Map%03d.rxdata not found, please check your mapMetadata.txt PBS file
+Map%03d.rxdata not found, please check your mapMetadata.txt PBS file
+Sell price of this item in Battle Points (BP). If blank, is half the purchase price.
+Sell price of this item in Battle Points (BP). If blank, is half the purchase price.
+Purchase price of this item in Coins
+Purchase price of this item in Coins
+Sell price of this item in Coins. If blank, is half the purchase price.
+Sell price of this item in Coins. If blank, is half the purchase price.
+The {1} dropped a {2}!
+The {1} dropped a {2}!
+The {1} dropped {2} {3}!
+The {1} dropped {2} {3}!
+Do you wish to donate {1} {2}?
+Do you wish to donate {1} {2}?
+Do you wish to donate a {1}?
+Do you wish to donate a {1}?
+You received {1} points!
+You received {1} points!
+You don't have enough materials.
+You don't have enough materials.
+{1}, and you want {2}. That will require {3} {4}. OK?
+{1}, and you want {2}. That will require {3} {4}. OK?
+Graphics/UI/Trainer Card/card_nb
+Graphics/UI/Trainer Card/card_nb
+Choose your partner!
+Choose your partner!
+◀ ▶ to choose
+◀ ▶ to choose
+<<[>>A<<]>> change gender
+<<[>>A<<]>> change gender
+<<[>>USE<<]>> to select
+<<[>>USE<<]>> to select
+Are you sure you want to choose {1}?
+Are you sure you want to choose {1}?
+Are you sure you want to cancel?
+Are you sure you want to cancel?
+At least one starter Pokémon must be specified!
+At least one starter Pokémon must be specified!
+Invalid Pokémon species: {1}
+Invalid Pokémon species: {1}
+{1} was transferred to your PC!
+{1} was transferred to your PC!
+You received a shiny {1}!
+You received a shiny {1}!
+You received {1}!
+You received {1}!
+Do you want to give your Pokémon a name?
+Do you want to give your Pokémon a name?
+{1}'s name?
+{1}'s name?
+A species pool must be provided!
+A species pool must be provided!
+A species pool must contain at least one Pokémon!
+A species pool must contain at least one Pokémon!
+Pool must contain at least {1} species.
+Pool must contain at least {1} species.
+Star storms
+Star storms
+Diamond dust
+Diamond dust
+Falling embers
+Falling embers
+Falling petals
+Falling petals
+Sparkling ice
+Sparkling ice
+Strong winds
+Strong winds
+Falling ash
+Falling ash
+Fireflies
+Fireflies
+Glitch City
+Glitch City
+No other local game records were found.
+No other local game records were found.
+Past journeys detected! Which record should be accessed?
+Past journeys detected! Which record should be accessed?
+Accessing cloud for {1}
+Accessing cloud for {1}
+The identity registry is corrupted.
+The identity registry is corrupted.
+No records of a past journey found on this device.
+No records of a past journey found on this device.
+You must keep at least one Pokémon in your party!
+You must keep at least one Pokémon in your party!
+Select a Pokémon to deposit.
+Select a Pokémon to deposit.
+{1} selected. Select another or press B to finish.
+{1} selected. Select another or press B to finish.
+That Pokémon is already selected!
+That Pokémon is already selected!
+Added to the deposit list.
+Added to the deposit list.
+Deposit this Pokémon into the cloud?
+Deposit this Pokémon into the cloud?
+Deposit these {1} Pokémon into the cloud?
+Deposit these {1} Pokémon into the cloud?
+Connecting to GBA cloud
+Connecting to GBA cloud
+Success! The Pokémon was moved to the cloud.
+Success! The Pokémon was moved to the cloud.
+Success! The Pokémon were moved to the cloud.
+Success! The Pokémon were moved to the cloud.
+Cloud error. Please try again later.
+Cloud error. Please try again later.
+Connection failed!
+Connection failed!
+Accessing GBA cloud
+Accessing GBA cloud
+Not enough room in the party for {1} Pokémon!
+Not enough room in the party for {1} Pokémon!
+Transfer complete! The Pokémon has returned.
+Transfer complete! The Pokémon has returned.
+Transfer complete! The Pokémon have returned.
+Transfer complete! The Pokémon have returned.
+No Pokémon found in that locker.
+No Pokémon found in that locker.
+Connection error.
+Connection error.
+Gift data generated! Check console.
+Gift data generated! Check console.
+Mystery Gift Code?
+Mystery Gift Code?
+Please come again.
+Please come again.
+Connecting to server
+Connecting to server
+You received a Pokémon!
+You received a Pokémon!
+You received {1} x {2}!
+You received {1} x {2}!
+You received a new cosmetic!
+You received a new cosmetic!
+Cosmetics not supported in this build.
+Cosmetics not supported in this build.
+You received a mysterious gift!
+You received a mysterious gift!
+Game saved successfully!
+Game saved successfully!
+Mystery Gift failed: {1}
+Mystery Gift failed: {1}
+Poison Fog
+Poison Fog
+A toxic fog rolled in!
+A toxic fog rolled in!
+The toxic fog continues...
+The toxic fog continues...
+The toxic fog cleared.
+The toxic fog cleared.
+Starstorm
+Starstorm
+Stars fell from the sky!
+Stars fell from the sky!
+Stars continue falling from above!
+Stars continue falling from above!
+The stars stopped falling.
+The stars stopped falling.
+Diamond Dust
+Diamond Dust
+There is a crystalline fog!
+There is a crystalline fog!
+The crystals hang in the air!
+The crystals hang in the air!
+The diamond dust settled.
+The diamond dust settled.
+{1} is hit by the hard crystals!
+{1} is hit by the hard crystals!
+Embers
+Embers
+Glowing embers rained down from the sky!
+Glowing embers rained down from the sky!
+Embers continued to rain down!
+Embers continued to rain down!
+The embers faded and went cold.
+The embers faded and went cold.
+{1} is scorched by the falling embers!
+{1} is scorched by the falling embers!
+Falling Petals
+Falling Petals
+Colourful petals began to flutter down!
+Colourful petals began to flutter down!
+Petals continue to drift gently through the air.
+Petals continue to drift gently through the air.
+The petals settled on the ground.
+The petals settled on the ground.
+Sparkling Ice
+Sparkling Ice
+Ice crystals began glittering in the air!
+Ice crystals began glittering in the air!
+Tiny ice crystals glitter in the cold air.
+Tiny ice crystals glitter in the cold air.
+The glittering crystals melted away.
+The glittering crystals melted away.
+A fierce wind began to blow across the battlefield!
+A fierce wind began to blow across the battlefield!
+The fierce wind continues to blow!
+The fierce wind continues to blow!
+The wind died down.
+The wind died down.
+Falling Ash
+Falling Ash
+Ash began to fall from the sky.
+Ash began to fall from the sky.
+Ash continues to drift down from above.
+Ash continues to drift down from above.
+The ash stopped falling.
+The ash stopped falling.
+Fireflies began to drift across the battlefield!
+Fireflies began to drift across the battlefield!
+Fireflies continue to drift gently through the air.
+Fireflies continue to drift gently through the air.
+The fireflies drifted away into the night.
+The fireflies drifted away into the night.
+The air began to distort strangely!
+The air began to distort strangely!
+Reality flickers and glitches around you.
+Reality flickers and glitches around you.
+The distortions faded away.
+The distortions faded away.
+1PL.M.FOR.NOM
+1PL.M.FOR.NOM
+1PL.M.FOR.ACC
+1PL.M.FOR.ACC
+1PL.M.FOR.GEN
+1PL.M.FOR.GEN
+1PL.M.FOR.DAT
+1PL.M.FOR.DAT
+1PL.M.FAM.NOM
+1PL.M.FAM.NOM
+1PL.M.FAM.ACC
+1PL.M.FAM.ACC
+1PL.M.FAM.GEN
+1PL.M.FAM.GEN
+1PL.M.FAM.DAT
+1PL.M.FAM.DAT
+2PL.M.FOR.NOM
+2PL.M.FOR.NOM
+2PL.M.FOR.ACC
+2PL.M.FOR.ACC
+2PL.M.FOR.GEN
+2PL.M.FOR.GEN
+2PL.M.FOR.DAT
+2PL.M.FOR.DAT
+2PL.M.FAM.NOM
+2PL.M.FAM.NOM
+2PL.M.FAM.ACC
+2PL.M.FAM.ACC
+2PL.M.FAM.GEN
+2PL.M.FAM.GEN
+2PL.M.FAM.DAT
+2PL.M.FAM.DAT
+3PL.M.FOR.NOM
+3PL.M.FOR.NOM
+3PL.M.FOR.ACC
+3PL.M.FOR.ACC
+3PL.M.FOR.GEN
+3PL.M.FOR.GEN
+3PL.M.FOR.DAT
+3PL.M.FOR.DAT
+3PL.M.FAM.NOM
+3PL.M.FAM.NOM
+3PL.M.FAM.ACC
+3PL.M.FAM.ACC
+3PL.M.FAM.GEN
+3PL.M.FAM.GEN
+3PL.M.FAM.DAT
+3PL.M.FAM.DAT
+1PL.MIX.FOR.NOM
+1PL.MIX.FOR.NOM
+1PL.MIX.FOR.ACC
+1PL.MIX.FOR.ACC
+1PL.MIX.FOR.GEN
+1PL.MIX.FOR.GEN
+1PL.MIX.FOR.DAT
+1PL.MIX.FOR.DAT
+1PL.MIX.FAM.NOM
+1PL.MIX.FAM.NOM
+1PL.MIX.FAM.ACC
+1PL.MIX.FAM.ACC
+1PL.MIX.FAM.GEN
+1PL.MIX.FAM.GEN
+1PL.MIX.FAM.DAT
+1PL.MIX.FAM.DAT
+2PL.MIX.FOR.NOM
+2PL.MIX.FOR.NOM
+2PL.MIX.FOR.ACC
+2PL.MIX.FOR.ACC
+2PL.MIX.FOR.GEN
+2PL.MIX.FOR.GEN
+2PL.MIX.FOR.DAT
+2PL.MIX.FOR.DAT
+2PL.MIX.FAM.NOM
+2PL.MIX.FAM.NOM
+2PL.MIX.FAM.ACC
+2PL.MIX.FAM.ACC
+2PL.MIX.FAM.GEN
+2PL.MIX.FAM.GEN
+2PL.MIX.FAM.DAT
+2PL.MIX.FAM.DAT
+3PL.MIX.FOR.NOM
+3PL.MIX.FOR.NOM
+3PL.MIX.FOR.ACC
+3PL.MIX.FOR.ACC
+3PL.MIX.FOR.GEN
+3PL.MIX.FOR.GEN
+3PL.MIX.FOR.DAT
+3PL.MIX.FOR.DAT
+3PL.MIX.FAM.NOM
+3PL.MIX.FAM.NOM
+3PL.MIX.FAM.ACC
+3PL.MIX.FAM.ACC
+3PL.MIX.FAM.GEN
+3PL.MIX.FAM.GEN
+3PL.MIX.FAM.DAT
+3PL.MIX.FAM.DAT
+1PL.F.FOR.NOM
+1PL.F.FOR.NOM
+1PL.F.FOR.ACC
+1PL.F.FOR.ACC
+1PL.F.FOR.GEN
+1PL.F.FOR.GEN
+1PL.F.FOR.DAT
+1PL.F.FOR.DAT
+1PL.F.FAM.NOM
+1PL.F.FAM.NOM
+1PL.F.FAM.ACC
+1PL.F.FAM.ACC
+1PL.F.FAM.GEN
+1PL.F.FAM.GEN
+1PL.F.FAM.DAT
+1PL.F.FAM.DAT
+2PL.F.FOR.NOM
+2PL.F.FOR.NOM
+2PL.F.FOR.ACC
+2PL.F.FOR.ACC
+2PL.F.FOR.GEN
+2PL.F.FOR.GEN
+2PL.F.FOR.DAT
+2PL.F.FOR.DAT
+2PL.F.FAM.NOM
+2PL.F.FAM.NOM
+2PL.F.FAM.ACC
+2PL.F.FAM.ACC
+2PL.F.FAM.GEN
+2PL.F.FAM.GEN
+2PL.F.FAM.DAT
+2PL.F.FAM.DAT
+3PL.F.FOR.NOM
+3PL.F.FOR.NOM
+3PL.F.FOR.ACC
+3PL.F.FOR.ACC
+3PL.F.FOR.GEN
+3PL.F.FOR.GEN
+3PL.F.FOR.DAT
+3PL.F.FOR.DAT
+3PL.F.FAM.NOM
+3PL.F.FAM.NOM
+3PL.F.FAM.ACC
+3PL.F.FAM.ACC
+3PL.F.FAM.GEN
+3PL.F.FAM.GEN
+3PL.F.FAM.DAT
+3PL.F.FAM.DAT
+1PL.N.FOR.NOM
+1PL.N.FOR.NOM
+1PL.N.FOR.ACC
+1PL.N.FOR.ACC
+1PL.N.FOR.GEN
+1PL.N.FOR.GEN
+1PL.N.FOR.DAT
+1PL.N.FOR.DAT
+1PL.N.FAM.NOM
+1PL.N.FAM.NOM
+1PL.N.FAM.ACC
+1PL.N.FAM.ACC
+1PL.N.FAM.GEN
+1PL.N.FAM.GEN
+1PL.N.FAM.DAT
+1PL.N.FAM.DAT
+2PL.N.FOR.NOM
+2PL.N.FOR.NOM
+2PL.N.FOR.ACC
+2PL.N.FOR.ACC
+2PL.N.FOR.GEN
+2PL.N.FOR.GEN
+2PL.N.FOR.DAT
+2PL.N.FOR.DAT
+2PL.N.FAM.NOM
+2PL.N.FAM.NOM
+2PL.N.FAM.ACC
+2PL.N.FAM.ACC
+2PL.N.FAM.GEN
+2PL.N.FAM.GEN
+2PL.N.FAM.DAT
+2PL.N.FAM.DAT
+3PL.N.FOR.NOM
+3PL.N.FOR.NOM
+3PL.N.FOR.ACC
+3PL.N.FOR.ACC
+3PL.N.FOR.GEN
+3PL.N.FOR.GEN
+3PL.N.FOR.DAT
+3PL.N.FOR.DAT
+3PL.N.FAM.NOM
+3PL.N.FAM.NOM
+3PL.N.FAM.ACC
+3PL.N.FAM.ACC
+3PL.N.FAM.GEN
+3PL.N.FAM.GEN
+3PL.N.FAM.DAT
+3PL.N.FAM.DAT

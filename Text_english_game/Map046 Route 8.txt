@@ -1,0 +1,16 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map046]
+The bridges of Rua Octava are covered in bike tracks...
+The bridges of Rua Octava are covered in bike tracks...
+Would you like to ride your Bicycle?\n(You do not have to, and can dismount at any time.)
+Would you like to ride your Bicycle?\n(You do not have to, and can dismount at any time.)
+\PN started riding their Bicycle.
+\PN started riding their Bicycle.
+\bWelcome to Doremi Vehicle Emporium!
+\bWelcome to Doremi Vehicle Emporium!
+Yes
+Yes
+No
+No

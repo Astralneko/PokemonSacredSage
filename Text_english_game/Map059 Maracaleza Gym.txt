@@ -1,0 +1,78 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map059]
+\xn[Clerk]\rWelcome to the Maracaleza Public Gym.
+\xn[Clerk]\rWelcome to the Maracaleza Public Gym.
+\xn[Clerk]\rOh? You look like you're here to challenge Akita.
+\xn[Clerk]\rOh? You look like you're here to challenge Akita.
+\xn[Clerk]\rHowever, you don't have any Gym Badges...
+\xn[Clerk]\rHowever, you don't have any Gym Badges...
+\xn[Clerk]\rPlease come back once you do. You'll need the Glider Badge to challenge this Gym.
+\xn[Clerk]\rPlease come back once you do. You'll need the Glider Badge to challenge this Gym.
+\xn[Clerk]\rWell, for your information... Akita specializes in Fighting-types.
+\xn[Clerk]\rWell, for your information... Akita specializes in Fighting-types.
+\xn[Clerk]\rYou're gonna need plenty of energy to keep up!
+\xn[Clerk]\rYou're gonna need plenty of energy to keep up!
+\xn[Clerk]\rFighting-types are not good at handling the magic of the Psychic and Fairy types, nor do they take kindly to the air control of Flying-types.
+\xn[Clerk]\rFighting-types are not good at handling the magic of the Psychic and Fairy types, nor do they take kindly to the air control of Flying-types.
+\xn[Clerk]\rThat being said, their superpowered nature is power Normal, Dark, Ice, Rock, and Steel-types can't deal with.
+\xn[Clerk]\rThat being said, their superpowered nature is power Normal, Dark, Ice, Rock, and Steel-types can't deal with.
+\xn[Clerk]\rThis is a Twilight Gym, so if you're not ready right now, you can always come back after strengthening up on other Gym Leaders.
+\xn[Clerk]\rThis is a Twilight Gym, so if you're not ready right now, you can always come back after strengthening up on other Gym Leaders.
+\xn[Clerk]\rJust don't expect an easy ride if you do! Good luck!
+\xn[Clerk]\rJust don't expect an easy ride if you do! Good luck!
+\xnmr[Akita]\bHmph. You are not worthy yet...
+\xnmr[Akita]\bHmph. You are not worthy yet...
+\xnmr\bDefeat all four of my Gym Trainers. I will challenge you then.
+\xnmr\bDefeat all four of my Gym Trainers. I will challenge you then.
+\xnmr[Akita]\bSo you have done it... Very well done.
+\xnmr[Akita]\bSo you have done it... Very well done.
+\xnmr\bBut... Can you defeat me in a duel of skill and physical strength?
+\xnmr\bBut... Can you defeat me in a duel of skill and physical strength?
+Your moves won't delude me!
+Your moves won't delude me!
+I'm prepared for your punch!
+I'm prepared for your punch!
+Who rocks the world with dodging skill?!
+Who rocks the world with dodging skill?!
+Shoryu-reppa!
+Shoryu-reppa!
+My hot spirits won't be stopped!
+My hot spirits won't be stopped!
+I'm on fire, baby! Take this!
+I'm on fire, baby! Take this!
+Time to try something different!
+Time to try something different!
+Don't hold back!
+Don't hold back!
+I'll knock you down with one punch!
+I'll knock you down with one punch!
+Prepare for my special move!
+Prepare for my special move!
+Eat this!
+Eat this!
+Shoryuu... CANNON!
+Shoryuu... CANNON!
+\xnmr[Akita]\bWell done... You have bested me in mutual combat.
+\xnmr[Akita]\bWell done... You have bested me in mutual combat.
+\xnmr\bNow... round 2! Strategy and brainpower!
+\xnmr\bNow... round 2! Strategy and brainpower!
+\xnmr\bTime for a Pokémon battle!
+\xnmr\bTime for a Pokémon battle!
+\xnmr[Akita]\bYour skills are remarkable... You have earned this Badge.
+\xnmr[Akita]\bYour skills are remarkable... You have earned this Badge.
+\xnmr\bThat Badge is like my belt: it proves your remarkable skill to have defeated the Maracaleza Gym.
+\xnmr\bThat Badge is like my belt: it proves your remarkable skill to have defeated the Maracaleza Gym.
+\xnmr\bWith that badge, Pokémon up to Level \v[5] will obey your every command.
+\xnmr\bWith that badge, Pokémon up to Level \v[5] will obey your every command.
+\xnmr\bThis TM contains a move that I use often. Take one.
+\xnmr\bThis TM contains a move that I use often. Take one.
+\xnmr\bThe move that it teaches is Brick Break, a Fighting-type move that breaks through screens.
+\xnmr\bThe move that it teaches is Brick Break, a Fighting-type move that breaks through screens.
+\xnmr\bWell, that battle was exhilarating... Goodbye, and thanks \PN.
+\xnmr\bWell, that battle was exhilarating... Goodbye, and thanks \PN.
+\xnmr[Akita]\b...You are not ready to face me.
+\xnmr[Akita]\b...You are not ready to face me.
+\xnmr\bTry again later.
+\xnmr\bTry again later.

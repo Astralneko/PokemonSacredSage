@@ -1,0 +1,108 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map050]
+\bI'm ready to duel with you.
+\bI'm ready to duel with you.
+\xn[Psychic]\bUgh, you're too good!
+\xn[Psychic]\bUgh, you're too good!
+\xn[Ace Trainer]\rWhat can I say, Gumi? I just have the heart of the cards on my side.
+\xn[Ace Trainer]\rWhat can I say, Gumi? I just have the heart of the cards on my side.
+\xn[Gumi]\bAh, who are you?
+\xn[Gumi]\bAh, who are you?
+\xn[Gumi]\b...\PN, is it?
+\xn[Gumi]\b...\PN, is it?
+\xn[Gumi]\bAhahah... My psychic powers, of course. Anyway...
+\xn[Gumi]\bAhahah... My psychic powers, of course. Anyway...
+\xn[Gumi]\bHuh... I could swear my powers told me so... Anyways!
+\xn[Gumi]\bHuh... I could swear my powers told me so... Anyways!
+\xn[Gumi]\bIf you're here to enter the Triple Triad tournament, Laiba here is currently the leader.
+\xn[Gumi]\bIf you're here to enter the Triple Triad tournament, Laiba here is currently the leader.
+\xn[\PN]\pgTournament?
+\xn[\PN]\pgTournament?
+\xn[Laiba]\rYou've never heard of the Samba Triple Triad Tournament?!
+\xn[Laiba]\rYou've never heard of the Samba Triple Triad Tournament?!
+\xn[Laiba]\rYou'll have to enter! \PN, right? That's what Gumi said, anyway!
+\xn[Laiba]\rYou'll have to enter! \PN, right? That's what Gumi said, anyway!
+\xn[\PN]\pgI don't know about-\wtnp[10]
+\xn[\PN]\pgI don't know about-\wtnp[10]
+\PN was entered into the Samba Triple Triad Tournament!\me[Pkmn get]
+\PN was entered into the Samba Triple Triad Tournament!\me[Pkmn get]
+\xn[Laiba]\rNow then... I'll be your first opponent. Just speak to me when you're ready.
+\xn[Laiba]\rNow then... I'll be your first opponent. Just speak to me when you're ready.
+\xn[Gumi]\bHeh... Hope you can win, for me!
+\xn[Gumi]\bHeh... Hope you can win, for me!
+\rReady for a real rule duel?
+\rReady for a real rule duel?
+\bWelcome to the Triad Card Shop.
+\bWelcome to the Triad Card Shop.
+\bAnything else I can do for you?
+\bAnything else I can do for you?
+\bHere is where you can purchase new cards for Triple Triad duels.
+\bHere is where you can purchase new cards for Triple Triad duels.
+\bThe selection grows as you catch and find new Pokémon, so check often.
+\bThe selection grows as you catch and find new Pokémon, so check often.
+\bAnd, of course, stronger Pokémon cards cost more than weaker cards.
+\bAnd, of course, stronger Pokémon cards cost more than weaker cards.
+\bYou don't have to use this shop in your game. It's just an example of how the player could gain Triple Triad cards. You could implement other ways.
+\bYou don't have to use this shop in your game. It's just an example of how the player could gain Triple Triad cards. You could implement other ways.
+\bPlease come again.
+\bPlease come again.
+\bI built my deck specially for this!
+\bI built my deck specially for this!
+\rI'm here to explain the rules of Triple Triad.
+\rI'm here to explain the rules of Triple Triad.
+\rWhich topic do you want to learn about?
+\rWhich topic do you want to learn about?
+\rTriple Triad is a game played with special cards placed on a 3x3 board.
+\rTriple Triad is a game played with special cards placed on a 3x3 board.
+\rEach card has 4 numbers on it, one per side. These numbers are so-called stats.
+\rEach card has 4 numbers on it, one per side.  These numbers are so-called stats.
+\rPlayers take turns placing cards on the board. As they do so, they try to capture and gain control of their opponent's cards.
+\rPlayers take turns placing cards on the board. As they do so, they try to capture and gain control of their opponent's cards.
+\rThat's where the numbers come in. If a player places a card with a higher number next to a card with a lower number, the player captures that card.
+\rThat's where the numbers come in. If a player places a card with a higher number next to a card with a lower number, the player captures that card.
+\rThus, the goal of the game is to gain control of more cards than the other player by the end of the game.
+\rThus, the goal of the game is to gain control of more cards than the other player by the end of the game.
+\rThere are a number of optional game rules you can apply to individual games.
+\rThere are a number of optional game rules you can apply to individual games.
+\rThey can affect card stats, how cards capture each other, the scoring and the prizes.
+\rThey can affect card stats, how cards capture each other, the scoring and the prizes.
+\rWhen you win a game, you will recive 1 random card from your opponent from their Deck.
+\rWhen you win a game, you will recive 1 random card from your opponent from their Deck.
+\rThis also works the other way around: if you lose, you have to give your opponent one of your cards, chosen at random.
+\rThis also works the other way around: if you lose, you have to give your opponent one of your cards, chosen at random.
+\rYou can change what you win or lose from a game by using an optional game rule.
+\rYou can change what you win or lose from a game by using an optional game rule.
+\rIf you win, I'll give you an Arceus card!
+\rIf you win, I'll give you an Arceus card!
+\xn[Laiba]\rOh, uh, by the way. The tournament was fake... I just wanted someone to play with other than Gumi.
+\xn[Laiba]\rOh, uh, by the way. The tournament was fake... I just wanted someone to play with other than Gumi.
+\xn[Laiba]\rBut hey. Let's play!
+\xn[Laiba]\rBut hey. Let's play!
+\xn[Laiba]\rCongrats!
+\xn[Laiba]\rCongrats!
+\xn[Laiba]\rDarn, so close... Let's try again later!
+\xn[Laiba]\rDarn, so close... Let's try again later!
+\xn[Laiba]\rAy, a tie... Let's try again later!
+\xn[Laiba]\rAy, a tie... Let's try again later!
+\xn[Laiba]\rWell hey. Let's play!
+\xn[Laiba]\rWell hey. Let's play!
+How'd you know?!
+How'd you know?!
+Uh, no?
+Uh, no?
+Buy Cards
+Buy Cards
+Sell Cards
+Sell Cards
+Information
+Information
+Exit
+Exit
+Basics
+Basics
+Game rules
+Game rules
+Prizes
+Prizes

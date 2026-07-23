@@ -1,0 +1,164 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map001]
+<ac>\c[8]\l[3](Please refer to the\nPokémon Essentials Wiki\nfor documentation.)
+<ac>\c[8]\l[3](Please refer to the\nPokémon Essentials Wiki\nfor documentation.)
+\bHello! Sorry to keep you waiting!
+\bHello! Sorry to keep you waiting!
+\bWelcome to the world of Pokémon.
+\bWelcome to the world of Pokémon.
+\bMy name is Oak.
+\bMy name is Oak.
+\bPeople call me the Pokémon Professor.
+\bPeople call me the Pokémon Professor.
+\bIf you need help, I am certainly capable of giving it.
+\bIf you need help, I am certainly capable of giving it.
+\bWell then, without further ado...
+\bWell then, without further ado...
+<ac>\c[0]\l[3]You are about to enter a world\nwhere you will embark on a grand\nadventure of your very own.
+<ac>\c[0]\l[3]You are about to enter a world\nwhere you will embark on a grand\nadventure of your very own.
+<ac>\c[0]\l[5]Speak to people and check things\n wherever you go, be it in towns,\nroads or caves.\n Gather information and hints from\n every possible source.
+<ac>\c[0]\l[5]Speak to people and check things\n wherever you go, be it in towns,\nroads or caves.\n Gather information and hints from\n every possible source.
+<ac>\c[0]\l[3]New paths will open to you when\n you help people in need, overcome\n challenges, and solve mysteries.
+<ac>\c[0]\l[3]New paths will open to you when\n you help people in need, overcome\n challenges, and solve mysteries.
+<ac>\c[0]\l[7]At times, you will be challenged\n by others to a battle.\n At other times, wild creatures\nmay stand in your way.\n\n By overcoming such hurdles,\nyou will gain great power.
+<ac>\c[0]\l[7]At times, you will be challenged\n by others to a battle.\n At other times, wild creatures\nmay stand in your way.\n\n By overcoming such hurdles,\nyou will gain great power.
+<ac>\c[0]\l[2]However, your adventure is not\n solely about becoming powerful.
+<ac>\c[0]\l[2]However, your adventure is not\n solely about becoming powerful.
+<ac>\c[0]\l[7]On your travels, we hope that\n you will meet countless people\n and, through them, achieve\npersonal growth.\n\n This is the most important\nobjective of this adventure.
+<ac>\c[0]\l[7]On your travels, we hope that\n you will meet countless people\n and, through them, achieve\npersonal growth.\n\n This is the most important\nobjective of this adventure.
+\bThis world is inhabited by creatures we call Pokémon.
+\bThis world is inhabited by creatures we call Pokémon.
+\bPeople and Pokémon live together by supporting each other.
+\bPeople and Pokémon live together by supporting each other.
+\bSome people play with Pokémon, some battle with them.
+\bSome people play with Pokémon, some battle with them.
+\bBut we don't know everything about Pokémon yet.
+\bBut we don't know everything about Pokémon yet.
+\bThere are still many mysteries to solve.
+\bThere are still many mysteries to solve.
+\bThat's why I study Pokémon every day.
+\bThat's why I study Pokémon every day.
+\bSome Trainers seek a real challenge in their runs. Would you like to do a challenge run?
+\bSome Trainers seek a real challenge in their runs. Would you like to do a challenge run?
+\bWould you like to enable "Randomizer Challenge?"
+\bWould you like to enable "Randomizer Challenge?"
+\bWould you like to enable "Nuzlocke Challenge?"
+\bWould you like to enable "Nuzlocke Challenge?"
+\bWould you like to enable "Solorun Challenge?"
+\bWould you like to enable "Solorun Challenge?"
+\b\PN, are you ready?
+\b\PN, are you ready?
+\bYour very own Pokémon story is about to unfold.
+\bYour very own Pokémon story is about to unfold.
+\bYou'll face fun times and tough challenges.
+\bYou'll face fun times and tough challenges.
+\bA world of dreams and adventures with Pokémon awaits! Let's go!
+\bA world of dreams and adventures with Pokémon awaits! Let's go!
+\bEnjoy the Starter Kit. You should give credit when using it.
+\bEnjoy the Starter Kit. You should give credit when using it.
+\xn[???]\[6C99797C]Debug mode is active, so I'll skip my spiel.
+\xn[???]\[6C99797C]Debug mode is active, so I'll skip my spiel.
+\xn[???]\[6C99797C]However, if you're not a beta tester, please tell Astralneko, so that this bug can be fixed.
+\xn[???]\[6C99797C]However, if you're not a beta tester, please tell Astralneko, so that this bug can be fixed.
+\xn[???]\[6C99797C]You'll be the male character, named his default name of Aspin, with no challenge modes active.
+\xn[???]\[6C99797C]You'll be the male character, named his default name of Aspin, with no challenge modes active.
+\xn[???]\[6C99797C]Is this OK?
+\xn[???]\[6C99797C]Is this OK?
+\xn[???]\[6C99797C]Alright, then... I'll do my spiel then.
+\xn[???]\[6C99797C]Alright, then... I'll do my spiel then.
+\xn[???]\[6C99797C]Are you there? \1Are we \.connected?
+\xn[???]\[6C99797C]Are you there? \1Are we \.connected?
+\xn[???]\[6C99797C]Heehee... Those who get it, get it.
+\xn[???]\[6C99797C]Heehee... Those who get it, get it.
+\xn[???]\[6C99797C]Look, let's not dawdle any longer. You know the name of the game.
+\xn[???]\[6C99797C]Look, let's not dawdle any longer. You know the name of the game.
+\xn[???]\[6C99797C]Welcome to the world of Pokémon, blah blah blah.
+\xn[???]\[6C99797C]Welcome to the world of Pokémon, blah blah blah.
+\xn[???]\[6C99797C]There are a couple of things I need to know before we continue.
+\xn[???]\[6C99797C]There are a couple of things I need to know before we continue.
+\xn[???]\[6C99797C]Have you ever played a Pokémon fangame made using the Essentials/RPG Maker engine before?
+\xn[???]\[6C99797C]Have you ever played a Pokémon fangame made using the Essentials/RPG Maker engine before?
+\xn[???]\[6C99797C]Excellent. I don't need to tutorialize the controls.
+\xn[???]\[6C99797C]Excellent. I don't need to tutorialize the controls.
+\xn[???]\[6C99797C]Oh... \|Well, here, let's go through the controls then.
+\xn[???]\[6C99797C]Oh... \|Well, here, let's go through the controls then.
+\xn[???]\[6C99797C]Alright... \|Welcome to Pokémon Azure.
+\xn[???]\[6C99797C]Alright... \|Welcome to Pokémon Azure.
+\xn[???]\[6C99797C]Before we continue, I have a few questions I need to ask...
+\xn[???]\[6C99797C]Before we continue, I have a few questions I need to ask...
+\xn[???]\[6C99797C]Alright... What is your name, then?
+\xn[???]\[6C99797C]Alright... What is your name, then?
+\[6C99797C]\xn[???]So you're \PN?
+\[6C99797C]\xn[???]So you're \PN?
+\[6C99797C]\xn[???]Then what IS your name?
+\[6C99797C]\xn[???]Then what IS your name?
+\xn[???]\[6C99797C]Would you like to enable "Solorun Challenge?"
+\xn[???]\[6C99797C]Would you like to enable "Solorun Challenge?"
+\xn[???]\[6C99797C]Then, please, select a starter.
+\xn[???]\[6C99797C]Then, please, select a starter.
+<ac>\c[8]\l[3]\ts[3]Water gives life.\nWithout it, plants wither, and animals starve.\wtnp[80]
+<ac>\c[8]\l[3]\ts[3]Water gives life.\nWithout it, plants wither, and animals starve.\wtnp[80]
+\ts[3]Long ago... before the First Kingdom...\wtnp[60]
+\ts[3]Long ago... before the First Kingdom...\wtnp[60]
+\ts[3]There was a small settlement, near the sea.\wtnp[40]
+\ts[3]There was a small settlement, near the sea.\wtnp[40]
+\ts[3]An idyllic place, thanks to the mighty ocean, offering the townsfolk plentiful food.
+\ts[3]An idyllic place, thanks to the mighty ocean, offering the townsfolk plentiful food.
+\ts[3]Offered a blessing by Diwacucha, the townsfolk were healthy and strong.\wtnp[40]
+\ts[3]Offered a blessing by Diwacucha, the townsfolk were healthy and strong.\wtnp[40]
+\ts[3]With the sea to its back, the town prospered.\wtnp[40]
+\ts[3]With the sea to its back, the town prospered.\wtnp[40]
+\ts[3]But the peace would not last forever...\wtnp[40]
+\ts[3]But the peace would not last forever...\wtnp[40]
+\ts[3]A miscreant would wreak havoc on the town, stealing the blessing for itself.\wtnp[40]
+\ts[3]A miscreant would wreak havoc on the town, stealing the blessing for itself.\wtnp[40]
+\ts[3]And soon after, the town would be forced to take action...\wtnp[40]
+\ts[3]And soon after, the town would be forced to take action...\wtnp[40]
+\xn[Fisherman]\bUgh. All decomposed...
+\xn[Fisherman]\bUgh. All decomposed...
+\xn[Fisherman]\bAnother bad run. That makes two in a row.
+\xn[Fisherman]\bAnother bad run. That makes two in a row.
+\xn[Fisherman]\bI think we've run out of time!
+\xn[Fisherman]\bI think we've run out of time!
+\xn[Daughter]\rWhat will we do?
+\xn[Daughter]\rWhat will we do?
+\xn[Mayor]\bDid anyone see who stole the blessing?!
+\xn[Mayor]\bDid anyone see who stole the blessing?!
+\xn[Time-keeper]\rI did. It was a plant-like creature. A dragon.
+\xn[Time-keeper]\rI did. It was a plant-like creature. A dragon.
+\xn[Time-keeper]\rThe ground turned wicked under its feet...
+\xn[Time-keeper]\rThe ground turned wicked under its feet...
+\xn[Baker]\bSo that's why my wheat was moldy this morning...
+\xn[Baker]\bSo that's why my wheat was moldy this morning...
+\xn[Mayor]\bOh no... One of those magical demons... How will we get it back?
+\xn[Mayor]\bOh no... One of those magical demons... How will we get it back?
+\xn[Hero]\bI will go.
+\xn[Hero]\bI will go.
+\xn[Mayor]\bAre you sure? We could use your help here to keep the town safe...
+\xn[Mayor]\bAre you sure? We could use your help here to keep the town safe...
+\xn[Hero]\bIt won't take long. I'll be fine. I've already figured out its tracks.
+\xn[Hero]\bIt won't take long. I'll be fine. I've already figured out its tracks.
+\xn[Daughter]\rJust... Be careful...
+\xn[Daughter]\rJust... Be careful...
+\xn[Hero]\bI'd recommend you'd prepare to craft an epic.
+\xn[Hero]\bI'd recommend you'd prepare to craft an epic.
+\xn[Bard]\yRight... I presume that means you're promising you'll return?
+\xn[Bard]\yRight... I presume that means you're promising you'll return?
+\ts[3]With that, the hero set off...\wtnp[60]
+\ts[3]With that, the hero set off...\wtnp[60]
+\ts[3]Journeying across the land to return the blessing of the gods to their chosen.\wtnp[60]
+\ts[3]Journeying across the land to return the blessing of the gods to their chosen.\wtnp[60]
+\ts[3]The legendary hero, we call Azure...\wtnp[60]
+\ts[3]The legendary hero, we call Azure...\wtnp[60]
+Controls
+Controls
+Adventure
+Adventure
+No info needed
+No info needed
+No
+No
+Yes
+Yes

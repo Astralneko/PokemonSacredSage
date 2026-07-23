@@ -1,0 +1,90 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map032]
+Welcome to the Herbacious Pokémon Lab.
+Welcome to the Herbacious Pokémon Lab.
+\PN rummaged through the box...
+\PN rummaged through the box...
+A large black gem can be seen inside. Parts of it slowly change color, then turn back to black.
+A large black gem can be seen inside. Parts of it slowly change color, then turn back to black.
+\mr[Fennel]\xn[Fennel]\rOh! Hello, \PN! I was expecting you~
+\mr[Fennel]\xn[Fennel]\rOh! Hello, \PN! I was expecting you~
+\mr[\v[32]\xn[\PN]\pgExpecting... me...?
+\mr[\v[32]\xn[\PN]\pgExpecting... me...?
+\mr[Fennel]\xn[Fennel]\rProfessor Razilwood told me, heehee!
+\mr[Fennel]\xn[Fennel]\rProfessor Razilwood told me, heehee!
+\mr[Fennel]\xn[Fennel]\rActually, last night I had a dream...
+\mr[Fennel]\xn[Fennel]\rActually, last night I had a dream...
+\mr[Fennel]\xn[Fennel]\rIt was about a Pokémon... what was it about...
+\mr[Fennel]\xn[Fennel]\rIt was about a Pokémon... what was it about...
+\mr[Fennel]\xn[Fennel]\rOh, right! A \v[1]!
+\mr[Fennel]\xn[Fennel]\rOh, right! A \v[1]!
+\mr[Fennel]\xn[Fennel]\rIn fact, I think you have one, \PN~
+\mr[Fennel]\xn[Fennel]\rIn fact, I think you have one, \PN~
+\mr[\v[32]\xn[\PN]\pgUh, sure I do...
+\mr[\v[32]\xn[\PN]\pgUh, sure I do...
+\mr[Fennel]\xn[Fennel]\rWhy don't you show me it? In a battle, of course!~
+\mr[Fennel]\xn[Fennel]\rWhy don't you show me it? In a battle, of course!~
+\mr[\v[32]\xn[\PN]\pgOh, of course not!
+\mr[\v[32]\xn[\PN]\pgOh, of course not!
+\mr[Fennel]\xn[Fennel]\rOh? Then prove it. Prove my dream wrong!~
+\mr[Fennel]\xn[Fennel]\rOh? Then prove it. Prove my dream wrong!~
+\mr[Fennel]\xn[Fennel]\rWhy, I have my ways~
+\mr[Fennel]\xn[Fennel]\rWhy, I have my ways~
+\mr[Fennel]\xn[Fennel]\rIn fact, why don't I show you them? In the lovely art of a Pokémon duel!
+\mr[Fennel]\xn[Fennel]\rIn fact, why don't I show you them? In the lovely art of a Pokémon duel!
+\mr[Fennel]\xn[Fennel]\rWhew... It was just as I expected!
+\mr[Fennel]\xn[Fennel]\rWhew... It was just as I expected!
+\mr[Fennel]\xn[Fennel]\rOh... Your Pokémon are hurt... Let me heal them.
+\mr[Fennel]\xn[Fennel]\rOh... Your Pokémon are hurt... Let me heal them.
+\mr[Fennel]\xn[Fennel]\rI bet you wondered how I used that special move~
+\mr[Fennel]\xn[Fennel]\rI bet you wondered how I used that special move~
+\mr[\v[32]\xn[\PN]\pgI was, actually...
+\mr[\v[32]\xn[\PN]\pgI was, actually...
+\mr[Fennel]\xn[Fennel]\rWell, that move was a Z-Move!
+\mr[Fennel]\xn[Fennel]\rWell, that move was a Z-Move!
+\mr[Fennel]\xn[Fennel]\rIt's a special move Pokémon can do with Z-Power!
+\mr[Fennel]\xn[Fennel]\rIt's a special move Pokémon can do with Z-Power!
+\mr[Fennel]\xn[Fennel]\rThough, they can only use a Z-Move once per battle, and they need a ring to enhance their Z-Power...
+\mr[Fennel]\xn[Fennel]\rThough, they can only use a Z-Move once per battle, and they need a ring to enhance their Z-Power...
+\mr[Fennel]\xn[Fennel]\rA ring like this, actually!
+\mr[Fennel]\xn[Fennel]\rA ring like this, actually!
+\mr[Fennel]\xn[Fennel]\rOh, so you know that Z-Moves are powerful special moves Pokémon can do once with a Z-Ring?
+\mr[Fennel]\xn[Fennel]\rOh, so you know that Z-Moves are powerful special moves Pokémon can do once with a Z-Ring?
+\mr[Fennel]\xn[Fennel]\rThen you'll know exactly what this is!
+\mr[Fennel]\xn[Fennel]\rThen you'll know exactly what this is!
+\mr[\v[32]\xn[\PN]\pgWait... I can keep this?
+\mr[\v[32]\xn[\PN]\pgWait... I can keep this?
+\mr[Fennel]\xn[Fennel]\rYeah! I'm actually trying to research the uses for Z-Power, and you having that ring will help!
+\mr[Fennel]\xn[Fennel]\rYeah! I'm actually trying to research the uses for Z-Power, and you having that ring will help!
+\mr[Fennel]\xn[Fennel]\rNow, in one of these boxes, I have some Normalium Z...
+\mr[Fennel]\xn[Fennel]\rNow, in one of these boxes, I have some Normalium Z...
+\mr[Fennel]\xn[Fennel]\rYeah, you need to give a Z-Crystal to your Pokémon for them to use a Z-Move.
+\mr[Fennel]\xn[Fennel]\rYeah, you need to give a Z-Crystal to your Pokémon for them to use a Z-Move.
+\mr[\v[32]\xn[\PN]\pgI see... I'll find it.
+\mr[\v[32]\xn[\PN]\pgI see... I'll find it.
+\mr[Fennel]\xn[Fennel]\rOh! Well, if you do, you can keep it. I can find more, don't worry. Thanks!
+\mr[Fennel]\xn[Fennel]\rOh! Well, if you do, you can keep it. I can find more, don't worry. Thanks!
+Just scientific stuff. Nothing to see here!
+Just scientific stuff. Nothing to see here!
+\xn[Fennel's Assistant]\rI'm monitoring these vital signs.
+\xn[Fennel's Assistant]\rI'm monitoring these vital signs.
+\xn[Fennel's Assistant]\rThe doctor has brought in this strange living crystal, and wants to examine if it can dream...
+\xn[Fennel's Assistant]\rThe doctor has brought in this strange living crystal, and wants to examine if it can dream...
+\xn[Fennel's Assistant]\rShe said it has something to do with Z-Power.
+\xn[Fennel's Assistant]\rShe said it has something to do with Z-Power.
+Expecting?
+Expecting?
+I see...
+I see...
+Uh, sure...
+Uh, sure...
+Nope!
+Nope!
+How'd you know?!
+How'd you know?!
+Yes
+Yes
+No
+No

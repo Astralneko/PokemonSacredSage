@@ -1,0 +1,106 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map011]
+\xn[Kacey]\mr[Black Belt]\bHah! Have you ever seen the Maracaleza Gym?
+\xn[Kacey]\mr[Black Belt]\bHah! Have you ever seen the Maracaleza Gym?
+\ptalk[]Yup, of course I have!
+\ptalk[]Yup, of course I have!
+\xn[Kacey]\mr[Black Belt]\bGood! It's fun to train there, huh?
+\xn[Kacey]\mr[Black Belt]\bGood! It's fun to train there, huh?
+\ptalk[]Nope, not yet...
+\ptalk[]Nope, not yet...
+\xn[Kacey]\mr[Black Belt]\bWHAT?! You need to go! It's just down this hill.
+\xn[Kacey]\mr[Black Belt]\bWHAT?! You need to go! It's just down this hill.
+\sign[sign hgss loc]\l[1]<ac>Maracaleza Primary</ac>
+\sign[sign hgss loc]\l[1]<ac>Maracaleza Primary</ac>
+\sign[sign hgss loc]\l[3]<ac>Maracaleza Town Gym</ac>\nLeader: Akita\nThe Kantonian Legend
+\sign[sign hgss loc]\l[3]<ac>Maracaleza Town Gym</ac>\nLeader: Akita\nThe Kantonian Legend
+\xn[Mrs. Eisner]\mr[Teacher F]\rOh, hello there, \PN! It's been a while!
+\xn[Mrs. Eisner]\mr[Teacher F]\rOh, hello there, \PN! It's been a while!
+\xn\mr\rOh? You're here to see Aria?
+\xn\mr\rOh? You're here to see Aria?
+\ptalk[]Yeah, she said she would be around here...
+\ptalk[]Yeah, she said she would be around here...
+\xn[Mrs. Eisner]\mr[Teacher F]\rOh! Well, she's getting ready to talk with the class about the Sunset League.
+\xn[Mrs. Eisner]\mr[Teacher F]\rOh! Well, she's getting ready to talk with the class about the Sunset League.
+\ptalk[]Uh... no, why?
+\ptalk[]Uh... no, why?
+\xn[Mrs. Eisner]\mr[Teacher F]\rAh... Well either way, she's in here getting ready. She wanted to be a guest for the kindergartners.
+\xn[Mrs. Eisner]\mr[Teacher F]\rAh... Well either way, she's in here getting ready. She wanted to be a guest for the kindergartners.
+\xn[Mrs. Eisner]\mr[Teacher F]\rOh, it seems you have Pokémon too! Well, remember our deal?
+\xn[Mrs. Eisner]\mr[Teacher F]\rOh, it seems you have Pokémon too! Well, remember our deal?
+\ptalk[]Of course!
+\ptalk[]Of course!
+\xn[Mrs. Eisner]\mr[Teacher F]\rAlright! Time to show me your Pokémon!
+\xn[Mrs. Eisner]\mr[Teacher F]\rAlright! Time to show me your Pokémon!
+\ptalk[]Uh... no.
+\ptalk[]Uh... no.
+\xn[Mrs. Eisner]\mr[Teacher F]\rRemember? You said you'd show me your Pokémon!
+\xn[Mrs. Eisner]\mr[Teacher F]\rRemember? You said you'd show me your Pokémon!
+\xn\mr\rHere, I'll show you mine first.
+\xn\mr\rHere, I'll show you mine first.
+\xn[Mrs. Eisner]\mr[Teacher F]\rWow... Your \v[3] is pretty sweet!
+\xn[Mrs. Eisner]\mr[Teacher F]\rWow... Your \v[3] is pretty sweet!
+\xn\mr\rWell, would you like to come in? Aria's inside waiting.
+\xn\mr\rWell, would you like to come in? Aria's inside waiting.
+\xn[Mrs. Eisner]\mr[Teacher F]\rWell, would you like to come in? Aria's inside waiting.
+\xn[Mrs. Eisner]\mr[Teacher F]\rWell, would you like to come in? Aria's inside waiting.
+\xn[Mrs. Eisner]\mr[Teacher F]\rWhy, hello there \PN!
+\xn[Mrs. Eisner]\mr[Teacher F]\rWhy, hello there \PN!
+\xn[Middle-Aged Woman]\mr[Lady]\rSomeone stole my Pokémon! Can you please help?!
+\xn[Middle-Aged Woman]\mr[Lady]\rSomeone stole my Pokémon! Can you please help?!
+\xn\mr\rOkay, well, let me explain first...
+\xn\mr\rOkay, well, let me explain first...
+<ac>\c[8]\l[3]\ts[3]Late last night...\wtnp[40]
+<ac>\c[8]\l[3]\ts[3]Late last night...\wtnp[40]
+\xn[Thief]\mr[Punk Guy]\bHey, this is a robbery!
+\xn[Thief]\mr[Punk Guy]\bHey, this is a robbery!
+\xn\mr\bHand over everything on your person, or my pal here will attack!
+\xn\mr\bHand over everything on your person, or my pal here will attack!
+\xn[Thief's Dustox]\bYeck!
+\xn[Thief's Dustox]\bYeck!
+\xn[Middle-Aged Woman]\mr[Lady]\rOh gosh... You don't understand, I don't have anything worth taking!
+\xn[Middle-Aged Woman]\mr[Lady]\rOh gosh... You don't understand, I don't have anything worth taking!
+\xn[Thief]\mr[Punk Guy]\bYou're holding a Premier Ball. That's something.
+\xn[Thief]\mr[Punk Guy]\bYou're holding a Premier Ball. That's something.
+\xn[Middle-Aged Woman]\mr[Lady]\rIt's just my pet Onstereo... It's nothing you can't find on Route 5!
+\xn[Middle-Aged Woman]\mr[Lady]\rIt's just my pet Onstereo... It's nothing you can't find on Route 5!
+\xn[Thief]\mr[Punk Guy]\bI don't care. Hand it over.
+\xn[Thief]\mr[Punk Guy]\bI don't care. Hand it over.
+\xn[Middle-Aged Woman]\mr[Lady]\rN-Never! My husband's stationed abroad, Temy's all the company I have!
+\xn[Middle-Aged Woman]\mr[Lady]\rN-Never! My husband's stationed abroad, Temy's all the company I have!
+\xn[Thief]\mr[Punk Guy]\bDustox...
+\xn[Thief]\mr[Punk Guy]\bDustox...
+\xn[Thief's Dustox]\bEn?
+\xn[Thief's Dustox]\bEn?
+\xn[Middle-Aged Woman]\mr[Lady]\rF-Fine! Take it! I-I don't wanna get poisoned by that thing...
+\xn[Middle-Aged Woman]\mr[Lady]\rF-Fine! Take it! I-I don't wanna get poisoned by that thing...
+\xn[Thief]\mr[Punk Guy]\bGood...
+\xn[Thief]\mr[Punk Guy]\bGood...
+\xn[Thief]\bLet's go, bud...
+\xn[Thief]\bLet's go, bud...
+\xn[Middle-Aged Woman]\mr[Lady]\rGot it? It was a man in a black hat. Please help!
+\xn[Middle-Aged Woman]\mr[Lady]\rGot it? It was a man in a black hat. Please help!
+\xn[Nessie]\mr[Lady]\rSo, uh, have you found them yet?
+\xn[Nessie]\mr[Lady]\rSo, uh, have you found them yet?
+\xn\mr\rReally? Lemme see!
+\xn\mr\rReally? Lemme see!
+\xn\mr\rI can tell you don't! Please hurry!
+\xn\mr\rI can tell you don't! Please hurry!
+\xn\mr\rWell, hurry up! Please!
+\xn\mr\rWell, hurry up! Please!
+\sign[sign hgss town]\l[2]<ac><b>Maracaleza Town</b>\nSeashell-Laden Town</ac>
+\sign[sign hgss town]\l[2]<ac><b>Maracaleza Town</b>\nSeashell-Laden Town</ac>
+\xn[Construction]\bWe're currently doing construction on the beachfront.
+\xn[Construction]\bWe're currently doing construction on the beachfront.
+\xn[Construction]\bSorry, but you'll have to wait until it's done to head to the water.
+\xn[Construction]\bSorry, but you'll have to wait until it's done to head to the water.
+Yes
+Yes
+No
+No
+Yeah!
+Yeah!
+Uhh...
+Uhh...

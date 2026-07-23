@@ -1,0 +1,48 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map007]
+\bFishin's my life, man...
+\bFishin's my life, man...
+\bThey say if ya give a man a fish, he'll eat for a day, but if ya teach a man to fish, he'll eat for life.
+\bThey say if ya give a man a fish, he'll eat for a day, but if ya teach a man to fish, he'll eat for life.
+\bWhat say you? I'll battle ya, and if ya win, I'll teach ya how to fish.
+\bWhat say you? I'll battle ya, and if ya win, I'll teach ya how to fish.
+\bAight then... Catch of the day!
+\bAight then... Catch of the day!
+\xn[Antelmo]\bWhoo... I haven' battled like that in a long time, man!
+\xn[Antelmo]\bWhoo... I haven' battled like that in a long time, man!
+\xn[Antelmo]\bWell, as promised... I'll give ya my knowledge of fishin'.
+\xn[Antelmo]\bWell, as promised... I'll give ya my knowledge of fishin'.
+\xn[Antelmo]\bUse this rod an' eventually, you'll have enough fish to feed an army. ...Or replace Diego. Whichever.
+\xn[Antelmo]\bUse this rod an' eventually, you'll have enough fish to feed an army. ...Or replace Diego. Whichever.
+\xn[Antelmo]\bTo use this bad boy, ya just go up to water and pull out the rod from your Bag. Wait for a Pokémon to bite, and bingo! Ya just fished.
+\xn[Antelmo]\bTo use this bad boy, ya just go up to water and pull out the rod from your Bag. Wait for a Pokémon to bite, and bingo! Ya just fished.
+\xn[Antelmo]\bYa can also do one of those fancy register things with yer Bag so that you don't have to mess around with it every time ya wanna fish.
+\xn[Antelmo]\bYa can also do one of those fancy register things with yer Bag so that you don't have to mess around with it every time ya wanna fish.
+\bAh, well come back when yer ready to learn.
+\bAh, well come back when yer ready to learn.
+\xn[Antelmo]\bHow's it goin' with that rod there?
+\xn[Antelmo]\bHow's it goin' with that rod there?
+\xn[Antelmo]\bActually, I had an idea. So, you know that there's a legend around these parts...
+\xn[Antelmo]\bActually, I had an idea. So, you know that there's a legend around these parts...
+\xn[Antelmo]\bA Shiny Escueela can be found in one'a these lakes. Though, I've thoroughly checked this one, so I doubt it's this one...
+\xn[Antelmo]\bA Shiny Escueela can be found in one'a these lakes. Though, I've thoroughly checked this one, so I doubt it's this one...
+\xn[Antelmo]\bIf ya find it, I'll give ya a prize. What do ya say?
+\xn[Antelmo]\bIf ya find it, I'll give ya a prize. What do ya say?
+\xn[Antelmo]\bAight! Rumor says it's in Hirihopa Bay, but rumors also say it's in Mastasis Lake, and even in Iguana River!
+\xn[Antelmo]\bAight! Rumor says it's in Hirihopa Bay, but rumors also say it's in Mastasis Lake, and even in Iguana River!
+\xn[Antelmo]\bYa gonna have to figure out which it's in, but I believe in ya!
+\xn[Antelmo]\bYa gonna have to figure out which it's in, but I believe in ya!
+\xn[Antelmo]\bShow me once ya got it, and I'll give ya some moolah...
+\xn[Antelmo]\bShow me once ya got it, and I'll give ya some moolah...
+\xn[Antelmo]\bAlright, but the deal's still up if ya want it!
+\xn[Antelmo]\bAlright, but the deal's still up if ya want it!
+Aye!
+Aye!
+Nah...
+Nah...
+Yes
+Yes
+No
+No

@@ -1,0 +1,176 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[RIBBON_NAMES]
+Contest Memory Ribbon
+Contest Memory Ribbon
+Coolness Master Ribbon
+Coolness Master Ribbon
+Beauty Master Ribbon
+Beauty Master Ribbon
+Cuteness Master Ribbon
+Cuteness Master Ribbon
+Cleverness Master Ribbon
+Cleverness Master Ribbon
+Toughness Master Ribbon
+Toughness Master Ribbon
+Contest Star Ribbon
+Contest Star Ribbon
+Twinkling Star Ribbon
+Twinkling Star Ribbon
+Hoenn Champion Ribbon
+Hoenn Champion Ribbon
+Sinnoh Champion Ribbon
+Sinnoh Champion Ribbon
+Kalos Champion Ribbon
+Kalos Champion Ribbon
+Alola Champion Ribbon
+Alola Champion Ribbon
+Galar Champion Ribbon
+Galar Champion Ribbon
+Paldea Champion Ribbon
+Paldea Champion Ribbon
+Battle Memory Ribbon
+Battle Memory Ribbon
+Skillful Battler Ribbon
+Skillful Battler Ribbon
+Expert Battler Ribbon
+Expert Battler Ribbon
+Battle Tree Great Ribbon
+Battle Tree Great Ribbon
+Battle Tree Master Ribbon
+Battle Tree Master Ribbon
+Tower Master Ribbon
+Tower Master Ribbon
+Best Friends Ribbon
+Best Friends Ribbon
+Training Ribbon
+Training Ribbon
+Battle Royal Master Ribbon
+Battle Royal Master Ribbon
+Master Rank Ribbon
+Master Rank Ribbon
+Hisui Ribbon
+Hisui Ribbon
+Once-in-a-Lifetime Ribbon
+Once-in-a-Lifetime Ribbon
+Red Ribbon
+Red Ribbon
+Green Ribbon
+Green Ribbon
+Blue Ribbon
+Blue Ribbon
+Marine Ribbon
+Marine Ribbon
+Land Ribbon
+Land Ribbon
+Sky Ribbon
+Sky Ribbon
+Lunchtime Mark
+Lunchtime Mark
+Sleepy-Time Mark
+Sleepy-Time Mark
+Dusk Mark
+Dusk Mark
+Dawn Mark
+Dawn Mark
+Cloudy Mark
+Cloudy Mark
+Rainy Mark
+Rainy Mark
+Stormy Mark
+Stormy Mark
+Snowy Mark
+Snowy Mark
+Blizzard Mark
+Blizzard Mark
+Dry Mark
+Dry Mark
+Sandstorm Mark
+Sandstorm Mark
+Misty Mark
+Misty Mark
+Destiny Mark
+Destiny Mark
+Fishing Mark
+Fishing Mark
+Curry Mark
+Curry Mark
+Rare Mark
+Rare Mark
+Uncommon Mark
+Uncommon Mark
+Rowdy Mark
+Rowdy Mark
+Absent-Minded Mark
+Absent-Minded Mark
+Jittery Mark
+Jittery Mark
+Excited Mark
+Excited Mark
+Charismatic Mark
+Charismatic Mark
+Calmness Mark
+Calmness Mark
+Intense Mark
+Intense Mark
+Zoned-Out Mark
+Zoned-Out Mark
+Joyful Mark
+Joyful Mark
+Angry Mark
+Angry Mark
+Smiley Mark
+Smiley Mark
+Teary Mark
+Teary Mark
+Upbeat Mark
+Upbeat Mark
+Peeved Mark
+Peeved Mark
+Intellectual Mark
+Intellectual Mark
+Ferocious Mark
+Ferocious Mark
+Crafty Mark
+Crafty Mark
+Scowling Mark
+Scowling Mark
+Kindly Mark
+Kindly Mark
+Flustered Mark
+Flustered Mark
+Pumped-Up Mark
+Pumped-Up Mark
+Zero Energy Mark
+Zero Energy Mark
+Prideful Mark
+Prideful Mark
+Unsure Mark
+Unsure Mark
+Humble Mark
+Humble Mark
+Thorny Mark
+Thorny Mark
+Vigor Mark
+Vigor Mark
+Slump Mark
+Slump Mark
+Jumbo Mark
+Jumbo Mark
+Mini Mark
+Mini Mark
+Itemfinder Mark
+Itemfinder Mark
+Partner Mark
+Partner Mark
+Gourmand Mark
+Gourmand Mark
+Alpha Mark
+Alpha Mark
+Mightiest Mark
+Mightiest Mark
+Titan Mark
+Titan Mark
+Partner Ribbon
+Partner Ribbon

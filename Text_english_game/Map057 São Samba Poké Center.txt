@@ -1,0 +1,84 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map057]
+\xn[Smart-Looking Guy]\bAh. You must be a Pokémon Trainer.
+\xn[Smart-Looking Guy]\bAh. You must be a Pokémon Trainer.
+\xn[Smart-Looking Guy]\bThought so, thought so.
+\xn[Smart-Looking Guy]\bThought so, thought so.
+\xn[Smart-Looking Guy]\bHow would you not know me?
+\xn[Smart-Looking Guy]\bHow would you not know me?
+\xn[Smart-Looking Guy]\bHm. This is very true.
+\xn[Smart-Looking Guy]\bHm. This is very true.
+\xn[Smart-Looking Guy]\bAh, but you will recognize it soon enough...
+\xn[Smart-Looking Guy]\bAh, but you will recognize it soon enough...
+\xn[Smart-Looking Guy]\bI am Levin Veneras.
+\xn[Smart-Looking Guy]\bI am Levin Veneras.
+\xn[Levin]\bI sponsored the creation of the Sunset League's Pokémon Storage System, hence my name is on it.
+\xn[Levin]\bI sponsored the creation of the Sunset League's Pokémon Storage System, hence my name is on it.
+\xn[Levin]\bThis gives my company, Lightning Banking Services, a major leg up in the online banking world.
+\xn[Levin]\bThis gives my company, Lightning Banking Services, a major leg up in the online banking world.
+\xn[Levin]\bFirst, Raikoin, then the Pokémon Storage System... Eventually, the Internet itself ought to be synonymous with Lightning.
+\xn[Levin]\bFirst, Raikoin, then the Pokémon Storage System... Eventually, the Internet itself ought to be synonymous with Lightning.
+\xn[Levin]\bWhy yes. Have you not heard of Raikoin?
+\xn[Levin]\bWhy yes. Have you not heard of Raikoin?
+\xn[Levin]\bThen again, you may be too young to properly use it... It is a form of currency not beholden to the Verelan government.
+\xn[Levin]\bThen again, you may be too young to properly use it... It is a form of currency not beholden to the Verelan government.
+\xn[Levin]\bThat's too big of a word for someone like yourself to be throwing about...
+\xn[Levin]\bThat's too big of a word for someone like yourself to be throwing about...
+\xn[Levin]\bEither way, that is simply the goal. The recently formed Blue Angel Network is likely to be a competitor. Hence, no monopoly.
+\xn[Levin]\bEither way, that is simply the goal. The recently formed Blue Angel Network is likely to be a competitor. Hence, no monopoly.
+\xn[Levin]\bAnyways. Yeah. I'm the reason the Pokémon Storage System is known as "Levin's PC."
+\xn[Levin]\bAnyways. Yeah. I'm the reason the Pokémon Storage System is known as "Levin's PC."
+\xn[Levin]\bIn fact, I am somewhat of a Trainer myself... Maybe we can battle at some point.
+\xn[Levin]\bIn fact, I am somewhat of a Trainer myself... Maybe we can battle at some point.
+\xn[Levin]\bIn fact, I am somewhat of a Trainer myself... Though you seem to not have much proof of battling prowess yet.
+\xn[Levin]\bIn fact, I am somewhat of a Trainer myself... Though you seem to not have much proof of battling prowess yet.
+\xn[Levin]\bPerhaps we can battle once you gain it...
+\xn[Levin]\bPerhaps we can battle once you gain it...
+\xn[Nurse Lucky]\mr[Nurse NPC]\rHello, and welcome to the Pokémon Center.
+\xn[Nurse Lucky]\mr[Nurse NPC]\rHello, and welcome to the Pokémon Center.
+\xn\mr\rWe restore your tired Pokémon to full health.
+\xn\mr\rWe restore your tired Pokémon to full health.
+\xn\mr\rWould you like to rest your Pokémon?
+\xn\mr\rWould you like to rest your Pokémon?
+\xn\mr[Nurse NPC_smile]\rOK,\. I'll take your Pokémon for a few seconds.
+\xn\mr[Nurse NPC_smile]\rOK,\. I'll take your Pokémon for a few seconds.
+\xn\mr[Nurse NPC]\rIt seems that your Pokémon are infected by Pokérus.
+\xn\mr[Nurse NPC]\rIt seems that your Pokémon are infected by Pokérus.
+\xn\mr\rThat's a microscopic lifeform that can attach to Pokémon,\. inflicting them with a condition commonly called "Pokérus Potential."
+\xn\mr\rThat's a microscopic lifeform that can attach to Pokémon,\. inflicting them with a condition commonly called "Pokérus Potential."
+\xn\mr\rWhile infected,\. Pokémon produce way more life energy than normal,\. allowing them to perform stronger feats.
+\xn\mr\rWhile infected,\. Pokémon produce way more life energy than normal,\. allowing them to perform stronger feats.
+\xn\mr\rHowever,\. they can occasionally overestimate their abilities while dealing with it,\. so keep an eye on your Pokémon.
+\xn\mr\rHowever,\. they can occasionally overestimate their abilities while dealing with it,\. so keep an eye on your Pokémon.
+\xn\mr\rThank you for waiting.
+\xn\mr\rThank you for waiting.
+\xn\mr\rWe've restored your Pokémon to full health.
+\xn\mr\rWe've restored your Pokémon to full health.
+\xn\mr[Nurse NPC_smile]\rStay safe out there!
+\xn\mr[Nurse NPC_smile]\rStay safe out there!
+\xn[Nurse Lucky]\mr[Nurse NPC]\rFirst, you should restore your Pokémon to full health.
+\xn[Nurse Lucky]\mr[Nurse NPC]\rFirst, you should restore your Pokémon to full health.
+\xn\mr\rYour Pokémon have been healed to perfect health.
+\xn\mr\rYour Pokémon have been healed to perfect health.
+Yee na!
+Yee na!
+\xn[Tourist]\rThese Pokémon Centers are very different to the ones back home... I mean, they're two floors tall!
+\xn[Tourist]\rThese Pokémon Centers are very different to the ones back home... I mean, they're two floors tall!
+Yeah, why?
+Yeah, why?
+Who the heck are you?
+Who the heck are you?
+We just met?
+We just met?
+Your face is generic?
+Your face is generic?
+Raikoin?
+Raikoin?
+That sounds monopolistic...
+That sounds monopolistic...
+Yes
+Yes
+No
+No

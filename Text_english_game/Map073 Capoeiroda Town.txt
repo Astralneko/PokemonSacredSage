@@ -1,0 +1,8 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Map073]
+It's locked...
+It's locked...
+\sign[sign hgss town]\l[2]<ac><b>Capoeiroda Town</b>\nWhere many rivers converge
+\sign[sign hgss town]\l[2]<ac><b>Capoeiroda Town</b>\nWhere many rivers converge
