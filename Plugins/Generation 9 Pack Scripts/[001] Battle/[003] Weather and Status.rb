@@ -38,6 +38,21 @@ GameData::Status.register({
   :icon_position => 6
 })
 
+#-------------------------------------------------------------------------------
+# Corruption (Added by Astaryuu, placed here so that I don't need to re-re-edit)
+#-------------------------------------------------------------------------------
+# This has the following effects:
+#  -The user may use the incorrect move. 
+#  -If they do so, they take damage equal to 1/16 of their max HP.
+#  -Corruption may end naturally after 1-4 turns.
+#  -Corruption may end early if a move with the "DebugUser" flag is used on or by the user.
+#-------------------------------------------------------------------------------
+GameData::Status.register({
+  :id            => :CORRUPTION,
+  :name          => _INTL("Corruption"),
+  :animation     => "Corruption",
+  :icon_position => 7
+})
 
 ################################################################################
 # 
@@ -77,6 +92,8 @@ class Battle
     when :Grassy   then pbDisplay(_INTL("Grass is covering the battlefield!"))
     when :Misty    then pbDisplay(_INTL("Mist swirls about the battlefield!"))
     when :Psychic  then pbDisplay(_INTL("The battlefield is weird!"))
+	# Astaryuu edits
+    when :Poison   then pbDisplay(_INTL("The battlefield is irradiated!"))
     end
   end
   
@@ -170,7 +187,7 @@ class Battle
   end
   
   #-----------------------------------------------------------------------------
-  # Aliased to add end of round damage from Frostbite.
+  # Aliased to add end of round damage from Frostbite
   #-----------------------------------------------------------------------------
   alias paldea_pbEORStatusProblemDamage pbEORStatusProblemDamage
   def pbEORStatusProblemDamage(priority)
@@ -256,6 +273,25 @@ class Battle::Battler
   def pbFrostbite(user = nil, msg = nil)
     pbInflictStatus(:FROSTBITE, 0, msg, user)
   end
+  
+  #-----------------------------------------------------------------------------
+  # Corruption utilities. 
+  #-----------------------------------------------------------------------------
+  def frostbite?
+    return pbHasStatus?(:FROSTBITE)
+  end
+
+  def pbCanFrostbite?(user, showMessages, move = nil)
+    return pbCanInflictStatus?(:FROSTBITE, user, showMessages, move)
+  end
+
+  def pbCanFrostbiteSynchronize?(target)
+    return pbCanSynchronizeStatus?(:FROSTBITE, target)
+  end
+
+  def pbFrostbite(user = nil, msg = nil)
+    pbInflictStatus(:FROSTBITE, 0, msg, user)
+  end
 
   #-----------------------------------------------------------------------------
   # Aliased to check for Drowsy/Frostbite. 
@@ -324,6 +360,14 @@ class Battle::Battler
       #-------------------------------------------------------------------------
       when :FROSTBITE
         if pbHasType?(:ICE) || [:Sun, :HarshSun].include?(effectiveWeather)
+          @battle.pbDisplay(_INTL("It doesn't affect {1}...", pbThis(true))) if showMessages
+          return false
+        end
+      #-------------------------------------------------------------------------
+      # Corruption immunities.
+      #-------------------------------------------------------------------------
+      when :CORRUPTION
+        if pbHasType?(:GLITCH)
           @battle.pbDisplay(_INTL("It doesn't affect {1}...", pbThis(true))) if showMessages
           return false
         end
@@ -430,11 +474,13 @@ class Battle::Battler
         @battle.pbDisplay(msg)
       else
         case newStatus
-        when :DROWSY    then @battle.pbDisplay(_INTL("{1} grew drowsy!\nIt may be too sleepy to move!", pbThis))
-        when :FROSTBITE then @battle.pbDisplay(_INTL("{1} was frostbitten!", pbThis))
+        when :DROWSY     then @battle.pbDisplay(_INTL("{1} grew drowsy!\nIt may be too sleepy to move!", pbThis))
+        when :FROSTBITE  then @battle.pbDisplay(_INTL("{1} was frostbitten!", pbThis))
+        when :CORRUPTION then @battle.pbDisplay(_INTL("{1} was corrupted!", pbThis))
         end
       end
       PBDebug.log("[Status change] #{pbThis}'s drowsy count is #{newStatusCount}") if newStatus == :DROWSY
+      PBDebug.log("[Status change] #{pbThis}'s corruption count is #{newStatusCount}") if newStatus == :CORRUPTION
       # Form change check
       pbCheckFormOnStatusChange
       # Synchronize
@@ -450,7 +496,7 @@ class Battle::Battler
   end
 
   #-----------------------------------------------------------------------------
-  # Aliased for curing the Drowsy/Frostbite status conditions.
+  # Aliased for curing the Drowsy/Frostbite/Corruption status conditions.
   #-----------------------------------------------------------------------------
   alias paldea_pbCureStatus pbCureStatus
   def pbCureStatus(showMessages = true)
@@ -459,8 +505,9 @@ class Battle::Battler
       self.status = :NONE
       if showMessages
         case oldStatus
-        when :DROWSY    then @battle.pbDisplay(_INTL("{1} became alert again.", pbThis))
-        when :FROSTBITE then @battle.pbDisplay(_INTL("{1}'s frostbite was healed.", pbThis))
+        when :DROWSY     then @battle.pbDisplay(_INTL("{1} became alert again.", pbThis))
+        when :FROSTBITE  then @battle.pbDisplay(_INTL("{1}'s frostbite was healed.", pbThis))
+        when :CORRUPTION then @battle.pbDisplay(_INTL("{1} was debugged.", pbThis))
         end
       end
       PBDebug.log("[Status change] #{pbThis}'s status was cured") if !showMessages
@@ -497,6 +544,9 @@ class Battle::Battler
 	  PBDebug.log("[Status continues] #{pbThis}'s drowsy count is #{@statusCount}")
     when :FROSTBITE
       @battle.pbDisplay(_INTL("{1} was hurt by its frostbite!", pbThis))
+    when :CORRUPTION
+      @battle.pbDisplay(_INTL("{1}'s move was corrupted!", pbThis))
+	  PBDebug.log("[Status continues] #{pbThis}'s corruption count is #{@statusCount}")
     end
   end
   
@@ -567,6 +617,40 @@ class Battle::Battler
         end
       end
     end
+	if @status == :CORRUPTION
+	  self.statusCount -= 1
+      if @statusCount <= 0
+        pbCureStatus
+      else
+        if @battle.pbRandom(100) < chance
+          pbContinueStatus
+          # Consider the move failed regardless of if nothing happens
+          @lastMoveFailed = true
+          # Display message if disobeyCorruption couldn't find anything
+          didItFail = pbDisobeyCorruption(choice)
+          if !didItFail
+            
+          end
+          return didItFail
+        end
+      end
+    end
+    return true
+  end
+  
+  def pbDisobeyCorruption(choice)
+    # This is literally the "Use another move" section of pbDisobey minus its initial 
+    return false if !@battle.pbCanShowFightMenu?(@index)
+    otherMoves = []
+    eachMoveWithIndex do |_m, i|
+      next if i == choice[1]
+      otherMoves.push(i) if @battle.pbCanChooseMove?(@index, i, false)
+    end
+    return false if otherMoves.length == 0   # No other move to use; do nothing
+    newChoice = otherMoves[@battle.pbRandom(otherMoves.length)]
+    choice[1] = newChoice
+    choice[2] = @moves[newChoice]
+    choice[3] = -1
     return true
   end
   

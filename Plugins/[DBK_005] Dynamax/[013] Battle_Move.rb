@@ -52,6 +52,12 @@ class Battle::Move
     return move.dynamaxMove?
   end
   
+  def gmaxMove?
+    move = GameData::Move.try_get(@id)
+    return false if !move
+    return move.gmaxMove?
+  end
+  
   #-----------------------------------------------------------------------------
   # Returns true if the move can hit through Max Guard.
   #-----------------------------------------------------------------------------

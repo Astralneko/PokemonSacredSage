@@ -150,7 +150,7 @@ class Battle::Battler
   alias zmove_pbSetPowerMoveIndex pbSetPowerMoveIndex
   def pbSetPowerMoveIndex(choice, specialUsage)
     @lastMoveUsedIsZMove = false
-    if choice[2].zMove? && !choice[2].specialUseZMove || @selectedMoveIsZMove && choice[2].damagingMove?
+    if should_convert_zmove?(choice)
       choice[2] = choice[2].convert_zmove(self, @battle, choice[1], specialUsage)
       return choice[1]
     end
@@ -163,6 +163,16 @@ class Battle::Battler
       @powerMoveIndex = -1
     end
     zmove_pbResetPowerMoveIndex(used_move)
+  end
+  
+  #-----------------------------------------------------------------------------
+  # Determines if the user's selected move should be converted into a Z-Move.
+  #----------------------------------------------------------------------------- 
+  def should_convert_zmove?(choice)
+    return false if isRaidBoss? && @selectedExtraMove
+    return true if choice[2].zMove? && !choice[2].specialUseZMove
+    return true if @selectedMoveIsZMove && choice[2].damagingMove?
+    return false
   end
   
   #-----------------------------------------------------------------------------

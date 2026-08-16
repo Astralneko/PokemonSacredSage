@@ -247,6 +247,7 @@ class Battle::Battler
   def celestial?;      return false; end
   
   def hasZMove?;       return false; end
+  def hasZCrystal?;    return false; end
   def hasUltra?;       return false; end
   def hasDynamax?;     return false; end
   def hasStyle?;       return false; end

@@ -1214,19 +1214,24 @@ MidbattleHandlers.add(:midbattle_triggers, "battlerStats",
     when Array
       showAnim = true
       last_change = 0
-      rand_stats = []
+      all_stats = []
       GameData::Stat.each_battle do |s| 
         next if params.include?(s.id)
-        rand_stats.push(s.id)
+        all_stats.push(s.id)
+      end
+      if params.first == :Omni
+        inc = params.last
+        params.clear
+        all_stats.each { |stat| params.push(stat, inc) }
       end
       for i in 0...params.length / 2
         stat, stage = params[i * 2], params[i * 2 + 1]
         next if !stage.is_a?(Integer) || stage == 0
         if stat == :Random
           loop do
-            break if rand_stats.empty?
-            randstat = rand_stats.sample
-            rand_stats.delete(randstat) if randstat
+            break if all_stats.empty?
+            randstat = all_stats.sample
+            all_stats.delete(randstat) if randstat
             next if params.include?(randstat)
             stat = randstat
             break

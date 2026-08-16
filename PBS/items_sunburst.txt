@@ -1,0 +1,21 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+# Gen AN-II Mega Stones
+#-------------------------------
+[BINAMMUNITE]
+Name = Binammunite
+NamePlural = Binammunites
+Pocket = 1
+Price = 0
+BPPrice = 50
+Flags = MegaStone,Fling_80
+Description = One of a variety of mysterious Mega Stones. Have Binammuni hold it, and it will be able to Mega Evolve.
+#-------------------------------
+[PERIKITANITE]
+Name = Perikitanite
+NamePlural = Perikitanite
+Pocket = 1
+Price = 0
+BPPrice = 50
+Flags = MegaStone,Fling_80
+Description = One of a variety of mysterious Mega Stones. Have Perikita hold it, and it will be able to Mega Evolve.

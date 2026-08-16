@@ -141,7 +141,7 @@ class PokemonTrainerCard_Scene
     @sprites["help_overlay"] = IconSprite.new(0, Graphics.height - 48, @viewport)
     @sprites["help_overlay"].setBitmap("Graphics/UI/Trainer Card/overlay_0")
     @sprites["help_overlay"].zoom_x = 2 ; @sprites["help_overlay"].zoom_y = 2
-    @sprites["trainer"] = IconSprite.new(318, 106, @viewport)
+    @sprites["trainer"] = IconSprite.new(318, 280, @viewport)
     @sprites["trainer"].setBitmap(GameData::TrainerType.player_front_sprite_filename($player.trainer_type))
     @sprites["trainer"].x -= (@sprites["trainer"].bitmap.width - 128) / 2 + 36 - 4
     @sprites["trainer"].y -= (@sprites["trainer"].bitmap.height - 128) + 80 + 4

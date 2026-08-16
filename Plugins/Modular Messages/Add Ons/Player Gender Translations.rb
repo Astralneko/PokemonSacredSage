@@ -3,21 +3,23 @@
 # X is the person
 # 1 for first singular, 2 for second singular, 3 for third singular
 # 4-6 are same as 1-3 but for groups of the same gender, while 7-9 are same as 1-3 but for groups of different genders
-# use 0 for nonpronoun things such as Spanish adding -o/a/e to adjectives
+# use 0 for nonpronoun things such as Spanish adding -o/a/e toectives
 #
 # Y is a number of the following:
-# 1 = formal nominative 2 = formal accusative 3 = formal genitive 4 = formal dative
-# 5 = informal nominative 6 = informal accusative 7 = informal genitive 8 = informal dative
+# 0 = formal nominative 1 = formal accusative 2 = formal genitive 3 = formal dative
+# 4 = informal nominative 5 = informal accusative 6 = informal genitive 7 = informal dative
 #
 # These handlers are used so that it's easy to identify these in translation - seeing as >1000 map IDs already mandate a separate english.dat from common, I consider this to be fine
 # English translated text will likely use exclusively category 3 due to very rare gender agreement otherwise
-def anPlayerPronoun(number)
+def anPlayerPronoun
 	gender = $player.gender
 	pronouns = [
 		[ # Masculine
-			[ # 0 is used only for non-pronoun things, such as adjective endings
-				_INTL("masc adj ending 1"),_INTL("masc adj ending 2"),_INTL("masc adj ending 3"),_INTL("masc adj ending 4"),
-				_INTL("masc adj ending 5"),_INTL("masc adj ending 6"),_INTL("masc adj ending 7"),_INTL("masc adj ending 8")
+			[ # 0 is used only for non-pronoun things, such asective and verb endings
+				_INTL("masc ending 1"),_INTL("masc ending 2"),_INTL("masc ending 3"),_INTL("masc ending 4"),
+				_INTL("masc ending 5"),_INTL("masc ending 6"),_INTL("masc ending 7"),_INTL("masc ending 8"),
+				_INTL("masc ending 9"),_INTL("masc ending 10"),_INTL("masc ending 11"),_INTL("masc ending 12"),
+				_INTL("masc ending 13"),_INTL("masc ending 14"),_INTL("masc ending 15"),_INTL("masc ending 16")
 			],[ # First person
 				_INTL("1SG.M.FOR.NOM"),_INTL("1SG.M.FOR.ACC"),_INTL("1SG.M.FOR.GEN"),_INTL("1SG.M.FOR.DAT"),
 				_INTL("1SG.M.FAM.NOM"),_INTL("1SG.M.FAM.ACC"),_INTL("1SG.M.FAM.GEN"),_INTL("1SG.M.FAM.DAT")
@@ -47,9 +49,11 @@ def anPlayerPronoun(number)
 				_INTL("3PL.MIX.FAM.NOM"),_INTL("3PL.MIX.FAM.ACC"),_INTL("3PL.MIX.FAM.GEN"),_INTL("3PL.MIX.FAM.DAT")
 			]
 		],[ # Feminine
-			[ # 0 is used only for non-pronoun things, such as adjective endings
-				_INTL("fem adj ending 1"),_INTL("fem adj ending 2"),_INTL("fem adj ending 3"),_INTL("fem adj ending 4"),
-				_INTL("fem adj ending 5"),_INTL("fem adj ending 6"),_INTL("fem adj ending 7"),_INTL("fem adj ending 8")
+			[ # 0 is used only for non-pronoun things, such asective and verb endings
+				_INTL("fem ending 1"),_INTL("fem ending 2"),_INTL("fem ending 3"),_INTL("fem ending 4"),
+				_INTL("fem ending 5"),_INTL("fem ending 6"),_INTL("fem ending 7"),_INTL("fem ending 8"),
+				_INTL("fem ending 9"),_INTL("fem ending 10"),_INTL("fem ending 11"),_INTL("fem ending 12"),
+				_INTL("fem ending 13"),_INTL("fem ending 14"),_INTL("fem ending 15"),_INTL("fem ending 16")
 			],[ # First person
 				_INTL("1SG.F.FOR.NOM"),_INTL("1SG.F.FOR.ACC"),_INTL("1SG.F.FOR.GEN"),_INTL("1SG.F.FOR.DAT"),
 				_INTL("1SG.F.FAM.NOM"),_INTL("1SG.F.FAM.ACC"),_INTL("1SG.F.FAM.GEN"),_INTL("1SG.F.FAM.DAT")
@@ -79,9 +83,11 @@ def anPlayerPronoun(number)
 				_INTL("3PL.MIX.FAM.NOM"),_INTL("3PL.MIX.FAM.ACC"),_INTL("3PL.MIX.FAM.GEN"),_INTL("3PL.MIX.FAM.DAT")
 			]
 		],[ # Neuter
-			[ # 0 is used only for non-pronoun things, such as adjective endings
-				_INTL("neutral adj ending 1"),_INTL("neutral adj ending 2"),_INTL("neutral adj ending 3"),_INTL("neutral adj ending 4"),
-				_INTL("neutral adj ending 5"),_INTL("neutral adj ending 6"),_INTL("neutral adj ending 7"),_INTL("neutral adj ending 8")
+			[ # 0 is used only for non-pronoun things, such asective and verb endings
+				_INTL("neutral ending 1"),_INTL("neutral ending 2"),_INTL("neutral ending 3"),_INTL("neutral ending 4"),
+				_INTL("neutral ending 5"),_INTL("neutral ending 6"),_INTL("neutral ending 7"),_INTL("neutral ending 8"),
+				_INTL("neutral ending 9"),_INTL("neutral ending 10"),_INTL("neutral ending 11"),_INTL("neutral ending 12"),
+				_INTL("neutral ending 13"),_INTL("neutral ending 14"),_INTL("neutral ending 15"),_INTL("neutral ending 16")
 			],[ # First person
 				_INTL("1SG.N.FOR.NOM"),_INTL("1SG.N.FOR.ACC"),_INTL("1SG.N.FOR.GEN"),_INTL("1SG.N.FOR.DAT"),
 				_INTL("1SG.N.FAM.NOM"),_INTL("1SG.N.FAM.ACC"),_INTL("1SG.N.FAM.GEN"),_INTL("1SG.N.FAM.DAT")

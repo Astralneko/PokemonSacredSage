@@ -1,0 +1,4 @@
+Name       = Instant Messages
+Version    = 1.3
+Essentials = 20.1,21.1
+Credits    = wrigty12

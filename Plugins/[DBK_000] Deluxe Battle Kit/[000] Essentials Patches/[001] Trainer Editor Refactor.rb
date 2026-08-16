@@ -129,6 +129,8 @@ def pbRegisterPartner(tr_type, tr_name, tr_id = 0)
   tr_type = GameData::TrainerType.get(tr_type).id
   pbCancelVehicles
   trainer = pbLoadTrainer(tr_type, tr_name, tr_id)
+  pbMissingTrainer(tr_type, tr_name, tr_id) if !trainer
+  trainer = pbLoadTrainer(tr_type, tr_name, tr_id) if !trainer
   EventHandlers.trigger(:on_trainer_load, trainer)
   trainer.party.each do |i|
     i.owner = Pokemon::Owner.new_from_trainer(trainer)

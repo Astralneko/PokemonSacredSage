@@ -74,6 +74,7 @@ Pokemon = MACAWK,9
 LoseText = "You're pretty shocking yourself!"
 Pokemon = CATERCELL,8
 Pokemon = WURMPLE,8
+Pokemon = SEWADDLE,8
 #-------------------------------
 [HIKER,Manolo]
 LoseText = "Just be more careful out there!"

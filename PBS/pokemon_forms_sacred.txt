@@ -709,11 +709,3 @@ BaseExp = 315
 FormName = Monster Form
 BaseStats = 124,101,88,68,175,144
 BaseExp = 315
-#-------------------------------
-# Generation AN-II
-#-------------------------------
-[SURSKIT,1]
-FormName = Zantarean
-Types = BUG,ROCK
-Generation = 102
-Flags = InheritFormWithEverStone

@@ -66,14 +66,14 @@ class SpriteWindow_DebugVariables < Window_DrawableCommand
       x += (w / 2) - (width / 2)
     end
     y += 8   # TEXT OFFSET
-    base = Color.new(96, 96, 96)
+    base = Color.new(248, 248, 248) #Color.new(96, 96, 96)
     case colors
     when 1   # Red
-      base = Color.new(168, 48, 56)
+      base = Color.new(248, 144, 164) #Color.new(168, 48, 56)
     when 2   # Green
-      base = Color.new(0, 144, 0)
+      base = Color.new(144, 248, 164) #Color.new(0, 144, 0)
     end
-    pbDrawShadowText(self.contents, x, y, [width, w].max, h, t, base, Color.new(208, 208, 200))
+    pbDrawShadowText(self.contents, x, y, [width, w].max, h, t, base, Color.new(80, 80, 80)) # Color.new(208,208,200)
   end
 
   def drawItem(index, _count, rect)

@@ -8,7 +8,9 @@ class PokemonPokedexInfo_Scene
   def pbDataPageMenu
     pbPlayDecisionSE
     pbDrawDataNotes
-    species = GameData::Species.get_species_form(@species, @form).id
+    species_data = GameData::Species.get_species_form(@species, @form)
+    special_form, _check_form, _check_item = pbGetSpecialFormData(species_data)
+    species_id = species_data.id
     loop do
       Graphics.update
       Input.update
@@ -24,17 +26,17 @@ class PokemonPokedexInfo_Scene
         #-----------------------------------------------------------------------
         # Displays move lists.
         when :moves
-          next if !$player.owned?(species)
-          pbChooseMove
+          next if !$player.owned?(species_id)
+          pbChooseMove(species_data, special_form)
         #-----------------------------------------------------------------------
         # Displays item/ability lists.
         when :item, :ability
-          next if !$player.owned?(species)
+          next if !$player.owned?(species_id)
           pbChooseDataList
         #-----------------------------------------------------------------------
         # Displays compatible species lists.
         when :general, :family, :stats, :habitat, :egg, :shape
-          next if !$player.owned?(species)
+          next if !$player.owned?(species_id)
           pbChooseSpeciesDataList
         end
         break if @forceRefresh
@@ -151,8 +153,8 @@ class PokemonPokedexInfo_Scene
     # Sorts all owned species into compatibility lists.
     #---------------------------------------------------------------------------
     family = species.get_family_species
-    blacklisted = [:PICHU_2, :FLOETTE_5, :GIMMIGHOUL_1].include?(species.id) ||
-                  species.species == :PIKACHU && (8..15).include?(species.form)
+    blacklisted = [:PICHU_2, :GIMMIGHOUL_1].include?(species.id) ||
+                  species.species == :PIKACHU && (3..16).include?(species.form)
     GameData::Species.each do |sp|
       next if !sp.display_species?(@dexlist, species)
       regional_form = sp.form > 0 && sp.is_regional_form?
@@ -330,9 +332,9 @@ class PokemonPokedexInfo_Scene
             break
           end
         when :primal then function = "getPrimalForm"
-        when :ultra  then function = "getUltraForm"
-        when :emax   then function = "getEternamaxForm"
-        when :tera   then function = "getTerastalForm"
+        when :ultra  then function = "getUltraForm"     if PluginManager.installed?("[DBK] Z-Power")
+        when :emax   then function = "getEternamaxForm" if PluginManager.installed?("[DBK] Dynamax")
+        when :tera   then function = "getTerastalForm"  if PluginManager.installed?("[DBK] Terastallization")
         end
         next if function.nil?
         if MultipleForms.hasFunction?(species.species, function)

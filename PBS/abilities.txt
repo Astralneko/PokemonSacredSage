@@ -1382,3 +1382,28 @@ Description = The Pokémon's aura powers up all Water-type moves.
 [PERMAFROST]
 Name = Permafrost
 Description = It's always frosty, and attacks without thawing.
+#-------------------------------
+[SUNDRY]
+Name = Sun Dry
+Description = In harsh sunlight, Special Defense falls, but Speed rises.
+#-------------------------------
+[TAGTEAM]
+Name = Tag Team
+Description = Each of the Pokémon act independently.
+#-------------------------------
+[PANDORASBOX]
+Name = Pandora's Box
+Description = The first time it is supposed to faint, it revives in Prideful Form.
+Flags = FasterEggHatching
+#-------------------------------
+[UNDERDOG]
+Name = Underdog
+Description = If its opponent hits harder, it increases its strength.
+#-------------------------------
+[LIVEWIRE]
+Name = Live Wire
+Description = Contact moves may additionally paralyze the target.
+#-------------------------------
+[STARNURSERY]
+Name = Star Nursery
+Description = Celestial-types on the field regenerate health each turn.

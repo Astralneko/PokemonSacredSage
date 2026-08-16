@@ -52,6 +52,8 @@ module Modular_Messages
 		next "\\xn[\\pn]\\mr[" + something.join("_") + "]\\ds[\\v[32]]\\pg" if $player
 		next "\\xnmr[Aspin]"
 	end
+	# replace \empty with ""
+    @@hash["text"].gsub!(/\\empty/i, "")
   end
   
 #-------------------------------

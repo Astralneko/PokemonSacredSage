@@ -106,7 +106,13 @@ class Battle::Scene
     # General UI elements.
     poke = (battler.opposes?) ? battler.displayPokemon : battler.pokemon
     level = (battler.isRaidBoss?) ? "???" : battler.level.to_s
-    movename = (battler.lastMoveUsed) ? GameData::Move.get(battler.lastMoveUsed).name : "---"
+    if battler.lastMoveUsed == :STRUGGLE
+      movename = "Struggle"
+    elsif GameData::Move.exists?(battler.lastMoveUsed)
+      movename = GameData::Move.get(battler.lastMoveUsed).name
+    else
+      movename = "---"
+    end
     movename = movename[0..12] + "..." if movename.length > 16
     imagePos = [
       [@path + "info_bg", 0, 0],

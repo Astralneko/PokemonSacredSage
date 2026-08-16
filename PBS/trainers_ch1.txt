@@ -169,12 +169,13 @@ Pokemon = PAVOFUEGO,11
 [BUGCATCHER,Lawrence]
 LoseText = "Ack, you clipped my wings!"
 Pokemon = BEAUTIFLY,10
-Pokemon = RESPLUMA,10
+Pokemon = WOOBAT,9
+	Form = 1
 #-------------------------------
 [BUGCATCHER,Lexington]
 LoseText = "Ack, you clipped my wings!"
-Pokemon = BEAUTIFLY,10
-Pokemon = MACAWK,10
+Pokemon = DUSTOX,10
+Pokemon = RESPLUMA,9
 #-------------------------------
 [LEADERS_Aria,Aria]
 LoseText = "Well done, \PN... Congratulations!"

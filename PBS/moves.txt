@@ -8960,7 +8960,7 @@ Target = NearOther
 FunctionCode = DoublePowerIfTargetStatusProblemFrostbiteTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
-Description = The user attacks the target with spine-chilling resentment. This also lowers the target’s Attack stat.
+Description = The user attacks the target with spine-chilling resentment. This may also give them frostbite.
 #-------------------------------
 [TRIPLEARROWS]
 Name = Triple Arrows

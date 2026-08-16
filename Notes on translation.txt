@@ -1,0 +1,35 @@
+Mappings for the player pronoun thing \ppr[X][Y] in different languages follow.
+These are listed in the order M, F, N like in the anPlayerPronoun method.
+
+========================
+ENGLISH
+========================
+X = 0:
+- Y = 0: "is", "is", "are"
+- Y = 1: "s", "s", ""
+X = 3:
+- Y = 0: nominative pronouns "he", "she", "they"
+- Y = 1: accusative pronouns "him", "her", "them"; should also be used with reflexive as \ppr[3][1]self, as although "them" is technically plural, it is singular here and "yoursel(f/ves)" implies "themsel(f/ves)"
+- Y = 2: possessive pronouns "his", "her", "their"
+- Y = 6: possessive adjectives "his", "hers", "theirs"; entirely since \ppr[3][6] is not \ppr[3][2]s if the player is masculine
+
+No other X values are necessary, as 3rd person plural is always "them" and 1st and 2nd person don't decline for gender.
+Yes, technically \ppr[3][6] is .FOR.GEN, but with no T-V distinction in modern English, I'm reusing it for this
+
+========================
+SPANISH
+========================
+X = 0:
+- Y = 0: "o", "a", "e" (related endings that end in these vowels, such as -it@, are unnecessary, just do <word>it\ppr[0][0])
+- Y = 1: "dor", "dora", "dore" (unsure if this is standard)
+X = 3:
+- Y = 0: "él", "ella", "elle"
+- Y = 1: "lo", "la", "le"
+X = 4, Y = 0: "nosotros", "nosotras", "nosotres"
+X = 6, Y = 1: "los", "las", "les"
+
+
+X = 3 or 6, Y = 2 is excluded because it is always "a \ppr[3][0]"
+X = 3 or 6, Y = 3 is excluded because it is always either "a \ppr[3][0]" or "le"
+X = 7 and X = 9 are excluded because it is always the same (though \ppr[7][0] being "nosotres" could be contentious)
+X = 2 is excluded because although formal/informal pairs exist in \ppr, they are unnecessary

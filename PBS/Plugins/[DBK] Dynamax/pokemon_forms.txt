@@ -8,8 +8,11 @@ Flags = Legendary,CannotDynamax
 [GROUDON,1]
 Flags = Legendary,CannotDynamax
 #-------------------------------
-[NECROZMA,3]
+[NECROZMA,4]
 Flags = Legendary,CannotDynamax
 #-------------------------------
-[NECROZMA,4]
+[NECROZMA,5]
+Flags = Legendary,CannotDynamax
+#-------------------------------
+[NECROZMA,6]
 Flags = Legendary,CannotDynamax

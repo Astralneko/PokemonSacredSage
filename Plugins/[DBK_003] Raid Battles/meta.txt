@@ -1,0 +1,10 @@
+﻿Name       = [DBK] Raid Battles
+Version    = 2.0
+Essentials = 21.1
+Requires   = Deluxe Battle Kit,1.3.1
+Optional   = [DBK] Z-Power,1.1.2
+Optional   = [DBK] Dynamax,1.1.4
+Optional   = [DBK] Terastallization,1.1.5
+Conflicts  = Raid Battles Hotfixes,1.0
+Website    = https://lucidious89-tutorials.gitbook.io/deluxe-battle-kit-tutorial/deluxe-battle-kit-for-v21.1/add-on-tutorials/raid-battles
+Credits    = Lucidious89

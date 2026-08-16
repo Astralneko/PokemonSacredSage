@@ -540,8 +540,9 @@ Battle::AbilityEffects::OnBeingHit.add(:ILLUSION,
 class Battle::Move::TwoTurnMove < Battle::Move
   def pbShowAnimation(id, user, targets, hitNum = 0, showAnimation = true)
     hitNum = 1 if @chargingTurn && !@damagingTurn
+    super
     case @function_code
-    #-----------------------------------------------------------------------------
+    #---------------------------------------------------------------------------
     # These moves completely vanish the user during the charging turn.
     when "TwoTurnAttackInvulnerableUnderground",         # Dig
          "TwoTurnAttackInvulnerableUnderwater",          # Dive
@@ -553,33 +554,32 @@ class Battle::Move::TwoTurnMove < Battle::Move
          "TwoTurnAttackInvulnerableInSkyParalyzeTarget", # Bounce
          "TwoTurnAttackInvulnerableInSkyTargetCannotAct" # Sky Drop
       vanishMode = 2
-    #-----------------------------------------------------------------------------
+    #---------------------------------------------------------------------------
     # All other two-turn moves do not vanish the user.
     else
       vanishMode = 0
     end
     if vanishMode > 0
-	  #-----------------------------------------------------------------------------
-	  # Vanishes during the charging turn.
+      #-------------------------------------------------------------------------
+      # Vanishes during the charging turn.
       if hitNum == 1
         @battle.scene.pbChangePokemon(user, user.visiblePokemon, vanishMode)
         if @function_code == "TwoTurnAttackInvulnerableInSkyTargetCannotAct"  # Sky Drop also vanishes the targets.
           targets.each do |b|
-          @battle.scene.pbChangePokemon(b, b.visiblePokemon, vanishMode)
-        end
+            @battle.scene.pbChangePokemon(b, b.visiblePokemon, vanishMode)
           end
-      #-----------------------------------------------------------------------------
+        end
+      #-------------------------------------------------------------------------
       # Reappears during the attacking turn.
-        else
-          @battle.scene.pbChangePokemon(user, user.visiblePokemon, 0)
-          if @function_code == "TwoTurnAttackInvulnerableInSkyTargetCannotAct"  # Targets of Sky Drop also reappear.
-            targets.each do |b|
+      else
+        @battle.scene.pbChangePokemon(user, user.visiblePokemon, 0)
+        if @function_code == "TwoTurnAttackInvulnerableInSkyTargetCannotAct"  # Targets of Sky Drop also reappear.
+          targets.each do |b|
             @battle.scene.pbChangePokemon(b, b.visiblePokemon, 0)
           end
         end
       end
     end
-    super
   end
 end
 

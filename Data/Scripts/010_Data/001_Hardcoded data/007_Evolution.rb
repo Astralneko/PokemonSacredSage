@@ -304,6 +304,35 @@ GameData::Evolution.register({
 })
 
 GameData::Evolution.register({
+  :id                   => :LevelHoldEviolite, # Lucideon
+  :parameter            => Integer,
+  :level_up_proc        => proc { |pkmn, parameter|
+    next pkmn.level >= parameter && pkmn.item == :EVIOLITE
+  },
+  :after_evolution_proc => proc { |pkmn, new_species, parameter, evo_species|
+    next false if evo_species != new_species || !pkmn.hasItem?(parameter)
+    pkmn.item = nil   # Item is now consumed
+    next true
+  }
+})
+
+GameData::Evolution.register({
+  :id            => :LevelPoison, # Veneon
+  :any_level_up => true,
+  :level_up_proc => proc { |pkmn, parameter|
+    next pkmn.status == :POISON
+  }
+})
+
+GameData::Evolution.register({
+  :id            => :LevelBurn, # Matareon
+  :any_level_up => true,
+  :level_up_proc => proc { |pkmn, parameter|
+    next pkmn.status == :BURN
+  }
+})
+
+GameData::Evolution.register({
   :id            => :Happiness,
   :any_level_up  => true,   # Needs any level up
   :level_up_proc => proc { |pkmn, parameter|

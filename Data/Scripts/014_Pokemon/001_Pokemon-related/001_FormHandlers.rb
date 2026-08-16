@@ -561,14 +561,15 @@ MultipleForms.register(:MIMIKYU, {
 
 MultipleForms.register(:NECROZMA, {
   "getFormOnLeavingBattle" => proc { |pkmn, battle, usedInBattle, endBattle|
-    # Fused forms are 1 and 2, Ultra form is 3 or 4 depending on which fusion
-    next pkmn.form - 2 if pkmn.form >= 3 && (pkmn.fainted? || endBattle)
+    # Fused forms are 1, 2, 3, Ultra form is 4, 5, 6 depending on which fusion
+    next pkmn.form - 3 if pkmn.form >= 4 && (pkmn.fainted? || endBattle)
   },
   "onSetForm" => proc { |pkmn, form, oldForm|
-    next if form > 2 || oldForm > 2   # Ultra form changes don't affect moveset
+    next if form > 3 || oldForm > 3   # Ultra form changes don't affect moveset
     form_moves = [
       :SUNSTEELSTRIKE,   # Dusk Mane (with Solgaleo) (form 1)
-      :MOONGEISTBEAM     # Dawn Wings (with Lunala) (form 2)
+      :MOONGEISTBEAM,    # Dawn Wings (with Lunala) (form 2)
+	  :LIGHTSPEEDSMASH   # Twilight Scales (with Astrayshi) (form 3)
     ]
     if form == 0   # Normal
       # Turned back into the base form; forget form-specific moves
@@ -578,7 +579,7 @@ MultipleForms.register(:NECROZMA, {
         pbMessage(_INTL("{1} forgot {2}...", pkmn.name, GameData::Move.get(move).name))
       end
       pbLearnMove(pkmn, :CONFUSION) if pkmn.numMoves == 0
-    else   # Dusk Mane, Dawn Wings
+    else   # Dusk Mane, Dawn Wings, Twilight Scales
       # Turned into an alternate form; try learning that form's unique move
       new_move_id = form_moves[form - 1]
       pbLearnMove(pkmn, new_move_id, true)

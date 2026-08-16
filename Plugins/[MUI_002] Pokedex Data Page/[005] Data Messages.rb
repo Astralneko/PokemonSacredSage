@@ -580,14 +580,14 @@ class PokemonPokedexInfo_Scene
     #---------------------------------------------------------------------------
     # Move is learned as an Egg Move.
     #---------------------------------------------------------------------------
-    if species.get_egg_moves.include?(moveID)
+    if species.get_inherited_moves.include?(moveID)
       method = t[1] + "inheritance" + t[0]
       methods.push(method)
     end
     #---------------------------------------------------------------------------
     # Move is learned via TM or move tutor.
     #---------------------------------------------------------------------------
-    if species.get_tutor_moves.include?(moveID)
+    if species.tutor_moves.include?(moveID)
       method = "visiting a " + t[1] + "move tutor" + t[0]
       # If none of the below applies, assume this is a move tutor move.
       GameData::Item.each do |item|

@@ -12,7 +12,7 @@ module Settings
   #-----------------------------------------------------------------------------
   # The switch number used to unlock the Data page in the Pokedex.
   #-----------------------------------------------------------------------------
-  POKEDEX_DATA_PAGE_SWITCH = 60
+  POKEDEX_DATA_PAGE_SWITCH = 59 # Same switch as phenomena
   
   #-----------------------------------------------------------------------------
   # Toggles whether or not alternative Egg Group names should be displayed.
@@ -22,7 +22,11 @@ module Settings
   #-----------------------------------------------------------------------------
   # List of regional names to check for to display for evolution methods.
   #-----------------------------------------------------------------------------
-  REGIONAL_NAMES = ["Alolan", "Galarian", "Hisuian", "Paldean"]
+  REGIONAL_NAMES = [
+      "Alolan", "Galarian", "Hisuian", "Sinnohan", "Paldean", # Canon regions
+      "Verelan", "Zantarean", "Silatian", "Syraiki", "Xureeni", # AN regions
+      "Iradian" # JC regions
+  ]
 end
 
 

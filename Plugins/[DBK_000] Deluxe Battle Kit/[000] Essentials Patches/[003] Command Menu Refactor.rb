@@ -467,6 +467,9 @@ class Battle::AI
   end
   
   def pbGetMovesToScore
+    if @battle.pbRegisteredMegaEvolution?(@user.battler.index)
+      @user.battler.display_mega_moves
+    end
     moves_to_score = [] 
     Pokemon::MAX_MOVES.times do |i|
       move = @user.battler.moves[i]

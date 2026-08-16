@@ -641,3 +641,29 @@ TotalPP = 10
 Target = BothSides
 FunctionCode = StartSpiritTerrain
 Description = The user turns the ground irradiated for five turns. Grounded Pokémon take more damage from poison.
+#-------------------------------
+[LIGHTSPEEDSMASH]
+Name = Lightspeed Smash
+Type = CELESTIAL
+Category = Physical
+Power = 90
+Accuracy = 95
+TotalPP = 10
+Target = NearOther
+Priority = 2
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user, Astrayshi, flies blisteringly fast past the target, hitting them on the way.
+#-------------------------------
+[SHOOTINGSTAR]
+Name = Shooting Star
+Type = CELESTIAL
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 20
+Target = Other
+Priority = 0
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove
+Description = The user throws a shooting star into the air, which falls down upon any target on the field.

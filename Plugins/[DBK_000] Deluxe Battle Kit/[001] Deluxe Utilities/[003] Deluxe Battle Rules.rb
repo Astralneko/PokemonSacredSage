@@ -275,6 +275,7 @@ class Battle::Battler
       if $PokemonStorage.full?
         @battle.scene.pbRevertBattlerEnd
         @battle.pbDisplay(_INTL("But there is no room left in the PC!"))
+        @battle.scene.pbRevertBattlerEnd
         target.wild_flee(fleeMsg)
       else
         ball = nil
@@ -296,10 +297,12 @@ class Battle::Battler
           @battle.pbThrowPokeBall(target.index, ball)
           target.wild_flee(fleeMsg) if @battle.poke_ball_failed
         else
+          @battle.scene.pbRevertBattlerEnd
           target.wild_flee(fleeMsg)
         end
       end
     else
+      @battle.scene.pbRevertBattlerEnd
       target.wild_flee(fleeMsg)
     end
   end

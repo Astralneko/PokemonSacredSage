@@ -351,8 +351,15 @@ class Battle::Battler
     return false if @battle.raidBattle? && @battle.raidRules[:style] != :Ultra
     return false if !getActiveState.nil?
     return false if hasEligibleAction?(:primal, :zodiac)
-    return false if !@item_id || @item_id != @pokemon&.getUltraItem
+    return false if !hasUltraItem?
     return @pokemon&.hasUltraForm?
+  end
+  
+  #-----------------------------------------------------------------------------
+  # Checks if the battler is holding an item which will allow them to Ultra Burst.
+  #-----------------------------------------------------------------------------
+  def hasUltraItem?
+    return @item_id && @item_id == @pokemon&.getUltraItem
   end
   
   #-----------------------------------------------------------------------------
@@ -373,9 +380,7 @@ class Battle::Battler
     return false if !check_item
     item_data = GameData::Item.get(check_item)
     return true if item_data.is_zcrystal?
-    if (ultra? || @pokemon.hasUltraForm?) && !@effects[PBEffects::Transform]
-      return true if @pokemon.getUltraItem == item_data.id
-    end
+    return true if hasUltraItem? && !@effects[PBEffects::Transform]
     return ultra_unlosableItem?(check_item)
   end
 end

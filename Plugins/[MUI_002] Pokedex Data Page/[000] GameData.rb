@@ -214,6 +214,9 @@ module GameData
         when "Magnetic"
           location = (c.empty?) ? "magnetic area" : c[2] + "magnetic area" + c[0]
           param_name = _INTL("in a {1}", location)
+        when "Meteorite"
+          location = (c.empty?) ? "Meteorite" : c[2] + "Meteorite" + c[0]
+          param_name = _INTL("near a {1}", location)
         else
           location = (c.empty?) ? "special area" : c[2] + "special area" + c[0]
           param_name = _INTL("in a {1}", location)
@@ -279,10 +282,13 @@ GameData::Evolution.each do |evo|
   when :LevelDiving                            then evo.description = _INTL("while traveling underwater")
   when :LevelDarkness                          then evo.description = _INTL("while traveling in darkness")
   when :LevelDarkInParty                       then evo.description = _INTL("while there's a {1}-type in the party")
+  when :LevelPoison                            then evo.description = _INTL("while poisoned")
+  when :LevelBurn                              then evo.description = _INTL("while burned")
   when :AttackGreater                          then evo.description = _INTL("while its {1} is higher than its {2}")
   when :DefenseGreater                         then evo.description = _INTL("while its {2} is higher than its {1}")
   when :AtkDefEqual                            then evo.description = _INTL("while its {1} and {2} are equal")
-  when :Silcoon, :Cascoon                      then evo.description = _INTL("- results may vary")
+  when :Silcoon, :Cascoon, :Scalcoon           then evo.description = _INTL("- results may vary")
+  when :SilcoonOld, :CascoonOld                then evo.description = _INTL("- results may vary")
   when :Ninjask                                then evo.description = _INTL("- this may leave behind a husk afterwards")
   when :Happiness, :ItemHappiness              then evo.description = _INTL("while it's happy")
   when :HappinessMale, :HappinessFemale        then evo.description = _INTL("while it's happy")
@@ -294,6 +300,7 @@ GameData::Evolution.each do |evo|
   when :HappinessHoldItem, :HoldItemHappiness  then evo.description = _INTL("while it's happy and holds {1}")
   when :Beauty                                 then evo.description = _INTL("while its beauty is high")
   when :HoldItem, :TradeItem                   then evo.description = _INTL("while it holds {1}")
+  when :LucideonItem                           then evo.description = _INTL("while it holds Eviolite")
   when :HoldItemMale, :HoldItemFemale          then evo.description = _INTL("while it holds {1}")
   when :DayHoldItem                            then evo.description = _INTL("in the day while it holds {1}")
   when :NightHoldItem                          then evo.description = _INTL("at night while it holds {1}")
@@ -334,7 +341,7 @@ module GameData
       end
       return false if @form != 0 && (!@real_form_name || @real_form_name.empty?)
       return false if @pokedex_form != @form
-      return false if [:PICHU_2, :FLOETTE_5, :GIMMIGHOUL_1].include?(@id)
+      return false if [:PICHU_2, :GIMMIGHOUL_1].include?(@id)
       return false if @species == :PIKACHU && (8..15).include?(@form)
       if special
         return false if @mega_stone || @mega_move
@@ -353,10 +360,10 @@ module GameData
       return 0
     end
 	
-	#---------------------------------------------------------------------------
+    #---------------------------------------------------------------------------
     # Checks a species for all forms that branch off into different evolutions.
     #---------------------------------------------------------------------------
-	def branch_evolution_forms
+    def branch_evolution_forms
       forms = [@form]
       @flags.each do |flag|
         forms.push($~[1].to_i) if flag[/^EvoBranchForm_(\d+)$/i]
@@ -378,27 +385,34 @@ module GameData
     end
 	
     #---------------------------------------------------------------------------
-    # Includes special form moves in tutor move lists.
+    # Returns all tutor moves including special form moves.
     #---------------------------------------------------------------------------
     def get_tutor_moves
       case @id
-      when :PIKACHU     then moves = [:VOLTTACKLE]
       when :ROTOM_1     then moves = [:OVERHEAT]
       when :ROTOM_2     then moves = [:HYDROPUMP]
       when :ROTOM_3     then moves = [:BLIZZARD]
       when :ROTOM_4     then moves = [:AIRSLASH]
       when :ROTOM_5     then moves = [:LEAFSTORM]
-      when :KYUREM_1    then moves = [:ICEBURN, :FUSIONFLARE]
-      when :KYUREM_2    then moves = [:FREEZESHOCK, :FUSIONBOLT]
       when :NECROZMA_1  then moves = [:SUNSTEELSTRIKE]
       when :NECROZMA_2  then moves = [:MOONGEISTBEAM]
+      when :NECROZMA_3  then moves = [:LIGHTSPEEDSMASH]
       when :ZACIAN_1    then moves = [:BEHEMOTHBLADE]
       when :ZAMAZENTA_1 then moves = [:BEHEMOTHBASH]
-      when :CALYREX_1   then moves = [:GLACIALLANCE]
-      when :CALYREX_2   then moves = [:ASTRALBARRAGE]
+      else                   moves = []
       end
-      return @tutor_moves if !moves
-      return moves.concat(@tutor_moves.clone)
+      return (self.tutor_moves + moves).sort
+    end
+	
+    #---------------------------------------------------------------------------
+    # Returns all egg moves including special inherited moves.
+    #---------------------------------------------------------------------------
+    def get_inherited_moves
+      case self.get_baby_species
+      when :PICHU then moves = [:VOLTTACKLE]
+      else             moves = []
+      end
+      return (self.get_egg_moves + moves).sort
     end
 	
     #---------------------------------------------------------------------------

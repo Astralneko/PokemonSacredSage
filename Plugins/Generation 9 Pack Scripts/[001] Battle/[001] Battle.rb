@@ -252,6 +252,8 @@ class Battle::Move
   def windMove?;        return @flags.any? { |f| f[/^Wind$/i] };            end
   def slicingMove?;     return @flags.any? { |f| f[/^Slicing$/i] };         end
   def electrocuteUser?; return @flags.any? { |f| f[/^ElectrocuteUser$/i] }; end
+  def debugUser?;       return @flags.any? { |f| f[/^DebugUser$/i] };       end
+  def purifyUser?;      return @flags.any? { |f| f[/^PurifyUser$/i] };      end
 
   #-----------------------------------------------------------------------------
   # Aliased to add Mind's Eye effect.

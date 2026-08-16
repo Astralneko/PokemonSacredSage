@@ -1,0 +1,50 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+# Generation AN-II
+#-------------------------------
+[SURSKIT,1]
+FormName = Zantarean
+Types = BUG,ROCK
+Generation = 102
+Flags = InheritFormWithEverStone
+Evolution = VULCANTERN,Level,22
+#-------------------------------
+[BINAMMUNI,1]
+FormName = Mega Binammuni
+MegaStone = BINAMMUNITE
+BaseStats = 102,149,110,115,139,85
+BaseExp = 385
+#-------------------------------
+[PANDRANDAGE,1]
+FormName = Prideful Form
+BaseStats = 84,144,48,138,132,30
+Height = 0.5
+Weight = 15.9
+#-------------------------------
+[PERIKITA,1]
+FormName = Mega Perikita
+MegaStone = PERIKITANITE
+BaseStats = 67,76,94,100,140,78
+BaseExp = 250
+#-------------------------------
+[NECROZMA,3]
+FormName = Twilight Scales
+Types = CELESTIAL,BUG
+BaseStats = 107,97,113,139,127,97
+BaseExp = 340
+EVs = SPECIAL_ATTACK,3
+Height = 4.2
+Weight = 350.0
+Color = Blue
+Pokedex = When Necrozma subjugates the power of Astrayshi, it turns into this form. This form creates powerful blasts of dark energy that destroy anything it comes into contact with. 
+#-------------------------------
+[NECROZMA,6]
+PokedexForm = 4
+Types = CELESTIAL,DRAGON
+BaseStats = 97,167,97,129,167,97
+BaseExp = 377
+EVs = ATTACK,1,SPECIAL_ATTACK,1,SPEED,1
+Abilities = NEUROFORCE
+Height = 7.5
+Color = Yellow
+Flags = Legendary,CannotDynamax

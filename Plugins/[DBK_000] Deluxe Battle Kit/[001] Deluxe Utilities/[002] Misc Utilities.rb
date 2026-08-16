@@ -189,9 +189,9 @@ class Battle::Battler
     return :primal    if primal?
     return :ultra     if ultra?
     return :dynamax   if dynamax?
-    return :style     if style?
+    #return :style     if style?
     return :tera      if tera?
-    return :celestial if celestial?
+    #return :celestial if celestial?
     return nil
   end
   
@@ -203,9 +203,9 @@ class Battle::Battler
       when :zmove   then return true if hasZMove?   && @battle.pbHasZRing?(@index)
       when :ultra   then return true if hasUltra?   && @battle.pbHasZRing?(@index)
       when :dynamax then return true if hasDynamax? && @battle.pbHasDynamaxBand?(@index)
-      when :style   then return true if hasStyle?
+      #when :style   then return true if hasStyle?
       when :tera    then return true if hasTera?    && @battle.pbHasTeraOrb?(@index)
-      when :zodiac  then return true if hasZodiacPower?
+      #when :zodiac  then return true if hasZodiacPower?
       end
     end
     return false	

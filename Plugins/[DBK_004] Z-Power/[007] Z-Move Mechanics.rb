@@ -356,7 +356,7 @@ class Battle::Battler
     return false if !@item_id
     item = GameData::Item.get(@item_id)
     return false if !item.is_zcrystal?
-    return false if @effects[PBEffects::Transform] && item.is_ultra_item?
+    return false if hasUltraItem? && @effects[PBEffects::Transform]
     item = GameData::Item.get(@item_id)
     moves = (baseMove.nil?) ? @moves : [baseMove]
     if item.has_zmove_combo?

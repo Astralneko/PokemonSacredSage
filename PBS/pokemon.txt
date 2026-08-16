@@ -3564,12 +3564,24 @@ Evolution = VAPOREON,Item,WATERSTONE
 Evolution = JOLTEON,Item,THUNDERSTONE
 Evolution = FLAREON,Item,FIRESTONE
 Evolution = LEAFEON,Item,LEAFSTONE
-Evolution = LEAFEON,LocationFlag,MossRock
 Evolution = GLACEON,Item,ICESTONE
+Evolution = NEBULEON,Item,MOONSTONE
+Evolution = WYVREON,TradeItem,DRAGONSCALE
+Evolution = CHROMEON,TradeItem,METALCOAT
+Evolution = LUCIDEON,LevelHoldEviolite,50
+Evolution = VENEON,LevelPoison
+Evolution = MATAREON,LevelBurn
+Evolution = LEAFEON,LocationFlag,MossRock
 Evolution = GLACEON,LocationFlag,IceRock
+Evolution = NEBULEON,LocationFlag,Meteorite
+Evolution = MATAREON,HoldItem,SPELLTAG
+Evolution = QUAKEON,HoldItem,GROUNDGEM
+Evolution = CLOUDEON,HoldItem,PRETTYFEATHER
+Evolution = VESPEON,HoldItem,HONEY
 Evolution = SYLVEON,HappinessMoveType,FAIRY
 Evolution = ESPEON,HappinessDay
 Evolution = UMBREON,HappinessNight
+Evolution = LUCIDEON,Level,50
 #-------------------------------
 [VAPOREON]
 Name = Vaporeon
@@ -7559,6 +7571,7 @@ Pokedex = They gather on puddles after evening downpours, gliding across the sur
 Generation = 3
 WildItemCommon = HONEY
 Evolution = MASQUERAIN,Level,22
+Evolution = VULCANTERN,None
 #-------------------------------
 [MASQUERAIN]
 Name = Masquerain

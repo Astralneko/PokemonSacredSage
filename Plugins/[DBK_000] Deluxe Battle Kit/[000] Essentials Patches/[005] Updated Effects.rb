@@ -709,7 +709,7 @@ class Battle::Move::CurseTargetOrLowerUserSpd1RaiseUserAtkDef1 < Battle::Move
   alias dx_pbMoveFailed? pbMoveFailed?
   def pbMoveFailed?(user, targets)
     if user.pokemon.immunities.include?(:SELFKO) && 
-       user.pbHasType?(:GHOST) && user.real_hp <= user.real_totalhp / 2
+       user.pbHasType?(:GHOST) && user.hp <= user.real_totalhp / 2
       @battle.pbDisplay(_INTL("But it failed!"))
       return true
     end
@@ -725,7 +725,7 @@ end
 class Battle::Move::UserLosesHalfOfTotalHP < Battle::Move
   def pbMoveFailed?(user, targets)
     if user.pokemon.immunities.include?(:SELFKO) && 
-       user.takesIndirectDamage? && user.real_hp <= user.real_totalhp / 2
+       user.takesIndirectDamage? && user.hp <= user.real_totalhp / 2
       @battle.pbDisplay(_INTL("But it failed!"))
       return true
     end
@@ -742,7 +742,7 @@ class Battle::Move::UserLosesHalfOfTotalHPExplosive < Battle::Move
   alias dx_pbMoveFailed? pbMoveFailed?
   def pbMoveFailed?(user, targets)
     if user.pokemon.immunities.include?(:SELFKO) && 
-       user.takesIndirectDamage? && user.real_hp <= user.real_totalhp / 2
+       user.takesIndirectDamage? && user.hp <= user.real_totalhp / 2
       @battle.pbDisplay(_INTL("But it failed!"))
       return true
     end

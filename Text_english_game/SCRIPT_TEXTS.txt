@@ -3665,9 +3665,9 @@ Ice spikes were scattered all around {1}'s feet!
 {1} is covered in frost!
 {1} is covered in frost!
 masc adj ending 1
-masc adj ending 1
+is
 masc adj ending 2
-masc adj ending 2
+s
 masc adj ending 3
 masc adj ending 3
 masc adj ending 4
@@ -3681,11 +3681,11 @@ masc adj ending 7
 masc adj ending 8
 masc adj ending 8
 1SG.M.FOR.NOM
-1SG.M.FOR.NOM
+he
 1SG.M.FOR.ACC
-1SG.M.FOR.ACC
+him
 1SG.M.FOR.GEN
-1SG.M.FOR.GEN
+his
 1SG.M.FOR.DAT
 1SG.M.FOR.DAT
 1SG.M.FAM.NOM
@@ -3693,7 +3693,7 @@ masc adj ending 8
 1SG.M.FAM.ACC
 1SG.M.FAM.ACC
 1SG.M.FAM.GEN
-1SG.M.FAM.GEN
+his
 1SG.M.FAM.DAT
 1SG.M.FAM.DAT
 2SG.M.FOR.NOM
@@ -3729,9 +3729,9 @@ masc adj ending 8
 3SG.M.FAM.DAT
 3SG.M.FAM.DAT
 fem adj ending 1
-fem adj ending 1
+is
 fem adj ending 2
-fem adj ending 2
+s
 fem adj ending 3
 fem adj ending 3
 fem adj ending 4
@@ -3745,11 +3745,11 @@ fem adj ending 7
 fem adj ending 8
 fem adj ending 8
 1SG.F.FOR.NOM
-1SG.F.FOR.NOM
+she
 1SG.F.FOR.ACC
-1SG.F.FOR.ACC
+her
 1SG.F.FOR.GEN
-1SG.F.FOR.GEN
+her
 1SG.F.FOR.DAT
 1SG.F.FOR.DAT
 1SG.F.FAM.NOM
@@ -3757,7 +3757,7 @@ fem adj ending 8
 1SG.F.FAM.ACC
 1SG.F.FAM.ACC
 1SG.F.FAM.GEN
-1SG.F.FAM.GEN
+hers
 1SG.F.FAM.DAT
 1SG.F.FAM.DAT
 2SG.F.FOR.NOM
@@ -3793,9 +3793,9 @@ fem adj ending 8
 3SG.F.FAM.DAT
 3SG.F.FAM.DAT
 neutral adj ending 1
-neutral adj ending 1
+are
 neutral adj ending 2
-neutral adj ending 2
+\empty
 neutral adj ending 3
 neutral adj ending 3
 neutral adj ending 4
@@ -3809,11 +3809,11 @@ neutral adj ending 7
 neutral adj ending 8
 neutral adj ending 8
 1SG.N.FOR.NOM
-1SG.N.FOR.NOM
+they
 1SG.N.FOR.ACC
-1SG.N.FOR.ACC
+them
 1SG.N.FOR.GEN
-1SG.N.FOR.GEN
+their
 1SG.N.FOR.DAT
 1SG.N.FOR.DAT
 1SG.N.FAM.NOM
@@ -3821,7 +3821,7 @@ neutral adj ending 8
 1SG.N.FAM.ACC
 1SG.N.FAM.ACC
 1SG.N.FAM.GEN
-1SG.N.FAM.GEN
+theirs
 1SG.N.FAM.DAT
 1SG.N.FAM.DAT
 2SG.N.FOR.NOM

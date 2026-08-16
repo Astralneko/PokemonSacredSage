@@ -1,0 +1,60 @@
+===Change Log===
+1.3
+- New Feature: React message type. Use this to add a reaction to the previous message. The player can choose from a list of reactions in a picker.
+- New Feature: Delay message type. Use this to add a pause during a conversation. With this addition, delays are no longer set as the fourth parameter in a message. Add a Delay message type before that message, instead.
+- New Feature: Edit and Delete message type. Edit will change the string of the previous message and add an "Edited" tag to the message. Delete acts like Edit, but it will not add the "Edited" tag and will default to changing the string to the string defined in MESSAGE_DELETE_TEXT_DEFAULT.
+- New Feature: Reply message type. Acts like a normal Text message type, except it makes the message appear as a reply to a previous message in the conversation.
+- New Feature: Forward message type. Acts like a normal Text message type, except it will appear as if the message was being forwarded from somewhere else.
+- New Feature: Typing message type. Will show the "<name> is typing..." message for a conversation member without being connected to a real message. You can make multiple members appear as typing, so it says "<name1>, <name2> are typing..." or "Multiple are typing...".
+- New Feature: Review conversation during choices. If a player is making a choice during a conversation, they can use the ACTION button to review the conversation before choosing an option.
+- New Feature: Player-sent message options. New conversation parameters :notnew and :queue_after_receive allow for an easy way to add a player-sent message to a group from outside the instant message screen.
+- New Feature: Updated pbPendDelayedIM to have stepvariation and timevariation arguments so every delayed message doesn't have to fall back to the default values from the settings.
+- Added some additional emoji icon graphics
+
+1.2.4
+- Added some guardrails for v21+ so wait time for messages to appear wouldn't be super slow if Graphics.delta returned an abnormally low value.
+
+1.2.3
+- Fixed a crash that would occur in choices with v21.
+- Fixed an issue where PLAYER_BUBBLE_COLOR was not respected.
+- Fixed an issue where a picture message would sometimes be at the wrong y value.
+- Fixed picture messages so the text used to generate the bubble doesn't appear behind PNGs.
+
+1.2.2
+- Changed how player icons appear. Now, the naming convention for player icons in Graphics > UI > Instant Messages > Characters is "Player_#" where # is the character ID for the player (by default, the male character is 1 and female character is 2). If you use outfits, the naming conventions is "Player_#_##" where ## is the outfit number. An outfit number of 0 will still use "Player_#".
+- Inspired by upcoming v22 code, made it so emojis (icons) can appear in player choices.
+
+1.2.1
+- Fixed crash that could occur with some message history setups
+- Added new function so you can run a cleaner script for reinitializing instant messages for a player: $player.initialize_instant_messages
+
+1.2
+- New feature: Message History. You can now have conversations have a timestamp in the past relative to Now. These conversations must have the :reltimestamp parameter, and must be included in the MESSAGE_HISTORY_LIST in 000_Settings. These message get added to the player's message history when the game is first set up (start a new game).
+-- Note: If you do not want to start a new game for testing purposes, you can instead reinitialize instant messages as a whole for the player (clearing out all existing ones). Do this by running the script $player.instant_messages = Player::InstantMessages.new
+
+
+1.1.2
+- Fixed player message handling so you can have just a single string instead of choices. This message will appear just like NPC messages would (no player input).
+
+
+1.1.1
+- Fixed a crash that would occur if an Instant conversation contained more than 1 line of text
+
+
+1.1 
+- New feature: Sorting Conversations. Using the SPECIAL key, you can sort the group list by Newest first, Unread first, or Alphabetically.
+- New feature: Pinning Conversations. Using the ACTION key, you can toggle whether or not a group is pinned to the top of the group list.
+- New feature: Timestamps. Added timestamps, which will appear above individual conversations. Along with this, I've changed the old divider to show "Unread" to help distinguish which messages the player hasn't yet seen.
+- New feature: Delayed Messages. Using pbPendDelayedIM, pend an Instant Message to be sent to the player after a set number of steps/amount of time. These messages take priority over Sequential or Random passive messages. For example, you might want your rival to send you a message 60 minutes after the battle you just had.
+- New feature: Pending Random Messages. In addition to messages included in the predefined PASSIVE_TRIGGERS_RANDOM_POOL, you can add messages to that pool dynamically using pbPendRandomIM. For example, you can pend a random message after talking to a minor NPC, without having to create a switch to keep track that you talked to them.
+- Added 3 new settings to control new features: SHOW_TIME_STAMPS, ALLOW_SORTING, and ALLOW_PINNING
+- Changed the Delay Time/Variable parameter used in conversation configurations to now use seconds instead of frames
+- Fixed issue where v21 frames checking wasn't properly implemented
+- Fixed issue where on_step_taken handler was being used instead of on_player_step_taken for passive triggers
+- Fixed issue where new groups or groups with new messages weren't being sorted to the top of the group list
+- Fixed issue where the group list was only showing 6 groups at a time
+- Fixed issue where the up/down arrows weren't implemented for long lists of groups
+
+
+1.0 
+- Initial Release
