@@ -4,8 +4,8 @@
 [Map020]
 \xnmr[Aria]\rAh, there you are \PN!
 \xnmr[Aria]\rAh, there you are \PN!
-\xnmr[Mona]\bHey... Are you here to help Aria too?
-\xnmr[Mona]\bHey... Are you here to help Aria too?
+\xnmr[Mona]\b\ppr[3][0] \ppr[0][0] here to help Aria too... right?
+\xnmr[Mona]\b\ppr[3][0] \ppr[0][0] here to help Aria too... right?
 \ptalk[]Of course!
 \ptalk[]Of course!
 \xnmr[Aria]\rHuh, you might actually be a great help! I have an idea...

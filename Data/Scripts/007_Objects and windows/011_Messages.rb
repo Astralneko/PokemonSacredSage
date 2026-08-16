@@ -462,7 +462,7 @@ def pbMessageDisplay(msgwindow, message, letterbyletter = true, commandProc = ni
   # Player pronouns - check Astralneko's Misc
   loop do
     last_text = text.clone
-    text.gsub!(/\\ppg\[([0-9]+)\]\[([0-9]+)\]/i) { anPlayerPronoun[$1.to_i][$2.to_i] }
+    text.gsub!(/\\ppg\[([0-9]+)\]\[([0-9]+)\]/i) { anPlayerPronoun($1.to_i,$2.to_i) }
     break if text == last_text
   end
 	# Variables

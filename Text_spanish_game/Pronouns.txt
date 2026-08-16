@@ -1,0 +1,436 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[Pronouns]
+masc ending 1
+o
+masc ending 2
+dor
+masc ending 3
+masc ending 3
+masc ending 4
+masc ending 4
+masc ending 5
+masc ending 5
+masc ending 6
+masc ending 6
+masc ending 7
+masc ending 7
+masc ending 8
+masc ending 8
+masc ending 9
+masc ending 9
+masc ending 10
+masc ending 10
+masc ending 11
+masc ending 11
+masc ending 12
+masc ending 12
+masc ending 13
+masc ending 13
+masc ending 14
+masc ending 14
+masc ending 15
+masc ending 15
+masc ending 16
+masc ending 16
+1SG.M.FOR.NOM
+yo
+1SG.M.FOR.ACC
+a mí
+1SG.M.FOR.GEN
+mi
+1SG.M.FOR.DAT
+me
+1SG.M.FAM.NOM
+yo
+1SG.M.FAM.ACC
+a mí
+1SG.M.FAM.GEN
+mi
+1SG.M.FAM.DAT
+me
+2SG.M.FOR.NOM
+usted
+2SG.M.FOR.ACC
+a usted
+2SG.M.FOR.GEN
+se
+2SG.M.FOR.DAT
+le
+2SG.M.FAM.NOM
+tú
+2SG.M.FAM.ACC
+a tí
+2SG.M.FAM.GEN
+tu
+2SG.M.FAM.DAT
+te
+3SG.M.FOR.NOM
+él
+3SG.M.FOR.ACC
+lo
+3SG.M.FOR.GEN
+a él
+3SG.M.FOR.DAT
+le
+3SG.M.FAM.NOM
+él
+3SG.M.FAM.ACC
+lo
+3SG.M.FAM.GEN
+a él
+3SG.M.FAM.DAT
+le
+1PL.M.FOR.NOM
+1PL.M.FOR.NOM
+1PL.M.FOR.ACC
+1PL.M.FOR.ACC
+1PL.M.FOR.GEN
+1PL.M.FOR.GEN
+1PL.M.FOR.DAT
+1PL.M.FOR.DAT
+1PL.M.FAM.NOM
+1PL.M.FAM.NOM
+1PL.M.FAM.ACC
+1PL.M.FAM.ACC
+1PL.M.FAM.GEN
+1PL.M.FAM.GEN
+1PL.M.FAM.DAT
+1PL.M.FAM.DAT
+2PL.M.FOR.NOM
+2PL.M.FOR.NOM
+2PL.M.FOR.ACC
+2PL.M.FOR.ACC
+2PL.M.FOR.GEN
+2PL.M.FOR.GEN
+2PL.M.FOR.DAT
+2PL.M.FOR.DAT
+2PL.M.FAM.NOM
+2PL.M.FAM.NOM
+2PL.M.FAM.ACC
+2PL.M.FAM.ACC
+2PL.M.FAM.GEN
+2PL.M.FAM.GEN
+2PL.M.FAM.DAT
+2PL.M.FAM.DAT
+3PL.M.FOR.NOM
+3PL.M.FOR.NOM
+3PL.M.FOR.ACC
+3PL.M.FOR.ACC
+3PL.M.FOR.GEN
+3PL.M.FOR.GEN
+3PL.M.FOR.DAT
+3PL.M.FOR.DAT
+3PL.M.FAM.NOM
+3PL.M.FAM.NOM
+3PL.M.FAM.ACC
+3PL.M.FAM.ACC
+3PL.M.FAM.GEN
+3PL.M.FAM.GEN
+3PL.M.FAM.DAT
+3PL.M.FAM.DAT
+1PL.MIX.FOR.NOM
+1PL.MIX.FOR.NOM
+1PL.MIX.FOR.ACC
+1PL.MIX.FOR.ACC
+1PL.MIX.FOR.GEN
+1PL.MIX.FOR.GEN
+1PL.MIX.FOR.DAT
+1PL.MIX.FOR.DAT
+1PL.MIX.FAM.NOM
+1PL.MIX.FAM.NOM
+1PL.MIX.FAM.ACC
+1PL.MIX.FAM.ACC
+1PL.MIX.FAM.GEN
+1PL.MIX.FAM.GEN
+1PL.MIX.FAM.DAT
+1PL.MIX.FAM.DAT
+2PL.MIX.FOR.NOM
+2PL.MIX.FOR.NOM
+2PL.MIX.FOR.ACC
+2PL.MIX.FOR.ACC
+2PL.MIX.FOR.GEN
+2PL.MIX.FOR.GEN
+2PL.MIX.FOR.DAT
+2PL.MIX.FOR.DAT
+2PL.MIX.FAM.NOM
+2PL.MIX.FAM.NOM
+2PL.MIX.FAM.ACC
+2PL.MIX.FAM.ACC
+2PL.MIX.FAM.GEN
+2PL.MIX.FAM.GEN
+2PL.MIX.FAM.DAT
+2PL.MIX.FAM.DAT
+3PL.MIX.FOR.NOM
+3PL.MIX.FOR.NOM
+3PL.MIX.FOR.ACC
+3PL.MIX.FOR.ACC
+3PL.MIX.FOR.GEN
+3PL.MIX.FOR.GEN
+3PL.MIX.FOR.DAT
+3PL.MIX.FOR.DAT
+3PL.MIX.FAM.NOM
+3PL.MIX.FAM.NOM
+3PL.MIX.FAM.ACC
+3PL.MIX.FAM.ACC
+3PL.MIX.FAM.GEN
+3PL.MIX.FAM.GEN
+3PL.MIX.FAM.DAT
+3PL.MIX.FAM.DAT
+fem ending 1
+a
+fem ending 2
+dora
+fem ending 3
+fem ending 3
+fem ending 4
+fem ending 4
+fem ending 5
+fem ending 5
+fem ending 6
+fem ending 6
+fem ending 7
+fem ending 7
+fem ending 8
+fem ending 8
+fem ending 9
+fem ending 9
+fem ending 10
+fem ending 10
+fem ending 11
+fem ending 11
+fem ending 12
+fem ending 12
+fem ending 13
+fem ending 13
+fem ending 14
+fem ending 14
+fem ending 15
+fem ending 15
+fem ending 16
+fem ending 16
+1SG.F.FOR.NOM
+yo
+1SG.F.FOR.ACC
+a mí
+1SG.F.FOR.GEN
+mi
+1SG.F.FOR.DAT
+me
+1SG.F.FAM.NOM
+yo
+1SG.F.FAM.ACC
+a mí
+1SG.F.FAM.GEN
+mi
+1SG.F.FAM.DAT
+me
+2SG.F.FOR.NOM
+usted
+2SG.F.FOR.ACC
+a usted
+2SG.F.FOR.GEN
+se
+2SG.F.FOR.DAT
+le
+2SG.F.FAM.NOM
+tú
+2SG.F.FAM.ACC
+a tí
+2SG.F.FAM.GEN
+tu
+2SG.F.FAM.DAT
+te
+3SG.F.FOR.NOM
+ella
+3SG.F.FOR.ACC
+la
+3SG.F.FOR.GEN
+a ella
+3SG.F.FOR.DAT
+le
+3SG.F.FAM.NOM
+ella
+3SG.F.FAM.ACC
+la
+3SG.F.FAM.GEN
+a ella
+3SG.F.FAM.DAT
+le
+1PL.F.FOR.NOM
+1PL.F.FOR.NOM
+1PL.F.FOR.ACC
+1PL.F.FOR.ACC
+1PL.F.FOR.GEN
+1PL.F.FOR.GEN
+1PL.F.FOR.DAT
+1PL.F.FOR.DAT
+1PL.F.FAM.NOM
+1PL.F.FAM.NOM
+1PL.F.FAM.ACC
+1PL.F.FAM.ACC
+1PL.F.FAM.GEN
+1PL.F.FAM.GEN
+1PL.F.FAM.DAT
+1PL.F.FAM.DAT
+2PL.F.FOR.NOM
+2PL.F.FOR.NOM
+2PL.F.FOR.ACC
+2PL.F.FOR.ACC
+2PL.F.FOR.GEN
+2PL.F.FOR.GEN
+2PL.F.FOR.DAT
+2PL.F.FOR.DAT
+2PL.F.FAM.NOM
+2PL.F.FAM.NOM
+2PL.F.FAM.ACC
+2PL.F.FAM.ACC
+2PL.F.FAM.GEN
+2PL.F.FAM.GEN
+2PL.F.FAM.DAT
+2PL.F.FAM.DAT
+3PL.F.FOR.NOM
+3PL.F.FOR.NOM
+3PL.F.FOR.ACC
+3PL.F.FOR.ACC
+3PL.F.FOR.GEN
+3PL.F.FOR.GEN
+3PL.F.FOR.DAT
+3PL.F.FOR.DAT
+3PL.F.FAM.NOM
+3PL.F.FAM.NOM
+3PL.F.FAM.ACC
+3PL.F.FAM.ACC
+3PL.F.FAM.GEN
+3PL.F.FAM.GEN
+3PL.F.FAM.DAT
+3PL.F.FAM.DAT
+neutral ending 1
+e
+neutral ending 2
+dore
+neutral ending 3
+neutral ending 3
+neutral ending 4
+neutral ending 4
+neutral ending 5
+neutral ending 5
+neutral ending 6
+neutral ending 6
+neutral ending 7
+neutral ending 7
+neutral ending 8
+neutral ending 8
+neutral ending 9
+neutral ending 9
+neutral ending 10
+neutral ending 10
+neutral ending 11
+neutral ending 11
+neutral ending 12
+neutral ending 12
+neutral ending 13
+neutral ending 13
+neutral ending 14
+neutral ending 14
+neutral ending 15
+neutral ending 15
+neutral ending 16
+neutral ending 16
+1SG.N.FOR.NOM
+yo
+1SG.N.FOR.ACC
+a mí
+1SG.N.FOR.GEN
+mi
+1SG.N.FOR.DAT
+me
+1SG.N.FAM.NOM
+yo
+1SG.N.FAM.ACC
+a mí
+1SG.N.FAM.GEN
+mi
+1SG.N.FAM.DAT
+me
+2SG.N.FOR.NOM
+usted
+2SG.N.FOR.ACC
+a usted
+2SG.N.FOR.GEN
+se
+2SG.N.FOR.DAT
+le
+2SG.N.FAM.NOM
+tú
+2SG.N.FAM.ACC
+a tí
+2SG.N.FAM.GEN
+tu
+2SG.N.FAM.DAT
+te
+3SG.N.FOR.NOM
+elle
+3SG.N.FOR.ACC
+le
+3SG.N.FOR.GEN
+a elle
+3SG.N.FOR.DAT
+le
+3SG.N.FAM.NOM
+elle
+3SG.N.FAM.ACC
+le
+3SG.N.FAM.GEN
+a elle
+3SG.N.FAM.DAT
+le
+1PL.N.FOR.NOM
+1PL.N.FOR.NOM
+1PL.N.FOR.ACC
+1PL.N.FOR.ACC
+1PL.N.FOR.GEN
+1PL.N.FOR.GEN
+1PL.N.FOR.DAT
+1PL.N.FOR.DAT
+1PL.N.FAM.NOM
+1PL.N.FAM.NOM
+1PL.N.FAM.ACC
+1PL.N.FAM.ACC
+1PL.N.FAM.GEN
+1PL.N.FAM.GEN
+1PL.N.FAM.DAT
+1PL.N.FAM.DAT
+2PL.N.FOR.NOM
+2PL.N.FOR.NOM
+2PL.N.FOR.ACC
+2PL.N.FOR.ACC
+2PL.N.FOR.GEN
+2PL.N.FOR.GEN
+2PL.N.FOR.DAT
+2PL.N.FOR.DAT
+2PL.N.FAM.NOM
+2PL.N.FAM.NOM
+2PL.N.FAM.ACC
+2PL.N.FAM.ACC
+2PL.N.FAM.GEN
+2PL.N.FAM.GEN
+2PL.N.FAM.DAT
+2PL.N.FAM.DAT
+3PL.N.FOR.NOM
+3PL.N.FOR.NOM
+3PL.N.FOR.ACC
+3PL.N.FOR.ACC
+3PL.N.FOR.GEN
+3PL.N.FOR.GEN
+3PL.N.FOR.DAT
+3PL.N.FOR.DAT
+3PL.N.FAM.NOM
+3PL.N.FAM.NOM
+3PL.N.FAM.ACC
+3PL.N.FAM.ACC
+3PL.N.FAM.GEN
+3PL.N.FAM.GEN
+3PL.N.FAM.DAT
+3PL.N.FAM.DAT

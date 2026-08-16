@@ -23,9 +23,11 @@ module Settings
   # List of regional names to check for to display for evolution methods.
   #-----------------------------------------------------------------------------
   REGIONAL_NAMES = [
-      "Alolan", "Galarian", "Hisuian", "Sinnohan", "Paldean", # Canon regions
-      "Verelan", "Zantarean", "Silatian", "Syraiki", "Xureeni", # AN regions
-      "Iradian" # JC regions
+      _INTL("Alolan"), _INTL("Galarian"), _INTL("Hisuian"),
+      _INTL("Sinnohan"), _INTL("Paldean"), # Canon regions
+      _INTL("Verelan"), _INTL("Zantarean"), _INTL("Silatian"),
+      _INTL("Syraiki"), _INTL("Xureeni"), _INTL("Tzarinian"), # AN regions
+      _INTL("Iradian") # JC regions
   ]
 end
 

@@ -497,6 +497,9 @@ MultipleForms.register(:HOOPA, {
 #-------------------------------------------------------------------------------
 MultipleForms.register(:BASCULIN, {
   "getForm" => proc { |pkmn|
+    if pkmn.form_simple >= 4
+      next 4
+    end
     if pkmn.form_simple >= 2
       next (pkmn.female?) ? 3 : 2
     end
@@ -509,10 +512,18 @@ MultipleForms.register(:BASCULIN, {
 #-------------------------------------------------------------------------------
 MultipleForms.register(:BASCULEGION, {
   "getForm" => proc { |pkmn|
-    next (pkmn.female?) ? 3 : 2
+    if pkmn.form_simple >= 4
+      next 4
+    else
+      next (pkmn.female?) ? 3 : 2
+    end
   },
   "getFormOnCreation" => proc { |pkmn|
-    next (pkmn.female?) ? 3 : 2
+    if pkmn.form_simple >= 4
+      next 4
+    else
+      next (pkmn.female?) ? 3 : 2
+    end
   }
 })
 

@@ -282,6 +282,38 @@ Mentor
 Mentor
 Fire Dart
 Fire Dart
+String
+String
+Weaving
+Weaving
+Vampire Bat
+Vampire Bat
+Thief
+Thief
+Magnet Cat
+Magnet Cat
+Twin
+Twin
+Tag Team
+Tag Team
+Lava Lizard
+Lava Lizard
+Bandaged
+Bandaged
+Shadowlurker
+Shadowlurker
+Squid
+Squid
+Bipedal
+Bipedal
+Suffocate
+Suffocate
+Dragon Kit
+Dragon Kit
+Night Dragon
+Night Dragon
+Navigator
+Navigator
 Sphere
 Sphere
 Ghost Flame

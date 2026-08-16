@@ -328,6 +328,8 @@ A fertilizer for growing Berries. It makes the soil dry out faster.
 A fertilizer for growing Berries. It makes the soil dry out faster.
 A fertilizer for growing Berries. It increases the harvest, chance of mutations, and drying rate.
 A fertilizer for growing Berries. It increases the harvest, chance of mutations, and drying rate.
+A box containing a helping of a special type of bait. It can be used to lure wild Pokémon to a raid den.
+A box containing a helping of a special type of bait. It can be used to lure wild Pokémon to a raid den.
 It converts Z-Power into crystals that upgrade Celestial-type moves to Celestial-type Z-Moves.
 It converts Z-Power into crystals that upgrade Celestial-type moves to Celestial-type Z-Moves.
 It converts Z-Power into crystals that upgrade Glitch-type moves to Glitch-type Z-Moves.
@@ -470,6 +472,12 @@ It makes a good bed for a stew, and thus it's frequently served with them.,servi
 It makes a good bed for a stew, and thus it's frequently served with them.,serving of White Rice,servings of White Rice,
 A stew ingredient. Typically it's chopped very finely and used as a spice.,serving of Cilantro,servings of Cilantro,
 A stew ingredient. Typically it's chopped very finely and used as a spice.,serving of Cilantro,servings of Cilantro,
+One of a variety of mysterious Mega Stones. Have Binammuni hold it, and it will be able to Mega Evolve.
+One of a variety of mysterious Mega Stones. Have Binammuni hold it, and it will be able to Mega Evolve.
+One of a variety of mysterious Mega Stones. Have Perikita hold it, and it will be able to Mega Evolve.
+One of a variety of mysterious Mega Stones. Have Perikita hold it, and it will be able to Mega Evolve.
+One of a variety of mysterious Mega Stones. Have Spikatus hold it, and it will be able to Mega Evolve.
+One of a variety of mysterious Mega Stones. Have Spikatus hold it, and it will be able to Mega Evolve.
 An orb that holds the power to crystallize. When charged, it allows Pokémon to Terastallize.
 An orb that holds the power to crystallize. When charged, it allows Pokémon to Terastallize.
 On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.

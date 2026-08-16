@@ -1389,7 +1389,7 @@ class InstantMessages_Scene
           "{ICON#{icons.length - 1}}"
         end
         #text.gsub!(/\\pn/i,  $player.name) if $player
-		text.gsub!(/\\ppr\[([0-9]+)\]\[([0-9]+)\]/i) { anPlayerPronoun[$1.to_i][$2.to_i] }
+		text.gsub!(/\\ppr\[([0-9]+)\]\[([0-9]+)\]/i) { anPlayerPronoun($1.to_i,$2.to_i) }
 		text.gsub!(/\\empty/i, "")
         text = toUnformattedText(text)
         icons.each_with_index do |icon, i|

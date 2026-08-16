@@ -328,9 +328,9 @@
         # Set for each Region if you want the Player Icon to be visible (true) or invisible (false).
         ShowPlayerOnRegion = {
           Verela: true,
-		  Hisui: true,
-		  Paldea: true,
-		  Unova: true
+          Hisui: true,
+          Paldea: true,
+          Unova: true
         }
 
         # true = enabled: The script will change the Region Map based on the Current Time in the Game

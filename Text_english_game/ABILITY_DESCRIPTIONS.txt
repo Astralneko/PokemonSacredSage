@@ -168,3 +168,15 @@ The Pokémon's aura powers up all Water-type moves.
 The Pokémon's aura powers up all Water-type moves.
 It's always frosty, and attacks without thawing.
 It's always frosty, and attacks without thawing.
+In harsh sunlight, Special Defense falls, but Speed rises.
+In harsh sunlight, Special Defense falls, but Speed rises.
+Each of the Pokémon act independently.
+Each of the Pokémon act independently.
+The first time it is supposed to faint, it revives in Prideful Form.
+The first time it is supposed to faint, it revives in Prideful Form.
+If its opponent hits harder, it increases its strength.
+If its opponent hits harder, it increases its strength.
+Contact moves may additionally paralyze the target.
+Contact moves may additionally paralyze the target.
+Celestial-types on the field regenerate health each turn.
+Celestial-types on the field regenerate health each turn.

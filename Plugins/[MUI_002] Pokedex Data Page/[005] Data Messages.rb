@@ -23,19 +23,19 @@ class PokemonPokedexInfo_Scene
     when :item      then text = pbDataTextItems(path, species, overlay)
     when :ability
       pbDrawImagePositions(overlay, [[path, 248, 240, 0, 244, 116, 44]])
-      text = t[0] + "Abilities\n"
+      text = t[0] + _INTL("Abilities\n")
       if $player.owned?(@species)
-        text << "View all abilities available to this species."
+        text << _INTL("View all abilities available to this species.")
       else
-        text << "Unknown."
+        text << _INTL("Unknown.")
       end
     when :moves
       pbDrawImagePositions(overlay, [[path, 376, 240, 0, 244, 116, 44]])
-      text = t[0] + "Moves\n"
+      text = t[0] + _INTL("Moves\n")
       if $player.owned?(@species)
-        text << "View all moves this species may learn."
+        text << _INTL("View all moves this species may learn.")
       else
-        text << "Unknown."
+        text << _INTL("Unknown.")
       end
     end
     drawFormattedTextEx(overlay, 34, 294, 446, _INTL("{1}", text))
@@ -54,9 +54,9 @@ class PokemonPokedexInfo_Scene
   #=============================================================================
   def pbDataTextEncounters(path, species, overlay)
     t = DATA_TEXT_TAGS
-    text = t[0] + "Encounters\n"
-    text << "Number Defeated: " + "#{$player.pokedex.defeated_count(species.id)}\n"
-    text << "Number Captured: " + "#{$player.pokedex.caught_count(species.id)}\n"
+    text = t[0] + _INTL("Encounters\n")
+    text << _INTL("Number Defeated: ") + "#{$player.pokedex.defeated_count(species.id)}\n"
+    text << _INTL("Number Captured: ") + "#{$player.pokedex.caught_count(species.id)}\n"
     return text
   end
   
@@ -67,39 +67,39 @@ class PokemonPokedexInfo_Scene
     t = DATA_TEXT_TAGS
     pbDrawImagePositions(overlay, [[path, 0, 36, 0, 0, 512, 56]])
     owned = $player.owned?(@species)
-    text = t[0] + "General Statistics\n"
+    text = t[0] + _INTL("General Statistics\n")
     if owned
       chance = species.catch_rate
       c = ((chance / 256.0) * 100).floor
       c = 1 if c < 1
-      text << "Capture Success Rate: #{c}%\n"
-      gender = "This species "
+      text << _INTL("Capture Success Rate: {1}%\n",c)
+      gender = _INTL("This species ")
       case species.gender_ratio
-      when :AlwaysMale   then gender << "is " + t[2] + "always male"
-      when :AlwaysFemale then gender << "is " + t[1] + "always female"
-      when :Genderless   then gender << "is " + "genderless"
+      when :AlwaysMale   then gender << _INTL("is {1}always male{2}.",t[2],t[0])
+      when :AlwaysFemale then gender << _INTL("is {1}always female{2}.",t[1],t[0])
+      when :Genderless   then gender << _INTL("is genderless.")
       else
         chance = GameData::GenderRatio.get(species.gender_ratio).female_chance
         if chance
           f = ((chance / 256.0) * 100).round
           m = (100 - f)
           if m > f      # Male odds are higher than female.
-            gender << "is " + t[2] + "#{m.to_s}% likely to be male"
+            gender << _INTL("is {1}{2}% likely to be male{3}.",t[2],m.to_s,t[0])
           elsif f > m   # Female odds are higher than male.
-            gender << "is " + t[1] + "#{f.to_s}% likely to be female"
+            gender << _INTL("is {1}{2}% likely to be female{3}.",t[1],f.to_s,t[0])
           else          # Gender odds are equal.
-            gender << "has an equal gender ratio"
+            gender << _INTL("has an equal gender ratio.")
           end
         else
           gender = ""
         end
       end
-      text << gender + t[0] + "." if gender != ""
+      text << gender
       pbDrawTextPositions(overlay, [
         [_INTL("View Compatible"), Graphics.width - 34, 292, :right, Color.new(0, 112, 248), Color.new(120, 184, 232)]
       ]) if !inMenu && !@data_hash[:general].empty?
     else
-      text << "Unknown."
+      text << _INTL("Unknown.")
     end
     return text
   end
@@ -129,9 +129,9 @@ class PokemonPokedexInfo_Scene
         ])
       end
     else
-      text << "Unknown."
+      text << _INTL("Unknown.")
     end
-    text = t[0] + "Held Items\n" + text
+    text = t[0] + _INTL("Held Items\n") + text
     return text
   end
   
@@ -168,7 +168,7 @@ class PokemonPokedexInfo_Scene
         [_INTL("View Compatible"), Graphics.width - 34, 292, :right, Color.new(0, 112, 248), Color.new(120, 184, 232)]
       ]) if !s2 && !@data_hash[:stats].empty?
     else
-      text << "\nUnknown."
+      text << _INTL("\nUnknown.")
     end
     return text
   end
@@ -187,22 +187,24 @@ class PokemonPokedexInfo_Scene
       name = habitat.name.downcase
       text << "This species may be found "
       case habitat.id
-      when :Grassland    then text << "roaming within wide open " + nt + _INTL("{1}", name) + t[0] + " areas."
-      when :Forest       then text << "within densely wooded areas, such as a " + nt + _INTL("{1}", name) + t[0] + "."
-      when :WatersEdge   then text << "within areas near the " + nt + _INTL("{1}", name) + t[0] + "."
-      when :Sea          then text << "roaming above or below bodies of water, such as the " + nt + _INTL("{1}", name) + t[0] + "."
-      when :Cave         then text << "within dark and secluded areas, such as a " + nt + _INTL("{1}", name) + t[0] + "."
-      when :Mountain     then text << "up high, scaling the sides of " + nt + _INTL("{1}", name) + t[0] + " ranges."
-      when :RoughTerrain then text << "within harsher locales with " + nt + _INTL("{1}", name) + t[0] + "."
-      when :Urban        then text << "near man-made structures or within " + nt + _INTL("{1}", name) + t[0] + " areas."
-      when :Rare         then text << "only in very " + nt + _INTL("{1}", name) + t[0] + " situations or locations."
-      else                    text << "in an unknown location."
+      when :Grassland    then text << _INTL("roaming within wide open {1}{2}{3} areas.", nt, name, t[0])
+      when :Forest       then text << _INTL("within densely wooded areas, such as a {1}{2}{3}.", nt, name, t[0])
+      when :WatersEdge   then text << _INTL("within areas near the {1}{2}{3}.", nt, name, t[0])
+      when :Sea          then text << _INTL("roaming above or below bodies of water, such as the {1}{2}{3}.", nt, name, t[0])
+      when :Cave         then text << _INTL("within dark and secluded areas, such as a {1}{2}{3}.", nt, name, t[0])
+      when :Mountain     then text << _INTL("up high, scaling the sides of {1}{2}{3} ranges.", nt, name, t[0])
+      when :RoughTerrain then text << _INTL("within harsher locales with {1}{2}{3}.", nt, name, t[0])
+      when :Urban        then text << _INTL("near man-made structures or within {1}{2}{3} areas.", nt, name, t[0])
+      when :Jungle       then text << _INTL("among the abundant plants of humid {1}{2}{3}.", nt, name, t[0])
+      when :Tundra       then text << _INTL("in very cold areas, such as the {1}{2}{3}.", nt, name, t[0])
+      when :Rare         then text << _INTL("only in very {1}{2}{3} situations or locations.", nt, name, t[0])
+      else                    text << _INTL("in an unknown location.")
       end
       pbDrawTextPositions(overlay, [
         [_INTL("View Compatible"), Graphics.width - 34, 292, :right, Color.new(0, 112, 248), Color.new(120, 184, 232)]
       ]) if !s2 && !@data_hash[:habitat].empty?
     else
-      text << "Unknown."
+      text << _INTL("Unknown.")
     end
     return text
   end
@@ -213,7 +215,7 @@ class PokemonPokedexInfo_Scene
   def pbDataTextShape(path, species, overlay, s2 = nil)
     t = DATA_TEXT_TAGS
     pbDrawImagePositions(overlay, [[path, 368, 166, 432, 208, 74, 72]])
-    text = t[0] + "Morphology\n"
+    text = t[0] + _INTL("Morphology\n")
     color = GameData::BodyColor.get(species.color)
     nt = (s2 && s2[0] == color.id) ? t[2] : t[1]
     name = color.name.downcase
@@ -223,15 +225,15 @@ class PokemonPokedexInfo_Scene
     name = shape.name.downcase
     case shape.id
     when :Head, :HeadArms, :HeadBase, :HeadLegs
-      text << "shape is just a " + nt + _INTL("{1}", name) + t[0] + "."
+      text << _INTL("shape is just a {1}{2}{3}.", nt, name, t[0])
     when :Bipedal, :BipedalTail, :Quadruped, :Multiped, :MultiBody, :MultiWinged, :Winged, :Serpentine
-      text << "has a " + nt + _INTL("{1}", name) + t[0] + " shape."
+      text << _INTL("has a {1}{2}{3} shape.", nt, name, t[0])
     when :Insectoid
-      text << "has an " + nt + _INTL("{1}", name) + t[0] + " shape."
+      text << _INTL("has an {1}{2}{3} shape.", nt, name, t[0])
     when :Finned
-      text << "is " + nt + _INTL("{1}", name) + t[0] + " and shaped for swimming."
+      text << _INTL("is {1}{2}{3} and shaped for swimming.", nt, name, t[0])
     else
-      text << "shape can't be classified."
+      text << _INTL("shape can't be classified.")
     end
     if !s2 && $player.owned?(@species) && !@data_hash[:shape].empty?
       pbDrawTextPositions(overlay, [
@@ -249,26 +251,26 @@ class PokemonPokedexInfo_Scene
     t = DATA_TEXT_TAGS
     pbDrawImagePositions(overlay, [[path, 296, 166, 432, 208, 74, 72]])
     owned = $player.owned?(@species)
-    text = t[0] + "Breeding\n"
+    text = t[0] + _INTL("Breeding\n")
     if owned
-      text << "This species "
+      text << _INTL("This species ")
       groups = species.egg_groups
       groups = [:None] if species.gender_ratio == :Genderless && 
                           !(groups.include?(:Ditto) || groups.include?(:Undiscovered))
       if groups.include?(:None)
         data = GameData::EggGroup.get(:Ditto)
         name = (Settings::ALT_EGG_GROUP_NAMES) ? data.alt_name : data.name
-        text << "is genderless, and may only breed with species in the " + t[1] + "#{name}" + t[0] + " group."
+        text << _INTL("is genderless, and may only breed with species in the {1}{2}{3} group.", t[1], name, t[0])
       elsif groups.include?(:Ditto)
         data = GameData::EggGroup.get(:Ditto)
         name = (Settings::ALT_EGG_GROUP_NAMES) ? data.alt_name : data.name
-        text << "is in the " + t[1] + "#{name}" + t[0] + " group, and may breed with species in all other groups."
+        text << _INTL("is in the {1}{2}{3} group, and may breed with species in all other groups.", t[1], name, t[0])
       elsif groups.include?(:Undiscovered) || groups.empty?
         data = GameData::EggGroup.get(:Undiscovered)
         name = (Settings::ALT_EGG_GROUP_NAMES) ? data.alt_name : data.name
-        text << "is in the " + t[1] + "#{name}" + t[0] + " group, and is incapable of breeding."
+        text << _INTL("is in the {1}{2}{3} group, and is incapable of breeding.", t[1], name, t[0])
       else
-        text << "may only breed with species in the "
+        text << _INTL("may only breed with species in the ")
         groups.each_with_index do |group, i|
           data = GameData::EggGroup.get(group)
           name = (Settings::ALT_EGG_GROUP_NAMES) ? data.alt_name : data.name
@@ -277,7 +279,7 @@ class PokemonPokedexInfo_Scene
           if i < groups.length - 1
             text << "or "
           else
-            total = (i > 0) ? "groups." : "group."
+            total = (i > 0) ? _INTL("groups.") : _INTL("group.")
             text << total
           end
         end
@@ -363,7 +365,7 @@ class PokemonPokedexInfo_Scene
         prevo_data = GameData::Species.get_species_form(prevo, form)
         if species.species == :ALCREMIE
           name = t[1] + "#{prevo_data.name}" + t[0]
-          text << "Use various " + t[2] + "Sweets" + t[0] + " on #{name}."
+          text << _INTL("Use various {1}Sweets{2} on {3}.",t[2],t[0],name)
         else
           index = 0
           prevo_data.get_evolutions(true).each do |evo|
@@ -382,24 +384,24 @@ class PokemonPokedexInfo_Scene
           case species.species
           when :LYCANROC
             case species.form
-            when 0 then text << " Must be day for this form."
-            when 1 then text << " Must be night for this form."
-            when 2 then text << " Requires " + t[2] + GameData::Ability.get(:OWNTEMPO).name + t[0] + "."
+            when 0 then text << _INTL(" Must be day for this form.")
+            when 1 then text << _INTL(" Must be night for this form.")
+            when 2 then text << _INTL(" Requires {1}{2}{3}.", t[2], GameData::Ability.get(:OWNTEMPO).name, t[0])
             end
           when :TOXTRICITY
-            text << " Form depends on " + t[2] + "Nature" + t[0] + "."
+            text << _INTL(" Form depends on {1}{2}{3}.", t[2], "Nature", t[0])
           end
         end
-        heading = t[0] + "Evolution Method"
+        heading = t[0] + _INTL("Evolution Method")
         if species.form_name
           Settings::REGIONAL_NAMES.each do |region|
             next if !species.form_name.include?(region)
-            heading = t[0] + "#{region} Evolution"
+            heading = t[0] + _INTL("{1} Evolution",region)
           end
         end
         evos = species.evolutions
         if inMenu && evos[-1][0] == prevo && !evos.any? { |evo| evo[0] != prevo && evo[1] != :None }
-          heading << " (Final stage)"
+          heading << _INTL(" (Final stage)")
         end
         text = heading + "\n" + text
       end
@@ -434,54 +436,54 @@ class PokemonPokedexInfo_Scene
       # Mega forms
       #-------------------------------------------------------------------------
       when :mega
-        text = t[0] + "Mega Evolution Method\n"
-        text << t[0] + "Available when " + t[1] + "#{spname}" + t[0]
+        text = t[0] + _INTL("Mega Evolution Method\n")
+        text << t[0] + _INTL("Available when {1}{2}{3}",t[1],spname,t[0])
         if species.mega_stone
           param = GameData::Item.get(check_item).name
-          text << " triggers its held " + t[2] + "#{param}" + t[0] + "."
+          text << + _INTL(" triggers its held {1}{2}{3}.",t[2],param,t[0])
         else
           param = GameData::Move.get(species.mega_move).name
-          text << " has the move " + t[2] + "#{param}" + t[0] + "."
+          text << _INTL(" has the move {1}{2}{3}.",t[2],param,t[0])
         end
       #-------------------------------------------------------------------------
       # Primal forms
       #-------------------------------------------------------------------------
       when :primal
-        text = t[0] + "Primal Reversion Method\n"
-        text << t[0] + "Occurs when " + t[1] + "#{spname}"
+        text = t[0] + _INTL("Primal Reversion Method\n")
+        text << t[0] + _INTL("Occurs when {1}{2}",t[1],spname)
         item = GameData::Item.try_get(check_item)
         param = (item) ? t[2] + item.name + t[0] : "Primal orb"
-        text << t[0] + " enters battle with its held " + "#{param}" + "."
+        text << t[0] + _INTL(" enters battle with its held {1}.",param)
       #-------------------------------------------------------------------------
       # Ultra Burst forms
       #-------------------------------------------------------------------------
       when :ultra
         spname = "a fused form of #{base_data.name}" if species.species == :NECROZMA
-        text = t[0] + "Ultra Burst Method\n"
-        text << t[0] + "Available when " + t[1] + "#{spname}" + t[0]
+        text = t[0] + _INTL("Ultra Burst Method\n")
+        text << t[0] + _INTL("Available when {1}{2}{3}",t[1],spname,t[0])
         item = GameData::Item.try_get(check_item)
         param = (item) ? t[2] + item.name + t[0] : "Ultra item"
-        text << " triggers its held " + "#{param}" + "."
+        text << t[0] + _INTL(" triggers its held {1}.",param)
       #-------------------------------------------------------------------------
       # Gigantamax forms
       #-------------------------------------------------------------------------
       when :gmax
         spname = "any form of #{base_data.name}" if species.has_flag?("AllFormsShareGmax") || species.species == :TOXTRICITY
-        text = t[0] + "Gigantamax Method\n"
-        text << t[0] + "Available when " + t[1] + "#{spname}" + t[0]
-        text << " has " + t[2] + "G-Max Factor" + t[0] + "."
+        text = t[0] + _INTL("Gigantamax Method\n")
+        text << t[0] + _INTL("Available when {1}{2}{3}",t[1],spname,t[0])
+        text << _INTL(" has {1}G-Max Factor{2}.",t[2],t[0])
       #-------------------------------------------------------------------------
       # Eternamax forms
       #-------------------------------------------------------------------------
       when :emax
-        text = t[0] + "Eternamax Method\n"
-        text << "Unknown."
+        text = t[0] + _INTL("Eternamax Method\n")
+        text << _INTL("Unknown.")
       #-------------------------------------------------------------------------
       # Terastal forms
       #-------------------------------------------------------------------------
       when :tera
-        text = t[0] + "Terastal Form Method\n"
-        text << t[0] + "Available when " + t[1] + "#{spname}" + t[0] + " triggers Terastallization."
+        text = t[0] + _INTL("Terastal Form Method\n")
+        text << t[0] + _INTL("Available when {1}{2}{3} triggers Terastallization.",t[1],spname,t[0])
       end
     end
     return text
@@ -502,15 +504,15 @@ class PokemonPokedexInfo_Scene
     t = DATA_TEXT_TAGS
     itemName = GameData::Item.get(item).name
     text = t[2] + "#{itemName}\n"
-    text << t[0] + "This is "
+    text << t[0] + _INTL("This is ")
     if species.wild_item_common.include?(item)
-      text << "a " + t[1] + "common"     # Common items.
+      text << _INTL("a {1}common",t[1])    # Common items.
     elsif species.wild_item_uncommon.include?(item)
-      text << "an " + t[1] + "uncommon"  # Uncommon items.
+      text << _INTL("an {1}uncommon",t[1]) # Uncommon items.
     elsif species.wild_item_rare.include?(item)
-      text << "a " + t[1] + "rare"       # Rare items.
+      text << _INTL("a {1}rare",t[1])      # Rare items.
     end
-    text << t[0] + " item that may be held by this species."
+    text << t[0] + _INTL(" item that may be held by this species.")
     return text
   end
   
@@ -521,7 +523,7 @@ class PokemonPokedexInfo_Scene
     t = DATA_TEXT_TAGS
     abilityName = GameData::Ability.get(ability).name
     text = t[2] + "#{abilityName}\n"
-    text << t[0] + "Available as "
+    text << t[0] + _INTL("Available as ")
     #---------------------------------------------------------------------------
     # Natural abilities.
     #---------------------------------------------------------------------------
@@ -530,26 +532,26 @@ class PokemonPokedexInfo_Scene
       when 1 # Species only has one base ability.
         if species.hidden_abilities.empty? || 
            species.mega_stone || species.mega_move
-          text << "the " + t[1] + "only"
+          text << _INTL("the {1}only",t[1])
         else
-          text << "the " + t[1] + "base"
+          text << _INTL("the {1}base",t[1])
         end
       when 2 # Species has two base abilities.
         if species.abilities[0] == ability
-          text << "the " + t[1] + "primary"
+          text << _INTL("the {1}primary",t[1])
         else
-          text << "the " + t[1] + "secondary"
+          text << _INTL("the {1}secondary",t[1])
         end
       end
     #---------------------------------------------------------------------------
     # Hidden abilities.
     #---------------------------------------------------------------------------
     elsif species.hidden_abilities.include?(ability)
-      text << "a " + t[1] + "hidden"
+      text << _INTL("a {1}hidden",t[1])
     else
-      text << "a " + t[1] + "special" 
+      text << _INTL("a {1}special",t[1])
     end
-    text << t[0] + " ability for this species."
+    text << t[0] + _INTL(" ability for this species.")
     return text
   end
   
@@ -561,7 +563,7 @@ class PokemonPokedexInfo_Scene
     moveID = pbCurrentMoveID
     moveName = GameData::Move.get(moveID).name
     text = t[2] + "#{moveName}\n"
-    text << t[0] + "Learned by this species "
+    text << t[0] + _INTL("Learned by this species ")
     methods = []
     #---------------------------------------------------------------------------
     # Move appears in the species' learnset.
@@ -569,19 +571,19 @@ class PokemonPokedexInfo_Scene
     species.moves.each do |m|
       next if m[1] != moveID
       case m[0]
-      when -1 then method = "through " + t[1] + "move relearning" + t[0]  # Gen 9 move relearning.
-      when 0  then method = "upon " + t[1] + "evolution" + t[0]           # Evolution move.
-      else         method = "at " + t[1] + "level #{m[0]}" + t[0]         # Level-up move.
+      when -1 then method = _INTL("through {1}move relearning{2}",t[1],t[0])  # Gen 9 move relearning.
+      when 0  then method = _INTL("upon {1}evolution{2}",t[1],t[0])           # Evolution move.
+      else         method = _INTL("at {1}level {2}{3}",t[1],m[0],t[0])        # Level-up move.
       end
       methods.push(method)
       break	  
     end
-    text << "through " if methods.empty?
+    text << _INTL("through ") if methods.empty?
     #---------------------------------------------------------------------------
     # Move is learned as an Egg Move.
     #---------------------------------------------------------------------------
     if species.get_inherited_moves.include?(moveID)
-      method = t[1] + "inheritance" + t[0]
+      method = t[1] + _INTL("inheritance") + t[0]
       methods.push(method)
     end
     #---------------------------------------------------------------------------
@@ -594,13 +596,13 @@ class PokemonPokedexInfo_Scene
         next if !item.is_machine?
         next if item.move != moveID
         if $bag.has?(item.id)  # Player owns required machine.
-          method = "using " + t[1] + item.name + t[0]
+          method = _INTL("using ") + t[1] + item.name + t[0]
         elsif item.is_HM?      # Move is taught via HM.
-          method = "using an " + t[1] + "HM" + t[0]
+          method = _INTL("using an {1}HM{2}", t[1], t[0])
         elsif item.is_TM?      # Move is taught via TM.
-          method = "using a " + t[1] + "TM" + t[0]
+          method = _INTL("using a {1}TM{2}", t[1], t[0])
         elsif item.is_TR?      # Move is taught via TR.
-          method = "using a " + t[1] + "TR" + t[0]
+          method = _INTL("using a {1}TR{2}", t[1], t[0])
         end
         break
       end
@@ -609,19 +611,19 @@ class PokemonPokedexInfo_Scene
     #---------------------------------------------------------------------------
     # Fixes up grammar and phrasing of learning methods.
     #---------------------------------------------------------------------------
-    methods.push("unknown means") if methods.empty?
+    methods.push(_INTL("unknown means")) if methods.empty?
     methods.each_with_index do |m, i|
       if i > 0 && i == methods.length - 1
         if m.include?("inheritance")
-          text << " or through "
+          text << _INTL(" or through ")
         else
-          text << " or by "
+          text << _INTL(" or by ")
         end
       end
       text << m
-      text << ", " if i == 0 && methods.length > 2
+      text << _INTL(", ") if i == 0 && methods.length > 2
     end
-    text << "."
+    text << _INTL(".")
     return text
   end
 end

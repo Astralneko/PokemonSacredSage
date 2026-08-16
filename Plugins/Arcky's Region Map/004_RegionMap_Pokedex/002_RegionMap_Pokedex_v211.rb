@@ -210,7 +210,7 @@ if Essentials::VERSION.include?("21")
       else
         folderUI = "UI/Region#{@region}/"
         bitmap = pbResolveBitmap("#{Folder}#{folderUI}#{image}")
-        if bitmap && RegionUI
+        if bitmap && folderUI
           # Use UI Graphics for the Current Region.
           return "#{Folder}#{folderUI}#{image}"
         else

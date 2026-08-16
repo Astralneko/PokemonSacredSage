@@ -322,6 +322,8 @@ Boost Mulch
 Boost Mulch
 Amaze Mulch
 Amaze Mulch
+Raid Bait
+Raid Bait
 Celestium Z
 Celestium Z
 Birdium Z
@@ -464,6 +466,12 @@ White Rice
 White Rice
 Cilantro
 Cilantro
+Binammunite
+Binammunite
+Perikitanite
+Perikitanite
+Spikatite
+Spikatite
 Tera Orb
 Tera Orb
 Normal Tera Shard

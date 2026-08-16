@@ -20,16 +20,41 @@ Yes, technically \ppr[3][6] is .FOR.GEN, but with no T-V distinction in modern E
 SPANISH
 ========================
 X = 0:
-- Y = 0: "o", "a", "e" (related endings that end in these vowels, such as -it@, are unnecessary, just do <word>it\ppr[0][0])
+- Y = 0: "o", "a", "e" (related endings that vary only in these vowels, such as -it@, are unnecessary, just do <word>it\ppr[0][0])
 - Y = 1: "dor", "dora", "dore" (unsure if this is standard)
 X = 3:
 - Y = 0: "él", "ella", "elle"
 - Y = 1: "lo", "la", "le"
 X = 4, Y = 0: "nosotros", "nosotras", "nosotres"
+X = 6, Y = 0: "ellos", "ellas", "elles"
 X = 6, Y = 1: "los", "las", "les"
 
+X = 3 and 6, Y = 2 is technically excluded because it is always "a \ppr[X][0]" (but because first and second person are different, \ppr[X][2] is defined)
+X = 3 and 6, Y = 3 is excluded because it is always either "a \ppr[X][0]" or "le" (but because first and second person are different, \ppr[X][3] is defined)
+X = 4, Y = 1 is excluded because it is always "nos"
+X = 7 and 9 are excluded because it is always the same as either X = 4 or 6
+X = 2 and 5 are excluded because although formal/informal pairs exist in \ppr, they are unnecessary, and also vary by region
+No verb endings are necessary for the same reason
 
-X = 3 or 6, Y = 2 is excluded because it is always "a \ppr[3][0]"
-X = 3 or 6, Y = 3 is excluded because it is always either "a \ppr[3][0]" or "le"
-X = 7 and X = 9 are excluded because it is always the same (though \ppr[7][0] being "nosotres" could be contentious)
-X = 2 is excluded because although formal/informal pairs exist in \ppr, they are unnecessary
+========================
+ROKADONG
+========================
+There are far too many pronouns to include every case; just use "<particle><pronoun>" where <particle> is the case particle and pronoun is one of the following (assuming it varies by gender)
+
+X = 2:
+- Y = 0: "ryu" in all cases
+- Y = 1: "zeda", "zenaz", "zerav"
+- Y = 2: "tau" in all cases
+- Y = 3: "talah" in all cases
+- Y = 4: "ludi", "lunu", "luvi"
+- Y = 5: "javital" in all cases
+X = 3:
+- Y = 1: "landa", "lanaz", "lanil"
+X = 6:
+- Y = 1: "landa razil", "lanaz razil", "lanil razil"
+
+X = 1, 4, and 7 are excluded because they do not vary by gender of the referrent
+X = 2, Y = 0, 2, and 3 are deemed unnecessary because "ryu", "tau", and "talah" don't vary by gender, but they are still present
+X = 5 is excluded because they are always "zenyaci", "\ppr[2][Y]yaci" for Y <= 2, or "\ppr[2][Y] tékuha" for Y >= 2
+X = 6 is deemed unnecessary because the neuter form is generally always used, but this isn't true of all speakers
+X = 8 and 9 are excluded because it's always either the masculine or neuter form of a X = 5 or 6 respectively

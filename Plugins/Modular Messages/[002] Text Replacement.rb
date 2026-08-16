@@ -92,7 +92,7 @@ module Modular_Messages
     @@hash["text"].gsub!(/\\b/i, male_text_tag)
     @@hash["text"].gsub!(/\\r/i, female_text_tag)
     @@hash["text"].gsub!(/\\y/i, nonbinary_text_tag)
-	@@hash["text"].gsub!(/\\ppr\[([0-9]+)\]\[([0-9]+)\]/i) { anPlayerPronoun[$1.to_i][$2.to_i] }
+	@@hash["text"].gsub!(/\\ppr\[([0-9]+)\]\[([0-9]+)\]/i) { anPlayerPronoun($1.to_i,$2.to_i) }
   end
   
 #-------------------------------

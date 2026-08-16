@@ -1,0 +1,8 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[ADVENTURE_MAP_DESCRIPTIONS]
+A map designed for testing each map tile in debug mode.
+A map designed for testing each map tile in debug mode.
+A small cavern filled with Raid Pokémon.
+A small cavern filled with Raid Pokémon.

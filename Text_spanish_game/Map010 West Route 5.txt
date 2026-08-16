@@ -12,6 +12,8 @@
 \rNext time, I'll get you for sure...
 \sign[sign hgss dir]\l[3]<ac><b>ROUTE 5</b></ac>&larrow; Alipigra City<r>Maracaleza Town &rarrow;<ac>&darrow; Route 4
 \sign[sign hgss dir]\l[3]<ac><b>ROUTE 5</b></ac>&larrow; Alipigra City<r>Maracaleza Town &rarrow;<ac>&darrow; Route 4
+\l[3]\sign[sign hgss tt]Trainer Tips: In dark tall grass, stronger Pokémon appear!
+\l[3]\sign[sign hgss tt]Trainer Tips: In dark tall grass, stronger Pokémon appear!
 \bCycling on a bridge... Pretty extreme, right?
 \bCycling on a bridge... Pretty extreme, right?
 \bYou know what else is extreme? Battling everyone on Route 5!
@@ -30,8 +32,6 @@
 \xn[Tonio]\bHere's your prize, I guess... Stupid bet...
 \bImpressive team you've built!
 \bImpressive team you've built!
-\l[3]\sign[sign hgss tt]Trainer Tips: In dark tall grass, stronger Pokémon appear!
-\l[3]\sign[sign hgss tt]Trainer Tips: In dark tall grass, stronger Pokémon appear!
 There's Pokémon that way... Probably best to stay in town until you get one of your own.
 There's Pokémon that way... Probably best to stay in town until you get one of your own.
 \xn[Natsuki]\rWait up, \PN!

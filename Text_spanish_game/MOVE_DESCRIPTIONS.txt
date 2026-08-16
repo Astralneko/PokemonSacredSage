@@ -28,8 +28,8 @@ Fires toxic barbs which may poison the target. Power is doubled if the target is
 Fires toxic barbs which may poison the target. Power is doubled if the target is poisoned.
 The user slashes with aura-enriched wings which boosts its Speed stat. Critical hits land more easily.
 The user slashes with aura-enriched wings which boosts its Speed stat. Critical hits land more easily.
-The user attacks the target with spine-chilling resentment. This also lowers the target’s Attack stat.
-The user attacks the target with spine-chilling resentment. This also lowers the target’s Attack stat.
+The user attacks the target with spine-chilling resentment. This may also give them frostbite.
+The user attacks the target with spine-chilling resentment. This may also give them frostbite.
 The user fires arrows which may lower the target’s Defense or make it flinch. Critical hits land more easily.
 The user fires arrows which may lower the target’s Defense or make it flinch. Critical hits land more easily.
 The user attacks with cold winds that cause opposing Pokémon to tremble. This may lower their Speed stats.
@@ -388,6 +388,10 @@ The user invokes an ancient curse, calling forth wicked vines. It deals addition
 The user invokes an ancient curse, calling forth wicked vines. It deals additional damage if the target is weak to the move.
 The user turns the ground irradiated for five turns. Grounded Pokémon take more damage from poison.
 The user turns the ground irradiated for five turns. Grounded Pokémon take more damage from poison.
+The user, Astrayshi, flies blisteringly fast past the target, hitting them on the way.
+The user, Astrayshi, flies blisteringly fast past the target, hitting them on the way.
+The user throws a shooting star into the air, which falls down upon any target on the field.
+The user throws a shooting star into the air, which falls down upon any target on the field.
 Move type changes to match a Terastallized user's Tera Type. Deals damage based on user's higher stat.
 Move type changes to match a Terastallized user's Tera Type. Deals damage based on user's higher stat.
 The user builds up its momentum using its Z-Power and crashes into the target at full speed.

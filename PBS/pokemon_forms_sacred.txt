@@ -90,6 +90,23 @@ Abilities = LEVITATE,SERENEGRACE
 Generation = 101
 Flags = InheritFormWithEverStone
 #-------------------------------
+[BASCULIN,4]
+FormName = Gray-Striped
+Type1 = WATER
+Type2 = FIGHTING
+Abilities = RATTLED,ADAPTABILITY
+TutorMoves = AQUATAIL,BOUNCE,CONFIDE,CUT,DIVE,DOUBLETEAM,ENDEAVOR,ENDURE,FACADE,FRUSTRATION,HAIL,HIDDENPOWER,ICEBEAM,ICYWIND,LIQUIDATION,PROTECT,RAINDANCE,REST,RETURN,ROUND,SCALD,SLEEPTALK,SNORE,SUBSTITUTE,SUPERPOWER,SURF,SWAGGER,TAUNT,TOXIC,UPROAR,WATERFALL,ZENHEADBUTT,ICEFANG,SWIFT
+Pokedex = A form of Basculin similar to its Sinnohan form, this variant is known for much more fighting prowess than its Unovan counterparts.
+Generation = 101
+Evolutions = BASCULEGION,TradeItem,METALCOAT
+#-------------------------------
+[BASCULEGION,4]
+FormName = Verelan
+Type1 = STEEL
+Type2 = FIGHTING
+Pokedex = This robotic form of Basculegion was created by an inspired Silatian scientist. He refers to it as "Iron Jaws".
+Generation = 101
+#-------------------------------
 [TEDDIURSA,2]
 #-------------------------------
 [URSARING,2]

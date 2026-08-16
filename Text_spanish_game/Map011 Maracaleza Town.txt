@@ -48,6 +48,8 @@
 \xn[Mrs. Eisner]\mr[Teacher F]\rWell, would you like to come in? Aria's inside waiting.
 \xn[Mrs. Eisner]\mr[Teacher F]\rWhy, hello there \PN!
 \xn[Mrs. Eisner]\mr[Teacher F]\rWhy, hello there \PN!
+\sign[sign hgss town]\l[2]<ac><b>Maracaleza Town</b>\nSeashell-Laden Town</ac>
+\sign[sign hgss town]\l[2]<ac><b>Maracaleza Town</b>\nSeashell-Laden Town</ac>
 \xn[Middle-Aged Woman]\mr[Lady]\rSomeone stole my Pokémon! Can you please help?!
 \xn[Middle-Aged Woman]\mr[Lady]\rSomeone stole my Pokémon! Can you please help?!
 \xn\mr\rOkay, well, let me explain first...
@@ -90,8 +92,6 @@
 \xn\mr\rI can tell you don't! Please hurry!
 \xn\mr\rWell, hurry up! Please!
 \xn\mr\rWell, hurry up! Please!
-\sign[sign hgss town]\l[2]<ac><b>Maracaleza Town</b>\nSeashell-Laden Town</ac>
-\sign[sign hgss town]\l[2]<ac><b>Maracaleza Town</b>\nSeashell-Laden Town</ac>
 \xn[Construction]\bWe're currently doing construction on the beachfront.
 \xn[Construction]\bWe're currently doing construction on the beachfront.
 \xn[Construction]\bSorry, but you'll have to wait until it's done to head to the water.

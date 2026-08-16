@@ -19,3 +19,12 @@ Price = 0
 BPPrice = 50
 Flags = MegaStone,Fling_80
 Description = One of a variety of mysterious Mega Stones. Have Perikita hold it, and it will be able to Mega Evolve.
+#-------------------------------
+[SPIKATITE]
+Name = Spikatite
+NamePlural = Spikatite
+Pocket = 1
+Price = 0
+BPPrice = 50
+Flags = MegaStone,Fling_80
+Description = One of a variety of mysterious Mega Stones. Have Spikatus hold it, and it will be able to Mega Evolve.

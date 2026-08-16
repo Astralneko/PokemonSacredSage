@@ -36,6 +36,8 @@ Amulet Form
 Amulet Form
 Delinquent Form
 Delinquent Form
+Gifted Form
+Gifted Form
 Hisuian
 Hisuian
 Paldean (Combat Breed)
@@ -236,6 +238,8 @@ Dark Mode
 Dark Mode
 Verelan
 Verelan
+Gray-Striped
+Gray-Striped
 Battle Stance
 Battle Stance
 Spearman Joushrimp
@@ -288,3 +292,11 @@ Monster Form
 Monster Form
 Zantarean
 Zantarean
+Mega Binammuni
+Mega Binammuni
+Prideful Form
+Prideful Form
+Mega Perikita
+Mega Perikita
+Twilight Scales
+Twilight Scales
