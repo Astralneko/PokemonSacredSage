@@ -101,6 +101,8 @@ class PokemonIconSprite < Sprite
     @logical_y     = 0   # Actual y coordinate
     @adjusted_x    = 0   # Offset due to "jumping" animation in party screen
     @adjusted_y    = 0   # Offset due to "jumping" animation in party screen
+	# set zoom since the new icon sprites are 1x1 (Uses Luka Scripting Utilities zoom=)
+	self.zoom = 2.0
   end
 
   def dispose
@@ -151,11 +153,11 @@ class PokemonIconSprite < Sprite
     @offset = PictureOrigin::TOP_LEFT if !@offset
     case @offset
     when PictureOrigin::TOP_LEFT, PictureOrigin::LEFT, PictureOrigin::BOTTOM_LEFT
-      self.ox = 16 # Left 12 pixels are assumed blank per Pokesprite
+      self.ox = 24 # Left 12 pixels are assumed blank per Pokesprite
     when PictureOrigin::TOP, PictureOrigin::CENTER, PictureOrigin::BOTTOM
       self.ox = self.src_rect.width / 2
     when PictureOrigin::TOP_RIGHT, PictureOrigin::RIGHT, PictureOrigin::BOTTOM_RIGHT
-      self.ox = self.src_rect.width - 16 # Right 12 pixels are assumed blank per Pokesprite
+      self.ox = self.src_rect.width - 24 # Right 12 pixels are assumed blank per Pokesprite
     end
     case @offset
     when PictureOrigin::TOP_LEFT, PictureOrigin::TOP, PictureOrigin::TOP_RIGHT
@@ -192,8 +194,6 @@ class PokemonIconSprite < Sprite
     # Update animation
     update_frame
     # self.src_rect.x = self.src_rect.width * @current_frame # Handled in code now
-	# set zoom since the new icon sprites are 1x1 (Uses Luka Scripting Utilities zoom=)
-	self.zoom = 2.0
     # Update "jumping" animation (used in party screen) - 2 in this section was previously @frames_count
     if @selected
       @adjusted_x = 2

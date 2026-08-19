@@ -121,11 +121,43 @@ class PokemonRegionMap_Scene
         end
       end
       mapsize    = @mapMetadata.town_map_size
-      if mapsize && mapsize[0] && mapsize[0] > 0
+      if mapsize && mapsize[0] && mapsize[0] > 1
         sqwidth  = mapsize[0]
         sqheight = (mapsize[1].length.to_f / mapsize[0]).ceil
-        @mapX   += ($game_player.x * sqwidth / $game_map.width).floor if sqwidth > 1
-        @mapY   += ($game_player.y * sqheight / $game_map.height).floor if sqheight > 1
+		echoln("Lazy size: #{sqwidth}x#{sqheight}")
+		# Check if position would be valid
+		player_offset_x = ($game_player.x * sqwidth / $game_map.width).floor
+		player_offset_y = ($game_player.y * sqheight / $game_map.height).floor
+		if sqwidth > 1
+			# Attempt to make town_map_cell
+			town_map_cell = player_offset_y * sqwidth + player_offset_x
+			# If town map position is invalid
+			if mapsize[1][town_map_cell] == 0
+				# Since sqheight can be below sqwidth and town_map_position is the top left corner, the valid cell is assumed to be to the left
+				valid_cell_check = 1
+				# Actual width of this row
+				actual_width = sqwidth
+				# If a valid cell has been found
+				found_valid_cell = false
+				while valid_cell_check < sqwidth && !found_valid_cell
+					if mapsize[1][town_map_cell - valid_cell_check] == 1
+						actual_width -= valid_cell_check
+						found_valid_cell = true
+					end
+					valid_cell_check += 1
+				end
+				# If I've reached the end of the loop, just assume width is 1
+				if !found_valid_cell
+					actual_width = 1
+				end
+				echoln("Calculated size: #{actual_width}x#{sqheight}")
+				# Calculate new player offset x using the actual width of this row
+				player_offset_x = ($game_player.x * actual_width / $game_map.width).floor
+			end
+		end
+		# Add offsets if they're more than 1
+        @mapX   += player_offset_x if player_offset_x > 0
+        @mapY   += player_offset_y if player_offset_y > 0
       end
     end
   end

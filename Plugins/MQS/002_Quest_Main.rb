@@ -68,8 +68,8 @@ class Player_Quests
       end
     end
     @active_quests.push(Quest.new(quest,color,story))
-    questcol = color ? color : "red"
-    pbMessage(_INTL("\\se[{1}]<ac><c2=#{colorQuest(questcol)}>New quest discovered!</c2>\nCheck your quest log for more details!</ac>",QUEST_JINGLE))
+    questcol = color ? color : colorQuest("red")
+    pbMessage(_INTL("\\se[{1}]<ac><c2=#{questcol}}>New quest discovered!</c2>\nCheck your quest log for more details!</ac>",QUEST_JINGLE))
   end
   
   def failQuest(quest,color,story)
@@ -98,8 +98,8 @@ class Player_Quests
         @failed_quests.push(temp_quest)
         @active_quests.delete_at(i)
         found = true
-        questcol = color ? color : "red"
-        pbMessage(_INTL("\\se[{1}]<ac><c2=#{colorQuest(questcol)}>Quest failed!</c2>\nYour quest log has been updated!</ac>",QUEST_FAIL))
+        questcol = color ? color : colorQuest("red")
+        pbMessage(_INTL("\\se[{1}]<ac><c2=#{questcol}}>Quest failed!</c2>\nYour quest log has been updated!</ac>",QUEST_FAIL))
         break
       end
     end
@@ -135,8 +135,8 @@ class Player_Quests
         @completed_quests.push(temp_quest)
         @active_quests.delete_at(i)
         found = true
-        questcol = color ? color : "red"
-        pbMessage(_INTL("\\se[{1}]<ac><c2=#{colorQuest(questcol)}>Quest completed!</c2>\nYour quest log has been updated!</ac>",QUEST_JINGLE))
+        questcol = color ? color : colorQuest("red")
+        pbMessage(_INTL("\\se[{1}]<ac><c2=#{questcol}}>Quest completed!</c2>\nYour quest log has been updated!</ac>",QUEST_JINGLE))
         break
       end
     end
@@ -157,8 +157,8 @@ class Player_Quests
         @active_quests[i].color = color if color != nil
         @active_quests[i].new = true # Setting this back to true makes the "!" icon appear when the quest updates
         found = true
-        questcol = color ? color : "red"
-        pbMessage(_INTL("\\se[{1}]<ac><c2=#{colorQuest(questcol)}>New task added!</c2>\nYour quest log has been updated!</ac>",QUEST_JINGLE))
+        questcol = color ? color : colorQuest("red")
+        pbMessage(_INTL("\\se[{1}]<ac><c2=#{questcol}}>New task added!</c2>\nYour quest log has been updated!</ac>",QUEST_JINGLE))
       end
       return if found
     end
@@ -194,7 +194,7 @@ end
 #===============================================================================
 
 # Helper function for activating quests
-def activateQuest(quest,color=colorQuest(nil),story=false)
+def activateQuest(quest,color=colorQuest("red"),story=false)
   return if !$PokemonGlobal
   $PokemonGlobal.quests.activateQuest(quest,color,story)
 end

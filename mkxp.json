@@ -17,8 +17,8 @@
 
     // The game window's width and height, in pixels.
     //
-    "defScreenW": 512,
-    "defScreenH": 384,
+    "defScreenW": 800,
+    "defScreenH": 480,
 
     // The path to the game window's icon. For Linux only. (Default: none)
     //

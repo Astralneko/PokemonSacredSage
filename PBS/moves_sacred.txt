@@ -642,6 +642,18 @@ Target = BothSides
 FunctionCode = StartSpiritTerrain
 Description = The user turns the ground irradiated for five turns. Grounded Pokémon take more damage from poison.
 #-------------------------------
+[BLOODDRAW]
+Name = Blood Draw
+Type = POISON
+Category = Special
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = The user bites the target, recovering health from the wound left behind.
+#-------------------------------
 [LIGHTSPEEDSMASH]
 Name = Lightspeed Smash
 Type = CELESTIAL

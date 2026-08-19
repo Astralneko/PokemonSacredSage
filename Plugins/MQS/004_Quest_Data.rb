@@ -9,7 +9,7 @@ module QuestModule
 	:Stage1 => _INTL("Meet up with Natsuki and Amano."),
 	:Stage2 => _INTL("Come to Prof. Razilwood's Lab."),
 	:Location1 => _INTL("Alipigra City"),
-	:Map => [0,25,12],
+	:Map => [0,24,12],
 	:QuestDescription => _INTL("Your adventure as a Pokémon Trainer begins! Get your first Pokémon!"),
 	:RewardString => _INTL("A catalogue? How boring!")
   }
@@ -20,7 +20,7 @@ module QuestModule
 	:QuestGiver => _INTL("Gym Guide Gully"),
 	:Stage1 => _INTL("Find Aria somewhere in Alipigra City."),
 	:Location1 => _INTL("Starview Lake"),
-	:Map => [0,25,12],
+	:Map => [0,24,12],
 	:QuestDescription => _INTL("Ah yes, the \"she's not here right now, go find her elsewhere\" gimmick. How amazing."),
 	:RewardString => _INTL("The right to collect the Glider Badge.")
   }
@@ -31,7 +31,7 @@ module QuestModule
 	:QuestGiver => _INTL("The Pokémon League"),
 	:Stage1 => _INTL("Defeat Aria."),
 	:Location1 => _INTL("Alipigra Gym"),
-	:Map => [0,25,12],
+	:Map => [0,23,12],
 	:QuestDescription => _INTL("Defeat the first Gym, the first checkpoint on the road to becoming Sunset League Champion!"),
 	:RewardString => _INTL("1/8 of the right to collect the Elite Four Badge.")
   }
@@ -55,7 +55,7 @@ module QuestModule
 	:QuestGiver => _INTL("Gym Leader Aria"),
 	:Stage1 => _INTL("Talk to Aria."),
 	:Location1 => _INTL("Starview Lake"),
-	:Map => [0,23,12],
+	:Map => [0,22,12],
 	:QuestDescription => _INTL("Aria wants you to go get Tobias from Starview Lake while she gets the Gym set up again. Better go quick!"),
 	:RewardString => _INTL("Finally being able to collect the Glider Badge.")
   }

@@ -619,7 +619,7 @@ def pbChooseStarter(starters, level = 5, allow_cancel = true, title = nil, can_s
     $player.pokedex.set_owned(pokemon.species)
     
     if $player.party.length >= Settings::MAX_PARTY_SIZE
-      $PokemonStorage.pbStore(pokemon)
+      pbStorePokemon(pokemon)
       pbMessage(_INTL("{1} was transferred to your PC!", pokemon.name))
     else
       $player.party.push(pokemon)

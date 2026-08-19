@@ -22,7 +22,7 @@ MENU_FILE_PATH = "Graphics/UI/VPM/"
 # An array of aLL the Menu Component Classes from 004_VoltseonMenu_Components
 # that need to be loaded
 MENU_COMPONENTS = [
-  :VPM_SafariHud, :VPM_BugContestHud, :VPM_PokemonPartyHud, :VPM_DateAndTimeHud, :VPM_NewQuestHud
+  :VPM_SafariHud, :VPM_BugContestHud, :VPM_PokemonPartyHud, :VPM_DateAndTimeHud, :VPM_NewQuestHud, :VPM_NameHud
 ]
 
 # The default theme for the menu screen
@@ -42,7 +42,21 @@ SHOW_MENU_NAMES = true # Whether or not the Menu option Names show on screen (tr
 # Icon options
 ACTIVE_SCALE = 1.5
 
+MENU_THEME_NAMES = [
+  "Light Mode",
+  "Dark Mode",
+  "Treecko",
+  "Cyndaquil",
+  "Squirtle",
+  "Jirachi",
+  "Voltseon",
+  "Golisopod User",
+  "ENLS",
+  "Big Light"
+]
+
 MENU_TEXTCOLOR = [
+  Color.new(248, 248, 248),
   Color.new(248, 248, 248),
   Color.new(248, 248, 248),
   Color.new(248, 248, 248),
@@ -63,10 +77,12 @@ MENU_TEXTOUTLINE = [
   Color.new(137, 0, 100),
   Color.new(38, 22, 91),
   Color.new(12, 37, 24),
-  Color.new(0, 58, 76)
+  Color.new(0, 58, 76),
+  Color.new(64, 64, 64)
 ]
 
 LOCATION_TEXTCOLOR = [
+  Color.new(248, 248, 248),
   Color.new(248, 248, 248),
   Color.new(248, 248, 248),
   Color.new(248, 248, 248),
@@ -88,7 +104,8 @@ LOCATION_TEXTOUTLINE = [
   Color.new(137, 0, 100),
   Color.new(38, 22, 91),
   Color.new(12, 37, 24),
-  Color.new(0, 58, 76)
+  Color.new(0, 58, 76),
+  Color.new(64, 64, 64)
 ]
 
 # Sound Options

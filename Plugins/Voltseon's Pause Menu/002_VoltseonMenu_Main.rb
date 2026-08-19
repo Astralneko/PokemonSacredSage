@@ -54,6 +54,12 @@ class VoltseonsPauseMenu_Scene
     @sprites["backshade"].bitmap.fill_rect(0, 0, Graphics.width, Graphics.height, BACKGROUND_TINT)
     # Location window
     @sprites["location"] = Sprite.new(@viewport)
+    # Background top image
+    @sprites["menutop"] = Sprite.new(@viewport)
+    @sprites["menutop"].bitmap = RPG::Cache.load_bitmap(MENU_FILE_PATH, $PokemonSystem.from_current_menu_theme("bg_top"))
+    @sprites["menutop"].z  = -5
+    @sprites["menutop"].oy = 0
+    @sprites["menutop"].y  = 0
     # Menu arrows
     filename = MENU_FILE_PATH + $PokemonSystem.from_current_menu_theme("arrow_left")
     @sprites["leftarrow"]         = AnimatedSprite.new(filename, 8, 40, 28, 2, @viewport)
@@ -245,7 +251,7 @@ class VoltseonsPauseMenu_Scene
     shdw_color = $PokemonSystem.from_current_menu_theme(LOCATION_TEXTOUTLINE, Color.new(48, 48, 48))
     x_offset = @sprites["location"].bitmap.width - 64
     pbSetSystemFont(@sprites["location"].bitmap)
-    pbDrawTextPositions(@sprites["location"].bitmap, [[$game_map.name, x_offset, 12, 1, base_color, shdw_color, true]])
+    pbDrawTextPositions(@sprites["location"].bitmap, [[$game_map.name, x_offset, 92, 1, base_color, shdw_color, true]])
     @sprites["location"].x = -@sprites["location"].bitmap.width + (@sprites["location"].bitmap.text_size($game_map.name).width + 64 + 32)
     @sprites["location"].x -= @sprites["location"].bitmap.width if @hidden
     @components.each { |component| component.refresh }
@@ -324,9 +330,9 @@ MenuHandlers.add(:debug_menu, :set_menu_theme, {
 MenuHandlers.add(:options_menu, :menu_theme, {
   "name"        => _INTL("Menu Theme"),
   "order"       => 200,
-  "type"        => NumberOption,
+  "type"        => EnumOption,
   "condition"   => proc { next CHANGE_THEME_IN_OPTIONS && MENU_TEXTCOLOR.length > 1 },
-  "parameters"  => 1..MENU_TEXTCOLOR.length,
+  "parameters"  => MENU_THEME_NAMES,
   "description" => _INTL("Set pause menu theme."),
   "get_proc"    => proc { next $PokemonSystem.current_menu_theme },
   "set_proc"    => proc { |value, scene| $PokemonSystem.current_menu_theme = value }

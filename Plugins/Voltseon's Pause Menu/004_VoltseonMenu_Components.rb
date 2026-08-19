@@ -90,16 +90,20 @@ class VPM_PokemonPartyHud < Component
     end
     $player.party.each_with_index do |pokemon, i|
       next if !pokemon.is_a?(Pokemon)
-      spacing = (Graphics.width / 8) * i
+	  # Icons are expected to be 68x56 but with 12px on both sides and the top cut off, then multiplied by 2
+	  # Since the usable icon area is 44x44, use 44, 132, 220, width-264, width-176, width-88
+	  placemarks = [44, 132, 220, Graphics.width-264, Graphics.width-176, Graphics.width-88]
+      spacing = placemarks[i]
       # Pokémon Icon
       @sprites["pokemon_#{i}"] = PokemonIconSprite.new(pokemon, @viewport) if !@sprites["pokemon#{i}"] || @sprites["pokemon#{i}"].disposed?
-      @sprites["pokemon_#{i}"].x = spacing + (Graphics.width / 8)
+      #@sprites["pokemon_#{i}"].setOffset(PictureOrigin::CENTER)
+      @sprites["pokemon_#{i}"].x = spacing
       @sprites["pokemon_#{i}"].y = Graphics.height - 152
       @sprites["pokemon_#{i}"].y += Graphics.height / 2 if @menu.hidden && !@menu.start_up
       @sprites["pokemon_#{i}"].z = -2
       next if pokemon.egg?
       # Information Overlay
-      @sprites["overlay"].bitmap.blt(spacing + (Graphics.width / 8) + 16, (Graphics.height / 2) - 90,
+      @sprites["overlay"].bitmap.blt(spacing + 0, (Graphics.height / 2) - 90,
                           @info_bar_bmp, Rect.new(0, 0, @info_bar_bmp.width, @info_bar_bmp.height))
       # Health
       if pokemon.hp > 0
@@ -110,7 +114,7 @@ class VPM_PokemonPartyHud < Component
         hpzone = 1 if pokemon.hp <= (pokemon.totalhp/2).floor
         hpzone = 2 if pokemon.hp <= (pokemon.totalhp/4).floor
         hprect = Rect.new(0, hpzone * 4, w, 4)
-        @sprites["overlay"].bitmap.blt(spacing + (Graphics.width/8) + 18, (Graphics.height / 2) - 88, @hp_bar_bmp, hprect)
+        @sprites["overlay"].bitmap.blt(spacing + 2, (Graphics.height / 2) - 88, @hp_bar_bmp, hprect)
       end
       # EXP
       if pokemon.exp > 0
@@ -191,8 +195,43 @@ class VPM_DateAndTimeHud < Component
     text2 = _INTL("{1}", time.strftime("%I:%M %p"))
     @sprites["overlay"].bitmap.clear
     pbSetSmallFont(@sprites["overlay"].bitmap)
-    pbDrawTextPositions(@sprites["overlay"].bitmap,[[text, (Graphics.width / 2) - 8, 12, 1,
-      @base_color, @shdw_color], [text2, (Graphics.width / 2) - 8, 34, 1, @base_color, @shdw_color]])
+    pbDrawTextPositions(@sprites["overlay"].bitmap, [[text, (Graphics.width / 2) - 8, 32, 1, @base_color, @shdw_color, true]])
+    pbSetSystemFont(@sprites["overlay"].bitmap)
+	pbDrawTextPositions(@sprites["overlay"].bitmap, [[text2, (Graphics.width / 2) - 8, 54, 1, @base_color, @shdw_color, true]])
+    @last_time = time.min
+  end
+end
+
+#-------------------------------------------------------------------------------
+# Name Component
+#-------------------------------------------------------------------------------
+class VPM_NameHud < Component   
+  def initialize
+    @name = $player.name
+  end
+
+  def start_component(viewport, menu)
+    super(viewport, menu)
+    @sprites["overlay"]    = BitmapSprite.new(Graphics.width / 2, 96, viewport)
+    @sprites["overlay"].ox = @sprites["overlay"].bitmap.width
+    @sprites["overlay"].x  = Graphics.width / 2
+    @base_color = $PokemonSystem.from_current_menu_theme(MENU_TEXTCOLOR, Color.new(248, 248, 248))
+    @shdw_color = $PokemonSystem.from_current_menu_theme(MENU_TEXTOUTLINE, Color.new(48, 48, 48))
+  end
+
+  def should_draw?; return !(pbInBugContest? || pbInSafari?); end
+
+  def update
+    super
+    refresh if (pbGetTimeNow.min != @last_time) && !@menu.should_exit
+  end
+
+  def refresh
+    time  = pbGetTimeNow 
+    text  = _INTL("{1}'s Rotom-Phone", @name)
+    @sprites["overlay"].bitmap.clear
+    pbSetSystemFont(@sprites["overlay"].bitmap)
+	pbDrawTextPositions(@sprites["overlay"].bitmap, [[text, 12, 4, 0, @base_color, @shdw_color, true]])
     @last_time = time.min
   end
 end
@@ -210,7 +249,7 @@ class VPM_NewQuestHud < Component
     @sprites["overlay"]    = BitmapSprite.new(Graphics.width / 2, 32, viewport)
     @sprites["overlay"].ox = @sprites["overlay"].bitmap.width
     @sprites["overlay"].x  = Graphics.width
-    @sprites["overlay"].y  = 96
+    @sprites["overlay"].y  = 108
     @sprites["overlay"].oy = 32
     @base_color = $PokemonSystem.from_current_menu_theme(MENU_TEXTCOLOR, Color.new(248, 248, 248))
     @shdw_color = $PokemonSystem.from_current_menu_theme(MENU_TEXTOUTLINE, Color.new(48, 48, 48))

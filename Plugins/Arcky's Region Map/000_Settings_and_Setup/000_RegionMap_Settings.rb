@@ -72,7 +72,7 @@
         #  "Cedolan City Gym" => 10
         #}
         LinkPoiToMap = {
-
+			
         }
 
       #============================= Fake Locations =============================#
@@ -127,7 +127,7 @@
         # true or 0 = enabled: This feature can be used.
         # false or -1 = disabled.
         # Switch ID = enabled if this Switch is ON.
-        CanLocationSearch = true
+        CanLocationSearch = 12 # Defeated Elite Four and Champion
 
         # true = enabled: Include unvisited maps in the list of Locations.
         # false = disblaed: Don't include unvisited maps in the list of Locations.
@@ -168,8 +168,12 @@
         # - Name of the graphic, found in the Graphics/Pictures.
         # - false if you want it to render below. (true by default).
         RegionMapDecoration = [
-          [0, nil, 8, 6, "mapTrees"],
-          [0, 51, 16, 15, "mapTrees"]
+          [0, 70, 30, 13, "Whitepetal Forest Spring"], # Flowers in spring
+          [0, 72, 30, 13, "Whitepetal Forest Spring"], # Also flowers in autumn
+          [0, 71, 30, 13, "Whitepetal Forest"], # Does not flower in summer
+          [0, 73, 30, 13, "Whitepetal Forest"], # Also does not flower in winter
+          [0, nil, 17, 14, "Choraçu Park Depths"],
+          [0, nil, 30, 6, "Folhadourada Grove"]
         ]
         #RegionMapDecoration = [
 
@@ -188,29 +192,37 @@
         #    example: [0, 10]; when the cursor is between 0 and 10 (including 0 and 10) the name of the region changes (depending on the X value as well).
         # - Region District Name; this is the name the script will use only when the cursor is inside X and Y range.
         RegionDistricts = [
-			[0, [31, 34], [0, 11], "South Lauransel Ocean"],
-			[0, [32, 34], [12, 18], "South Lauransel Ocean"],
-			[0, [31, 34], [19, 23], "South Lauransel Ocean"],
-			[0, [0, 18], [0, 8], "Northwest Verela"],
-			[0, [19, 31], [0, 8], "Northeast Verela"],
-			[0, [0, 18], [9, 14], "West Verela"],
-			[0, [19, 31], [9, 14], "East Verela"],
-			[0, [0, 18], [15, 23], "Southwest Verela"],
-			[0, [19, 31], [15, 23], "Southeast Verela"],
-			[1, [10, 20], [5, 15], "Central Hisui"]
+			[0, [36, 47], [0, 12], "South Lauransel Ocean"],
+			[0, [37, 47], [13, 19], "South Lauransel Ocean"],
+			[0, [36, 47], [20, 25], "South Lauransel Ocean"],
+			[0, [8, 23], [0, 8], "Northwest Verela"],
+			[0, [24, 36], [0, 8], "Northeast Verela"],
+			[0, [8, 23], [9, 14], "West Verela"],
+			[0, [24, 36], [9, 14], "East Verela"],
+			[0, [0, 23], [15, 23], "Southwest Verela"],
+			[0, [24, 36], [15, 23], "Southeast Verela"],
+			[0, [0, 7], [0, 25], "Andilla Fringe"],
+			[3, [10, 20], [5, 15], "Central Hisui"],
+			[2, [10, 20], [10, 15], "South District"],
+			[2, [10, 20], [5, 10], "Area Zero"],
+			[1, [10, 20], [5, 15], "Casteliopolis"]
         ]
 
         # Link a switch ID to each District (if used). This switch will be turned ON once it's at 100%.
         # You'll need to add a script command containing switchesForDistricts in an event before checking if any switches are turned ON.
         ProgressSwitches = {
-          "South Lauransel Ocean" => 90,
-		  "Northwest Verela" => 91,
-		  "Northeast Verela" => 92,
-		  "West Verela" => 93,
-		  "East Verela" => 94,
-		  "Southwest Verela" => 95,
-		  "Southeast Verela" => 96,
-          "Central Hisui" => 97
+          "South Lauransel Ocean" => 501,
+		  "Northwest Verela" => 502,
+		  "Northeast Verela" => 505,
+		  "West Verela" => 503,
+		  "East Verela" => 506,
+		  "Southwest Verela" => 504,
+		  "Southeast Verela" => 507,
+          "Andilla Fringe" => 508,
+          "Central Hisui" => 509,
+		  "South District" => 510,
+		  "Area Zero" => 511,
+		  "Casteliopolis" => 512
         }
       #========================= Region Map Connecting =========================#
 
@@ -370,7 +382,7 @@
         # For each Region you want the UI to change, make a new Folder and name it "Region1" or any Region number (as long as it matches with the one set in the PBS).
         # These folders are located in Graphics > Pictures > RegionMap > UI for v20.1 or Graphics > UI > Town Map > UI for v21.1.
         # The Default UI will be used if no Region Folder is found for the current Region or if there are missing Graphics.
-        ChangeUIOnRegion = false
+        ChangeUIOnRegion = true
 
       #========================== Text Position Settings ========================#
 
@@ -499,7 +511,7 @@
 
         # Only used when the setting above is set to true.
         # Default text when the location has not been visited yet.
-        UnvisitedMapInfoText = _INTL("No information Available")
+        UnvisitedMapInfoText = _INTL("Location isn't visited yet...")
 
         # Note: The Location Previews are numbered by the amount of lines they are meant for,
         # If you change this to a higher number then make sure you have a bigger graphic.

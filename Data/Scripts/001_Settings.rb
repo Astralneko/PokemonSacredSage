@@ -481,10 +481,10 @@ module Settings
 
   # The default screen width (at a scale of 1.0). You should also edit the
   # property "defScreenW" in mkxp.json to match.
-  SCREEN_WIDTH  = 512
+  SCREEN_WIDTH  = 800
   # The default screen height (at a scale of 1.0). You should also edit the
   # property "defScreenH" in mkxp.json to match.
-  SCREEN_HEIGHT = 384
+  SCREEN_HEIGHT = 480
   # The default screen scale factor. Possible values are 0.5, 1.0, 1.5 and 2.0.
   SCREEN_SCALE  = 1.0
 

@@ -71,6 +71,14 @@ class PokemonRegionMap_Scene
     if mapData[8] && !mapData[8].include?("Small") && !mapData[8].include?("Route")
       x -= 1
       y -= 1
+	  # For Rocavideo, decrease y by 1 - this has to be done manually because the normal padding is not enough
+	  if mapData[8].include?("Rocavideo")
+	    y -= 1
+	  end
+	  # For Tangoseiro, decrease x by 1 - this has to be done manually because the normal padding is not enough
+	  if mapData[8].include?("Tangoseiro")
+	    x -= 1
+	  end
     end
     return {name: name, x: x, y: y }
   end

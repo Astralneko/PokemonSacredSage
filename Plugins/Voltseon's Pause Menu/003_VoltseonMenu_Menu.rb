@@ -31,7 +31,7 @@ class VoltseonsPauseMenu < Component
     @sprites["icon_dummy_r"].oy = $game_temp.menu_icon_width / 2
     recalc_icon_positions(true)
     @sprites["entrytext"]       = BitmapSprite.new(Graphics.width / 2, 40, @viewport)
-    @sprites["entrytext"].y     = Graphics.height - 188
+    @sprites["entrytext"].y     = Graphics.height - 118
     @sprites["entrytext"].ox    = Graphics.width / 4
     @sprites["entrytext"].x     = Graphics.width / 2
     @sprites["leftarrow"].visible  = @disp_indices.length != 1
@@ -285,6 +285,6 @@ class VoltseonsPauseMenu < Component
     pbSetSystemFont(@sprites["entrytext"].bitmap)
     base_color = $PokemonSystem.from_current_menu_theme(MENU_TEXTCOLOR, Color.new(248, 248, 248))
     shdw_color = $PokemonSystem.from_current_menu_theme(MENU_TEXTOUTLINE, Color.new(48, 48, 48))
-    pbDrawTextPositions(@sprites["entrytext"].bitmap, [[text, Graphics.width / 4, 8, 2, base_color, shdw_color]])
+    pbDrawTextPositions(@sprites["entrytext"].bitmap, [[text, Graphics.width / 4, 8, 2, base_color, shdw_color, true]])
   end
 end
