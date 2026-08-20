@@ -1,0 +1,126 @@
+
+=================
+
+[2026-08-20 09:42:26 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NameError
+Message: undefined local variable or method `openCardFlip' for #<PokemonTrainerCard_Scene>
+
+Backtrace:
+[User Interface Enhancement] [010]TrainerCard_UI.rb:162:in `block in pbTrainerCard'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:154:in `loop'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:154:in `pbTrainerCard'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:220:in `pbStartScreen'
+001_UI_PauseMenu.rb:214:in `block (3 levels) in load_scripts_from_folder'
+002_MessageConfig.rb:580:in `pbFadeOutIn'
+[User Interface Enhancement] [005]Bag.rb:862:in `pbFadeOutIn'
+001_UI_PauseMenu.rb:211:in `block (2 levels) in load_scripts_from_folder'
+[Voltseon's Pause Menu] 003_VoltseonMenu_Menu.rb:54:in `update'
+[Voltseon's Pause Menu] 002_VoltseonMenu_Main.rb:228:in `block in update'
+
+=================
+
+[2026-08-20 09:47:57 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: ArgumentError
+Message: comparison of Float with nil failed
+
+Backtrace:
+[User Interface Enhancement] [010]TrainerCard_UI.rb:164:in `>'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:164:in `block in pbTrainerCard'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:154:in `loop'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:154:in `pbTrainerCard'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:221:in `pbStartScreen'
+001_UI_PauseMenu.rb:214:in `block (3 levels) in load_scripts_from_folder'
+002_MessageConfig.rb:580:in `pbFadeOutIn'
+[User Interface Enhancement] [005]Bag.rb:862:in `pbFadeOutIn'
+001_UI_PauseMenu.rb:211:in `block (2 levels) in load_scripts_from_folder'
+[Voltseon's Pause Menu] 003_VoltseonMenu_Menu.rb:54:in `update'
+
+=================
+
+[2026-08-20 09:49:57 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NameError
+Message: undefined local variable or method `region' for #<PokemonTrainerCard_Scene>
+
+Backtrace:
+[User Interface Enhancement] [010]TrainerCard_UI.rb:168:in `block in pbTrainerCard'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:154:in `loop'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:154:in `pbTrainerCard'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:223:in `pbStartScreen'
+001_UI_PauseMenu.rb:214:in `block (3 levels) in load_scripts_from_folder'
+002_MessageConfig.rb:580:in `pbFadeOutIn'
+[User Interface Enhancement] [005]Bag.rb:862:in `pbFadeOutIn'
+001_UI_PauseMenu.rb:211:in `block (2 levels) in load_scripts_from_folder'
+[Voltseon's Pause Menu] 003_VoltseonMenu_Menu.rb:54:in `update'
+[Voltseon's Pause Menu] 002_VoltseonMenu_Main.rb:228:in `block in update'
+
+=================
+
+[2026-08-20 09:52:58 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: ArgumentError
+Message: wrong number of arguments (given 0, expected 1)
+
+Backtrace:
+002_DebugConsole.rb:42:in `echoln'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:150:in `pbDrawTrainerCardFront'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:47:in `pbStartScene'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:223:in `pbStartScreen'
+001_UI_PauseMenu.rb:214:in `block (3 levels) in load_scripts_from_folder'
+002_MessageConfig.rb:580:in `pbFadeOutIn'
+[User Interface Enhancement] [005]Bag.rb:862:in `pbFadeOutIn'
+001_UI_PauseMenu.rb:211:in `block (2 levels) in load_scripts_from_folder'
+[Voltseon's Pause Menu] 003_VoltseonMenu_Menu.rb:54:in `update'
+[Voltseon's Pause Menu] 002_VoltseonMenu_Main.rb:228:in `block in update'
+
+=================
+
+[2026-08-20 09:56:31 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NameError
+Message: undefined local variable or method `drawTrainerCardFront' for #<PokemonTrainerCard_Scene>
+
+Backtrace:
+[User Interface Enhancement] [010]TrainerCard_UI.rb:170:in `block in pbTrainerCard'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:155:in `loop'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:155:in `pbTrainerCard'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:225:in `pbStartScreen'
+001_UI_PauseMenu.rb:214:in `block (3 levels) in load_scripts_from_folder'
+002_MessageConfig.rb:580:in `pbFadeOutIn'
+[User Interface Enhancement] [005]Bag.rb:862:in `pbFadeOutIn'
+001_UI_PauseMenu.rb:211:in `block (2 levels) in load_scripts_from_folder'
+[Voltseon's Pause Menu] 003_VoltseonMenu_Menu.rb:54:in `update'
+[Voltseon's Pause Menu] 002_VoltseonMenu_Main.rb:228:in `block in update'
+
+=================
+
+[2026-08-20 10:00:00 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `dispose' for nil:NilClass
+
+Backtrace:
+[User Interface Enhancement] [010]TrainerCard_UI.rb:60:in `setupCard'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:48:in `pbStartScene'
+[User Interface Enhancement] [010]TrainerCard_UI.rb:226:in `pbStartScreen'
+001_UI_PauseMenu.rb:214:in `block (3 levels) in load_scripts_from_folder'
+002_MessageConfig.rb:580:in `pbFadeOutIn'
+[User Interface Enhancement] [005]Bag.rb:862:in `pbFadeOutIn'
+001_UI_PauseMenu.rb:211:in `block (2 levels) in load_scripts_from_folder'
+[Voltseon's Pause Menu] 003_VoltseonMenu_Menu.rb:54:in `update'
+[Voltseon's Pause Menu] 002_VoltseonMenu_Main.rb:228:in `block in update'
+[Voltseon's Pause Menu] 002_VoltseonMenu_Main.rb:225:in `loop'

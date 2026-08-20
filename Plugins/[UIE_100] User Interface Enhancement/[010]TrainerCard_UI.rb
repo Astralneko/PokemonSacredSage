@@ -16,6 +16,14 @@ class PokemonTrainerCard_Scene
   GRID_RESET_Y = -Graphics.height
 
   def pbUpdate
+	# If it hasn't been 1/60 of a second yet, do nothing
+	@deltatime = 0 if !@deltatime
+	if System.uptime - @deltatime < 1/60r
+		return
+	end
+	# Set new deltatime
+	@deltatime = System.uptime
+	# Do things
     updateGridScroll
     pbUpdateSpriteHash(@sprites)
   end
@@ -35,8 +43,9 @@ class PokemonTrainerCard_Scene
     @sprites["cancel"].setBitmap(GRAPHICS_PATH + "cancel")
     @sprites["cancel"].z = 3
 
+    @region = 0
+    @page = 0
     setupCard
-    pbDrawTrainerCardFront
 
     pbFadeInAndShow(@sprites) { pbUpdate }
     animateCardFlip
@@ -55,6 +64,7 @@ class PokemonTrainerCard_Scene
     @sprites["card"].y = CARD_ORIGIN_Y + @sprites["card"].oy
     @sprites["card"].zoom_x = 0
     @sprites["card"].z = 1.5   # above the grid/footer, below cancel
+    pbDrawTrainerCardFront
   end
 
   def animateCardFlip
@@ -106,7 +116,8 @@ class PokemonTrainerCard_Scene
       [_INTL("Name:"), 122 - ox, 76 - oy, :left, baseColor, shadowColor],
       [$player.name, 250 - 40 - ox, 76 - oy, :left, baseColor, shadowColor],
       [_INTL("ID No.:"), 472 - ox, 76 - oy, :left, baseColor, shadowColor],
-      [sprintf("%05d", $player.public_ID), 616 - ox, 76 - oy, :left, baseColor, shadowColor],
+	  # Previously $player.public_id; if we're emulating the 3DS with the screen resolution I feel like we should also emulate the 3DS with its larger public ID
+      [sprintf("%d", $player.id % 1000000), 666 - ox, 76 - oy, :right, baseColor, shadowColor],
       [_INTL("Money:"), 122 - ox, 136 - oy, :left, baseColor, shadowColor],
       [_INTL("${1}", $player.money.to_s_formatted), 272 - ox, 136 - oy, :left, baseColor, shadowColor],
       [_INTL("Pokédex:"), 122 - ox, 184 - oy, :left, baseColor, shadowColor],
@@ -126,7 +137,7 @@ class PokemonTrainerCard_Scene
 
     badgeY = 330 - oy
     badgeXPositions = [110, 154, 198, 242, 286, 330, 374, 418]
-    region = pbGetCurrentRegion(0) # Get the current region
+    region = @region # previously pbGetCurrentRegion(0); this allows the badge set to be button selected
     imagePositions = []
     8.times do |i|
       if $player.badges[i + (region * 8)]
@@ -143,7 +154,21 @@ class PokemonTrainerCard_Scene
       Input.update
       pbUpdate
       cancelClicked = @sprites["cancel"].click?
-      if Input.trigger?(Input::BACK) || cancelClicked
+	  if Input.trigger?(Input::ACTION)
+      closeCardFlip
+      @page = (@page + 1) % 2 # There are 2 pages
+      animateCardFlip
+	  end
+    @lastUse = 0 if !@lastUse
+	  if Input.trigger?(Input::JUMPUP) && System.uptime - 1 > @lastUse
+      @lastUse = System.uptime
+      @region = (@region + 1) % 3 # There are 3 regions with badges
+      # partial setupCard
+      @sprites["card"].setBitmap(GRAPHICS_PATH + "card")
+      pbSetSystemFont(@sprites["card"].bitmap)
+      pbDrawTrainerCardFront
+	  end
+	  if Input.trigger?(Input::BACK) || cancelClicked
         pbPlayCloseMenuSE
         flashCancelButton
         closeCardFlip
