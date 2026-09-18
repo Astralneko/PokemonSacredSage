@@ -346,6 +346,6 @@ GameData::InstantMessageConversation.register({
 		[-1,:Delay, 1],
 		[2, :Text, _INTL("Meet you in Maracaleza Town")],
 		[-1,:Delay, 1],
-		[1, :Text, _INTL("sounds like youve been recruited {1} <icon=emojiLaugh>")]
+		[1, :Text, _INTL("sounds like youve been recruited \\pn <icon=emojiLaugh>")]
 	]
 })

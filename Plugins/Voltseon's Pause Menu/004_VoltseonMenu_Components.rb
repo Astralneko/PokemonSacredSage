@@ -287,3 +287,55 @@ class VPM_NewQuestHud < Component
     end
   end
 end
+
+#-------------------------------------------------------------------------------
+# New Instant Message Hud component
+#-------------------------------------------------------------------------------
+class VPM_NewMessageHud < Component
+  def initialize
+    @counter = 0
+  end
+
+  def start_component(viewport, menu)
+    super(viewport, menu)
+    @sprites["overlay"]    = BitmapSprite.new(Graphics.width / 2, 32, viewport)
+    @sprites["overlay"].ox = @sprites["overlay"].bitmap.width
+    @sprites["overlay"].x  = Graphics.width
+    @sprites["overlay"].y  = 124
+    @sprites["overlay"].oy = 32
+    @base_color = $PokemonSystem.from_current_menu_theme(MENU_TEXTCOLOR, Color.new(248, 248, 248))
+    @shdw_color = $PokemonSystem.from_current_menu_theme(MENU_TEXTOUTLINE, Color.new(48, 48, 48))
+  end
+
+  def should_draw?
+    return false if !defined?(pbHasUnreadIM?)
+    return false if !$player
+    return false if !$player.respond_to?(:instant_messages)
+    return $player.instant_messages.pbHasUnreadMessages?
+  end
+
+  def update
+    super
+    @counter += 1
+    if @counter > Graphics.frame_rate / 2
+      @sprites["overlay"].y += 1 if @counter % (Graphics.frame_rate / 8) == 0
+    else
+      @sprites["overlay"].y -= 1 if @counter % (Graphics.frame_rate / 8) == 0
+    end
+    @counter = 0 if @counter >= Graphics.frame_rate
+  end
+
+  def refresh
+    message_count = $player.instant_messages.saved_messages.count { |group| group[1].respond_to?(:has_unread) && group[1].has_unread}
+    @sprites["overlay"].bitmap.clear
+    if message_count > 0
+      if message_count == 1
+        text = _INTL("You have {1} new message!",message_count)
+      else
+        text = _INTL("You have {1} new messages!",message_count)
+      end
+      pbSetSmallFont(@sprites["overlay"].bitmap)
+      pbDrawTextPositions(@sprites["overlay"].bitmap, [[text, (Graphics.width / 2) - 8, 12, 1, @base_color, @shdw_color]])
+    end
+  end
+end

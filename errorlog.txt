@@ -124,3 +124,32 @@ Backtrace:
 [Voltseon's Pause Menu] 003_VoltseonMenu_Menu.rb:54:in `update'
 [Voltseon's Pause Menu] 002_VoltseonMenu_Main.rb:228:in `block in update'
 [Voltseon's Pause Menu] 002_VoltseonMenu_Main.rb:225:in `loop'
+
+=================
+
+[2026-08-21 21:50:01 -0500]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Script error in event 4 (coords 12,27), map 10 (West Route 5)
+Exception: NameError
+Message: uninitialized constant PBMoveRoute::Right
+
+***Full script:
+FollowingPkmn.move_route([
+PBMoveRoute::Right,
+PBMoveRoute::Right,
+PBMoveRoute::TurnLeft
+])
+
+Backtrace:
+(eval):2:in `execute_script'
+003_Interpreter.rb:140:in `eval'
+003_Interpreter.rb:140:in `execute_script'
+004_Interpreter_Commands.rb:1177:in `command_355'
+004_Interpreter_Commands.rb:116:in `execute_command'
+003_Interpreter.rb:132:in `block in update'
+003_Interpreter.rb:86:in `loop'
+003_Interpreter.rb:86:in `update'
+[Following Pokemon EX] Refresh.rb:268:in `update'
+002_Scene_Map.rb:167:in `block in update'

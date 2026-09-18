@@ -33,7 +33,7 @@ MenuHandlers.add(:pause_menu, :pokegear, {
 MenuHandlers.add(:pause_menu, :map, {
   "name"      => _INTL("Map"),
   "icon_name" => "town_map",
-  "order"     => 41,
+  "order"     => 42,
   "effect"    => proc { |menu|
     pbFadeOutIn do
       scene = PokemonRegionMap_Scene.new(-1, false)
@@ -59,6 +59,31 @@ MenuHandlers.add(:pause_menu, :jukebox, {
       screen = PokemonJukeboxScreen.new(scene)
       screen.pbStartScreen
     end
+    next false
+  }
+})
+
+MenuHandlers.add(:pause_menu, :berrydex, {
+  "name"      => _INTL("Berrydex"),
+  "icon_name" => "berry",
+  "order"     => 11,
+  "effect"    => proc { |menu|
+    pbFadeOutIn do
+      scene = PokemonJukebox_Scene.new
+      screen = PokemonJukeboxScreen.new(scene)
+      screen.pbStartScreen
+    end
+    next false
+  }
+})
+
+MenuHandlers.add(:pause_menu, :messages, {
+  "name"      => _INTL("Messages"),
+  "icon_name" => "messages",
+  "order"     => 41,
+  "effect"    => proc { |menu|
+    # pbInstantMessages already handles everything this option needs to do
+    pbInstantMessages
     next false
   }
 })

@@ -29,7 +29,7 @@ module InstantMessagesSettings
     # The filename of the windowskin used for system messages. Set it to the name of a 
     # graphic in UI/Instant Messages/Bubbles
     #------------------------------------------------------------------------------------
-    SYSTEM_BUBBLE_COLOR                 = "Gray"
+    SYSTEM_BUBBLE_COLOR                 = "GrayChain"
 
     #------------------------------------------------------------------------------------
     # If true, a close button will appear in the top left corner indicating when the    

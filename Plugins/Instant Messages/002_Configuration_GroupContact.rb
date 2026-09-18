@@ -41,14 +41,21 @@ GameData::InstantMessageContact.register({
     :id             => :Natsuki,
     :name		        => _INTL("Natsuki"),
     :image		      => "Natsuki",
-    :bubble         => "Rose"
+    :bubble         => "Scarlet"
 })
 
 GameData::InstantMessageContact.register({
     :id             => :Mona,
     :name		        => _INTL("Mona"),
     :image		      => "Mona",
-    :bubble         => "Azure"
+    :bubble         => "Blue"
+})
+
+GameData::InstantMessageContact.register({
+    :id             => :Sorrel,
+    :name		        => _INTL("Sorrel"),
+    :image		      => "Sorrel",
+    :bubble         => "Green"
 })
 
 #===============================================================================

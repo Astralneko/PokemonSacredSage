@@ -17,7 +17,7 @@ module MessageConfig
   FONT_Y_OFFSET            = 4
   FONT_LINE_HEIGHT         = 28
   SMALL_FONT_NAME          = "Truth and Ideals - Fighting Ideals"
-  SMALL_FONT_SIZE          = 35
+  SMALL_FONT_SIZE          = 36
   SMALL_FONT_Y_OFFSET      = 8
   SMALL_FONT_LINE_HEIGHT   = 28
   NARROW_FONT_NAME         = "Power Green Narrow"
@@ -113,7 +113,7 @@ module MessageConfig
     when 2 then return 1 / 80.0   # Fast
     when 3 then return 0          # Instant
     end
-    return TEXT_SPEED || (2 / 80.0)   # Normal
+    return TEXT_SPEED || (1 / 80.0)   # Fast
   end
 
   #-----------------------------------------------------------------------------

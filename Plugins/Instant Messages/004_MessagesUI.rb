@@ -8,7 +8,7 @@ def pbInstantMessages(filter = nil, old_scene = nil)
     scene = InstantMessagesMenu_Scene.new(filter)
     screen = InstantMessagesMenuScreen.new(scene)
     screen.pbStartScreen
-    old_scene.refresh if old_scene.is_a?(SocialMedia_Scene)
+    #old_scene.refresh if old_scene.is_a?(SocialMedia_Scene)
   }
 end
 
@@ -118,7 +118,7 @@ class Window_IM_Menu < Window_DrawableCommand
     base = self.baseColor
     shadow = self.shadowColor
     name = "<b>" + name + "</b>" if group.has_unread
-    drawFormattedTextEx(self.contents, rect.x ,rect.y + 2, 468, name, base, shadow)
+    drawFormattedTextEx(self.contents, rect.x ,rect.y + 2, 756, name, base, shadow)
     x_adj = 0
     if InstantMessagesSettings::ALLOW_PINNING 
       x_adj = 30
@@ -330,7 +330,7 @@ class InstantMessages_Scene
 
     COMMANDS_MAKE_MEMBER_AVAILABLE = [:Text, :RedoText, :React, :Typing, :Edit, :Delete, :Reply, :Forward]
 
-    MESSAGE_MAX_WIDTH = 338
+    MESSAGE_MAX_WIDTH = 626 # 338
 
     def initialize(group_id, old_scene = nil)
         @group = pbPlayerIMSaved.saved_messages[group_id]
@@ -557,23 +557,28 @@ class InstantMessages_Scene
         if !ACTION_TYPES.include?(@old_texts[i][1])
           # Added for proper text replacement
           @sprites["oldtext#{i}"] = Window_AdvancedTextPokemonMessages.new(text_to_show || @old_texts[i][2])
-          @sprites["oldtext#{i}"].setSkin("Graphics/UI/Instant Messages/Bubbles/#{bubble_color}")
+          # Change to chain windowskin if not the first unique message
+          prev = get_previous_oldmessage(i)
+          if @sprites["oldtext#{prev}"].nil? || (@old_texts[prev][0] != @old_texts[i][0])
+            @sprites["oldtext#{i}"].setSkin("Graphics/UI/Instant Messages/Bubbles/#{bubble_color}")
+          else
+            @sprites["oldtext#{i}"].setSkin("Graphics/UI/Instant Messages/Bubbles/#{bubble_color.delete_suffix("User").delete_suffix("Chain")}Chain")
+          end
           @sprites["oldtext#{i}"].resizeToFit(@sprites["oldtext#{i}"].text, @max_width)
           @sprites["oldtext#{i}"].height += 32 if [:Reply, :Forward].include?(@old_texts[i][1]) 
           if [:Forward].include?(@old_texts[i][1]) 
             @sprites["oldtext#{i}"].width += 12 
             if @old_texts[i][3]
-              min_width = 192
-              @sprites["oldtext#{i}"].width += 32
+              min_width = 384
+              @sprites["oldtext#{i}"].width += 64
             else
-              min_width = 160
+              min_width = 320
             end
             @sprites["oldtext#{i}"].width = @sprites["oldtext#{i}"].width.clamp(min_width, InstantMessages_Scene::MESSAGE_MAX_WIDTH)
           end
           @sprites["oldtext#{i}"].text = "" if @sprites["old_text_picture#{i}"]
           @sprites["oldtext#{i}"].viewport = @viewport
-          @sprites["oldtext#{i}"].x = (@old_texts[i][0] != 0 ? @side_margin : Graphics.width - @side_margin - @sprites["oldtext#{i}"].width)
-          prev = get_previous_oldmessage(i)
+          @sprites["oldtext#{i}"].x = (@old_texts[i][0] == 0 ? @side_margin : Graphics.width - @side_margin - @sprites["oldtext#{i}"].width)
           @sprites["oldtext#{i}"].y = (@sprites["oldtext#{prev}"] ? @sprites["oldtext#{prev}"].y + @sprites["oldtext#{prev}"].height : @top_margin)
           if @sprites["oldreactions#{prev}"]
             bubble_bg = InstantMessagesSettings::REACTIONS_BUBBLE_BG
@@ -659,13 +664,13 @@ class InstantMessages_Scene
             if @old_texts[i][0] != 0 && (@sprites["oldtext#{prev}"].nil? || (@old_texts[prev][0] != @old_texts[i][0]))
               @sprites["oldpicture#{i}"] = MemberPhoto.new(0, 0, @old_texts[i][0], self, @viewport)
               @sprites["oldpicture#{i}"].setBitmap("Graphics/UI/Instant Messages/Characters/#{@members[@old_texts[i][0]].image}")
-              @sprites["oldpicture#{i}"].x = @sprites["oldtext#{i}"].x + @sprites["oldtext#{i}"].width + 4
+              @sprites["oldpicture#{i}"].x = @sprites["oldtext#{i}"].x - @sprites["oldpicture#{i}"].width - 4
               @sprites["oldpicture#{i}"].y = @sprites["oldtext#{i}"].y + get_y_adj(@sprites["oldtext#{i}"].height, @sprites["oldpicture#{i}"].height)
               @sprites["oldpicture#{i}"].visible = true
             elsif @old_texts[i][0] == 0 && (@sprites["oldtext#{prev}"].nil? || (@old_texts[prev][0] != @old_texts[i][0]))
               @sprites["oldpicture#{i}"] = MemberPhoto.new(0, 0, @old_texts[i][0], self, @viewport)
               @sprites["oldpicture#{i}"].setBitmap(pbGetMemberImage(0))
-              @sprites["oldpicture#{i}"].x = @sprites["oldtext#{i}"].x - @sprites["oldpicture#{i}"].width - 4
+              @sprites["oldpicture#{i}"].x = @sprites["oldtext#{i}"].x + @sprites["oldtext#{i}"].width + 4
               @sprites["oldpicture#{i}"].y = @sprites["oldtext#{i}"].y + get_y_adj(@sprites["oldtext#{i}"].height, @sprites["oldpicture#{i}"].height)
               @sprites["oldpicture#{i}"].visible = true
             end 
@@ -749,7 +754,12 @@ class InstantMessages_Scene
             next
           end
           @sprites["text#{i}"] = Window_AdvancedTextPokemonMessages.new(text_to_show || @texts[i][2])
-          @sprites["text#{i}"].setSkin("Graphics/UI/Instant Messages/Bubbles/#{bubble_color}")
+          # Change to chain windowskin if not the first unique message
+          if @sprites["text#{i-1}"].nil? || (@texts[i-1][0] != @texts[i][0])
+            @sprites["text#{i}"].setSkin("Graphics/UI/Instant Messages/Bubbles/#{bubble_color}")
+          else
+            @sprites["text#{i}"].setSkin("Graphics/UI/Instant Messages/Bubbles/#{bubble_color.delete_suffix("User").delete_suffix("Chain")}Chain")
+          end
           @sprites["text#{i}"].resizeToFit(@sprites["text#{i}"].text, @max_width)
 
           if i == 0 && !@old_texts.empty? && @old_texts[get_previous_oldmessage(@old_texts.length)][0] == 0 && # Player made a choice as the last message of the old messages
@@ -766,16 +776,16 @@ class InstantMessages_Scene
           if [:Forward].include?(@texts[i][1]) 
             @sprites["text#{i}"].width += 12 
             if @texts[i][3]
-              min_width = 192
-              @sprites["text#{i}"].width += 32
+              min_width = 384
+              @sprites["text#{i}"].width += 64
             else
-              min_width = 160
+              min_width = 320
             end
            @sprites["text#{i}"].width = @sprites["text#{i}"].width.clamp(min_width, InstantMessages_Scene::MESSAGE_MAX_WIDTH)
           end
           @sprites["text#{i}"].text = "" if @sprites["text_picture#{i}"]
           @sprites["text#{i}"].viewport = @viewport
-          @sprites["text#{i}"].x = (@texts[i][0] != 0 ? @side_margin : Graphics.width - @side_margin - @sprites["text#{i}"].width)
+          @sprites["text#{i}"].x = (@texts[i][0] == 0 ? @side_margin : Graphics.width - @side_margin - @sprites["text#{i}"].width)
           if @previously_saved_y_end
             @sprites["text#{i}"].y = @previously_saved_y_end
             @previously_saved_y_end = nil
@@ -807,13 +817,13 @@ class InstantMessages_Scene
             if @texts[i][0] != 0 && (@sprites["text#{prev}"].nil? || (@texts[prev][0] != @texts[i][0]))
               @sprites["picture#{i}"] = MemberPhoto.new(0, 0, @texts[i][0], self, @viewport)
               @sprites["picture#{i}"].setBitmap("Graphics/UI/Instant Messages/Characters/#{@members[@texts[i][0]].image}")
-              @sprites["picture#{i}"].x = @sprites["text#{i}"].x + @sprites["text#{i}"].width + 4
+              @sprites["picture#{i}"].x = @sprites["text#{i}"].x - @sprites["picture#{i}"].width - 4
               @sprites["picture#{i}"].y = @sprites["text#{i}"].y + get_y_adj(@sprites["text#{i}"].height, @sprites["picture#{i}"].height)
               @sprites["picture#{i}"].visible = @texts_linked_convos[i][0].instant
             elsif @texts[i][0] == 0 && (@sprites["text#{prev}"].nil? || (@texts[prev][0] != @texts[i][0]))
               @sprites["picture#{i}"] = MemberPhoto.new(0, 0, @texts[i][0], self, @viewport)
               @sprites["picture#{i}"].setBitmap(pbGetMemberImage(0))
-              @sprites["picture#{i}"].x = @sprites["text#{i}"].x - @sprites["picture#{i}"].width - 4
+              @sprites["picture#{i}"].x = @sprites["text#{i}"].x + @sprites["text#{i}"].width + 4
               @sprites["picture#{i}"].y = @sprites["text#{i}"].y + get_y_adj(@sprites["text#{i}"].height, @sprites["picture#{i}"].height)
               @sprites["picture#{i}"].visible = @texts_linked_convos[i][0].instant
             end
@@ -869,7 +879,7 @@ class InstantMessages_Scene
       when 2
         y_adj = (text_height - picture_height) / 2
       else
-        y_adj = 4
+        y_adj = 0
       end
       return y_adj
     end
@@ -1088,7 +1098,7 @@ class InstantMessages_Scene
           end
           @sprites["reactions#{prev}"].y += height_adjustment if @sprites["reactions#{prev}"]
           if @sprites["picture#{prev}"]
-            @sprites["picture#{prev}"].x = @sprites["text#{prev}"].x + @sprites["text#{prev}"].width + 4
+            @sprites["picture#{prev}"].x = (@texts[prev][0] == 0 ? @sprites["text#{prev}"].x + @sprites["text#{prev}"].width + 4 : @sprites["text#{prev}"].x - @sprites["picture#{prev}"].width - 4)
             @sprites["picture#{prev}"].y = @sprites["text#{prev}"].y + get_y_adj(@sprites["text#{prev}"].height, @sprites["picture#{prev}"].height)
           end
           y_adj = (@sprites["reactions#{prev}"] ? (InstantMessagesSettings::REACTIONS_BUBBLE_BG ? 24 : 8) : 0)
@@ -1192,7 +1202,7 @@ class InstantMessages_Scene
           @sprites["text#{@show_index}"].text = @texts[@show_index][2]
         end
         @sprites["text#{@show_index}"].resizeToFit(@sprites["text#{@show_index}"].text, @max_width)
-        @sprites["text#{@show_index}"].x = Graphics.width - @side_margin - @sprites["text#{@show_index}"].width
+        @sprites["text#{@show_index}"].x = (@texts[@show_index][0] == 0 ? @side_margin : Graphics.width - @side_margin - @sprites["text#{i}"].width)
         prev = get_previous_message
         @sprites["text#{@show_index}"].y = (@sprites["text#{prev}"] ? @sprites["text#{prev}"].y + @sprites["text#{prev}"].height : @top_margin)
         if @sprites["reactions#{prev}"]
@@ -1201,7 +1211,7 @@ class InstantMessages_Scene
         end
         @sprites["text#{@show_index}"].orig_y = @sprites["text#{@show_index}"].y
         if @sprites["picture#{@show_index}"]
-          @sprites["picture#{@show_index}"].x = @sprites["text#{@show_index}"].x - @sprites["picture#{@show_index}"].width - 4
+          @sprites["picture#{@show_index}"].x = (@texts[@show_index][0] == 0 ? @sprites["text#{@show_index}"].x + @sprites["text#{@show_index}"].width + 4 : @sprites["text#{@show_index}"].x - @sprites["picture#{@show_index}"].width - 4)
           @sprites["picture#{@show_index}"].y = @sprites["text#{@show_index}"].y + get_y_adj(@sprites["text#{@show_index}"].height, @sprites["picture#{@show_index}"].height)
         end
         @choice_made = choice
