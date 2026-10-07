@@ -22,7 +22,8 @@ class PokemonSummary_Scene
     enhanced_drawPageOne
     return if !Settings::SUMMARY_HAPPINESS_METER
     overlay = @sprites["overlay"].bitmap
-    coords = (PluginManager.installed?("BW Summary Screen")) ? [220, 294] : [242, 340]
+	# Placed 32px to the right and 1 text line above original, thus now above the Exp.Points bar in the new expanded menu
+    coords = [274, 308] #(PluginManager.installed?("BW Summary Screen")) ? [220, 294] : [242, 340]
     pbDisplayHappiness(@pokemon, overlay, coords[0], coords[1])
   end
   

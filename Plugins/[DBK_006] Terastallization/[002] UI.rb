@@ -117,7 +117,8 @@ class PokemonSummary_Scene
     tera_drawPageOne
     return if !Settings::SUMMARY_TERA_TYPES
     overlay = @sprites["overlay"].bitmap
-    coords = (PluginManager.installed?("BW Summary Screen")) ? [122, 129] : [330, 143]
+	# 800x240 version of MUI moves this part of page one over by 32px
+    coords = [362,143] #(PluginManager.installed?("BW Summary Screen")) ? [122, 129] : [330, 143]
     pbDisplayTeraType(@pokemon, overlay, coords[0], coords[1])
   end
 end

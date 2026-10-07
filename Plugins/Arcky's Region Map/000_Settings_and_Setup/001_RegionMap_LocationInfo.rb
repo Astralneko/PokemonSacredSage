@@ -166,7 +166,7 @@ module ARMLocationPreview
 	east_20_19: [21,19],
   }
   
-  # Route 9, 10, 11, E12, W12, E13, W13, 14
+  # Route E13, W13, 14
   
   Route15 = {
 	description: "A winding road through an area that goes through both wet and dry spells, resulting in a wide range of vegetation.",

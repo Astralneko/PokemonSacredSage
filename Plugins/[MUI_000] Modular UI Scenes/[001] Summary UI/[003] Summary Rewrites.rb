@@ -22,15 +22,17 @@ class PokemonSummary_Scene
     ballimage = sprintf("Graphics/UI/Summary/icon_ball_%s", @pokemon.poke_ball)
     imagepos.push([ballimage, 14, 60])
     pagename = UIHandlers.get_info(:summary, @page_id, :name)
+	# Item y position + 96, pokemonname and pagename stay at same spot
+	# Previously: 420 was 324, 454 was 358
     textpos = [
       [pagename, 26, 22, :left, base, shadow],
       [@pokemon.name, 46, 68, :left, base, shadow],
-      [_INTL("Item"), 66, 324, :left, base, shadow]
+      [_INTL("Item"), 66, 420, :left, base, shadow]
     ]
     if @pokemon.hasItem?
-      textpos.push([@pokemon.item.name, 16, 358, :left, Color.new(64, 64, 64), Color.new(176, 176, 176)])
+      textpos.push([@pokemon.item.name, 16, 454, :left, Color.new(64, 64, 64), Color.new(176, 176, 176)])
     else
-      textpos.push([_INTL("None"), 16, 358, :left, Color.new(192, 200, 208), Color.new(208, 216, 224)])
+      textpos.push([_INTL("None"), 16, 454, :left, Color.new(192, 200, 208), Color.new(208, 216, 224)])
     end
     # Draws additional info for non-Egg Pokemon.
     if !@pokemon.egg?
@@ -91,6 +93,7 @@ class PokemonSummary_Scene
     eggstate = _INTL("It appears to move occasionally. It may be close to hatching.") if @pokemon.steps_to_hatch < 2550
     eggstate = _INTL("Sounds can be heard coming from inside! It will hatch soon!") if @pokemon.steps_to_hatch < 1275
     memo += black_text_tag + eggstate
+	# Move from 86,268 to new position on 800x480 map
     drawFormattedTextEx(@sprites["overlay"].bitmap, 232, 86, 268, memo)
   end
   

@@ -391,14 +391,16 @@ class PokemonSummary_Scene
       ]
       pbDrawImagePositions(overlay, imagepos)
     end
+	# Left column: Moved 32px right due to UI size change
+	# Right column: Moved 32px right AND extended 96px right, so when centered, should be moved a total of 80px right
     # Write various bits of text
     textpos = [
-      [_INTL("Dex No."), 238, 86, :left, base, shadow],
-      [_INTL("Species"), 238, 118, :left, base, shadow],
-      [@pokemon.speciesName, 435, 118, :center, Color.new(64, 64, 64), Color.new(176, 176, 176)],
-      [_INTL("Type"), 238, 150, :left, base, shadow],
-      [_INTL("OT"), 238, 182, :left, base, shadow],
-      [_INTL("ID No."), 238, 214, :left, base, shadow]
+      [_INTL("Dex No."), 270, 86, :left, base, shadow],
+      [_INTL("Species"), 270, 118, :left, base, shadow],
+      [@pokemon.speciesName, 515, 118, :center, Color.new(64, 64, 64), Color.new(176, 176, 176)],
+      [_INTL("Type"), 270, 150, :left, base, shadow],
+      [_INTL("OT"), 270, 182, :left, base, shadow],
+      [_INTL("ID No."), 270, 214, :left, base, shadow]
     ]
     # Write the Regional/National Dex number
     dexnum = 0
@@ -417,15 +419,15 @@ class PokemonSummary_Scene
       end
     end
     if dexnum <= 0
-      textpos.push(["???", 435, 86, :center, dexNumBase, dexNumShadow])
+      textpos.push(["???", 515, 86, :center, dexNumBase, dexNumShadow])
     else
       dexnum -= 1 if dexnumshift
-      textpos.push([sprintf("%03d", dexnum), 435, 86, :center, dexNumBase, dexNumShadow])
+      textpos.push([sprintf("%03d", dexnum), 515, 86, :center, dexNumBase, dexNumShadow])
     end
     # Write Original Trainer's name and ID number
     if @pokemon.owner.name.empty?
-      textpos.push([_INTL("RENTAL"), 435, 182, :center, Color.new(64, 64, 64), Color.new(176, 176, 176)])
-      textpos.push(["?????", 435, 214, :center, Color.new(64, 64, 64), Color.new(176, 176, 176)])
+      textpos.push([_INTL("RENTAL"), 515, 182, :center, Color.new(64, 64, 64), Color.new(176, 176, 176)])
+      textpos.push(["?????", 515, 214, :center, Color.new(64, 64, 64), Color.new(176, 176, 176)])
     else
       ownerbase   = Color.new(64, 64, 64)
       ownershadow = Color.new(176, 176, 176)
@@ -437,13 +439,15 @@ class PokemonSummary_Scene
         ownerbase = Color.new(248, 56, 32)
         ownershadow = Color.new(224, 152, 144)
       end
-      textpos.push([@pokemon.owner.name, 435, 182, :center, ownerbase, ownershadow])
-      textpos.push([sprintf("%05d", @pokemon.owner.public_id), 435, 214, :center,
+      textpos.push([@pokemon.owner.name, 515, 182, :center, ownerbase, ownershadow])
+      textpos.push([sprintf("%05d", @pokemon.owner.public_id), 515, 214, :center,
                     Color.new(64, 64, 64), Color.new(176, 176, 176)])
     end
     # Write Exp text OR heart gauge message (if a Shadow Pokémon)
+	# Exp text is also moved down 96px in addition to the above changes
+	# Since the exp amount is right aligned, it is moved the full 128px
     if @pokemon.shadowPokemon?
-      textpos.push([_INTL("Heart Gauge"), 238, 246, :left, base, shadow])
+      textpos.push([_INTL("Heart Gauge"), 270, 342, :left, base, shadow])
       black_text_tag = shadowc3tag(BLACK_TEXT_BASE, BLACK_TEXT_SHADOW)
       heartmessage = [_INTL("The door to its heart is open! Undo the final lock!"),
                       _INTL("The door to its heart is almost fully open."),
@@ -452,32 +456,36 @@ class PokemonSummary_Scene
                       _INTL("The door to its heart is opening up."),
                       _INTL("The door to its heart is tightly shut.")][@pokemon.heartStage]
       memo = black_text_tag + heartmessage
-      drawFormattedTextEx(overlay, 234, 308, 264, memo)
+      drawFormattedTextEx(overlay, 266, 404, 264, memo)
     else
       endexp = @pokemon.growth_rate.minimum_exp_for_level(@pokemon.level + 1)
-      textpos.push([_INTL("Exp. Points"), 238, 246, :left, base, shadow])
-      textpos.push([@pokemon.exp.to_s_formatted, 488, 278, :right, Color.new(64, 64, 64), Color.new(176, 176, 176)])
-      textpos.push([_INTL("To Next Lv."), 238, 310, :left, base, shadow])
-      textpos.push([(endexp - @pokemon.exp).to_s_formatted, 488, 342, :right, Color.new(64, 64, 64), Color.new(176, 176, 176)])
+      textpos.push([_INTL("Exp. Points"), 270, 342, :left, base, shadow])
+      textpos.push([@pokemon.exp.to_s_formatted, 616, 374, :right, Color.new(64, 64, 64), Color.new(176, 176, 176)])
+      textpos.push([_INTL("To Next Lv."), 270, 406, :left, base, shadow])
+      textpos.push([(endexp - @pokemon.exp).to_s_formatted, 616, 438, :right, Color.new(64, 64, 64), Color.new(176, 176, 176)])
     end
     # Draw all text
     pbDrawTextPositions(overlay, textpos)
     # Draw Pokémon type(s)
+	# One type: Add 80 to x
+	# Two type: Add 74 to x; increase the gap to 72
     @pokemon.types.each_with_index do |type, i|
       type_number = GameData::Type.get(type).icon_position
       type_rect = Rect.new(0, type_number * 28, 64, 28)
-      type_x = (@pokemon.types.length == 1) ? 402 : 370 + (66 * i)
+      type_x = (@pokemon.types.length == 1) ? 482 : 444 + (72 * i)
       overlay.blt(type_x, 146, @typebitmap.bitmap, type_rect)
     end
     # Draw Exp bar
+	# Length is +96, position is x+32 y+96
     if @pokemon.level < GameData::GrowthRate.max_level
-      w = @pokemon.exp_fraction * 128
+      w = @pokemon.exp_fraction * 224
       w = ((w / 2).round) * 2
       pbDrawImagePositions(overlay,
-                           [["Graphics/UI/Summary/overlay_exp", 362, 372, 0, 0, w, 6]])
+                           [["Graphics/UI/Summary/overlay_exp", 394, 468, 0, 0, w, 6]])
     end
   end
 
+	# Technically, needs to be edited, but it's irrelevant
   def drawPageOneEgg
     @sprites["itemicon"].item = @pokemon.item_id
     overlay = @sprites["overlay"].bitmap
