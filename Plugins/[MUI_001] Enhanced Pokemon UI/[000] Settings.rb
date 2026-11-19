@@ -45,12 +45,12 @@ module Settings
   #-----------------------------------------------------------------------------
   SUMMARY_IV_RATINGS = true
   STORAGE_IV_RATINGS = true
-  IV_DISPLAY_STYLE   = 0  # 0 = Stars, 1 = Letters
+  IV_DISPLAY_STYLE   = 1  # 0 = Stars, 1 = Letters
   
   #-----------------------------------------------------------------------------
   # Enhanced Stats Display
   #-----------------------------------------------------------------------------
   # The switch number used to allow the player to access the Enhanced Stats display.
   #-----------------------------------------------------------------------------
-  ENHANCED_STATS_SWITCH = 61
+  ENHANCED_STATS_SWITCH = 62 # Starter has been selected
 end

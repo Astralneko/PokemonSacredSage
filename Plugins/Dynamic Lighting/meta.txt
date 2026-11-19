@@ -1,0 +1,22 @@
+Name       = Dynamic Lighting
+Version    = 1.0
+Essentials = 21.1,20,19
+Credits    = Retora
+
+#===============================================================================
+# Dynamic real-time lighting system for Pokémon Essentials.
+#
+# Events named "lightsource" or "lightsource(radius, color)" become soft,
+# glowing light sources. Radius is in tiles; color can be a name, #rrggbb or
+# r,g,b (optionally followed by an intensity and a flicker amount):
+#
+#   lightsource
+#   lightsource(3, yellow)
+#   lightsource(4, #ffcc33)
+#   lightsource(2, 255, 180, 60)
+#   lightsource(5, red, 1.5, 4)
+#
+# Lighting is added on top of Pokemon Essentials' existing screen tone / time
+# of day, so the tone overlay keeps working. By default lights fade out in
+# daylight (night / DarkMap only).
+#===============================================================================

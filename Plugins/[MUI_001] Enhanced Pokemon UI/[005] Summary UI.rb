@@ -35,7 +35,8 @@ class PokemonSummary_Scene
     (@statToggle) ? drawEnhancedStats : enhanced_drawPageThree
     return if !Settings::SUMMARY_IV_RATINGS
     overlay = @sprites["overlay"].bitmap
-    coords = (PluginManager.installed?("BW Summary Screen")) ? [110, 83] : [465, 83]
+	# Stats moved right 32px and down 8 px
+    coords = [496, 92] #(PluginManager.installed?("BW Summary Screen")) ? [110, 83] : [465, 83]
     pbDisplayIVRating(@pokemon, overlay, coords[0], coords[1])
   end
 	
@@ -105,6 +106,7 @@ class PokemonSummary_Scene
     @sprites["legacyicon"].y = ypos + 64
     @sprites["legacyicon"].pokemon = @pokemon
     @sprites["legacyicon"].visible = true
+    @sprites["legacyicon"].zoom = 2.0
     data = @pokemon.legacy_data
     dorefresh = true
     loop do
@@ -156,7 +158,8 @@ class PokemonSummary_Scene
             [_INTL("Total draws or losses:"),           data[:loss_count]]
           ]
         end
-        textpos.push([_INTL("{1}'S LEGACY", @pokemon.name.upcase), 295, ypos + 38, :center, base2, shadow2],
+		# Moved header right by 17 px lmao
+        textpos.push([_INTL("{1}'S LEGACY", @pokemon.name.upcase), 312, ypos + 38, :center, base2, shadow2],
                      [name, Graphics.width / 2, ypos + 90, :center, base, shadow])
         addltext.each_with_index do |txt, i|
           textY = ypos + 134 + (i * 32)
@@ -164,11 +167,12 @@ class PokemonSummary_Scene
           textpos.push([_INTL("{1}", txt[1]), Graphics.width - 38, textY, :right, base, shadow])
         end
         imagepos.push([path + "bg_legacy", 0, ypos])
+		# buttons moved to original x + 144
         if index > 0
-          imagepos.push([path + "arrows_legacy", 118, ypos + 84, 0, 0, 32, 32])
+          imagepos.push([path + "arrows_legacy", 262, ypos + 84, 0, 0, 32, 32])
         end
         if index < TOTAL_LEGACY_PAGES - 1
-          imagepos.push([path + "arrows_legacy", 362, ypos + 84, 32, 0, 32, 32])
+          imagepos.push([path + "arrows_legacy", 506, ypos + 84, 32, 0, 32, 32])
         end
         legacy_overlay.clear
         pbDrawImagePositions(legacy_overlay, imagepos)
@@ -193,10 +197,11 @@ class PokemonSummary_Scene
     ev_total = 0
     iv_total = 0
     textpos = []
+	# Stats moved right 32px and down 8 px
     GameData::Stat.each_main do |s|
       case s.id
-      when :HP then xpos, ypos, align = 292, 82, :center
-      else xpos, ypos, align = 248, 94 + (32 * index), :left
+      when :HP then xpos, ypos, align = 324, 90, :center
+      else xpos, ypos, align = 280, 102 + (32 * index), :left
       end
       name = (s.id == :SPECIAL_ATTACK) ? "Sp. Atk" : (s.id == :SPECIAL_DEFENSE) ? "Sp. Def" : s.name
       statshadow = shadow
@@ -212,20 +217,21 @@ class PokemonSummary_Scene
       end
       textpos.push(
         [_INTL("{1}", name), xpos, ypos, align, base, statshadow],
-        [_INTL("|"), 424, ypos, :right, base2, shadow2],
-        [@pokemon.ev[s.id].to_s, 408, ypos, :right, base2, shadow2],
-        [@pokemon.iv[s.id].to_s, 456, ypos, :right, base2, shadow2]
+        [_INTL("|"), 456, ypos, :right, base2, shadow2],
+        [@pokemon.ev[s.id].to_s, 440, ypos, :right, base2, shadow2],
+        [@pokemon.iv[s.id].to_s, 488, ypos, :right, base2, shadow2]
       )
       ev_total += @pokemon.ev[s.id]
       iv_total += @pokemon.iv[s.id]
       index += 1
     end
+	# EV/IV text moved right 32px, down 96 px
     textpos.push(
-      [_INTL("EV/IV Total"), 224, 290, :left, base, shadow],
-      [sprintf("%d  |  %d", ev_total, iv_total), 434, 290, :center, base2, shadow2],
-      [_INTL("EV's Remaining:"), 224, 322, :left, base2, shadow2],
-      [sprintf("%d/%d", Pokemon::EV_LIMIT - ev_total, Pokemon::EV_LIMIT), 444, 322, :center, base2, shadow2],
-      [_INTL("Hidden Power Type:"), 224, 354, :left, base2, shadow2]
+      [_INTL("EV/IV Total"), 256, 386, :left, base, shadow],
+      [sprintf("%d  |  %d", ev_total, iv_total), 466, 386, :center, base2, shadow2],
+      [_INTL("EVs Remaining:"), 256, 418, :left, base2, shadow2],
+      [sprintf("%d/%d", Pokemon::EV_LIMIT - ev_total, Pokemon::EV_LIMIT), 476, 418, :center, base2, shadow2],
+      [_INTL("Hidden Power Type:"), 256, 450, :left, base2, shadow2]
     )
     pbDrawTextPositions(overlay, textpos)
     if @pokemon.hp > 0
@@ -236,13 +242,14 @@ class PokemonSummary_Scene
       hpzone = 1 if @pokemon.hp <= (@pokemon.totalhp / 2).floor
       hpzone = 2 if @pokemon.hp <= (@pokemon.totalhp / 4).floor
       imagepos = [
-        ["Graphics/UI/Summary/overlay_hp", 360, 110, 0, hpzone * 6, w, 6]
+        ["Graphics/UI/Summary/overlay_hp", 392, 118, 0, hpzone * 6, w, 6]
       ]
       pbDrawImagePositions(overlay, imagepos)
     end
     hiddenpower = pbHiddenPower(@pokemon)
     type_number = GameData::Type.get(hiddenpower[0]).icon_position
     type_rect = Rect.new(0, type_number * 28, 64, 28)
-    overlay.blt(428, 351, @typebitmap.bitmap, type_rect)
+	# EV/IV text moved right 32px, down 96 px
+    overlay.blt(460, 448, @typebitmap.bitmap, type_rect)
   end
 end

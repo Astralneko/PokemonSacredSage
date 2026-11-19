@@ -111,6 +111,9 @@ class PokemonSummary_Scene
   BLACK_TEXT_SHADOW = Color.new(176, 176, 176)
 
   def pbUpdate
+	# I fucking hate the sprite positioning
+    @sprites["pokemon"].x = 104
+    @sprites["pokemon"].y = 256
     pbUpdateSpriteHash(@sprites)
   end
 
@@ -128,13 +131,13 @@ class PokemonSummary_Scene
     @sprites["background"] = IconSprite.new(0, 0, @viewport)
     @sprites["pokemon"] = PokemonSprite.new(@viewport)
     @sprites["pokemon"].setOffset(PictureOrigin::CENTER)
-    @sprites["pokemon"].x = 104
-    @sprites["pokemon"].y = 206
     @sprites["pokemon"].setPokemonBitmap(@pokemon)
+    @sprites["pokemon"].x = 104
+    @sprites["pokemon"].y = 256
     @sprites["pokeicon"] = PokemonIconSprite.new(@pokemon, @viewport)
     @sprites["pokeicon"].setOffset(PictureOrigin::CENTER)
     @sprites["pokeicon"].x       = 46
-    @sprites["pokeicon"].y       = 92
+    @sprites["pokeicon"].y       = 256
     @sprites["pokeicon"].visible = false
     @sprites["itemicon"] = ItemIconSprite.new(30, 320, @pokemon.item_id, @viewport)
     @sprites["itemicon"].blankzero = true
@@ -306,6 +309,7 @@ class PokemonSummary_Scene
       return
     end
     @sprites["pokemon"].setPokemonBitmap(@pokemon)
+    @sprites["pokemon"].y = 256
     @sprites["pokeicon"].pokemon = @pokemon
     @sprites["itemicon"].item = @pokemon.item_id
     overlay = @sprites["overlay"].bitmap
@@ -642,7 +646,8 @@ class PokemonSummary_Scene
       memo += black_text_tag + characteristics[best_stat][best_iv % 5] + "\n"
     end
     # Write all text
-    drawFormattedTextEx(overlay, 232, 86, 268, memo)
+	# Moved 32px right due to UI size change
+    drawFormattedTextEx(overlay, 264, 86, 268, memo)
   end
 
   def drawPageThree
@@ -659,30 +664,31 @@ class PokemonSummary_Scene
       end
     end
     # Write various bits of text
+	# Stats moved right 32px and down 8 px, Ability text moved right 32px, down 96 px, and lengthened
     textpos = [
-      [_INTL("HP"), 292, 82, :center, base, statshadows[:HP]],
-      [sprintf("%d/%d", @pokemon.hp, @pokemon.totalhp), 462, 82, :right, Color.new(64, 64, 64), Color.new(176, 176, 176)],
-      [_INTL("Attack"), 248, 126, :left, base, statshadows[:ATTACK]],
-      [@pokemon.attack.to_s, 456, 126, :right, Color.new(64, 64, 64), Color.new(176, 176, 176)],
-      [_INTL("Defense"), 248, 158, :left, base, statshadows[:DEFENSE]],
-      [@pokemon.defense.to_s, 456, 158, :right, Color.new(64, 64, 64), Color.new(176, 176, 176)],
-      [_INTL("Sp. Atk"), 248, 190, :left, base, statshadows[:SPECIAL_ATTACK]],
-      [@pokemon.spatk.to_s, 456, 190, :right, Color.new(64, 64, 64), Color.new(176, 176, 176)],
-      [_INTL("Sp. Def"), 248, 222, :left, base, statshadows[:SPECIAL_DEFENSE]],
-      [@pokemon.spdef.to_s, 456, 222, :right, Color.new(64, 64, 64), Color.new(176, 176, 176)],
-      [_INTL("Speed"), 248, 254, :left, base, statshadows[:SPEED]],
-      [@pokemon.speed.to_s, 456, 254, :right, Color.new(64, 64, 64), Color.new(176, 176, 176)],
-      [_INTL("Ability"), 224, 290, :left, base, shadow]
+      [_INTL("HP"), 324, 90, :center, base, statshadows[:HP]],
+      [sprintf("%d/%d", @pokemon.hp, @pokemon.totalhp), 494, 90, :right, Color.new(64, 64, 64), Color.new(176, 176, 176)],
+      [_INTL("Attack"), 280, 134, :left, base, statshadows[:ATTACK]],
+      [@pokemon.attack.to_s, 488, 134, :right, Color.new(64, 64, 64), Color.new(176, 176, 176)],
+      [_INTL("Defense"), 280, 166, :left, base, statshadows[:DEFENSE]],
+      [@pokemon.defense.to_s, 488, 166, :right, Color.new(64, 64, 64), Color.new(176, 176, 176)],
+      [_INTL("Sp. Atk"), 280, 198, :left, base, statshadows[:SPECIAL_ATTACK]],
+      [@pokemon.spatk.to_s, 488, 198, :right, Color.new(64, 64, 64), Color.new(176, 176, 176)],
+      [_INTL("Sp. Def"), 280, 230, :left, base, statshadows[:SPECIAL_DEFENSE]],
+      [@pokemon.spdef.to_s, 488, 230, :right, Color.new(64, 64, 64), Color.new(176, 176, 176)],
+      [_INTL("Speed"), 280, 262, :left, base, statshadows[:SPEED]],
+      [@pokemon.speed.to_s, 488, 262, :right, Color.new(64, 64, 64), Color.new(176, 176, 176)],
+      [_INTL("Ability"), 256, 386, :left, base, shadow]
     ]
-    # Draw ability name and description
+    # Draw ability name and description; Ability text moved right 32px, down 96 px, and lengthened
     ability = @pokemon.ability
     if ability
-      textpos.push([ability.name, 362, 290, :left, Color.new(64, 64, 64), Color.new(176, 176, 176)])
-      drawTextEx(overlay, 224, 322, 282, 2, ability.description, Color.new(64, 64, 64), Color.new(176, 176, 176))
+      textpos.push([ability.name, 394, 386, :left, Color.new(64, 64, 64), Color.new(176, 176, 176)])
+      drawTextEx(overlay, 256, 418, 540, 2, ability.description, Color.new(64, 64, 64), Color.new(176, 176, 176))
     end
     # Draw all text
     pbDrawTextPositions(overlay, textpos)
-    # Draw HP bar
+    # Draw HP bar; also moved 32px right and 8px down
     if @pokemon.hp > 0
       w = @pokemon.hp * 96 / @pokemon.totalhp.to_f
       w = 1 if w < 1
@@ -691,7 +697,7 @@ class PokemonSummary_Scene
       hpzone = 1 if @pokemon.hp <= (@pokemon.totalhp / 2).floor
       hpzone = 2 if @pokemon.hp <= (@pokemon.totalhp / 4).floor
       imagepos = [
-        ["Graphics/UI/Summary/overlay_hp", 360, 110, 0, hpzone * 6, w, 6]
+        ["Graphics/UI/Summary/overlay_hp", 392, 118, 0, hpzone * 6, w, 6]
       ]
       pbDrawImagePositions(overlay, imagepos)
     end

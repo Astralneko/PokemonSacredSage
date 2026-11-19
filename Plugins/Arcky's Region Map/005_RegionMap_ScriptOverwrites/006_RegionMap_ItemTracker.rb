@@ -66,7 +66,7 @@ if ARMSettings::ProgressCounter && ARMSettings::ProgressCountItems
       pbMessage("#{sound}" + _INTL("You {1} a \\c[1]{2}\\c[0]!", itemInfo[:verb], itemInfo[:itemname]) + "#{wait}")
     end
     if itemInfo[:bag]
-      pbMessage(_INTL("You put the {1} in\\nyour Bag's <icon=bagPocket{2}>\\c[1]{3}\\c[0] pocket.",
+      pbMessage(_INTL("You put the {1} in your Bag's <icon=bagPocket{2}>\\c[1]{3}\\c[0] pocket.",
                     itemInfo[:itemname], itemInfo[:pocket], PokemonBag.pocket_names[itemInfo[:pocket] - 1]))
       countItem(itemInfo)
       return true

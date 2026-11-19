@@ -213,6 +213,7 @@ ShowArea = true
 Bicycle = true
 MapPosition = 0,28,13
 MapSize = 2,11
+LightSources = true
 #-------------------------------
 [034]   # Nova Cancioba City
 Name = Nova Cancioba City

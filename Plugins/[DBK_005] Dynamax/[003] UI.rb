@@ -190,16 +190,17 @@ class PokemonSummary_Scene
     dynamax_drawPageTwo
   end
   
+  # Moved 474 px right and 60 px up
   alias dynamax_drawPageThree drawPageThree
   def drawPageThree
     if !PluginManager.installed?("BW Summary Screen")
       if @pokemon.dynamax_able? && !$game_switches[Settings::NO_DYNAMAX]
-        imagepos = [[sprintf(Settings::DYNAMAX_GRAPHICS_PATH + "dynamax_meter"), 56, 308]]
+        imagepos = [[sprintf(Settings::DYNAMAX_GRAPHICS_PATH + "dynamax_meter"), 530, 248]]
         overlay = @sprites["dynamax_overlay"].bitmap
         pbDrawImagePositions(overlay, imagepos)
         dlevel = @pokemon.dynamax_lvl
         levels = AnimatedBitmap.new(_INTL(Settings::DYNAMAX_GRAPHICS_PATH + "dynamax_levels"))
-        overlay.blt(69, 325, levels.bitmap, Rect.new(0, 0, dlevel * 12, 21))
+        overlay.blt(543, 265, levels.bitmap, Rect.new(0, 0, dlevel * 12, 21))
       end
     end
     dynamax_drawPageThree

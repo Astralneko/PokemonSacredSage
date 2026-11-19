@@ -62,7 +62,7 @@ class PokemonSummary_Scene
     pbDrawImagePositions(overlay, imagepos)
     pbDrawTextPositions(overlay, textpos)
     UIHandlers.call(:summary, @page_id, "layout", @pokemon, self)
-    drawMarkings(overlay, 84, 292)
+    drawMarkings(overlay, 84, 384)
   end
   
   #-----------------------------------------------------------------------------

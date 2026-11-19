@@ -195,3 +195,45 @@ Backtrace:
 999_Main.rb:50:in `loop'
 999_Main.rb:50:in `block in load_scripts_from_folder'
 Main:35:in `eval'
+
+=================
+
+[2026-11-19 10:37:58 -0600]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NameError
+Message: uninitialized constant PictureOrigin::TOP_CENTER
+
+Backtrace:
+006_UI_Summary.rb:130:in `pbStartScene'
+[[MUI] Enhanced Pokemon UI] [005] Summary UI.rb:72:in `pbStartScene'
+[[MUI] Improved Mementos] [004] Summary.rb:184:in `pbStartScene'
+006_UI_Summary.rb:1358:in `pbStartScreen'
+005_UI_Party.rb:709:in `pbSummary'
+005_UI_Party.rb:1325:in `block (2 levels) in load_scripts_from_folder'
+[User Interface Enhancement] [006]Party.rb:1743:in `pbExecuteCommand'
+[User Interface Enhancement] [006]Party.rb:1338:in `block in pbChoosePokemon'
+[User Interface Enhancement] [006]Party.rb:1319:in `loop'
+[User Interface Enhancement] [006]Party.rb:1319:in `pbChoosePokemon'
+
+=================
+
+[2026-11-19 11:28:48 -0600]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.9]
+
+Exception: NoMethodError
+Message: undefined method `<=' for false:FalseClass
+
+Backtrace:
+002_Game_Switches.rb:15:in `[]'
+[[MUI] Enhanced Pokemon UI] [005] Summary UI.rb:52:in `pbPageCustomUse'
+[Modular UI Scenes] [003] Summary Rewrites.rb:264:in `block in pbScene'
+[Modular UI Scenes] [003] Summary Rewrites.rb:246:in `loop'
+[Modular UI Scenes] [003] Summary Rewrites.rb:246:in `pbScene'
+006_UI_Summary.rb:1363:in `pbStartScreen'
+005_UI_Party.rb:709:in `pbSummary'
+005_UI_Party.rb:1325:in `block (2 levels) in load_scripts_from_folder'
+[User Interface Enhancement] [006]Party.rb:1743:in `pbExecuteCommand'
+[User Interface Enhancement] [006]Party.rb:1338:in `block in pbChoosePokemon'
