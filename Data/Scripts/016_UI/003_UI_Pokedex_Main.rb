@@ -281,11 +281,15 @@ class PokemonPokedex_Scene
 #    end
     addBackgroundPlane(@sprites, "searchbg", "Pokedex/bg_search", @viewport)
     @sprites["searchbg"].visible = false
-    @sprites["pokedex"] = Window_Pokedex.new(206, 30, 276, 364, @viewport)
+	# This holds the pokedex list
+	# Moved 256px right
+	# Extended 32px right and 96px down
+    @sprites["pokedex"] = Window_Pokedex.new(462, 30, 564, 460, @viewport)
     @sprites["icon"] = PokemonSprite.new(@viewport)
     @sprites["icon"].setOffset(PictureOrigin::CENTER)
-    @sprites["icon"].x = 112
-    @sprites["icon"].y = 196
+	# Moved 128px right 32px down
+    @sprites["icon"].x = 240
+    @sprites["icon"].y = 228
     @sprites["overlay"] = BitmapSprite.new(Graphics.width, Graphics.height, @viewport)
     pbSetSystemFont(@sprites["overlay"].bitmap)
     @sprites["searchcursor"] = PokedexSearchSelectionSprite.new(@viewport)
@@ -429,50 +433,61 @@ class PokemonPokedex_Scene
         dexname = (thisdex.is_a?(Array)) ? thisdex[0] : thisdex
       end
     end
+	# Automatically positioned correctly for 400x240
     textpos = [
       [dexname, Graphics.width / 2, 10, :center, Color.new(248, 248, 248), Color.black]
     ]
-    textpos.push([GameData::Species.get(iconspecies).name, 112, 58, :center, base, shadow]) if iconspecies
+	# Moved 128 px right
+    textpos.push([GameData::Species.get(iconspecies).name, 240, 58, :center, base, shadow]) if iconspecies
     if @searchResults
-      textpos.push([_INTL("Search results"), 112, 314, :center, base, shadow])
-      textpos.push([@dexlist.length.to_s, 112, 346, :center, base, shadow])
+	  # Probably moved 64px right 64px down but unsure rn
+      textpos.push([_INTL("Search results"), 112, 378, :center, base, shadow])
+      textpos.push([@dexlist.length.to_s, 112, 410, :center, base, shadow])
     else
-      textpos.push([_INTL("Seen:"), 42, 314, :left, base, shadow])
-      textpos.push([$player.pokedex.seen_count(pbGetPokedexRegion).to_s, 182, 314, :right, base, shadow])
-      textpos.push([_INTL("Owned:"), 42, 346, :left, base, shadow])
-      textpos.push([$player.pokedex.owned_count(pbGetPokedexRegion).to_s, 182, 346, :right, base, shadow])
+	  # Moved 64px right 64px down
+      textpos.push([_INTL("Seen:"), 106, 378, :left, base, shadow])
+      textpos.push([$player.pokedex.seen_count(pbGetPokedexRegion).to_s, 246, 378, :right, base, shadow])
+      textpos.push([_INTL("Owned:"), 106, 410, :left, base, shadow])
+      textpos.push([$player.pokedex.owned_count(pbGetPokedexRegion).to_s, 246, 410, :right, base, shadow])
     end
     # Draw all text
     pbDrawTextPositions(overlay, textpos)
     # Set Pokémon sprite
     setIconBitmap(iconspecies)
+	# I hate the pokemon sprite
+    @sprites["icon"].x = 240
+    @sprites["icon"].y = 228
     # Draw slider arrows
     itemlist = @sprites["pokedex"]
     showslider = false
     if itemlist.top_row > 0
-      overlay.blt(468, 48, @sliderbitmap.bitmap, Rect.new(0, 0, 40, 30))
+	  # Moved 256px right
+      overlay.blt(724, 48, @sliderbitmap.bitmap, Rect.new(0, 0, 40, 30))
       showslider = true
     end
     if itemlist.top_item + itemlist.page_item_max < itemlist.itemCount
-      overlay.blt(468, 346, @sliderbitmap.bitmap, Rect.new(0, 30, 40, 30))
+	  # Moved 256px right
+      overlay.blt(724, 346, @sliderbitmap.bitmap, Rect.new(0, 30, 40, 30))
       showslider = true
     end
     # Draw slider box
     if showslider
-      sliderheight = 268
+	  # Extended 96px
+      sliderheight = 364
       boxheight = (sliderheight * itemlist.page_row_max / itemlist.row_max).floor
       boxheight += [(sliderheight - boxheight) / 2, sliderheight / 6].min
       boxheight = [boxheight.floor, 40].max
       y = 78
       y += ((sliderheight - boxheight) * itemlist.top_row / (itemlist.row_max - itemlist.page_row_max)).floor
-      overlay.blt(468, y, @sliderbitmap.bitmap, Rect.new(40, 0, 40, 8))
+	  # Moved 256px right
+      overlay.blt(724, y, @sliderbitmap.bitmap, Rect.new(40, 0, 40, 8))
       i = 0
       while i * 16 < boxheight - 8 - 16
         height = [boxheight - 8 - 16 - (i * 16), 16].min
-        overlay.blt(468, y + 8 + (i * 16), @sliderbitmap.bitmap, Rect.new(40, 8, 40, height))
+        overlay.blt(596, y + 8 + (i * 16), @sliderbitmap.bitmap, Rect.new(40, 8, 40, height))
         i += 1
       end
-      overlay.blt(468, y + boxheight - 16, @sliderbitmap.bitmap, Rect.new(40, 24, 40, 16))
+      overlay.blt(596, y + boxheight - 16, @sliderbitmap.bitmap, Rect.new(40, 24, 40, 16))
     end
   end
 
@@ -766,6 +781,9 @@ class PokemonPokedex_Scene
   def setIconBitmap(species)
     gender, form, _shiny = $player.pokedex.last_form_seen(species)
     @sprites["icon"].setSpeciesBitmap(species, gender, form, false)
+	# Moved 128px right 32px down
+    @sprites["icon"].x = 240
+    @sprites["icon"].y = 228
   end
 
   def pbSearchDexList(params)

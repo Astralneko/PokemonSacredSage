@@ -1,5 +1,5 @@
 #===============================================================================
-#
+# Entirely new scene, derived from Carmaniac's Custom Dex Info Screen V1.0.0
 #===============================================================================
 class PokemonPokedexInfo_Scene
   def pbStartScene(dexlist, index, region)
@@ -12,11 +12,24 @@ class PokemonPokedexInfo_Scene
     @show_battled_count = false
     @typebitmap = AnimatedBitmap.new(_INTL("Graphics/UI/Pokedex/icon_types"))
     @sprites = {}
+	
+	# Scrolling background grid
+    @sprites["backgroundgrid"] = IconSprite.new(0, 0, @viewport)
+    @sprites["backgroundgrid"].setBitmap("Graphics/Custom UI/Dex/infogrid")
+	@sprites["backgroundgrid"].z = -100
+	
+	# Background per page
     @sprites["background"] = IconSprite.new(0, 0, @viewport)
+    @sprites["background"].z = 0
+	
+	# Pokemon sprite for the info page
     @sprites["infosprite"] = PokemonSprite.new(@viewport)
     @sprites["infosprite"].setOffset(PictureOrigin::CENTER)
     @sprites["infosprite"].x = 104
     @sprites["infosprite"].y = 136
+    @sprites["infosprite"].z = 5
+	
+	# Area page
     mappos = $game_map.metadata&.town_map_position
     if @region < 0                                 # Use player's current region
       @region = (mappos) ? mappos[0] : 0                      # Region 0 default
@@ -26,6 +39,7 @@ class PokemonPokedexInfo_Scene
     @sprites["areamap"].setBitmap("Graphics/UI/Town Map/#{@mapdata.filename}")
     @sprites["areamap"].x += (Graphics.width - @sprites["areamap"].bitmap.width) / 2
     @sprites["areamap"].y += (Graphics.height + 32 - @sprites["areamap"].bitmap.height) / 2
+    @sprites["areamap"].z = 1
     Settings::REGION_MAP_EXTRAS.each do |hidden|
       next if hidden[0] != @region || hidden[1] <= 0 || !$game_switches[hidden[1]]
       pbDrawImagePositions(
@@ -36,34 +50,54 @@ class PokemonPokedexInfo_Scene
       )
     end
     @sprites["areahighlight"] = BitmapSprite.new(Graphics.width, Graphics.height, @viewport)
+    @sprites["areahighlight"].z = 2
     @sprites["areaoverlay"] = IconSprite.new(0, 0, @viewport)
     @sprites["areaoverlay"].setBitmap("Graphics/UI/Pokedex/overlay_area")
+    @sprites["areaoverlay"].z = 3
+	
+	# Forms page
     @sprites["formfront"] = PokemonSprite.new(@viewport)
     @sprites["formfront"].setOffset(PictureOrigin::CENTER)
-    @sprites["formfront"].x = 130
-    @sprites["formfront"].y = 158
+    @sprites["formfront"].x = 120
+    @sprites["formfront"].y = 172
+    @sprites["formfront"].z = 5
     @sprites["formback"] = PokemonSprite.new(@viewport)
     @sprites["formback"].setOffset(PictureOrigin::BOTTOM)
-    @sprites["formback"].x = 382   # y is set below as it depends on metrics
+    @sprites["formback"].x = 346   # y is set below as it depends on metrics
+    @sprites["formback"].z = 5
     @sprites["formicon"] = PokemonSpeciesIconSprite.new(nil, @viewport)
     @sprites["formicon"].setOffset(PictureOrigin::CENTER)
     @sprites["formicon"].x = 82
     @sprites["formicon"].y = 328
+    @sprites["formicon"].z = 5
+		@sprites["formicon"].zoom = 2.0
     @sprites["uparrow"] = AnimatedSprite.new("Graphics/UI/up_arrow", 8, 28, 40, 2, @viewport)
     @sprites["uparrow"].x = 242
     @sprites["uparrow"].y = 268
+    @sprites["uparrow"].z = 8
     @sprites["uparrow"].play
     @sprites["uparrow"].visible = false
     @sprites["downarrow"] = AnimatedSprite.new("Graphics/UI/down_arrow", 8, 28, 40, 2, @viewport)
     @sprites["downarrow"].x = 242
     @sprites["downarrow"].y = 348
+    @sprites["downarrow"].z = 8
     @sprites["downarrow"].play
     @sprites["downarrow"].visible = false
+	
     @sprites["overlay"] = BitmapSprite.new(Graphics.width, Graphics.height, @viewport)
+    @sprites["overlay"].z = 10
     pbSetSystemFont(@sprites["overlay"].bitmap)
+	
     pbUpdateDummyPokemon
     @available = pbGetAvailableForms
+	
     drawPage(@page)
+	
+	@sprites["custom_cancel"] = IconSprite.new(@viewport)
+    @sprites["custom_cancel"].setBitmap("Graphics/UI/Pokedex/cancel.png")
+    @sprites["custom_cancel"].x = 118
+    @sprites["custom_cancel"].y = 448
+    @sprites["custom_cancel"].z = 8
     pbFadeInAndShow(@sprites) { pbUpdate }
   end
 
@@ -104,11 +138,22 @@ class PokemonPokedexInfo_Scene
     @brief = true
     @typebitmap = AnimatedBitmap.new(_INTL("Graphics/UI/Pokedex/icon_types"))
     @sprites = {}
+	
+	# Scrolling background grid
+    @sprites["backgroundgrid"] = IconSprite.new(0, 0, @viewport)
+    @sprites["backgroundgrid"].setBitmap("Graphics/Custom UI/Dex/infogrid")
+	@sprites["backgroundgrid"].z = -100
+	
+	# Background ui
     @sprites["background"] = IconSprite.new(0, 0, @viewport)
+    @sprites["background"].z = 0
+	
+	# Info sprite
     @sprites["infosprite"] = PokemonSprite.new(@viewport)
     @sprites["infosprite"].setOffset(PictureOrigin::CENTER)
     @sprites["infosprite"].x = 104
     @sprites["infosprite"].y = 136
+	
     @sprites["overlay"] = BitmapSprite.new(Graphics.width, Graphics.height, @viewport)
     pbSetSystemFont(@sprites["overlay"].bitmap)
     pbUpdateDummyPokemon
@@ -124,6 +169,11 @@ class PokemonPokedexInfo_Scene
   end
 
   def pbUpdate
+    if @sprites["backgroundgrid"]
+	  # Original grid animation from UIE loops every 400 frames @ 60 fps
+	  # To approximate this, position is given as (System.uptime % 10/3r) * -120
+      @sprites["backgroundgrid"].x = (System.uptime % 10/3r) * -120
+    end
     if @page == 2
       intensity_time = System.uptime % 1.0   # 1 second per glow
       if intensity_time >= 0.5
@@ -145,8 +195,7 @@ class PokemonPokedexInfo_Scene
     @sprites["formfront"]&.setSpeciesBitmap(@species, @gender, @form, @shiny)
     if @sprites["formback"]
       @sprites["formback"].setSpeciesBitmap(@species, @gender, @form, @shiny, false, true)
-      @sprites["formback"].y = 256
-      @sprites["formback"].y += metrics_data.back_sprite[1] * 2
+      @sprites["formback"].y = 270 + (metrics_data.back_sprite[1] * 2)
     end
     @sprites["formicon"]&.pbSetParams(@species, @gender, @form, @shiny)
   end
@@ -198,18 +247,34 @@ class PokemonPokedexInfo_Scene
     end
     return ret
   end
+	
+	def pbFlashCancelButton
+    2.times do
+      @sprites["custom_cancel"].setBitmap("Graphics/UI/Pokedex/cancel_p.png")
+      Graphics.update
+      Input.update
+      pbUpdate
+      2.times { Graphics.update }
+      @sprites["custom_cancel"].setBitmap("Graphics/UI/Pokedex/cancel.png")
+      Graphics.update
+      Input.update
+      pbUpdate
+      2.times { Graphics.update }
+    end
+  end
 
   def drawPage(page)
     overlay = @sprites["overlay"].bitmap
     overlay.clear
     # Make certain sprites visible
-    @sprites["infosprite"].visible    = (@page == 1)
-    @sprites["areamap"].visible       = (@page == 2) if @sprites["areamap"]
-    @sprites["areahighlight"].visible = (@page == 2) if @sprites["areahighlight"]
-    @sprites["areaoverlay"].visible   = (@page == 2) if @sprites["areaoverlay"]
-    @sprites["formfront"].visible     = (@page == 3) if @sprites["formfront"]
-    @sprites["formback"].visible      = (@page == 3) if @sprites["formback"]
-    @sprites["formicon"].visible      = (@page == 3) if @sprites["formicon"]
+	@sprites["backgroundgrid"].visible = !(page == 2)
+    @sprites["infosprite"].visible    = (page == 1)
+    @sprites["areamap"].visible       = (page == 2) if @sprites["areamap"]
+    @sprites["areahighlight"].visible = (page == 2) if @sprites["areahighlight"]
+    @sprites["areaoverlay"].visible   = (page == 2) if @sprites["areaoverlay"]
+    @sprites["formfront"].visible     = (page == 3) if @sprites["formfront"]
+    @sprites["formback"].visible      = (page == 3) if @sprites["formback"]
+    @sprites["formicon"].visible      = (page == 3) if @sprites["formicon"]
     # Draw page-specific information
     case page
     when 1 then drawPageInfo
@@ -217,15 +282,41 @@ class PokemonPokedexInfo_Scene
     when 3 then drawPageForms
     end
   end
+  
+  # Returns an X that centers the given text around a fixed midpoint,
+  # snapped to an even pixel to avoid sub-pixel rendering at 0.5 scale,
+  # and clamped so it can never land on a negative position.
+  def pbCenteredTextX(overlay, text, center_x)
+    text_w = overlay.text_size(text).width
+    left_x = center_x - (text_w / 2)
+    left_x -= 1 if left_x.odd?
+    left_x = 0 if left_x < 0
+    return left_x
+  end
+
+  # Centers a label+value row (e.g. "Height ... 1.2 m") as one combined
+  # block within a box of the given width, keeping label-left/value-right.
+  # Returns [label_x, value_right_x].
+  def pbCenteredRowX(overlay, label_text, value_text, box_x, box_w, gap = 8)
+    label_w = overlay.text_size(label_text).width
+    value_w = overlay.text_size(value_text).width
+    row_w   = label_w + gap + value_w
+    left_x  = box_x + ((box_w - row_w) / 2)
+    left_x -= 1 if left_x.odd?
+    left_x  = box_x if left_x < box_x
+    value_right_x = left_x + row_w
+    return [left_x, value_right_x]
+  end
 
   def drawPageInfo
     @sprites["background"].setBitmap(_INTL("Graphics/UI/Pokedex/bg_info"))
     overlay = @sprites["overlay"].bitmap
-    base   = Color.new(88, 88, 80)
-    shadow = Color.new(168, 184, 184)
+    base   = Color.new(0, 0, 0)
+    shadow = Color.new(173, 189, 189)
     imagepos = []
     imagepos.push([_INTL("Graphics/UI/Pokedex/overlay_info"), 0, 0]) if @brief
     species_data = GameData::Species.get_species_form(@species, @form)
+	
     # Write various bits of text
     indexText = "???"
     if @dexlist[@index][:number] > 0
@@ -235,18 +326,28 @@ class PokemonPokedexInfo_Scene
     end
     textpos = [
       [_INTL("{1}{2} {3}", indexText, " ", species_data.name),
-       246, 48, :left, Color.new(248, 248, 248), Color.black]
+       316, 62, :left, base, shadow]
     ]
+	
+	# Caught/seen icon — always shown once seen, caught.png if owned,
+    # seenicon.png otherwise, so this part of the layout is never empty
+    caught_icon_file = $player.owned?(@species) ? "Graphics/UI/Pokedex/icon_own.png" : "Graphics/UI/Pokedex/icon_seen.png"
+    imagepos.push([caught_icon_file, 276, 56])
+	
     if @show_battled_count
-      textpos.push([_INTL("Number Battled"), 314, 164, :left, base, shadow])
-      textpos.push([$player.pokedex.battled_count(@species).to_s, 452, 196, :right, base, shadow])
-    else
-      textpos.push([_INTL("Height"), 314, 164, :left, base, shadow])
-      textpos.push([_INTL("Weight"), 314, 196, :left, base, shadow])
+      label = _INTL("Number Battled")
+      value = $player.pokedex.battled_count(@species).to_s
+      label_x, value_right_x = pbCenteredRowX(overlay, label, value, 526, 224)
+      textpos.push([label, label_x, 174, :left, base, shadow])
+      textpos.push([value, value_right_x, 206, :right, base, shadow])
     end
+	
     if $player.owned?(@species)
       # Write the category
-      textpos.push([_INTL("{1} Pokémon", species_data.category), 246, 80, :left, base, shadow])
+      category_text = _INTL("{1} Pokémon", species_data.category)
+      category_x = pbCenteredTextX(overlay, category_text, 514)
+      textpos.push([category_text, category_x, 110, :left, base, shadow])
+			
       # Write the height and weight
       if !@show_battled_count
         height = species_data.height
@@ -254,45 +355,70 @@ class PokemonPokedexInfo_Scene
         if System.user_language[3..4] == "US"   # If the user is in the United States
           inches = (height / 0.254).round
           pounds = (weight / 0.45359).round
-          textpos.push([_ISPRINTF("{1:d}'{2:02d}\"", inches / 12, inches % 12), 460, 164, :right, base, shadow])
-          textpos.push([_ISPRINTF("{1:4.1f} lbs.", pounds / 10.0), 494, 196, :right, base, shadow])
+          height_val = _ISPRINTF("{1:d}'{2:02d}\"", inches / 12, inches % 12)
+          if species_data.dynamax_form?
+            weight_val = _INTL("????? lbs.")
+          else
+						weight_val = _ISPRINTF("{1:4.1f} lbs.", pounds / 10.0)
+					end
         else
-          textpos.push([_ISPRINTF("{1:.1f} m", height / 10.0), 470, 164, :right, base, shadow])
-          textpos.push([_ISPRINTF("{1:.1f} kg", weight / 10.0), 482, 196, :right, base, shadow])
+          height_val = _ISPRINTF("{1:.1f} m", height / 10.0)
+          if species_data.dynamax_form?
+            weight_val = _INTL("????? kg")
+          else
+						weight_val = _ISPRINTF("{1:.1f} kg", weight / 10.0)
+					end
         end
-      end
+				height_label_x, height_value_x = pbCenteredRowX(overlay, _INTL("Height"), height_val, 526, 224)
+				weight_label_x, weight_value_x = pbCenteredRowX(overlay, _INTL("Weight"), weight_val, 526, 224)
+				textpos.push([_INTL("Height"), height_label_x, 174, :left, base, shadow])
+				textpos.push([height_val, height_value_x, 174, :right, base, shadow])
+				textpos.push([_INTL("Weight"), weight_label_x, 206, :left, base, shadow])
+				textpos.push([weight_val, weight_value_x, 206, :right, base, shadow])
+			end
+			
       # Draw the Pokédex entry text
-      drawTextEx(overlay, 40, 246, Graphics.width - 80, 4,   # overlay, x, y, width, num lines
+      drawTextEx(overlay, 44, 344, Graphics.width - 88, 4,   # overlay, x, y, width, num lines
                  species_data.pokedex_entry, base, shadow)
-      # Draw the footprint
+								 
+      # Draw the footprint (on Carmaniac's DexInfo this is where their body shape is placed, but this is on the Data page in this game)
       footprintfile = GameData::Species.footprint_filename(@species, @form)
       if footprintfile
         footprint = RPG::Cache.load_bitmap("", footprintfile)
-        overlay.blt(226, 138, footprint, footprint.rect)
+        overlay.blt(454, 170, footprint, footprint.rect)
         footprint.dispose
       end
-      # Show the owned icon
-      imagepos.push(["Graphics/UI/Pokedex/icon_own", 212, 44])
+			
       # Draw the type icon(s)
       species_data.types.each_with_index do |type, i|
         type_number = GameData::Type.get(type).icon_position
         type_rect = Rect.new(0, type_number * 32, 96, 32)
-        overlay.blt(296 + (100 * i), 120, @typebitmap.bitmap, type_rect)
+        overlay.blt(594 + (100 * i), 56, @typebitmap.bitmap, type_rect)
       end
     else
       # Write the category
-      textpos.push([_INTL("????? Pokémon"), 246, 80, :left, base, shadow])
+      category_text = _INTL("????? Pokémon")
+      category_x = pbCenteredTextX(overlay, category_text, 514)
+      textpos.push([category_text, category_x, 110, :left, base, shadow])
+			
       # Write the height and weight
       if !@show_battled_count
-        if System.user_language[3..4] == "US"   # If the user is in the United States
-          textpos.push([_INTL("???'??\""), 460, 164, :right, base, shadow])
-          textpos.push([_INTL("????.? lbs."), 494, 196, :right, base, shadow])
+        if System.user_language[3..4] == "US"
+          height_val = _INTL("???'??\"")
+          weight_val = _INTL("????.? lbs.")
         else
-          textpos.push([_INTL("????.? m"), 470, 164, :right, base, shadow])
-          textpos.push([_INTL("????.? kg"), 482, 196, :right, base, shadow])
+          height_val = _INTL("????.? m")
+          weight_val = _INTL("????.? kg")
         end
+        height_label_x, height_value_x = pbCenteredRowX(overlay, _INTL("Height"), height_val, 526, 224)
+        weight_label_x, weight_value_x = pbCenteredRowX(overlay, _INTL("Weight"), weight_val, 526, 224)
+        textpos.push([_INTL("Height"), height_label_x, 174, :left, base, shadow])
+        textpos.push([height_val, height_value_x, 174, :right, base, shadow])
+        textpos.push([_INTL("Weight"), weight_label_x, 206, :left, base, shadow])
+        textpos.push([weight_val, weight_value_x, 206, :right, base, shadow])
       end
     end
+		
     # Draw all text
     pbDrawTextPositions(overlay, textpos)
     # Draw all images
@@ -354,8 +480,8 @@ class PokemonPokedexInfo_Scene
   def drawPageArea
     @sprites["background"].setBitmap(_INTL("Graphics/UI/Pokedex/bg_area"))
     overlay = @sprites["overlay"].bitmap
-    base   = Color.new(88, 88, 80)
-    shadow = Color.new(168, 184, 184)
+    base   = Color.new(0, 0, 0)
+    shadow = Color.new(173, 189, 189)
     @sprites["areahighlight"].bitmap.clear
     # Get all points to be shown as places where @species can be encountered
     points = pbGetEncounterPoints
@@ -371,6 +497,7 @@ class PokemonPokedexInfo_Scene
       x += (Graphics.width - @sprites["areamap"].bitmap.width) / 2
       y = (j / town_map_width) * sqheight
       y += (Graphics.height + 32 - @sprites["areamap"].bitmap.height) / 2
+      y -= 18
       @sprites["areahighlight"].bitmap.fill_rect(x, y, sqwidth, sqheight, pointcolor)
       if j - town_map_width < 0 || !points[j - town_map_width]
         @sprites["areahighlight"].bitmap.fill_rect(x, y - 2, sqwidth, 2, pointcolorhl)
@@ -390,21 +517,21 @@ class PokemonPokedexInfo_Scene
     if points.length == 0
       pbDrawImagePositions(
         overlay,
-        [["Graphics/UI/Pokedex/overlay_areanone", 108, 188]]
+        [["Graphics/UI/Pokedex/overlay_areanone", 252, 238]]
       )
       textpos.push([_INTL("Area unknown"), Graphics.width / 2, (Graphics.height / 2) + 6, :center, base, shadow])
     end
-    textpos.push([@mapdata.name, 414, 50, :center, base, shadow])
+    textpos.push([@mapdata.name, 704, 48, :center, base, shadow])
     textpos.push([_INTL("{1}'s area", GameData::Species.get(@species).name),
-                  Graphics.width / 2, 358, :center, base, shadow])
+                  Graphics.width / 2, 452, :center, base, shadow])
     pbDrawTextPositions(overlay, textpos)
   end
 
   def drawPageForms
     @sprites["background"].setBitmap(_INTL("Graphics/UI/Pokedex/bg_forms"))
     overlay = @sprites["overlay"].bitmap
-    base   = Color.new(88, 88, 80)
-    shadow = Color.new(168, 184, 184)
+    base   = Color.new(0, 0, 0)
+    shadow = Color.new(173, 189, 189)
     # Write species and form name
     formname = ""
     @available.each do |i|
@@ -414,8 +541,8 @@ class PokemonPokedexInfo_Scene
       end
     end
     textpos = [
-      [GameData::Species.get(@species).name, Graphics.width / 2, Graphics.height - 82, :center, base, shadow],
-      [formname, Graphics.width / 2, Graphics.height - 50, :center, base, shadow]
+      [GameData::Species.get(@species).name, 432, 300, :right, base, shadow],
+      [formname, 432, 332, :right, base, shadow]
     ]
     # Draw all text
     pbDrawTextPositions(overlay, textpos)
@@ -494,6 +621,7 @@ class PokemonPokedexInfo_Scene
         Pokemon.play_cry(@species, @form) if @page == 1
       elsif Input.trigger?(Input::BACK)
         pbPlayCloseMenuSE
+        pbFlashCancelButton
         break
       elsif Input.trigger?(Input::USE)
         case @page

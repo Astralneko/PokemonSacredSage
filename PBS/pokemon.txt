@@ -26826,7 +26826,7 @@ Flags = Legendary
 [OGERPON]
 Name = Ogerpon
 FormName = Teal Mask
-Types = GRASS
+Types = GRASS,FAIRY
 BaseStats = 80,120,84,110,60,96
 GenderRatio = AlwaysFemale
 GrowthRate = Slow

@@ -2809,35 +2809,35 @@ Pokedex = This form has excellent defenses, absorbing impacts solidly like the c
 Flags = Legendary,TeraType_ROCK
 #-------------------------------
 [OGERPON,4]
-PokedexForm = 0
+FormName = Teal Mask - Battle
+PokedexForm = 1
+Flags = Legendary,TeraType_GRASS
 #-------------------------------
 [OGERPON,5]
-FormName = Wellspring Mask
-PokedexForm = 1
+FormName = Wellspring Mask - Battle
+PokedexForm = 2
 Types = GRASS,WATER
 Abilities = WATERABSORB
-Color = Blue
 Flags = Legendary,TeraType_WATER
 #-------------------------------
 [OGERPON,6]
-FormName = Hearthflame Mask
+FormName = Hearthflame Mask - Battle
 PokedexForm = 2
 Types = GRASS,FIRE
 Abilities = MOLDBREAKER
-Color = Red
 Flags = Legendary,TeraType_FIRE
 #-------------------------------
 [OGERPON,7]
-FormName = Cornerstone Mask
+FormName = Cornerstone Mask - Battle
 PokedexForm = 3
 Types = GRASS,ROCK
 Abilities = STURDY
-Color = Gray
 Flags = Legendary,TeraType_ROCK
 #-------------------------------
 [OGERPON,8]
 FormName = Terastal Teal Mask
 Abilities = EMBODYASPECT
+Flags = Legendary,TeraType_GRASS
 #-------------------------------
 [OGERPON,9]
 FormName = Terastal Wellspring Mask

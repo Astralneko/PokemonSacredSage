@@ -132,8 +132,8 @@ if Essentials::VERSION.include?("21")
       @sprites["areaoverlay"].visible   = true
       @sprites["background"].setBitmap(_INTL("Graphics/UI/Pokedex/bg_area"))
       overlay = @sprites["overlay"].bitmap
-      base   = Color.new(88, 88, 80)
-      shadow = Color.new(168, 184, 184)
+			base   = Color.new(0, 0, 0)
+			shadow = Color.new(173, 189, 189)
       @sprites["areahighlight"].bitmap.clear
       @sprites["areahighlight"].x = @sprites["areamap"].x
       @sprites["areahighlight"].y = @sprites["areamap"].y
@@ -170,14 +170,14 @@ if Essentials::VERSION.include?("21")
       if points.length == 0
         pbDrawImagePositions(
           overlay,
-          [[sprintf("Graphics/UI/Pokedex/overlay_areanone"), 108, 188]]
+          [[sprintf("Graphics/UI/Pokedex/overlay_areanone"), 252, 238]]
         )
         textpos.push([_INTL("Area unknown"), Graphics.width / 2, (Graphics.height / 2) + 6, 2, base, shadow])
         @noArea = true
       end
-      textpos.push([@mapdata.name, 414, 50, 2, base, shadow])
+      textpos.push([@mapdata.name, 704, 48, 2, base, shadow])
       textpos.push([_INTL("{1}'s area", GameData::Species.get(@species).name),
-                    Graphics.width / 2, 358, 2, base, shadow])
+                    Graphics.width / 2, 452, 2, base, shadow])
       pbDrawTextPositions(overlay, textpos)
     end
 

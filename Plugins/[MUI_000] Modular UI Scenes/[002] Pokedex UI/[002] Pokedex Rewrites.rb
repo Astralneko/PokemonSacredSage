@@ -63,6 +63,7 @@ class PokemonPokedexInfo_Scene
     overlay = @sprites["overlay"].bitmap
     overlay.clear
     drawPageIcons
+	  @sprites["backgroundgrid"].visible = !(page == 2)
     @sprites["infosprite"].visible    = false
     @sprites["areamap"].visible       = false if @sprites["areamap"]
     @sprites["areahighlight"].visible = false if @sprites["areahighlight"]

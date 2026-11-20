@@ -33,6 +33,7 @@ module FollowingPkmn
   TONE_POISON               = [109, 55, 130]
   TONE_PARALYSIS            = [204, 152, 44]
   TONE_FROZEN               = [56, 160, 193]
+  TONE_FROSTBITE            = [56, 160, 193]
   TONE_SLEEP                = [0, 0, 0]
   # For your custom status conditions, just add it as "TONE_(INTERNAL NAME)"
   # Example: TONE_BLEED, TONE_CONFUSE, TONE_INFATUATION
@@ -90,7 +91,9 @@ module FollowingPkmn
     :MAGEARNA, :POIPOLE, :NAGANADEL,
     # Gen 8
     :ORBEETLE, :FLAPPLE, :SINISTEA, :POLTEAGEIST, :FROSMOTH, :DREEPY, :DRAKLOAK,
-    :DRAGAPULT, :ETERNATUS, :REGIELEKI, :REGIDRAGO, :CALYREX
+    :DRAGAPULT, :ETERNATUS, :REGIELEKI, :REGIDRAGO, :CALYREX,
+	# Gen 9
+	:BRAMBLIN, :BRAMBLEGHAST, :FLITTLE, :GLIMMET, :GLIMMORA, :FLUTTERMANE, :IRONMOTH, :MIRAIDON, :POLTCHAGEIST, :SINISTCHA, :PECHARUNT
   ]
 
   # List of Pokemon that will not appear behind the player when surfing,
@@ -115,6 +118,8 @@ module FollowingPkmn
     # Gen VII
     :ROWLET, :DARTRIX, :PIKIPEK, :ORICORIO, :SILVALLY_2,
     # Gen VIII
-    :ROOKIDEE, :CALYREX_1, :CALYREX_2
+    :ROOKIDEE, :CALYREX_1, :CALYREX_2,
+	# Gen IX
+	:WIGLETT, :WUGTRIO, :FLAMIGO, :IRONBUNDLE
   ]
 end
